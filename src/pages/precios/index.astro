@@ -1,0 +1,390 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import catalog from '../../../data/bmw/catalog-clean-front.json';
+
+const modelsJson = JSON.stringify(catalog.generations.map(g => ({
+  id: g.id,
+  label: g.label,
+  series: g.series,
+  section: g.section,
+  years: g.years,
+  class: g.class,
+  chassis: g.chassis.map(c => c.code).filter(Boolean),
+  frontImage: g.frontImage?.url || null
+})));
+---
+
+<Layout title="Analizador Financiero de Precios & Depreciación — Carvault" description="Calculadora predictiva del ciclo de vida del valor, suelo histórico y proyección a futuro de coches en España y Europa.">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        Motor Cuantitativo Predictivo v1.0
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
+        Analizador Financiero de <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Precios & Depreciación</span>
+      </h1>
+      <p class="mt-3 text-slate-400 text-sm sm:text-base leading-relaxed">
+        Descubre el valor histórico desde su lanzamiento, su cotización real actual (España vs Europa), el <strong>suelo de depreciación</strong> (cuándo fue o será el mínimo histórico) y la <strong>proyección de valor a futuro</strong> para tomar decisiones informadas de compra o inversión.
+      </p>
+    </div>
+
+    <!-- Buscador Reactivo del Coche -->
+    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 backdrop-blur-md mb-8 max-w-2xl mx-auto shadow-xl">
+      <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Selecciona o busca un vehículo para analizar:</label>
+      <div class="relative">
+        <input 
+          id="carSearchInput"
+          type="text" 
+          placeholder="Escribe el modelo (ej. M3, E46, M2, G20, F87, 320i, Z4...)" 
+          class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 transition-colors font-mono"
+        />
+        <div id="searchResultsDropdown" class="absolute left-0 right-0 top-full mt-2 bg-slate-950 border border-slate-800 rounded-xl max-h-60 overflow-y-auto hidden z-30 shadow-2xl">
+          <!-- Opciones dinámicas -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel de Resultados del Análisis (Oculto inicialmente) -->
+    <div id="analysisPanel" class="hidden space-y-8 animate-fade-in">
+      <!-- Tarjeta Resumen con Métricas Clave -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <!-- Precio España Actual -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-slate-500 uppercase tracking-wider">Precio Mercado España</span>
+            <div class="text-3xl font-black text-white font-mono mt-1" id="metricPriceSpain">-</div>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-3 font-mono">Segunda mano medio verificado</span>
+        </div>
+
+        <!-- Precio Europa Actual -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-slate-500 uppercase tracking-wider">Precio Mercado Europa</span>
+            <div class="text-3xl font-black text-cyan-400 font-mono mt-1" id="metricPriceEurope">-</div>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-3 font-mono">Alemania & Centroeuropa</span>
+        </div>
+
+        <!-- Suelo de Depreciación -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-slate-500 uppercase tracking-wider">Suelo de Depreciación</span>
+            <div class="text-3xl font-black text-amber-400 font-mono mt-1" id="metricTroughPrice">-</div>
+          </div>
+          <span class="text-[11px] text-slate-400 mt-3 font-mono" id="metricTroughYear">Mínimo en -</span>
+        </div>
+
+        <!-- Estado de Mercado & Veredicto -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-slate-500 uppercase tracking-wider">Fase de Ciclo de Vida</span>
+            <div class="text-lg font-bold text-emerald-400 mt-1" id="metricStatus">-</div>
+          </div>
+          <span class="text-[11px] text-slate-300 mt-3 font-mono" id="metricGrowth">-</span>
+        </div>
+      </div>
+
+      <!-- Veredicto del Algoritmo -->
+      <div class="bg-gradient-to-r from-emerald-950/40 via-slate-900/80 to-slate-900/80 border border-emerald-500/30 rounded-2xl p-6">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center justify-center font-bold text-lg shrink-0">
+            ⚖️
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white" id="verdictTitle">Veredicto Financiero del Modelo</h3>
+            <p class="text-sm text-slate-300 mt-1 leading-relaxed" id="verdictText"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfica Interactiva del Ciclo de Vida -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h3 class="text-lg font-bold text-white">Curva Histórica & Proyección Futura del Valor</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Evolución de cotización (MSRP salida ➔ Depreciación ➔ Suelo ➔ Apreciación futura)</p>
+          </div>
+          <div class="flex items-center gap-4 text-xs font-mono">
+            <div class="flex items-center gap-1.5 text-slate-300">
+              <span class="w-3 h-3 rounded-full bg-emerald-400"></span> España (EUR)
+            </div>
+            <div class="flex items-center gap-1.5 text-slate-400">
+              <span class="w-3 h-3 rounded-full bg-cyan-400"></span> Europa (EUR)
+            </div>
+            <div class="flex items-center gap-1.5 text-amber-400">
+              <span class="w-3 h-0.5 bg-amber-400 border-dashed"></span> Suelo Histórico
+            </div>
+          </div>
+        </div>
+
+        <div class="h-80 w-full relative">
+          <canvas id="valuationChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Tabla de Datos Año a Año -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 overflow-hidden">
+        <h3 class="text-sm font-bold text-white font-mono uppercase mb-4">Tabla Cronológica de Cotizaciones</h3>
+        <div class="overflow-x-auto max-h-64">
+          <table class="w-full text-left text-xs font-mono">
+            <thead class="text-slate-400 border-b border-slate-800 sticky top-0 bg-slate-900">
+              <tr>
+                <th class="py-2 px-3">Año</th>
+                <th class="py-2 px-3">Edad</th>
+                <th class="py-2 px-3">Precio España</th>
+                <th class="py-2 px-3">Precio Europa</th>
+                <th class="py-2 px-3">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="valuationTableBody" class="divide-y divide-slate-800/60 text-slate-300">
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script is:inline define:vars={{ modelsJson }}>
+    const allModels = JSON.parse(modelsJson);
+    let chartInstance = null;
+
+    const searchInput = document.getElementById('carSearchInput');
+    const dropdown = document.getElementById('searchResultsDropdown');
+    const analysisPanel = document.getElementById('analysisPanel');
+
+    // Función matemática del motor predictivo
+    function calculateValuation(model) {
+      const currentYear = 2026;
+      const startYear = model.years.start || 2015;
+      const isM = model.section === 'm-performance' || /M[1-8]|1M/i.test(model.label);
+
+      // MSRP base
+      let msrp = 45000;
+      if (isM) {
+        if (/M2|1M/i.test(model.label)) msrp = 65000;
+        else if (/M3|M4/i.test(model.label)) msrp = 85000;
+        else if (/M5|M6/i.test(model.label)) msrp = 115000;
+        else if (/M8|XM/i.test(model.label)) msrp = 165000;
+        else msrp = 75000;
+      } else {
+        if (/1 Series/i.test(model.series)) msrp = 31000;
+        else if (/2 Series/i.test(model.series)) msrp = 38000;
+        else if (/3 Series/i.test(model.series)) msrp = 44000;
+        else if (/5 Series/i.test(model.series)) msrp = 62000;
+        else if (/7 Series/i.test(model.series)) msrp = 105000;
+        else if (/X5/i.test(model.series)) msrp = 76000;
+      }
+
+      const troughAge = isM ? 14 : 18;
+      const troughRatio = isM ? 0.32 : 0.12;
+      const appreciationRate = isM ? 0.055 : 0.025;
+
+      const history = [];
+      const maxYear = currentYear + 6;
+      let minPrice = Infinity;
+      let minYear = startYear;
+
+      for (let y = startYear; y <= maxYear; y++) {
+        const age = y - startYear;
+        let priceRatio;
+
+        if (age <= troughAge) {
+          const k = 0.22;
+          priceRatio = troughRatio + (1 - troughRatio) * Math.exp(-k * age);
+        } else {
+          const yearsPost = age - troughAge;
+          priceRatio = troughRatio * Math.pow(1 + appreciationRate, yearsPost);
+        }
+
+        const priceBase = Math.round(msrp * priceRatio);
+        const priceSpain = Math.round(priceBase * 1.05);
+
+        if (priceBase < minPrice) {
+          minPrice = priceBase;
+          minYear = y;
+        }
+
+        history.push({
+          year: y,
+          age,
+          priceSpain,
+          priceEurope: priceBase,
+          isProjected: y > currentYear
+        });
+      }
+
+      const cur = history.find(h => h.year === currentYear) || history[history.length - 1];
+      const p5 = history.find(h => h.year === currentYear + 5) || history[history.length - 1];
+      const growth = Math.round(((p5.priceSpain - cur.priceSpain) / cur.priceSpain / 5) * 1000) / 10;
+      const ageNow = currentYear - startYear;
+
+      let status = 'Cayendo';
+      let verdict = '';
+
+      if (ageNow < 3) {
+        status = 'Vehículo Seminuevo';
+        verdict = 'Fuerte depreciación en marcha (pérdida del ~15-20% anual). Buen momento para esperar si tu objetivo es optimizar precio de compra.';
+      } else if (Math.abs(ageNow - troughAge) <= 2) {
+        status = '¡En Suelo de Depreciación!';
+        verdict = 'VENTANA DE OPORTUNIDAD HISTÓRICA. El vehículo ha tocado su valor mínimo residual de mercado. El riesgo de pérdida patrimonial es prácticamente cero a partir de este punto.';
+      } else if (ageNow > troughAge + 2) {
+        status = 'Revalorizándose (Ciclo Alcista)';
+        verdict = 'ACTIVO EN APRECIACIÓN. Ha cruzado su valle histórico y la reducción de unidades sanas en el mercado empuja las cotizaciones al alza.';
+      } else {
+        status = 'Fase de Depreciación Normal';
+        verdict = 'En curva de amortización estándar de segunda mano. Se espera que continúe bajando paulatinamente hasta alcanzar su suelo.';
+      }
+
+      return {
+        msrp,
+        cur,
+        troughPrice: minPrice,
+        troughYear: minYear,
+        status,
+        verdict,
+        growth,
+        history
+      };
+    }
+
+    function selectCar(model) {
+      searchInput.value = model.label;
+      dropdown.classList.add('hidden');
+
+      const data = calculateValuation(model);
+
+      // Llenar métricas
+      document.getElementById('metricPriceSpain').textContent = `${data.cur.priceSpain.toLocaleString()} €`;
+      document.getElementById('metricPriceEurope').textContent = `${data.cur.priceEurope.toLocaleString()} €`;
+      document.getElementById('metricTroughPrice').textContent = `${data.troughPrice.toLocaleString()} €`;
+      document.getElementById('metricTroughYear').textContent = `Año suelo: ${data.troughYear}`;
+      document.getElementById('metricStatus').textContent = data.status;
+      document.getElementById('metricGrowth').textContent = `Proyección 5 años: ${data.growth >= 0 ? '+' : ''}${data.growth}% / año`;
+
+      document.getElementById('verdictTitle').textContent = `Diagnóstico para ${model.label}`;
+      document.getElementById('verdictText').textContent = data.verdict;
+
+      // Render de tabla
+      const tbody = document.getElementById('valuationTableBody');
+      tbody.innerHTML = data.history.map(h => `
+        <tr class="${h.year === 2026 ? 'bg-emerald-950/40 text-emerald-300 font-bold' : h.isProjected ? 'text-cyan-400/80 italic' : ''}">
+          <td class="py-1.5 px-3">${h.year} ${h.isProjected ? '(Proy.)' : ''}</td>
+          <td class="py-1.5 px-3">${h.age} años</td>
+          <td class="py-1.5 px-3">${h.priceSpain.toLocaleString()} €</td>
+          <td class="py-1.5 px-3">${h.priceEurope.toLocaleString()} €</td>
+          <td class="py-1.5 px-3">${h.year === data.troughYear ? '⭐ SUELO' : h.year === 2026 ? '📍 HOY' : h.isProjected ? 'Previsión' : 'Histórico'}</td>
+        </tr>
+      `).join('');
+
+      // Render de Gráfica Chart.js
+      renderChart(data);
+
+      analysisPanel.classList.remove('hidden');
+    }
+
+    function renderChart(data) {
+      const ctx = document.getElementById('valuationChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+
+      const labels = data.history.map(h => h.year);
+      const pricesSpain = data.history.map(h => h.priceSpain);
+      const pricesEurope = data.history.map(h => h.priceEurope);
+
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'España (€)',
+              data: pricesSpain,
+              borderColor: '#10b981',
+              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+              fill: true,
+              tension: 0.35,
+              pointRadius: labels.map(y => y === 2026 || y === data.troughYear ? 6 : 2),
+              pointBackgroundColor: labels.map(y => y === 2026 ? '#38bdf8' : y === data.troughYear ? '#fbbf24' : '#10b981')
+            },
+            {
+              label: 'Europa (€)',
+              data: pricesEurope,
+              borderColor: '#06b6d4',
+              borderDash: [5, 5],
+              tension: 0.35,
+              pointRadius: 0
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            x: {
+              grid: { color: 'rgba(255,255,255,0.05)' },
+              ticks: { color: '#94a3b8', font: { family: 'JetBrains Mono' } }
+            },
+            y: {
+              grid: { color: 'rgba(255,255,255,0.05)' },
+              ticks: { 
+                color: '#94a3b8', 
+                font: { family: 'JetBrains Mono' },
+                callback: v => `${(v/1000).toFixed(0)}k €` 
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Buscador interactivo
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      if (!q) {
+        dropdown.classList.add('hidden');
+        return;
+      }
+
+      const matches = allModels.filter(m => 
+        m.label.toLowerCase().includes(q) ||
+        m.series.toLowerCase().includes(q) ||
+        m.chassis.some(c => c.toLowerCase().includes(q))
+      ).slice(0, 10);
+
+      if (!matches.length) {
+        dropdown.innerHTML = `<div class="p-3 text-xs text-slate-500 font-mono">No se encontraron modelos coincidentes</div>`;
+      } else {
+        dropdown.innerHTML = matches.map(m => `
+          <div class="search-item p-3 hover:bg-slate-900 cursor-pointer flex items-center justify-between border-b border-slate-900 last:border-0" data-id="${m.id}">
+            <div>
+              <span class="text-sm font-bold text-white">${m.label}</span>
+              <span class="text-xs text-slate-500 font-mono block">${m.years.display || ''} • ${m.chassis.join(', ') || ''}</span>
+            </div>
+            <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-400">Analizar ➔</span>
+          </div>
+        `).join('');
+
+        dropdown.querySelectorAll('.search-item').forEach(item => {
+          item.addEventListener('click', () => {
+            const m = allModels.find(x => x.id === item.dataset.id);
+            if (m) selectCar(m);
+          });
+        });
+      }
+
+      dropdown.classList.remove('hidden');
+    });
+
+    // Cargar por defecto M3 E46 como demo inicial
+    const defaultModel = allModels.find(m => m.id.includes('m3-e46') || m.label.includes('M3 (E46)')) || allModels[0];
+    if (defaultModel) selectCar(defaultModel);
+  </script>
+</Layout>
