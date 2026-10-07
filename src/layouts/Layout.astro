@@ -56,14 +56,95 @@ const {
           <a href="/#marcas" class="text-slate-300 hover:text-cyan-400 transition-colors">
             Marcas
           </a>
-          <a href="/bmw" class="text-slate-300 hover:text-cyan-400 transition-colors">
-            Catálogo BMW
-          </a>
+
+          <!-- Desplegable Catálogo con Buscador y Marcas Disponibles -->
+          <div class="relative group/catalog" id="navCatalogDropdownContainer">
+            <button 
+              id="navCatalogBtn" 
+              class="text-slate-300 hover:text-cyan-400 transition-colors flex items-center gap-1.5 cursor-pointer py-2 focus:outline-none"
+              aria-expanded="false"
+              aria-haspopup="true"
+            >
+              <span>Catálogo</span>
+              <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover/catalog:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+
+            <!-- Menú Desplegable Flotante -->
+            <div 
+              id="navCatalogMenu" 
+              class="absolute left-0 top-full pt-1.5 hidden group-hover/catalog:block z-50 w-72 animate-fade-in"
+            >
+              <div class="bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-3 backdrop-blur-xl space-y-2.5">
+                <!-- Buscador de marcas dentro del desplegable -->
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-slate-500">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                  </div>
+                  <input 
+                    type="text" 
+                    id="navBrandSearchInput" 
+                    placeholder="Filtrar catálogo de marca..." 
+                    class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-2.5 py-1.5 text-xs text-slate-200 font-mono placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40"
+                  />
+                </div>
+
+                <!-- Lista de Marcas con Catálogo Disponible -->
+                <div class="space-y-1 max-h-60 overflow-y-auto" id="navBrandsList">
+                  <a 
+                    href="/bmw" 
+                    class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/60 hover:bg-slate-800/80 border border-slate-850 hover:border-cyan-500/40 transition-all group"
+                    data-brand="bmw"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-7 h-7 rounded-full bg-slate-900 border border-slate-800 p-1 flex items-center justify-center shrink-0">
+                        <img src="/images/brands/bmw.svg" alt="BMW" class="w-full h-full object-contain" />
+                      </div>
+                      <div>
+                        <div class="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors">BMW</div>
+                        <div class="text-[10px] text-slate-500 font-mono">200 modelos • Gama M</div>
+                      </div>
+                    </div>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Activo</span>
+                  </a>
+
+                  <!-- Próximas marcas (visibles como referencia informativa en el dropdown) -->
+                  <div class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/30 border border-transparent opacity-50 cursor-not-allowed" data-brand="porsche">
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-7 h-7 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 font-bold text-xs text-slate-500">P</div>
+                      <div>
+                        <div class="text-xs font-semibold text-slate-400">Porsche</div>
+                        <div class="text-[10px] text-slate-600 font-mono">Stuttgart</div>
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-mono text-slate-500">Pronto</span>
+                  </div>
+
+                  <div class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/30 border border-transparent opacity-50 cursor-not-allowed" data-brand="mercedes">
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-7 h-7 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 font-bold text-[10px] text-slate-500">MB</div>
+                      <div>
+                        <div class="text-xs font-semibold text-slate-400">Mercedes-Benz</div>
+                        <div class="text-[10px] text-slate-600 font-mono">Stuttgart</div>
+                      </div>
+                    </div>
+                    <span class="text-[9px] font-mono text-slate-500">Pronto</span>
+                  </div>
+                </div>
+
+                <!-- Pie del dropdown -->
+                <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500 px-1">
+                  <span>1 catálogo activo</span>
+                  <a href="/#marcas" class="text-cyan-400 hover:underline">Ver todas →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <a href="/precios" class="text-slate-300 hover:text-emerald-400 transition-colors flex items-center gap-1.5 font-semibold text-emerald-400">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
             Precios & Suelo
           </a>
-          <a href="/#api" class="text-slate-300 hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+          <a id="navApiLink" href="/#api" class="text-slate-300 hover:text-cyan-400 transition-colors flex items-center gap-1.5">
             <span class="inline-block w-2 h-2 rounded-full bg-cyan-400"></span>
             API Pública
           </a>
@@ -105,5 +186,43 @@ const {
         </div>
       </div>
     </footer>
+
+    <!-- Script Global de Navegación (Desplegable y Enlace Contextual de API) -->
+    <script is:inline>
+      // 1. Filtrado en el buscador del desplegable de Catálogo
+      const brandSearch = document.getElementById('navBrandSearchInput');
+      const brandItems = document.querySelectorAll('.nav-brand-item');
+      if (brandSearch) {
+        brandSearch.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          brandItems.forEach(item => {
+            const brand = (item.getAttribute('data-brand') || '').toLowerCase();
+            const text = item.textContent.toLowerCase();
+            if (!q || brand.includes(q) || text.includes(q)) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // 2. Control de enlace "API Pública" según la página actual
+      const navApiLink = document.getElementById('navApiLink');
+      if (navApiLink) {
+        const path = window.location.pathname;
+        if (path.startsWith('/bmw')) {
+          // En la sección monomarca de BMW, abre la API específica de BMW
+          navApiLink.href = '/api/v1/bmw.json';
+          navApiLink.target = '_blank';
+          navApiLink.title = 'Abrir JSON específico de BMW';
+        } else {
+          // En Home u otras páginas, abre el gateway general de Carvault
+          navApiLink.href = '/api/v1/carvault.json';
+          navApiLink.target = '_blank';
+          navApiLink.title = 'Abrir API Central Gateway de Carvault';
+        }
+      }
+    </script>
   </body>
 </html>
