@@ -9,7 +9,7 @@
     "prototypes": 95,
     "chassis": 279,
     "totalVariants": 435,
-    "withExactFront": 190
+    "withExactFront": 207
   },
   "generations": [
     {
@@ -271,10 +271,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW X5 M (F95) China.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/BMW_X5_M_%28F95%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Dinkun Chen",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X5_M_(F95)_China.jpg",
+            "width": 5619,
+            "height": 3439
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW X5 M (F95) China.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/BMW_X5_M_%28F95%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X5_M_(F95)_China.jpg",
+        "width": 5619,
+        "height": 3439
+      }
     },
     {
       "id": "bmw-x6-m-f96",
@@ -309,10 +325,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW X6M Competition (F96) Washington DC (1).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/BMW_X6M_Competition_%28F96%29_Washington_DC_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "OWS Photography",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6M_Competition_(F96)_Washington_DC_(1).jpg",
+            "width": 2700,
+            "height": 2160
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW X6M Competition (F96) Washington DC (1).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/BMW_X6M_Competition_%28F96%29_Washington_DC_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OWS Photography",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6M_Competition_(F96)_Washington_DC_(1).jpg",
+        "width": 2700,
+        "height": 2160
+      }
     },
     {
       "id": "bmw-xm-g09",
@@ -1181,10 +1213,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW M5 (E60) front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/BMW_M5_%28E60%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M.rJirapat",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M5_(E60)_front.jpg",
+            "width": 2560,
+            "height": 1920
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW M5 (E60) front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/BMW_M5_%28E60%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "M.rJirapat",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M5_(E60)_front.jpg",
+        "width": 2560,
+        "height": 1920
+      }
     },
     {
       "id": "bmw-m6-m",
@@ -1221,10 +1269,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:2005 BMW M6 (E63) coupe (25956499320).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/2005_BMW_M6_%28E63%29_coupe_%2825956499320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Jeremy from Sydney, Australia",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2005_BMW_M6_(E63)_coupe_(25956499320).jpg",
+            "width": 2592,
+            "height": 1944
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:2005 BMW M6 (E63) coupe (25956499320).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/2005_BMW_M6_%28E63%29_coupe_%2825956499320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Jeremy from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2005_BMW_M6_(E63)_coupe_(25956499320).jpg",
+        "width": 2592,
+        "height": 1944
+      }
     },
     {
       "id": "bmw-z4-m-roadsterz4-m-coup-m",
@@ -1259,10 +1323,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Z4 M Coupé front 20100328.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/BMW_Z4_M_Coup%C3%A9_front_20100328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "Attribution",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z4_M_Coup%C3%A9_front_20100328.jpg",
+            "width": 2522,
+            "height": 1476
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Z4 M Coupé front 20100328.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/BMW_Z4_M_Coup%C3%A9_front_20100328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "M 93",
+        "license": "Attribution",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z4_M_Coup%C3%A9_front_20100328.jpg",
+        "width": 2522,
+        "height": 1476
+      }
     },
     {
       "id": "bmw-m3-m",
@@ -1300,10 +1380,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW M3 Coupé (E92) front.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/BMW_M3_Coup%C3%A9_%28E92%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M3_Coup%C3%A9_(E92)_front.JPG",
+            "width": 2494,
+            "height": 1830
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW M3 Coupé (E92) front.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/BMW_M3_Coup%C3%A9_%28E92%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M3_Coup%C3%A9_(E92)_front.JPG",
+        "width": 2494,
+        "height": 1830
+      }
     },
     {
       "id": "bmw-1m-coupe-e82",
@@ -1679,10 +1775,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW X6M F86 (28004084531).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BMW_X6M_F86_%2828004084531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Danny Galvez from Pinoso, España",
+            "license": "CC BY-SA 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6M_F86_(28004084531).jpg",
+            "width": 4360,
+            "height": 2622
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW X6M F86 (28004084531).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BMW_X6M_F86_%2828004084531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Danny Galvez from Pinoso, España",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6M_F86_(28004084531).jpg",
+        "width": 4360,
+        "height": 2622
+      }
     },
     {
       "id": "bmw-m3-f80",
@@ -1779,10 +1891,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW M4 Coupé (F82) front.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/BMW_M4_Coup%C3%A9_%28F82%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Tokumeigakarinoaoshima",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M4_Coup%C3%A9_(F82)_front.JPG",
+            "width": 2528,
+            "height": 1878
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW M4 Coupé (F82) front.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/BMW_M4_Coup%C3%A9_%28F82%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M4_Coup%C3%A9_(F82)_front.JPG",
+        "width": 2528,
+        "height": 1878
+      }
     },
     {
       "id": "bmw-m2-f87",
@@ -1931,10 +2059,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW M8 (F92) Washington DC Metro Area, USA.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/BMW_M8_%28F92%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "OWS Photography",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M8_(F92)_Washington_DC_Metro_Area%2C_USA.jpg",
+            "width": 2700,
+            "height": 2160
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW M8 (F92) Washington DC Metro Area, USA.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/BMW_M8_%28F92%29_Washington_DC_Metro_Area%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OWS Photography",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M8_(F92)_Washington_DC_Metro_Area%2C_USA.jpg",
+        "width": 2700,
+        "height": 2160
+      }
     },
     {
       "id": "bmw-x3-m-f97",
@@ -1969,10 +2113,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW X3M (F97) Greater Toronto Area, Canada.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/BMW_X3M_%28F97%29_Greater_Toronto_Area%2C_Canada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "OWS Photography",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X3M_(F97)_Greater_Toronto_Area%2C_Canada.jpg",
+            "width": 3398,
+            "height": 2718
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW X3M (F97) Greater Toronto Area, Canada.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/BMW_X3M_%28F97%29_Greater_Toronto_Area%2C_Canada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OWS Photography",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X3M_(F97)_Greater_Toronto_Area%2C_Canada.jpg",
+        "width": 3398,
+        "height": 2718
+      }
     },
     {
       "id": "bmw-x4-m-f98",
@@ -2007,10 +2167,26 @@
             "Competition",
             "CS / CSL Track"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW X4M Competition (F98) Washington DC Metro Area, USA (1).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/BMW_X4M_Competition_%28F98%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "OWS Photography",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X4M_Competition_(F98)_Washington_DC_Metro_Area%2C_USA_(1).jpg",
+            "width": 2700,
+            "height": 2160
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW X4M Competition (F98) Washington DC Metro Area, USA (1).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/BMW_X4M_Competition_%28F98%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OWS Photography",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X4M_Competition_(F98)_Washington_DC_Metro_Area%2C_USA_(1).jpg",
+        "width": 2700,
+        "height": 2160
+      }
     },
     {
       "id": "bmw-1-series-f70",
@@ -4054,10 +4230,26 @@
             "M Sport",
             "M Performance"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW 309 1934.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/BMW_309_1934.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Buch-t",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_309_1934.JPG",
+            "width": 3648,
+            "height": 2736
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW 309 1934.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/BMW_309_1934.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Buch-t",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_309_1934.JPG",
+        "width": 3648,
+        "height": 2736
+      }
     },
     {
       "id": "bmw-315",
@@ -5159,10 +5351,26 @@
             "M Sport",
             "M Performance"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW 2000 C Automatic PL 2.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/BMW_2000_C_Automatic_PL_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Beemwej",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_2000_C_Automatic_PL_2.jpg",
+            "width": 1991,
+            "height": 1514
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW 2000 C Automatic PL 2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/BMW_2000_C_Automatic_PL_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Beemwej",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_2000_C_Automatic_PL_2.jpg",
+        "width": 1991,
+        "height": 1514
+      }
     },
     {
       "id": "bmw-02-series",
@@ -9537,10 +9745,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Spicup.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/BMW_Spicup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Rasevic",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Spicup.jpg",
+            "width": 3872,
+            "height": 2592
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Spicup.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/BMW_Spicup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Rasevic",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Spicup.jpg",
+        "width": 3872,
+        "height": 2592
+      }
     },
     {
       "id": "bmw-concept-2200-ti-garmisch",
@@ -9569,10 +9793,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:2002ti-Garmisch 2019-05-26-II.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/2002ti-Garmisch_2019-05-26-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Wikisympathisant",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2002ti-Garmisch_2019-05-26-II.jpg",
+            "width": 3857,
+            "height": 3141
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:2002ti-Garmisch 2019-05-26-II.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/2002ti-Garmisch_2019-05-26-II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Wikisympathisant",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2002ti-Garmisch_2019-05-26-II.jpg",
+        "width": 3857,
+        "height": 3141
+      }
     },
     {
       "id": "bmw-concept-1602-electro-antrieb-e10",
@@ -9810,24 +10050,24 @@
             "Concept / Showcase"
           ],
           "frontImage": {
-            "file": "File:BMW Nazca C2 Heck.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/BMW_Nazca_C2_Heck.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "file": "File:BMW Nazca C2.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_Nazca_C2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "Thomas doerfer",
             "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Nazca_C2_Heck.JPG",
-            "width": 981,
-            "height": 768
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Nazca_C2.JPG",
+            "width": 1734,
+            "height": 1302
           }
         }
       ],
       "frontImage": {
-        "file": "File:BMW Nazca C2 Heck.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/BMW_Nazca_C2_Heck.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "file": "File:BMW Nazca C2.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_Nazca_C2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
         "author": "Thomas doerfer",
         "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Nazca_C2_Heck.JPG",
-        "width": 981,
-        "height": 768
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Nazca_C2.JPG",
+        "width": 1734,
+        "height": 1302
       }
     },
     {
@@ -9857,10 +10097,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:1991 BMW Nazca (6957208570).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/1991_BMW_Nazca_%286957208570%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Hitman from United Kingdom",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991_BMW_Nazca_(6957208570).jpg",
+            "width": 1024,
+            "height": 768
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:1991 BMW Nazca (6957208570).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/1991_BMW_Nazca_%286957208570%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Hitman from United Kingdom",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991_BMW_Nazca_(6957208570).jpg",
+        "width": 1024,
+        "height": 768
+      }
     },
     {
       "id": "bmw-concept-z2",
@@ -9921,10 +10177,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW E1 01.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_E1_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Museumsfotografierer",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E1_01.jpg",
+            "width": 1439,
+            "height": 1197
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW E1 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_E1_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Museumsfotografierer",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E1_01.jpg",
+        "width": 1439,
+        "height": 1197
+      }
     },
     {
       "id": "bmw-concept-e2",
@@ -10179,10 +10451,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:Scan z07 01.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Scan_z07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "BLakerman",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScan_z07_01.jpg",
+            "width": 3000,
+            "height": 1949
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:Scan z07 01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Scan_z07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "BLakerman",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScan_z07_01.jpg",
+        "width": 3000,
+        "height": 1949
+      }
     },
     {
       "id": "bmw-concept-z9",
@@ -10973,10 +11261,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW M1 Homage Concept (15109679445).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_M1_Homage_Concept_%2815109679445%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Miguel Mendez",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M1_Homage_Concept_(15109679445).jpg",
+            "width": 5997,
+            "height": 3998
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW M1 Homage Concept (15109679445).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_M1_Homage_Concept_%2815109679445%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Miguel Mendez",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M1_Homage_Concept_(15109679445).jpg",
+        "width": 5997,
+        "height": 3998
+      }
     },
     {
       "id": "bmw-concept-vision-efficientdynamics-concept",
@@ -11183,10 +11487,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:TheBMWVisionConnectedDrive.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/TheBMWVisionConnectedDrive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Autoviva",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATheBMWVisionConnectedDrive.jpg",
+            "width": 4288,
+            "height": 2848
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:TheBMWVisionConnectedDrive.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/TheBMWVisionConnectedDrive.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Autoviva",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATheBMWVisionConnectedDrive.jpg",
+        "width": 4288,
+        "height": 2848
+      }
     },
     {
       "id": "bmw-concept-328-hommage",
@@ -11219,10 +11539,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:Festival automobile international 2012 - BMW 328 Hommage - 001.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Festival_automobile_international_2012_-_BMW_328_Hommage_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Thesupermat",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFestival_automobile_international_2012_-_BMW_328_Hommage_-_001.jpg",
+            "width": 4752,
+            "height": 3168
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:Festival automobile international 2012 - BMW 328 Hommage - 001.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Festival_automobile_international_2012_-_BMW_328_Hommage_-_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Thesupermat",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFestival_automobile_international_2012_-_BMW_328_Hommage_-_001.jpg",
+        "width": 4752,
+        "height": 3168
+      }
     },
     {
       "id": "bmw-concept-i3-concept",
@@ -11731,10 +12067,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW GranLusso Coupé.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/BMW_GranLusso_Coup%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Lukasdesign",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_GranLusso_Coup%C3%A9.JPG",
+            "width": 2592,
+            "height": 1590
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW GranLusso Coupé.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/BMW_GranLusso_Coup%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Lukasdesign",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_GranLusso_Coup%C3%A9.JPG",
+        "width": 2592,
+        "height": 1590
+      }
     },
     {
       "id": "bmw-concept-concept-m4-coup",
@@ -11795,10 +12147,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Vision Future Luxury (15).JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/BMW_Vision_Future_Luxury_%2815%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "El monty",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Future_Luxury_(15).JPG",
+            "width": 3456,
+            "height": 2304
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Vision Future Luxury (15).JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/BMW_Vision_Future_Luxury_%2815%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "El monty",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Future_Luxury_(15).JPG",
+        "width": 3456,
+        "height": 2304
+      }
     },
     {
       "id": "bmw-concept-m4-concept-iconic-lights",
@@ -11863,10 +12231,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW 3.0 CSL Hommage 06.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/BMW_3.0_CSL_Hommage_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Arnaud 25",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_06.JPG",
+            "width": 2048,
+            "height": 1536
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW 3.0 CSL Hommage 06.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/BMW_3.0_CSL_Hommage_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Arnaud 25",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_06.JPG",
+        "width": 2048,
+        "height": 1536
+      }
     },
     {
       "id": "bmw-concept-3-0-csl-hommage-r",
@@ -11899,10 +12283,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW 3.0 CSL Hommage R (2015) 1X7A0119.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/BMW_3.0_CSL_Hommage_R_%282015%29_1X7A0119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander Migl",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_R_(2015)_1X7A0119.jpg",
+            "width": 6319,
+            "height": 2862
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW 3.0 CSL Hommage R (2015) 1X7A0119.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/BMW_3.0_CSL_Hommage_R_%282015%29_1X7A0119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_R_(2015)_1X7A0119.jpg",
+        "width": 6319,
+        "height": 2862
+      }
     },
     {
       "id": "bmw-concept-bmw-5-series-gran-turismo-with-fuel-cell",
@@ -12043,10 +12443,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW next 100.png",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/BMW_next_100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Giangoffredo",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_next_100.png",
+            "width": 548,
+            "height": 306
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW next 100.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/BMW_next_100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Giangoffredo",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_next_100.png",
+        "width": 548,
+        "height": 306
+      }
     },
     {
       "id": "bmw-concept-2002-hommage-concept",
@@ -12075,10 +12491,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:FoS20162016 0624 104959AA (27886437065).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/FoS20162016_0624_104959AA_%2827886437065%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Matthew Lamb",
+            "license": "CC BY-SA 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFoS20162016_0624_104959AA_(27886437065).jpg",
+            "width": 2560,
+            "height": 1920
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:FoS20162016 0624 104959AA (27886437065).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/FoS20162016_0624_104959AA_%2827886437065%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Matthew Lamb",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFoS20162016_0624_104959AA_(27886437065).jpg",
+        "width": 2560,
+        "height": 1920
+      }
     },
     {
       "id": "bmw-concept-2002-hommage-turbomeister-concept",
@@ -12634,10 +13066,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Vision M NEXT IAA 2019 JM 0090.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/BMW_Vision_M_NEXT_IAA_2019_JM_0090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Johannes Maximilian",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_M_NEXT_IAA_2019_JM_0090.jpg",
+            "width": 3283,
+            "height": 2189
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Vision M NEXT IAA 2019 JM 0090.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/BMW_Vision_M_NEXT_IAA_2019_JM_0090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Johannes Maximilian",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_M_NEXT_IAA_2019_JM_0090.jpg",
+        "width": 3283,
+        "height": 2189
+      }
     },
     {
       "id": "bmw-concept-concept-i4",
@@ -12668,10 +13116,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Concept i4.png",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/BMW_Concept_i4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "BMW Nederland",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_i4.png",
+            "width": 1440,
+            "height": 683
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Concept i4.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/BMW_Concept_i4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "BMW Nederland",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_i4.png",
+        "width": 1440,
+        "height": 683
+      }
     },
     {
       "id": "bmw-concept-i-vision-circular",
@@ -12700,10 +13164,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW i Vision Circular Concept IAA 2021 1X7A0294.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/BMW_i_Vision_Circular_Concept_IAA_2021_1X7A0294.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander Migl",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_i_Vision_Circular_Concept_IAA_2021_1X7A0294.jpg",
+            "width": 6058,
+            "height": 3226
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW i Vision Circular Concept IAA 2021 1X7A0294.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/BMW_i_Vision_Circular_Concept_IAA_2021_1X7A0294.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander Migl",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_i_Vision_Circular_Concept_IAA_2021_1X7A0294.jpg",
+        "width": 6058,
+        "height": 3226
+      }
     },
     {
       "id": "bmw-concept-xm-concept",
@@ -12732,10 +13212,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:2023 BMW XM (TH).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/2023_BMW_XM_%28TH%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Chanokchon",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023_BMW_XM_(TH).jpg",
+            "width": 4608,
+            "height": 2592
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:2023 BMW XM (TH).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/2023_BMW_XM_%28TH%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Chanokchon",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023_BMW_XM_(TH).jpg",
+        "width": 4608,
+        "height": 2592
+      }
     },
     {
       "id": "bmw-concept-ix-flow-concept",
@@ -12796,10 +13292,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW i Vision Dee IAA 2023 1X7A0414.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/BMW_i_Vision_Dee_IAA_2023_1X7A0414.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_i_Vision_Dee_IAA_2023_1X7A0414.jpg",
+            "width": 5821,
+            "height": 3159
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW i Vision Dee IAA 2023 1X7A0414.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/BMW_i_Vision_Dee_IAA_2023_1X7A0414.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_i_Vision_Dee_IAA_2023_1X7A0414.jpg",
+        "width": 5821,
+        "height": 3159
+      }
     },
     {
       "id": "bmw-concept-vision-neue-klasse",
@@ -12876,10 +13388,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:BMW Vision Neue Klasse IAA 2023 1X7A0221.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg",
+            "width": 4523,
+            "height": 3018
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:BMW Vision Neue Klasse IAA 2023 1X7A0221.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg",
+        "width": 4523,
+        "height": 3018
+      }
     },
     {
       "id": "bmw-concept-concept-skytop",
@@ -12910,10 +13438,26 @@
           "packages": [
             "Concept / Showcase"
           ],
-          "frontImage": null
+          "frontImage": {
+            "file": "File:2024 BMW Concept Skytop 2.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/2024_BMW_Concept_Skytop_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Calreyn88",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2024_BMW_Concept_Skytop_2.jpg",
+            "width": 14248,
+            "height": 9144
+          }
         }
       ],
-      "frontImage": null
+      "frontImage": {
+        "file": "File:2024 BMW Concept Skytop 2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/2024_BMW_Concept_Skytop_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2024_BMW_Concept_Skytop_2.jpg",
+        "width": 14248,
+        "height": 9144
+      }
     },
     {
       "id": "bmw-concept-concept-speedtop",
