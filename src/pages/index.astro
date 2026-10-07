@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import catalog from '../../data/bmw/catalog-clean-front.json';
 import { BRANDS } from '../data/brands';
+import requestsRegistry from '../../data/feedback/requests-registry.json';
 
 // Preparación de datos multi-marca para el buscador global
 const globalCars = catalog.generations.map(g => ({
@@ -23,6 +24,7 @@ const globalCars = catalog.generations.map(g => ({
 
 const globalCarsJson = JSON.stringify(globalCars);
 const brandsJson = JSON.stringify(BRANDS);
+const registryJson = JSON.stringify(requestsRegistry);
 ---
 
 <Layout title="Carvault — Cada coche y modelo desde su perspectiva frontal con API">
@@ -406,9 +408,10 @@ const brandsJson = JSON.stringify(BRANDS);
   </div>
 
   <!-- Script Cliente del Buscador Global -->
-  <script is:inline define:vars={{ globalCarsJson, brandsJson }}>
+  <script is:inline define:vars={{ globalCarsJson, brandsJson, registryJson }}>
     const allCars = JSON.parse(globalCarsJson);
     const brands = JSON.parse(brandsJson);
+    const registry = JSON.parse(registryJson);
 
     let globalSearchQuery = '';
     let globalEra = 'all';
@@ -760,7 +763,127 @@ const brandsJson = JSON.stringify(BRANDS);
       });
     }
 
-    // Envío del formulario y llamada al Middleware API
+    // Normalización y tokenizer en cliente para filtrado middleware
+    function clientNormalize(str) {
+      return (str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function clientTokenize(str) {
+      const stopWords = new Set([
+        'el', 'la', 'los', 'las', 'un', 'una', 'de', 'del', 'con', 'por', 'para',
+        'en', 'ano', 'anos', 'model', 'modelo', 'coche', 'car', 'falta', 'queria', 'pedir'
+      ]);
+      return clientNormalize(str)
+        .split(' ')
+        .filter(t => t.length >= 2 && !stopWords.has(t));
+    }
+
+    function evaluateClientMiddleware(inputText) {
+      const normInput = clientNormalize(inputText);
+      const inputTokens = clientTokenize(inputText);
+
+      // 1. Longitud básica
+      if (!inputText || inputText.trim().length < 3) {
+        return {
+          allowed: false,
+          reason: 'El texto es demasiado corto. Especifica al menos el nombre de la marca o modelo (mínimo 3 caracteres).'
+        };
+      }
+
+      if (inputText.length > 250) {
+        return {
+          allowed: false,
+          reason: 'El texto excede el límite permitido de 250 caracteres. Por favor, sé sintético (ej. "Audi RS6 C7 Avant 2013").'
+        };
+      }
+
+      // 2. Basura evidente
+      const isGibberish = /^(.)\1{4,}$/.test(normInput) || inputTokens.length === 0;
+      if (isGibberish) {
+        return {
+          allowed: false,
+          reason: 'Por favor, introduce un nombre de modelo o fabricante automotriz válido.'
+        };
+      }
+
+      // 3. Comprobar si ya existe en catálogo
+      if (normInput === 'bmw' || normInput === 'bayerische motoren werke') {
+        return {
+          allowed: false,
+          reason: 'BMW ya cuenta con un catálogo completo de 200 modelos y 279 chasis activo en Carvault.'
+        };
+      }
+
+      if (registry && registry.existingCatalogCache && registry.existingCatalogCache.models) {
+        for (const m of registry.existingCatalogCache.models) {
+          const normLabel = clientNormalize(m.label);
+          if (normInput === normLabel) {
+            return {
+              allowed: false,
+              reason: `El modelo "${m.label}" ya está disponible en nuestro catálogo.`
+            };
+          }
+
+          if (m.codes && Array.isArray(m.codes)) {
+            for (const code of m.codes) {
+              if (code && code.length >= 3) {
+                const regex = new RegExp(`\\b${code}\\b`, 'i');
+                if (regex.test(normInput)) {
+                  const labelTokens = clientTokenize(m.label);
+                  const commonTokens = inputTokens.filter(t => labelTokens.includes(t) || t === code);
+                  if (commonTokens.length >= 2 || inputTokens.includes(code.toLowerCase())) {
+                    return {
+                      allowed: false,
+                      reason: `El modelo con chasis ${code.toUpperCase()} ("${m.label}") ya está registrado en el catálogo de Carvault.`
+                    };
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 4. Comprobar en historial de solicitudes de la base de datos
+      if (registry && registry.records) {
+        for (const record of registry.records) {
+          if (record.status === 'dismissed') continue;
+
+          const normRecord = record.normalizedText || clientNormalize(record.text);
+          const recordTokens = record.matchedTokens || clientTokenize(record.text);
+
+          if (normInput === normRecord) {
+            return {
+              allowed: false,
+              reason: `Ya existe una solicitud abierta para este modelo (Issue #${record.issueNumber || 'registrada'}). Nuestro equipo ya está trabajando en ella.`
+            };
+          }
+
+          if (inputTokens.length >= 2 && recordTokens.length >= 2) {
+            const intersection = inputTokens.filter(t => recordTokens.includes(t));
+            const union = new Set([...inputTokens, ...recordTokens]);
+            const similarity = intersection.length / union.size;
+
+            if (similarity >= 0.65 || (intersection.length >= 2 && intersection.length === inputTokens.length)) {
+              return {
+                allowed: false,
+                reason: `Ya existe una propuesta similar registrada para "${record.text}" (Issue #${record.issueNumber || 'activa'}). Se añadirá relevancia a la existente.`
+              };
+            }
+          }
+        }
+      }
+
+      return { allowed: true };
+    }
+
+    // Envío del formulario y filtro Middleware
     if (requestForm) {
       requestForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -773,6 +896,30 @@ const brandsJson = JSON.stringify(BRANDS);
         submitSpinner.classList.remove('hidden');
         feedbackMsg.classList.add('hidden');
 
+        // 1. Evaluación directa por Middleware en el cliente
+        const evalResult = evaluateClientMiddleware(textVal);
+        if (!evalResult.allowed) {
+          submitBtn.disabled = false;
+          submitBtnText.textContent = 'Enviar solicitud';
+          submitSpinner.classList.add('hidden');
+
+          feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-amber-500/10 border-amber-500/30 text-amber-300';
+          feedbackMsg.innerHTML = `
+            <div class="flex items-start gap-2">
+              <span>⚠️</span>
+              <div>
+                <p class="font-bold">Solicitud no enviada:</p>
+                <p class="mt-0.5 text-slate-300">${evalResult.reason}</p>
+              </div>
+            </div>
+          `;
+          feedbackMsg.classList.remove('hidden');
+          return;
+        }
+
+        // 2. Si pasa el filtro middleware, intentamos el endpoint del backend si existiera,
+        // o generamos el enlace directo con pre-llenado en GitHub Issues para entorno estático CDN
+        let handledByServer = false;
         try {
           const res = await fetch('/carvault/api/request-model', {
             method: 'POST',
@@ -780,53 +927,75 @@ const brandsJson = JSON.stringify(BRANDS);
             body: JSON.stringify({ text: textVal })
           });
 
-          const data = await res.json();
-
-          if (res.ok && data.success) {
-            // Éxito: issue creada / registrada
-            feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-emerald-500/10 border-emerald-500/30 text-emerald-300';
-            feedbackMsg.innerHTML = `
-              <div class="flex items-start gap-2">
-                <span>✅</span>
-                <div>
-                  <p class="font-bold">${data.message}</p>
-                  ${data.record?.issueUrl ? `<a href="${data.record.issueUrl}" target="_blank" class="mt-1 inline-block text-cyan-400 hover:underline">Ver Issue en GitHub ↗</a>` : ''}
+          if (res.ok) {
+            const data = await res.json();
+            if (data.success) {
+              handledByServer = true;
+              feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-emerald-500/10 border-emerald-500/30 text-emerald-300';
+              feedbackMsg.innerHTML = `
+                <div class="flex items-start gap-2">
+                  <span>✅</span>
+                  <div>
+                    <p class="font-bold">${data.message}</p>
+                    ${data.record?.issueUrl ? `<a href="${data.record.issueUrl}" target="_blank" class="mt-1 inline-block text-cyan-400 hover:underline">Ver Issue en GitHub ↗</a>` : ''}
+                  </div>
                 </div>
-              </div>
-            `;
-            feedbackMsg.classList.remove('hidden');
-            if (requestInput) requestInput.value = '';
-            if (charCountLabel) charCountLabel.textContent = '0 / 250';
-
-            // Cerrar tras 3.5 segundos de confirmación
-            setTimeout(() => {
-              closeRequestModal();
-            }, 3500);
-
-          } else {
-            // Rechazo por filtro middleware o error de validación
-            feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-amber-500/10 border-amber-500/30 text-amber-300';
-            feedbackMsg.innerHTML = `
-              <div class="flex items-start gap-2">
-                <span>⚠️</span>
-                <div>
-                  <p class="font-bold">Solicitud no enviada:</p>
-                  <p class="mt-0.5 text-slate-300">${data.error || 'No cumple los requisitos de validación.'}</p>
-                </div>
-              </div>
-            `;
-            feedbackMsg.classList.remove('hidden');
+              `;
+              feedbackMsg.classList.remove('hidden');
+              if (requestInput) requestInput.value = '';
+              if (charCountLabel) charCountLabel.textContent = '0 / 250';
+              setTimeout(() => { closeRequestModal(); }, 3500);
+            }
           }
-
-        } catch (fetchErr) {
-          feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-red-500/10 border-red-500/30 text-red-300';
-          feedbackMsg.textContent = 'Error de conexión al enviar la propuesta. Comprueba tu red.';
-          feedbackMsg.classList.remove('hidden');
-        } finally {
-          submitBtn.disabled = false;
-          submitBtnText.textContent = 'Enviar solicitud';
-          submitSpinner.classList.add('hidden');
+        } catch (ignored) {
+          // Entorno estático (GitHub Pages): fallback transparente
         }
+
+        if (!handledByServer) {
+          // Entorno Estático GitHub Pages:
+          // El filtro middleware ya ha VALIDADO que el modelo es nuevo, no existe en el catálogo y no está duplicado.
+          // Abrimos el formulario pre-rellenado de GitHub Issue oficial.
+          const issueTitle = encodeURIComponent(`[Propuesta de Vehículo]: ${textVal.slice(0, 60)}`);
+          const issueBody = encodeURIComponent(`### 🚗 Solicitud de Modelo / Marca en Carvault
+
+**Descripción solicitada por el usuario:**
+> ${textVal}
+
+---
+*Filtro Middleware de Carvault: Verificado (aprobado contra catálogo de 200 vehículos y solicitudes activas)*
+- **Fecha:** ${new Date().toLocaleString()}
+- **Estado:** Pendiente de revisión y catalogación`);
+
+          const issueUrl = `https://github.com/amglogicalis/carvault/issues/new?title=${issueTitle}&body=${issueBody}&labels=enhancement`;
+
+          feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-emerald-500/10 border-emerald-500/30 text-emerald-300';
+          feedbackMsg.innerHTML = `
+            <div class="flex items-start gap-2">
+              <span>✅</span>
+              <div>
+                <p class="font-bold">¡Validación superada por el filtro!</p>
+                <p class="mt-0.5 text-slate-300">Se abrirá GitHub para confirmar el registro de la propuesta en el repositorio.</p>
+                <a href="${issueUrl}" target="_blank" class="mt-2 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all">
+                  <span>Confirmar y abrir Issue en GitHub ↗</span>
+                </a>
+              </div>
+            </div>
+          `;
+          feedbackMsg.classList.remove('hidden');
+
+          // Abrir automáticamente la pestaña de nueva issue tras 800ms
+          setTimeout(() => {
+            window.open(issueUrl, '_blank');
+          }, 800);
+
+          if (requestInput) requestInput.value = '';
+          if (charCountLabel) charCountLabel.textContent = '0 / 250';
+          setTimeout(() => { closeRequestModal(); }, 4000);
+        }
+
+        submitBtn.disabled = false;
+        submitBtnText.textContent = 'Enviar solicitud';
+        submitSpinner.classList.add('hidden');
       });
     }
 
