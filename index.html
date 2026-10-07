@@ -558,16 +558,35 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
         }
 
         // 2. Procesamiento de la solicitud verificada
-        submitBtnText.textContent = 'Catalogando propuesta...';
+        submitBtnText.textContent = 'Procesando en Morph...';
 
-        // Si estamos en entorno de desarrollo local con API Node activa:
+        // Preparamos los datos del issue formateado y aprobado por el middleware
+        const issueTitle = encodeURIComponent(`[Propuesta de Vehículo]: ${textVal.slice(0, 60)}`);
+        const issueBody = encodeURIComponent(`### 🚗 Solicitud de Modelo / Marca en Carvault
+
+**Descripción solicitada por el usuario:**
+> ${textVal}
+
+---
+*Filtro Middleware de Carvault: Verificado (aprobado contra catálogo de vehículos y solicitudes activas)*
+- **Fecha:** ${new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}
+- **Estado:** Pendiente de revisión y catalogación`);
+
+        const githubIssueUrl = `https://github.com/amglogicalis/carvault/issues/new?title=${issueTitle}&body=${issueBody}&labels=enhancement`;
+
+        // Si estamos en entorno local con API Node activa, disparamos creación silenciosa:
+        let createdLocally = false;
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
           try {
-            await fetch('/carvault/api/request-model', {
+            const localRes = await fetch('/carvault/api/request-model', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ text: textVal })
             });
+            if (localRes.ok) {
+              const data = await localRes.json();
+              if (data.success) createdLocally = true;
+            }
           } catch (ignored) {}
         }
 
@@ -585,22 +604,39 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
           <div class="flex items-start gap-3">
             <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-sm shrink-0">✓</div>
             <div>
-              <p class="font-bold text-sm text-white">¡Propuesta enviada y verificada!</p>
+              <p class="font-bold text-sm text-white">¡Propuesta verificada con éxito!</p>
               <p class="mt-1 text-slate-300 leading-relaxed">
-                El <strong class="text-cyan-400">Terra Async Morph</strong> ha recibido la solicitud para <em>"${textVal}"</em>. Se catalogará y publicará en la próxima actualización.
+                El filtro ha aprobado <em>"${textVal}"</em>. Confirmando registro en el repositorio...
               </p>
+              <div class="mt-2.5">
+                <a 
+                  href="${githubIssueUrl}" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md shadow-cyan-500/20"
+                >
+                  <span>Abrir Issue oficial en GitHub ↗</span>
+                </a>
+              </div>
             </div>
           </div>
         `;
         feedbackMsg.classList.remove('hidden');
 
+        // Si no estamos en local, abrimos automáticamente la pestaña pre-rellenada tras 600ms
+        if (!createdLocally) {
+          setTimeout(() => {
+            window.open(githubIssueUrl, '_blank');
+          }, 600);
+        }
+
         if (requestInput) requestInput.value = '';
         if (charCountLabel) charCountLabel.textContent = '0 / 250';
 
-        // Cierre automático del modal tras 3 segundos
+        // Cierre automático del modal tras 4.5 segundos
         setTimeout(() => {
           closeRequestModal();
-        }, 3000);
+        }, 4500);
 
         submitBtn.disabled = false;
         submitBtnText.textContent = 'Enviar solicitud';
