@@ -150,6 +150,24 @@ const brandsJson = JSON.stringify(BRANDS);
       <!-- Inyectado por JS -->
     </div>
 
+    <!-- Estado Inicial: Invita a buscar o seleccionar marca -->
+    <div id="globalInitialState" class="text-center py-12 px-6 bg-slate-900/40 border border-slate-800/80 rounded-3xl max-w-xl mx-auto shadow-xl">
+      <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mx-auto mb-3 text-2xl">
+        ⌨️
+      </div>
+      <h3 class="text-base font-bold text-white">Escribe en el buscador para ver vehículos coincidentes</h3>
+      <p class="text-xs text-slate-400 mt-2 max-w-md mx-auto leading-relaxed">
+        Para mantener una navegación rápida y limpia, las imágenes de los modelos se cargan únicamente cuando buscas un coche o si pulsas una marca específica a continuación para abrir su catálogo completo.
+      </p>
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-2">
+        <span class="text-[11px] font-mono text-slate-500">Pruebas rápidas:</span>
+        <button onclick="document.getElementById('globalSearchInput').value='M3'; document.getElementById('globalSearchInput').dispatchEvent(new Event('input'))" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-cyan-300 transition-colors cursor-pointer border border-slate-700">M3</button>
+        <button onclick="document.getElementById('globalSearchInput').value='E30'; document.getElementById('globalSearchInput').dispatchEvent(new Event('input'))" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-cyan-300 transition-colors cursor-pointer border border-slate-700">E30</button>
+        <button onclick="document.getElementById('globalSearchInput').value='Z4'; document.getElementById('globalSearchInput').dispatchEvent(new Event('input'))" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-cyan-300 transition-colors cursor-pointer border border-slate-700">Z4</button>
+        <button onclick="document.getElementById('globalSearchInput').value='G90'; document.getElementById('globalSearchInput').dispatchEvent(new Event('input'))" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-cyan-300 transition-colors cursor-pointer border border-slate-700">G90</button>
+      </div>
+    </div>
+
     <!-- Empty State -->
     <div id="globalEmptyState" class="hidden text-center py-12 px-4 bg-slate-900/40 border border-slate-800 rounded-3xl max-w-md mx-auto">
       <div class="w-14 h-14 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-center mx-auto mb-3 text-slate-400 text-xl">
@@ -288,26 +306,60 @@ const brandsJson = JSON.stringify(BRANDS);
     </div>
   </section>
 
-  <!-- Sección API Pública -->
+  <!-- Sección API Pública Central Gateway -->
   <section id="api" class="border-t border-slate-900 bg-slate-950 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">API Pública & Gratuita Carvault</h2>
         <p class="mt-2 text-sm text-slate-400">
-          Disponibilidad inmediata de endpoints abiertos para alimentar tus aplicaciones con datos automotrices y fotografías frontales limpias.
+          Disponibilidad inmediata de endpoints abiertos y unificados para alimentar tus aplicaciones con datos automotrices y fotografías frontales limpias.
         </p>
       </div>
 
-      <div class="mt-8 max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 font-mono text-xs">
-        <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
-          <span>GET Endpoint BMW Completo (Incluye Gama M)</span>
-          <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">CORS Habilitado • $0 Coste</span>
+      <!-- Grid de Endpoints: Central Gateway y Por Marca -->
+      <div class="mt-8 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Endpoint Central Gateway -->
+        <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-xl">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-white font-bold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                API Central Gateway (Todas las Marcas)
+              </span>
+              <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px]">CORS • Global</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Punto de acceso unificado con listado maestro de marcas, estadísticas globales y todos los vehículos catalogados con vistas frontales.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/carvault.json</code>
+            <a href="/api/v1/carvault.json" target="_blank" class="text-xs text-slate-300 hover:text-white px-2.5 py-1 rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 font-sans font-bold transition-all">
+              Probar JSON ↗
+            </a>
+          </div>
         </div>
-        <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-3 rounded-lg border border-slate-800">
-          <code>GET /api/v1/bmw.json</code>
-          <a href="/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-slate-800 transition-colors">
-            Probar JSON en vivo ↗
-          </a>
+
+        <!-- Endpoint Monomarca BMW -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-slate-200 font-bold flex items-center gap-1.5">
+                <img src="/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
+                Endpoint Específico BMW
+              </span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • 200 coches</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Consulta de alta granularidad especializada en BMW: desglosa códigos de carrocería, variantes y paquetes M.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/bmw.json</code>
+            <a href="/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -352,6 +404,7 @@ const brandsJson = JSON.stringify(BRANDS);
     const applyYearsBtn = document.getElementById('globalApplyYearsBtn');
     const resultsCount = document.getElementById('globalResultsCount');
     const resetFiltersBtn = document.getElementById('globalResetFiltersBtn');
+    const initialState = document.getElementById('globalInitialState');
     const emptyState = document.getElementById('globalEmptyState');
     const emptyResetBtn = document.getElementById('globalEmptyResetBtn');
 
@@ -434,6 +487,19 @@ const brandsJson = JSON.stringify(BRANDS);
         resetFiltersBtn.classList.remove('inline-flex');
       }
 
+      // Requerimiento: No cargar todos los coches a no ser que el usuario busque algo o filtre
+      const isSearchActive = !!globalSearchQuery || globalEra !== 'all' || globalConcept !== 'all';
+
+      if (!isSearchActive) {
+        grid.innerHTML = '';
+        if (initialState) initialState.classList.remove('hidden');
+        if (emptyState) emptyState.classList.add('hidden');
+        resultsCount.textContent = `Buscador listo • Selecciona una marca abajo o escribe un modelo para ver sus fotos frontales`;
+        return;
+      }
+
+      if (initialState) initialState.classList.add('hidden');
+
       const filtered = allCars.filter(c => {
         // Filtro Conceptos
         if (globalConcept === 'production' && c.section === 'prototypes') return false;
@@ -461,7 +527,7 @@ const brandsJson = JSON.stringify(BRANDS);
         return 0;
       });
 
-      resultsCount.textContent = `Mostrando ${filtered.length} de ${allCars.length} coches disponibles`;
+      resultsCount.textContent = `Mostrando ${filtered.length} vehículo${filtered.length === 1 ? '' : 's'} coincidentes`;
 
       if (filtered.length === 0) {
         grid.innerHTML = '';

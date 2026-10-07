@@ -367,15 +367,30 @@ const modelsJson = JSON.stringify(catalog.generations);
         </p>
       </div>
 
-      <div class="mt-8 max-w-3xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 font-mono text-xs">
-        <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
-          <span>GET Endpoint BMW Completo (Incluye Gama M)</span>
-          <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">CORS Habilitado • $0 Coste</span>
+      <div class="mt-8 max-w-3xl mx-auto space-y-4">
+        <!-- Endpoint específico BMW -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 font-mono text-xs shadow-xl">
+          <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+            <span class="text-white font-bold flex items-center gap-1.5">
+              <img src="/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
+              GET Endpoint Monomarca BMW (Específico)
+            </span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">CORS Habilitado • Monomarca</span>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <code>GET /api/v1/bmw.json</code>
+            <a href="/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 font-sans font-bold transition-all">
+              Probar JSON en vivo ↗
+            </a>
+          </div>
         </div>
-        <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-3 rounded-lg border border-slate-800">
-          <code>GET /api/v1/bmw.json</code>
-          <a href="/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-slate-800 transition-colors">
-            Probar JSON en vivo ↗
+
+        <!-- Enlace al Gateway Central -->
+        <div class="text-center">
+          <a href="/#api" class="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400 hover:text-cyan-400 transition-colors">
+            <span>¿Buscas todas las marcas? Consulta el Gateway Central en</span>
+            <code class="text-cyan-400">/api/v1/carvault.json</code>
+            <span>→</span>
           </a>
         </div>
       </div>
