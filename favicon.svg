@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Gradiente exterior del hexágono / escudo -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Gradiente del fondo oscuro del escudo -->
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Gradiente de los faros cian de alta tecnología -->
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Brillo superior -->
+    <linearGradient id="glowTop" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Escudo Protector Hexagonal / Bóveda (Vault) -->
+  <path d="M256 24 L440 96 V256 C440 372 256 480 256 480 C256 480 72 372 72 256 V96 Z" 
+        fill="url(#darkBg)" 
+        stroke="url(#shieldGrad)" 
+        stroke-width="16" 
+        stroke-linejoin="round" />
+
+  <!-- Línea interior de acento en el escudo -->
+  <path d="M256 48 L416 112 V250 C416 348 256 444 256 444 C256 444 96 348 96 250 V112 Z" 
+        fill="url(#glowTop)" 
+        opacity="0.3" />
+
+  <!-- Silueta Frontal del Superdeportivo (Carvault Frontal Signature) -->
+  <!-- 1. Cabina y Techo aerodinámico -->
+  <path d="M190 200 L216 138 C220 128 230 122 242 122 H270 C282 122 292 128 296 138 L322 200 Z" 
+        fill="#0f172a" 
+        stroke="url(#shieldGrad)" 
+        stroke-width="10" 
+        stroke-linejoin="round" />
+
+  <!-- Parabrisas con tinte azulado -->
+  <polygon points="204,194 224,142 288,142 308,194" fill="#0284c7" opacity="0.4" />
+
+  <!-- 2. Carrocería Frontal y Hombros -->
+  <path d="M140 236 C140 216 160 204 184 204 H328 C352 204 372 216 372 236 L384 286 C386 294 380 302 372 302 H140 C132 302 126 294 128 286 Z" 
+        fill="#1e293b" 
+        stroke="url(#shieldGrad)" 
+        stroke-width="12" 
+        stroke-linejoin="round" />
+
+  <!-- 3. Ópticas LED Frontales Afiladas (Frontal Lights) -->
+  <!-- Faro Izquierdo -->
+  <polygon points="152,246 208,246 196,258 146,254" fill="url(#lightGrad)" />
+  <circle cx="178" cy="251" r="3" fill="#ffffff" />
+
+  <!-- Faro Derecho -->
+  <polygon points="360,246 304,246 316,258 366,254" fill="url(#lightGrad)" />
+  <circle cx="334" cy="251" r="3" fill="#ffffff" />
+
+  <!-- 4. Parrilla / Difusor Frontal e Icono "V" de Vault -->
+  <path d="M200 270 H312 L300 320 C296 332 284 340 272 340 H240 C228 340 216 332 212 320 Z" 
+        fill="#020617" 
+        stroke="url(#lightGrad)" 
+        stroke-width="8" />
+
+  <!-- Rejillas aerodinámicas de la parrilla -->
+  <line x1="226" y1="282" x2="286" y2="282" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  <line x1="234" y1="298" x2="278" y2="298" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+  <line x1="242" y1="314" x2="270" y2="314" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+
+  <!-- 5. Splitter Inferior de Competición -->
+  <path d="M132 320 L168 320 L188 346 H324 L344 320 L380 320 L368 348 C364 358 354 364 344 364 H168 C158 364 148 358 144 348 Z" 
+        fill="#0284c7" 
+        opacity="0.9" />
+
+  <!-- Detalle Emblema Central "C" + "V" Estilizado en el morro -->
+  <path d="M256 220 L268 238 H244 Z" fill="#38bdf8" />
+</svg>
