@@ -4,6 +4,7 @@
     "BMW 1602",
     "BMW 1802",
     "BMW 2002",
+    "BMW 2002 turbo (E20)",
     "BMW 2000 touring",
     "BMW 1 Series M Coupe",
     "BMW ActiveE",
@@ -25,7 +26,9 @@
     "BMW E21",
     "BMW E30",
     "BMW M3 (E30)",
+    "BMW Z3 M (E36/7)",
     "BMW E46",
+    "BMW M3 (E46/2S)",
     "BMW M3 (E46)",
     "BMW M3 (E90)",
     "BMW E92",
@@ -35,6 +38,7 @@
     "BMW i3 eDrive35L",
     "BMW F34",
     "BMW M3",
+    "BMW M3 CSL (E46)",
     "BMW 3/15HP",
     "BMW 3/15HP Jhle-Roadster",
     "BMW 303",
@@ -51,6 +55,7 @@
     "BMW 335",
     "BMW F32",
     "BMW i4",
+    "BMW M4 CSL",
     "BMW E39 (1995)",
     "BMW M5 (F10)",
     "BMW i5",
@@ -61,11 +66,11 @@
     "BMW 507",
     "BMW E63",
     "BMW E64",
+    "BMW M6 (F06)",
     "BMW F12",
     "BMW E24",
     "BMW 6 Series Gran Turismo",
     "BMW M6",
-    "BMW M6 (F06)",
     "BMW 600",
     "BMW E23",
     "BMW E32",
@@ -87,7 +92,6 @@
     "BMW iX",
     "BMW M1",
     "BMW XM",
-    "BMW Z3 M (E36/7)",
     "BMW New Class",
     "BMW 1500",
     "BMW New Six",
@@ -101,8 +105,8 @@
     "BMW X3",
     "BMW E83",
     "BMW F25",
-    "BMW G45",
     "BMW iX3 G08",
+    "BMW G45",
     "BMW iX3 NA5",
     "BMW X4",
     "BMW F26",
@@ -147,6 +151,16 @@
       "parent": "BMW 2002"
     },
     {
+      "category": "BMW 2002 ti Alpina",
+      "depth": 4,
+      "parent": "BMW 2002 Alpina"
+    },
+    {
+      "category": "BMW 2002 tii Alpina",
+      "depth": 4,
+      "parent": "BMW 2002 Alpina"
+    },
+    {
       "category": "50º aniversario del BMW 2002 en Uruguay",
       "depth": 3,
       "parent": "BMW 2002"
@@ -162,14 +176,29 @@
       "parent": "BMW 2002"
     },
     {
+      "category": "BMW 2002 Hommage",
+      "depth": 4,
+      "parent": "BMW 2002 sedans"
+    },
+    {
       "category": "BMW 2002 ti",
       "depth": 3,
       "parent": "BMW 2002"
     },
     {
+      "category": "BMW Garmisch",
+      "depth": 4,
+      "parent": "BMW 2002 ti"
+    },
+    {
       "category": "BMW 2002 tii",
       "depth": 3,
       "parent": "BMW 2002"
+    },
+    {
+      "category": "BMW 2002 tii touring",
+      "depth": 4,
+      "parent": "BMW 2002 tii"
     },
     {
       "category": "BMW 2002 Touring",
@@ -207,6 +236,11 @@
       "parent": "BMW 00 touring Series"
     },
     {
+      "category": "BMW 2000 tii touring",
+      "depth": 4,
+      "parent": "BMW 2000 touring"
+    },
+    {
       "category": "BMW 1 Series",
       "depth": 1,
       "parent": "BMW automobiles by model"
@@ -220,6 +254,11 @@
       "category": "BMW E82",
       "depth": 2,
       "parent": "BMW 1 Series"
+    },
+    {
+      "category": "BMW Concept ActiveE",
+      "depth": 4,
+      "parent": "BMW ActiveE"
     },
     {
       "category": "BMW Concept 1 Series tii",
@@ -307,14 +346,34 @@
       "parent": "BMW 2 Series"
     },
     {
+      "category": "BMW F45 development mules",
+      "depth": 4,
+      "parent": "BMW F45"
+    },
+    {
       "category": "BMW U06",
       "depth": 3,
       "parent": "BMW 2 Series Active Tourer"
     },
     {
+      "category": "BMW U06 PHEV",
+      "depth": 4,
+      "parent": "BMW U06"
+    },
+    {
       "category": "BMW M2 (F87)",
       "depth": 3,
       "parent": "BMW F22"
+    },
+    {
+      "category": "BMW M2 Competition",
+      "depth": 4,
+      "parent": "BMW M2 (F87)"
+    },
+    {
+      "category": "BMW M2 CS (F87)",
+      "depth": 4,
+      "parent": "BMW M2 (F87)"
     },
     {
       "category": "BMW F22 M235i",
@@ -342,6 +401,16 @@
       "parent": "BMW G42"
     },
     {
+      "category": "BMW M2 CS (G87)",
+      "depth": 4,
+      "parent": "BMW M2 (G87)"
+    },
+    {
+      "category": "Tune it safe! campaign car 2025",
+      "depth": 4,
+      "parent": "BMW M2 (G87)"
+    },
+    {
       "category": "BMW G42 M240i",
       "depth": 3,
       "parent": "BMW G42"
@@ -350,6 +419,16 @@
       "category": "BMW 2 Series Gran Coupé",
       "depth": 2,
       "parent": "BMW 2 Series"
+    },
+    {
+      "category": "BMW F44 M235i",
+      "depth": 4,
+      "parent": "BMW F44"
+    },
+    {
+      "category": "BMW F74 M235",
+      "depth": 4,
+      "parent": "BMW F74"
     },
     {
       "category": "BMW 2 Series Gran Tourer",
@@ -362,19 +441,14 @@
       "parent": "BMW 2 Series Gran Tourer"
     },
     {
+      "category": "BMW F46 development mules",
+      "depth": 4,
+      "parent": "BMW F46"
+    },
+    {
       "category": "BMW 2 Series M",
       "depth": 2,
       "parent": "BMW 2 Series"
-    },
-    {
-      "category": "BMW F74 M235",
-      "depth": 3,
-      "parent": "BMW 2 Series M"
-    },
-    {
-      "category": "BMW F44 M235i",
-      "depth": 3,
-      "parent": "BMW 2 Series M"
     },
     {
       "category": "BMW M2 CS",
@@ -422,11 +496,6 @@
       "parent": "BMW 2000"
     },
     {
-      "category": "BMW 2000 tii touring",
-      "depth": 3,
-      "parent": "BMW 2000 tii"
-    },
-    {
       "category": "BMW 2800",
       "depth": 1,
       "parent": "BMW automobiles by model"
@@ -455,6 +524,11 @@
       "category": "BMW 316d",
       "depth": 3,
       "parent": "BMW 316"
+    },
+    {
+      "category": "BMW 316d E91",
+      "depth": 4,
+      "parent": "BMW 316d"
     },
     {
       "category": "BMW 316 E21",
@@ -487,9 +561,34 @@
       "parent": "BMW 318"
     },
     {
+      "category": "BMW 318d (E90)",
+      "depth": 4,
+      "parent": "BMW 318d"
+    },
+    {
+      "category": "BMW 318d E91",
+      "depth": 4,
+      "parent": "BMW 318d"
+    },
+    {
+      "category": "BMW 318d (F30)",
+      "depth": 4,
+      "parent": "BMW 318d"
+    },
+    {
       "category": "BMW 318i",
       "depth": 3,
       "parent": "BMW 318"
+    },
+    {
+      "category": "BMW 318i (E90)",
+      "depth": 4,
+      "parent": "BMW 318i"
+    },
+    {
+      "category": "BMW 318i E91",
+      "depth": 4,
+      "parent": "BMW 318i"
     },
     {
       "category": "BMW 318 E21",
@@ -500,6 +599,11 @@
       "category": "BMW 318 E30",
       "depth": 3,
       "parent": "BMW 318"
+    },
+    {
+      "category": "BMW 318is (E30)",
+      "depth": 4,
+      "parent": "BMW 318 E30"
     },
     {
       "category": "BMW 318 E36",
@@ -547,6 +651,11 @@
       "parent": "BMW 320i"
     },
     {
+      "category": "BMW 320si (E90)",
+      "depth": 4,
+      "parent": "BMW 320i (E90)"
+    },
+    {
       "category": "BMW 320i E91",
       "depth": 3,
       "parent": "BMW 320i"
@@ -582,6 +691,11 @@
       "parent": "BMW 323"
     },
     {
+      "category": "BMW 323i (E90)",
+      "depth": 4,
+      "parent": "BMW 323i"
+    },
+    {
       "category": "BMW 325",
       "depth": 2,
       "parent": "BMW 3 Series"
@@ -592,9 +706,34 @@
       "parent": "BMW 325"
     },
     {
+      "category": "BMW 325d (E90)",
+      "depth": 4,
+      "parent": "BMW 325d"
+    },
+    {
+      "category": "BMW 325d E91",
+      "depth": 4,
+      "parent": "BMW 325d"
+    },
+    {
       "category": "BMW 325i",
       "depth": 3,
       "parent": "BMW 325"
+    },
+    {
+      "category": "BMW 325i (E90)",
+      "depth": 4,
+      "parent": "BMW 325i"
+    },
+    {
+      "category": "BMW 325i E91",
+      "depth": 4,
+      "parent": "BMW 325i"
+    },
+    {
+      "category": "BMW 325xi",
+      "depth": 4,
+      "parent": "BMW 325i"
     },
     {
       "category": "BMW 325 E30",
@@ -632,6 +771,11 @@
       "parent": "BMW 328i"
     },
     {
+      "category": "BMW 328xi (E90)",
+      "depth": 4,
+      "parent": "BMW 328i (E90)"
+    },
+    {
       "category": "BMW 328i E91",
       "depth": 3,
       "parent": "BMW 328i"
@@ -640,6 +784,11 @@
       "category": "BMW 328i (F30)",
       "depth": 3,
       "parent": "BMW 328i"
+    },
+    {
+      "category": "Festival automobile international 2012 - BMW 328",
+      "depth": 4,
+      "parent": "BMW 328i (F30)"
     },
     {
       "category": "BMW 328xi",
@@ -657,9 +806,39 @@
       "parent": "BMW 330"
     },
     {
+      "category": "BMW E46 330d (Top Gear 2007 Britcar)",
+      "depth": 4,
+      "parent": "BMW 330d"
+    },
+    {
+      "category": "BMW 330d (E90)",
+      "depth": 4,
+      "parent": "BMW 330d"
+    },
+    {
+      "category": "BMW 330d E91",
+      "depth": 4,
+      "parent": "BMW 330d"
+    },
+    {
+      "category": "BMW 330xd",
+      "depth": 4,
+      "parent": "BMW 330d"
+    },
+    {
       "category": "BMW 330e",
       "depth": 3,
       "parent": "BMW 330"
+    },
+    {
+      "category": "BMW 330e (F30)",
+      "depth": 4,
+      "parent": "BMW 330e"
+    },
+    {
+      "category": "BMW 330e (G20)",
+      "depth": 4,
+      "parent": "BMW 330e"
     },
     {
       "category": "BMW 330 E91",
@@ -667,9 +846,49 @@
       "parent": "BMW 330"
     },
     {
+      "category": "BMW 330i (E91)",
+      "depth": 4,
+      "parent": "BMW 330 E91"
+    },
+    {
       "category": "BMW 330i",
       "depth": 3,
       "parent": "BMW 330"
+    },
+    {
+      "category": "BMW 330Ci",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330i (E46/3)",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330i (E46/4)",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330i (E90)",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330i (E92)",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330i (E93)",
+      "depth": 4,
+      "parent": "BMW 330i"
+    },
+    {
+      "category": "BMW 330xi",
+      "depth": 4,
+      "parent": "BMW 330i"
     },
     {
       "category": "BMW 335d",
@@ -697,9 +916,19 @@
       "parent": "BMW 335i"
     },
     {
+      "category": "BMW 335xi (E90)",
+      "depth": 4,
+      "parent": "BMW 335i (E90)"
+    },
+    {
       "category": "BMW 335i E91",
       "depth": 3,
       "parent": "BMW 335i"
+    },
+    {
+      "category": "BMW 335xi E91",
+      "depth": 4,
+      "parent": "BMW 335i E91"
     },
     {
       "category": "BMW 335i (E92)",
@@ -735,6 +964,16 @@
       "category": "Alpina B3 (E36)",
       "depth": 3,
       "parent": "Alpina B3"
+    },
+    {
+      "category": "Alpina B3 3,2",
+      "depth": 4,
+      "parent": "Alpina B3 (E36)"
+    },
+    {
+      "category": "Alpina B3 3.0",
+      "depth": 4,
+      "parent": "Alpina B3 (E36)"
     },
     {
       "category": "Alpina B3 (E46)",
@@ -822,6 +1061,21 @@
       "parent": "BMW Compact"
     },
     {
+      "category": "BMW E36 Compact Norfolk Arena Drift Team",
+      "depth": 4,
+      "parent": "BMW Compact E36"
+    },
+    {
+      "category": "Karmann K2",
+      "depth": 4,
+      "parent": "BMW Compact E36"
+    },
+    {
+      "category": "BMW E36 Compacts with BMW M3 engines",
+      "depth": 4,
+      "parent": "BMW Compact E36"
+    },
+    {
       "category": "BMW Compact E46",
       "depth": 3,
       "parent": "BMW Compact"
@@ -837,9 +1091,24 @@
       "parent": "BMW E21"
     },
     {
+      "category": "BMW 320i (E21) Group 5",
+      "depth": 4,
+      "parent": "BMW 320 E21"
+    },
+    {
       "category": "BMW E21 (Alpina)",
       "depth": 3,
       "parent": "BMW E21"
+    },
+    {
+      "category": "Alpina B6 (E21)",
+      "depth": 4,
+      "parent": "BMW E21 (Alpina)"
+    },
+    {
+      "category": "BMW Alpina C1 2.3 TWR",
+      "depth": 4,
+      "parent": "BMW E21 (Alpina)"
     },
     {
       "category": "BMW Baur TopCabriolet 1",
@@ -857,14 +1126,29 @@
       "parent": "BMW E30"
     },
     {
+      "category": "BMW E30/5",
+      "depth": 4,
+      "parent": "BMW E30 Facelift"
+    },
+    {
       "category": "BMW E30/2",
       "depth": 3,
       "parent": "BMW E30"
     },
     {
+      "category": "BMW Baur TopCabriolet 2",
+      "depth": 4,
+      "parent": "BMW E30/2"
+    },
+    {
       "category": "BMW E30/2C",
       "depth": 3,
       "parent": "BMW E30"
+    },
+    {
+      "category": "BMW M3 convertible (E30)",
+      "depth": 4,
+      "parent": "BMW E30/2C"
     },
     {
       "category": "BMW 324d E30",
@@ -882,6 +1166,26 @@
       "parent": "BMW E30"
     },
     {
+      "category": "Alpina C1 2.3/1",
+      "depth": 4,
+      "parent": "BMW E30 (Alpina)"
+    },
+    {
+      "category": "Alpina C2 2,7",
+      "depth": 4,
+      "parent": "BMW E30 (Alpina)"
+    },
+    {
+      "category": "Alpina B6 (E30)",
+      "depth": 4,
+      "parent": "BMW E30 (Alpina)"
+    },
+    {
+      "category": "BMW M3 (E30) Evolution II",
+      "depth": 4,
+      "parent": "BMW M3 (E30)"
+    },
+    {
       "category": "BMW E36",
       "depth": 2,
       "parent": "BMW 3 Series"
@@ -892,9 +1196,19 @@
       "parent": "BMW E36"
     },
     {
+      "category": "BMW M3 (E36/2S)",
+      "depth": 4,
+      "parent": "BMW E36/2"
+    },
+    {
       "category": "BMW E36/2C",
       "depth": 3,
       "parent": "BMW E36"
+    },
+    {
+      "category": "BMW M3 (E36/2CS)",
+      "depth": 4,
+      "parent": "BMW E36/2C"
     },
     {
       "category": "BMW E36/3",
@@ -912,9 +1226,24 @@
       "parent": "BMW E36"
     },
     {
+      "category": "BMW M3 (E36/4S)",
+      "depth": 4,
+      "parent": "BMW E36/4"
+    },
+    {
+      "category": "BMW Baur TopCabriolet 4",
+      "depth": 4,
+      "parent": "BMW E36/4"
+    },
+    {
       "category": "BMW E36/7",
       "depth": 3,
       "parent": "BMW E36"
+    },
+    {
+      "category": "BMW Z3 (GoldenEye)",
+      "depth": 4,
+      "parent": "BMW E36/7"
     },
     {
       "category": "BMW E36/8",
@@ -922,9 +1251,24 @@
       "parent": "BMW E36"
     },
     {
+      "category": "BMW Z3 M (E36/8)",
+      "depth": 4,
+      "parent": "BMW E36/8"
+    },
+    {
       "category": "BMW E36 (Alpina)",
       "depth": 3,
       "parent": "BMW E36"
+    },
+    {
+      "category": "Alpina B6 2.8 (E36)",
+      "depth": 4,
+      "parent": "BMW E36 (Alpina)"
+    },
+    {
+      "category": "Alpina B8 4.6",
+      "depth": 4,
+      "parent": "BMW E36 (Alpina)"
     },
     {
       "category": "BMW M3 (E36)",
@@ -942,14 +1286,39 @@
       "parent": "BMW E46"
     },
     {
+      "category": "BMW E46/2 330Ci",
+      "depth": 4,
+      "parent": "BMW E46/2"
+    },
+    {
+      "category": "Burning BMW E46",
+      "depth": 4,
+      "parent": "BMW E46/2"
+    },
+    {
       "category": "BMW E46/2C",
       "depth": 3,
       "parent": "BMW E46"
     },
     {
+      "category": "BMW E46/2C 330Ci",
+      "depth": 4,
+      "parent": "BMW E46/2C"
+    },
+    {
+      "category": "BMW M3 (E46/2CS)",
+      "depth": 4,
+      "parent": "BMW E46/2C"
+    },
+    {
       "category": "BMW E46/3",
       "depth": 3,
       "parent": "BMW E46"
+    },
+    {
+      "category": "BMW M3 (E46) Touring",
+      "depth": 4,
+      "parent": "BMW E46/3"
     },
     {
       "category": "BMW E46/4",
@@ -962,34 +1331,9 @@
       "parent": "BMW 3 Series"
     },
     {
-      "category": "BMW 318d (E90)",
-      "depth": 3,
-      "parent": "BMW E90"
-    },
-    {
-      "category": "BMW 318i (E90)",
-      "depth": 3,
-      "parent": "BMW E90"
-    },
-    {
-      "category": "BMW 323i (E90)",
-      "depth": 3,
-      "parent": "BMW E90"
-    },
-    {
-      "category": "BMW 330d (E90)",
-      "depth": 3,
-      "parent": "BMW E90"
-    },
-    {
-      "category": "BMW 330i (E90)",
-      "depth": 3,
-      "parent": "BMW E90"
-    },
-    {
-      "category": "BMW 330i (E92)",
-      "depth": 3,
-      "parent": "BMW E92"
+      "category": "BMW M3 CRT",
+      "depth": 4,
+      "parent": "BMW M3 (E90)"
     },
     {
       "category": "BMW M3 (E92)",
@@ -997,14 +1341,14 @@
       "parent": "BMW E92"
     },
     {
+      "category": "BMW M3 GTS (E92)",
+      "depth": 4,
+      "parent": "BMW M3 (E92)"
+    },
+    {
       "category": "BMW E93",
       "depth": 2,
       "parent": "BMW 3 Series"
-    },
-    {
-      "category": "BMW 330i (E93)",
-      "depth": 3,
-      "parent": "BMW E93"
     },
     {
       "category": "BMW M3 (E93)",
@@ -1017,19 +1361,24 @@
       "parent": "BMW F30"
     },
     {
+      "category": "2012 Summer Olympics torch relay BMW 4 door saloon cars",
+      "depth": 4,
+      "parent": "BMW F30 (2011)"
+    },
+    {
+      "category": "BMW ActiveHybrid 3",
+      "depth": 4,
+      "parent": "BMW F30 (2011)"
+    },
+    {
       "category": "BMW F30 (2015)",
       "depth": 3,
       "parent": "BMW F30"
     },
     {
-      "category": "BMW 318d (F30)",
-      "depth": 3,
-      "parent": "BMW F30"
-    },
-    {
-      "category": "BMW 330e (F30)",
-      "depth": 3,
-      "parent": "BMW F30"
+      "category": "BMW 340i (F30)",
+      "depth": 4,
+      "parent": "BMW F30 (2015)"
     },
     {
       "category": "BMW F30 (Alpina)",
@@ -1042,6 +1391,16 @@
       "parent": "BMW F30"
     },
     {
+      "category": "BMW M3 Competition (F80)",
+      "depth": 4,
+      "parent": "BMW M3 (F80)"
+    },
+    {
+      "category": "BMW M3 CS (F80)",
+      "depth": 4,
+      "parent": "BMW M3 (F80)"
+    },
+    {
       "category": "BMW F35",
       "depth": 2,
       "parent": "BMW 3 Series"
@@ -1052,9 +1411,19 @@
       "parent": "BMW G20"
     },
     {
-      "category": "BMW 330e (G20)",
-      "depth": 3,
-      "parent": "BMW G20"
+      "category": "BMW M340i (2022)",
+      "depth": 4,
+      "parent": "BMW G20 (2022)"
+    },
+    {
+      "category": "BMW M3 Competition (G80)",
+      "depth": 4,
+      "parent": "BMW M3 (G80)"
+    },
+    {
+      "category": "BMW M3 CS (G80)",
+      "depth": 4,
+      "parent": "BMW M3 (G80)"
     },
     {
       "category": "BMW G20 M340d",
@@ -1102,9 +1471,19 @@
       "parent": "BMW M3"
     },
     {
+      "category": "BMW M3 Competition (G81)",
+      "depth": 4,
+      "parent": "BMW M3 Competition"
+    },
+    {
       "category": "BMW M3 CS",
       "depth": 3,
       "parent": "BMW M3"
+    },
+    {
+      "category": "BMW M3 CS (G81)",
+      "depth": 4,
+      "parent": "BMW M3 CS"
     },
     {
       "category": "BMW M3 CSL",
@@ -1117,19 +1496,39 @@
       "parent": "BMW M3"
     },
     {
+      "category": "BMW M3 (G81)",
+      "depth": 4,
+      "parent": "BMW M3 Touring"
+    },
+    {
       "category": "BMW 3 Series Touring",
       "depth": 2,
       "parent": "BMW 3 Series"
     },
     {
-      "category": "BMW E30/5",
+      "category": "BMW E91",
       "depth": 3,
       "parent": "BMW 3 Series Touring"
     },
     {
-      "category": "BMW E91",
-      "depth": 3,
-      "parent": "BMW 3 Series Touring"
+      "category": "BMW 320 E91",
+      "depth": 4,
+      "parent": "BMW E91"
+    },
+    {
+      "category": "BMW 323i E91",
+      "depth": 4,
+      "parent": "BMW E91"
+    },
+    {
+      "category": "BMW 335 E91",
+      "depth": 4,
+      "parent": "BMW E91"
+    },
+    {
+      "category": "BMW E91 (Alpina)",
+      "depth": 4,
+      "parent": "BMW E91"
     },
     {
       "category": "BMW F31",
@@ -1140,6 +1539,16 @@
       "category": "BMW G21",
       "depth": 3,
       "parent": "BMW 3 Series Touring"
+    },
+    {
+      "category": "BMW G21 (2022)",
+      "depth": 4,
+      "parent": "BMW G21"
+    },
+    {
+      "category": "BMW G21 M340i",
+      "depth": 4,
+      "parent": "BMW G21"
     },
     {
       "category": "BMW 3.0 CSL",
@@ -1165,6 +1574,11 @@
       "category": "BMW 3.0 CSL Hommage R",
       "depth": 3,
       "parent": "BMW 3.0 CSL Hommage"
+    },
+    {
+      "category": "Festival automobile international 2016 - BMW 3.0 CSL Hommage",
+      "depth": 4,
+      "parent": "BMW 3.0 CSL Hommage R"
     },
     {
       "category": "BMW 3/20HP",
@@ -1332,6 +1746,11 @@
       "parent": "BMW 4 Series Gran Coupé"
     },
     {
+      "category": "BMW G26 M440i",
+      "depth": 4,
+      "parent": "BMW 4 Series Gran Coupé (G26)"
+    },
+    {
       "category": "BMW 4 Series Concept Coupe",
       "depth": 3,
       "parent": "BMW F32"
@@ -1345,6 +1764,16 @@
       "category": "BMW M4 (F83)",
       "depth": 3,
       "parent": "BMW F33"
+    },
+    {
+      "category": "BMW M4 (F83, 2017)",
+      "depth": 4,
+      "parent": "BMW M4 (F83)"
+    },
+    {
+      "category": "BMW M4 Competition (F83)",
+      "depth": 4,
+      "parent": "BMW M4 (F83)"
     },
     {
       "category": "BMW G22",
@@ -1377,6 +1806,16 @@
       "parent": "BMW 4 Series"
     },
     {
+      "category": "BMW Concept i4",
+      "depth": 4,
+      "parent": "BMW i4"
+    },
+    {
+      "category": "BMW i4 M50",
+      "depth": 4,
+      "parent": "BMW i4"
+    },
+    {
       "category": "BMW M4",
       "depth": 2,
       "parent": "BMW 4 Series"
@@ -1392,14 +1831,59 @@
       "parent": "BMW M4"
     },
     {
+      "category": "BMW M4 Competition (F82)",
+      "depth": 4,
+      "parent": "BMW M4 Competition"
+    },
+    {
+      "category": "BMW M4 Competition (G82)",
+      "depth": 4,
+      "parent": "BMW M4 Competition"
+    },
+    {
+      "category": "BMW M4 Competition (G83)",
+      "depth": 4,
+      "parent": "BMW M4 Competition"
+    },
+    {
       "category": "BMW M4 CS",
       "depth": 3,
       "parent": "BMW M4"
     },
     {
+      "category": "BMW M4 CS (F82)",
+      "depth": 4,
+      "parent": "BMW M4 CS"
+    },
+    {
+      "category": "BMW M4 CS (G82)",
+      "depth": 4,
+      "parent": "BMW M4 CS"
+    },
+    {
       "category": "BMW M4 (F82)",
       "depth": 3,
       "parent": "BMW M4"
+    },
+    {
+      "category": "BMW M4 (F82, 2017)",
+      "depth": 4,
+      "parent": "BMW M4 (F82)"
+    },
+    {
+      "category": "BMW Concept M4 Coupe",
+      "depth": 4,
+      "parent": "BMW M4 (F82)"
+    },
+    {
+      "category": "BMW M4 DTM Champion Edition",
+      "depth": 4,
+      "parent": "BMW M4 (F82)"
+    },
+    {
+      "category": "BMW M4 GTS",
+      "depth": 4,
+      "parent": "BMW M4 (F82)"
     },
     {
       "category": "BMW M4 (G82)",
@@ -1442,9 +1926,39 @@
       "parent": "BMW 530"
     },
     {
+      "category": "BMW G30 530e",
+      "depth": 4,
+      "parent": "BMW 530e"
+    },
+    {
+      "category": "BMW G60 530e",
+      "depth": 4,
+      "parent": "BMW 530e"
+    },
+    {
+      "category": "BMW G38 530Le",
+      "depth": 4,
+      "parent": "BMW 530e"
+    },
+    {
       "category": "BMW 530i",
       "depth": 3,
       "parent": "BMW 530"
+    },
+    {
+      "category": "BMW E39 530i",
+      "depth": 4,
+      "parent": "BMW 530i"
+    },
+    {
+      "category": "BMW 530Li",
+      "depth": 4,
+      "parent": "BMW 530i"
+    },
+    {
+      "category": "BMW 530iX Enduro",
+      "depth": 4,
+      "parent": "BMW 530i"
     },
     {
       "category": "BMW 535",
@@ -1455,6 +1969,16 @@
       "category": "BMW 535i",
       "depth": 3,
       "parent": "BMW 535"
+    },
+    {
+      "category": "BMW M535i (E12)",
+      "depth": 4,
+      "parent": "BMW 535i"
+    },
+    {
+      "category": "BMW 535i (E28)",
+      "depth": 4,
+      "parent": "BMW 535i"
     },
     {
       "category": "BMW G38 535Le",
@@ -1482,6 +2006,11 @@
       "parent": "BMW 550"
     },
     {
+      "category": "BMW M550d xDrive Touring",
+      "depth": 4,
+      "parent": "BMW 550d"
+    },
+    {
       "category": "BMW G60 550e",
       "depth": 3,
       "parent": "BMW 550"
@@ -1490,6 +2019,11 @@
       "category": "BMW 550i",
       "depth": 3,
       "parent": "BMW 550"
+    },
+    {
+      "category": "BMW F10 550i",
+      "depth": 4,
+      "parent": "BMW 550i"
     },
     {
       "category": "Alpina B5",
@@ -1525,6 +2059,11 @@
       "category": "Alpina B5 (G31)",
       "depth": 3,
       "parent": "Alpina B5"
+    },
+    {
+      "category": "Alpina B5 Bi-Turbo Touring Allrad",
+      "depth": 4,
+      "parent": "Alpina B5 (G31)"
     },
     {
       "category": "Alpina D5",
@@ -1607,14 +2146,29 @@
       "parent": "BMW E28"
     },
     {
-      "category": "BMW 535i (E28)",
+      "category": "BMW E28 (Alpina)",
       "depth": 3,
       "parent": "BMW E28"
     },
     {
-      "category": "BMW E28 (Alpina)",
-      "depth": 3,
-      "parent": "BMW E28"
+      "category": "Alpina B10 (E28)",
+      "depth": 4,
+      "parent": "BMW E28 (Alpina)"
+    },
+    {
+      "category": "Alpina B6 (E28)",
+      "depth": 4,
+      "parent": "BMW E28 (Alpina)"
+    },
+    {
+      "category": "Alpina B7 (E28)",
+      "depth": 4,
+      "parent": "BMW E28 (Alpina)"
+    },
+    {
+      "category": "Alpina B9 (E28)",
+      "depth": 4,
+      "parent": "BMW E28 (Alpina)"
     },
     {
       "category": "BMW M5 (E28)",
@@ -1642,6 +2196,11 @@
       "parent": "BMW E34"
     },
     {
+      "category": "Alpina B10 (E34)",
+      "depth": 4,
+      "parent": "BMW E34 (Alpina)"
+    },
+    {
       "category": "BMW E34 interiors",
       "depth": 3,
       "parent": "BMW E34"
@@ -1650,6 +2209,11 @@
       "category": "BMW M5 (E34)",
       "depth": 3,
       "parent": "BMW E34"
+    },
+    {
+      "category": "BMW M5 touring (E34)",
+      "depth": 4,
+      "parent": "BMW M5 (E34)"
     },
     {
       "category": "BMW E34 Touring",
@@ -1665,6 +2229,11 @@
       "category": "BMW E39 by model",
       "depth": 3,
       "parent": "BMW E39"
+    },
+    {
+      "category": "BMW M5 (E39)",
+      "depth": 4,
+      "parent": "BMW E39 by model"
     },
     {
       "category": "BMW E39 interiors",
@@ -1685,6 +2254,11 @@
       "category": "BMW E39 (Alpina)",
       "depth": 3,
       "parent": "BMW E39"
+    },
+    {
+      "category": "Alpina B10 (E39)",
+      "depth": 4,
+      "parent": "BMW E39 (Alpina)"
     },
     {
       "category": "BMW E39 sedans",
@@ -1727,11 +2301,6 @@
       "parent": "BMW F10"
     },
     {
-      "category": "BMW F10 550i",
-      "depth": 3,
-      "parent": "BMW F10"
-    },
-    {
       "category": "BMW ActiveHybrid 5",
       "depth": 3,
       "parent": "BMW F10"
@@ -1742,17 +2311,17 @@
       "parent": "BMW F10"
     },
     {
+      "category": "BMW F18 Le",
+      "depth": 4,
+      "parent": "BMW F18"
+    },
+    {
       "category": "BMW G30",
       "depth": 2,
       "parent": "BMW 5 Series"
     },
     {
       "category": "BMW G30 development mules",
-      "depth": 3,
-      "parent": "BMW G30"
-    },
-    {
-      "category": "BMW G30 530e",
       "depth": 3,
       "parent": "BMW G30"
     },
@@ -1767,6 +2336,21 @@
       "parent": "BMW G30"
     },
     {
+      "category": "BMW M5 (F90, 2017–2020)",
+      "depth": 4,
+      "parent": "BMW M5 (F90)"
+    },
+    {
+      "category": "BMW M5 (F90, 2020–2024)",
+      "depth": 4,
+      "parent": "BMW M5 (F90)"
+    },
+    {
+      "category": "BMW M5 Competition",
+      "depth": 4,
+      "parent": "BMW M5 (F90)"
+    },
+    {
       "category": "BMW G30 M550i",
       "depth": 3,
       "parent": "BMW G30"
@@ -1777,11 +2361,6 @@
       "parent": "BMW 5 Series"
     },
     {
-      "category": "BMW G60 530e",
-      "depth": 3,
-      "parent": "BMW G60"
-    },
-    {
       "category": "BMW G60 development mules",
       "depth": 3,
       "parent": "BMW G60"
@@ -1790,6 +2369,26 @@
       "category": "BMW G68",
       "depth": 3,
       "parent": "BMW G60"
+    },
+    {
+      "category": "BMW i5 eDrive40",
+      "depth": 4,
+      "parent": "BMW i5"
+    },
+    {
+      "category": "BMW i5 M60",
+      "depth": 4,
+      "parent": "BMW i5"
+    },
+    {
+      "category": "BMW i5 Touring",
+      "depth": 4,
+      "parent": "BMW i5"
+    },
+    {
+      "category": "BMW i5 xDrive40",
+      "depth": 4,
+      "parent": "BMW i5"
     },
     {
       "category": "BMW M5 (G90)",
@@ -1807,14 +2406,24 @@
       "parent": "BMW 5 Series Gran Turismo"
     },
     {
-      "category": "BMW M5 (E39)",
-      "depth": 3,
-      "parent": "BMW M5"
+      "category": "BMW F07 (facelift)",
+      "depth": 4,
+      "parent": "BMW F07"
     },
     {
       "category": "BMW M5 touring",
       "depth": 3,
       "parent": "BMW M5"
+    },
+    {
+      "category": "BMW M5 (E61)",
+      "depth": 4,
+      "parent": "BMW M5 touring"
+    },
+    {
+      "category": "BMW M5 (G99)",
+      "depth": 4,
+      "parent": "BMW M5 touring"
     },
     {
       "category": "BMW M550i",
@@ -1827,11 +2436,6 @@
       "parent": "BMW 5 Series"
     },
     {
-      "category": "BMW M550d xDrive Touring",
-      "depth": 3,
-      "parent": "BMW 5 Series Touring"
-    },
-    {
       "category": "BMW E61",
       "depth": 3,
       "parent": "BMW 5 Series Touring"
@@ -1840,6 +2444,11 @@
       "category": "BMW F11",
       "depth": 3,
       "parent": "BMW 5 Series Touring"
+    },
+    {
+      "category": "BMW F11 (Alpina)",
+      "depth": 4,
+      "parent": "BMW F11"
     },
     {
       "category": "BMW G31",
@@ -1887,6 +2496,11 @@
       "parent": "BMW 503 series I"
     },
     {
+      "category": "BMW 503 by Ghia Aigle",
+      "depth": 4,
+      "parent": "BMW 503 Coupé series I"
+    },
+    {
       "category": "BMW 503 series II",
       "depth": 2,
       "parent": "BMW 503"
@@ -1900,6 +2514,11 @@
       "category": "BMW 503 Coupé series II",
       "depth": 3,
       "parent": "BMW 503 series II"
+    },
+    {
+      "category": "Bonhams - The Paris Sale 2012 - BMW 503 3.2-Litre Coupé - 1959",
+      "depth": 4,
+      "parent": "BMW 503 Coupé series II"
     },
     {
       "category": "BMW 503 Cabriolet",
@@ -1932,6 +2551,41 @@
       "parent": "BMW 6 Series"
     },
     {
+      "category": "AC Schnitzer Tension",
+      "depth": 4,
+      "parent": "BMW E63"
+    },
+    {
+      "category": "Alpina B6 (E63)",
+      "depth": 4,
+      "parent": "BMW E63"
+    },
+    {
+      "category": "BMW E63 damaged",
+      "depth": 4,
+      "parent": "BMW E63"
+    },
+    {
+      "category": "Fisker Latigo",
+      "depth": 4,
+      "parent": "BMW E63"
+    },
+    {
+      "category": "BMW M6 (E63)",
+      "depth": 4,
+      "parent": "BMW E63"
+    },
+    {
+      "category": "Alpina B6 (E64)",
+      "depth": 4,
+      "parent": "BMW E64"
+    },
+    {
+      "category": "BMW M6 (E64)",
+      "depth": 4,
+      "parent": "BMW E64"
+    },
+    {
       "category": "BMW 6 Series (3rd generation)",
       "depth": 2,
       "parent": "BMW 6 Series"
@@ -1942,9 +2596,29 @@
       "parent": "BMW 6 Series (3rd generation)"
     },
     {
+      "category": "BMW F13 650i",
+      "depth": 4,
+      "parent": "BMW 650i"
+    },
+    {
       "category": "BMW F06",
       "depth": 3,
       "parent": "BMW 6 Series (3rd generation)"
+    },
+    {
+      "category": "Alpina B6 (F06)",
+      "depth": 4,
+      "parent": "BMW F06"
+    },
+    {
+      "category": "Alpina B6 (F12)",
+      "depth": 4,
+      "parent": "BMW F12"
+    },
+    {
+      "category": "BMW M6 (F12)",
+      "depth": 4,
+      "parent": "BMW F12"
     },
     {
       "category": "BMW F13",
@@ -1952,34 +2626,24 @@
       "parent": "BMW 6 Series (3rd generation)"
     },
     {
+      "category": "Alpina B6 (F13)",
+      "depth": 4,
+      "parent": "BMW F13"
+    },
+    {
+      "category": "BMW 6 Series Coupe Concept",
+      "depth": 4,
+      "parent": "BMW F13"
+    },
+    {
+      "category": "BMW M6 (F13)",
+      "depth": 4,
+      "parent": "BMW F13"
+    },
+    {
       "category": "Alpina B6 (6 Series)",
       "depth": 2,
       "parent": "BMW 6 Series"
-    },
-    {
-      "category": "Alpina B6 (E63)",
-      "depth": 3,
-      "parent": "Alpina B6 (6 Series)"
-    },
-    {
-      "category": "Alpina B6 (E64)",
-      "depth": 3,
-      "parent": "Alpina B6 (6 Series)"
-    },
-    {
-      "category": "Alpina B6 (F06)",
-      "depth": 3,
-      "parent": "Alpina B6 (6 Series)"
-    },
-    {
-      "category": "Alpina B6 (F12)",
-      "depth": 3,
-      "parent": "Alpina B6 (6 Series)"
-    },
-    {
-      "category": "Alpina B6 (F13)",
-      "depth": 3,
-      "parent": "Alpina B6 (6 Series)"
     },
     {
       "category": "BMW 6 Series interiors",
@@ -1997,6 +2661,36 @@
       "parent": "BMW 6 Series"
     },
     {
+      "category": "BMW 628 CSi (E24)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
+      "category": "BMW 633 CSi (E24)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
+      "category": "BMW 635 CSi (E24)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
+      "category": "BMW E24 (Alpina)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
+      "category": "BMW 630 CS (E24)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
+      "category": "BMW M6 (E24)",
+      "depth": 4,
+      "parent": "BMW E24"
+    },
+    {
       "category": "BMW 6 Series Gran Coupé",
       "depth": 2,
       "parent": "BMW 6 Series"
@@ -2005,31 +2699,6 @@
       "category": "BMW G32",
       "depth": 3,
       "parent": "BMW 6 Series Gran Turismo"
-    },
-    {
-      "category": "BMW M6 (E24)",
-      "depth": 3,
-      "parent": "BMW M6"
-    },
-    {
-      "category": "BMW M6 (E63)",
-      "depth": 3,
-      "parent": "BMW M6"
-    },
-    {
-      "category": "BMW M6 (E64)",
-      "depth": 3,
-      "parent": "BMW M6"
-    },
-    {
-      "category": "BMW M6 (F12)",
-      "depth": 3,
-      "parent": "BMW M6"
-    },
-    {
-      "category": "BMW M6 (F13)",
-      "depth": 3,
-      "parent": "BMW M6"
     },
     {
       "category": "BMW 7 Series",
@@ -2057,9 +2726,19 @@
       "parent": "BMW 730"
     },
     {
+      "category": "BMW 730d (E38)",
+      "depth": 4,
+      "parent": "BMW 730d"
+    },
+    {
       "category": "BMW 730i",
       "depth": 3,
       "parent": "BMW 730"
+    },
+    {
+      "category": "BMW 730i (E38)",
+      "depth": 4,
+      "parent": "BMW 730i"
     },
     {
       "category": "BMW 735",
@@ -2072,6 +2751,11 @@
       "parent": "BMW 735"
     },
     {
+      "category": "BMW 735iL (E38)",
+      "depth": 4,
+      "parent": "BMW 735i (E38)"
+    },
+    {
       "category": "BMW 740",
       "depth": 2,
       "parent": "BMW 7 Series"
@@ -2082,14 +2766,39 @@
       "parent": "BMW 740"
     },
     {
+      "category": "BMW 740d (E38)",
+      "depth": 4,
+      "parent": "BMW 740d"
+    },
+    {
+      "category": "BMW 740d (G11)",
+      "depth": 4,
+      "parent": "BMW 740d"
+    },
+    {
       "category": "BMW 740e",
       "depth": 3,
       "parent": "BMW 740"
     },
     {
+      "category": "BMW 740Le",
+      "depth": 4,
+      "parent": "BMW 740e"
+    },
+    {
       "category": "BMW 740i",
       "depth": 3,
       "parent": "BMW 740"
+    },
+    {
+      "category": "BMW 740i (E38)",
+      "depth": 4,
+      "parent": "BMW 740i"
+    },
+    {
+      "category": "BMW 740i (G11)",
+      "depth": 4,
+      "parent": "BMW 740i"
     },
     {
       "category": "BMW 750",
@@ -2105,6 +2814,11 @@
       "category": "BMW 750i",
       "depth": 3,
       "parent": "BMW 750"
+    },
+    {
+      "category": "BMW 750i (E38)",
+      "depth": 4,
+      "parent": "BMW 750i"
     },
     {
       "category": "BMW 750Ld",
@@ -2177,6 +2891,16 @@
       "parent": "BMW E32"
     },
     {
+      "category": "Alpina B11",
+      "depth": 4,
+      "parent": "BMW E32 (Alpina)"
+    },
+    {
+      "category": "Alpina B12 (E32)",
+      "depth": 4,
+      "parent": "BMW E32 (Alpina)"
+    },
+    {
       "category": "BMW E32 damaged",
       "depth": 3,
       "parent": "BMW E32"
@@ -2187,6 +2911,21 @@
       "parent": "BMW E38"
     },
     {
+      "category": "BMW 725tds (E38)",
+      "depth": 4,
+      "parent": "BMW E38 by model"
+    },
+    {
+      "category": "BMW 728i (E38)",
+      "depth": 4,
+      "parent": "BMW E38 by model"
+    },
+    {
+      "category": "BMW L7 (E38)",
+      "depth": 4,
+      "parent": "BMW E38 by model"
+    },
+    {
       "category": "BMW E38 parts",
       "depth": 3,
       "parent": "BMW E38"
@@ -2195,6 +2934,11 @@
       "category": "BMW E38 (1994)",
       "depth": 3,
       "parent": "BMW E38"
+    },
+    {
+      "category": "BMW 750iL (Tomorrow Never Dies)",
+      "depth": 4,
+      "parent": "BMW E38 (1994)"
     },
     {
       "category": "BMW E38 (1998)",
@@ -2237,16 +2981,6 @@
       "parent": "BMW G11"
     },
     {
-      "category": "BMW 740d (G11)",
-      "depth": 3,
-      "parent": "BMW G11"
-    },
-    {
-      "category": "BMW 740i (G11)",
-      "depth": 3,
-      "parent": "BMW G11"
-    },
-    {
       "category": "BMW G11 (2015)",
       "depth": 3,
       "parent": "BMW G11"
@@ -2255,6 +2989,11 @@
       "category": "BMW G11 (2019)",
       "depth": 3,
       "parent": "BMW G11"
+    },
+    {
+      "category": "BMW 745e",
+      "depth": 4,
+      "parent": "BMW G11 (2019)"
     },
     {
       "category": "BMW G12",
@@ -2267,12 +3006,12 @@
       "parent": "BMW G12"
     },
     {
-      "category": "BMW G12 (2019)",
-      "depth": 3,
-      "parent": "BMW G12"
+      "category": "BMW M760Li inspired by Nautor’s Swan",
+      "depth": 4,
+      "parent": "BMW G12 (2015)"
     },
     {
-      "category": "BMW 740Le",
+      "category": "BMW G12 (2019)",
       "depth": 3,
       "parent": "BMW G12"
     },
@@ -2285,6 +3024,16 @@
       "category": "BMW G70 development mules",
       "depth": 3,
       "parent": "BMW G70"
+    },
+    {
+      "category": "BMW i7 outdoors",
+      "depth": 4,
+      "parent": "BMW i7"
+    },
+    {
+      "category": "BMW i7 M70",
+      "depth": 4,
+      "parent": "BMW i7"
     },
     {
       "category": "BMW G70 M760e xDrive",
@@ -2352,9 +3101,39 @@
       "parent": "BMW 850"
     },
     {
+      "category": "BMW 850i",
+      "depth": 4,
+      "parent": "BMW 850 (E31)"
+    },
+    {
+      "category": "BMW 850Ci",
+      "depth": 4,
+      "parent": "BMW 850 (E31)"
+    },
+    {
+      "category": "BMW 850CSi",
+      "depth": 4,
+      "parent": "BMW 850 (E31)"
+    },
+    {
       "category": "BMW M850i",
       "depth": 3,
       "parent": "BMW 850"
+    },
+    {
+      "category": "BMW G14 M850i",
+      "depth": 4,
+      "parent": "BMW M850i"
+    },
+    {
+      "category": "BMW G15 M850i",
+      "depth": 4,
+      "parent": "BMW M850i"
+    },
+    {
+      "category": "BMW G16 M850i",
+      "depth": 4,
+      "parent": "BMW M850i"
     },
     {
       "category": "BMW 8 Series interiors",
@@ -2382,6 +3161,11 @@
       "parent": "BMW E31"
     },
     {
+      "category": "Alpina B12 (E31)",
+      "depth": 4,
+      "parent": "BMW E31 (Alpina)"
+    },
+    {
       "category": "Hartge H2",
       "depth": 3,
       "parent": "BMW E31"
@@ -2407,9 +3191,9 @@
       "parent": "BMW G14"
     },
     {
-      "category": "BMW G14 M850i",
-      "depth": 3,
-      "parent": "BMW G14"
+      "category": "BMW Concept Skytop",
+      "depth": 4,
+      "parent": "BMW M8 Convertible"
     },
     {
       "category": "BMW M8 (G15)",
@@ -2417,9 +3201,14 @@
       "parent": "BMW G15"
     },
     {
-      "category": "BMW G15 M850i",
-      "depth": 3,
-      "parent": "BMW G15"
+      "category": "BMW M8 GTE",
+      "depth": 4,
+      "parent": "BMW M8 (G15)"
+    },
+    {
+      "category": "BMW Concept Speedtop",
+      "depth": 4,
+      "parent": "BMW M8 (G15)"
     },
     {
       "category": "BMW M8 Gran Coupe",
@@ -2427,9 +3216,19 @@
       "parent": "BMW 8 Series Gran Coupé"
     },
     {
+      "category": "BMW Concept M8 Gran Coupe",
+      "depth": 4,
+      "parent": "BMW M8 Gran Coupe"
+    },
+    {
       "category": "BMW G16",
       "depth": 3,
       "parent": "BMW 8 Series Gran Coupé"
+    },
+    {
+      "category": "Alpina B8 (G16)",
+      "depth": 4,
+      "parent": "BMW G16"
     },
     {
       "category": "BMW Active Tourer",
@@ -2450,11 +3249,6 @@
       "category": "BMW ActiveHybrid",
       "depth": 1,
       "parent": "BMW automobiles by model"
-    },
-    {
-      "category": "BMW ActiveHybrid 3",
-      "depth": 2,
-      "parent": "BMW ActiveHybrid"
     },
     {
       "category": "BMW AM1",
@@ -2502,9 +3296,24 @@
       "parent": "BMW I01"
     },
     {
+      "category": "Festival automobile international 2014 - BMW i3",
+      "depth": 4,
+      "parent": "BMW i3 (2013–2017)"
+    },
+    {
+      "category": "BMW i3 (2013–2017)/interiors",
+      "depth": 4,
+      "parent": "BMW i3 (2013–2017)"
+    },
+    {
       "category": "BMW i3 (2017–2022)",
       "depth": 3,
       "parent": "BMW I01"
+    },
+    {
+      "category": "BMW i3s",
+      "depth": 4,
+      "parent": "BMW i3 (2017–2022)"
     },
     {
       "category": "BMW i3 chassis",
@@ -2642,22 +3451,7 @@
       "parent": "BMW M"
     },
     {
-      "category": "BMW G21 M340i",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
       "category": "BMW G22 M440i",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
-      "category": "BMW G26 M440i",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
-      "category": "BMW M535i (E12)",
       "depth": 3,
       "parent": "BMW M Performance"
     },
@@ -2668,21 +3462,6 @@
     },
     {
       "category": "BMW M 635 CSi (E24)",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
-      "category": "BMW i4 M50",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
-      "category": "BMW i5 M60",
-      "depth": 3,
-      "parent": "BMW M Performance"
-    },
-    {
-      "category": "BMW i7 M70",
       "depth": 3,
       "parent": "BMW M Performance"
     },
@@ -2787,14 +3566,34 @@
       "parent": "BMW M Performance"
     },
     {
+      "category": "BMW Z4 (G29, facelift) M40i",
+      "depth": 4,
+      "parent": "BMW G29 Z4 M40i"
+    },
+    {
       "category": "BMW E26",
       "depth": 3,
       "parent": "BMW M1"
     },
     {
+      "category": "Paris - Retromobile 2013 - BMW M1",
+      "depth": 4,
+      "parent": "BMW E26"
+    },
+    {
       "category": "BMW M1 Hommage",
       "depth": 3,
       "parent": "BMW M1"
+    },
+    {
+      "category": "Festival automobile international 2015 - BMW M1 Hommage",
+      "depth": 4,
+      "parent": "BMW M1 Hommage"
+    },
+    {
+      "category": "Paris - Retromobile 2013 - BMW M1 Hommage",
+      "depth": 4,
+      "parent": "BMW M1 Hommage"
     },
     {
       "category": "BMW M Concept Neue Klasse",
@@ -2825,6 +3624,11 @@
       "category": "BMW XM (G09)",
       "depth": 3,
       "parent": "BMW XM"
+    },
+    {
+      "category": "BMW XM Label",
+      "depth": 4,
+      "parent": "BMW XM (G09)"
     },
     {
       "category": "BMW X3 M",
@@ -2877,6 +3681,11 @@
       "parent": "BMW X6 M"
     },
     {
+      "category": "Hamann Tycoon",
+      "depth": 4,
+      "parent": "BMW X6 M (E71)"
+    },
+    {
       "category": "BMW X6 M (F16)",
       "depth": 3,
       "parent": "BMW X6 M"
@@ -2890,11 +3699,6 @@
       "category": "BMW Z3 M",
       "depth": 2,
       "parent": "BMW M"
-    },
-    {
-      "category": "BMW Z3 M (E36/8)",
-      "depth": 3,
-      "parent": "BMW Z3 M"
     },
     {
       "category": "BMW Z4 M",
@@ -2970,6 +3774,11 @@
       "category": "BMW 2800 CS",
       "depth": 3,
       "parent": "BMW E9"
+    },
+    {
+      "category": "1972 1000km Nürburgring car number 94",
+      "depth": 4,
+      "parent": "BMW 2800 CS"
     },
     {
       "category": "BMW 3.0 CS",
@@ -3142,6 +3951,21 @@
       "parent": "BMW E53"
     },
     {
+      "category": "Martin Motors CEO",
+      "depth": 4,
+      "parent": "BMW E53 clones"
+    },
+    {
+      "category": "Shuanghuan CEO",
+      "depth": 4,
+      "parent": "BMW E53 clones"
+    },
+    {
+      "category": "Shuanghuan SCEO",
+      "depth": 4,
+      "parent": "BMW E53 clones"
+    },
+    {
       "category": "BMW E70 development mules",
       "depth": 3,
       "parent": "BMW E70"
@@ -3197,9 +4021,19 @@
       "parent": "BMW E71"
     },
     {
+      "category": "BMW Concept X6 ActiveHybrid",
+      "depth": 4,
+      "parent": "BMW Concept X6"
+    },
+    {
       "category": "BMW X6 Hybrid",
       "depth": 3,
       "parent": "BMW E71"
+    },
+    {
+      "category": "BMW X6 Hybrid development mules",
+      "depth": 4,
+      "parent": "BMW X6 Hybrid"
     },
     {
       "category": "BMW F16",
@@ -3247,6 +4081,51 @@
       "parent": "BMW Z1"
     },
     {
+      "category": "BMW Concept Z4 (2017)",
+      "depth": 4,
+      "parent": "BMW Concept Z4"
+    },
+    {
+      "category": "BMW Concept Z4 Coupé",
+      "depth": 4,
+      "parent": "BMW Concept Z4"
+    },
+    {
+      "category": "Alpina Roadster S",
+      "depth": 4,
+      "parent": "BMW E85"
+    },
+    {
+      "category": "BMW E89 development mules",
+      "depth": 4,
+      "parent": "BMW E89"
+    },
+    {
+      "category": "BMW Z4 sDrive23i",
+      "depth": 4,
+      "parent": "BMW E89"
+    },
+    {
+      "category": "BMW Zagato Coupé",
+      "depth": 4,
+      "parent": "BMW E89"
+    },
+    {
+      "category": "BMW Zagato Roadster",
+      "depth": 4,
+      "parent": "BMW E89"
+    },
+    {
+      "category": "BMW Z4 (G29, facelift)",
+      "depth": 4,
+      "parent": "BMW G29"
+    },
+    {
+      "category": "Estella Tender 5.7",
+      "depth": 4,
+      "parent": "BMW G29"
+    },
+    {
       "category": "Bertone Birusa",
       "depth": 3,
       "parent": "BMW Z8"
@@ -3260,6 +4139,16 @@
       "category": "BMW E52",
       "depth": 3,
       "parent": "BMW Z8"
+    },
+    {
+      "category": "BMW E52 (Alpina)",
+      "depth": 4,
+      "parent": "BMW E52"
+    },
+    {
+      "category": "BMW Z8 (The World Is Not Enough)",
+      "depth": 4,
+      "parent": "BMW E52"
     },
     {
       "category": "BMW Z9 Concept car",
@@ -3276,10 +4165,8 @@
     "BMW Turbo",
     "Mini Countryman All4 Racing",
     "BMW",
-    "BMW M3 (E46/2S)",
     "Mini John Cooper Works Buggy",
     "BMW M3 (E30) Sport Evolution",
-    "BMW 2002 turbo (E20)",
     "Mini Coupé (R58)",
     "BMW Mini",
     "Mini John Cooper Works Rally",
@@ -3288,9 +4175,7 @@
     "BMW M5 (E28) in the BMW-Museum",
     "BMW Concept 8 Series at IAA 2017",
     "Rolls-Royce Phantom VII",
-    "BMW M3 CSL (E46)",
     "BMW i Vision Dee",
-    "BMW M4 CSL",
     "Rolls-Royce Phantom Coupé",
     "Mini (third generation)",
     "Mini Hatch (F56) Electric",

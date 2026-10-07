@@ -8,7 +8,7 @@ import { createHash } from 'node:crypto';
 
 const UA = 'Carvault/0.1 (https://github.com/amglogicalis/carvault)';
 const ROOT = 'BMW automobiles by model';
-const MAX_DEPTH = 3;
+const MAX_DEPTH = 4;
 const CACHE_DIR = 'pipeline/.cache/commons';
 const PAUSE_MS = 400; // cortesía con la API de Wikimedia
 // Subcategorías que no son modelos/generaciones (ruido de Commons)
@@ -76,3 +76,4 @@ for (const x of onlyCommons.slice(0, 40)) console.log(`  d${x.depth} ${x.categor
 
 await mkdir('data/_reports', { recursive: true });
 await writeFile('data/_reports/audit-bmw.json', JSON.stringify({ both, onlyCommons, onlyWikidata }, null, 2));
+await writeFile('data/_reports/commons-tree-bmw.json', JSON.stringify(Object.fromEntries(seen), null, 2));

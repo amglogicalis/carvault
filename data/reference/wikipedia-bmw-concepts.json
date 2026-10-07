@@ -1,0 +1,482 @@
+{
+  "source": "https://en.wikipedia.org/wiki/List_of_BMW_concept_vehicles",
+  "license": "CC BY-SA 4.0",
+  "retrievedAt": "2026-10-07T14:52:58.626Z",
+  "concepts": [
+    {
+      "year": 1949,
+      "model": "331",
+      "designer": "Peter Szymanowski"
+    },
+    {
+      "year": 1949,
+      "model": "501",
+      "designer": "Pininfarina"
+    },
+    {
+      "year": 1954,
+      "model": "528/502",
+      "designer": "BMW"
+    },
+    {
+      "year": 1964,
+      "model": "Hurricane",
+      "designer": null
+    },
+    {
+      "year": 1967,
+      "model": "K67",
+      "designer": null
+    },
+    {
+      "year": 1968,
+      "model": "2000 Coupé by Frua",
+      "designer": null
+    },
+    {
+      "year": 1969,
+      "model": "2800 Spicup",
+      "designer": "Bertone"
+    },
+    {
+      "year": 1970,
+      "model": "2200 TI Garmisch",
+      "designer": null
+    },
+    {
+      "year": 1972,
+      "model": "1602 Electro-Antrieb (E10)",
+      "designer": "BMW"
+    },
+    {
+      "year": 1972,
+      "model": "E25 Turbo",
+      "designer": "Paul Bracq"
+    },
+    {
+      "year": 1976,
+      "model": "Karmann Asso Di Quadri",
+      "designer": "Italdesign"
+    },
+    {
+      "year": 1985,
+      "model": "Z1 Prototype",
+      "designer": "BMW"
+    },
+    {
+      "year": 1990,
+      "model": "M8 E31 Prototype",
+      "designer": null
+    },
+    {
+      "year": 1990,
+      "model": "Ur-Roadster (Original Roadster)",
+      "designer": null
+    },
+    {
+      "year": 1991,
+      "model": "Nazca C2",
+      "designer": "Italdesign"
+    },
+    {
+      "year": 1991,
+      "model": "Nazca M12",
+      "designer": null
+    },
+    {
+      "year": 1991,
+      "model": "Z2",
+      "designer": "BMW"
+    },
+    {
+      "year": 1991,
+      "model": "E1 (Z11)",
+      "designer": null
+    },
+    {
+      "year": 1992,
+      "model": "E2",
+      "designer": null
+    },
+    {
+      "year": 1993,
+      "model": "Nazca C2 Spider",
+      "designer": "Italdesign"
+    },
+    {
+      "year": 1993,
+      "model": "E1 (Z15)",
+      "designer": "BMW"
+    },
+    {
+      "year": 1994,
+      "model": "Z13",
+      "designer": null
+    },
+    {
+      "year": 1995,
+      "model": "Z18",
+      "designer": null
+    },
+    {
+      "year": 1995,
+      "model": "Z21",
+      "designer": null
+    },
+    {
+      "year": 1998,
+      "model": "Z07",
+      "designer": null
+    },
+    {
+      "year": 1999,
+      "model": "Z9",
+      "designer": null
+    },
+    {
+      "year": 2000,
+      "model": "Z9 Convertible",
+      "designer": null
+    },
+    {
+      "year": 2000,
+      "model": "Z22",
+      "designer": null
+    },
+    {
+      "year": 2000,
+      "model": "750hL",
+      "designer": null
+    },
+    {
+      "year": 2001,
+      "model": "X-Coupé",
+      "designer": "Chris Chapman"
+    },
+    {
+      "year": 2001,
+      "model": "Z29",
+      "designer": "BMW"
+    },
+    {
+      "year": 2002,
+      "model": "CS1",
+      "designer": "Chris Chapman"
+    },
+    {
+      "year": 2003,
+      "model": "xActivity",
+      "designer": null
+    },
+    {
+      "year": 2005,
+      "model": "Concept Z4 Coupé",
+      "designer": "Chris Bangle"
+    },
+    {
+      "year": 2006,
+      "model": "Concept Coupé Mille Miglia (2006)",
+      "designer": null
+    },
+    {
+      "year": 2007,
+      "model": "1 Series tii",
+      "designer": "BMW"
+    },
+    {
+      "year": 2007,
+      "model": "CS",
+      "designer": null
+    },
+    {
+      "year": 2007,
+      "model": "Concept X6",
+      "designer": null
+    },
+    {
+      "year": 2007,
+      "model": "Concept X6 ActiveHybrid",
+      "designer": null
+    },
+    {
+      "year": 2008,
+      "model": "Concept X1",
+      "designer": null
+    },
+    {
+      "year": 2008,
+      "model": "BMW Concept 7 Series ActiveHybrid",
+      "designer": null
+    },
+    {
+      "year": 2008,
+      "model": "GINA",
+      "designer": "Chris Bangle"
+    },
+    {
+      "year": 2008,
+      "model": "M1 Homage",
+      "designer": "BMW"
+    },
+    {
+      "year": 2009,
+      "model": "Vision EfficientDynamics concept",
+      "designer": null
+    },
+    {
+      "year": 2009,
+      "model": "5 GT Concept Car",
+      "designer": null
+    },
+    {
+      "year": 2009,
+      "model": "C1-E",
+      "designer": null
+    },
+    {
+      "year": 2010,
+      "model": "Concept 6 Series",
+      "designer": null
+    },
+    {
+      "year": 2011,
+      "model": "Vision ConnectedDrive",
+      "designer": null
+    },
+    {
+      "year": 2011,
+      "model": "328 Hommage",
+      "designer": null
+    },
+    {
+      "year": 2011,
+      "model": "i3 Concept",
+      "designer": null
+    },
+    {
+      "year": 2011,
+      "model": "i8 Concept",
+      "designer": null
+    },
+    {
+      "year": 2012,
+      "model": "i3 Concept Coupé",
+      "designer": null
+    },
+    {
+      "year": 2012,
+      "model": "i8 Concept Spyder",
+      "designer": null
+    },
+    {
+      "year": 2012,
+      "model": "Zagato Coupé",
+      "designer": "Zagato"
+    },
+    {
+      "year": 2012,
+      "model": "Zagato Roadster",
+      "designer": null
+    },
+    {
+      "year": 2012,
+      "model": "Concept Active Tourer",
+      "designer": "BMW"
+    },
+    {
+      "year": 2012,
+      "model": "Concept 4 Series Coupé",
+      "designer": null
+    },
+    {
+      "year": 2013,
+      "model": "BMW Concept Active Tourer Outdoor",
+      "designer": null
+    },
+    {
+      "year": 2013,
+      "model": "Concept X5 eDrive",
+      "designer": null
+    },
+    {
+      "year": 2013,
+      "model": "BMW Concept X4",
+      "designer": null
+    },
+    {
+      "year": 2013,
+      "model": "Gran Lusso Coupé",
+      "designer": null
+    },
+    {
+      "year": 2013,
+      "model": "Concept M4 Coupé",
+      "designer": null
+    },
+    {
+      "year": 2014,
+      "model": "Vision Future Luxury (7 series 2019)",
+      "designer": null
+    },
+    {
+      "year": 2015,
+      "model": "M4 Concept Iconic Lights",
+      "designer": null
+    },
+    {
+      "year": 2015,
+      "model": "3.0 CSL Hommage",
+      "designer": null
+    },
+    {
+      "year": 2015,
+      "model": "3.0 CSL Hommage R",
+      "designer": null
+    },
+    {
+      "year": 2015,
+      "model": "BMW 5 Series Gran Turismo with fuel-cell",
+      "designer": null
+    },
+    {
+      "year": 2015,
+      "model": "Concept Compact Sedan",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "i Vision Future Interaction",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "Vision Next 100",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "2002 Hommage Concept",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "2002 Hommage Turbomeister Concept",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "Motorrad Vision Next 100",
+      "designer": null
+    },
+    {
+      "year": 2016,
+      "model": "Concept X2",
+      "designer": null
+    },
+    {
+      "year": 2017,
+      "model": "Concept 8 Series",
+      "designer": null
+    },
+    {
+      "year": 2017,
+      "model": "Motorrad Concept Link",
+      "designer": null
+    },
+    {
+      "year": 2017,
+      "model": "Concept Z4",
+      "designer": null
+    },
+    {
+      "year": 2017,
+      "model": "i Vision Dynamics",
+      "designer": null
+    },
+    {
+      "year": 2017,
+      "model": "Concept X7 iPerformance",
+      "designer": null
+    },
+    {
+      "year": 2018,
+      "model": "Concept M8 Gran Coupé",
+      "designer": null
+    },
+    {
+      "year": 2018,
+      "model": "Concept iX3",
+      "designer": null
+    },
+    {
+      "year": 2018,
+      "model": "Vision iNEXT",
+      "designer": null
+    },
+    {
+      "year": 2019,
+      "model": "Concept 4",
+      "designer": null
+    },
+    {
+      "year": 2019,
+      "model": "i Hydrogen Next (fuel cell)",
+      "designer": null
+    },
+    {
+      "year": 2019,
+      "model": "Vision M Next",
+      "designer": null
+    },
+    {
+      "year": 2020,
+      "model": "Concept i4",
+      "designer": null
+    },
+    {
+      "year": 2021,
+      "model": "I Vision Circular",
+      "designer": null
+    },
+    {
+      "year": 2021,
+      "model": "XM Concept",
+      "designer": null
+    },
+    {
+      "year": 2022,
+      "model": "iX Flow Concept",
+      "designer": null
+    },
+    {
+      "year": 2023,
+      "model": "i Vision Dee",
+      "designer": null
+    },
+    {
+      "year": 2023,
+      "model": "Vision Neue Klasse",
+      "designer": null
+    },
+    {
+      "year": 2024,
+      "model": "Vision Neue Klasse X",
+      "designer": null
+    },
+    {
+      "year": 2024,
+      "model": "Concept Skytop",
+      "designer": null
+    },
+    {
+      "year": 2025,
+      "model": "Concept Speedtop",
+      "designer": null
+    },
+    {
+      "year": 2026,
+      "model": "Vision BMW ALPINA",
+      "designer": null
+    }
+  ]
+}

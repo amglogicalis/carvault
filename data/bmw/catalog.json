@@ -1,15 +1,15 @@
 {
   "brand": "BMW",
   "wikidata": "Q26678",
-  "generatedAt": "2026-10-07T14:40:48.039Z",
+  "generatedAt": "2026-10-07T15:11:57.707Z",
   "stats": {
-    "generations": 113,
+    "generations": 207,
     "production": 112,
-    "prototypes": 1,
-    "chassis": 148,
+    "prototypes": 95,
+    "chassis": 242,
     "lwbChassis": 6,
-    "chassisWithoutCommons": 7,
-    "unverified": 4
+    "totalVariants": 296,
+    "chassisWithoutCommons": 77
   },
   "generations": [
     {
@@ -20,7 +20,8 @@
       "status": "current",
       "years": {
         "start": 2024,
-        "end": null
+        "end": null,
+        "display": "2024 – Actualidad"
       },
       "class": "C-segment/Subcompact executive hatchback. Not offered in North America.",
       "chassis": [
@@ -35,7 +36,10 @@
             "BMW F70",
             "BMW F70 M135"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F70 M135"
+          ]
         }
       ]
     },
@@ -47,7 +51,8 @@
       "status": "current",
       "years": {
         "start": 2024,
-        "end": null
+        "end": null,
+        "display": "2024 – Actualidad"
       },
       "class": "C-segment/Subcompact executive fastback sedan.",
       "chassis": [
@@ -62,7 +67,11 @@
             "BMW F74",
             "BMW F74 M235"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F78",
+            "F74 M235"
+          ]
         },
         {
           "code": "F78",
@@ -74,7 +83,8 @@
           "commonsCandidates": [
             "BMW F78"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -86,7 +96,8 @@
       "status": "current",
       "years": {
         "start": 2026,
-        "end": null
+        "end": null,
+        "display": "2026 – Actualidad"
       },
       "class": "D-segment/compact executive sedan.",
       "chassis": [
@@ -101,7 +112,10 @@
             "BMW G50",
             "BMW G50 M350"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G50 M350"
+          ]
         }
       ]
     },
@@ -113,7 +127,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "China only D-segment/compact executive electric sedan.",
       "chassis": [
@@ -127,7 +142,10 @@
           "commonsCandidates": [
             "BMW G28"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "i3 eDrive35L"
+          ]
         }
       ]
     },
@@ -139,7 +157,8 @@
       "status": "current",
       "years": {
         "start": 2026,
-        "end": null
+        "end": null,
+        "display": "2026 – Actualidad"
       },
       "class": "D-segment/compact executive electric sedan.",
       "chassis": [
@@ -154,7 +173,10 @@
             "BMW NA0",
             "BMW NA0 i3 M60"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "NA0 i3 M60"
+          ]
         },
         {
           "code": "NA8",
@@ -164,7 +186,8 @@
           "verified": false,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -176,7 +199,8 @@
       "status": "current",
       "years": {
         "start": 2020,
-        "end": null
+        "end": null,
+        "display": "2020 – Actualidad"
       },
       "class": "D-segment/compact executive liftback.",
       "chassis": [
@@ -194,7 +218,10 @@
             "Alpina D4 (G26)",
             "BMW 4 Series Gran Coupé (G26)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "i4"
+          ]
         }
       ]
     },
@@ -206,7 +233,8 @@
       "status": "current",
       "years": {
         "start": 2021,
-        "end": null
+        "end": null,
+        "display": "2021 – Actualidad"
       },
       "class": "D-segment/compact executive electric liftback.",
       "chassis": [
@@ -224,7 +252,10 @@
             "Alpina D4 (G26)",
             "BMW 4 Series Gran Coupé (G26)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "i4"
+          ]
         }
       ]
     },
@@ -236,7 +267,8 @@
       "status": "current",
       "years": {
         "start": 2023,
-        "end": null
+        "end": null,
+        "display": "2023 – Actualidad"
       },
       "class": "E-segment/mid-size executive sedan.",
       "chassis": [
@@ -249,11 +281,17 @@
           "commonsCategory": "BMW G60",
           "commonsCandidates": [
             "BMW G60",
-            "BMW G60 550e",
             "BMW G60 530e",
+            "BMW G60 550e",
             "BMW G60 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G60 development mules",
+            "G68",
+            "i5",
+            "M5 (G90)"
+          ]
         },
         {
           "code": "G68",
@@ -265,7 +303,8 @@
           "commonsCandidates": [
             "BMW G68"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -277,7 +316,8 @@
       "status": "current",
       "years": {
         "start": 2023,
-        "end": null
+        "end": null,
+        "display": "2023 – Actualidad"
       },
       "class": "E-segment/mid-size executive electric sedan.",
       "chassis": [
@@ -290,11 +330,17 @@
           "commonsCategory": "BMW G60",
           "commonsCandidates": [
             "BMW G60",
-            "BMW G60 550e",
             "BMW G60 530e",
+            "BMW G60 550e",
             "BMW G60 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G60 development mules",
+            "G68",
+            "i5",
+            "M5 (G90)"
+          ]
         },
         {
           "code": "G68",
@@ -306,7 +352,8 @@
           "commonsCandidates": [
             "BMW G68"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -318,7 +365,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "F-segment/full-size luxury sedan.",
       "chassis": [
@@ -334,7 +382,12 @@
             "BMW G70 M760e xDrive",
             "BMW G70 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G70 development mules",
+            "i7",
+            "G70 M760e xDrive"
+          ]
         },
         {
           "code": "G73",
@@ -344,7 +397,8 @@
           "verified": false,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -356,7 +410,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "F-segment/full-size electric luxury sedan.",
       "chassis": [
@@ -372,7 +427,12 @@
             "BMW G70 M760e xDrive",
             "BMW G70 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G70 development mules",
+            "i7",
+            "G70 M760e xDrive"
+          ]
         }
       ]
     },
@@ -384,7 +444,8 @@
       "status": "current",
       "years": {
         "start": 2018,
-        "end": null
+        "end": null,
+        "display": "2018 – Actualidad"
       },
       "class": "D-segment/compact executive wagon.",
       "chassis": [
@@ -398,10 +459,15 @@
           "commonsCandidates": [
             "BMW G21",
             "BMW G21 M340i",
+            "BMW G21 (2022)",
             "Alpina B3 (G21)",
             "Alpina D3 (G21)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G21 (2022)",
+            "G21 M340i"
+          ]
         }
       ]
     },
@@ -413,7 +479,8 @@
       "status": "current",
       "years": {
         "start": 2023,
-        "end": null
+        "end": null,
+        "display": "2023 – Actualidad"
       },
       "class": "E-segment/mid-size executive wagon.",
       "chassis": [
@@ -427,7 +494,8 @@
           "commonsCandidates": [
             "BMW G61"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -439,7 +507,8 @@
       "status": "current",
       "years": {
         "start": 2024,
-        "end": null
+        "end": null,
+        "display": "2024 – Actualidad"
       },
       "class": "E-segment/executive electric wagon.",
       "chassis": [
@@ -453,7 +522,8 @@
           "commonsCandidates": [
             "BMW G61"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -465,7 +535,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "C-segment/subcompact luxury crossover SUV.",
       "chassis": [
@@ -481,7 +552,10 @@
             "BMW U11 X1 M35i",
             "BMW U11 fire engines"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX1"
+          ]
         },
         {
           "code": "U12",
@@ -491,7 +565,8 @@
           "verified": true,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -503,7 +578,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "C-segment/subcompact electric luxury crossover SUV",
       "chassis": [
@@ -519,7 +595,10 @@
             "BMW U11 X1 M35i",
             "BMW U11 fire engines"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX1"
+          ]
         },
         {
           "code": "U12",
@@ -529,7 +608,8 @@
           "verified": true,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -541,7 +621,8 @@
       "status": "current",
       "years": {
         "start": 2023,
-        "end": null
+        "end": null,
+        "display": "2023 – Actualidad"
       },
       "class": "C-segment/subcompact luxury crossover coupé SUV.",
       "chassis": [
@@ -556,7 +637,10 @@
             "BMW U10",
             "BMW U10 X2 M35i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX2"
+          ]
         }
       ]
     },
@@ -568,7 +652,8 @@
       "status": "current",
       "years": {
         "start": 2023,
-        "end": null
+        "end": null,
+        "display": "2023 – Actualidad"
       },
       "class": "C-segment/subcompact electric luxury crossover coupé SUV",
       "chassis": [
@@ -583,7 +668,10 @@
             "BMW U10",
             "BMW U10 X2 M35i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX2"
+          ]
         }
       ]
     },
@@ -595,7 +683,8 @@
       "status": "current",
       "years": {
         "start": 2024,
-        "end": null
+        "end": null,
+        "display": "2024 – Actualidad"
       },
       "class": "D-segment/compact luxury crossover SUV",
       "chassis": [
@@ -612,7 +701,11 @@
             "BMW G45 development mules",
             "BMW G45 kidneys and lights"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G45 development mules",
+            "G45 kidneys and lights"
+          ]
         },
         {
           "code": "G48",
@@ -622,7 +715,8 @@
           "verified": false,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -634,7 +728,8 @@
       "status": "current",
       "years": {
         "start": 2025,
-        "end": null
+        "end": null,
+        "display": "2025 – Actualidad"
       },
       "class": "D-segment/compact electric luxury crossover SUV",
       "chassis": [
@@ -649,7 +744,8 @@
             "BMW iX3 NA5",
             "BMW NA5 iX3 M60"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         },
         {
           "code": "NA6",
@@ -659,7 +755,8 @@
           "verified": false,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -671,7 +768,8 @@
       "status": "current",
       "years": {
         "start": 2026,
-        "end": null
+        "end": null,
+        "display": "2026 – Actualidad"
       },
       "class": "E-segment/mid-size luxury crossover SUV.",
       "chassis": [
@@ -686,7 +784,10 @@
             "BMW G65",
             "BMW G65 X5 M60e"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX5"
+          ]
         }
       ]
     },
@@ -698,7 +799,8 @@
       "status": "current",
       "years": {
         "start": 2021,
-        "end": null
+        "end": null,
+        "display": "2021 – Actualidad"
       },
       "class": "E-segment/mid-size electric luxury crossover SUV.",
       "chassis": [
@@ -712,7 +814,12 @@
           "commonsCandidates": [
             "BMW iX"
           ],
-          "commonsManual": true
+          "commonsManual": true,
+          "variants": [
+            "iX LCI",
+            "iX interiors",
+            "iX M60"
+          ]
         }
       ]
     },
@@ -724,7 +831,8 @@
       "status": "current",
       "years": {
         "start": 2026,
-        "end": null
+        "end": null,
+        "display": "2026 – Actualidad"
       },
       "class": "E-segment/mid-size electric luxury crossover SUV.",
       "chassis": [
@@ -739,7 +847,10 @@
             "BMW G65",
             "BMW G65 X5 M60e"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX5"
+          ]
         }
       ]
     },
@@ -751,7 +862,8 @@
       "status": "current",
       "years": {
         "start": 2020,
-        "end": null
+        "end": null,
+        "display": "2020 – Actualidad"
       },
       "class": "E-segment/mid-size luxury crossover coupé SUV.",
       "chassis": [
@@ -768,7 +880,10 @@
             "BMW X6 M (G06)",
             "BMW G06 X6 M50d"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "VB X6"
+          ]
         }
       ]
     },
@@ -780,7 +895,8 @@
       "status": "current",
       "years": {
         "start": 2018,
-        "end": null
+        "end": null,
+        "display": "2018 – Actualidad"
       },
       "class": "F-segment/full-size luxury SUV.",
       "chassis": [
@@ -798,7 +914,11 @@
             "BMW G07 X7 M50i",
             "BMW G07 X7 M60i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G07 (2022)",
+            "X7 XDrive 30d"
+          ]
         }
       ]
     },
@@ -810,7 +930,8 @@
       "status": "current",
       "years": {
         "start": 2022,
-        "end": null
+        "end": null,
+        "display": "2022 – Actualidad"
       },
       "class": "Plug-in hybrid F-segment/full-size luxury crossover SUV.",
       "chassis": [
@@ -824,7 +945,10 @@
           "commonsCandidates": [
             "BMW XM (G09)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "XM Label"
+          ]
         }
       ]
     },
@@ -836,7 +960,8 @@
       "status": "current",
       "years": {
         "start": 2021,
-        "end": null
+        "end": null,
+        "display": "2021 – Actualidad"
       },
       "class": "C-segment/Subcompact executive coupé",
       "chassis": [
@@ -851,7 +976,11 @@
             "BMW G42",
             "BMW G42 M240i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M2 (G87)",
+            "G42 M240i"
+          ]
         }
       ]
     },
@@ -863,7 +992,8 @@
       "status": "current",
       "years": {
         "start": 2020,
-        "end": null
+        "end": null,
+        "display": "2020 – Actualidad"
       },
       "class": "D-segment/compact executive coupé and convertible.",
       "chassis": [
@@ -879,7 +1009,11 @@
             "BMW G22 M440i",
             "BMW G22 (Original Bumper)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G22 (Original Bumper)",
+            "Concept 4"
+          ]
         },
         {
           "code": "G23",
@@ -892,7 +1026,10 @@
             "BMW G23",
             "BMW G23 M440i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G23 M440i"
+          ]
         }
       ]
     },
@@ -904,7 +1041,8 @@
       "status": "current",
       "years": {
         "start": 2021,
-        "end": null
+        "end": null,
+        "display": "2021 – Actualidad"
       },
       "class": "Two-row compact MPV.",
       "chassis": [
@@ -916,9 +1054,13 @@
           "verified": true,
           "commonsCategory": "BMW U06",
           "commonsCandidates": [
-            "BMW U06"
+            "BMW U06",
+            "BMW U06 PHEV"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "U06 PHEV"
+          ]
         }
       ]
     },
@@ -930,7 +1072,8 @@
       "status": "discontinued",
       "years": {
         "start": 1927,
-        "end": 1932
+        "end": 1932,
+        "display": "1927 – 1932"
       },
       "class": "Economy car",
       "chassis": [
@@ -944,7 +1087,8 @@
           "commonsCandidates": [
             "BMW 315"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -956,7 +1100,8 @@
       "status": "discontinued",
       "years": {
         "start": 1932,
-        "end": 1934
+        "end": 1934,
+        "display": "1932 – 1934"
       },
       "class": "Compact car",
       "chassis": [
@@ -970,7 +1115,8 @@
           "commonsCandidates": [
             "BMW 3/20"
           ],
-          "commonsManual": true
+          "commonsManual": true,
+          "variants": []
         }
       ]
     },
@@ -982,7 +1128,8 @@
       "status": "discontinued",
       "years": {
         "start": 1933,
-        "end": 1934
+        "end": 1934,
+        "display": "1933 – 1934"
       },
       "class": "Compact car",
       "chassis": [
@@ -996,7 +1143,8 @@
           "commonsCandidates": [
             "BMW 303"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1008,7 +1156,8 @@
       "status": "discontinued",
       "years": {
         "start": 1934,
-        "end": 1936
+        "end": 1936,
+        "display": "1934 – 1936"
       },
       "class": "Compact car",
       "chassis": [
@@ -1022,7 +1171,8 @@
           "commonsCandidates": [
             "BMW 309"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1034,7 +1184,8 @@
       "status": "discontinued",
       "years": {
         "start": 1934,
-        "end": 1937
+        "end": 1937,
+        "display": "1934 – 1937"
       },
       "class": "Compact car",
       "chassis": [
@@ -1048,7 +1199,8 @@
           "commonsCandidates": [
             "BMW 315"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1060,7 +1212,8 @@
       "status": "discontinued",
       "years": {
         "start": 1935,
-        "end": 1936
+        "end": 1936,
+        "display": "1935 – 1936"
       },
       "class": "Compact car",
       "chassis": [
@@ -1074,7 +1227,8 @@
           "commonsCandidates": [
             "BMW 319"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1086,7 +1240,8 @@
       "status": "discontinued",
       "years": {
         "start": 1936,
-        "end": 1940
+        "end": 1940,
+        "display": "1936 – 1940"
       },
       "class": "Roadster",
       "chassis": [
@@ -1100,7 +1255,18 @@
           "commonsCandidates": [
             "BMW 328"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "328 Vignale",
+            "328 Fachsenfeld",
+            "328 Hommage",
+            "Paris - Retromobile 2013 - BMW 328",
+            "Sbarro 328",
+            "328 Streamline",
+            "328 Berlinetta Touring",
+            "328 Spider Touring",
+            "Werkmeister vehicles"
+          ]
         }
       ]
     },
@@ -1112,7 +1278,8 @@
       "status": "discontinued",
       "years": {
         "start": 1936,
-        "end": 1941
+        "end": 1941,
+        "display": "1936 – 1941"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1126,7 +1293,10 @@
           "commonsCandidates": [
             "BMW 326"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "326 cabriolet (Autoworld Brussels) 1940"
+          ]
         }
       ]
     },
@@ -1138,7 +1308,8 @@
       "status": "discontinued",
       "years": {
         "start": 1937,
-        "end": 1937
+        "end": null,
+        "display": "1937"
       },
       "class": "Compact car",
       "chassis": [
@@ -1152,7 +1323,8 @@
           "commonsCandidates": [
             "BMW 329"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1164,7 +1336,8 @@
       "status": "discontinued",
       "years": {
         "start": 1937,
-        "end": 1941
+        "end": 1941,
+        "display": "1937 – 1941"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1178,7 +1351,10 @@
           "commonsCandidates": [
             "BMW 327"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "EMW 327"
+          ]
         }
       ]
     },
@@ -1190,7 +1366,8 @@
       "status": "discontinued",
       "years": {
         "start": 1937,
-        "end": 1938
+        "end": 1938,
+        "display": "1937 – 1938"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1204,7 +1381,8 @@
           "commonsCandidates": [
             "BMW 320"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1216,7 +1394,8 @@
       "status": "discontinued",
       "years": {
         "start": 1937,
-        "end": 1940
+        "end": 1940,
+        "display": "1937 – 1940"
       },
       "class": "Off-road vehicle",
       "chassis": [
@@ -1230,7 +1409,15 @@
           "commonsCandidates": [
             "BMW 325"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "325d",
+            "325i",
+            "325 E30",
+            "325 E36",
+            "325 E90",
+            "325 E91"
+          ]
         }
       ]
     },
@@ -1242,7 +1429,8 @@
       "status": "discontinued",
       "years": {
         "start": 1938,
-        "end": 1941
+        "end": 1941,
+        "display": "1938 – 1941"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1256,7 +1444,10 @@
           "commonsCandidates": [
             "BMW 321"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "EMW 321"
+          ]
         }
       ]
     },
@@ -1268,7 +1459,8 @@
       "status": "discontinued",
       "years": {
         "start": 1939,
-        "end": 1941
+        "end": 1941,
+        "display": "1939 – 1941"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -1282,7 +1474,8 @@
           "commonsCandidates": [
             "BMW 335"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1294,7 +1487,8 @@
       "status": "discontinued",
       "years": {
         "start": 1949,
-        "end": 1955
+        "end": 1955,
+        "display": "1949 – 1955"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -1308,7 +1502,8 @@
           "commonsCandidates": [
             "EMW 340"
           ],
-          "commonsManual": true
+          "commonsManual": true,
+          "variants": []
         }
       ]
     },
@@ -1320,7 +1515,8 @@
       "status": "discontinued",
       "years": {
         "start": 1952,
-        "end": 1962
+        "end": 1962,
+        "display": "1952 – 1962"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1334,7 +1530,8 @@
           "commonsCandidates": [
             "BMW 501"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1346,7 +1543,8 @@
       "status": "discontinued",
       "years": {
         "start": 1953,
-        "end": 1962
+        "end": 1962,
+        "display": "1953 – 1962"
       },
       "class": "Microcar",
       "chassis": [
@@ -1360,7 +1558,10 @@
           "commonsCandidates": [
             "BMW Isetta"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Isetta (United States)"
+          ]
         }
       ]
     },
@@ -1372,7 +1573,8 @@
       "status": "discontinued",
       "years": {
         "start": 1954,
-        "end": 1963
+        "end": 1963,
+        "display": "1954 – 1963"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1386,7 +1588,10 @@
           "commonsCandidates": [
             "BMW 502"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "502 Sportwagen"
+          ]
         }
       ]
     },
@@ -1398,7 +1603,8 @@
       "status": "discontinued",
       "years": {
         "start": 1955,
-        "end": 1955
+        "end": null,
+        "display": "1955"
       },
       "class": "Official state car",
       "chassis": [
@@ -1410,7 +1616,8 @@
           "verified": true,
           "commonsCategory": null,
           "commonsCandidates": [],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1422,7 +1629,8 @@
       "status": "discontinued",
       "years": {
         "start": 1956,
-        "end": 1959
+        "end": 1959,
+        "display": "1956 – 1959"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1436,7 +1644,13 @@
           "commonsCandidates": [
             "BMW 503"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "503 series I",
+            "503 series II",
+            "503 Cabriolet",
+            "503 Coupé"
+          ]
         }
       ]
     },
@@ -1448,7 +1662,8 @@
       "status": "discontinued",
       "years": {
         "start": 1956,
-        "end": 1959
+        "end": 1959,
+        "display": "1956 – 1959"
       },
       "class": "Roadster",
       "chassis": [
@@ -1462,7 +1677,11 @@
           "commonsCandidates": [
             "BMW 507"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Beemicia dwarf, Wrocław",
+            "507 Vignale"
+          ]
         }
       ]
     },
@@ -1474,7 +1693,8 @@
       "status": "discontinued",
       "years": {
         "start": 1959,
-        "end": 1965
+        "end": 1965,
+        "display": "1959 – 1965"
       },
       "class": "Compact car",
       "chassis": [
@@ -1488,7 +1708,15 @@
           "commonsCandidates": [
             "BMW 700"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "107",
+            "110",
+            "119",
+            "Höhreich RS",
+            "Martini-BMW 700",
+            "700 RS"
+          ]
         }
       ]
     },
@@ -1500,7 +1728,8 @@
       "status": "discontinued",
       "years": {
         "start": 1962,
-        "end": 1965
+        "end": 1965,
+        "display": "1962 – 1965"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1514,7 +1743,8 @@
           "commonsCandidates": [
             "BMW 3200 CS"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1526,7 +1756,8 @@
       "status": "discontinued",
       "years": {
         "start": 1962,
-        "end": 1972
+        "end": 1972,
+        "display": "1962 – 1972"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1540,7 +1771,13 @@
           "commonsCandidates": [
             "BMW New Class"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "type 120",
+            "1500",
+            "1600",
+            "121"
+          ]
         }
       ]
     },
@@ -1552,7 +1789,8 @@
       "status": "discontinued",
       "years": {
         "start": 1965,
-        "end": 1969
+        "end": 1969,
+        "display": "1965 – 1969"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1566,7 +1804,13 @@
           "commonsCandidates": [
             "BMW New Class"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "type 120",
+            "1500",
+            "1600",
+            "121"
+          ]
         }
       ]
     },
@@ -1578,7 +1822,8 @@
       "status": "discontinued",
       "years": {
         "start": 1966,
-        "end": 1977
+        "end": 1977,
+        "display": "1966 – 1977"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -1592,7 +1837,18 @@
           "commonsCandidates": [
             "BMW 02 Series"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "1502",
+            "1600-2",
+            "1602",
+            "1802",
+            "2002",
+            "Typ 114C",
+            "E10",
+            "02 Series sedans",
+            "00 touring Series"
+          ]
         }
       ]
     },
@@ -1604,7 +1860,8 @@
       "status": "discontinued",
       "years": {
         "start": 1968,
-        "end": 1975
+        "end": 1975,
+        "display": "1968 – 1975"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1620,7 +1877,13 @@
             "BMW E9 (Alpina)",
             "BMW 3.0 CSL (E9)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "2800 CS",
+            "3.0 CS",
+            "3.0 CSi",
+            "E9 (Alpina)"
+          ]
         }
       ]
     },
@@ -1632,7 +1895,8 @@
       "status": "discontinued",
       "years": {
         "start": 1968,
-        "end": 1977
+        "end": 1977,
+        "display": "1968 – 1977"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -1650,7 +1914,16 @@
             "BMW E3 3.0S-Si",
             "Central Garage/55 Jahre BMW E3"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "2500 (E3)",
+            "3.0 S",
+            "3.0 Si",
+            "E3 3.0S-Si",
+            "Bavaria",
+            "Central Garage/55 Jahre BMW E3",
+            "E3 (LWB)"
+          ]
         }
       ]
     },
@@ -1662,7 +1935,8 @@
       "status": "discontinued",
       "years": {
         "start": 1972,
-        "end": 1981
+        "end": 1981,
+        "display": "1972 – 1981"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1675,12 +1949,17 @@
           "commonsCategory": "BMW E12",
           "commonsCandidates": [
             "BMW E12",
-            "Alpina B7 (E12)",
             "BMW M535i (E12)",
+            "Alpina B7 (E12)",
             "BMW E12 Facelift",
             "Destroyed BMW E12"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina B7 (E12)",
+            "E12 Facelift",
+            "Destroyed BMW E12"
+          ]
         }
       ]
     },
@@ -1692,7 +1971,8 @@
       "status": "discontinued",
       "years": {
         "start": 1975,
-        "end": 1983
+        "end": 1983,
+        "display": "1975 – 1983"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -1710,9 +1990,16 @@
             "BMW 323 E21",
             "BMW 315 E21",
             "BMW 320 E21",
+            "Alpina B6 (E21)",
             "BMW E21 (Alpina)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "315 E21",
+            "320 E21",
+            "E21 (Alpina)",
+            "Baur TopCabriolet 1"
+          ]
         }
       ]
     },
@@ -1724,7 +2011,8 @@
       "status": "discontinued",
       "years": {
         "start": 1976,
-        "end": 1989
+        "end": 1989,
+        "display": "1976 – 1989"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1738,9 +2026,22 @@
           "commonsCandidates": [
             "BMW E24",
             "BMW M6 (E24)",
+            "BMW E24 (Alpina)",
+            "BMW 630 CS (E24)",
+            "BMW 628 CSi (E24)",
+            "BMW 633 CSi (E24)",
+            "BMW 635 CSi (E24)",
             "BMW M 635 CSi (E24)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "628 CSi (E24)",
+            "633 CSi (E24)",
+            "635 CSi (E24)",
+            "E24 (Alpina)",
+            "630 CS (E24)",
+            "M6 (E24)"
+          ]
         }
       ]
     },
@@ -1752,7 +2053,8 @@
       "status": "discontinued",
       "years": {
         "start": 1977,
-        "end": 1987
+        "end": 1987,
+        "display": "1977 – 1987"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -1766,7 +2068,8 @@
           "commonsCandidates": [
             "BMW E23"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -1778,7 +2081,8 @@
       "status": "discontinued",
       "years": {
         "start": 1978,
-        "end": 1981
+        "end": 1981,
+        "display": "1978 – 1981"
       },
       "class": "Sports car",
       "chassis": [
@@ -1792,7 +2096,11 @@
           "commonsCandidates": [
             "BMW M1"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E26",
+            "M1 Hommage"
+          ]
         }
       ]
     },
@@ -1804,7 +2112,8 @@
       "status": "discontinued",
       "years": {
         "start": 1981,
-        "end": 1988
+        "end": 1988,
+        "display": "1981 – 1988"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1820,12 +2129,21 @@
             "BMW M5 (E28)",
             "BMW 518 (E28)",
             "BMW 520i (E28)",
+            "BMW 535i (E28)",
             "BMW 525i (E28)",
             "BMW 528i (E28)",
-            "BMW 535i (E28)",
             "BMW 524td (E28)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "518 (E28)",
+            "524td (E28)",
+            "525e-and-528e",
+            "525i (E28)",
+            "528i (E28)",
+            "E28 (Alpina)",
+            "M5 (E28)"
+          ]
         }
       ]
     },
@@ -1837,7 +2155,8 @@
       "status": "discontinued",
       "years": {
         "start": 1982,
-        "end": 1994
+        "end": 1994,
+        "display": "1982 – 1994"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -1850,15 +2169,25 @@
           "commonsCategory": "BMW E30",
           "commonsCandidates": [
             "BMW E30",
+            "BMW E30/5",
             "BMW E30/2",
             "BMW E30/4",
-            "BMW E30/5",
             "BMW E30/2C",
             "BMW 316 E30",
             "BMW 318 E30",
             "BMW 323 E30"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E30 engines",
+            "E30 Facelift",
+            "E30/2",
+            "E30/2C",
+            "324d E30",
+            "E30/4",
+            "E30 (Alpina)",
+            "M3 (E30)"
+          ]
         }
       ]
     },
@@ -1870,7 +2199,8 @@
       "status": "discontinued",
       "years": {
         "start": 1986,
-        "end": 1994
+        "end": 1994,
+        "display": "1986 – 1994"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -1884,9 +2214,14 @@
           "commonsCandidates": [
             "BMW E32",
             "BMW E32 damaged",
-            "BMW E32 (Alpina)"
+            "BMW E32 (Alpina)",
+            "Alpina B12 (E32)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E32 (Alpina)",
+            "E32 damaged"
+          ]
         }
       ]
     },
@@ -1898,7 +2233,8 @@
       "status": "discontinued",
       "years": {
         "start": 1987,
-        "end": 1996
+        "end": 1996,
+        "display": "1987 – 1996"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -1914,11 +2250,20 @@
             "BMW M5 (E34)",
             "BMW E34 Touring",
             "BMW E34 (Alpina)",
+            "Alpina B10 (E34)",
             "BMW E34 interiors",
             "BMW E34 (1988-1994)",
             "BMW E34 (1994-1996)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E34 (1988-1994)",
+            "E34 (1994-1996)",
+            "E34 (Alpina)",
+            "E34 interiors",
+            "M5 (E34)",
+            "E34 Touring"
+          ]
         }
       ]
     },
@@ -1930,7 +2275,8 @@
       "status": "discontinued",
       "years": {
         "start": 1989,
-        "end": 1991
+        "end": 1991,
+        "display": "1989 – 1991"
       },
       "class": "Roadster",
       "chassis": [
@@ -1944,7 +2290,10 @@
           "commonsCandidates": [
             "BMW Z1"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina RLE"
+          ]
         }
       ]
     },
@@ -1956,7 +2305,8 @@
       "status": "discontinued",
       "years": {
         "start": 1989,
-        "end": 1999
+        "end": 1999,
+        "display": "1989 – 1999"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -1971,9 +2321,16 @@
             "BMW E31",
             "BMW M8 (E31)",
             "BMW 850 (E31)",
-            "BMW E31 (Alpina)"
+            "BMW E31 (Alpina)",
+            "Alpina B12 (E31)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "840Ci",
+            "E31 (Alpina)",
+            "Hartge H2",
+            "M8 (E31)"
+          ]
         }
       ]
     },
@@ -1985,7 +2342,8 @@
       "status": "discontinued",
       "years": {
         "start": 1990,
-        "end": 2000
+        "end": 2000,
+        "display": "1990 – 2000"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -2006,7 +2364,18 @@
             "BMW E36/2C",
             "BMW 316 E36"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E36/2",
+            "E36/2C",
+            "E36/3",
+            "320 E36",
+            "E36/4",
+            "E36/7",
+            "E36/8",
+            "E36 (Alpina)",
+            "M3 (E36)"
+          ]
         }
       ]
     },
@@ -2018,7 +2387,8 @@
       "status": "discontinued",
       "years": {
         "start": 1994,
-        "end": 2001
+        "end": 2001,
+        "display": "1994 – 2001"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -2031,15 +2401,21 @@
           "commonsCategory": "BMW E38",
           "commonsCandidates": [
             "BMW E38",
+            "BMW L7 (E38)",
             "BMW E38 parts",
+            "BMW 730d (E38)",
+            "BMW 730i (E38)",
             "BMW 735i (E38)",
-            "BMW E38 (1994)",
-            "BMW E38 (1998)",
-            "BMW 750hL (E38)",
-            "BMW E38 by model",
-            "Alpina B12 (E38)"
+            "BMW 740d (E38)",
+            "BMW 740i (E38)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E38 parts",
+            "E38 (1994)",
+            "E38 (1998)",
+            "Alpina B12 (E38)"
+          ]
         }
       ]
     },
@@ -2051,7 +2427,8 @@
       "status": "discontinued",
       "years": {
         "start": 1995,
-        "end": 2002
+        "end": 2002,
+        "display": "1995 – 2002"
       },
       "class": "Roadster and coupé",
       "chassis": [
@@ -2065,7 +2442,8 @@
           "commonsCandidates": [
             "BMW Z3"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -2077,7 +2455,8 @@
       "status": "discontinued",
       "years": {
         "start": 1995,
-        "end": 2003
+        "end": 2003,
+        "display": "1995 – 2003"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -2090,15 +2469,24 @@
           "commonsCategory": "BMW E39",
           "commonsCandidates": [
             "BMW E39",
+            "BMW E39 530i",
             "BMW E39 540i",
             "BMW M5 (E39)",
             "BMW E39 parts",
             "BMW E39 (1995)",
             "BMW E39 (2000)",
-            "BMW E39 sedans",
-            "BMW E39 Touring"
+            "BMW E39 sedans"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E39 interiors",
+            "E39 parts",
+            "E39 (1995)",
+            "E39 (2000)",
+            "E39 (Alpina)",
+            "E39 sedans",
+            "E39 Touring"
+          ]
         }
       ]
     },
@@ -2110,7 +2498,8 @@
       "status": "discontinued",
       "years": {
         "start": 1998,
-        "end": 2006
+        "end": 2006,
+        "display": "1998 – 2006"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -2131,7 +2520,15 @@
             "BMW M3 (E46)",
             "Alpina B3 (E46)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "320 E46",
+            "E46/2",
+            "E46/2C",
+            "E46/3",
+            "E46/4",
+            "M3 (E46)"
+          ]
         }
       ]
     },
@@ -2143,7 +2540,8 @@
       "status": "discontinued",
       "years": {
         "start": 1999,
-        "end": 2006
+        "end": 2006,
+        "display": "1999 – 2006"
       },
       "class": "Mid-size luxury SUV",
       "chassis": [
@@ -2158,7 +2556,10 @@
             "BMW E53",
             "BMW E53 clones"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E53 clones"
+          ]
         }
       ]
     },
@@ -2170,7 +2571,8 @@
       "status": "discontinued",
       "years": {
         "start": 2000,
-        "end": 2003
+        "end": 2003,
+        "display": "2000 – 2003"
       },
       "class": "Roadster",
       "chassis": [
@@ -2184,7 +2586,12 @@
           "commonsCandidates": [
             "BMW Z8"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Bertone Birusa",
+            "Z8 C",
+            "E52"
+          ]
         }
       ]
     },
@@ -2196,7 +2603,8 @@
       "status": "discontinued",
       "years": {
         "start": 2001,
-        "end": 2008
+        "end": 2008,
+        "display": "2001 – 2008"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -2212,7 +2620,10 @@
             "BMW E65 LCI",
             "Alpina B7 (E65)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E65 LCI"
+          ]
         },
         {
           "code": "E66",
@@ -2226,7 +2637,11 @@
             "Alpina B7 (E66)",
             "BMW Hydrogen 7 (E66)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E67",
+            "Hydrogen 7 (E66)"
+          ]
         }
       ]
     },
@@ -2238,7 +2653,8 @@
       "status": "discontinued",
       "years": {
         "start": 2002,
-        "end": 2008
+        "end": 2008,
+        "display": "2002 – 2008"
       },
       "class": "Roadster, coupé",
       "chassis": [
@@ -2253,7 +2669,10 @@
             "BMW E85",
             "BMW Z4 M (E85)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina Roadster S"
+          ]
         },
         {
           "code": "E86",
@@ -2266,7 +2685,8 @@
             "BMW E86",
             "BMW Z4 M (E86)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -2278,7 +2698,8 @@
       "status": "discontinued",
       "years": {
         "start": 2003,
-        "end": 2010
+        "end": 2010,
+        "display": "2003 – 2010"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -2296,7 +2717,12 @@
             "Alpina B5 (E60)",
             "Burning BMW E60"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Burning BMW E60",
+            "E60 L",
+            "M5 (E60)"
+          ]
         },
         {
           "code": "E61",
@@ -2307,9 +2733,11 @@
           "commonsCategory": "BMW E61",
           "commonsCandidates": [
             "BMW E61",
+            "BMW M5 (E61)",
             "Alpina B5 (E61)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -2321,7 +2749,8 @@
       "status": "discontinued",
       "years": {
         "start": 2003,
-        "end": 2010
+        "end": 2010,
+        "display": "2003 – 2010"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -2335,9 +2764,17 @@
           "commonsCandidates": [
             "BMW E63",
             "BMW M6 (E63)",
-            "Alpina B6 (E63)"
+            "Alpina B6 (E63)",
+            "BMW E63 damaged"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "AC Schnitzer Tension",
+            "Alpina B6 (E63)",
+            "E63 damaged",
+            "Fisker Latigo",
+            "M6 (E63)"
+          ]
         },
         {
           "code": "E64",
@@ -2351,7 +2788,11 @@
             "BMW M6 (E64)",
             "Alpina B6 (E64)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina B6 (E64)",
+            "M6 (E64)"
+          ]
         }
       ]
     },
@@ -2363,7 +2804,8 @@
       "status": "discontinued",
       "years": {
         "start": 2003,
-        "end": 2010
+        "end": 2010,
+        "display": "2003 – 2010"
       },
       "class": "Compact luxury SUV",
       "chassis": [
@@ -2378,7 +2820,10 @@
             "BMW E83",
             "BMW X3 Cross Country (E83)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "X3 Cross Country (E83)"
+          ]
         }
       ]
     },
@@ -2390,7 +2835,8 @@
       "status": "discontinued",
       "years": {
         "start": 2004,
-        "end": 2013
+        "end": 2013,
+        "display": "2004 – 2013"
       },
       "class": "Hatchback, coupé, convertible",
       "chassis": [
@@ -2404,7 +2850,8 @@
           "commonsCandidates": [
             "BMW E81"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         },
         {
           "code": "E82",
@@ -2416,7 +2863,12 @@
           "commonsCandidates": [
             "BMW E82"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "1 Series M Coupe",
+            "ActiveE",
+            "Concept 1 Series tii"
+          ]
         },
         {
           "code": "E87",
@@ -2428,7 +2880,8 @@
           "commonsCandidates": [
             "BMW E87"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         },
         {
           "code": "E88",
@@ -2441,7 +2894,10 @@
             "BMW E88",
             "BMW E88 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E88 development mules"
+          ]
         }
       ]
     },
@@ -2453,7 +2909,8 @@
       "status": "discontinued",
       "years": {
         "start": 2005,
-        "end": 2013
+        "end": 2013,
+        "display": "2005 – 2013"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -2468,13 +2925,16 @@
             "BMW E90",
             "BMW 325 E90",
             "BMW M3 (E90)",
+            "BMW 318d (E90)",
+            "BMW 318i (E90)",
             "BMW 320d (E90)",
             "BMW 320i (E90)",
-            "BMW 328i (E90)",
-            "BMW 335d (E90)",
-            "BMW 335i (E90)"
+            "BMW 323i (E90)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M3 (E90)"
+          ]
         },
         {
           "code": "E91",
@@ -2487,13 +2947,19 @@
             "BMW E91",
             "BMW 325 E91",
             "BMW 330 E91",
-            "BMW 320d E91",
-            "BMW 320i E91",
-            "BMW 328i E91",
-            "BMW 335d E91",
-            "BMW 335i E91"
+            "BMW 320 E91",
+            "BMW 335 E91",
+            "BMW 316d E91",
+            "BMW 318d E91",
+            "BMW 318i E91"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "320 E91",
+            "323i E91",
+            "335 E91",
+            "E91 (Alpina)"
+          ]
         },
         {
           "code": "E92",
@@ -2505,12 +2971,16 @@
           "commonsCandidates": [
             "BMW E92",
             "BMW M3 (E92)",
-            "BMW 335i (E92)",
             "BMW 330i (E92)",
+            "BMW 335i (E92)",
             "Alpina B3 (E92)",
-            "Alpina D3 (E92)"
+            "Alpina D3 (E92)",
+            "BMW M3 GTS (E92)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M3 (E92)"
+          ]
         },
         {
           "code": "E93",
@@ -2522,11 +2992,14 @@
           "commonsCandidates": [
             "BMW E93",
             "BMW M3 (E93)",
-            "BMW 335i (E93)",
             "BMW 330i (E93)",
+            "BMW 335i (E93)",
             "Alpina B3 (E93)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M3 (E93)"
+          ]
         }
       ]
     },
@@ -2538,7 +3011,8 @@
       "status": "discontinued",
       "years": {
         "start": 2006,
-        "end": 2013
+        "end": 2013,
+        "display": "2006 – 2013"
       },
       "class": "Mid-size luxury SUV",
       "chassis": [
@@ -2554,7 +3028,10 @@
             "BMW X5 M (E70)",
             "BMW E70 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E70 development mules"
+          ]
         }
       ]
     },
@@ -2566,7 +3043,8 @@
       "status": "discontinued",
       "years": {
         "start": 2008,
-        "end": 2014
+        "end": 2014,
+        "display": "2008 – 2014"
       },
       "class": "Mid-size luxury SUV",
       "chassis": [
@@ -2581,7 +3059,11 @@
             "BMW E71",
             "BMW X6 M (E71)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Concept X6",
+            "X6 Hybrid"
+          ]
         }
       ]
     },
@@ -2593,7 +3075,8 @@
       "status": "discontinued",
       "years": {
         "start": 2008,
-        "end": 2015
+        "end": 2015,
+        "display": "2008 – 2015"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -2609,7 +3092,10 @@
             "Alpina B7 (F01)",
             "BMW F01 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F01 development mules"
+          ]
         },
         {
           "code": "F02",
@@ -2622,7 +3108,8 @@
             "BMW F02",
             "Alpina B7 (F02)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -2634,7 +3121,8 @@
       "status": "discontinued",
       "years": {
         "start": 2009,
-        "end": 2016
+        "end": 2016,
+        "display": "2009 – 2016"
       },
       "class": "Roadster",
       "chassis": [
@@ -2646,9 +3134,16 @@
           "verified": true,
           "commonsCategory": "BMW E89",
           "commonsCandidates": [
-            "BMW E89"
+            "BMW E89",
+            "BMW E89 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "E89 development mules",
+            "Z4 sDrive23i",
+            "Zagato Coupé",
+            "Zagato Roadster"
+          ]
         }
       ]
     },
@@ -2660,7 +3155,8 @@
       "status": "discontinued",
       "years": {
         "start": 2009,
-        "end": 2015
+        "end": 2015,
+        "display": "2009 – 2015"
       },
       "class": "Sub-compact luxury SUV",
       "chassis": [
@@ -2675,7 +3171,12 @@
             "BMW E84",
             "BMW E84 fire engines"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Concept K2 Powder Ride",
+            "Concept X1",
+            "Zinoro 1E"
+          ]
         }
       ]
     },
@@ -2687,7 +3188,8 @@
       "status": "discontinued",
       "years": {
         "start": 2010,
-        "end": 2017
+        "end": 2017,
+        "display": "2010 – 2017"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -2699,9 +3201,13 @@
           "verified": true,
           "commonsCategory": "BMW F07",
           "commonsCandidates": [
-            "BMW F07"
+            "BMW F07",
+            "BMW F07 (facelift)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F07 (facelift)"
+          ]
         },
         {
           "code": "F10",
@@ -2712,13 +3218,19 @@
           "commonsCategory": "BMW F10",
           "commonsCandidates": [
             "BMW F10",
-            "BMW M5 (F10)",
             "BMW F10 550i",
+            "BMW M5 (F10)",
             "Alpina B5 (F10)",
             "Alpina D5 (F10)",
             "BMW F10 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F10 development mules",
+            "ActiveHybrid 5",
+            "F18",
+            "M5 (F10)"
+          ]
         },
         {
           "code": "F11",
@@ -2730,9 +3242,13 @@
           "commonsCandidates": [
             "BMW F11",
             "Alpina B5 (F11)",
-            "Alpina D5 (F11)"
+            "Alpina D5 (F11)",
+            "BMW F11 (Alpina)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F11 (Alpina)"
+          ]
         }
       ]
     },
@@ -2744,7 +3260,8 @@
       "status": "discontinued",
       "years": {
         "start": 2011,
-        "end": 2018
+        "end": 2018,
+        "display": "2011 – 2018"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -2760,7 +3277,11 @@
             "BMW M6 (F06)",
             "Alpina B6 (F06)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina B6 (F06)",
+            "M6 (F06)"
+          ]
         },
         {
           "code": "F12",
@@ -2774,7 +3295,11 @@
             "BMW M6 (F12)",
             "Alpina B6 (F12)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina B6 (F12)",
+            "M6 (F12)"
+          ]
         },
         {
           "code": "F13",
@@ -2785,10 +3310,16 @@
           "commonsCategory": "BMW F13",
           "commonsCandidates": [
             "BMW F13",
+            "BMW F13 650i",
             "BMW M6 (F13)",
             "Alpina B6 (F13)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Alpina B6 (F13)",
+            "6 Series Coupe Concept",
+            "M6 (F13)"
+          ]
         }
       ]
     },
@@ -2800,7 +3331,8 @@
       "status": "discontinued",
       "years": {
         "start": 2011,
-        "end": 2017
+        "end": 2017,
+        "display": "2011 – 2017"
       },
       "class": "Compact luxury SUV",
       "chassis": [
@@ -2816,7 +3348,10 @@
             "Alpina XD3 (F25)",
             "BMW F25 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F25 development mules"
+          ]
         }
       ]
     },
@@ -2828,7 +3363,8 @@
       "status": "discontinued",
       "years": {
         "start": 2011,
-        "end": 2019
+        "end": 2019,
+        "display": "2011 – 2019"
       },
       "class": "Sub-compact executive car",
       "chassis": [
@@ -2845,7 +3381,12 @@
             "BMW F20 M140i",
             "BMW F20 125i M Performance"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F20 125i M Performance",
+            "F20 M135i",
+            "F20 M140i"
+          ]
         },
         {
           "code": "F21",
@@ -2858,7 +3399,10 @@
             "BMW F21",
             "BMW F21 M135i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F21 M135i"
+          ]
         }
       ]
     },
@@ -2870,7 +3414,8 @@
       "status": "discontinued",
       "years": {
         "start": 2011,
-        "end": 2020
+        "end": 2020,
+        "display": "2011 – 2020"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -2884,14 +3429,20 @@
           "commonsCandidates": [
             "BMW F30",
             "BMW 316i (F30)",
+            "BMW 318d (F30)",
             "BMW 320d (F30)",
             "BMW 320i (F30)",
             "BMW 328i (F30)",
-            "BMW 335i (F30)",
-            "BMW F30 (2011)",
-            "BMW F30 (2015)"
+            "BMW 330e (F30)",
+            "BMW 335i (F30)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F30 (2011)",
+            "F30 (2015)",
+            "F30 (Alpina)",
+            "M3 (F80)"
+          ]
         },
         {
           "code": "F31",
@@ -2905,7 +3456,8 @@
             "Alpina B3 (F31)",
             "Alpina D3 (F31)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         },
         {
           "code": "F34",
@@ -2917,7 +3469,8 @@
           "commonsCandidates": [
             "BMW F34"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -2929,7 +3482,8 @@
       "status": "discontinued",
       "years": {
         "start": 2013,
-        "end": 2022
+        "end": 2022,
+        "display": "2013 – 2022"
       },
       "class": "Sub-compact executive car (electric)",
       "chassis": [
@@ -2943,7 +3497,16 @@
           "commonsCandidates": [
             "BMW I01"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "i3 (2013–2017)",
+            "i3 (2017–2022)",
+            "i3 chassis",
+            "i3 Erlkönig",
+            "Innogy go!",
+            "i3 Interiors",
+            "Rinspeed Budii"
+          ]
         }
       ]
     },
@@ -2955,7 +3518,8 @@
       "status": "discontinued",
       "years": {
         "start": 2013,
-        "end": 2020
+        "end": 2020,
+        "display": "2013 – 2020"
       },
       "class": "Compact executive car",
       "chassis": [
@@ -2971,7 +3535,10 @@
             "Alpina B4 (F32)",
             "Alpina D4 (F32)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "4 Series Concept Coupe"
+          ]
         },
         {
           "code": "F33",
@@ -2985,7 +3552,10 @@
             "Alpina B4 (F33)",
             "Alpina D4 (F33)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M4 (F83)"
+          ]
         },
         {
           "code": "F36",
@@ -2997,7 +3567,8 @@
           "commonsCandidates": [
             "BMW F36"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3009,7 +3580,8 @@
       "status": "discontinued",
       "years": {
         "start": 2013,
-        "end": 2021
+        "end": 2021,
+        "display": "2013 – 2021"
       },
       "class": "Subcompact car",
       "chassis": [
@@ -3025,7 +3597,12 @@
             "BMW F22 M235i",
             "BMW F22 M240i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M2 (F87)",
+            "F22 M235i",
+            "F22 M240i"
+          ]
         },
         {
           "code": "F23",
@@ -3038,7 +3615,10 @@
             "BMW F23",
             "BMW F23 M240i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F23 M240i"
+          ]
         }
       ]
     },
@@ -3050,7 +3630,8 @@
       "status": "discontinued",
       "years": {
         "start": 2013,
-        "end": 2018
+        "end": 2018,
+        "display": "2013 – 2018"
       },
       "class": "Mid-size luxury SUV",
       "chassis": [
@@ -3067,7 +3648,11 @@
             "BMW F15 X5 M50d",
             "BMW F15 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F15 development mules",
+            "X5 xDrive40e"
+          ]
         }
       ]
     },
@@ -3079,7 +3664,8 @@
       "status": "discontinued",
       "years": {
         "start": 2014,
-        "end": 2021
+        "end": 2021,
+        "display": "2014 – 2021"
       },
       "class": "Sub-compact MPV Large MPV",
       "chassis": [
@@ -3091,9 +3677,13 @@
           "verified": true,
           "commonsCategory": "BMW F45",
           "commonsCandidates": [
-            "BMW F45"
+            "BMW F45",
+            "BMW F45 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F45 development mules"
+          ]
         },
         {
           "code": "F46",
@@ -3103,9 +3693,13 @@
           "verified": true,
           "commonsCategory": "BMW F46",
           "commonsCandidates": [
-            "BMW F46"
+            "BMW F46",
+            "BMW F46 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F46 development mules"
+          ]
         }
       ]
     },
@@ -3117,7 +3711,8 @@
       "status": "discontinued",
       "years": {
         "start": 2014,
-        "end": 2020
+        "end": 2020,
+        "display": "2014 – 2020"
       },
       "class": "Sports car (hybrid)",
       "chassis": [
@@ -3131,7 +3726,19 @@
           "commonsCandidates": [
             "BMW i8"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "i8 Mules",
+            "i8 chassis",
+            "i8 Concept",
+            "i8 Concept Spyder",
+            "I12",
+            "i8 Memphis Style",
+            "Rinspeed Etos",
+            "i8 Roadster",
+            "i8 safety car (FIA Formula E Championship)",
+            "i8 Ultimate Sophisto Edition"
+          ]
         }
       ]
     },
@@ -3143,7 +3750,8 @@
       "status": "discontinued",
       "years": {
         "start": 2014,
-        "end": 2018
+        "end": 2018,
+        "display": "2014 – 2018"
       },
       "class": "Compact luxury SUV",
       "chassis": [
@@ -3158,7 +3766,8 @@
             "BMW F26",
             "BMW F26 X4 M40i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3170,7 +3779,8 @@
       "status": "discontinued",
       "years": {
         "start": 2014,
-        "end": 2019
+        "end": 2019,
+        "display": "2014 – 2019"
       },
       "class": "Mid-size luxury SUV",
       "chassis": [
@@ -3186,7 +3796,8 @@
             "BMW X6 M (F16)",
             "BMW F16 X6 M50d"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3198,7 +3809,8 @@
       "status": "discontinued",
       "years": {
         "start": 2015,
-        "end": 2022
+        "end": 2022,
+        "display": "2015 – 2022"
       },
       "class": "Sub-compact luxury SUV",
       "chassis": [
@@ -3214,7 +3826,11 @@
             "BMW F48 25e",
             "BMW F48 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F48 development mules",
+            "F48 25e"
+          ]
         }
       ]
     },
@@ -3226,7 +3842,8 @@
       "status": "discontinued",
       "years": {
         "start": 2015,
-        "end": 2022
+        "end": 2022,
+        "display": "2015 – 2022"
       },
       "class": "Full-size luxury car",
       "chassis": [
@@ -3245,7 +3862,12 @@
             "BMW G11 (2019)",
             "BMW G11 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G11 development mules",
+            "G11 (2015)",
+            "G11 (2019)"
+          ]
         },
         {
           "code": "G12",
@@ -3261,7 +3883,12 @@
             "Alpina B7 (G12)",
             "BMW G12 M760Li xDrive"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G12 (2015)",
+            "G12 (2019)",
+            "G12 M760Li xDrive"
+          ]
         }
       ]
     },
@@ -3273,7 +3900,8 @@
       "status": "discontinued",
       "years": {
         "start": 2016,
-        "end": 2023
+        "end": 2023,
+        "display": "2016 – 2023"
       },
       "class": "Mid-size luxury car",
       "chassis": [
@@ -3292,7 +3920,13 @@
             "Alpina D5 (G30)",
             "BMW G30 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G30 development mules",
+            "G38",
+            "M5 (F90)",
+            "G30 M550i"
+          ]
         },
         {
           "code": "G31",
@@ -3306,7 +3940,8 @@
             "Alpina B5 (G31)",
             "Alpina D5 (G31)"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3318,7 +3953,8 @@
       "status": "discontinued",
       "years": {
         "start": 2017,
-        "end": 2023
+        "end": 2023,
+        "display": "2017 – 2023"
       },
       "class": "Sub-compact executive car",
       "chassis": [
@@ -3332,7 +3968,8 @@
           "commonsCandidates": [
             "BMW F52"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3344,7 +3981,8 @@
       "status": "discontinued",
       "years": {
         "start": 2017,
-        "end": 2023
+        "end": 2023,
+        "display": "2017 – 2023"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -3358,7 +3996,8 @@
           "commonsCandidates": [
             "BMW G32"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3370,7 +4009,8 @@
       "status": "discontinued",
       "years": {
         "start": 2017,
-        "end": 2024
+        "end": 2024,
+        "display": "2017 – 2024"
       },
       "class": "Compact luxury SUV",
       "chassis": [
@@ -3389,7 +4029,12 @@
             "Alpina XD3 (G01)",
             "BMW G01 fire engines"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G08",
+            "G01 30e",
+            "G01 fire engines"
+          ]
         }
       ]
     },
@@ -3401,7 +4046,8 @@
       "status": "discontinued",
       "years": {
         "start": 2018,
-        "end": 2023
+        "end": 2023,
+        "display": "2018 – 2023"
       },
       "class": "Sub-compact luxury SUV",
       "chassis": [
@@ -3416,7 +4062,8 @@
             "BMW F39",
             "BMW F39 X2 M35i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3428,7 +4075,8 @@
       "status": "discontinued",
       "years": {
         "start": 2018,
-        "end": 2025
+        "end": 2025,
+        "display": "2018 – 2025"
       },
       "class": "Compact luxury SUV",
       "chassis": [
@@ -3445,7 +4093,8 @@
             "BMW G02 X4 M40d",
             "BMW G02 X4 M40i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": []
         }
       ]
     },
@@ -3457,7 +4106,8 @@
       "status": "discontinued",
       "years": {
         "start": 2018,
-        "end": 2026
+        "end": 2026,
+        "display": "2018 – 2026"
       },
       "class": "Roadster",
       "chassis": [
@@ -3470,9 +4120,15 @@
           "commonsCategory": "BMW G29",
           "commonsCandidates": [
             "BMW G29",
-            "BMW G29 Z4 M40i"
+            "BMW G29 Z4 M40i",
+            "BMW Z4 (G29, facelift)",
+            "BMW Z4 (G29, facelift) M40i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "Z4 (G29, facelift)",
+            "Estella Tender 5.7"
+          ]
         }
       ]
     },
@@ -3484,7 +4140,8 @@
       "status": "discontinued",
       "years": {
         "start": 2018,
-        "end": 2026
+        "end": 2026,
+        "display": "2018 – 2026"
       },
       "class": "Grand tourer",
       "chassis": [
@@ -3500,7 +4157,11 @@
             "BMW G14 M850i",
             "BMW G14 development mules"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "G14 development mules",
+            "M8 Convertible"
+          ]
         },
         {
           "code": "G15",
@@ -3514,7 +4175,10 @@
             "BMW M8 (G15)",
             "BMW G15 M850i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "M8 (G15)"
+          ]
         }
       ]
     },
@@ -3526,7 +4190,8 @@
       "status": "discontinued",
       "years": {
         "start": 2019,
-        "end": 2024
+        "end": 2024,
+        "display": "2019 – 2024"
       },
       "class": "Sub-compact executive car",
       "chassis": [
@@ -3542,7 +4207,11 @@
             "BMW F40 128ti",
             "BMW F40 M135i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F40 128ti",
+            "F40 M135i"
+          ]
         }
       ]
     },
@@ -3554,7 +4223,8 @@
       "status": "discontinued",
       "years": {
         "start": 2020,
-        "end": 2024
+        "end": 2024,
+        "display": "2020 – 2024"
       },
       "class": "Sub-compact executive car",
       "chassis": [
@@ -3569,7 +4239,10 @@
             "BMW F44",
             "BMW F44 M235i"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "F44 M235i"
+          ]
         }
       ]
     },
@@ -3581,7 +4254,8 @@
       "status": "discontinued",
       "years": {
         "start": 2020,
-        "end": 2025
+        "end": 2025,
+        "display": "2020 – 2025"
       },
       "class": "Compact luxury SUV (electric)",
       "chassis": [
@@ -3596,7 +4270,2611 @@
             "BMW G08",
             "BMW iX3 G08"
           ],
-          "commonsManual": false
+          "commonsManual": false,
+          "variants": [
+            "iX3 G08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-331",
+      "series": "Concept / Prototype",
+      "label": "BMW 331",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1949,
+        "end": 1949,
+        "display": "1949"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Peter Szymanowski",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-528-502",
+      "series": "Concept / Prototype",
+      "label": "BMW 528/502",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1954,
+        "end": 1954,
+        "display": "1954"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-hurricane",
+      "series": "Concept / Prototype",
+      "label": "BMW Hurricane",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1964,
+        "end": 1964,
+        "display": "1964"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-k67",
+      "series": "Concept / Prototype",
+      "label": "BMW K67",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1967,
+        "end": 1967,
+        "display": "1967"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-2000-coup-by-frua",
+      "series": "Concept / Prototype",
+      "label": "BMW 2000 Coupé by Frua",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1968,
+        "end": 1968,
+        "display": "1968"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-2800-spicup",
+      "series": "Concept / Prototype",
+      "label": "BMW 2800 Spicup",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1969,
+        "end": 1969,
+        "display": "1969"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Bertone",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-2200-ti-garmisch",
+      "series": "Concept / Prototype",
+      "label": "BMW 2200 TI Garmisch",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1970,
+        "end": 1970,
+        "display": "1970"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-1602-electro-antrieb-e10",
+      "series": "Concept / Prototype",
+      "label": "BMW 1602 Electro-Antrieb (E10)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1972,
+        "end": 1972,
+        "display": "1972"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-e25-turbo",
+      "series": "Concept / Prototype",
+      "label": "BMW E25 Turbo",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1972,
+        "end": 1972,
+        "display": "1972"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Paul Bracq",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-karmann-asso-di-quadri",
+      "series": "Concept / Prototype",
+      "label": "BMW Karmann Asso Di Quadri",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1976,
+        "end": 1976,
+        "display": "1976"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Italdesign",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z1-prototype",
+      "series": "Concept / Prototype",
+      "label": "BMW Z1 Prototype",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1985,
+        "end": 1985,
+        "display": "1985"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-m8-e31-prototype",
+      "series": "Concept / Prototype",
+      "label": "BMW M8 E31 Prototype",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1990,
+        "end": 1990,
+        "display": "1990"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-ur-roadster-original-roadster",
+      "series": "Concept / Prototype",
+      "label": "BMW Ur-Roadster (Original Roadster)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1990,
+        "end": 1990,
+        "display": "1990"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-nazca-c2",
+      "series": "Concept / Prototype",
+      "label": "BMW Nazca C2",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1991,
+        "end": 1991,
+        "display": "1991"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Italdesign",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-nazca-m12",
+      "series": "Concept / Prototype",
+      "label": "BMW Nazca M12",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1991,
+        "end": 1991,
+        "display": "1991"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z2",
+      "series": "Concept / Prototype",
+      "label": "BMW Z2",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1991,
+        "end": 1991,
+        "display": "1991"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-e1-z11",
+      "series": "Concept / Prototype",
+      "label": "BMW E1 (Z11)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1991,
+        "end": 1991,
+        "display": "1991"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-e2",
+      "series": "Concept / Prototype",
+      "label": "BMW E2",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1992,
+        "end": 1992,
+        "display": "1992"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-nazca-c2-spider",
+      "series": "Concept / Prototype",
+      "label": "BMW Nazca C2 Spider",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1993,
+        "end": 1993,
+        "display": "1993"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Italdesign",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-e1-z15",
+      "series": "Concept / Prototype",
+      "label": "BMW E1 (Z15)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1993,
+        "end": 1993,
+        "display": "1993"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z13",
+      "series": "Concept / Prototype",
+      "label": "BMW Z13",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1994,
+        "end": 1994,
+        "display": "1994"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z18",
+      "series": "Concept / Prototype",
+      "label": "BMW Z18",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1995,
+        "end": 1995,
+        "display": "1995"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z21",
+      "series": "Concept / Prototype",
+      "label": "BMW Z21",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1995,
+        "end": 1995,
+        "display": "1995"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z07",
+      "series": "Concept / Prototype",
+      "label": "BMW Z07",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1998,
+        "end": 1998,
+        "display": "1998"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Z07",
+          "commonsCandidates": [
+            "BMW Z07"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z9",
+      "series": "Concept / Prototype",
+      "label": "BMW Z9",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 1999,
+        "end": 1999,
+        "display": "1999"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z9-convertible",
+      "series": "Concept / Prototype",
+      "label": "BMW Z9 Convertible",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2000,
+        "end": 2000,
+        "display": "2000"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z22",
+      "series": "Concept / Prototype",
+      "label": "BMW Z22",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2000,
+        "end": 2000,
+        "display": "2000"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-750hl",
+      "series": "Concept / Prototype",
+      "label": "BMW 750hL",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2000,
+        "end": 2000,
+        "display": "2000"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-x-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW X-Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2001,
+        "end": 2001,
+        "display": "2001"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Chris Chapman",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-z29",
+      "series": "Concept / Prototype",
+      "label": "BMW Z29",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2001,
+        "end": 2001,
+        "display": "2001"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-cs1",
+      "series": "Concept / Prototype",
+      "label": "BMW CS1",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2002,
+        "end": 2002,
+        "display": "2002"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Chris Chapman",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-xactivity",
+      "series": "Concept / Prototype",
+      "label": "BMW xActivity",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2003,
+        "end": 2003,
+        "display": "2003"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-z4-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Z4 Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2005,
+        "end": 2005,
+        "display": "2005"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Chris Bangle",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept Z4 Coupé",
+          "commonsCandidates": [
+            "BMW Concept Z4 Coupé"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-coup-mille-miglia-2006",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Coupé Mille Miglia (2006)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2006,
+        "end": 2006,
+        "display": "2006"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-1-series-tii",
+      "series": "Concept / Prototype",
+      "label": "BMW 1 Series tii",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2007,
+        "end": 2007,
+        "display": "2007"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-cs",
+      "series": "Concept / Prototype",
+      "label": "BMW CS",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2007,
+        "end": 2007,
+        "display": "2007"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x6",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X6",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2007,
+        "end": 2007,
+        "display": "2007"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept X6",
+          "commonsCandidates": [
+            "BMW Concept X6"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Concept X6 ActiveHybrid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x6-activehybrid",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X6 ActiveHybrid",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2007,
+        "end": 2007,
+        "display": "2007"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept X6 ActiveHybrid",
+          "commonsCandidates": [
+            "BMW Concept X6 ActiveHybrid"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x1",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X1",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2008,
+        "end": 2008,
+        "display": "2008"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept X1",
+          "commonsCandidates": [
+            "BMW Concept X1"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-bmw-concept-7-series-activehybrid",
+      "series": "Concept / Prototype",
+      "label": "BMW BMW Concept 7 Series ActiveHybrid",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2008,
+        "end": 2008,
+        "display": "2008"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-gina",
+      "series": "Concept / Prototype",
+      "label": "BMW GINA",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2008,
+        "end": 2008,
+        "display": "2008"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Chris Bangle",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-m1-homage",
+      "series": "Concept / Prototype",
+      "label": "BMW M1 Homage",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2008,
+        "end": 2008,
+        "display": "2008"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-efficientdynamics-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision EfficientDynamics concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2009,
+        "end": 2009,
+        "display": "2009"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-5-gt-concept-car",
+      "series": "Concept / Prototype",
+      "label": "BMW 5 GT Concept Car",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2009,
+        "end": 2009,
+        "display": "2009"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 5 GT Concept car",
+          "commonsCandidates": [
+            "BMW 5 GT Concept car"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-c1-e",
+      "series": "Concept / Prototype",
+      "label": "BMW C1-E",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2009,
+        "end": 2009,
+        "display": "2009"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-6-series",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept 6 Series",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2010,
+        "end": 2010,
+        "display": "2010"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-connecteddrive",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision ConnectedDrive",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2011,
+        "end": 2011,
+        "display": "2011"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-328-hommage",
+      "series": "Concept / Prototype",
+      "label": "BMW 328 Hommage",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2011,
+        "end": 2011,
+        "display": "2011"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 328 Hommage",
+          "commonsCandidates": [
+            "BMW 328 Hommage"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Festival automobile international 2012 - BMW 328 Hommage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i3-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW i3 Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2011,
+        "end": 2011,
+        "display": "2011"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW i3 Concept",
+          "commonsCandidates": [
+            "BMW i3 Concept"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i8-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW i8 Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2011,
+        "end": 2011,
+        "display": "2011"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW i8 Concept",
+          "commonsCandidates": [
+            "BMW i8 Concept"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Festival automobile international 2013 - BMW - i8 Concept"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i3-concept-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW i3 Concept Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i8-concept-spyder",
+      "series": "Concept / Prototype",
+      "label": "BMW i8 Concept Spyder",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW i8 Concept Spyder",
+          "commonsCandidates": [
+            "BMW i8 Concept Spyder"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-zagato-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Zagato Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "Zagato",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Zagato Coupé",
+          "commonsCandidates": [
+            "BMW Zagato Coupé"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-zagato-roadster",
+      "series": "Concept / Prototype",
+      "label": "BMW Zagato Roadster",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Zagato Roadster",
+          "commonsCandidates": [
+            "BMW Zagato Roadster"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-active-tourer",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Active Tourer",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": "BMW",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept Active Tourer",
+          "commonsCandidates": [
+            "BMW Concept Active Tourer"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Concept Active Tourer Outdoor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-4-series-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept 4 Series Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2012,
+        "end": 2012,
+        "display": "2012"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-bmw-concept-active-tourer-outdoor",
+      "series": "Concept / Prototype",
+      "label": "BMW BMW Concept Active Tourer Outdoor",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2013,
+        "end": 2013,
+        "display": "2013"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x5-edrive",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X5 eDrive",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2013,
+        "end": 2013,
+        "display": "2013"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-bmw-concept-x4",
+      "series": "Concept / Prototype",
+      "label": "BMW BMW Concept X4",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2013,
+        "end": 2013,
+        "display": "2013"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-gran-lusso-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Gran Lusso Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2013,
+        "end": 2013,
+        "display": "2013"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-m4-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept M4 Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2013,
+        "end": 2013,
+        "display": "2013"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-future-luxury-7-series-2019",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision Future Luxury (7 series 2019)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2014,
+        "end": 2014,
+        "display": "2014"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-m4-concept-iconic-lights",
+      "series": "Concept / Prototype",
+      "label": "BMW M4 Concept Iconic Lights",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2015,
+        "end": 2015,
+        "display": "2015"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-3-0-csl-hommage",
+      "series": "Concept / Prototype",
+      "label": "BMW 3.0 CSL Hommage",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2015,
+        "end": 2015,
+        "display": "2015"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 3.0 CSL Hommage",
+          "commonsCandidates": [
+            "BMW 3.0 CSL Hommage"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "3.0 CSL Hommage R"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-3-0-csl-hommage-r",
+      "series": "Concept / Prototype",
+      "label": "BMW 3.0 CSL Hommage R",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2015,
+        "end": 2015,
+        "display": "2015"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 3.0 CSL Hommage R",
+          "commonsCandidates": [
+            "BMW 3.0 CSL Hommage R"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Festival automobile international 2016 - BMW 3.0 CSL Hommage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-bmw-5-series-gran-turismo-with-fuel-cell",
+      "series": "Concept / Prototype",
+      "label": "BMW BMW 5 Series Gran Turismo with fuel-cell",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2015,
+        "end": 2015,
+        "display": "2015"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-compact-sedan",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Compact Sedan",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2015,
+        "end": 2015,
+        "display": "2015"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i-vision-future-interaction",
+      "series": "Concept / Prototype",
+      "label": "BMW i Vision Future Interaction",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-next-100",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision Next 100",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-2002-hommage-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW 2002 Hommage Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-2002-hommage-turbomeister-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW 2002 Hommage Turbomeister Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-motorrad-vision-next-100",
+      "series": "Concept / Prototype",
+      "label": "BMW Motorrad Vision Next 100",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x2",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X2",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2016,
+        "end": 2016,
+        "display": "2016"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept X2",
+          "commonsCandidates": [
+            "BMW Concept X2"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-8-series",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept 8 Series",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2017,
+        "end": 2017,
+        "display": "2017"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept 8 Series",
+          "commonsCandidates": [
+            "BMW Concept 8 Series"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-motorrad-concept-link",
+      "series": "Concept / Prototype",
+      "label": "BMW Motorrad Concept Link",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2017,
+        "end": 2017,
+        "display": "2017"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-z4",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Z4",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2017,
+        "end": 2017,
+        "display": "2017"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept Z4",
+          "commonsCandidates": [
+            "BMW Concept Z4"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Concept Z4 (2017)",
+            "Concept Z4 Coupé"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i-vision-dynamics",
+      "series": "Concept / Prototype",
+      "label": "BMW i Vision Dynamics",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2017,
+        "end": 2017,
+        "display": "2017"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-x7-iperformance",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept X7 iPerformance",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2017,
+        "end": 2017,
+        "display": "2017"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept X7 iPerformance",
+          "commonsCandidates": [
+            "BMW Concept X7 iPerformance"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-m8-gran-coup",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept M8 Gran Coupé",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2018,
+        "end": 2018,
+        "display": "2018"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-ix3",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept iX3",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2018,
+        "end": 2018,
+        "display": "2018"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-inext",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision iNEXT",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2018,
+        "end": 2018,
+        "display": "2018"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-4",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept 4",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2019,
+        "end": 2019,
+        "display": "2019"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept 4",
+          "commonsCandidates": [
+            "BMW Concept 4"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i-hydrogen-next-fuel-cell",
+      "series": "Concept / Prototype",
+      "label": "BMW i Hydrogen Next (fuel cell)",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2019,
+        "end": 2019,
+        "display": "2019"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-m-next",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision M Next",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2019,
+        "end": 2019,
+        "display": "2019"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Vision M Next",
+          "commonsCandidates": [
+            "BMW Vision M Next"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-i4",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept i4",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2020,
+        "end": 2020,
+        "display": "2020"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept i4",
+          "commonsCandidates": [
+            "BMW Concept i4"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i-vision-circular",
+      "series": "Concept / Prototype",
+      "label": "BMW I Vision Circular",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2021,
+        "end": 2021,
+        "display": "2021"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-xm-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW XM Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2021,
+        "end": 2021,
+        "display": "2021"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-ix-flow-concept",
+      "series": "Concept / Prototype",
+      "label": "BMW iX Flow Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2022,
+        "end": 2022,
+        "display": "2022"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-i-vision-dee",
+      "series": "Concept / Prototype",
+      "label": "BMW i Vision Dee",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2023,
+        "end": 2023,
+        "display": "2023"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-neue-klasse",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision Neue Klasse",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2023,
+        "end": 2023,
+        "display": "2023"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-neue-klasse-x",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision Neue Klasse X",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2024,
+        "end": 2024,
+        "display": "2024"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-skytop",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Skytop",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2024,
+        "end": 2024,
+        "display": "2024"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept Skytop",
+          "commonsCandidates": [
+            "BMW Concept Skytop"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-concept-speedtop",
+      "series": "Concept / Prototype",
+      "label": "BMW Concept Speedtop",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2025,
+        "end": 2025,
+        "display": "2025"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Concept Speedtop",
+          "commonsCandidates": [
+            "BMW Concept Speedtop"
+          ],
+          "commonsManual": false,
+          "variants": []
+        }
+      ]
+    },
+    {
+      "id": "bmw-concept-vision-bmw-alpina",
+      "series": "Concept / Prototype",
+      "label": "BMW Vision BMW ALPINA",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2026,
+        "end": 2026,
+        "display": "2026"
+      },
+      "class": "Concept car / Prototype",
+      "designer": null,
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false,
+          "variants": []
         }
       ]
     }
