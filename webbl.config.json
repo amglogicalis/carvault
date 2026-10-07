@@ -1,0 +1,6 @@
+{
+  "repo": "amglogicalis/carvault",
+  "buildCommand": "npm run build",
+  "outputDir": "dist/client",
+  "framework": "Astro"
+}
