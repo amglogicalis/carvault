@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
       - name: Start gateway
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CARVAULT_GATEWAY_PAT || secrets.GITHUB_TOKEN }}
         run: |
           nohup node scripts/gateway/server.mjs > gateway.log 2>&1 &
           sleep 2
