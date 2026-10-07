@@ -264,16 +264,9 @@ const modelsJson = JSON.stringify(catalog.generations);
         Para mantener una navegación ultrarrápida y fluida, busca un modelo o código de chasis específico, filtra por serie/época, o pulsa en <strong class="text-cyan-300">"Ver Todos"</strong> para desplegar la colección completa.
       </p>
       <div class="mt-5 flex flex-wrap items-center justify-center gap-2">
-        <button id="showAllTriggerBtn" class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition-colors cursor-pointer shadow-lg shadow-cyan-500/20 flex items-center gap-1.5">
-          <span>Ver Colección Completa ({totalGenerations} coches)</span>
-          <span>→</span>
+        <button id="showAllTriggerBtn" class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition-colors cursor-pointer shadow-lg shadow-cyan-500/20">
+          Ver Colección Completa ({totalGenerations} coches)
         </button>
-      </div>
-      <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs font-mono text-slate-400">
-        <span class="text-[11px] text-slate-500">Accesos rápidos:</span>
-        <button onclick="document.querySelector('[data-filter=\'m-performance\']').click()" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-indigo-300 transition-colors cursor-pointer border border-slate-700">BMW M</button>
-        <button onclick="document.querySelector('[data-filter=\'current\']').click()" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-emerald-300 transition-colors cursor-pointer border border-slate-700">Gama Actual</button>
-        <button onclick="document.querySelector('[data-filter=\'prototypes\']').click()" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-amber-300 transition-colors cursor-pointer border border-slate-700">Conceptos</button>
       </div>
     </div>
 

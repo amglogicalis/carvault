@@ -78,6 +78,17 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       </div>
     </div>
 
+    <!-- Estado Inicial: Invita a buscar un modelo -->
+    <div id="preciosInitialState" class="text-center py-16 px-6 bg-slate-900/40 border border-slate-800 rounded-2xl max-w-xl mx-auto shadow-xl">
+      <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-3 text-2xl">
+        📈
+      </div>
+      <h3 class="text-base font-bold text-white">Selecciona o escribe un modelo en el buscador</h3>
+      <p class="text-xs text-slate-400 mt-2 max-w-md mx-auto leading-relaxed">
+        El motor cuantitativo calculará su suelo de depreciación, cotización en España y Europa, y proyección financiera a 5, 10 o 20 años vista.
+      </p>
+    </div>
+
     <!-- Panel de Resultados del Análisis -->
     <div id="analysisPanel" class="hidden space-y-8 animate-fade-in">
       <!-- Ficha de Nicho & Perfil -->
@@ -220,6 +231,7 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
     const searchInput = document.getElementById('carSearchInput');
     const dropdown = document.getElementById('searchResultsDropdown');
     const analysisPanel = document.getElementById('analysisPanel');
+    const preciosInitialState = document.getElementById('preciosInitialState');
     const horizonSelect = document.getElementById('horizonSelect');
     const conditionSelect = document.getElementById('conditionSelect');
 
@@ -455,6 +467,7 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       `).join('');
 
       renderChart(data);
+      if (preciosInitialState) preciosInitialState.classList.add('hidden');
       analysisPanel.classList.remove('hidden');
     }
 
@@ -614,8 +627,6 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       dropdown.classList.remove('hidden');
     });
 
-    // Carga inicial (BMW M3 E46)
-    const def = allModels.find(m => m.id.includes('m3-e46') || m.label.includes('M3 (E46)')) || allModels[0];
-    if (def) selectCar(def);
+    // Sin carga hardcodeada inicial: el buscador permanece limpio a la espera de la búsqueda del usuario
   </script>
 </Layout>
