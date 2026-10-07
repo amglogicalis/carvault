@@ -1,0 +1,4471 @@
+{
+  "results": [
+    {
+      "series": "1 Series",
+      "codes": [
+        "F70"
+      ],
+      "years": "2004–",
+      "kind": "current",
+      "cls": "C-segment/Subcompact executive hatchback. Not offered in North America.",
+      "perKey": [
+        {
+          "key": "F70",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW F70",
+            "BMW F70 M135"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "2 Series Gran Coupé",
+      "codes": [
+        "F74",
+        "F78"
+      ],
+      "years": "2020–",
+      "kind": "current",
+      "cls": "C-segment/Subcompact executive fastback sedan.",
+      "perKey": [
+        {
+          "key": "F74",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW F74",
+            "BMW F74 M235"
+          ]
+        },
+        {
+          "key": "F78",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW F78"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3 Series",
+      "codes": [
+        "G50"
+      ],
+      "years": "1975–",
+      "kind": "current",
+      "cls": "D-segment/compact executive sedan.",
+      "perKey": [
+        {
+          "key": "G50",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G50",
+            "BMW G50 M350"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G50"
+      ]
+    },
+    {
+      "series": "i3 (G28)",
+      "codes": [
+        "G28"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "China only D-segment/compact executive electric sedan.",
+      "perKey": [
+        {
+          "key": "G28",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G28"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G28"
+      ]
+    },
+    {
+      "series": "i3 (NA0)",
+      "codes": [
+        "NA0",
+        "NA8"
+      ],
+      "years": "2026–",
+      "kind": "current",
+      "cls": "D-segment/compact executive electric sedan.",
+      "perKey": [
+        {
+          "key": "NA0",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW NA0",
+            "BMW NA0 i3 M60"
+          ]
+        },
+        {
+          "key": "NA8",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA8"
+      ],
+      "wikidataMissingKeys": [
+        "NA0",
+        "NA8"
+      ]
+    },
+    {
+      "series": "4 Series Gran Coupé",
+      "codes": [
+        "G26"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "D-segment/compact executive liftback.",
+      "perKey": [
+        {
+          "key": "G26",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G26"
+      ]
+    },
+    {
+      "series": "i4",
+      "codes": [
+        "G26"
+      ],
+      "years": "2021–",
+      "kind": "current",
+      "cls": "D-segment/compact executive electric liftback.",
+      "perKey": [
+        {
+          "key": "G26",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G26"
+      ]
+    },
+    {
+      "series": "5 Series",
+      "codes": [
+        "G60",
+        "G68"
+      ],
+      "years": "1972–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive sedan.",
+      "perKey": [
+        {
+          "key": "G60",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "BMW G60 550e",
+            "BMW G60"
+          ]
+        },
+        {
+          "key": "G68",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G68"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G60",
+        "G68"
+      ]
+    },
+    {
+      "series": "i5",
+      "codes": [
+        "G60",
+        "G68"
+      ],
+      "years": "2023–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive electric sedan.",
+      "perKey": [
+        {
+          "key": "G60",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "BMW G60 550e",
+            "BMW G60"
+          ]
+        },
+        {
+          "key": "G68",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G68"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G60",
+        "G68"
+      ]
+    },
+    {
+      "series": "7 Series",
+      "codes": [
+        "G70",
+        "G73"
+      ],
+      "years": "1977–",
+      "kind": "current",
+      "cls": "F-segment/full-size luxury sedan.",
+      "perKey": [
+        {
+          "key": "G70",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G70",
+            "BMW G70 development mules"
+          ]
+        },
+        {
+          "key": "G73",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G73"
+      ],
+      "wikidataMissingKeys": [
+        "G73"
+      ]
+    },
+    {
+      "series": "i7",
+      "codes": [
+        "G70"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "F-segment/full-size electric luxury sedan.",
+      "perKey": [
+        {
+          "key": "G70",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G70",
+            "BMW G70 development mules"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3 Series",
+      "codes": [
+        "G21"
+      ],
+      "years": "1982–",
+      "kind": "current",
+      "cls": "D-segment/compact executive wagon.",
+      "perKey": [
+        {
+          "key": "G21",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "Alpina B3 (G21)",
+            "Alpina D3 (G21)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G21"
+      ]
+    },
+    {
+      "series": "5 Series",
+      "codes": [
+        "G61"
+      ],
+      "years": "1988–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive wagon.",
+      "perKey": [
+        {
+          "key": "G61",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G61"
+      ]
+    },
+    {
+      "series": "i5",
+      "codes": [
+        "G61"
+      ],
+      "years": "2024–",
+      "kind": "current",
+      "cls": "E-segment/executive electric wagon.",
+      "perKey": [
+        {
+          "key": "G61",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G61"
+      ]
+    },
+    {
+      "series": "X1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2009–",
+      "kind": "current",
+      "cls": "C-segment/subcompact luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "iX1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "C-segment/subcompact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "X2",
+      "codes": [
+        "U10"
+      ],
+      "years": "2018–",
+      "kind": "current",
+      "cls": "C-segment/subcompact luxury crossover coupé SUV.",
+      "perKey": [
+        {
+          "key": "U10",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW U10 X2 M35i",
+            "BMW U10"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U10"
+      ]
+    },
+    {
+      "series": "iX2",
+      "codes": [
+        "U10"
+      ],
+      "years": "2023–",
+      "kind": "current",
+      "cls": "C-segment/subcompact electric luxury crossover coupé SUV",
+      "perKey": [
+        {
+          "key": "U10",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW U10 X2 M35i",
+            "BMW U10"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U10"
+      ]
+    },
+    {
+      "series": "X3",
+      "codes": [
+        "G45",
+        "G48"
+      ],
+      "years": "2003–",
+      "kind": "current",
+      "cls": "D-segment/compact luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "G45",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW G45",
+            "BMW G45 X3 M50"
+          ]
+        },
+        {
+          "key": "G48",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G48"
+      ],
+      "wikidataMissingKeys": [
+        "G48"
+      ]
+    },
+    {
+      "series": "iX3",
+      "codes": [
+        "NA5",
+        "NA6"
+      ],
+      "years": "2020–",
+      "kind": "current",
+      "cls": "D-segment/compact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "NA5",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW iX3 NA5",
+            "BMW NA5 iX3 M60"
+          ]
+        },
+        {
+          "key": "NA6",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA6"
+      ],
+      "wikidataMissingKeys": [
+        "NA6"
+      ]
+    },
+    {
+      "series": "X5",
+      "codes": [
+        "G65"
+      ],
+      "years": "1999–",
+      "kind": "current",
+      "cls": "E-segment/mid-size luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G65",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G65 X5 M60e",
+            "BMW G65"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G65"
+      ]
+    },
+    {
+      "series": "iX",
+      "codes": [
+        "I20"
+      ],
+      "years": "2021–",
+      "kind": "current",
+      "cls": "E-segment/mid-size electric luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "I20",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "I20"
+      ],
+      "wikidataMissingKeys": [
+        "I20"
+      ]
+    },
+    {
+      "series": "iX5",
+      "codes": [
+        "G65"
+      ],
+      "years": "2026–",
+      "kind": "current",
+      "cls": "E-segment/mid-size electric luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G65",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G65 X5 M60e",
+            "BMW G65"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G65"
+      ]
+    },
+    {
+      "series": "X6",
+      "codes": [
+        "G06"
+      ],
+      "years": "2008–",
+      "kind": "current",
+      "cls": "E-segment/mid-size luxury crossover coupé SUV.",
+      "perKey": [
+        {
+          "key": "G06",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW G06",
+            "BMW G06 X6 M50d"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X7",
+      "codes": [
+        "G07"
+      ],
+      "years": "2018–",
+      "kind": "current",
+      "cls": "F-segment/full-size luxury SUV.",
+      "perKey": [
+        {
+          "key": "G07",
+          "commons": 5,
+          "wikidata": true,
+          "sample": [
+            "BMW G07",
+            "BMW G07 X7 M50d"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "XM",
+      "codes": [
+        "G09"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "Plug-in hybrid F-segment/full-size luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G09",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW XM (G09)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G09"
+      ]
+    },
+    {
+      "series": "2 Series",
+      "codes": [
+        "G42"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "C-segment/Subcompact executive coupé",
+      "perKey": [
+        {
+          "key": "G42",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW G42",
+            "BMW G42 M240i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "4 Series",
+      "codes": [
+        "G22",
+        "G23"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "D-segment/compact executive coupé and convertible.",
+      "perKey": [
+        {
+          "key": "G22",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW G22",
+            "BMW G22 (Original Bumper)"
+          ]
+        },
+        {
+          "key": "G23",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G23",
+            "BMW G23 M440i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G22",
+        "G23"
+      ]
+    },
+    {
+      "series": "2 Series Active Tourer",
+      "codes": [
+        "U06"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "Two-row compact MPV.",
+      "perKey": [
+        {
+          "key": "U06",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW U06"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U06"
+      ]
+    },
+    {
+      "series": "3/15",
+      "codes": [],
+      "years": "1927–1932",
+      "kind": "discontinued",
+      "cls": "Economy car",
+      "perKey": [
+        {
+          "key": "3/15",
+          "commons": 7,
+          "wikidata": true,
+          "sample": [
+            "BMW 3/15HP",
+            "BMW 3/15HP Jhle-Roadster"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3/20 PS",
+      "codes": [],
+      "years": "1932–1934",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "3/20 PS",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "3/20 PS"
+      ],
+      "wikidataMissingKeys": [
+        "3/20 PS"
+      ]
+    },
+    {
+      "series": "303",
+      "codes": [],
+      "years": "1933–1934",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "303",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW 303"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "309",
+      "codes": [],
+      "years": "1934–1936",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "309",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW 309"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "315",
+      "codes": [],
+      "years": "1934–1937",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "315",
+          "commons": 7,
+          "wikidata": true,
+          "sample": [
+            "BMW 3/15HP",
+            "BMW 3/15HP Jhle-Roadster"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "319",
+      "codes": [],
+      "years": "1935–1936",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "319",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW 319"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "328",
+      "codes": [],
+      "years": "1936–1940",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "328",
+          "commons": 19,
+          "wikidata": true,
+          "sample": [
+            "BMW 328",
+            "BMW 328i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "326",
+      "codes": [],
+      "years": "1936–1941 / 1945–1946",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "326",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW 326",
+            "BMW 326 cabriolet (Autoworld Brussels) 1940"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "329",
+      "codes": [],
+      "years": "1937",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "329",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW 329"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "329"
+      ]
+    },
+    {
+      "series": "327",
+      "codes": [],
+      "years": "1937–1941 / 1946–1955",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "327",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW 327",
+            "EMW 327"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "320",
+      "codes": [],
+      "years": "1937–1938",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "320",
+          "commons": 19,
+          "wikidata": true,
+          "sample": [
+            "BMW 320",
+            "BMW 3200 CS"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "325",
+      "codes": [],
+      "years": "1937–1940",
+      "kind": "discontinued",
+      "cls": "Off-road vehicle",
+      "perKey": [
+        {
+          "key": "325",
+          "commons": 8,
+          "wikidata": true,
+          "sample": [
+            "BMW 325 (Wehrmacht)",
+            "BMW 325"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "321",
+      "codes": [],
+      "years": "1938–1941 / 1945–1950",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "321",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW 321",
+            "EMW 321"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "335",
+      "codes": [],
+      "years": "1939–1941",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "335",
+          "commons": 11,
+          "wikidata": true,
+          "sample": [
+            "BMW 335",
+            "BMW 335d"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "340",
+      "codes": [],
+      "years": "1949–1955",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "340",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G20 M340d",
+            "BMW G20 M340i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "501",
+      "codes": [],
+      "years": "1952–1962",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "501",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW 501 / 502",
+            "BMW 501"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Isetta",
+      "codes": [],
+      "years": "1953–1962",
+      "kind": "discontinued",
+      "cls": "Microcar",
+      "perKey": [
+        {
+          "key": "Isetta",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW Isetta",
+            "BMW Isetta (United States)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "502",
+      "codes": [],
+      "years": "1954–1963",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "502",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW 1502",
+            "BMW 501 / 502"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "505",
+      "codes": [],
+      "years": "1955",
+      "kind": "discontinued",
+      "cls": "Official state car",
+      "perKey": [
+        {
+          "key": "505",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "505"
+      ],
+      "wikidataMissingKeys": [
+        "505"
+      ]
+    },
+    {
+      "series": "503",
+      "codes": [],
+      "years": "1956–1959",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "503",
+          "commons": 9,
+          "wikidata": true,
+          "sample": [
+            "BMW 503",
+            "BMW 503 series I"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "507",
+      "codes": [],
+      "years": "1956–1959",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "507",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW 507",
+            "BMW 507 Vignale"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "700",
+      "codes": [],
+      "years": "1959–1965",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "700",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW 700",
+            "Martini-BMW 700"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3200 CS",
+      "codes": [],
+      "years": "1962–1965",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "3200 CS",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW 3200 CS"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "New Class (sedans)",
+      "codes": [],
+      "years": "1962–1972",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "New Class",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW New Class"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "New Class (coupés)",
+      "codes": [],
+      "years": "1965–1969",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "New Class",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW New Class"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "02 Series",
+      "codes": [],
+      "years": "1966–1977",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "02 Series",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW 02 Series",
+            "BMW 02 Series sedans"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "02 Series"
+      ]
+    },
+    {
+      "series": "New Six coupés (E9)",
+      "codes": [
+        "E9"
+      ],
+      "years": "1968–1975",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "E9",
+          "commons": 39,
+          "wikidata": true,
+          "sample": [
+            "BMW M3 (E90)",
+            "BMW E92"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "New Six sedans (E3)",
+      "codes": [
+        "E3"
+      ],
+      "years": "1968–1977",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E3",
+          "commons": 78,
+          "wikidata": true,
+          "sample": [
+            "BMW E30",
+            "BMW M3 (E30)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (E12)",
+      "codes": [
+        "E12"
+      ],
+      "years": "1972–1981",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E12",
+          "commons": 10,
+          "wikidata": false,
+          "sample": [
+            "BMW 2000 (type 121)",
+            "BMW 2000 ti (type 121)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E12"
+      ]
+    },
+    {
+      "series": "3 Series (E21)",
+      "codes": [
+        "E21"
+      ],
+      "years": "1975–1983",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E21",
+          "commons": 7,
+          "wikidata": true,
+          "sample": [
+            "BMW E21",
+            "BMW 316 E21"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "6 Series (E24)",
+      "codes": [
+        "E24"
+      ],
+      "years": "1976–1989",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "E24",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E24",
+            "BMW M6 (E24)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "7 Series (E23)",
+      "codes": [
+        "E23"
+      ],
+      "years": "1977–1987",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E23",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW E23"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "M1",
+      "codes": [],
+      "years": "1978–1981",
+      "kind": "discontinued",
+      "cls": "Sports car",
+      "perKey": [
+        {
+          "key": "M1",
+          "commons": 11,
+          "wikidata": true,
+          "sample": [
+            "BMW M1",
+            "BMW F20 M135i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (E28)",
+      "codes": [
+        "E28"
+      ],
+      "years": "1981–1988",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E28",
+          "commons": 10,
+          "wikidata": true,
+          "sample": [
+            "BMW 520i (E28)",
+            "BMW E28"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3 Series (E30)",
+      "codes": [
+        "E30"
+      ],
+      "years": "1982–1994",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E30",
+          "commons": 18,
+          "wikidata": true,
+          "sample": [
+            "BMW E30",
+            "BMW M3 (E30)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "7 Series (E32)",
+      "codes": [
+        "E32"
+      ],
+      "years": "1986–1994",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E32",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E32",
+            "BMW E32 (Alpina)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (E34)",
+      "codes": [
+        "E34"
+      ],
+      "years": "1987–1996",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E34",
+          "commons": 7,
+          "wikidata": false,
+          "sample": [
+            "BMW E34",
+            "BMW E34 (1988-1994)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E34"
+      ]
+    },
+    {
+      "series": "Z1",
+      "codes": [],
+      "years": "1989–1991",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "Z1",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW Z1"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "8 Series (E31)",
+      "codes": [
+        "E31"
+      ],
+      "years": "1989–1999",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "E31",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW 850 (E31)",
+            "BMW E31"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3 Series (E36)",
+      "codes": [
+        "E36"
+      ],
+      "years": "1990–2000",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E36",
+          "commons": 20,
+          "wikidata": true,
+          "sample": [
+            "BMW Z3 M (E36/7)",
+            "BMW 316 E36"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "7 Series (E38)",
+      "codes": [
+        "E38"
+      ],
+      "years": "1994–2001",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E38",
+          "commons": 9,
+          "wikidata": true,
+          "sample": [
+            "BMW E38",
+            "BMW E38 interiors"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Z3",
+      "codes": [],
+      "years": "1995–2002",
+      "kind": "discontinued",
+      "cls": "Roadster and coupé",
+      "perKey": [
+        {
+          "key": "Z3",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW Z3 M (E36/7)",
+            "BMW Z3"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (E39)",
+      "codes": [
+        "E39"
+      ],
+      "years": "1995–2003",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E39",
+          "commons": 11,
+          "wikidata": true,
+          "sample": [
+            "BMW E39 (1995)",
+            "BMW E39 540i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "3 Series (E46)",
+      "codes": [
+        "E46"
+      ],
+      "years": "1998–2006",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E46",
+          "commons": 9,
+          "wikidata": true,
+          "sample": [
+            "BMW E46",
+            "BMW M3 (E46)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X5 (E53)",
+      "codes": [
+        "E53"
+      ],
+      "years": "1999–2006",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "E53",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW E53",
+            "BMW E53 clones"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Z8",
+      "codes": [],
+      "years": "2000–2003",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "Z8",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW Z8",
+            "BMW Z8 C"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "7 Series (E65/E66)",
+      "codes": [
+        "E65",
+        "E66"
+      ],
+      "years": "2001–2008",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E65",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E65",
+            "Alpina B7 (E65)"
+          ]
+        },
+        {
+          "key": "E66",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW Hydrogen 7 (E66)",
+            "Alpina B7 (E66)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Z4 (E85/E86)",
+      "codes": [
+        "E85",
+        "E86"
+      ],
+      "years": "2002–2008",
+      "kind": "discontinued",
+      "cls": "Roadster, coupé",
+      "perKey": [
+        {
+          "key": "E85",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW E85",
+            "BMW Z4 M (E85)"
+          ]
+        },
+        {
+          "key": "E86",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW E86",
+            "BMW Z4 M (E86)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (E60/E61)",
+      "codes": [
+        "E60",
+        "E61"
+      ],
+      "years": "2003–2010",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E60",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (E60)",
+            "BMW E60"
+          ]
+        },
+        {
+          "key": "E61",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (E61)",
+            "BMW E61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E60",
+        "E61"
+      ]
+    },
+    {
+      "series": "6 Series (E63/E64)",
+      "codes": [
+        "E63",
+        "E64"
+      ],
+      "years": "2003–2010",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "E63",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E63",
+            "Alpina B6 (E63)"
+          ]
+        },
+        {
+          "key": "E64",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E64",
+            "Alpina B6 (E64)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X3 (E83)",
+      "codes": [
+        "E83"
+      ],
+      "years": "2003–2010",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "E83",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW E83",
+            "BMW X3 Cross Country (E83)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "1 Series (E81/E82/E87/E88)",
+      "codes": [
+        "E81",
+        "E82",
+        "E87",
+        "E88"
+      ],
+      "years": "2004–2013",
+      "kind": "discontinued",
+      "cls": "Hatchback, coupé, convertible",
+      "perKey": [
+        {
+          "key": "E81",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW E81"
+          ]
+        },
+        {
+          "key": "E82",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW E82"
+          ]
+        },
+        {
+          "key": "E87",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW E87"
+          ]
+        },
+        {
+          "key": "E88",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW E88",
+            "BMW E88 development mules"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E81",
+        "E82",
+        "E88"
+      ]
+    },
+    {
+      "series": "3 Series (E90/E91/E92/E93)",
+      "codes": [
+        "E90",
+        "E91",
+        "E92",
+        "E93"
+      ],
+      "years": "2005–2013",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E90",
+          "commons": 15,
+          "wikidata": true,
+          "sample": [
+            "BMW M3 (E90)",
+            "BMW 320d (E90)"
+          ]
+        },
+        {
+          "key": "E91",
+          "commons": 10,
+          "wikidata": false,
+          "sample": [
+            "BMW 320d E91",
+            "BMW 320i E91"
+          ]
+        },
+        {
+          "key": "E92",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW E92",
+            "BMW 335i (E92)"
+          ]
+        },
+        {
+          "key": "E93",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "BMW 335i (E93)",
+            "Alpina B3 (E93)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E91",
+        "E93"
+      ]
+    },
+    {
+      "series": "X5 (E70)",
+      "codes": [
+        "E70"
+      ],
+      "years": "2006–2013",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "E70",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW E70",
+            "BMW X5 M (E70)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X6 (E71)",
+      "codes": [
+        "E71"
+      ],
+      "years": "2008–2014",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "E71",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW X6 M (E71)",
+            "BMW E71"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E71"
+      ]
+    },
+    {
+      "series": "7 Series (F01/F02)",
+      "codes": [
+        "F01",
+        "F02"
+      ],
+      "years": "2008–2015",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "F01",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F01",
+            "Alpina B7 (F01)"
+          ]
+        },
+        {
+          "key": "F02",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "Alpina B7 (F02)",
+            "BMW F02"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Z4 (E89)",
+      "codes": [
+        "E89"
+      ],
+      "years": "2009–2016",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "E89",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW E89"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X1 (E84)",
+      "codes": [
+        "E84"
+      ],
+      "years": "2009–2015",
+      "kind": "discontinued",
+      "cls": "Sub-compact luxury SUV",
+      "perKey": [
+        {
+          "key": "E84",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW E84",
+            "BMW E84 fire engines"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "5 Series (F07/F10/F11)",
+      "codes": [
+        "F07",
+        "F10",
+        "F11"
+      ],
+      "years": "2010–2017",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "F07",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F07"
+          ]
+        },
+        {
+          "key": "F10",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW M5 (F10)",
+            "Alpina B5 (F10)"
+          ]
+        },
+        {
+          "key": "F11",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (F11)",
+            "Alpina D5 (F11)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F07",
+        "F11"
+      ]
+    },
+    {
+      "series": "6 Series (F06/F12/F13)",
+      "codes": [
+        "F06",
+        "F12",
+        "F13"
+      ],
+      "years": "2011–2018",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "F06",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW M6 (F06)",
+            "BMW F06"
+          ]
+        },
+        {
+          "key": "F12",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F12",
+            "Alpina B6 (F12)"
+          ]
+        },
+        {
+          "key": "F13",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F13",
+            "Alpina B6 (F13)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X3 (F25)",
+      "codes": [
+        "F25"
+      ],
+      "years": "2011–2017",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "F25",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F25",
+            "Alpina XD3 (F25)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "1 Series (F20/F21)",
+      "codes": [
+        "F20",
+        "F21"
+      ],
+      "years": "2011–2019",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F20",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW F20",
+            "BMW F20 125i M Performance"
+          ]
+        },
+        {
+          "key": "F21",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW F21",
+            "BMW F21 M135i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F21"
+      ]
+    },
+    {
+      "series": "3 Series (F30/F31/F34)",
+      "codes": [
+        "F30",
+        "F31",
+        "F34"
+      ],
+      "years": "2011–2020",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "F30",
+          "commons": 13,
+          "wikidata": true,
+          "sample": [
+            "BMW F30",
+            "BMW 316i (F30)"
+          ]
+        },
+        {
+          "key": "F31",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B3 (F31)",
+            "Alpina D3 (F31)"
+          ]
+        },
+        {
+          "key": "F34",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW F34"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F31"
+      ]
+    },
+    {
+      "series": "i3 (I01)",
+      "codes": [
+        "I01"
+      ],
+      "years": "2013–2022",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car (electric)",
+      "perKey": [
+        {
+          "key": "I01",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW I01"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "4 Series (F32/F33/F36)",
+      "codes": [
+        "F32",
+        "F33",
+        "F36"
+      ],
+      "years": "2013–2020",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "F32",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F32",
+            "Alpina B4 (F32)"
+          ]
+        },
+        {
+          "key": "F33",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (F33)",
+            "Alpina D4 (F33)"
+          ]
+        },
+        {
+          "key": "F36",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F36"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F33",
+        "F36"
+      ]
+    },
+    {
+      "series": "2 Series (F22/F23)",
+      "codes": [
+        "F22",
+        "F23"
+      ],
+      "years": "2013–2021",
+      "kind": "discontinued",
+      "cls": "Subcompact car",
+      "perKey": [
+        {
+          "key": "F22",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F22",
+            "BMW F22 M235i"
+          ]
+        },
+        {
+          "key": "F23",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW F23",
+            "BMW F23 M240i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F23"
+      ]
+    },
+    {
+      "series": "X5 (F15)",
+      "codes": [
+        "F15"
+      ],
+      "years": "2013–2018",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "F15",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW F15",
+            "BMW F15 X5 M50d"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "2 Series (F45/F46)",
+      "codes": [
+        "F45",
+        "F46"
+      ],
+      "years": "2014–2021",
+      "kind": "discontinued",
+      "cls": "Sub-compact MPV Large MPV",
+      "perKey": [
+        {
+          "key": "F45",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW F45"
+          ]
+        },
+        {
+          "key": "F46",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F46"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F46"
+      ]
+    },
+    {
+      "series": "i8",
+      "codes": [],
+      "years": "2014–2020",
+      "kind": "discontinued",
+      "cls": "Sports car (hybrid)",
+      "perKey": [
+        {
+          "key": "i8",
+          "commons": 10,
+          "wikidata": true,
+          "sample": [
+            "BMW i8",
+            "BMW i8 Mules"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X4 (F26)",
+      "codes": [
+        "F26"
+      ],
+      "years": "2014–2018",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "F26",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW F26",
+            "BMW F26 X4 M40i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X6 (F16)",
+      "codes": [
+        "F16"
+      ],
+      "years": "2014–2019",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "F16",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW F16 X6 M50d",
+            "BMW X6 M (F16)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F16"
+      ]
+    },
+    {
+      "series": "X1 (F48)",
+      "codes": [
+        "F48"
+      ],
+      "years": "2015–2022",
+      "kind": "discontinued",
+      "cls": "Sub-compact luxury SUV",
+      "perKey": [
+        {
+          "key": "F48",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F48",
+            "BMW F48 development mules"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "7 Series (G11/G12)",
+      "codes": [
+        "G11",
+        "G12"
+      ],
+      "years": "2015–2022",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "G11",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW G11",
+            "BMW G11 development mules"
+          ]
+        },
+        {
+          "key": "G12",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B7 (G12)",
+            "BMW G12"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G12"
+      ]
+    },
+    {
+      "series": "5 Series (G30/G31)",
+      "codes": [
+        "G30",
+        "G31"
+      ],
+      "years": "2016–2023",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "G30",
+          "commons": 6,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (G30)",
+            "Alpina D5 (G30)"
+          ]
+        },
+        {
+          "key": "G31",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (G31)",
+            "Alpina D5 (G31)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G30",
+        "G31"
+      ]
+    },
+    {
+      "series": "1 Series (F52)",
+      "codes": [
+        "F52"
+      ],
+      "years": "2017–2023",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F52",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F52"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F52"
+      ]
+    },
+    {
+      "series": "6 Series (G32)",
+      "codes": [
+        "G32"
+      ],
+      "years": "2017–2023",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "G32",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G32"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G32"
+      ]
+    },
+    {
+      "series": "X3 (G01)",
+      "codes": [
+        "G01"
+      ],
+      "years": "2017–2024",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "G01",
+          "commons": 6,
+          "wikidata": false,
+          "sample": [
+            "BMW G01 X3 M40i",
+            "BMW X3 M (G01)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G01"
+      ]
+    },
+    {
+      "series": "X2 (F39)",
+      "codes": [
+        "F39"
+      ],
+      "years": "2018–2023",
+      "kind": "discontinued",
+      "cls": "Sub-compact luxury SUV",
+      "perKey": [
+        {
+          "key": "F39",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW F39",
+            "BMW F39 X2 M35i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "X4 (G02)",
+      "codes": [
+        "G02"
+      ],
+      "years": "2018–2025",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "G02",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW G02",
+            "BMW G02 X4 M40d"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "Z4 (G29)",
+      "codes": [
+        "G29"
+      ],
+      "years": "2018–2026",
+      "kind": "discontinued",
+      "cls": "Roadster",
+      "perKey": [
+        {
+          "key": "G29",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW G29",
+            "BMW G29 Z4 M40i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "8 Series (G14/G15/G15)",
+      "codes": [
+        "G14",
+        "G15"
+      ],
+      "years": "2018–2026",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "G14",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW G14",
+            "BMW G14 development mules"
+          ]
+        },
+        {
+          "key": "G15",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G15",
+            "BMW M8 (G15)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G14"
+      ]
+    },
+    {
+      "series": "1 Series (F40)",
+      "codes": [
+        "F40"
+      ],
+      "years": "2019–2024",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F40",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F40",
+            "BMW F40 128ti"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "2 Series (F44)",
+      "codes": [
+        "F44"
+      ],
+      "years": "2020–2024",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F44",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW F44",
+            "BMW F44 M235i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    },
+    {
+      "series": "iX3 (G08)",
+      "codes": [
+        "G08"
+      ],
+      "years": "2020–2025",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV (electric)",
+      "perKey": [
+        {
+          "key": "G08",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW iX3 G08",
+            "BMW G08"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": []
+    }
+  ],
+  "missingCommons": [
+    {
+      "series": "i3 (NA0)",
+      "codes": [
+        "NA0",
+        "NA8"
+      ],
+      "years": "2026–",
+      "kind": "current",
+      "cls": "D-segment/compact executive electric sedan.",
+      "perKey": [
+        {
+          "key": "NA0",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW NA0",
+            "BMW NA0 i3 M60"
+          ]
+        },
+        {
+          "key": "NA8",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA8"
+      ],
+      "wikidataMissingKeys": [
+        "NA0",
+        "NA8"
+      ]
+    },
+    {
+      "series": "7 Series",
+      "codes": [
+        "G70",
+        "G73"
+      ],
+      "years": "1977–",
+      "kind": "current",
+      "cls": "F-segment/full-size luxury sedan.",
+      "perKey": [
+        {
+          "key": "G70",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G70",
+            "BMW G70 development mules"
+          ]
+        },
+        {
+          "key": "G73",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G73"
+      ],
+      "wikidataMissingKeys": [
+        "G73"
+      ]
+    },
+    {
+      "series": "X1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2009–",
+      "kind": "current",
+      "cls": "C-segment/subcompact luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "iX1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "C-segment/subcompact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "X3",
+      "codes": [
+        "G45",
+        "G48"
+      ],
+      "years": "2003–",
+      "kind": "current",
+      "cls": "D-segment/compact luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "G45",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW G45",
+            "BMW G45 X3 M50"
+          ]
+        },
+        {
+          "key": "G48",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G48"
+      ],
+      "wikidataMissingKeys": [
+        "G48"
+      ]
+    },
+    {
+      "series": "iX3",
+      "codes": [
+        "NA5",
+        "NA6"
+      ],
+      "years": "2020–",
+      "kind": "current",
+      "cls": "D-segment/compact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "NA5",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW iX3 NA5",
+            "BMW NA5 iX3 M60"
+          ]
+        },
+        {
+          "key": "NA6",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA6"
+      ],
+      "wikidataMissingKeys": [
+        "NA6"
+      ]
+    },
+    {
+      "series": "iX",
+      "codes": [
+        "I20"
+      ],
+      "years": "2021–",
+      "kind": "current",
+      "cls": "E-segment/mid-size electric luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "I20",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "I20"
+      ],
+      "wikidataMissingKeys": [
+        "I20"
+      ]
+    },
+    {
+      "series": "3/20 PS",
+      "codes": [],
+      "years": "1932–1934",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "3/20 PS",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "3/20 PS"
+      ],
+      "wikidataMissingKeys": [
+        "3/20 PS"
+      ]
+    },
+    {
+      "series": "505",
+      "codes": [],
+      "years": "1955",
+      "kind": "discontinued",
+      "cls": "Official state car",
+      "perKey": [
+        {
+          "key": "505",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "505"
+      ],
+      "wikidataMissingKeys": [
+        "505"
+      ]
+    }
+  ],
+  "missingWikidata": [
+    {
+      "series": "3 Series",
+      "codes": [
+        "G50"
+      ],
+      "years": "1975–",
+      "kind": "current",
+      "cls": "D-segment/compact executive sedan.",
+      "perKey": [
+        {
+          "key": "G50",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G50",
+            "BMW G50 M350"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G50"
+      ]
+    },
+    {
+      "series": "i3 (G28)",
+      "codes": [
+        "G28"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "China only D-segment/compact executive electric sedan.",
+      "perKey": [
+        {
+          "key": "G28",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G28"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G28"
+      ]
+    },
+    {
+      "series": "i3 (NA0)",
+      "codes": [
+        "NA0",
+        "NA8"
+      ],
+      "years": "2026–",
+      "kind": "current",
+      "cls": "D-segment/compact executive electric sedan.",
+      "perKey": [
+        {
+          "key": "NA0",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW NA0",
+            "BMW NA0 i3 M60"
+          ]
+        },
+        {
+          "key": "NA8",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA8"
+      ],
+      "wikidataMissingKeys": [
+        "NA0",
+        "NA8"
+      ]
+    },
+    {
+      "series": "4 Series Gran Coupé",
+      "codes": [
+        "G26"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "D-segment/compact executive liftback.",
+      "perKey": [
+        {
+          "key": "G26",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G26"
+      ]
+    },
+    {
+      "series": "i4",
+      "codes": [
+        "G26"
+      ],
+      "years": "2021–",
+      "kind": "current",
+      "cls": "D-segment/compact executive electric liftback.",
+      "perKey": [
+        {
+          "key": "G26",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G26"
+      ]
+    },
+    {
+      "series": "5 Series",
+      "codes": [
+        "G60",
+        "G68"
+      ],
+      "years": "1972–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive sedan.",
+      "perKey": [
+        {
+          "key": "G60",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "BMW G60 550e",
+            "BMW G60"
+          ]
+        },
+        {
+          "key": "G68",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G68"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G60",
+        "G68"
+      ]
+    },
+    {
+      "series": "i5",
+      "codes": [
+        "G60",
+        "G68"
+      ],
+      "years": "2023–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive electric sedan.",
+      "perKey": [
+        {
+          "key": "G60",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "BMW G60 550e",
+            "BMW G60"
+          ]
+        },
+        {
+          "key": "G68",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G68"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G60",
+        "G68"
+      ]
+    },
+    {
+      "series": "7 Series",
+      "codes": [
+        "G70",
+        "G73"
+      ],
+      "years": "1977–",
+      "kind": "current",
+      "cls": "F-segment/full-size luxury sedan.",
+      "perKey": [
+        {
+          "key": "G70",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G70",
+            "BMW G70 development mules"
+          ]
+        },
+        {
+          "key": "G73",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G73"
+      ],
+      "wikidataMissingKeys": [
+        "G73"
+      ]
+    },
+    {
+      "series": "3 Series",
+      "codes": [
+        "G21"
+      ],
+      "years": "1982–",
+      "kind": "current",
+      "cls": "D-segment/compact executive wagon.",
+      "perKey": [
+        {
+          "key": "G21",
+          "commons": 4,
+          "wikidata": false,
+          "sample": [
+            "Alpina B3 (G21)",
+            "Alpina D3 (G21)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G21"
+      ]
+    },
+    {
+      "series": "5 Series",
+      "codes": [
+        "G61"
+      ],
+      "years": "1988–",
+      "kind": "current",
+      "cls": "E-segment/mid-size executive wagon.",
+      "perKey": [
+        {
+          "key": "G61",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G61"
+      ]
+    },
+    {
+      "series": "i5",
+      "codes": [
+        "G61"
+      ],
+      "years": "2024–",
+      "kind": "current",
+      "cls": "E-segment/executive electric wagon.",
+      "perKey": [
+        {
+          "key": "G61",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G61"
+      ]
+    },
+    {
+      "series": "X1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2009–",
+      "kind": "current",
+      "cls": "C-segment/subcompact luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "iX1",
+      "codes": [
+        "U11",
+        "U12"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "C-segment/subcompact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "U11",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW U11",
+            "BMW U11 X1 M35i"
+          ]
+        },
+        {
+          "key": "U12",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "U12"
+      ],
+      "wikidataMissingKeys": [
+        "U12"
+      ]
+    },
+    {
+      "series": "X2",
+      "codes": [
+        "U10"
+      ],
+      "years": "2018–",
+      "kind": "current",
+      "cls": "C-segment/subcompact luxury crossover coupé SUV.",
+      "perKey": [
+        {
+          "key": "U10",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW U10 X2 M35i",
+            "BMW U10"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U10"
+      ]
+    },
+    {
+      "series": "iX2",
+      "codes": [
+        "U10"
+      ],
+      "years": "2023–",
+      "kind": "current",
+      "cls": "C-segment/subcompact electric luxury crossover coupé SUV",
+      "perKey": [
+        {
+          "key": "U10",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW U10 X2 M35i",
+            "BMW U10"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U10"
+      ]
+    },
+    {
+      "series": "X3",
+      "codes": [
+        "G45",
+        "G48"
+      ],
+      "years": "2003–",
+      "kind": "current",
+      "cls": "D-segment/compact luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "G45",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW G45",
+            "BMW G45 X3 M50"
+          ]
+        },
+        {
+          "key": "G48",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "G48"
+      ],
+      "wikidataMissingKeys": [
+        "G48"
+      ]
+    },
+    {
+      "series": "iX3",
+      "codes": [
+        "NA5",
+        "NA6"
+      ],
+      "years": "2020–",
+      "kind": "current",
+      "cls": "D-segment/compact electric luxury crossover SUV",
+      "perKey": [
+        {
+          "key": "NA5",
+          "commons": 2,
+          "wikidata": true,
+          "sample": [
+            "BMW iX3 NA5",
+            "BMW NA5 iX3 M60"
+          ]
+        },
+        {
+          "key": "NA6",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "NA6"
+      ],
+      "wikidataMissingKeys": [
+        "NA6"
+      ]
+    },
+    {
+      "series": "X5",
+      "codes": [
+        "G65"
+      ],
+      "years": "1999–",
+      "kind": "current",
+      "cls": "E-segment/mid-size luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G65",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G65 X5 M60e",
+            "BMW G65"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G65"
+      ]
+    },
+    {
+      "series": "iX",
+      "codes": [
+        "I20"
+      ],
+      "years": "2021–",
+      "kind": "current",
+      "cls": "E-segment/mid-size electric luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "I20",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "I20"
+      ],
+      "wikidataMissingKeys": [
+        "I20"
+      ]
+    },
+    {
+      "series": "iX5",
+      "codes": [
+        "G65"
+      ],
+      "years": "2026–",
+      "kind": "current",
+      "cls": "E-segment/mid-size electric luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G65",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G65 X5 M60e",
+            "BMW G65"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G65"
+      ]
+    },
+    {
+      "series": "XM",
+      "codes": [
+        "G09"
+      ],
+      "years": "2022–",
+      "kind": "current",
+      "cls": "Plug-in hybrid F-segment/full-size luxury crossover SUV.",
+      "perKey": [
+        {
+          "key": "G09",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW XM (G09)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G09"
+      ]
+    },
+    {
+      "series": "4 Series",
+      "codes": [
+        "G22",
+        "G23"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "D-segment/compact executive coupé and convertible.",
+      "perKey": [
+        {
+          "key": "G22",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW G22",
+            "BMW G22 (Original Bumper)"
+          ]
+        },
+        {
+          "key": "G23",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW G23",
+            "BMW G23 M440i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G22",
+        "G23"
+      ]
+    },
+    {
+      "series": "2 Series Active Tourer",
+      "codes": [
+        "U06"
+      ],
+      "years": "2014–",
+      "kind": "current",
+      "cls": "Two-row compact MPV.",
+      "perKey": [
+        {
+          "key": "U06",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW U06"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "U06"
+      ]
+    },
+    {
+      "series": "3/20 PS",
+      "codes": [],
+      "years": "1932–1934",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "3/20 PS",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "3/20 PS"
+      ],
+      "wikidataMissingKeys": [
+        "3/20 PS"
+      ]
+    },
+    {
+      "series": "329",
+      "codes": [],
+      "years": "1937",
+      "kind": "discontinued",
+      "cls": "Compact car",
+      "perKey": [
+        {
+          "key": "329",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW 329"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "329"
+      ]
+    },
+    {
+      "series": "505",
+      "codes": [],
+      "years": "1955",
+      "kind": "discontinued",
+      "cls": "Official state car",
+      "perKey": [
+        {
+          "key": "505",
+          "commons": 0,
+          "wikidata": false,
+          "sample": []
+        }
+      ],
+      "commonsMissingKeys": [
+        "505"
+      ],
+      "wikidataMissingKeys": [
+        "505"
+      ]
+    },
+    {
+      "series": "02 Series",
+      "codes": [],
+      "years": "1966–1977",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "02 Series",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW 02 Series",
+            "BMW 02 Series sedans"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "02 Series"
+      ]
+    },
+    {
+      "series": "5 Series (E12)",
+      "codes": [
+        "E12"
+      ],
+      "years": "1972–1981",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E12",
+          "commons": 10,
+          "wikidata": false,
+          "sample": [
+            "BMW 2000 (type 121)",
+            "BMW 2000 ti (type 121)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E12"
+      ]
+    },
+    {
+      "series": "5 Series (E34)",
+      "codes": [
+        "E34"
+      ],
+      "years": "1987–1996",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E34",
+          "commons": 7,
+          "wikidata": false,
+          "sample": [
+            "BMW E34",
+            "BMW E34 (1988-1994)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E34"
+      ]
+    },
+    {
+      "series": "5 Series (E60/E61)",
+      "codes": [
+        "E60",
+        "E61"
+      ],
+      "years": "2003–2010",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "E60",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (E60)",
+            "BMW E60"
+          ]
+        },
+        {
+          "key": "E61",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (E61)",
+            "BMW E61"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E60",
+        "E61"
+      ]
+    },
+    {
+      "series": "1 Series (E81/E82/E87/E88)",
+      "codes": [
+        "E81",
+        "E82",
+        "E87",
+        "E88"
+      ],
+      "years": "2004–2013",
+      "kind": "discontinued",
+      "cls": "Hatchback, coupé, convertible",
+      "perKey": [
+        {
+          "key": "E81",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW E81"
+          ]
+        },
+        {
+          "key": "E82",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW E82"
+          ]
+        },
+        {
+          "key": "E87",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW E87"
+          ]
+        },
+        {
+          "key": "E88",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW E88",
+            "BMW E88 development mules"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E81",
+        "E82",
+        "E88"
+      ]
+    },
+    {
+      "series": "3 Series (E90/E91/E92/E93)",
+      "codes": [
+        "E90",
+        "E91",
+        "E92",
+        "E93"
+      ],
+      "years": "2005–2013",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "E90",
+          "commons": 15,
+          "wikidata": true,
+          "sample": [
+            "BMW M3 (E90)",
+            "BMW 320d (E90)"
+          ]
+        },
+        {
+          "key": "E91",
+          "commons": 10,
+          "wikidata": false,
+          "sample": [
+            "BMW 320d E91",
+            "BMW 320i E91"
+          ]
+        },
+        {
+          "key": "E92",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW E92",
+            "BMW 335i (E92)"
+          ]
+        },
+        {
+          "key": "E93",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "BMW 335i (E93)",
+            "Alpina B3 (E93)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E91",
+        "E93"
+      ]
+    },
+    {
+      "series": "X6 (E71)",
+      "codes": [
+        "E71"
+      ],
+      "years": "2008–2014",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "E71",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW X6 M (E71)",
+            "BMW E71"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E71"
+      ]
+    },
+    {
+      "series": "5 Series (F07/F10/F11)",
+      "codes": [
+        "F07",
+        "F10",
+        "F11"
+      ],
+      "years": "2010–2017",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "F07",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F07"
+          ]
+        },
+        {
+          "key": "F10",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW M5 (F10)",
+            "Alpina B5 (F10)"
+          ]
+        },
+        {
+          "key": "F11",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (F11)",
+            "Alpina D5 (F11)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F07",
+        "F11"
+      ]
+    },
+    {
+      "series": "1 Series (F20/F21)",
+      "codes": [
+        "F20",
+        "F21"
+      ],
+      "years": "2011–2019",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F20",
+          "commons": 4,
+          "wikidata": true,
+          "sample": [
+            "BMW F20",
+            "BMW F20 125i M Performance"
+          ]
+        },
+        {
+          "key": "F21",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW F21",
+            "BMW F21 M135i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F21"
+      ]
+    },
+    {
+      "series": "3 Series (F30/F31/F34)",
+      "codes": [
+        "F30",
+        "F31",
+        "F34"
+      ],
+      "years": "2011–2020",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "F30",
+          "commons": 13,
+          "wikidata": true,
+          "sample": [
+            "BMW F30",
+            "BMW 316i (F30)"
+          ]
+        },
+        {
+          "key": "F31",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B3 (F31)",
+            "Alpina D3 (F31)"
+          ]
+        },
+        {
+          "key": "F34",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW F34"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F31"
+      ]
+    },
+    {
+      "series": "4 Series (F32/F33/F36)",
+      "codes": [
+        "F32",
+        "F33",
+        "F36"
+      ],
+      "years": "2013–2020",
+      "kind": "discontinued",
+      "cls": "Compact executive car",
+      "perKey": [
+        {
+          "key": "F32",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F32",
+            "Alpina B4 (F32)"
+          ]
+        },
+        {
+          "key": "F33",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B4 (F33)",
+            "Alpina D4 (F33)"
+          ]
+        },
+        {
+          "key": "F36",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F36"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F33",
+        "F36"
+      ]
+    },
+    {
+      "series": "2 Series (F22/F23)",
+      "codes": [
+        "F22",
+        "F23"
+      ],
+      "years": "2013–2021",
+      "kind": "discontinued",
+      "cls": "Subcompact car",
+      "perKey": [
+        {
+          "key": "F22",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW F22",
+            "BMW F22 M235i"
+          ]
+        },
+        {
+          "key": "F23",
+          "commons": 2,
+          "wikidata": false,
+          "sample": [
+            "BMW F23",
+            "BMW F23 M240i"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F23"
+      ]
+    },
+    {
+      "series": "2 Series (F45/F46)",
+      "codes": [
+        "F45",
+        "F46"
+      ],
+      "years": "2014–2021",
+      "kind": "discontinued",
+      "cls": "Sub-compact MPV Large MPV",
+      "perKey": [
+        {
+          "key": "F45",
+          "commons": 1,
+          "wikidata": true,
+          "sample": [
+            "BMW F45"
+          ]
+        },
+        {
+          "key": "F46",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F46"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F46"
+      ]
+    },
+    {
+      "series": "X6 (F16)",
+      "codes": [
+        "F16"
+      ],
+      "years": "2014–2019",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury SUV",
+      "perKey": [
+        {
+          "key": "F16",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW F16 X6 M50d",
+            "BMW X6 M (F16)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F16"
+      ]
+    },
+    {
+      "series": "7 Series (G11/G12)",
+      "codes": [
+        "G11",
+        "G12"
+      ],
+      "years": "2015–2022",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "G11",
+          "commons": 6,
+          "wikidata": true,
+          "sample": [
+            "BMW G11",
+            "BMW G11 development mules"
+          ]
+        },
+        {
+          "key": "G12",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "Alpina B7 (G12)",
+            "BMW G12"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G12"
+      ]
+    },
+    {
+      "series": "5 Series (G30/G31)",
+      "codes": [
+        "G30",
+        "G31"
+      ],
+      "years": "2016–2023",
+      "kind": "discontinued",
+      "cls": "Mid-size luxury car",
+      "perKey": [
+        {
+          "key": "G30",
+          "commons": 6,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (G30)",
+            "Alpina D5 (G30)"
+          ]
+        },
+        {
+          "key": "G31",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "Alpina B5 (G31)",
+            "Alpina D5 (G31)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G30",
+        "G31"
+      ]
+    },
+    {
+      "series": "1 Series (F52)",
+      "codes": [
+        "F52"
+      ],
+      "years": "2017–2023",
+      "kind": "discontinued",
+      "cls": "Sub-compact executive car",
+      "perKey": [
+        {
+          "key": "F52",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW F52"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "F52"
+      ]
+    },
+    {
+      "series": "6 Series (G32)",
+      "codes": [
+        "G32"
+      ],
+      "years": "2017–2023",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "G32",
+          "commons": 1,
+          "wikidata": false,
+          "sample": [
+            "BMW G32"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G32"
+      ]
+    },
+    {
+      "series": "X3 (G01)",
+      "codes": [
+        "G01"
+      ],
+      "years": "2017–2024",
+      "kind": "discontinued",
+      "cls": "Compact luxury SUV",
+      "perKey": [
+        {
+          "key": "G01",
+          "commons": 6,
+          "wikidata": false,
+          "sample": [
+            "BMW G01 X3 M40i",
+            "BMW X3 M (G01)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G01"
+      ]
+    },
+    {
+      "series": "8 Series (G14/G15/G15)",
+      "codes": [
+        "G14",
+        "G15"
+      ],
+      "years": "2018–2026",
+      "kind": "discontinued",
+      "cls": "Grand tourer",
+      "perKey": [
+        {
+          "key": "G14",
+          "commons": 3,
+          "wikidata": false,
+          "sample": [
+            "BMW G14",
+            "BMW G14 development mules"
+          ]
+        },
+        {
+          "key": "G15",
+          "commons": 3,
+          "wikidata": true,
+          "sample": [
+            "BMW G15",
+            "BMW M8 (G15)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "G14"
+      ]
+    }
+  ]
+}

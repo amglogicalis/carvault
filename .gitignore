@@ -1,0 +1,35 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Build y caché
+dist/
+.astro/
+.cache/
+pipeline/.cache/
+*.tsbuildinfo
+
+# Entorno y secretos (nunca subir)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+mis_claves*.json
+*secrets*
+
+# Imágenes en bruto descargadas (se publican en Rolla, no en git)
+data/_raw/
+data/_images/
+tmp/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
