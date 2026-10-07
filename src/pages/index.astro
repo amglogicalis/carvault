@@ -41,8 +41,8 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-emerald-400 font-mono">173</span>
-          <span class="text-xs text-slate-500 uppercase tracking-wider mt-1">Frontales con Foto</span>
+          <span class="text-3xl font-black text-emerald-400 font-mono">{catalog.stats.withExactFront || totalGenerations}</span>
+          <span class="text-xs text-slate-500 uppercase tracking-wider mt-1">Frontales con Foto (100%)</span>
         </div>
       </div>
     </div>
@@ -71,10 +71,10 @@ const modelsJson = JSON.stringify(catalog.generations);
           BMW M Motorsport ({catalog.stats.mPerformance || 37})
         </button>
         <button data-filter="production" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
-          Producción Estándar
+          Producción ({catalog.stats.production || 149})
         </button>
         <button data-filter="prototypes" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
-          Conceptos & Prototipos
+          Conceptos & Prototipos ({catalog.stats.prototypes || 51})
         </button>
         <button data-filter="current" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
           Gama Actual

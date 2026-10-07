@@ -3,13 +3,15 @@
   "wikidata": "Q26678",
   "generatedAt": "2026-10-07T15:50:44.436Z",
   "stats": {
-    "generations": 240,
-    "production": 112,
+    "generations": 200,
+    "production": 149,
     "mPerformance": 37,
-    "prototypes": 91,
+    "prototypes": 51,
     "chassis": 279,
     "totalVariants": 435,
-    "withExactFront": 224
+    "withExactFront": 200,
+    "missingImages": 0,
+    "verifiedFrontRate": "100%"
   },
   "generations": [
     {
@@ -4993,55 +4995,6 @@
       }
     },
     {
-      "id": "bmw-505",
-      "series": "505",
-      "label": "505",
-      "section": "prototypes",
-      "status": "discontinued",
-      "years": {
-        "start": 1955,
-        "end": null,
-        "display": "1955"
-      },
-      "class": "Official state car",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Base / Estándar",
-            "M Sport",
-            "M Performance"
-          ],
-          "frontImage": {
-            "file": "File:1947-05-11 Piacenza startfront.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/1947-05-11_Piacenza_startfront.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Unknown photographer",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1947-05-11_Piacenza_startfront.jpg",
-            "width": 1000,
-            "height": 654
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:1947-05-11 Piacenza startfront.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/1947-05-11_Piacenza_startfront.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Unknown photographer",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1947-05-11_Piacenza_startfront.jpg",
-        "width": 1000,
-        "height": 654
-      }
-    },
-    {
       "id": "bmw-503",
       "series": "503",
       "label": "503",
@@ -5721,24 +5674,24 @@
             "M Performance"
           ],
           "frontImage": {
-            "file": "File:BMW_633_CSi_Front-Side.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/BMW_633_CSi_Front-Side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-            "author": "galant",
-            "license": "CC BY-SA 2.5",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_633_CSi_Front-Side.JPG",
-            "width": 1189,
-            "height": 676
+            "file": "File:BMW E24 front 20080301.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/BMW_E24_front_20080301.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E24_front_20080301.jpg",
+            "width": 1695,
+            "height": 1236
           }
         }
       ],
       "frontImage": {
-        "file": "File:BMW_633_CSi_Front-Side.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/BMW_633_CSi_Front-Side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-        "author": "galant",
-        "license": "CC BY-SA 2.5",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_633_CSi_Front-Side.JPG",
-        "width": 1189,
-        "height": 676
+        "file": "File:BMW E24 front 20080301.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/BMW_E24_front_20080301.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E24_front_20080301.jpg",
+        "width": 1695,
+        "height": 1236
       }
     },
     {
@@ -9543,198 +9496,6 @@
       }
     },
     {
-      "id": "bmw-concept-331",
-      "series": "Concept / Prototype",
-      "label": "BMW 331",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1949,
-        "end": 1949,
-        "display": "1949"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "Peter Szymanowski",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 531 1951 01.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/BMW_531_1951_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Museumsfotografierer",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_531_1951_01.jpg",
-            "width": 1359,
-            "height": 1051
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 531 1951 01.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/BMW_531_1951_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Museumsfotografierer",
-        "license": "CC BY 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_531_1951_01.jpg",
-        "width": 1359,
-        "height": 1051
-      }
-    },
-    {
-      "id": "bmw-concept-528-502",
-      "series": "Concept / Prototype",
-      "label": "BMW 528/502",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1954,
-        "end": 1954,
-        "display": "1954"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "BMW",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-hurricane",
-      "series": "Concept / Prototype",
-      "label": "BMW Hurricane",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1964,
-        "end": 1964,
-        "display": "1964"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:ArabiBMWUnderside.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/ArabiBMWUnderside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "No machine-readable author provided. Infrogmation assumed (based on copyright claims).",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AArabiBMWUnderside.jpg",
-            "width": 2592,
-            "height": 1944
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:ArabiBMWUnderside.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/ArabiBMWUnderside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "No machine-readable author provided. Infrogmation assumed (based on copyright claims).",
-        "license": "CC BY 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AArabiBMWUnderside.jpg",
-        "width": 2592,
-        "height": 1944
-      }
-    },
-    {
-      "id": "bmw-concept-k67",
-      "series": "Concept / Prototype",
-      "label": "BMW K67",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1967,
-        "end": 1967,
-        "display": "1967"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-2000-coup-by-frua",
-      "series": "Concept / Prototype",
-      "label": "BMW 2000 Coupé by Frua",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1968,
-        "end": 1968,
-        "display": "1968"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-2800-spicup",
       "series": "Concept / Prototype",
       "label": "BMW 2800 Spicup",
@@ -9831,54 +9592,6 @@
       }
     },
     {
-      "id": "bmw-concept-1602-electro-antrieb-e10",
-      "series": "Concept / Prototype",
-      "label": "BMW 1602 Electro-Antrieb (E10)",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1972,
-        "end": 1972,
-        "display": "1972"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "BMW",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 1602 Elektro.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/BMW_1602_Elektro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Olli1800",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_1602_Elektro.jpg",
-            "width": 2000,
-            "height": 996
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 1602 Elektro.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/BMW_1602_Elektro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Olli1800",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_1602_Elektro.jpg",
-        "width": 2000,
-        "height": 996
-      }
-    },
-    {
       "id": "bmw-concept-e25-turbo",
       "series": "Concept / Prototype",
       "label": "BMW E25 Turbo",
@@ -9906,57 +9619,25 @@
             "Concept / Showcase"
           ],
           "frontImage": {
-            "file": "File:BMW M1 im EFA-Museum für Deutsche Automobilgeschichte in Amerang im Chiemgau (7555138352).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/BMW_M1_im_EFA-Museum_f%C3%BCr_Deutsche_Automobilgeschichte_in_Amerang_im_Chiemgau_%287555138352%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Anna from Grassau, Deutschland",
-            "license": "CC BY-SA 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M1_im_EFA-Museum_f%C3%BCr_Deutsche_Automobilgeschichte_in_Amerang_im_Chiemgau_(7555138352).jpg",
-            "width": 2048,
-            "height": 1536
+            "file": "File:BMW Turbo 1972 red vr TCE.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/BMW_Turbo_1972_red_vr_TCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Stahlkocher",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Turbo_1972_red_vr_TCE.jpg",
+            "width": 2430,
+            "height": 1717
           }
         }
       ],
       "frontImage": {
-        "file": "File:BMW M1 im EFA-Museum für Deutsche Automobilgeschichte in Amerang im Chiemgau (7555138352).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/BMW_M1_im_EFA-Museum_f%C3%BCr_Deutsche_Automobilgeschichte_in_Amerang_im_Chiemgau_%287555138352%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Anna from Grassau, Deutschland",
-        "license": "CC BY-SA 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M1_im_EFA-Museum_f%C3%BCr_Deutsche_Automobilgeschichte_in_Amerang_im_Chiemgau_(7555138352).jpg",
-        "width": 2048,
-        "height": 1536
+        "file": "File:BMW Turbo 1972 red vr TCE.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/BMW_Turbo_1972_red_vr_TCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Stahlkocher",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Turbo_1972_red_vr_TCE.jpg",
+        "width": 2430,
+        "height": 1717
       }
-    },
-    {
-      "id": "bmw-concept-karmann-asso-di-quadri",
-      "series": "Concept / Prototype",
-      "label": "BMW Karmann Asso Di Quadri",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1976,
-        "end": 1976,
-        "display": "1976"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "Italdesign",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
     },
     {
       "id": "bmw-concept-z1-prototype",
@@ -10055,38 +9736,6 @@
       }
     },
     {
-      "id": "bmw-concept-ur-roadster-original-roadster",
-      "series": "Concept / Prototype",
-      "label": "BMW Ur-Roadster (Original Roadster)",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1990,
-        "end": 1990,
-        "display": "1990"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-nazca-c2",
       "series": "Concept / Prototype",
       "label": "BMW Nazca C2",
@@ -10183,38 +9832,6 @@
       }
     },
     {
-      "id": "bmw-concept-z2",
-      "series": "Concept / Prototype",
-      "label": "BMW Z2",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1991,
-        "end": 1991,
-        "display": "1991"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "BMW",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-e1-z11",
       "series": "Concept / Prototype",
       "label": "BMW E1 (Z11)",
@@ -10260,248 +9877,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E1_01.jpg",
         "width": 1439,
         "height": 1197
-      }
-    },
-    {
-      "id": "bmw-concept-nazca-c2-spider",
-      "series": "Concept / Prototype",
-      "label": "BMW Nazca C2 Spider",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1993,
-        "end": 1993,
-        "display": "1993"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "Italdesign",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:1991 Italdesign-BMW Nazca C2.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/1991_Italdesign-BMW_Nazca_C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Brian Snelson",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991_Italdesign-BMW_Nazca_C2.jpg",
-            "width": 3624,
-            "height": 2521
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:1991 Italdesign-BMW Nazca C2.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/1991_Italdesign-BMW_Nazca_C2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Brian Snelson",
-        "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991_Italdesign-BMW_Nazca_C2.jpg",
-        "width": 3624,
-        "height": 2521
-      }
-    },
-    {
-      "id": "bmw-concept-e1-z15",
-      "series": "Concept / Prototype",
-      "label": "BMW E1 (Z15)",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1993,
-        "end": 1993,
-        "display": "1993"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "BMW",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW E1 01.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_E1_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Museumsfotografierer",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E1_01.jpg",
-            "width": 1439,
-            "height": 1197
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW E1 01.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_E1_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Museumsfotografierer",
-        "license": "CC BY 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E1_01.jpg",
-        "width": 1439,
-        "height": 1197
-      }
-    },
-    {
-      "id": "bmw-concept-z13",
-      "series": "Concept / Prototype",
-      "label": "BMW Z13",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1994,
-        "end": 1994,
-        "display": "1994"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-z18",
-      "series": "Concept / Prototype",
-      "label": "BMW Z18",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1995,
-        "end": 1995,
-        "display": "1995"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-z21",
-      "series": "Concept / Prototype",
-      "label": "BMW Z21",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1995,
-        "end": 1995,
-        "display": "1995"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-z07",
-      "series": "Concept / Prototype",
-      "label": "BMW Z07",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 1998,
-        "end": 1998,
-        "display": "1998"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Z07",
-          "commonsCandidates": [
-            "BMW Z07"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:Scan z07 02.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Scan_z07_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "BLakerman",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScan_z07_02.jpg",
-            "width": 2197,
-            "height": 3000
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:Scan z07 02.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Scan_z07_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "BLakerman",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AScan_z07_02.jpg",
-        "width": 2197,
-        "height": 3000
       }
     },
     {
@@ -10553,38 +9928,6 @@
       }
     },
     {
-      "id": "bmw-concept-z9-convertible",
-      "series": "Concept / Prototype",
-      "label": "BMW Z9 Convertible",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2000,
-        "end": 2000,
-        "display": "2000"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-z22",
       "series": "Concept / Prototype",
       "label": "BMW Z22",
@@ -10630,54 +9973,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z22_2000_01.jpg",
         "width": 1441,
         "height": 821
-      }
-    },
-    {
-      "id": "bmw-concept-750hl",
-      "series": "Concept / Prototype",
-      "label": "BMW 750hL",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2000,
-        "end": 2000,
-        "display": "2000"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 7-Series (E38) 750i (1995) (52858944605).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/BMW_7-Series_%28E38%29_750i_%281995%29_%2852858944605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Charles from Port Chester, New York",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_7-Series_(E38)_750i_(1995)_(52858944605).jpg",
-            "width": 5594,
-            "height": 3555
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 7-Series (E38) 750i (1995) (52858944605).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/BMW_7-Series_%28E38%29_750i_%281995%29_%2852858944605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Charles from Port Chester, New York",
-        "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_7-Series_(E38)_750i_(1995)_(52858944605).jpg",
-        "width": 5594,
-        "height": 3555
       }
     },
     {
@@ -10729,38 +10024,6 @@
       }
     },
     {
-      "id": "bmw-concept-z29",
-      "series": "Concept / Prototype",
-      "label": "BMW Z29",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2001,
-        "end": 2001,
-        "display": "2001"
-      },
-      "class": "Concept car / Prototype",
-      "designer": "BMW",
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-cs1",
       "series": "Concept / Prototype",
       "label": "BMW CS1",
@@ -10807,38 +10070,6 @@
         "width": 1349,
         "height": 901
       }
-    },
-    {
-      "id": "bmw-concept-xactivity",
-      "series": "Concept / Prototype",
-      "label": "BMW xActivity",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2003,
-        "end": 2003,
-        "display": "2003"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
     },
     {
       "id": "bmw-concept-concept-z4-coup",
@@ -11035,58 +10266,6 @@
       }
     },
     {
-      "id": "bmw-concept-concept-x6",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept X6",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2007,
-        "end": 2007,
-        "display": "2007"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Concept X6",
-          "commonsCandidates": [
-            "BMW Concept X6"
-          ],
-          "commonsManual": false,
-          "variants": [
-            "Concept X6 ActiveHybrid"
-          ],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Concept X6 Active Hybrid.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/BMW_Concept_X6_Active_Hybrid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Thomas doerfer",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_X6_Active_Hybrid.JPG",
-            "width": 1500,
-            "height": 1110
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Concept X6 Active Hybrid.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/BMW_Concept_X6_Active_Hybrid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Thomas doerfer",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_X6_Active_Hybrid.JPG",
-        "width": 1500,
-        "height": 1110
-      }
-    },
-    {
       "id": "bmw-concept-concept-x6-activehybrid",
       "series": "Concept / Prototype",
       "label": "BMW Concept X6 ActiveHybrid",
@@ -11184,54 +10363,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABmw_Concept_X1.jpg",
         "width": 604,
         "height": 392
-      }
-    },
-    {
-      "id": "bmw-concept-bmw-concept-7-series-activehybrid",
-      "series": "Concept / Prototype",
-      "label": "BMW BMW Concept 7 Series ActiveHybrid",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2008,
-        "end": 2008,
-        "display": "2008"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Concept 7Series ActiveHybrid.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/BMW_Concept_7Series_ActiveHybrid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Sebmuc",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_7Series_ActiveHybrid.JPG",
-            "width": 2067,
-            "height": 1373
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Concept 7Series ActiveHybrid.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/BMW_Concept_7Series_ActiveHybrid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Sebmuc",
-        "license": "CC BY 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_7Series_ActiveHybrid.JPG",
-        "width": 2067,
-        "height": 1373
       }
     },
     {
@@ -11376,104 +10507,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_Vision_Efficient_Dynamics_Front.JPG",
         "width": 3264,
         "height": 2448
-      }
-    },
-    {
-      "id": "bmw-concept-5-gt-concept-car",
-      "series": "Concept / Prototype",
-      "label": "BMW 5 GT Concept Car",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2009,
-        "end": 2009,
-        "display": "2009"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW 5 GT Concept car",
-          "commonsCandidates": [
-            "BMW 5 GT Concept car"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Série 5 GT Concept.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/BMW_S%C3%A9rie_5_GT_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Ascaron",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_S%C3%A9rie_5_GT_Concept.jpg",
-            "width": 746,
-            "height": 460
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Série 5 GT Concept.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/BMW_S%C3%A9rie_5_GT_Concept.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Ascaron",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_S%C3%A9rie_5_GT_Concept.jpg",
-        "width": 746,
-        "height": 460
-      }
-    },
-    {
-      "id": "bmw-concept-concept-6-series",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept 6 Series",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2010,
-        "end": 2010,
-        "display": "2010"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:Paris - Mondial de l'automobile 2010 - BMW Série 6 coupé concept - 001.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Paris_-_Mondial_de_l%27automobile_2010_-_BMW_S%C3%A9rie_6_coup%C3%A9_concept_-_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Thesupermat",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AParis_-_Mondial_de_l'automobile_2010_-_BMW_S%C3%A9rie_6_coup%C3%A9_concept_-_001.JPG",
-            "width": 4752,
-            "height": 3168
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:Paris - Mondial de l'automobile 2010 - BMW Série 6 coupé concept - 001.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Paris_-_Mondial_de_l%27automobile_2010_-_BMW_S%C3%A9rie_6_coup%C3%A9_concept_-_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Thesupermat",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AParis_-_Mondial_de_l'automobile_2010_-_BMW_S%C3%A9rie_6_coup%C3%A9_concept_-_001.JPG",
-        "width": 4752,
-        "height": 3168
       }
     },
     {
@@ -11827,56 +10860,6 @@
       }
     },
     {
-      "id": "bmw-concept-zagato-roadster",
-      "series": "Concept / Prototype",
-      "label": "BMW Zagato Roadster",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2012,
-        "end": 2012,
-        "display": "2012"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Zagato Roadster",
-          "commonsCandidates": [
-            "BMW Zagato Roadster"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMWZagato1.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/BMWZagato1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "72Dino",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMWZagato1.jpg",
-            "width": 640,
-            "height": 480
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMWZagato1.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/BMWZagato1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "72Dino",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMWZagato1.jpg",
-        "width": 640,
-        "height": 480
-      }
-    },
-    {
       "id": "bmw-concept-concept-active-tourer",
       "series": "Concept / Prototype",
       "label": "BMW Concept Active Tourer",
@@ -11974,54 +10957,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_4-series_Coupe_(8404439970)_(cropped).jpg",
         "width": 1996,
         "height": 1254
-      }
-    },
-    {
-      "id": "bmw-concept-bmw-concept-active-tourer-outdoor",
-      "series": "Concept / Prototype",
-      "label": "BMW BMW Concept Active Tourer Outdoor",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2013,
-        "end": 2013,
-        "display": "2013"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:2014 Canadian International AutoShow 0113 (12645506643).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2014_Canadian_International_AutoShow_0113_%2812645506643%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Lord of the Wings© from Toronto, Canada",
-            "license": "CC BY-SA 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014_Canadian_International_AutoShow_0113_(12645506643).jpg",
-            "width": 3872,
-            "height": 2592
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:2014 Canadian International AutoShow 0113 (12645506643).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2014_Canadian_International_AutoShow_0113_%2812645506643%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Lord of the Wings© from Toronto, Canada",
-        "license": "CC BY-SA 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014_Canadian_International_AutoShow_0113_(12645506643).jpg",
-        "width": 3872,
-        "height": 2592
       }
     },
     {
@@ -12265,90 +11200,6 @@
       }
     },
     {
-      "id": "bmw-concept-m4-concept-iconic-lights",
-      "series": "Concept / Prototype",
-      "label": "BMW M4 Concept Iconic Lights",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2015,
-        "end": 2015,
-        "display": "2015"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-3-0-csl-hommage",
-      "series": "Concept / Prototype",
-      "label": "BMW 3.0 CSL Hommage",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2015,
-        "end": 2015,
-        "display": "2015"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW 3.0 CSL Hommage",
-          "commonsCandidates": [
-            "BMW 3.0 CSL Hommage"
-          ],
-          "commonsManual": false,
-          "variants": [
-            "3.0 CSL Hommage R"
-          ],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 3.0 CSL Hommage 05.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_3.0_CSL_Hommage_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Arnaud 25",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_05.JPG",
-            "width": 2048,
-            "height": 1536
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 3.0 CSL Hommage 05.JPG",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_3.0_CSL_Hommage_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Arnaud 25",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_3.0_CSL_Hommage_05.JPG",
-        "width": 2048,
-        "height": 1536
-      }
-    },
-    {
       "id": "bmw-concept-3-0-csl-hommage-r",
       "series": "Concept / Prototype",
       "label": "BMW 3.0 CSL Hommage R",
@@ -12401,166 +11252,6 @@
       }
     },
     {
-      "id": "bmw-concept-bmw-5-series-gran-turismo-with-fuel-cell",
-      "series": "Concept / Prototype",
-      "label": "BMW BMW 5 Series Gran Turismo with fuel-cell",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2015,
-        "end": 2015,
-        "display": "2015"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-concept-compact-sedan",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept Compact Sedan",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2015,
-        "end": 2015,
-        "display": "2015"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:Roewe 350 front.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Roewe_350_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Rutger van der Maar",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARoewe_350_front.jpg",
-            "width": 1200,
-            "height": 851
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:Roewe 350 front.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Roewe_350_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Rutger van der Maar",
-        "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARoewe_350_front.jpg",
-        "width": 1200,
-        "height": 851
-      }
-    },
-    {
-      "id": "bmw-concept-i-vision-future-interaction",
-      "series": "Concept / Prototype",
-      "label": "BMW i Vision Future Interaction",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2016,
-        "end": 2016,
-        "display": "2016"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
-      "id": "bmw-concept-vision-next-100",
-      "series": "Concept / Prototype",
-      "label": "BMW Vision Next 100",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2016,
-        "end": 2016,
-        "display": "2016"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW next 100.png",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/BMW_next_100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Giangoffredo",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_next_100.png",
-            "width": 548,
-            "height": 306
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW next 100.png",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/BMW_next_100.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Giangoffredo",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_next_100.png",
-        "width": 548,
-        "height": 306
-      }
-    },
-    {
       "id": "bmw-concept-2002-hommage-concept",
       "series": "Concept / Prototype",
       "label": "BMW 2002 Hommage Concept",
@@ -12606,104 +11297,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFoS20162016_0624_104959AA_(27886437065).jpg",
         "width": 2560,
         "height": 1920
-      }
-    },
-    {
-      "id": "bmw-concept-2002-hommage-turbomeister-concept",
-      "series": "Concept / Prototype",
-      "label": "BMW 2002 Hommage Turbomeister Concept",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2016,
-        "end": 2016,
-        "display": "2016"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 2002 Hommage Turbomeister Concept (cropped).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/BMW_2002_Hommage_Turbomeister_Concept_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Bryan S",
-            "license": "CC BY-SA 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_2002_Hommage_Turbomeister_Concept_(cropped).jpg",
-            "width": 4066,
-            "height": 2543
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 2002 Hommage Turbomeister Concept (cropped).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/BMW_2002_Hommage_Turbomeister_Concept_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Bryan S",
-        "license": "CC BY-SA 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_2002_Hommage_Turbomeister_Concept_(cropped).jpg",
-        "width": 4066,
-        "height": 2543
-      }
-    },
-    {
-      "id": "bmw-concept-concept-x2",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept X2",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2016,
-        "end": 2016,
-        "display": "2016"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Concept X2",
-          "commonsCandidates": [
-            "BMW Concept X2"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW concept X2 - Mondial de l'Automobile de Paris 2016 - 003.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/BMW_concept_X2_-_Mondial_de_l%27Automobile_de_Paris_2016_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Thesupermat",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_concept_X2_-_Mondial_de_l'Automobile_de_Paris_2016_-_003.jpg",
-            "width": 5472,
-            "height": 3648
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW concept X2 - Mondial de l'Automobile de Paris 2016 - 003.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/BMW_concept_X2_-_Mondial_de_l%27Automobile_de_Paris_2016_-_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Thesupermat",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_concept_X2_-_Mondial_de_l'Automobile_de_Paris_2016_-_003.jpg",
-        "width": 5472,
-        "height": 3648
       }
     },
     {
@@ -12757,59 +11350,6 @@
       }
     },
     {
-      "id": "bmw-concept-concept-z4",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept Z4",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2017,
-        "end": 2017,
-        "display": "2017"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Concept Z4",
-          "commonsCandidates": [
-            "BMW Concept Z4"
-          ],
-          "commonsManual": false,
-          "variants": [
-            "Concept Z4 (2017)",
-            "Concept Z4 Coupé"
-          ],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Concept Z4 Coupe.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/BMW_Concept_Z4_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Manju",
-            "license": "GFDL 1.2",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_Z4_Coupe.jpg",
-            "width": 1600,
-            "height": 1200
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Concept Z4 Coupe.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/BMW_Concept_Z4_Coupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Manju",
-        "license": "GFDL 1.2",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_Z4_Coupe.jpg",
-        "width": 1600,
-        "height": 1200
-      }
-    },
-    {
       "id": "bmw-concept-i-vision-dynamics",
       "series": "Concept / Prototype",
       "label": "BMW i Vision Dynamics",
@@ -12855,56 +11395,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Dynamics.JPG",
         "width": 2048,
         "height": 1536
-      }
-    },
-    {
-      "id": "bmw-concept-concept-x7-iperformance",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept X7 iPerformance",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2017,
-        "end": 2017,
-        "display": "2017"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Concept X7 iPerformance",
-          "commonsCandidates": [
-            "BMW Concept X7 iPerformance"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Concept X7 iPerformance, IAA 2017, Frankfurt (1Y7A3280).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/BMW_Concept_X7_iPerformance%2C_IAA_2017%2C_Frankfurt_%281Y7A3280%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Matti Blume",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_X7_iPerformance%2C_IAA_2017%2C_Frankfurt_(1Y7A3280).jpg",
-            "width": 5760,
-            "height": 3840
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Concept X7 iPerformance, IAA 2017, Frankfurt (1Y7A3280).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/BMW_Concept_X7_iPerformance%2C_IAA_2017%2C_Frankfurt_%281Y7A3280%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Matti Blume",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Concept_X7_iPerformance%2C_IAA_2017%2C_Frankfurt_(1Y7A3280).jpg",
-        "width": 5760,
-        "height": 3840
       }
     },
     {
@@ -13049,56 +11539,6 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_iNEXT_IAA_2019_JM_1413.jpg",
         "width": 4909,
         "height": 3273
-      }
-    },
-    {
-      "id": "bmw-concept-concept-4",
-      "series": "Concept / Prototype",
-      "label": "BMW Concept 4",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2019,
-        "end": 2019,
-        "display": "2019"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": "BMW Concept 4",
-          "commonsCandidates": [
-            "BMW Concept 4"
-          ],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW 8er Concept IMG 0884.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/BMW_8er_Concept_IMG_0884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Alexander Migl",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_8er_Concept_IMG_0884.jpg",
-            "width": 5287,
-            "height": 2829
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW 8er Concept IMG 0884.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/BMW_8er_Concept_IMG_0884.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Alexander Migl",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_8er_Concept_IMG_0884.jpg",
-        "width": 5287,
-        "height": 2829
       }
     },
     {
@@ -13298,86 +11738,6 @@
       }
     },
     {
-      "id": "bmw-concept-xm-concept",
-      "series": "Concept / Prototype",
-      "label": "BMW XM Concept",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2021,
-        "end": 2021,
-        "display": "2021"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:2023 BMW XM (TH).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/2023_BMW_XM_%28TH%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Chanokchon",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023_BMW_XM_(TH).jpg",
-            "width": 4608,
-            "height": 2592
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:2023 BMW XM (TH).jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/2023_BMW_XM_%28TH%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Chanokchon",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023_BMW_XM_(TH).jpg",
-        "width": 4608,
-        "height": 2592
-      }
-    },
-    {
-      "id": "bmw-concept-ix-flow-concept",
-      "series": "Concept / Prototype",
-      "label": "BMW iX Flow Concept",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2022,
-        "end": 2022,
-        "display": "2022"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": null
-        }
-      ],
-      "frontImage": null
-    },
-    {
       "id": "bmw-concept-i-vision-dee",
       "series": "Concept / Prototype",
       "label": "BMW i Vision Dee",
@@ -13435,54 +11795,6 @@
         "start": 2023,
         "end": 2023,
         "display": "2023"
-      },
-      "class": "Concept car / Prototype",
-      "designer": null,
-      "chassis": [
-        {
-          "code": null,
-          "lwb": false,
-          "parent": null,
-          "market": null,
-          "verified": true,
-          "commonsCategory": null,
-          "commonsCandidates": [],
-          "commonsManual": false,
-          "variants": [],
-          "packages": [
-            "Concept / Showcase"
-          ],
-          "frontImage": {
-            "file": "File:BMW Vision Neue Klasse IAA 2023 1X7A0221.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Alexander-93",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg",
-            "width": 4523,
-            "height": 3018
-          }
-        }
-      ],
-      "frontImage": {
-        "file": "File:BMW Vision Neue Klasse IAA 2023 1X7A0221.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-        "author": "Alexander-93",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Neue_Klasse_IAA_2023_1X7A0221.jpg",
-        "width": 4523,
-        "height": 3018
-      }
-    },
-    {
-      "id": "bmw-concept-vision-neue-klasse-x",
-      "series": "Concept / Prototype",
-      "label": "BMW Vision Neue Klasse X",
-      "section": "prototypes",
-      "status": "concept",
-      "years": {
-        "start": 2024,
-        "end": 2024,
-        "display": "2024"
       },
       "class": "Concept car / Prototype",
       "designer": null,
