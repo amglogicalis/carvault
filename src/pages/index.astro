@@ -8,7 +8,7 @@ const globalCars = catalog.generations.map(g => ({
   id: g.id,
   brandId: 'bmw',
   brandName: 'BMW',
-  brandLogo: '/images/brands/bmw.svg',
+  brandLogo: '/carvault/images/brands/bmw.svg',
   label: g.label,
   series: g.series,
   section: g.section,
@@ -18,7 +18,7 @@ const globalCars = catalog.generations.map(g => ({
   years: g.years,
   chassisCodes: g.chassis ? g.chassis.map(c => c.code).filter(Boolean).join(', ') : '',
   frontImage: g.frontImage,
-  brandCatalogUrl: '/bmw'
+  brandCatalogUrl: '/carvault/bmw'
 }));
 
 const globalCarsJson = JSON.stringify(globalCars);
@@ -208,7 +208,7 @@ const brandsJson = JSON.stringify(BRANDS);
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
       <!-- Tarjeta BMW -->
       <a 
-        href="/bmw" 
+        href="/carvault/bmw" 
         class="group bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 hover:border-cyan-500/60 rounded-3xl p-7 transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-cyan-500/10 relative overflow-hidden"
       >
         <div class="absolute top-3 right-3">
@@ -219,7 +219,7 @@ const brandsJson = JSON.stringify(BRANDS);
 
         <!-- Icono / Logo oficial de la marca -->
         <div class="w-24 h-24 rounded-full bg-slate-950 border border-slate-800 p-3 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform duration-300 mb-4">
-          <img src="/images/brands/bmw.svg" alt="Logo de BMW" class="w-full h-full object-contain" />
+          <img src="/carvault/images/brands/bmw.svg" alt="Logo de BMW" class="w-full h-full object-contain" />
         </div>
 
         <!-- Nombre de la marca -->
@@ -292,7 +292,7 @@ const brandsJson = JSON.stringify(BRANDS);
           </div>
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/carvault.json</code>
-            <a href="/api/v1/carvault.json" target="_blank" class="text-xs text-slate-300 hover:text-white px-2.5 py-1 rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 font-sans font-bold transition-all">
+            <a href="/carvault/api/v1/carvault.json" target="_blank" class="text-xs text-slate-300 hover:text-white px-2.5 py-1 rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 font-sans font-bold transition-all">
               Probar JSON ↗
             </a>
           </div>
@@ -303,7 +303,7 @@ const brandsJson = JSON.stringify(BRANDS);
           <div>
             <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
               <span class="text-slate-200 font-bold flex items-center gap-1.5">
-                <img src="/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
+                <img src="/carvault/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
                 Endpoint Específico BMW
               </span>
               <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • 200 coches</span>
@@ -314,7 +314,7 @@ const brandsJson = JSON.stringify(BRANDS);
           </div>
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/bmw.json</code>
-            <a href="/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+            <a href="/carvault/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>
@@ -774,7 +774,7 @@ const brandsJson = JSON.stringify(BRANDS);
         feedbackMsg.classList.add('hidden');
 
         try {
-          const res = await fetch('/api/request-model', {
+          const res = await fetch('/carvault/api/request-model', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text: textVal })

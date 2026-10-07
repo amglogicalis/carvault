@@ -5,7 +5,7 @@ import node from '@astrojs/node';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://amglogicalis.github.io',
-  base: '/',
+  base: '/carvault',
   adapter: node({
     mode: 'standalone'
   }),
