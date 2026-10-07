@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "Registro privado/local de solicitudes de modelos y marcas para filtrado middleware y prevención de duplicados",
-  "lastUpdated": "2026-10-07T20:21:44.768Z",
+  "lastUpdated": "2026-10-07T20:25:20.069Z",
   "existingCatalogCache": {
     "brands": [
       "bmw",
@@ -1690,6 +1690,18 @@
         "avant",
         "c7",
         "2014"
+      ]
+    },
+    {
+      "id": "req_1791404720068",
+      "text": "Jaguar",
+      "normalizedText": "jaguar",
+      "status": "pending",
+      "createdAt": "2026-10-07T20:25:20.068Z",
+      "issueNumber": 2,
+      "issueUrl": "https://github.com/amglogicalis/carvault/issues/2",
+      "matchedTokens": [
+        "jaguar"
       ]
     }
   ]
