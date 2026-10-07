@@ -136,11 +136,6 @@ function isDuplicate(candidate, existingTitle) {
     return true;
   }
 
-  // Si uno contiene al otro por completo y lo que sobra son solo specs
-  if ((diffCand.length === 0 || diffExist.length === 0) && common.length >= 2) {
-    return true;
-  }
-
   return false;
 }
 
