@@ -1,0 +1,52 @@
+name: Gateway Spike
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 'Minutes to keep the gateway alive'
+        default: '8'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  gateway:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Start gateway
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          nohup node scripts/gateway/server.mjs > gateway.log 2>&1 &
+          sleep 2
+          curl -s localhost:8787/health
+      - name: Start quick tunnel
+        run: |
+          curl -sSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o cloudflared
+          chmod +x cloudflared
+          nohup ./cloudflared tunnel --url http://localhost:8787 --no-autoupdate > tunnel.log 2>&1 &
+          for i in $(seq 1 30); do
+            URL=$(grep -o 'https://[a-zA-Z0-9-]*\.trycloudflare\.com' tunnel.log | head -1)
+            [ -n "$URL" ] && break
+            sleep 2
+          done
+          echo "URL=$URL"
+          echo "{\"url\":\"$URL\",\"startedAt\":\"$(date -u +%FT%TZ)\"}" > /tmp/gateway-url.json
+      - name: Publish URL
+        run: |
+          git config user.name "carvault-gateway"
+          git config user.email "gateway@users.noreply.github.com"
+          git checkout --orphan gw-url
+          git rm -rf . > /dev/null
+          cp /tmp/gateway-url.json gateway-url.json
+          git add gateway-url.json
+          git commit -m "gateway url"
+          git push --force origin gw-url
+      - name: Keep alive
+        run: sleep $(( ${{ github.event.inputs.minutes }} * 60 ))
