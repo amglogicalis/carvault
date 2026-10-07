@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import catalog from '../../data/bmw/catalog-with-images.json';
+import catalog from '../../data/bmw/catalog-clean-front.json';
 
 const totalGenerations = catalog.generations.length;
 const totalChassis = catalog.stats.chassis;
@@ -14,13 +14,13 @@ const modelsJson = JSON.stringify(catalog.generations);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
-        v1.1 • Catálogo Completo: Gama Estándar + M Motorsport + Conceptos
+        v1.2 • Vista Frontal Exterior Limpia & Exacta (Sin Piezas Mecánicas)
       </div>
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
-        Cada coche, chasis y variante <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">al detalle</span>
+        Cada coche y modelo desde su <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">perspectiva frontal</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed">
-        Búsqueda exacta por modelo (<span class="text-cyan-300 font-mono">M2</span>, <span class="text-cyan-300 font-mono">320i</span>, <span class="text-cyan-300 font-mono">M3</span>, <span class="text-cyan-300 font-mono">135i</span>), distinciones visuales de carrocería entre gamas base y paquetes <span class="text-indigo-400 font-semibold">M Sport</span>, y galería de perspectivas con atribución fotográfica libre.
+        Explora la historia automotriz con fotografías limpias de la carrocería completa. Búsqueda exacta por modelo (<span class="text-cyan-300 font-mono">M2</span>, <span class="text-cyan-300 font-mono">320i</span>, <span class="text-cyan-300 font-mono">M3</span>, <span class="text-cyan-300 font-mono">135i</span>), distinciones visuales de chasis y paquetes <span class="text-indigo-400 font-semibold">M Sport</span>.
       </p>
 
       <!-- Métricas rápidas -->
@@ -41,8 +41,8 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-blue-400 font-mono">{totalVariants}</span>
-          <span class="text-xs text-slate-500 uppercase tracking-wider mt-1">Variantes Registradas</span>
+          <span class="text-3xl font-black text-emerald-400 font-mono">173</span>
+          <span class="text-xs text-slate-500 uppercase tracking-wider mt-1">Frontales con Foto</span>
         </div>
       </div>
     </div>
@@ -93,9 +93,9 @@ const modelsJson = JSON.stringify(catalog.generations);
     </div>
   </section>
 
-  <!-- Modal / Visor de 4 Perspectivas y Detalle de Variantes -->
+  <!-- Modal / Visor de Frontal y Detalle de Variantes -->
   <div id="viewModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-4xl w-full overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
       <!-- Header del modal -->
       <div class="p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950/50">
         <div>
@@ -113,35 +113,19 @@ const modelsJson = JSON.stringify(catalog.generations);
 
       <!-- Contenedor del Visor -->
       <div class="p-6 flex-1 overflow-y-auto space-y-6">
-        <!-- Selector de las 4 Perspectivas -->
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-mono text-slate-400 uppercase">Perspectivas Disponibles</span>
-            <span id="modalChassisCode" class="text-xs font-mono text-cyan-400"></span>
-          </div>
-          <div class="flex items-center justify-center gap-2">
-            <button data-perspective="front" class="perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-cyan-500/50 bg-cyan-500/20 text-cyan-300">
-              Frontal / Principal
-            </button>
-            <button data-perspective="rear" class="perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-slate-700 bg-slate-800/80 text-slate-300">
-              Trasera
-            </button>
-            <button data-perspective="side" class="perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-slate-700 bg-slate-800/80 text-slate-300">
-              Lateral / Perfil
-            </button>
-            <button data-perspective="threeQuarter" class="perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-slate-700 bg-slate-800/80 text-slate-300">
-              3/4 Perspectiva
-            </button>
-          </div>
+        <!-- Indicador de vista frontal exterior -->
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Vista Frontal Exterior Limpia</span>
+          <span id="modalChassisCode" class="text-xs font-mono text-slate-400"></span>
         </div>
 
-        <!-- Imagen Actual -->
+        <!-- Imagen Frontal -->
         <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800/80 flex items-center justify-center group">
-          <img id="modalImage" src="" alt="Vista del coche" class="w-full h-full object-contain transition-all duration-300" />
+          <img id="modalImage" src="" alt="Vista frontal del coche" class="w-full h-full object-contain transition-all duration-300" />
           <div id="noImageView" class="hidden flex-col items-center justify-center text-slate-500 p-8 text-center">
             <svg class="w-12 h-12 mb-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            <p class="text-sm font-medium">Esta perspectiva específica está en proceso de catalogación</p>
-            <p class="text-xs text-slate-600 mt-1">Prueba la vista Frontal / Principal</p>
+            <p class="text-sm font-medium">Fotografía en proceso de curación libre</p>
+            <p class="text-xs text-slate-600 mt-1">Disponible próximamente desde archivo fotográfico abierto</p>
           </div>
         </div>
 
@@ -158,14 +142,14 @@ const modelsJson = JSON.stringify(catalog.generations);
 
         <!-- Sección de Comparación de Acabados / Variantes registradas -->
         <div class="border-t border-slate-800/80 pt-4">
-          <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Acabados & Paquetes Visuales Disponibles</h4>
+          <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Acabados & Paquetes Visuales en este Modelo</h4>
           <div id="packagesContainer" class="flex flex-wrap gap-2 mb-4">
-            <!-- Se inyectan badges de M Sport, Base, Competition, etc. -->
+            <!-- Badges -->
           </div>
 
           <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Variantes de Modelo & Motorización en este Chasis</h4>
           <div id="variantsContainer" class="flex flex-wrap gap-1.5">
-            <!-- Se inyectan variantes (ej. 320i, 330i, M135i...) -->
+            <!-- Variantes -->
           </div>
         </div>
       </div>
@@ -178,7 +162,7 @@ const modelsJson = JSON.stringify(catalog.generations);
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white">API Pública & Gratuita Carvault</h2>
         <p class="mt-2 text-sm text-slate-400">
-          Todos los modelos, chasis individuales, variantes y gamas M con enlaces directos a sus fotografías libres.
+          Todos los modelos, chasis individuales, variantes y gamas M con enlaces directos a sus fotografías frontales limpias.
         </p>
       </div>
 
@@ -203,7 +187,6 @@ const modelsJson = JSON.stringify(catalog.generations);
     let activeFilter = 'all';
     let searchQuery = '';
     let currentModel = null;
-    let currentPerspective = 'front';
 
     const grid = document.getElementById('modelsGrid');
     const searchInput = document.getElementById('searchInput');
@@ -220,7 +203,6 @@ const modelsJson = JSON.stringify(catalog.generations);
     const modalChassisCode = document.getElementById('modalChassisCode');
     const modalImage = document.getElementById('modalImage');
     const noImageView = document.getElementById('noImageView');
-    const perspectiveButtons = document.querySelectorAll('.perspective-btn');
     const attrAuthor = document.getElementById('attrAuthor');
     const attrLicense = document.getElementById('attrLicense');
     const attrLink = document.getElementById('attrLink');
@@ -255,9 +237,7 @@ const modelsJson = JSON.stringify(catalog.generations);
 
       grid.innerHTML = filtered.map(m => {
         const firstChassis = m.chassis[0] || {};
-        const images = firstChassis.images || {};
-        const cover = images.front?.url || images.threeQuarter?.url || images.side?.url || images.rear?.url;
-        const viewCount = Object.values(images).filter(Boolean).length;
+        const front = m.frontImage || firstChassis.frontImage;
         const chassisCodes = m.chassis.map(c => c.code).filter(Boolean).join(', ') || 'N/A';
         const isCurrent = m.status === 'current';
         const isM = m.section === 'm-performance';
@@ -265,16 +245,13 @@ const modelsJson = JSON.stringify(catalog.generations);
         return `
           <div class="bg-slate-900/60 border ${isM ? 'border-indigo-500/40 hover:border-indigo-400' : 'border-slate-800 hover:border-cyan-500/50'} rounded-2xl overflow-hidden transition-all duration-300 flex flex-col group hover:-translate-y-1">
             <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden flex items-center justify-center">
-              ${cover 
-                ? `<img src="${cover}" alt="${m.label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />`
+              ${front?.url 
+                ? `<img src="${front.url}" alt="${m.label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />`
                 : `<div class="text-slate-600 text-xs font-mono flex flex-col items-center gap-1">
                     <svg class="w-8 h-8 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    <span>Sin foto</span>
+                    <span>Sin foto frontal</span>
                    </div>`
               }
-              <div class="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-950/80 backdrop-blur-md border border-slate-800 text-[10px] font-mono text-cyan-300">
-                <span>${viewCount}/4 Vistas</span>
-              </div>
               <div class="absolute top-3 left-3 flex items-center gap-1">
                 ${isM ? `
                   <span class="px-2 py-0.5 rounded bg-red-500/20 border border-red-500/40 text-[10px] font-bold text-red-300 tracking-wider">
@@ -311,7 +288,7 @@ const modelsJson = JSON.stringify(catalog.generations);
                   onclick="openModelModal('${m.id}')"
                   class="px-3.5 py-1.5 rounded-lg text-xs font-semibold ${isM ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40 hover:bg-indigo-500 hover:text-white' : 'bg-cyan-500/10 text-cyan-300 border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950'} border transition-all cursor-pointer"
                 >
-                  Ver perspectivas & variantes →
+                  Ver frontal & variantes →
                 </button>
               </div>
             </div>
@@ -325,7 +302,6 @@ const modelsJson = JSON.stringify(catalog.generations);
       currentModel = models.find(m => m.id === modelId);
       if (!currentModel) return;
 
-      currentPerspective = 'front';
       const isM = currentModel.section === 'm-performance';
       modalCategory.textContent = isM ? 'BMW M Motorsport' : currentModel.section === 'prototypes' ? 'Prototipo / Concepto' : 'Modelo de Producción';
       if (isM) modalBadgeM.classList.remove('hidden');
@@ -336,6 +312,22 @@ const modelsJson = JSON.stringify(catalog.generations);
       
       const firstChassis = currentModel.chassis[0] || {};
       modalChassisCode.textContent = firstChassis.code ? `Chasis: ${firstChassis.code}` : '';
+
+      const imgData = currentModel.frontImage || firstChassis.frontImage;
+      if (imgData && imgData.url) {
+        modalImage.src = imgData.url;
+        modalImage.classList.remove('hidden');
+        noImageView.classList.add('hidden');
+        attributionBox.classList.remove('hidden');
+
+        attrAuthor.textContent = imgData.author || 'Wikimedia Commons';
+        attrLicense.textContent = imgData.license || 'CC';
+        attrLink.href = imgData.sourceUrl || '#';
+      } else {
+        modalImage.classList.add('hidden');
+        noImageView.classList.remove('hidden');
+        attributionBox.classList.add('hidden');
+      }
 
       // Paquetes
       const packages = firstChassis.packages || ['Base', 'M Sport'];
@@ -357,46 +349,8 @@ const modelsJson = JSON.stringify(catalog.generations);
         variantsContainer.innerHTML = `<span class="text-xs text-slate-500 font-mono">Sin variantes secundarias registradas</span>`;
       }
 
-      updatePerspectiveView();
       modal.classList.remove('hidden');
     };
-
-    function updatePerspectiveView() {
-      if (!currentModel) return;
-      const firstChassis = currentModel.chassis[0] || {};
-      const images = firstChassis.images || {};
-      const imgData = images[currentPerspective];
-
-      perspectiveButtons.forEach(btn => {
-        if (btn.dataset.perspective === currentPerspective) {
-          btn.className = "perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-cyan-500 bg-cyan-500 text-slate-950 transition-all";
-        } else {
-          btn.className = "perspective-btn px-4 py-2 rounded-xl text-xs font-semibold border border-slate-700 bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition-all";
-        }
-      });
-
-      if (imgData && imgData.url) {
-        modalImage.src = imgData.url;
-        modalImage.classList.remove('hidden');
-        noImageView.classList.add('hidden');
-        attributionBox.classList.remove('hidden');
-
-        attrAuthor.textContent = imgData.author || 'Wikimedia Commons';
-        attrLicense.textContent = imgData.license || 'CC';
-        attrLink.href = imgData.sourceUrl || '#';
-      } else {
-        modalImage.classList.add('hidden');
-        noImageView.classList.remove('hidden');
-        attributionBox.classList.add('hidden');
-      }
-    }
-
-    perspectiveButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        currentPerspective = btn.dataset.perspective;
-        updatePerspectiveView();
-      });
-    });
 
     closeModal.addEventListener('click', () => {
       modal.classList.add('hidden');
