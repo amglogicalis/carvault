@@ -1,0 +1,55 @@
+name: Carvault Request Processor (Terra Async Morph)
+on:
+  repository_dispatch:
+    types: [morph-run, request-model]
+  workflow_dispatch:
+    inputs:
+      payload:
+        description: 'JSON Payload'
+        required: false
+        default: '{}'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  process-request:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Process Vehicle Request and Create Official Issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.CARVAULT_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const rawPayload = context.payload.client_payload?.payload || 
+                               context.payload.client_payload || 
+                               context.payload.inputs?.payload || 
+                               '{}';
+
+            let data = {};
+            try {
+              data = typeof rawPayload === 'string' ? JSON.parse(rawPayload) : rawPayload;
+            } catch (e) {
+              data = { text: String(rawPayload) };
+            }
+
+            const requestedModel = (data.text || data.data || '').trim();
+            if (!requestedModel || requestedModel.length < 3) {
+              core.setFailed('Texto de solicitud demasiado corto.');
+              return;
+            }
+
+            const title = `[Propuesta de Vehículo]: ${requestedModel.slice(0, 60)}`;
+            const body = `### 🚗 Solicitud de Modelo / Marca en Carvault\n\n**Descripción solicitada:**\n> ${requestedModel}\n\n---\n*Generado y validado automáticamente por el Async Morph de Terra sin salir de la web.*\n- **Fecha:** ${new Date().toISOString()}\n- **Estado:** Pendiente de catalogación`;
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['enhancement']
+            });
+
+            console.log(`✅ Issue #${issue.data.number} creada: ${issue.data.html_url}`);
