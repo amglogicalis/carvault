@@ -1,0 +1,29 @@
+{
+  "name": "carvault",
+  "version": "1.0.0",
+  "description": "Carvault - Every car, from every angle. Modern open catalog and public API.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amglogicalis/carvault.git"
+  },
+  "keywords": [
+    "cars",
+    "automotive",
+    "catalog",
+    "bmw",
+    "api"
+  ],
+  "author": "amglogicalis",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.3.6",
+    "tailwindcss": "^4.3.3"
+  }
+}
