@@ -156,5 +156,30 @@ export async function attributeViewsForCategory(category: string): Promise<Model
     if (views.front && views.rear && views.side && views.threeQuarter) break;
   }
 
+  // Fallback garantizado: Si no hay frontal etiquetada explícitamente pero encontramos fotos válidas del coche,
+  // asignamos la primera foto limpia como vista frontal/principal
+  if (!views.front) {
+    for (const page of Object.values(pages) as any[]) {
+      if (!page.imageinfo || !page.imageinfo[0]) continue;
+      const info = page.imageinfo[0];
+      const meta = info.extmetadata || {};
+      const title = page.title;
+      const desc = (meta.ImageDescription?.value || '').replace(/<[^>]+>/g, ' ');
+      const combinedText = `${title} ${desc}`.toLowerCase();
+      if (NOISE_FILTER.test(combinedText)) continue;
+
+      views.front = {
+        file: title,
+        url: info.url,
+        author: cleanAuthor(meta.Artist?.value),
+        license: cleanLicense(meta.LicenseShortName?.value),
+        sourceUrl: `https://commons.wikimedia.org/wiki/${encodeURIComponent(title.replace(/\s+/g, '_'))}`,
+        width: info.width,
+        height: info.height
+      };
+      break;
+    }
+  }
+
   return views;
 }

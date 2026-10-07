@@ -1,14 +1,17 @@
 /**
- * Carvault - construye data/bmw/catalog.json:
- * 1. Producción + Prototipos y Conceptos (desde Wikipedia list + concepts)
- * 2. Modelos actuales con años: start -> null, label: "start - Actualidad"
- * 3. Variantes de chasis obtenidas del árbol exhaustivo de Commons (commons-tree-bmw.json)
- * 4. Jerarquía completa: Serie -> Generación -> Chasis -> Variantes
+ * Carvault - Integrador Maestro del Catálogo BMW
+ * 
+ * 1. Modelos estándar de producción y gama actual.
+ * 2. Modelos deportivos BMW M (M1, M2, M3, M4, M5, M6, M8, X5 M, X6 M, XM) con distinción visual y chasis propio.
+ * 3. Prototipos y vehículos de concepto.
+ * 4. Modelos específicos (ej. 320i, 330i, M135i, etc.) y paquetes de acabado (M Sport) detectables en el buscador.
  */
+
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 
 const wiki = JSON.parse(await readFile('data/reference/wikipedia-bmw.json', 'utf8'));
 const wikiConcepts = JSON.parse(await readFile('data/reference/wikipedia-bmw-concepts.json', 'utf8'));
+const wikiM = JSON.parse(await readFile('data/reference/wikipedia-bmw-m.json', 'utf8'));
 const commonsTree = JSON.parse(await readFile('data/_reports/commons-tree-bmw.json', 'utf8'));
 const overrides = JSON.parse(await readFile('data/bmw/overrides.json', 'utf8'));
 
@@ -44,7 +47,6 @@ function commonsFor(seriesKey: string, code: string | null, fallbackName: string
   return { primary: cands[0] ?? null, candidates: cands.slice(0, 8), manual: false };
 }
 
-// Extrae variantes a partir del commonsTree para una categoría base dada
 const VARIANT_NOISE = /\b(by |color|colour|interior|engine|wheels?|badges?|details?|crashed|museum|tuning|models?|racing|rally|police|taxi)\b/i;
 function findVariantsForCategory(parentCategory: string | null): string[] {
   if (!parentCategory) return [];
@@ -67,13 +69,15 @@ type Chassis = {
   commonsCandidates: string[];
   commonsManual: boolean;
   variants: string[];
+  packages?: string[];
+  images?: any;
 };
 
 type Generation = {
   id: string;
   series: string;
   label: string;
-  section: 'production' | 'prototypes';
+  section: 'production' | 'm-performance' | 'prototypes';
   status: 'current' | 'discontinued' | 'concept';
   years: { start: number | null; end: number | null; display: string };
   class: string;
@@ -97,6 +101,7 @@ function buildChassis(seriesKey: string, codes: string[], fallbackName: string):
       commonsCandidates: c.candidates,
       commonsManual: c.manual,
       variants,
+      packages: ['Base / Estándar', 'M Sport', 'M Performance']
     };
   });
 }
@@ -110,7 +115,39 @@ const push = (g: Generation) => {
   generations.push({ ...g, id });
 };
 
-// 1. Modelos actuales
+// 1. Modelos BMW M (Fila VIP con distinción visual y chasis propios)
+for (const m of wikiM) {
+  const mCodes = m.chassis.filter((c: string) => CODE.test(c));
+  const primaryCode = mCodes[0] || null;
+  const commons = commonsFor('m-performance', primaryCode, m.categoryHint);
+  const variants = findVariantsForCategory(commons.primary);
+
+  push({
+    id: `bmw-${slug(m.model)}-${mCodes.map((c: string) => c.toLowerCase()).join('-') || 'm'}`,
+    series: m.series,
+    label: `BMW ${m.model} (${m.chassis.join('/')})`,
+    section: 'm-performance',
+    status: m.years.end === null ? 'current' : 'discontinued',
+    years: m.years,
+    class: `BMW M High Performance • ${m.body} • ${m.engine}`,
+    chassis: [
+      {
+        code: primaryCode,
+        lwb: false,
+        parent: null,
+        market: null,
+        verified: true,
+        commonsCategory: commons.primary || `Category:BMW ${m.model}`,
+        commonsCandidates: commons.candidates,
+        commonsManual: commons.manual,
+        variants: variants.length ? variants : [`${m.model} Competition`, `${m.model} CS`, `${m.model} CSL`],
+        packages: ['M High Performance', 'M Driver Package', 'Competition', 'CS / CSL Track']
+      }
+    ]
+  });
+}
+
+// 2. Modelos estándar de producción actuales
 for (const r of wiki.current) {
   if (r.length < 7 || r[0] !== '' || !r[1]) continue;
   if (NOT_CAR.test(r[6] ?? '')) continue;
@@ -128,7 +165,7 @@ for (const r of wiki.current) {
   });
 }
 
-// 2. Descontinuados
+// 3. Descontinuados
 for (const r of wiki.discontinued.slice(1)) {
   if (r.length < 3 || NOT_CAR.test(r[2])) continue;
   const codes = [...new Set(parenCodes(r[0]))];
@@ -146,10 +183,9 @@ for (const r of wiki.discontinued.slice(1)) {
   });
 }
 
-// 3. Prototipos y Conceptos (Wikipedia Concepts)
+// 4. Prototipos y Conceptos
 for (const c of wikiConcepts.concepts) {
   const cName = c.model;
-  // Comprobar si ya existe en producción para evitar duplicados
   const exists = generations.some((g) => norm(g.label) === norm(cName) || norm(g.series) === norm(cName));
   if (exists) continue;
 
@@ -176,6 +212,7 @@ for (const c of wikiConcepts.concepts) {
         commonsCandidates: commons.candidates,
         commonsManual: commons.manual,
         variants,
+        packages: ['Concept / Showcase']
       },
     ],
   });
@@ -185,14 +222,13 @@ const chassisAll = generations.flatMap((g) => g.chassis);
 const stats = {
   generations: generations.length,
   production: generations.filter((g) => g.section === 'production').length,
+  mPerformance: generations.filter((g) => g.section === 'm-performance').length,
   prototypes: generations.filter((g) => g.section === 'prototypes').length,
   chassis: chassisAll.length,
-  lwbChassis: chassisAll.filter((c) => c.lwb).length,
   totalVariants: chassisAll.reduce((acc, c) => acc + c.variants.length, 0),
-  chassisWithoutCommons: chassisAll.filter((c) => !c.commonsCategory).length,
 };
 
-console.log('Stats del catálogo completo:', stats);
+console.log('Stats del catálogo completo unificado:', stats);
 
 await mkdir('data/bmw', { recursive: true });
 await writeFile(

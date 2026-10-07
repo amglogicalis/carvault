@@ -1,0 +1,601 @@
+[
+  {
+    "model": "M2",
+    "series": "2 Series",
+    "chassis": [
+      "G87"
+    ],
+    "years": {
+      "start": 2023,
+      "end": null,
+      "display": "2023 – Actualidad"
+    },
+    "engine": "3.0L Twin-Turbo I6",
+    "power": "M High Performance",
+    "body": "Coupé",
+    "categoryHint": "BMW M2"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "G80",
+      "G81"
+    ],
+    "years": {
+      "start": 2021,
+      "end": null,
+      "display": "2021 – Actualidad"
+    },
+    "engine": "3.0L Twin-Turbo I6",
+    "power": "M High Performance",
+    "body": "Saloon / Estate",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "M4",
+    "series": "4 Series",
+    "chassis": [
+      "G82",
+      "G83"
+    ],
+    "years": {
+      "start": 2021,
+      "end": null,
+      "display": "2021 – Actualidad"
+    },
+    "engine": "3.0L Twin-Turbo I6",
+    "power": "M High Performance",
+    "body": "Coupé / Convertible",
+    "categoryHint": "BMW M4"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "G90",
+      "G99"
+    ],
+    "years": {
+      "start": 2024,
+      "end": null,
+      "display": "2024 – Actualidad"
+    },
+    "engine": "4.4L Twin-Turbo V8 Hybrid",
+    "power": "M High Performance",
+    "body": "Saloon / Touring",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "X5 M",
+    "series": "X5",
+    "chassis": [
+      "F95"
+    ],
+    "years": {
+      "start": 2020,
+      "end": null,
+      "display": "2020 – Actualidad"
+    },
+    "engine": "4.4L Twin-Turbo V8",
+    "power": "M High Performance",
+    "body": "SAV",
+    "categoryHint": "BMW X5 M"
+  },
+  {
+    "model": "X6 M",
+    "series": "X6",
+    "chassis": [
+      "F96"
+    ],
+    "years": {
+      "start": 2020,
+      "end": null,
+      "display": "2020 – Actualidad"
+    },
+    "engine": "4.4L Twin-Turbo V8",
+    "power": "M High Performance",
+    "body": "SAC",
+    "categoryHint": "BMW X6 M"
+  },
+  {
+    "model": "XM",
+    "series": "XM",
+    "chassis": [
+      "G09"
+    ],
+    "years": {
+      "start": 2022,
+      "end": null,
+      "display": "2022 – Actualidad"
+    },
+    "engine": "4.4L Twin-Turbo V8 Hybrid",
+    "power": "M High Performance",
+    "body": "SAV",
+    "categoryHint": "BMW XM"
+  },
+  {
+    "model": "M1",
+    "series": "M1",
+    "chassis": [
+      "E26"
+    ],
+    "years": {
+      "start": 1978,
+      "end": 1981,
+      "display": "1978 – 1981"
+    },
+    "engine": "3.5-litre I6",
+    "power": "204 kW (277 PS)",
+    "body": "Coupe",
+    "categoryHint": "BMW M1"
+  },
+  {
+    "model": "M535i",
+    "series": "5 Series",
+    "chassis": [
+      "E12"
+    ],
+    "years": {
+      "start": 1980,
+      "end": 1984,
+      "display": "1980 – 1984"
+    },
+    "engine": "3.5-litre I6",
+    "power": "160 kW (220 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M535i"
+  },
+  {
+    "model": "M 635 CSi",
+    "series": "M Series",
+    "chassis": [
+      "E24"
+    ],
+    "years": {
+      "start": 1984,
+      "end": 1989,
+      "display": "1984 – 1989"
+    },
+    "engine": "3.5-litre I6",
+    "power": "191 kW (260 PS) to210 kW (290 PS)",
+    "body": "Coupe",
+    "categoryHint": "BMW M 635 CSi"
+  },
+  {
+    "model": "M535i",
+    "series": "5 Series",
+    "chassis": [
+      "E28"
+    ],
+    "years": {
+      "start": 1985,
+      "end": 1988,
+      "display": "1985 – 1988"
+    },
+    "engine": "3.5-litre I6",
+    "power": "136 kW (185 PS) to160 kW (220 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M535i"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "E28"
+    ],
+    "years": {
+      "start": 1985,
+      "end": 1988,
+      "display": "1985 – 1988"
+    },
+    "engine": "3.5-litre I6",
+    "power": "210 kW (290 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "E30"
+    ],
+    "years": {
+      "start": 1986,
+      "end": 1991,
+      "display": "1986 – 1991"
+    },
+    "engine": "2.3-litre2.5-litre I4",
+    "power": "143 kW (194 PS) to175 kW (238 PS)",
+    "body": "CoupeConvertible",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "E34"
+    ],
+    "years": {
+      "start": 1988,
+      "end": 1995,
+      "display": "1988 – 1995"
+    },
+    "engine": "3.6-litre 3.8-litre I6",
+    "power": "232 kW (315 PS) to250 kW (340 PS)",
+    "body": "Sedan with 4 doorsStation wagon (since 1992)",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M8",
+    "series": "8 Series",
+    "chassis": [
+      "E31"
+    ],
+    "years": {
+      "start": 1990,
+      "end": null,
+      "display": "1990"
+    },
+    "engine": "6.0-litre V12",
+    "power": "410 kW (558 PS)",
+    "body": "Coupe",
+    "categoryHint": "BMW M8"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "E36"
+    ],
+    "years": {
+      "start": 1992,
+      "end": 1999,
+      "display": "1992 – 1999"
+    },
+    "engine": "3.0-litre3.2-litre I6",
+    "power": "179 kW (243 PS) to236 kW (321 PS)",
+    "body": "Sedan with 4 doorsCoupeConvertible",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "M RoadsterM Coupe",
+    "series": "Z Series",
+    "chassis": [
+      "E36"
+    ],
+    "years": {
+      "start": 1996,
+      "end": 2002,
+      "display": "1996 – 2002"
+    },
+    "engine": "3.2-litre I6",
+    "power": "179 kW (243 PS) to236 kW (321 PS)",
+    "body": "RoadsterCoupe",
+    "categoryHint": "BMW M RoadsterM Coupe"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "E39"
+    ],
+    "years": {
+      "start": 1998,
+      "end": 2003,
+      "display": "1998 – 2003"
+    },
+    "engine": "5.0-litre V8",
+    "power": "294 kW (400 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "E46"
+    ],
+    "years": {
+      "start": 2000,
+      "end": 2006,
+      "display": "2000 – 2006"
+    },
+    "engine": "3.2-litre4.0-litre (GTR) I6V8",
+    "power": "252 kW (343 PS) to279 kW (379 PS)",
+    "body": "CoupeConvertible",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "E60E61"
+    ],
+    "years": {
+      "start": 2005,
+      "end": 2010,
+      "display": "2005 – 2010"
+    },
+    "engine": "5.0-litre V10",
+    "power": "373 kW (507 PS)",
+    "body": "Sedan with 4 doorsStation wagon (since 2007)",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M6",
+    "series": "6 Series",
+    "chassis": [
+      "E63E64"
+    ],
+    "years": {
+      "start": 2005,
+      "end": 2010,
+      "display": "2005 – 2010"
+    },
+    "engine": "5.0-litre V10",
+    "power": "373 kW (507 PS)",
+    "body": "CoupeConvertible (since 2006)",
+    "categoryHint": "BMW M6"
+  },
+  {
+    "model": "Z4 M RoadsterZ4 M Coupé",
+    "series": "Z Series",
+    "chassis": [
+      "E85E86"
+    ],
+    "years": {
+      "start": 2006,
+      "end": 2008,
+      "display": "2006 – 2008"
+    },
+    "engine": "3.2-litre I6",
+    "power": "252 kW (343 PS)",
+    "body": "RoadsterCoupe",
+    "categoryHint": "BMW Z4 M RoadsterZ4 M Coupé"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "E90E92E93"
+    ],
+    "years": {
+      "start": 2007,
+      "end": 2013,
+      "display": "2007 – 2013"
+    },
+    "engine": "4.0-litre4.4-litre (CRT & GTS) V8",
+    "power": "309 kW (420 PS)331 kW (450 PS)",
+    "body": "Sedan with 4 doorsCoupeConvertible",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "1M Coupe",
+    "series": "Z Series",
+    "chassis": [
+      "E82"
+    ],
+    "years": {
+      "start": 2011,
+      "end": 2012,
+      "display": "2011 – 2012"
+    },
+    "engine": "3.0-litre I6",
+    "power": "250 kW (340 PS)",
+    "body": "Coupe",
+    "categoryHint": "BMW 1M Coupe"
+  },
+  {
+    "model": "X5 M",
+    "series": "X5",
+    "chassis": [
+      "E70"
+    ],
+    "years": {
+      "start": 2009,
+      "end": 2013,
+      "display": "2009 – 2013"
+    },
+    "engine": "4.4-litre V8",
+    "power": "408 kW (555 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X5 M"
+  },
+  {
+    "model": "X6 M",
+    "series": "X6",
+    "chassis": [
+      "E71"
+    ],
+    "years": {
+      "start": 2009,
+      "end": 2014,
+      "display": "2009 – 2014"
+    },
+    "engine": "4.4-litre V8",
+    "power": "408 kW (555 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X6 M"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "F10"
+    ],
+    "years": {
+      "start": 2011,
+      "end": 2016,
+      "display": "2011 – 2016"
+    },
+    "engine": "4.4-litre V8",
+    "power": "412 kW (560 PS) to 441 kW (600 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M6",
+    "series": "6 Series",
+    "chassis": [
+      "F06",
+      "F12",
+      "F13"
+    ],
+    "years": {
+      "start": 2012,
+      "end": 2018,
+      "display": "2012 – 2018"
+    },
+    "engine": "4.4-litre V8",
+    "power": "412 kW (560 PS) to 441 kW (600 PS)",
+    "body": "Sedan with 4 doorsCoupeConvertible",
+    "categoryHint": "BMW M6"
+  },
+  {
+    "model": "X5 M",
+    "series": "X5",
+    "chassis": [
+      "F85"
+    ],
+    "years": {
+      "start": 2013,
+      "end": 2018,
+      "display": "2013 – 2018"
+    },
+    "engine": "4.4-litre V8",
+    "power": "423 kW (575 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X5 M"
+  },
+  {
+    "model": "X6 M",
+    "series": "X6",
+    "chassis": [
+      "F86"
+    ],
+    "years": {
+      "start": 2014,
+      "end": 2019,
+      "display": "2014 – 2019"
+    },
+    "engine": "4.4-litre V8",
+    "power": "423 kW (575 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X6 M"
+  },
+  {
+    "model": "M3",
+    "series": "3 Series",
+    "chassis": [
+      "F80"
+    ],
+    "years": {
+      "start": 2014,
+      "end": 2018,
+      "display": "2014 – 2018"
+    },
+    "engine": "3.0-litre I6",
+    "power": "317 kW (431 PS) to 338 kW (460 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M3"
+  },
+  {
+    "model": "M4",
+    "series": "4 Series",
+    "chassis": [
+      "F82F83"
+    ],
+    "years": {
+      "start": 2014,
+      "end": 2020,
+      "display": "2014 – 2020"
+    },
+    "engine": "3.0-litre I6",
+    "power": "317 kW (431 PS) to 368 kW (500 PS)",
+    "body": "CoupeConvertible",
+    "categoryHint": "BMW M4"
+  },
+  {
+    "model": "M2",
+    "series": "2 Series",
+    "chassis": [
+      "F87"
+    ],
+    "years": {
+      "start": 2015,
+      "end": 2021,
+      "display": "2015 – 2021"
+    },
+    "engine": "3.0-litre I6",
+    "power": "272 kW (365 hp) to 331 kW (444 hp)",
+    "body": "Coupe",
+    "categoryHint": "BMW M2"
+  },
+  {
+    "model": "M5",
+    "series": "5 Series",
+    "chassis": [
+      "F90"
+    ],
+    "years": {
+      "start": 2017,
+      "end": 2023,
+      "display": "2017 – 2023"
+    },
+    "engine": "4.4-litre V8",
+    "power": "441 kW (600 PS) to 467 kW (635 PS)",
+    "body": "Sedan with 4 doors",
+    "categoryHint": "BMW M5"
+  },
+  {
+    "model": "M8",
+    "series": "8 Series",
+    "chassis": [
+      "F91",
+      "F92",
+      "F93"
+    ],
+    "years": {
+      "start": 2019,
+      "end": 2025,
+      "display": "2019 – 2025"
+    },
+    "engine": "4.4-litre V8",
+    "power": "412 kW (560 PS) to 441 kW (600 PS)",
+    "body": "Gran CoupeCoupeConvertible",
+    "categoryHint": "BMW M8"
+  },
+  {
+    "model": "X3 M",
+    "series": "M Series",
+    "chassis": [
+      "F97"
+    ],
+    "years": {
+      "start": 2019,
+      "end": 2024,
+      "display": "2019 – 2024"
+    },
+    "engine": "3.0-litre I6",
+    "power": "353 kW (480 PS) to 375 kW (510 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X3 M"
+  },
+  {
+    "model": "X4 M",
+    "series": "M Series",
+    "chassis": [
+      "F98"
+    ],
+    "years": {
+      "start": 2019,
+      "end": 2025,
+      "display": "2019 – 2025"
+    },
+    "engine": "3.0-litre I6",
+    "power": "353 kW (480 PS) to 375 kW (510 PS)",
+    "body": "SAV",
+    "categoryHint": "BMW X4 M"
+  }
+]
