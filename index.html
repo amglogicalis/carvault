@@ -314,8 +314,39 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
 
     let liveOpenIssues = null;
     let liveIssuesFetched = false;
+    let cachedGwUrl = null;
+
+    async function getActiveGatewayUrl() {
+      if (cachedGwUrl) return cachedGwUrl;
+      try {
+        const res = await fetch('https://raw.githubusercontent.com/amglogicalis/carvault/gw-url/gateway-url.json?t=' + Date.now());
+        if (res.ok) {
+          const d = await res.json();
+          if (d && d.url) {
+            cachedGwUrl = d.url;
+            return d.url;
+          }
+        }
+      } catch (e) {}
+      return null;
+    }
 
     async function syncLiveIssues() {
+      try {
+        const gwUrl = await getActiveGatewayUrl();
+        if (gwUrl) {
+          const res = await fetch(`${gwUrl}/open-issues`);
+          if (res.ok) {
+            const list = await res.json();
+            if (Array.isArray(list)) {
+              liveOpenIssues = list;
+              liveIssuesFetched = true;
+              return;
+            }
+          }
+        }
+      } catch (e) {}
+
       try {
         const res = await fetch('https://api.github.com/repos/amglogicalis/carvault/issues?state=open&per_page=100');
         if (res.ok) {
@@ -396,6 +427,49 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
         .filter(t => t.length >= 2 && !stopWords.has(t));
     }
 
+    const SPEC_OR_BODY = /^(19\d\d|20\d\d|v[68]|v10|v12|manual|auto|coupe|cabrio|sedan|berlina|avant|touring|suv|roadster|spider|sportback|gt|edition)$/;
+
+    function isClientDuplicate(candidate, rawTitle) {
+      const cleanTitle = (rawTitle || '').replace(/^\[.*?\]:?\s*/i, '').replace(/^solicitud.*?:?\s*/i, '').trim();
+      const normCand = clientNormalize(candidate);
+      const normExist = clientNormalize(cleanTitle);
+      if (normCand === normExist) return true;
+
+      const tokensCand = clientTokenize(candidate);
+      const tokensExist = clientTokenize(cleanTitle);
+      if (tokensCand.length === 0 || tokensExist.length === 0) return false;
+
+      const joinedCand = tokensCand.join(' ');
+      const joinedExist = tokensExist.join(' ');
+      if (joinedCand === joinedExist) return true;
+
+      if (tokensCand.length <= 2 && tokensExist.length <= 2 && joinedCand === joinedExist) return true;
+
+      const coreCand = tokensCand.filter(t => !SPEC_OR_BODY.test(t));
+      const coreExist = tokensExist.filter(t => !SPEC_OR_BODY.test(t));
+
+      const coreJoinedCand = coreCand.join(' ');
+      const coreJoinedExist = coreExist.join(' ');
+      if (coreJoinedCand && coreJoinedExist && coreJoinedCand === coreJoinedExist) return true;
+
+      const setExist = new Set(tokensExist);
+      const setCand = new Set(tokensCand);
+      const common = tokensCand.filter(t => setExist.has(t));
+
+      const diffCand = tokensCand.filter(t => !setExist.has(t) && !SPEC_OR_BODY.test(t));
+      const diffExist = tokensExist.filter(t => !setCand.has(t) && !SPEC_OR_BODY.test(t));
+
+      if (common.length >= 2 && diffCand.length === 0 && diffExist.length === 0) {
+        return true;
+      }
+
+      if ((diffCand.length === 0 || diffExist.length === 0) && common.length >= 2) {
+        return true;
+      }
+
+      return false;
+    }
+
     function evaluateClientMiddleware(inputText) {
       const normInput = clientNormalize(inputText);
       const inputTokens = clientTokenize(inputText);
@@ -462,60 +536,15 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
         }
       }
 
-      // 4. Comprobar en historial de solicitudes activas (tiempo real si hay conexión o cache estático)
+      // 4. Comprobar en historial de solicitudes activas (tiempo real si hay conexión)
+      // Las issues cerradas NO están en liveOpenIssues, por lo que NO bloquean
       if (liveIssuesFetched && Array.isArray(liveOpenIssues)) {
-        // Validación en TIEMPO REAL contra las issues actualmente abiertas en GitHub
         for (const issue of liveOpenIssues) {
-          const rawTitle = issue.title.replace(/^\[Propuesta de Vehículo\]:\s*/i, '').trim();
-          const normIssue = clientNormalize(rawTitle);
-          const issueTokens = clientTokenize(rawTitle);
-
-          if (normInput === normIssue) {
+          if (isClientDuplicate(inputText, issue.title)) {
             return {
               allowed: false,
               reason: `Ya existe una solicitud abierta para este modelo (Issue #${issue.number}). Nuestro equipo ya está trabajando en ella.`
             };
-          }
-
-          if (inputTokens.length >= 2 && issueTokens.length >= 2) {
-            const intersection = inputTokens.filter(t => issueTokens.includes(t));
-            const union = new Set([...inputTokens, ...issueTokens]);
-            const similarity = intersection.length / union.size;
-
-            if (similarity >= 0.65 || (intersection.length >= 2 && intersection.length === inputTokens.length)) {
-              return {
-                allowed: false,
-                reason: `Ya existe una propuesta similar registrada para "${rawTitle}" (Issue #${issue.number}). Se añadirá relevancia a la existente.`
-              };
-            }
-          }
-        }
-      } else if (registry && registry.records) {
-        // Fallback a registros locales si no se ha podido consultar la API pública en vivo
-        for (const record of registry.records) {
-          if (record.status === 'dismissed' || record.status === 'resolved' || record.status === 'closed') continue;
-
-          const normRecord = record.normalizedText || clientNormalize(record.text);
-          const recordTokens = record.matchedTokens || clientTokenize(record.text);
-
-          if (normInput === normRecord) {
-            return {
-              allowed: false,
-              reason: `Ya existe una solicitud abierta para este modelo (Issue #${record.issueNumber || 'registrada'}). Nuestro equipo ya está trabajando en ella.`
-            };
-          }
-
-          if (inputTokens.length >= 2 && recordTokens.length >= 2) {
-            const intersection = inputTokens.filter(t => recordTokens.includes(t));
-            const union = new Set([...inputTokens, ...recordTokens]);
-            const similarity = intersection.length / union.size;
-
-            if (similarity >= 0.65 || (intersection.length >= 2 && intersection.length === inputTokens.length)) {
-              return {
-                allowed: false,
-                reason: `Ya existe una propuesta similar registrada para "${record.text}" (Issue #${record.issueNumber || 'activa'}). Se añadirá relevancia a la existente.`
-              };
-            }
           }
         }
       }
@@ -601,11 +630,48 @@ const registryJson = "{\"version\":\"1.0.0\",\"description\":\"Registro privado/
                       },
                       body: JSON.stringify({ text: textVal })
                     });
-                    if (postRes.ok) {
-                      const postData = await postRes.json();
-                      if (postData && postData.success) {
-                        createdIssueNumber = postData.issue || 'creada';
-                      }
+                    const postData = await postRes.json().catch(() => ({}));
+
+                    if (postRes.status === 409 || postData.error === 'duplicate') {
+                      submitBtn.disabled = false;
+                      submitBtnText.textContent = 'Enviar solicitud';
+                      submitSpinner.classList.add('hidden');
+
+                      feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-amber-500/10 border-amber-500/30 text-amber-300 shadow-md animate-fade-in';
+                      feedbackMsg.innerHTML = `
+                        <div class="flex items-start gap-2">
+                          <span class="text-base">⚠️</span>
+                          <div>
+                            <p class="font-bold">Solicitud no enviada:</p>
+                            <p class="mt-0.5 text-slate-300 leading-relaxed">${postData.reason || 'Ya existe una solicitud abierta para este modelo.'}</p>
+                          </div>
+                        </div>
+                      `;
+                      feedbackMsg.classList.remove('hidden');
+                      return;
+                    }
+
+                    if (postRes.status === 400 || postData.error === 'validation') {
+                      submitBtn.disabled = false;
+                      submitBtnText.textContent = 'Enviar solicitud';
+                      submitSpinner.classList.add('hidden');
+
+                      feedbackMsg.className = 'p-3 rounded-xl text-xs font-mono border bg-amber-500/10 border-amber-500/30 text-amber-300 shadow-md animate-fade-in';
+                      feedbackMsg.innerHTML = `
+                        <div class="flex items-start gap-2">
+                          <span class="text-base">⚠️</span>
+                          <div>
+                            <p class="font-bold">Solicitud no enviada:</p>
+                            <p class="mt-0.5 text-slate-300 leading-relaxed">${postData.reason || 'Por favor, introduce un nombre de modelo válido.'}</p>
+                          </div>
+                        </div>
+                      `;
+                      feedbackMsg.classList.remove('hidden');
+                      return;
+                    }
+
+                    if (postRes.ok && postData.success) {
+                      createdIssueNumber = postData.issue || 'creada';
                     }
                   }
                 }
