@@ -50,46 +50,222 @@ const modelsJson = JSON.stringify(catalog.generations);
 
   <!-- Catálogo Interactivo -->
   <section id="catalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <!-- Barra de Búsqueda y Filtros -->
-    <div class="bg-slate-900/70 p-4 rounded-2xl border border-slate-800/80 backdrop-blur-md mb-10 flex flex-col md:flex-row gap-4 items-center justify-between">
-      <div class="relative w-full md:w-96">
-        <svg class="w-4 h-4 text-slate-500 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <input 
-          id="searchInput"
-          type="text" 
-          placeholder="Busca modelo (ej. M2, 320i, G87, F87, M3, E46, M Sport...)" 
-          class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-10 pr-4 py-2 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500/80 transition-colors font-mono"
-        />
+    <!-- Panel Principal de Búsqueda y Filtros Multifactoriales -->
+    <div class="bg-slate-900/80 p-5 sm:p-6 rounded-3xl border border-slate-800 backdrop-blur-md mb-8 shadow-2xl space-y-6">
+      <!-- 1. Buscador Principal con Autocompletado, Atajo y Sugerencias -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <label for="searchInput" class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center gap-2">
+            <span>Búsqueda Inteligente</span>
+            <span class="text-[10px] text-slate-500 font-sans hidden sm:inline">(modelo, motor 320i/335i, chasis E46/G87, paquete M Sport)</span>
+          </label>
+          <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500">Pulsa <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px]">/</kbd> para buscar</span>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <input 
+            id="searchInput"
+            type="text" 
+            placeholder="Escribe para buscar... (ej: M3, E46, 330ci, M2 G87, Z4, E30, 320i, M5 E39, 135i...)" 
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-all font-mono"
+            autocomplete="off"
+          />
+          <!-- Botón Limpiar Búsqueda -->
+          <button 
+            id="clearSearchBtn" 
+            class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-500 hover:text-slate-300 transition-colors hidden cursor-pointer"
+            title="Limpiar búsqueda"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          
+          <!-- Dropdown Desplegable Reactivo de Sugerencias y Autocompletado -->
+          <div id="searchResultsDropdown" class="absolute left-0 right-0 top-full mt-2 bg-slate-950/95 border border-slate-800 rounded-2xl max-h-72 overflow-y-auto hidden z-40 shadow-2xl divide-y divide-slate-800/60 backdrop-blur-xl">
+            <!-- Items de autocompletado inyectados por JS -->
+          </div>
+        </div>
+
+        <!-- Sugerencias Rápidas Populares (Pills) -->
+        <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-xs">
+          <span class="text-[11px] font-mono text-slate-500 mr-1">Populares:</span>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="M3 E46">M3 E46</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="M2 G87">M2 G87</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="330ci">330ci</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="M5 E39">M5 E39</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="E30">E30</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="Z4">Z4</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="M1">M1</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800/80 font-mono transition-colors" data-tag="Skytop">Skytop</button>
+        </div>
       </div>
 
-      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
-        <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 transition-all">
-          Todos ({totalGenerations})
-        </button>
-        <button data-filter="m-performance" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/30 transition-all flex items-center gap-1.5">
-          <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
-          BMW M Motorsport ({catalog.stats.mPerformance || 37})
-        </button>
-        <button data-filter="production" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
-          Producción ({catalog.stats.production || 149})
-        </button>
-        <button data-filter="prototypes" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
-          Conceptos & Prototipos ({catalog.stats.prototypes || 51})
-        </button>
-        <button data-filter="current" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all">
-          Gama Actual
-        </button>
+      <!-- 2. Filtros Desplegables Interactivos (Grid de Selects estilizados) -->
+      <div class="pt-4 border-t border-slate-800/80">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+          <!-- Filtro: Código de Carrocería / Chasis -->
+          <div>
+            <label for="chassisSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5 flex items-center justify-between">
+              <span>Chasis / Código</span>
+              <span class="text-[10px] text-cyan-400 font-sans" id="chassisCountLabel">123 códigos</span>
+            </label>
+            <select id="chassisSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+              <option value="all">Todos los Códigos de Chasis</option>
+              <!-- Rellenado dinámicamente con optgroups (G-Series, F-Series, E-Series, etc.) -->
+            </select>
+          </div>
+
+          <!-- Filtro: Serie / Gama -->
+          <div>
+            <label for="seriesSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Serie o Gama
+            </label>
+            <select id="seriesSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+              <option value="all">Todas las Series</option>
+              <option value="1">Serie 1 (Compactos / Hatchback)</option>
+              <option value="2">Serie 2 (Coupé / Active Tourer / Gran Coupé)</option>
+              <option value="3">Serie 3 (Sedán / Touring / Referente)</option>
+              <option value="4">Serie 4 (Coupé / Cabrio / Gran Coupé)</option>
+              <option value="5">Serie 5 (Gran Berlina / Touring)</option>
+              <option value="6">Serie 6 (Gran Turismo / Coupé)</option>
+              <option value="7">Serie 7 (Buque Insignia / Representación)</option>
+              <option value="8">Serie 8 (Gran Deportivo / Coupé)</option>
+              <option value="x">Gama X (SAV / SUV: X1 a X7, XM)</option>
+              <option value="z">Gama Z (Roadsters: Z1, Z3, Z4, Z8)</option>
+              <option value="i">Gama i (100% Eléctricos: i3, i4, i5, i7, iX...)</option>
+              <option value="m">BMW M High Performance</option>
+              <option value="classics">Clásicos & Históricos (Pre-1975)</option>
+              <option value="prototypes">Conceptos & Prototipos</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Años / Épocas e Intervalos -->
+          <div>
+            <label for="eraSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Época / Intervalo Años
+            </label>
+            <select id="eraSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+              <option value="all">Todos los Años (1927 - 2026)</option>
+              <option value="2020-present">2020 - 2026 (G-Series & Era Eléctrica)</option>
+              <option value="2010-2019">2010 - 2019 (Era Turbo F-Series)</option>
+              <option value="2000-2009">2000 - 2009 (Era Bangle E90/E60/E65)</option>
+              <option value="1990-1999">1990 - 1999 (Era Dorada E36/E39/E38)</option>
+              <option value="1980-1989">1980 - 1989 (Youngtimers E30/E28/E24)</option>
+              <option value="1960-1979">1960 - 1979 (Neue Klasse, 2002, E9)</option>
+              <option value="pre-1960">1927 - 1959 (Pioneros 328, 507...)</option>
+              <option value="custom">Rango Personalizado...</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Tipo de Carrocería / Silueta -->
+          <div>
+            <label for="bodySelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Tipo de Carrocería
+            </label>
+            <select id="bodySelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+              <option value="all">Todas las Carrocerías</option>
+              <option value="sedan">Berlina / Sedán</option>
+              <option value="coupe">Coupé / Deportivo</option>
+              <option value="cabrio">Cabrio / Roadster / Descapotable</option>
+              <option value="touring">Familiar / Touring / Estate</option>
+              <option value="suv">SUV / SAV / Crossover</option>
+              <option value="grancoupe">Gran Coupé / Fastback</option>
+              <option value="compact">Compacto / Hatchback</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Ordenación -->
+          <div>
+            <label for="sortSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Ordenar Por
+            </label>
+            <select id="sortSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+              <option value="year-desc">Más recientes primero (Año ↓)</option>
+              <option value="year-asc">Más antiguos primero (Año ↑)</option>
+              <option value="name-asc">Nombre del modelo (A - Z)</option>
+              <option value="variants-desc">Mayor variedad de motores</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Contenedor Rango de Años Personalizado (desplegable si se selecciona custom) -->
+        <div id="customYearsContainer" class="hidden mt-3 pt-3 border-t border-slate-800/60 flex flex-wrap items-center gap-3 bg-slate-950/60 p-3 rounded-xl">
+          <span class="text-xs font-mono text-slate-400">Intervalo de Años Específico:</span>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-500 font-mono">Desde:</span>
+            <input type="number" id="yearFromInput" min="1927" max="2026" placeholder="1990" class="w-24 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400" />
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-500 font-mono">Hasta:</span>
+            <input type="number" id="yearToInput" min="1927" max="2026" placeholder="2006" class="w-24 bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400" />
+          </div>
+          <button id="applyYearsBtn" class="px-3 py-1 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-xs transition-colors cursor-pointer">Aplicar Rango</button>
+        </div>
       </div>
+
+      <!-- 3. Pestañas Rápidas de Categoría & Barra de Filtros Activos / Reset -->
+      <div class="pt-4 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4">
+        <!-- Pestañas de Filtro Rápido -->
+        <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+          <button data-filter="all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 transition-all cursor-pointer">
+            Todos ({totalGenerations})
+          </button>
+          <button data-filter="m-performance" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/30 transition-all flex items-center gap-1.5 cursor-pointer">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+            BMW M Motorsport ({catalog.stats.mPerformance || 37})
+          </button>
+          <button data-filter="production" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all cursor-pointer">
+            Producción ({catalog.stats.production || 149})
+          </button>
+          <button data-filter="prototypes" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all cursor-pointer">
+            Conceptos & Prototipos ({catalog.stats.prototypes || 51})
+          </button>
+          <button data-filter="current" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all cursor-pointer">
+            Gama Actual
+          </button>
+        </div>
+
+        <!-- Indicador de Filtros Activos & Botón Limpiar Todo -->
+        <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
+          <div id="activeFiltersBadge" class="hidden items-center gap-1.5 px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+            <span id="activeFiltersCount">0 filtros</span>
+          </div>
+          <button 
+            id="resetAllFiltersBtn" 
+            class="hidden items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-red-500/20 hover:text-red-300 hover:border-red-500/40 border border-slate-700 text-slate-300 transition-all cursor-pointer"
+          >
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <span>Limpiar filtros</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Estado / Contador de Resultados -->
+    <div class="mb-6 flex items-center justify-between text-xs font-mono text-slate-400 px-1">
+      <span id="resultsCount">Cargando catálogo...</span>
+      <span class="text-slate-500 text-[11px] hidden sm:inline">100% de fotografías en vista frontal limpia</span>
     </div>
 
     <!-- Grid de Modelos -->
     <div id="modelsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Se inyecta dinámicamente -->
+      <!-- Inyectado dinámicamente -->
     </div>
 
-    <!-- Paginación / Contador -->
-    <div class="mt-8 text-center text-xs font-mono text-slate-500" id="resultsCount">
-      Mostrando modelos...
+    <!-- Estado Vacío cuando no hay coincidencias -->
+    <div id="emptyState" class="hidden text-center py-16 px-4 bg-slate-900/40 border border-slate-800 rounded-3xl max-w-lg mx-auto">
+      <div class="w-16 h-16 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-center mx-auto mb-4 text-slate-400 text-2xl">
+        🔍
+      </div>
+      <h3 class="text-lg font-bold text-white">No se encontraron modelos coincidentes</h3>
+      <p class="text-xs text-slate-400 mt-2 max-w-xs mx-auto leading-relaxed">
+        Prueba a ajustar la búsqueda, restablecer los intervalos de años o cambiar el filtro de carrocería.
+      </p>
+      <button id="emptyResetBtn" class="mt-5 px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition-colors shadow-lg shadow-cyan-500/20 cursor-pointer">
+        Restablecer todos los filtros
+      </button>
     </div>
   </section>
 
@@ -211,12 +387,39 @@ const modelsJson = JSON.stringify(catalog.generations);
     const models = JSON.parse(modelsJson);
     let activeFilter = 'all';
     let searchQuery = '';
+    let selectedChassis = 'all';
+    let selectedSeries = 'all';
+    let selectedEra = 'all';
+    let customYearFrom = null;
+    let customYearTo = null;
+    let selectedBody = 'all';
+    let selectedSort = 'year-desc';
     let currentModel = null;
+    let highlightedIndex = -1;
 
+    // Elementos del DOM
     const grid = document.getElementById('modelsGrid');
     const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const searchResultsDropdown = document.getElementById('searchResultsDropdown');
+    const chassisSelect = document.getElementById('chassisSelect');
+    const chassisCountLabel = document.getElementById('chassisCountLabel');
+    const seriesSelect = document.getElementById('seriesSelect');
+    const eraSelect = document.getElementById('eraSelect');
+    const customYearsContainer = document.getElementById('customYearsContainer');
+    const yearFromInput = document.getElementById('yearFromInput');
+    const yearToInput = document.getElementById('yearToInput');
+    const applyYearsBtn = document.getElementById('applyYearsBtn');
+    const bodySelect = document.getElementById('bodySelect');
+    const sortSelect = document.getElementById('sortSelect');
     const filterButtons = document.querySelectorAll('.filter-btn');
     const resultsCount = document.getElementById('resultsCount');
+    const activeFiltersBadge = document.getElementById('activeFiltersBadge');
+    const activeFiltersCount = document.getElementById('activeFiltersCount');
+    const resetAllFiltersBtn = document.getElementById('resetAllFiltersBtn');
+    const emptyState = document.getElementById('emptyState');
+    const emptyResetBtn = document.getElementById('emptyResetBtn');
+    const quickTags = document.querySelectorAll('.quick-tag');
 
     // Elementos del Modal
     const modal = document.getElementById('viewModal');
@@ -235,44 +438,253 @@ const modelsJson = JSON.stringify(catalog.generations);
     const packagesContainer = document.getElementById('packagesContainer');
     const variantsContainer = document.getElementById('variantsContainer');
 
+    // Lightbox Pantalla Completa
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxSubtitle = document.getElementById('lightboxSubtitle');
+    const closeLightbox = document.getElementById('closeLightbox');
+    const modalExpandBtn = document.getElementById('modalExpandBtn');
+
+    // Clasificación de Tipo de Carrocería
+    function getBodyType(m) {
+      const cls = (m.class || '').toLowerCase();
+      const lbl = (m.label || '').toLowerCase();
+      if (cls.includes('suv') || cls.includes('sav') || cls.includes('sac') || cls.includes('crossover') || /\bx[1-7]\b/i.test(lbl) || lbl.includes('xm')) return 'suv';
+      if (cls.includes('roadster') || cls.includes('convertible') || cls.includes('cabrio') || /\bz[1-8]\b/i.test(lbl) || lbl.includes('spider')) return 'cabrio';
+      if (cls.includes('gran coup') || cls.includes('fastback') || cls.includes('liftback')) return 'grancoupe';
+      if (cls.includes('coup') || lbl.includes('coup') || lbl.includes('csl') || lbl.includes('m1') || lbl.includes('m2') || lbl.includes('m4')) return 'coupe';
+      if (cls.includes('station wagon') || cls.includes('touring') || cls.includes('estate') || lbl.includes('touring')) return 'touring';
+      if (cls.includes('hatchback') || cls.includes('compact') || cls.includes('microcar') || cls.includes('mpv') || lbl.includes('isetta')) return 'compact';
+      if (cls.includes('sedan') || cls.includes('saloon') || cls.includes('berlina') || cls.includes('executive') || /series/i.test(m.series) || /serie/i.test(m.series)) return 'sedan';
+      return 'other';
+    }
+
+    function getBodyTypeLabel(code) {
+      const map = {
+        'suv': 'SUV / SAV',
+        'cabrio': 'Cabrio / Roadster',
+        'grancoupe': 'Gran Coupé',
+        'coupe': 'Coupé',
+        'touring': 'Touring / Familiar',
+        'compact': 'Compacto',
+        'sedan': 'Berlina / Sedán',
+        'other': 'Especial'
+      };
+      return map[code] || 'BMW';
+    }
+
+    // Inicialización dinámica del selector de Chasis con optgroups organizados
+    function initChassisDropdown() {
+      const chassisSet = new Set();
+      models.forEach(m => {
+        if (m.chassis) {
+          m.chassis.forEach(c => {
+            if (c.code) {
+              c.code.split(/[\/,]/).map(s => s.trim()).filter(Boolean).forEach(code => chassisSet.add(code));
+            }
+          });
+        }
+      });
+
+      const allCodes = Array.from(chassisSet);
+      if (chassisCountLabel) {
+        chassisCountLabel.textContent = `${allCodes.length} códigos`;
+      }
+
+      const groups = {
+        'G-Series (2018 - Presente)': [],
+        'F-Series (2010 - 2019)': [],
+        'E-Series (1975 - 2013)': [],
+        'I-Series & Clásicos Históricos': []
+      };
+
+      allCodes.forEach(code => {
+        if (code.startsWith('G')) groups['G-Series (2018 - Presente)'].push(code);
+        else if (code.startsWith('F')) groups['F-Series (2010 - 2019)'].push(code);
+        else if (code.startsWith('E')) groups['E-Series (1975 - 2013)'].push(code);
+        else groups['I-Series & Clásicos Históricos'].push(code);
+      });
+
+      Object.keys(groups).forEach(grpName => {
+        groups[grpName].sort();
+        if (groups[grpName].length > 0) {
+          const optgroup = document.createElement('optgroup');
+          optgroup.label = grpName;
+          groups[grpName].forEach(code => {
+            const opt = document.createElement('option');
+            opt.value = code;
+            opt.textContent = code;
+            optgroup.appendChild(opt);
+          });
+          chassisSelect.appendChild(optgroup);
+        }
+      });
+    }
+
+    // Contador de filtros activos
+    function updateActiveFiltersIndicator() {
+      let count = 0;
+      if (searchQuery) count++;
+      if (activeFilter !== 'all') count++;
+      if (selectedChassis !== 'all') count++;
+      if (selectedSeries !== 'all') count++;
+      if (selectedEra !== 'all') count++;
+      if (selectedBody !== 'all') count++;
+      if (selectedSort !== 'year-desc') count++;
+
+      if (count > 0) {
+        activeFiltersBadge.classList.remove('hidden');
+        activeFiltersBadge.classList.add('flex');
+        activeFiltersCount.textContent = `${count} ${count === 1 ? 'filtro activo' : 'filtros activos'}`;
+        resetAllFiltersBtn.classList.remove('hidden');
+        resetAllFiltersBtn.classList.add('inline-flex');
+      } else {
+        activeFiltersBadge.classList.add('hidden');
+        activeFiltersBadge.classList.remove('flex');
+        resetAllFiltersBtn.classList.add('hidden');
+        resetAllFiltersBtn.classList.remove('inline-flex');
+      }
+    }
+
+    // Comprobación de coincidencia por serie
+    function matchesSeries(m, filterVal) {
+      if (filterVal === 'all') return true;
+      const s = (m.series || '').toLowerCase();
+      const l = (m.label || '').toLowerCase();
+      if (filterVal === '1') return s.includes('1 series') || l.includes('1 series') || l.includes('1m');
+      if (filterVal === '2') return s.includes('2 series') || l.includes('2 series') || l.includes('m2');
+      if (filterVal === '3') return s.includes('3 series') || l.includes('3 series') || l.includes('m3') || l.includes('320') || l.includes('330');
+      if (filterVal === '4') return s.includes('4 series') || l.includes('4 series') || l.includes('m4');
+      if (filterVal === '5') return s.includes('5 series') || l.includes('5 series') || l.includes('m5');
+      if (filterVal === '6') return s.includes('6 series') || l.includes('6 series') || l.includes('m6');
+      if (filterVal === '7') return s.includes('7 series') || l.includes('7 series');
+      if (filterVal === '8') return s.includes('8 series') || l.includes('8 series') || l.includes('m8');
+      if (filterVal === 'x') return /\bx[1-7]\b/i.test(s) || /\bx[1-7]\b/i.test(l) || s.includes('xm') || l.includes('xm');
+      if (filterVal === 'z') return /\bz[1-8]\b/i.test(s) || /\bz[1-8]\b/i.test(l);
+      if (filterVal === 'i') return s.startsWith('i') || /\bi[0-9]|ix/i.test(l);
+      if (filterVal === 'm') return m.section === 'm-performance' || m.isM || l.startsWith('M');
+      if (filterVal === 'classics') return (m.years?.start || 0) < 1975;
+      if (filterVal === 'prototypes') return m.section === 'prototypes';
+      return true;
+    }
+
+    // Comprobación de época o rango de años
+    function matchesEra(m, eraVal) {
+      if (eraVal === 'all') return true;
+      const start = m.years?.start || 0;
+      const end = m.years?.end || start;
+
+      if (eraVal === '2020-present') return end >= 2020;
+      if (eraVal === '2010-2019') return start <= 2019 && end >= 2010;
+      if (eraVal === '2000-2009') return start <= 2009 && end >= 2000;
+      if (eraVal === '1990-1999') return start <= 1999 && end >= 1990;
+      if (eraVal === '1980-1989') return start <= 1989 && end >= 1980;
+      if (eraVal === '1960-1979') return start <= 1979 && end >= 1960;
+      if (eraVal === 'pre-1960') return start < 1960;
+      if (eraVal === 'custom') {
+        const from = customYearFrom || 1927;
+        const to = customYearTo || 2026;
+        return start <= to && end >= from;
+      }
+      return true;
+    }
+
+    // Función Principal de Filtrado y Renderizado
     function renderModels() {
+      updateActiveFiltersIndicator();
+
       const filtered = models.filter(m => {
-        // Filtros por pestaña
+        // 1. Filtro Pestaña Rápida
         if (activeFilter === 'm-performance' && m.section !== 'm-performance') return false;
         if (activeFilter === 'production' && m.section !== 'production') return false;
         if (activeFilter === 'prototypes' && m.section !== 'prototypes') return false;
         if (activeFilter === 'current' && m.status !== 'current') return false;
 
-        // Búsqueda inteligente: modelo (M2), motorización (320i), chasis (G87, E46), paquete (M Sport)
-        if (searchQuery) {
-          const q = searchQuery.toLowerCase();
-          const matchLabel = m.label.toLowerCase().includes(q);
-          const matchSeries = m.series.toLowerCase().includes(q);
-          const matchClass = (m.class || '').toLowerCase().includes(q);
-          const matchChassis = m.chassis.some(c => (c.code || '').toLowerCase().includes(q));
-          const matchVariant = m.chassis.some(c => (c.variants || []).some(v => v.toLowerCase().includes(q)));
-          const matchPackage = m.chassis.some(c => (c.packages || []).some(p => p.toLowerCase().includes(q)));
-          
-          if (!matchLabel && !matchSeries && !matchChassis && !matchVariant && !matchClass && !matchPackage) return false;
+        // 2. Filtro Serie
+        if (!matchesSeries(m, selectedSeries)) return false;
+
+        // 3. Filtro Chasis
+        if (selectedChassis !== 'all') {
+          const hasCode = m.chassis.some(c => (c.code || '').toLowerCase().includes(selectedChassis.toLowerCase()));
+          if (!hasCode) return false;
         }
+
+        // 4. Filtro Época / Años
+        if (!matchesEra(m, selectedEra)) return false;
+
+        // 5. Filtro Carrocería
+        if (selectedBody !== 'all') {
+          const body = getBodyType(m);
+          if (body !== selectedBody) return false;
+        }
+
+        // 6. Búsqueda por Tokens (modelo, variantes 320i/335i, motor, chasis, etc.)
+        if (searchQuery) {
+          const tokens = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+          const labelStr = (m.label || '').toLowerCase();
+          const seriesStr = (m.series || '').toLowerCase();
+          const classStr = (m.class || '').toLowerCase();
+          const chassisStr = m.chassis.map(c => c.code || '').join(' ').toLowerCase();
+          const variantsStr = m.chassis.flatMap(c => c.variants || []).join(' ').toLowerCase();
+          const packagesStr = m.chassis.flatMap(c => c.packages || []).join(' ').toLowerCase();
+          const yearsStr = `${m.years?.start || ''} ${m.years?.end || ''} ${m.years?.display || ''}`.toLowerCase();
+
+          const allText = `${labelStr} ${seriesStr} ${classStr} ${chassisStr} ${variantsStr} ${packagesStr} ${yearsStr}`;
+          const allTokensMatch = tokens.every(tok => allText.includes(tok));
+          if (!allTokensMatch) return false;
+        }
+
         return true;
       });
 
+      // Ordenación
+      filtered.sort((a, b) => {
+        if (selectedSort === 'year-desc') {
+          return (b.years?.start || 0) - (a.years?.start || 0);
+        }
+        if (selectedSort === 'year-asc') {
+          return (a.years?.start || 0) - (b.years?.start || 0);
+        }
+        if (selectedSort === 'name-asc') {
+          return a.label.localeCompare(b.label);
+        }
+        if (selectedSort === 'variants-desc') {
+          const countA = a.chassis.reduce((sum, c) => sum + (c.variants?.length || 0), 0);
+          const countB = b.chassis.reduce((sum, c) => sum + (c.variants?.length || 0), 0);
+          return countB - countA;
+        }
+        return 0;
+      });
+
+      // Feedback del contador
       resultsCount.textContent = `Mostrando ${filtered.length} de ${models.length} modelos de BMW`;
 
+      // Control del Empty State
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      // Render de Tarjetas
       grid.innerHTML = filtered.map(m => {
         const firstChassis = m.chassis[0] || {};
         const front = m.frontImage || firstChassis.frontImage;
         const chassisCodes = m.chassis.map(c => c.code).filter(Boolean).join(', ') || 'N/A';
         const isCurrent = m.status === 'current';
         const isM = m.section === 'm-performance';
+        const bodyCode = getBodyType(m);
+        const bodyLabel = getBodyTypeLabel(bodyCode);
+        const variantsCount = m.chassis.reduce((acc, c) => acc + (c.variants?.length || 0), 0);
 
         return `
-          <div class="bg-slate-900/60 border ${isM ? 'border-indigo-500/40 hover:border-indigo-400' : 'border-slate-800 hover:border-cyan-500/50'} rounded-2xl overflow-hidden transition-all duration-300 flex flex-col group hover:-translate-y-1">
+          <div class="bg-slate-900/60 border ${isM ? 'border-indigo-500/40 hover:border-indigo-400' : 'border-slate-800 hover:border-cyan-500/50'} rounded-2xl overflow-hidden transition-all duration-300 flex flex-col group hover:-translate-y-1 shadow-lg">
             <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden flex items-center justify-center group/img">
               ${front?.url 
                 ? `<img src="${front.url}" alt="${m.label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-                   <!-- Botón de Ampliar Imagen a Pantalla Completa sin Recorte -->
                    <button 
                      onclick="event.stopPropagation(); openLightbox('${front.url}', '${m.label.replace(/'/g, "\\'")}', '${(m.years.display || '').replace(/'/g, "\\'")} • ${chassisCodes}')" 
                      class="absolute bottom-2.5 right-2.5 p-2 rounded-xl bg-slate-950/80 hover:bg-cyan-500 text-slate-300 hover:text-slate-950 backdrop-blur-md border border-slate-700/80 hover:border-cyan-400 transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1.5 text-xs font-mono shadow-lg cursor-pointer"
@@ -282,11 +694,11 @@ const modelsJson = JSON.stringify(catalog.generations);
                      <span class="text-[11px] font-semibold">Ampliar</span>
                    </button>`
                 : `<div class="text-slate-600 text-xs font-mono flex flex-col items-center gap-1">
-                    <svg class="w-8 h-8 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    <span>Sin foto frontal</span>
+                     <svg class="w-8 h-8 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                     <span>Sin foto frontal</span>
                    </div>`
               }
-              <div class="absolute top-3 left-3 flex items-center gap-1">
+              <div class="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
                 ${isM ? `
                   <span class="px-2 py-0.5 rounded bg-red-500/20 border border-red-500/40 text-[10px] font-bold text-red-300 tracking-wider">
                     BMW M
@@ -297,14 +709,17 @@ const modelsJson = JSON.stringify(catalog.generations);
                     Actual
                   </span>
                 ` : ''}
+                <span class="px-2 py-0.5 rounded bg-slate-900/80 backdrop-blur-md border border-slate-700/70 text-[10px] font-mono text-slate-300">
+                  ${bodyLabel}
+                </span>
               </div>
             </div>
 
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <div class="flex items-center justify-between text-xs text-slate-500 font-mono mb-1">
-                  <span>${m.years.display}</span>
-                  <span class="text-cyan-400 font-semibold">${chassisCodes}</span>
+                <div class="flex items-center justify-between text-xs text-slate-500 font-mono mb-1.5">
+                  <span class="bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700/60 text-slate-300">${m.years.display}</span>
+                  <span class="text-cyan-400 font-bold bg-cyan-950/40 border border-cyan-800/40 px-2 py-0.5 rounded">${chassisCodes}</span>
                 </div>
                 <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
                   ${m.label}
@@ -316,7 +731,7 @@ const modelsJson = JSON.stringify(catalog.generations);
 
               <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center justify-between">
                 <span class="text-[11px] text-slate-500 font-mono">
-                  ${m.chassis.reduce((acc, c) => acc + (c.variants?.length || 0), 0)} variantes
+                  ${variantsCount} ${variantsCount === 1 ? 'variante' : 'variantes'}
                 </span>
                 <button 
                   onclick="openModelModal('${m.id}')"
@@ -330,6 +745,249 @@ const modelsJson = JSON.stringify(catalog.generations);
         `;
       }).join('');
     }
+
+    // Autocompletado del Buscador
+    function updateAutocompleteDropdown() {
+      const q = searchQuery.trim().toLowerCase();
+      if (!q) {
+        searchResultsDropdown.classList.add('hidden');
+        searchResultsDropdown.innerHTML = '';
+        clearSearchBtn.classList.add('hidden');
+        highlightedIndex = -1;
+        return;
+      }
+
+      clearSearchBtn.classList.remove('hidden');
+
+      const matches = models.filter(m => {
+        const lbl = (m.label || '').toLowerCase();
+        const chassis = m.chassis.map(c => c.code || '').join(' ').toLowerCase();
+        const variants = m.chassis.flatMap(c => c.variants || []).join(' ').toLowerCase();
+        return lbl.includes(q) || chassis.includes(q) || variants.includes(q);
+      }).slice(0, 7);
+
+      if (matches.length === 0) {
+        searchResultsDropdown.classList.add('hidden');
+        searchResultsDropdown.innerHTML = '';
+        return;
+      }
+
+      highlightedIndex = -1;
+      searchResultsDropdown.innerHTML = matches.map((m, idx) => {
+        const front = m.frontImage || m.chassis[0]?.frontImage;
+        const chassis = m.chassis.map(c => c.code).filter(Boolean).join(', ') || '';
+        const isM = m.section === 'm-performance';
+
+        return `
+          <div 
+            class="autocomplete-item p-3 hover:bg-slate-800/80 flex items-center justify-between gap-3 cursor-pointer transition-colors" 
+            data-index="${idx}"
+            data-label="${m.label.replace(/"/g, '&quot;')}"
+          >
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-8 rounded-lg overflow-hidden bg-slate-900 border border-slate-800 shrink-0 flex items-center justify-center">
+                ${front?.url 
+                  ? `<img src="${front.url}" alt="${m.label}" class="w-full h-full object-cover" />`
+                  : `<span class="text-[9px] text-slate-600 font-mono">BMW</span>`
+                }
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white flex items-center gap-1.5">
+                  <span>${m.label}</span>
+                  ${isM ? `<span class="px-1.5 py-0.2 rounded bg-red-500/20 text-red-300 text-[9px] font-mono">M</span>` : ''}
+                </div>
+                <div class="text-[11px] text-slate-400 font-mono flex items-center gap-2 mt-0.5">
+                  <span class="text-cyan-400">${chassis || 'Base'}</span>
+                  <span>•</span>
+                  <span>${m.years.display}</span>
+                </div>
+              </div>
+            </div>
+            <span class="text-xs text-slate-500 font-mono">↵</span>
+          </div>
+        `;
+      }).join('');
+
+      searchResultsDropdown.classList.remove('hidden');
+
+      // Click listener en los items del dropdown
+      searchResultsDropdown.querySelectorAll('.autocomplete-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const lbl = item.dataset.label;
+          searchInput.value = lbl;
+          searchQuery = lbl;
+          searchResultsDropdown.classList.add('hidden');
+          renderModels();
+          document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    }
+
+    // Atajo de teclado: Barra espaciadora o barra "/" para enfocar buscador
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== searchInput && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'SELECT') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    // Navegación por teclado en el dropdown
+    searchInput.addEventListener('keydown', (e) => {
+      const items = searchResultsDropdown.querySelectorAll('.autocomplete-item');
+      if (items.length === 0 || searchResultsDropdown.classList.contains('hidden')) return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        highlightedIndex = (highlightedIndex + 1) % items.length;
+        updateHighlightedItem(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        highlightedIndex = (highlightedIndex - 1 + items.length) % items.length;
+        updateHighlightedItem(items);
+      } else if (e.key === 'Enter') {
+        if (highlightedIndex >= 0 && items[highlightedIndex]) {
+          e.preventDefault();
+          items[highlightedIndex].click();
+        }
+      } else if (e.key === 'Escape') {
+        searchResultsDropdown.classList.add('hidden');
+      }
+    });
+
+    function updateHighlightedItem(items) {
+      items.forEach((it, idx) => {
+        if (idx === highlightedIndex) {
+          it.classList.add('bg-slate-800');
+        } else {
+          it.classList.remove('bg-slate-800');
+        }
+      });
+    }
+
+    // Input de búsqueda
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.trim();
+      updateAutocompleteDropdown();
+      renderModels();
+    });
+
+    // Limpiar búsqueda (X)
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearchBtn.classList.add('hidden');
+      searchResultsDropdown.classList.add('hidden');
+      renderModels();
+      searchInput.focus();
+    });
+
+    // Cerrar dropdown al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (!searchInput.contains(e.target) && !searchResultsDropdown.contains(e.target)) {
+        searchResultsDropdown.classList.add('hidden');
+      }
+    });
+
+    // Sugerencias Rápidas Populares (Pills)
+    quickTags.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.dataset.tag;
+        searchInput.value = tag;
+        searchQuery = tag;
+        clearSearchBtn.classList.remove('hidden');
+        renderModels();
+      });
+    });
+
+    // Filtro Chasis
+    chassisSelect.addEventListener('change', (e) => {
+      selectedChassis = e.target.value;
+      renderModels();
+    });
+
+    // Filtro Serie
+    seriesSelect.addEventListener('change', (e) => {
+      selectedSeries = e.target.value;
+      renderModels();
+    });
+
+    // Filtro Época / Intervalo
+    eraSelect.addEventListener('change', (e) => {
+      selectedEra = e.target.value;
+      if (selectedEra === 'custom') {
+        customYearsContainer.classList.remove('hidden');
+      } else {
+        customYearsContainer.classList.add('hidden');
+      }
+      renderModels();
+    });
+
+    applyYearsBtn.addEventListener('click', () => {
+      customYearFrom = parseInt(yearFromInput.value, 10) || null;
+      customYearTo = parseInt(yearToInput.value, 10) || null;
+      renderModels();
+    });
+
+    // Filtro Carrocería
+    bodySelect.addEventListener('change', (e) => {
+      selectedBody = e.target.value;
+      renderModels();
+    });
+
+    // Ordenación
+    sortSelect.addEventListener('change', (e) => {
+      selectedSort = e.target.value;
+      renderModels();
+    });
+
+    // Pestañas Rápidas
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all cursor-pointer";
+        });
+        btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 transition-all cursor-pointer";
+        activeFilter = btn.dataset.filter;
+        renderModels();
+      });
+    });
+
+    // Resetear todos los filtros
+    function resetAllFilters() {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearchBtn.classList.add('hidden');
+      searchResultsDropdown.classList.add('hidden');
+      chassisSelect.value = 'all';
+      selectedChassis = 'all';
+      seriesSelect.value = 'all';
+      selectedSeries = 'all';
+      eraSelect.value = 'all';
+      selectedEra = 'all';
+      customYearsContainer.classList.add('hidden');
+      yearFromInput.value = '';
+      yearToInput.value = '';
+      customYearFrom = null;
+      customYearTo = null;
+      bodySelect.value = 'all';
+      selectedBody = 'all';
+      sortSelect.value = 'year-desc';
+      selectedSort = 'year-desc';
+      activeFilter = 'all';
+
+      filterButtons.forEach(b => {
+        if (b.dataset.filter === 'all') {
+          b.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 transition-all cursor-pointer";
+        } else {
+          b.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all cursor-pointer";
+        }
+      });
+
+      renderModels();
+    }
+
+    resetAllFiltersBtn.addEventListener('click', resetAllFilters);
+    emptyResetBtn.addEventListener('click', resetAllFilters);
 
     // Modal controls
     window.openModelModal = function(modelId) {
@@ -399,12 +1057,6 @@ const modelsJson = JSON.stringify(catalog.generations);
     });
 
     // Control del Lightbox Pantalla Completa
-    const lightbox = document.getElementById('imageLightbox');
-    const lightboxImg = document.getElementById('lightboxImage');
-    const lightboxTitle = document.getElementById('lightboxTitle');
-    const lightboxSubtitle = document.getElementById('lightboxSubtitle');
-    const closeLightbox = document.getElementById('closeLightbox');
-
     window.openLightbox = function(url, title, subtitle) {
       if (!url) return;
       lightboxImg.src = url;
@@ -428,7 +1080,6 @@ const modelsJson = JSON.stringify(catalog.generations);
     });
 
     // Botón de ampliar dentro del modal de ficha
-    const modalExpandBtn = document.getElementById('modalExpandBtn');
     if (modalExpandBtn) {
       modalExpandBtn.addEventListener('click', () => {
         if (currentModel) {
@@ -453,25 +1104,8 @@ const modelsJson = JSON.stringify(catalog.generations);
       }
     });
 
-    // Filtros
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach(b => {
-          b.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all";
-        });
-        btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 transition-all";
-        activeFilter = btn.dataset.filter;
-        renderModels();
-      });
-    });
-
-    // Búsqueda
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = e.target.value.trim();
-      renderModels();
-    });
-
-    // Render inicial
+    // Inicialización al cargar la página
+    initChassisDropdown();
     renderModels();
   </script>
 </Layout>
