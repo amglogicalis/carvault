@@ -165,9 +165,9 @@ function evaluateMiddlewareFilter(inputText: string, reg: RequestsRegistry) {
     }
   }
 
-  // 4. Comprobar si YA EXISTE una solicitud previa activa o resuelta en el registro
+  // 4. Comprobar si YA EXISTE una solicitud previa activa en el registro
   for (const record of reg.records) {
-    if (record.status === 'dismissed') continue; // Las desestimadas pueden volver a pedirse si tienen otro contexto
+    if (record.status === 'dismissed' || record.status === 'resolved') continue; // Solo comprobamos solicitudes abiertas pendientes
 
     const normRecord = record.normalizedText;
     const recordTokens = record.matchedTokens || tokenize(record.text);

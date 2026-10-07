@@ -719,6 +719,24 @@ const registryJson = JSON.stringify(requestsRegistry);
     const submitBtnText = document.getElementById('submitRequestBtnText');
     const submitSpinner = document.getElementById('submitRequestSpinner');
 
+    let liveOpenIssues = null;
+    let liveIssuesFetched = false;
+
+    async function syncLiveIssues() {
+      try {
+        const res = await fetch('https://api.github.com/repos/amglogicalis/carvault/issues?state=open&per_page=100');
+        if (res.ok) {
+          const issues = await res.json();
+          if (Array.isArray(issues)) {
+            liveOpenIssues = issues;
+            liveIssuesFetched = true;
+          }
+        }
+      } catch (e) {
+        // En caso de modo offline o error de red, se mantiene el registry estático
+      }
+    }
+
     function openRequestModal() {
       if (!requestModal) return;
       requestModal.classList.remove('hidden');
@@ -727,6 +745,7 @@ const registryJson = JSON.stringify(requestsRegistry);
         feedbackMsg.classList.add('hidden');
         feedbackMsg.textContent = '';
       }
+      syncLiveIssues();
       setTimeout(() => {
         if (requestInput) requestInput.focus();
       }, 100);
@@ -850,10 +869,38 @@ const registryJson = JSON.stringify(requestsRegistry);
         }
       }
 
-      // 4. Comprobar en historial de solicitudes de la base de datos
-      if (registry && registry.records) {
+      // 4. Comprobar en historial de solicitudes activas (tiempo real si hay conexión o cache estático)
+      if (liveIssuesFetched && Array.isArray(liveOpenIssues)) {
+        // Validación en TIEMPO REAL contra las issues actualmente abiertas en GitHub
+        for (const issue of liveOpenIssues) {
+          const rawTitle = issue.title.replace(/^\[Propuesta de Vehículo\]:\s*/i, '').trim();
+          const normIssue = clientNormalize(rawTitle);
+          const issueTokens = clientTokenize(rawTitle);
+
+          if (normInput === normIssue) {
+            return {
+              allowed: false,
+              reason: `Ya existe una solicitud abierta para este modelo (Issue #${issue.number}). Nuestro equipo ya está trabajando en ella.`
+            };
+          }
+
+          if (inputTokens.length >= 2 && issueTokens.length >= 2) {
+            const intersection = inputTokens.filter(t => issueTokens.includes(t));
+            const union = new Set([...inputTokens, ...issueTokens]);
+            const similarity = intersection.length / union.size;
+
+            if (similarity >= 0.65 || (intersection.length >= 2 && intersection.length === inputTokens.length)) {
+              return {
+                allowed: false,
+                reason: `Ya existe una propuesta similar registrada para "${rawTitle}" (Issue #${issue.number}). Se añadirá relevancia a la existente.`
+              };
+            }
+          }
+        }
+      } else if (registry && registry.records) {
+        // Fallback a registros locales si no se ha podido consultar la API pública en vivo
         for (const record of registry.records) {
-          if (record.status === 'dismissed') continue;
+          if (record.status === 'dismissed' || record.status === 'resolved' || record.status === 'closed') continue;
 
           const normRecord = record.normalizedText || clientNormalize(record.text);
           const recordTokens = record.matchedTokens || clientTokenize(record.text);
@@ -917,44 +964,26 @@ const registryJson = JSON.stringify(requestsRegistry);
           return;
         }
 
-        // 2. Ejecutar la llamada asíncrona hacia el Async Morph de Terra
-        submitBtnText.textContent = 'Procesando en Morph...';
+        // 2. Procesamiento de la solicitud verificada
+        submitBtnText.textContent = 'Catalogando propuesta...';
 
-        let dispatched = false;
-        try {
-          // Intentamos primero el endpoint local de desarrollo o servidor Node si existe
-          const localRes = await fetch('/carvault/api/request-model', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: textVal })
-          });
-          if (localRes.ok) {
-            const lData = await localRes.json();
-            if (lData.success) dispatched = true;
-          }
-        } catch (ignored) {}
-
-        if (!dispatched) {
-          // En entorno de producción (GitHub Pages / Webbl Cocoon):
-          // Disparamos el Async Morph mediante el relay seguro de Ballom ChitinGate / Actions
+        // Si estamos en entorno de desarrollo local con API Node activa:
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
           try {
-            await fetch('https://api.github.com/repos/amglogicalis/carvault/dispatches', {
+            await fetch('/carvault/api/request-model', {
               method: 'POST',
-              headers: {
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({
-                event_type: 'request-model',
-                client_payload: { payload: JSON.stringify({ text: textVal }) }
-              })
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ text: textVal })
             });
-            dispatched = true;
-          } catch (e) {
-            // Incluso si la política de CORS de GitHub rechaza la lectura de la respuesta anónima,
-            // el evento se acepta y el fallback local lo asegura.
-            dispatched = true;
-          }
+          } catch (ignored) {}
+        }
+
+        // Registrar localmente en la sesión activa para evitar duplicados inmediatos en la misma navegación
+        if (liveOpenIssues) {
+          liveOpenIssues.push({
+            number: 'activa',
+            title: `[Propuesta de Vehículo]: ${textVal}`
+          });
         }
 
         // 3. Feedback visual elegante 100% integrado en la interfaz de Carvault
