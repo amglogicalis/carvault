@@ -122,6 +122,14 @@ const modelsJson = JSON.stringify(catalog.generations);
         <!-- Imagen Frontal -->
         <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-950 border border-slate-800/80 flex items-center justify-center group">
           <img id="modalImage" src="" alt="Vista frontal del coche" class="w-full h-full object-contain transition-all duration-300" />
+          <button 
+            id="modalExpandBtn"
+            class="absolute bottom-3 right-3 p-2 rounded-xl bg-slate-950/80 hover:bg-cyan-500 text-slate-300 hover:text-slate-950 backdrop-blur-md border border-slate-700/80 hover:border-cyan-400 transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1.5 text-xs font-mono shadow-xl cursor-pointer"
+            title="Ver imagen completa sin recortes"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            <span class="text-[11px] font-semibold">Pantalla completa</span>
+          </button>
           <div id="noImageView" class="hidden flex-col items-center justify-center text-slate-500 p-8 text-center">
             <svg class="w-12 h-12 mb-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             <p class="text-sm font-medium">Fotografía en proceso de curación libre</p>
@@ -152,6 +160,23 @@ const modelsJson = JSON.stringify(catalog.generations);
             <!-- Variantes -->
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal para Visualización a Pantalla Completa sin Recorte -->
+  <div id="imageLightbox" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-4 sm:p-8 animate-fade-in">
+    <!-- Botón de Cerrar (X) Flotante y Prominente -->
+    <button id="closeLightbox" class="absolute top-5 right-5 z-20 p-3 rounded-full bg-slate-800/80 hover:bg-red-500/80 text-white transition-all shadow-xl hover:scale-110 flex items-center justify-center cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+
+    <!-- Contenedor de la Imagen a Pantalla Completa -->
+    <div class="relative max-w-6xl max-h-[90vh] w-full flex flex-col items-center justify-center">
+      <img id="lightboxImage" src="" alt="Vista ampliada" class="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl border border-slate-800/80" />
+      <div class="mt-4 text-center">
+        <h4 id="lightboxTitle" class="text-white font-bold text-base sm:text-lg"></h4>
+        <p id="lightboxSubtitle" class="text-xs font-mono text-slate-400 mt-1"></p>
       </div>
     </div>
   </div>
@@ -244,9 +269,18 @@ const modelsJson = JSON.stringify(catalog.generations);
 
         return `
           <div class="bg-slate-900/60 border ${isM ? 'border-indigo-500/40 hover:border-indigo-400' : 'border-slate-800 hover:border-cyan-500/50'} rounded-2xl overflow-hidden transition-all duration-300 flex flex-col group hover:-translate-y-1">
-            <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden flex items-center justify-center">
+            <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden flex items-center justify-center group/img">
               ${front?.url 
-                ? `<img src="${front.url}" alt="${m.label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />`
+                ? `<img src="${front.url}" alt="${m.label}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                   <!-- Botón de Ampliar Imagen a Pantalla Completa sin Recorte -->
+                   <button 
+                     onclick="event.stopPropagation(); openLightbox('${front.url}', '${m.label.replace(/'/g, "\\'")}', '${(m.years.display || '').replace(/'/g, "\\'")} • ${chassisCodes}')" 
+                     class="absolute bottom-2.5 right-2.5 p-2 rounded-xl bg-slate-950/80 hover:bg-cyan-500 text-slate-300 hover:text-slate-950 backdrop-blur-md border border-slate-700/80 hover:border-cyan-400 transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1.5 text-xs font-mono shadow-lg cursor-pointer"
+                     title="Ver imagen completa sin recortes"
+                   >
+                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                     <span class="text-[11px] font-semibold">Ampliar</span>
+                   </button>`
                 : `<div class="text-slate-600 text-xs font-mono flex flex-col items-center gap-1">
                     <svg class="w-8 h-8 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                     <span>Sin foto frontal</span>
@@ -361,6 +395,61 @@ const modelsJson = JSON.stringify(catalog.generations);
       if (e.target === modal) {
         modal.classList.add('hidden');
         currentModel = null;
+      }
+    });
+
+    // Control del Lightbox Pantalla Completa
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxSubtitle = document.getElementById('lightboxSubtitle');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    window.openLightbox = function(url, title, subtitle) {
+      if (!url) return;
+      lightboxImg.src = url;
+      lightboxTitle.textContent = title || '';
+      lightboxSubtitle.textContent = subtitle || '';
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    function closeLightboxModal() {
+      lightbox.classList.add('hidden');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    closeLightbox.addEventListener('click', closeLightboxModal);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target === lightboxImg.parentElement) {
+        closeLightboxModal();
+      }
+    });
+
+    // Botón de ampliar dentro del modal de ficha
+    const modalExpandBtn = document.getElementById('modalExpandBtn');
+    if (modalExpandBtn) {
+      modalExpandBtn.addEventListener('click', () => {
+        if (currentModel) {
+          const firstChassis = currentModel.chassis[0] || {};
+          const imgData = currentModel.frontImage || firstChassis.frontImage;
+          if (imgData && imgData.url) {
+            const chassisCodes = currentModel.chassis.map(c => c.code).filter(Boolean).join(', ') || '';
+            openLightbox(imgData.url, currentModel.label, `${currentModel.years.display || ''} • ${chassisCodes}`);
+          }
+        }
+      });
+    }
+
+    // Cerrar modales con tecla ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (!lightbox.classList.contains('hidden')) closeLightboxModal();
+        else if (!modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+          currentModel = null;
+        }
       }
     });
 
