@@ -1,19 +1,22 @@
-name: Gateway Spike
+name: Gateway
 on:
   workflow_dispatch:
     inputs:
       minutes:
-        description: 'Minutes to keep the gateway alive'
-        default: '8'
+        description: 'Minutes to keep the gateway alive (up to 350)'
+        default: '350'
+  schedule:
+    - cron: '0 */5 * * *'
 
 permissions:
   contents: write
   issues: write
+  actions: write
 
 jobs:
   gateway:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -48,5 +51,24 @@ jobs:
           git add gateway-url.json
           git commit -m "gateway url"
           git push --force origin gw-url
-      - name: Keep alive
-        run: sleep $(( ${{ github.event.inputs.minutes }} * 60 ))
+      - name: Keep alive and monitor
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MINUTES: ${{ github.event.inputs.minutes || '300' }}
+        run: |
+          echo "Keeping alive for $MINUTES minutes..."
+          TOTAL_SECS=$(( MINUTES * 60 ))
+          ELAPSED=0
+          while [ $ELAPSED -lt $TOTAL_SECS ]; do
+            sleep 60
+            ELAPSED=$(( ELAPSED + 60 ))
+            # Log heartbeats every 10 min
+            if [ $(( ELAPSED % 600 )) -eq 0 ]; then
+              curl -s localhost:8787/health || echo "Health check failed"
+            fi
+            # 5 minutes before expiration, trigger next relay
+            if [ $(( TOTAL_SECS - ELAPSED )) -eq 300 ]; then
+              echo "5 minutes left, triggering relay handoff..."
+              gh workflow run gateway.yml || true
+            fi
+          done

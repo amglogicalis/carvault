@@ -58,14 +58,15 @@ async function readJson(req) {
 http.createServer(async (req, res) => {
   cors(req, res);
   if (req.method === 'OPTIONS') { res.writeHead(204); return res.end(); }
+  const pathname = (req.url || '').split('?')[0];
   const ip = req.headers['cf-connecting-ip'] || req.socket.remoteAddress;
   try {
-    if (req.method === 'GET' && req.url === '/health') return send(res, 200, { ok: true });
-    if (req.method === 'POST' && req.url === '/session') {
+    if (req.method === 'GET' && pathname === '/health') return send(res, 200, { ok: true });
+    if (req.method === 'POST' && pathname === '/session') {
       if (limited('s:' + ip, 20)) return send(res, 429, { error: 'rate' });
       return send(res, 200, { token: sign({ id: crypto.randomUUID(), exp: Date.now() + WINDOW_MS }) });
     }
-    if (req.method === 'POST' && req.url === '/request') {
+    if (req.method === 'POST' && pathname === '/request') {
       const tok = verify((req.headers.authorization || '').replace(/^Bearer /, ''));
       if (!tok) return send(res, 401, { error: 'token' });
       if (limited('t:' + tok.id, MAX_PER_TOKEN) || limited('i:' + ip, MAX_PER_IP)) return send(res, 429, { error: 'rate' });
@@ -75,10 +76,14 @@ http.createServer(async (req, res) => {
       const r = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${GH_TOKEN}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json', 'User-Agent': 'carvault-gateway' },
-        body: JSON.stringify({ title: `[Propuesta de Vehículo]: ${clean.slice(0, 60)}`, body: `> ${clean}\n\n*Creada por el gateway de Carvault.*`, labels: ['enhancement'] })
+        body: JSON.stringify({
+          title: `[Propuesta de Vehículo]: ${clean.slice(0, 60)}`,
+          body: `### 🚗 Solicitud de Modelo / Marca en Carvault\n\n**Descripción solicitada por el usuario:**\n> ${clean}\n\n---\n*Filtro Middleware de Carvault: Verificado (aprobado contra catálogo de vehículos y solicitudes activas)*\n- **Fecha:** ${new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}\n- **Estado:** Pendiente de revisión y catalogación`,
+          labels: ['enhancement']
+        })
       });
       const j = await r.json();
-      return send(res, r.ok ? 200 : 502, r.ok ? { success: true, issue: j.number } : { error: 'github' });
+      return send(res, r.ok ? 200 : 502, r.ok ? { success: true, issue: j.number, url: j.html_url } : { error: 'github' });
     }
     send(res, 404, { error: 'not found' });
   } catch { send(res, 400, { error: 'bad request' }); }

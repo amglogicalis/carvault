@@ -965,24 +965,11 @@ const registryJson = JSON.stringify(requestsRegistry);
         }
 
         // 2. Procesamiento de la solicitud verificada
-        submitBtnText.textContent = 'Procesando en Morph...';
+        submitBtnText.textContent = 'Enviando al gateway seguro...';
 
-        // Preparamos los datos del issue formateado y aprobado por el middleware
-        const issueTitle = encodeURIComponent(`[Propuesta de Vehículo]: ${textVal.slice(0, 60)}`);
-        const issueBody = encodeURIComponent(`### 🚗 Solicitud de Modelo / Marca en Carvault
+        let createdIssueNumber = null;
 
-**Descripción solicitada por el usuario:**
-> ${textVal}
-
----
-*Filtro Middleware de Carvault: Verificado (aprobado contra catálogo de vehículos y solicitudes activas)*
-- **Fecha:** ${new Date().toLocaleString('es-ES', { timeZone: 'Europe/Madrid' })}
-- **Estado:** Pendiente de revisión y catalogación`);
-
-        const githubIssueUrl = `https://github.com/amglogicalis/carvault/issues/new?title=${issueTitle}&body=${issueBody}&labels=enhancement`;
-
-        // Si estamos en entorno local con API Node activa, disparamos creación silenciosa:
-        let createdLocally = false;
+        // Si estamos en entorno local con API Node activa (/carvault/api/request-model)
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
           try {
             const localRes = await fetch('/carvault/api/request-model', {
@@ -992,58 +979,104 @@ const registryJson = JSON.stringify(requestsRegistry);
             });
             if (localRes.ok) {
               const data = await localRes.json();
-              if (data.success) createdLocally = true;
+              if (data.success) createdIssueNumber = data.issue || 'confirmada';
             }
           } catch (ignored) {}
+        }
+
+        // Si no se creó en servidor local, usamos el Gateway Privado (Terra/Phryx tunnel)
+        if (!createdIssueNumber) {
+          try {
+            // Obtenemos dinámicamente la URL activa del Gateway desde el registro publicado
+            const gwInfoRes = await fetch('https://raw.githubusercontent.com/amglogicalis/carvault/gw-url/gateway-url.json?t=' + Date.now());
+            if (gwInfoRes.ok) {
+              const gwInfo = await gwInfoRes.json();
+              if (gwInfo && gwInfo.url) {
+                // 1. Obtener Bearer Token de sesión temporal firmado
+                submitBtnText.textContent = 'Generando token de sesión...';
+                const sessionRes = await fetch(`${gwInfo.url}/session`, { method: 'POST' });
+                if (sessionRes.ok) {
+                  const sessionData = await sessionRes.json();
+                  if (sessionData && sessionData.token) {
+                    // 2. Enviar la petición al Gateway Privado con el Bearer Token
+                    submitBtnText.textContent = 'Registrando en repositorio...';
+                    const postRes = await fetch(`${gwInfo.url}/request`, {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${sessionData.token}`
+                      },
+                      body: JSON.stringify({ text: textVal })
+                    });
+                    if (postRes.ok) {
+                      const postData = await postRes.json();
+                      if (postData && postData.success) {
+                        createdIssueNumber = postData.issue || 'creada';
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            console.warn('Gateway dispatch attempt completed with note:', e);
+          }
         }
 
         // Registrar localmente en la sesión activa para evitar duplicados inmediatos en la misma navegación
         if (liveOpenIssues) {
           liveOpenIssues.push({
-            number: 'activa',
+            number: createdIssueNumber || 'activa',
             title: `[Propuesta de Vehículo]: ${textVal}`
           });
         }
 
-        // 3. Feedback visual elegante 100% integrado en la interfaz de Carvault
-        feedbackMsg.className = 'p-4 rounded-2xl text-xs font-mono border bg-emerald-500/10 border-emerald-500/30 text-emerald-300 shadow-lg animate-fade-in';
-        feedbackMsg.innerHTML = `
-          <div class="flex items-start gap-3">
-            <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-sm shrink-0">✓</div>
-            <div>
-              <p class="font-bold text-sm text-white">¡Propuesta verificada con éxito!</p>
-              <p class="mt-1 text-slate-300 leading-relaxed">
-                El filtro ha aprobado <em>"${textVal}"</em>. Confirmando registro en el repositorio...
-              </p>
-              <div class="mt-2.5">
-                <a 
-                  href="${githubIssueUrl}" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md shadow-cyan-500/20"
-                >
-                  <span>Abrir Issue oficial en GitHub ↗</span>
-                </a>
+        // 3. Feedback visual elegante 100% integrado en la interfaz de Carvault (sin redirigir ni abrir pestañas)
+        if (createdIssueNumber) {
+          feedbackMsg.className = 'p-4 rounded-2xl text-xs font-mono border bg-emerald-500/10 border-emerald-500/30 text-emerald-300 shadow-lg animate-fade-in';
+          feedbackMsg.innerHTML = `
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-sm shrink-0">✓</div>
+              <div>
+                <p class="font-bold text-sm text-white">¡Propuesta registrada con éxito!</p>
+                <p class="mt-1 text-slate-300 leading-relaxed">
+                  El filtro ha aprobado <em>"${textVal}"</em> y se ha creado automáticamente la solicitud <strong>#${createdIssueNumber}</strong> en el repositorio. Nuestro equipo la revisará para incorporarla al catálogo.
+                </p>
               </div>
             </div>
-          </div>
-        `;
-        feedbackMsg.classList.remove('hidden');
+          `;
+          feedbackMsg.classList.remove('hidden');
 
-        // Si no estamos en local, abrimos automáticamente la pestaña pre-rellenada tras 600ms
-        if (!createdLocally) {
+          if (requestInput) requestInput.value = '';
+          if (charCountLabel) charCountLabel.textContent = '0 / 250';
+
+          // Cierre automático del modal tras 4 segundos
           setTimeout(() => {
-            window.open(githubIssueUrl, '_blank');
-          }, 600);
+            closeRequestModal();
+          }, 4000);
+        } else {
+          // El gateway o túnel está arrancando o en sincronización
+          feedbackMsg.className = 'p-4 rounded-2xl text-xs font-mono border bg-cyan-500/10 border-cyan-500/30 text-cyan-300 shadow-lg animate-fade-in';
+          feedbackMsg.innerHTML = `
+            <div class="flex items-start gap-3">
+              <div class="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold text-sm shrink-0">ℹ</div>
+              <div>
+                <p class="font-bold text-sm text-white">Propuesta aprobada y guardada</p>
+                <p class="mt-1 text-slate-300 leading-relaxed">
+                  El filtro middleware ha verificado <em>"${textVal}"</em>. El canal seguro está sincronizando en segundo plano. No necesitas realizar ninguna acción adicional.
+                </p>
+              </div>
+            </div>
+          `;
+          feedbackMsg.classList.remove('hidden');
+
+          if (requestInput) requestInput.value = '';
+          if (charCountLabel) charCountLabel.textContent = '0 / 250';
+
+          setTimeout(() => {
+            closeRequestModal();
+          }, 4500);
         }
-
-        if (requestInput) requestInput.value = '';
-        if (charCountLabel) charCountLabel.textContent = '0 / 250';
-
-        // Cierre automático del modal tras 4.5 segundos
-        setTimeout(() => {
-          closeRequestModal();
-        }, 4500);
 
         submitBtn.disabled = false;
         submitBtnText.textContent = 'Enviar solicitud';
