@@ -44,13 +44,20 @@ const baseName = (s: string) => s.replace(/\s*\([^)]*\)/g, '').trim();
 
 const results = entries.filter(isCar).map((e) => {
   const codes = [...new Set([...e.codes, ...parenCodes(e.series)])].filter((c) => /^[A-Za-z]{1,2}\d{1,3}$/.test(c));
-  const check = (k: string) => ({
-    commons: commonsIdx.filter((x) => x.n.includes(k)).map((x) => x.c),
-    wikidata: wdIdx.some((w) => w.includes(k)),
-  });
+  const isCode = (k: string) => /^[A-Za-z]{1,2}\d{1,3}$/.test(k);
+  const tokens = (s: string) => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  const check = (k: string) => {
+    // Códigos de chasis: token exacto (E9 no debe casar con E90). Nombres de serie: coincidencia por subcadena normalizada.
+    const exact = isCode(k);
+    const kn = norm(k);
+    return {
+      commons: commonsCats.filter((c) => (exact ? tokens(c).includes(k.toLowerCase()) : norm(c).includes(kn))),
+      wikidata: [...wikidataCats, ...wikidataNames].some((w) => (exact ? tokens(w).includes(k.toLowerCase()) : norm(w).includes(kn))),
+    };
+  };
   // Si hay códigos de chasis, se comprueba cada uno; si no, el nombre base de la serie
   const keys = codes.length ? codes : [baseName(e.series)];
-  const perKey = keys.map((k) => ({ key: k, ...check(norm(k)) }));
+  const perKey = keys.map((k) => ({ key: k, ...check(k) }));
   return {
     ...e,
     codes,

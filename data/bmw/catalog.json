@@ -1,0 +1,3604 @@
+{
+  "brand": "BMW",
+  "wikidata": "Q26678",
+  "generatedAt": "2026-10-07T14:40:48.039Z",
+  "stats": {
+    "generations": 113,
+    "production": 112,
+    "prototypes": 1,
+    "chassis": 148,
+    "lwbChassis": 6,
+    "chassisWithoutCommons": 7,
+    "unverified": 4
+  },
+  "generations": [
+    {
+      "id": "bmw-1-series-f70",
+      "series": "1 Series",
+      "label": "1 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null
+      },
+      "class": "C-segment/Subcompact executive hatchback. Not offered in North America.",
+      "chassis": [
+        {
+          "code": "F70",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F70",
+          "commonsCandidates": [
+            "BMW F70",
+            "BMW F70 M135"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-gran-coup-f74-f78",
+      "series": "2 Series Gran Coupé",
+      "label": "2 Series Gran Coupé",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null
+      },
+      "class": "C-segment/Subcompact executive fastback sedan.",
+      "chassis": [
+        {
+          "code": "F74",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F74",
+          "commonsCandidates": [
+            "BMW F74",
+            "BMW F74 M235"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F78",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F78",
+          "commonsCandidates": [
+            "BMW F78"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-g50",
+      "series": "3 Series",
+      "label": "3 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2026,
+        "end": null
+      },
+      "class": "D-segment/compact executive sedan.",
+      "chassis": [
+        {
+          "code": "G50",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G50",
+          "commonsCandidates": [
+            "BMW G50",
+            "BMW G50 M350"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i3-g28-g28",
+      "series": "i3",
+      "label": "i3 (G28)",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "China only D-segment/compact executive electric sedan.",
+      "chassis": [
+        {
+          "code": "G28",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G28",
+          "commonsCandidates": [
+            "BMW G28"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i3-na0-na0-na8",
+      "series": "i3",
+      "label": "i3 (NA0)",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2026,
+        "end": null
+      },
+      "class": "D-segment/compact executive electric sedan.",
+      "chassis": [
+        {
+          "code": "NA0",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW NA0",
+          "commonsCandidates": [
+            "BMW NA0",
+            "BMW NA0 i3 M60"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "NA8",
+          "lwb": true,
+          "parent": "NA0",
+          "market": "CN",
+          "verified": false,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-4-series-gran-coup-g26",
+      "series": "4 Series Gran Coupé",
+      "label": "4 Series Gran Coupé",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2020,
+        "end": null
+      },
+      "class": "D-segment/compact executive liftback.",
+      "chassis": [
+        {
+          "code": "G26",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G26",
+          "commonsCandidates": [
+            "BMW G26",
+            "BMW G26 M440i",
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)",
+            "BMW 4 Series Gran Coupé (G26)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i4-g26",
+      "series": "i4",
+      "label": "i4",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2021,
+        "end": null
+      },
+      "class": "D-segment/compact executive electric liftback.",
+      "chassis": [
+        {
+          "code": "G26",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G26",
+          "commonsCandidates": [
+            "BMW G26",
+            "BMW G26 M440i",
+            "Alpina B4 (G26)",
+            "Alpina D4 (G26)",
+            "BMW 4 Series Gran Coupé (G26)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-g60-g68",
+      "series": "5 Series",
+      "label": "5 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2023,
+        "end": null
+      },
+      "class": "E-segment/mid-size executive sedan.",
+      "chassis": [
+        {
+          "code": "G60",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G60",
+          "commonsCandidates": [
+            "BMW G60",
+            "BMW G60 550e",
+            "BMW G60 530e",
+            "BMW G60 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G68",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G68",
+          "commonsCandidates": [
+            "BMW G68"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i5-g60-g68",
+      "series": "i5",
+      "label": "i5",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2023,
+        "end": null
+      },
+      "class": "E-segment/mid-size executive electric sedan.",
+      "chassis": [
+        {
+          "code": "G60",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G60",
+          "commonsCandidates": [
+            "BMW G60",
+            "BMW G60 550e",
+            "BMW G60 530e",
+            "BMW G60 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G68",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G68",
+          "commonsCandidates": [
+            "BMW G68"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-g70-g73",
+      "series": "7 Series",
+      "label": "7 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "F-segment/full-size luxury sedan.",
+      "chassis": [
+        {
+          "code": "G70",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G70",
+          "commonsCandidates": [
+            "BMW G70",
+            "BMW G70 M760e xDrive",
+            "BMW G70 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G73",
+          "lwb": true,
+          "parent": "G70",
+          "market": "CN",
+          "verified": false,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i7-g70",
+      "series": "i7",
+      "label": "i7",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "F-segment/full-size electric luxury sedan.",
+      "chassis": [
+        {
+          "code": "G70",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G70",
+          "commonsCandidates": [
+            "BMW G70",
+            "BMW G70 M760e xDrive",
+            "BMW G70 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-g21",
+      "series": "3 Series",
+      "label": "3 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2018,
+        "end": null
+      },
+      "class": "D-segment/compact executive wagon.",
+      "chassis": [
+        {
+          "code": "G21",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G21",
+          "commonsCandidates": [
+            "BMW G21",
+            "BMW G21 M340i",
+            "Alpina B3 (G21)",
+            "Alpina D3 (G21)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-g61",
+      "series": "5 Series",
+      "label": "5 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2023,
+        "end": null
+      },
+      "class": "E-segment/mid-size executive wagon.",
+      "chassis": [
+        {
+          "code": "G61",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G61",
+          "commonsCandidates": [
+            "BMW G61"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i5-g61",
+      "series": "i5",
+      "label": "i5",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null
+      },
+      "class": "E-segment/executive electric wagon.",
+      "chassis": [
+        {
+          "code": "G61",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G61",
+          "commonsCandidates": [
+            "BMW G61"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x1-u11-u12",
+      "series": "X1",
+      "label": "X1",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "C-segment/subcompact luxury crossover SUV.",
+      "chassis": [
+        {
+          "code": "U11",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW U11",
+          "commonsCandidates": [
+            "BMW U11",
+            "BMW U11 X1 M35i",
+            "BMW U11 fire engines"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "U12",
+          "lwb": true,
+          "parent": "U11",
+          "market": "CN",
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix1-u11-u12",
+      "series": "iX1",
+      "label": "iX1",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "C-segment/subcompact electric luxury crossover SUV",
+      "chassis": [
+        {
+          "code": "U11",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW U11",
+          "commonsCandidates": [
+            "BMW U11",
+            "BMW U11 X1 M35i",
+            "BMW U11 fire engines"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "U12",
+          "lwb": true,
+          "parent": "U11",
+          "market": "CN",
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x2-u10",
+      "series": "X2",
+      "label": "X2",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2023,
+        "end": null
+      },
+      "class": "C-segment/subcompact luxury crossover coupé SUV.",
+      "chassis": [
+        {
+          "code": "U10",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW U10",
+          "commonsCandidates": [
+            "BMW U10",
+            "BMW U10 X2 M35i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix2-u10",
+      "series": "iX2",
+      "label": "iX2",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2023,
+        "end": null
+      },
+      "class": "C-segment/subcompact electric luxury crossover coupé SUV",
+      "chassis": [
+        {
+          "code": "U10",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW U10",
+          "commonsCandidates": [
+            "BMW U10",
+            "BMW U10 X2 M35i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x3-g45-g48",
+      "series": "X3",
+      "label": "X3",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null
+      },
+      "class": "D-segment/compact luxury crossover SUV",
+      "chassis": [
+        {
+          "code": "G45",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G45",
+          "commonsCandidates": [
+            "BMW G45",
+            "BMW G45 X3 M50",
+            "BMW G45 development mules",
+            "BMW G45 kidneys and lights"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G48",
+          "lwb": true,
+          "parent": "G45",
+          "market": "CN",
+          "verified": false,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix3-na5-na6",
+      "series": "iX3",
+      "label": "iX3",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2025,
+        "end": null
+      },
+      "class": "D-segment/compact electric luxury crossover SUV",
+      "chassis": [
+        {
+          "code": "NA5",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW iX3 NA5",
+          "commonsCandidates": [
+            "BMW iX3 NA5",
+            "BMW NA5 iX3 M60"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "NA6",
+          "lwb": true,
+          "parent": "NA5",
+          "market": "CN",
+          "verified": false,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x5-g65",
+      "series": "X5",
+      "label": "X5",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2026,
+        "end": null
+      },
+      "class": "E-segment/mid-size luxury crossover SUV.",
+      "chassis": [
+        {
+          "code": "G65",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G65",
+          "commonsCandidates": [
+            "BMW G65",
+            "BMW G65 X5 M60e"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix-i20",
+      "series": "iX",
+      "label": "iX",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2021,
+        "end": null
+      },
+      "class": "E-segment/mid-size electric luxury crossover SUV.",
+      "chassis": [
+        {
+          "code": "I20",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW iX",
+          "commonsCandidates": [
+            "BMW iX"
+          ],
+          "commonsManual": true
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix5-g65",
+      "series": "iX5",
+      "label": "iX5",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2026,
+        "end": null
+      },
+      "class": "E-segment/mid-size electric luxury crossover SUV.",
+      "chassis": [
+        {
+          "code": "G65",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G65",
+          "commonsCandidates": [
+            "BMW G65",
+            "BMW G65 X5 M60e"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x6-g06",
+      "series": "X6",
+      "label": "X6",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2020,
+        "end": null
+      },
+      "class": "E-segment/mid-size luxury crossover coupé SUV.",
+      "chassis": [
+        {
+          "code": "G06",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G06",
+          "commonsCandidates": [
+            "BMW G06",
+            "BMW G06 M60i",
+            "BMW X6 M (G06)",
+            "BMW G06 X6 M50d"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x7-g07",
+      "series": "X7",
+      "label": "X7",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2018,
+        "end": null
+      },
+      "class": "F-segment/full-size luxury SUV.",
+      "chassis": [
+        {
+          "code": "G07",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G07",
+          "commonsCandidates": [
+            "BMW G07",
+            "BMW G07 (2022)",
+            "BMW G07 X7 M50d",
+            "BMW G07 X7 M50i",
+            "BMW G07 X7 M60i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-xm-g09",
+      "series": "XM",
+      "label": "XM",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2022,
+        "end": null
+      },
+      "class": "Plug-in hybrid F-segment/full-size luxury crossover SUV.",
+      "chassis": [
+        {
+          "code": "G09",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW XM (G09)",
+          "commonsCandidates": [
+            "BMW XM (G09)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-g42",
+      "series": "2 Series",
+      "label": "2 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2021,
+        "end": null
+      },
+      "class": "C-segment/Subcompact executive coupé",
+      "chassis": [
+        {
+          "code": "G42",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G42",
+          "commonsCandidates": [
+            "BMW G42",
+            "BMW G42 M240i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-4-series-g22-g23",
+      "series": "4 Series",
+      "label": "4 Series",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2020,
+        "end": null
+      },
+      "class": "D-segment/compact executive coupé and convertible.",
+      "chassis": [
+        {
+          "code": "G22",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G22",
+          "commonsCandidates": [
+            "BMW G22",
+            "BMW G22 M440i",
+            "BMW G22 (Original Bumper)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G23",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G23",
+          "commonsCandidates": [
+            "BMW G23",
+            "BMW G23 M440i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-active-tourer-u06",
+      "series": "2 Series Active Tourer",
+      "label": "2 Series Active Tourer",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2021,
+        "end": null
+      },
+      "class": "Two-row compact MPV.",
+      "chassis": [
+        {
+          "code": "U06",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW U06",
+          "commonsCandidates": [
+            "BMW U06"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-15",
+      "series": "3/15",
+      "label": "3/15",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1927,
+        "end": 1932
+      },
+      "class": "Economy car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 315",
+          "commonsCandidates": [
+            "BMW 315"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-20-ps",
+      "series": "3/20 PS",
+      "label": "3/20 PS",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1932,
+        "end": 1934
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 3/20",
+          "commonsCandidates": [
+            "BMW 3/20"
+          ],
+          "commonsManual": true
+        }
+      ]
+    },
+    {
+      "id": "bmw-303",
+      "series": "303",
+      "label": "303",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1933,
+        "end": 1934
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 303",
+          "commonsCandidates": [
+            "BMW 303"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-309",
+      "series": "309",
+      "label": "309",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1934,
+        "end": 1936
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 309",
+          "commonsCandidates": [
+            "BMW 309"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-315",
+      "series": "315",
+      "label": "315",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1934,
+        "end": 1937
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 315",
+          "commonsCandidates": [
+            "BMW 315"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-319",
+      "series": "319",
+      "label": "319",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1935,
+        "end": 1936
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 319",
+          "commonsCandidates": [
+            "BMW 319"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-328",
+      "series": "328",
+      "label": "328",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1936,
+        "end": 1940
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 328",
+          "commonsCandidates": [
+            "BMW 328"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-326",
+      "series": "326",
+      "label": "326",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1936,
+        "end": 1941
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 326",
+          "commonsCandidates": [
+            "BMW 326"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-329",
+      "series": "329",
+      "label": "329",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1937,
+        "end": 1937
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 329",
+          "commonsCandidates": [
+            "BMW 329"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-327",
+      "series": "327",
+      "label": "327",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1937,
+        "end": 1941
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 327",
+          "commonsCandidates": [
+            "BMW 327"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-320",
+      "series": "320",
+      "label": "320",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1937,
+        "end": 1938
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 320",
+          "commonsCandidates": [
+            "BMW 320"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-325",
+      "series": "325",
+      "label": "325",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1937,
+        "end": 1940
+      },
+      "class": "Off-road vehicle",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 325",
+          "commonsCandidates": [
+            "BMW 325"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-321",
+      "series": "321",
+      "label": "321",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1938,
+        "end": 1941
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 321",
+          "commonsCandidates": [
+            "BMW 321"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-335",
+      "series": "335",
+      "label": "335",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1939,
+        "end": 1941
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 335",
+          "commonsCandidates": [
+            "BMW 335"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-340",
+      "series": "340",
+      "label": "340",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1949,
+        "end": 1955
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "EMW 340",
+          "commonsCandidates": [
+            "EMW 340"
+          ],
+          "commonsManual": true
+        }
+      ]
+    },
+    {
+      "id": "bmw-501",
+      "series": "501",
+      "label": "501",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1952,
+        "end": 1962
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 501",
+          "commonsCandidates": [
+            "BMW 501"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-isetta",
+      "series": "Isetta",
+      "label": "Isetta",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1953,
+        "end": 1962
+      },
+      "class": "Microcar",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Isetta",
+          "commonsCandidates": [
+            "BMW Isetta"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-502",
+      "series": "502",
+      "label": "502",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1954,
+        "end": 1963
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 502",
+          "commonsCandidates": [
+            "BMW 502"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-505",
+      "series": "505",
+      "label": "505",
+      "section": "prototypes",
+      "status": "discontinued",
+      "years": {
+        "start": 1955,
+        "end": 1955
+      },
+      "class": "Official state car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": null,
+          "commonsCandidates": [],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-503",
+      "series": "503",
+      "label": "503",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1956,
+        "end": 1959
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 503",
+          "commonsCandidates": [
+            "BMW 503"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-507",
+      "series": "507",
+      "label": "507",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1956,
+        "end": 1959
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 507",
+          "commonsCandidates": [
+            "BMW 507"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-700",
+      "series": "700",
+      "label": "700",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1959,
+        "end": 1965
+      },
+      "class": "Compact car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 700",
+          "commonsCandidates": [
+            "BMW 700"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3200-cs",
+      "series": "3200 CS",
+      "label": "3200 CS",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1962,
+        "end": 1965
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 3200 CS",
+          "commonsCandidates": [
+            "BMW 3200 CS"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-new-class-sedans",
+      "series": "New Class",
+      "label": "New Class (sedans)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1962,
+        "end": 1972
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW New Class",
+          "commonsCandidates": [
+            "BMW New Class"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-new-class-coup-s",
+      "series": "New Class",
+      "label": "New Class (coupés)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1965,
+        "end": 1969
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW New Class",
+          "commonsCandidates": [
+            "BMW New Class"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-02-series",
+      "series": "02 Series",
+      "label": "02 Series",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1966,
+        "end": 1977
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW 02 Series",
+          "commonsCandidates": [
+            "BMW 02 Series"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-new-six-coup-s-e9",
+      "series": "New Six coupés",
+      "label": "New Six coupés (E9)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1968,
+        "end": 1975
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "E9",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E9",
+          "commonsCandidates": [
+            "BMW E9",
+            "BMW E9 (Alpina)",
+            "BMW 3.0 CSL (E9)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-new-six-sedans-e3",
+      "series": "New Six sedans",
+      "label": "New Six sedans (E3)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1968,
+        "end": 1977
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "E3",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E3",
+          "commonsCandidates": [
+            "BMW E3",
+            "BMW E3 (LWB)",
+            "BMW 2500 (E3)",
+            "BMW E3 3.0S-Si",
+            "Central Garage/55 Jahre BMW E3"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-e12",
+      "series": "5 Series",
+      "label": "5 Series (E12)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1972,
+        "end": 1981
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "E12",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E12",
+          "commonsCandidates": [
+            "BMW E12",
+            "Alpina B7 (E12)",
+            "BMW M535i (E12)",
+            "BMW E12 Facelift",
+            "Destroyed BMW E12"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-e21",
+      "series": "3 Series",
+      "label": "3 Series (E21)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1975,
+        "end": 1983
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "E21",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E21",
+          "commonsCandidates": [
+            "BMW E21",
+            "BMW 316 E21",
+            "BMW 318 E21",
+            "BMW 323 E21",
+            "BMW 315 E21",
+            "BMW 320 E21",
+            "BMW E21 (Alpina)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-6-series-e24",
+      "series": "6 Series",
+      "label": "6 Series (E24)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1976,
+        "end": 1989
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "E24",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E24",
+          "commonsCandidates": [
+            "BMW E24",
+            "BMW M6 (E24)",
+            "BMW M 635 CSi (E24)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-e23",
+      "series": "7 Series",
+      "label": "7 Series (E23)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1977,
+        "end": 1987
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "E23",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E23",
+          "commonsCandidates": [
+            "BMW E23"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-m1",
+      "series": "M1",
+      "label": "M1",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1978,
+        "end": 1981
+      },
+      "class": "Sports car",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW M1",
+          "commonsCandidates": [
+            "BMW M1"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-e28",
+      "series": "5 Series",
+      "label": "5 Series (E28)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1981,
+        "end": 1988
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "E28",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E28",
+          "commonsCandidates": [
+            "BMW E28",
+            "BMW M5 (E28)",
+            "BMW 518 (E28)",
+            "BMW 520i (E28)",
+            "BMW 525i (E28)",
+            "BMW 528i (E28)",
+            "BMW 535i (E28)",
+            "BMW 524td (E28)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-e30",
+      "series": "3 Series",
+      "label": "3 Series (E30)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1982,
+        "end": 1994
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "E30",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E30",
+          "commonsCandidates": [
+            "BMW E30",
+            "BMW E30/2",
+            "BMW E30/4",
+            "BMW E30/5",
+            "BMW E30/2C",
+            "BMW 316 E30",
+            "BMW 318 E30",
+            "BMW 323 E30"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-e32",
+      "series": "7 Series",
+      "label": "7 Series (E32)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1986,
+        "end": 1994
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "E32",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E32",
+          "commonsCandidates": [
+            "BMW E32",
+            "BMW E32 damaged",
+            "BMW E32 (Alpina)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-e34",
+      "series": "5 Series",
+      "label": "5 Series (E34)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1987,
+        "end": 1996
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "E34",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E34",
+          "commonsCandidates": [
+            "BMW E34",
+            "BMW M5 (E34)",
+            "BMW E34 Touring",
+            "BMW E34 (Alpina)",
+            "BMW E34 interiors",
+            "BMW E34 (1988-1994)",
+            "BMW E34 (1994-1996)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z1",
+      "series": "Z1",
+      "label": "Z1",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1989,
+        "end": 1991
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Z1",
+          "commonsCandidates": [
+            "BMW Z1"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-8-series-e31",
+      "series": "8 Series",
+      "label": "8 Series (E31)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1989,
+        "end": 1999
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "E31",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E31",
+          "commonsCandidates": [
+            "BMW E31",
+            "BMW M8 (E31)",
+            "BMW 850 (E31)",
+            "BMW E31 (Alpina)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-e36",
+      "series": "3 Series",
+      "label": "3 Series (E36)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1990,
+        "end": 2000
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "E36",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E36",
+          "commonsCandidates": [
+            "BMW E36",
+            "BMW E36/2",
+            "BMW E36/3",
+            "BMW E36/4",
+            "BMW E36/7",
+            "BMW E36/8",
+            "BMW E36/2C",
+            "BMW 316 E36"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-e38",
+      "series": "7 Series",
+      "label": "7 Series (E38)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1994,
+        "end": 2001
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "E38",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E38",
+          "commonsCandidates": [
+            "BMW E38",
+            "BMW E38 parts",
+            "BMW 735i (E38)",
+            "BMW E38 (1994)",
+            "BMW E38 (1998)",
+            "BMW 750hL (E38)",
+            "BMW E38 by model",
+            "Alpina B12 (E38)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z3",
+      "series": "Z3",
+      "label": "Z3",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1995,
+        "end": 2002
+      },
+      "class": "Roadster and coupé",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Z3",
+          "commonsCandidates": [
+            "BMW Z3"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-e39",
+      "series": "5 Series",
+      "label": "5 Series (E39)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1995,
+        "end": 2003
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "E39",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E39",
+          "commonsCandidates": [
+            "BMW E39",
+            "BMW E39 540i",
+            "BMW M5 (E39)",
+            "BMW E39 parts",
+            "BMW E39 (1995)",
+            "BMW E39 (2000)",
+            "BMW E39 sedans",
+            "BMW E39 Touring"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-e46",
+      "series": "3 Series",
+      "label": "3 Series (E46)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1998,
+        "end": 2006
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "E46",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E46",
+          "commonsCandidates": [
+            "BMW E46",
+            "BMW E46/2",
+            "BMW E46/3",
+            "BMW E46/4",
+            "BMW E46/2C",
+            "BMW 320 E46",
+            "BMW M3 (E46)",
+            "Alpina B3 (E46)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x5-e53",
+      "series": "X5",
+      "label": "X5 (E53)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 1999,
+        "end": 2006
+      },
+      "class": "Mid-size luxury SUV",
+      "chassis": [
+        {
+          "code": "E53",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E53",
+          "commonsCandidates": [
+            "BMW E53",
+            "BMW E53 clones"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z8",
+      "series": "Z8",
+      "label": "Z8",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2000,
+        "end": 2003
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW Z8",
+          "commonsCandidates": [
+            "BMW Z8"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-e65-e66",
+      "series": "7 Series",
+      "label": "7 Series (E65/E66)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2001,
+        "end": 2008
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "E65",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E65",
+          "commonsCandidates": [
+            "BMW E65",
+            "BMW E65 LCI",
+            "Alpina B7 (E65)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E66",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E66",
+          "commonsCandidates": [
+            "BMW E66",
+            "Alpina B7 (E66)",
+            "BMW Hydrogen 7 (E66)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z4-e85-e86",
+      "series": "Z4",
+      "label": "Z4 (E85/E86)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2002,
+        "end": 2008
+      },
+      "class": "Roadster, coupé",
+      "chassis": [
+        {
+          "code": "E85",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E85",
+          "commonsCandidates": [
+            "BMW E85",
+            "BMW Z4 M (E85)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E86",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E86",
+          "commonsCandidates": [
+            "BMW E86",
+            "BMW Z4 M (E86)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-e60-e61",
+      "series": "5 Series",
+      "label": "5 Series (E60/E61)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2003,
+        "end": 2010
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "E60",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E60",
+          "commonsCandidates": [
+            "BMW E60",
+            "BMW E60 L",
+            "BMW M5 (E60)",
+            "Alpina B5 (E60)",
+            "Burning BMW E60"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E61",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E61",
+          "commonsCandidates": [
+            "BMW E61",
+            "Alpina B5 (E61)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-6-series-e63-e64",
+      "series": "6 Series",
+      "label": "6 Series (E63/E64)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2003,
+        "end": 2010
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "E63",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E63",
+          "commonsCandidates": [
+            "BMW E63",
+            "BMW M6 (E63)",
+            "Alpina B6 (E63)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E64",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E64",
+          "commonsCandidates": [
+            "BMW E64",
+            "BMW M6 (E64)",
+            "Alpina B6 (E64)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x3-e83",
+      "series": "X3",
+      "label": "X3 (E83)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2003,
+        "end": 2010
+      },
+      "class": "Compact luxury SUV",
+      "chassis": [
+        {
+          "code": "E83",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E83",
+          "commonsCandidates": [
+            "BMW E83",
+            "BMW X3 Cross Country (E83)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-e81-e82-e87-e88",
+      "series": "1 Series",
+      "label": "1 Series (E81/E82/E87/E88)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2004,
+        "end": 2013
+      },
+      "class": "Hatchback, coupé, convertible",
+      "chassis": [
+        {
+          "code": "E81",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E81",
+          "commonsCandidates": [
+            "BMW E81"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E82",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E82",
+          "commonsCandidates": [
+            "BMW E82"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E87",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E87",
+          "commonsCandidates": [
+            "BMW E87"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E88",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E88",
+          "commonsCandidates": [
+            "BMW E88",
+            "BMW E88 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-e90-e91-e92-e93",
+      "series": "3 Series",
+      "label": "3 Series (E90/E91/E92/E93)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2005,
+        "end": 2013
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "E90",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E90",
+          "commonsCandidates": [
+            "BMW E90",
+            "BMW 325 E90",
+            "BMW M3 (E90)",
+            "BMW 320d (E90)",
+            "BMW 320i (E90)",
+            "BMW 328i (E90)",
+            "BMW 335d (E90)",
+            "BMW 335i (E90)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E91",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E91",
+          "commonsCandidates": [
+            "BMW E91",
+            "BMW 325 E91",
+            "BMW 330 E91",
+            "BMW 320d E91",
+            "BMW 320i E91",
+            "BMW 328i E91",
+            "BMW 335d E91",
+            "BMW 335i E91"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E92",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E92",
+          "commonsCandidates": [
+            "BMW E92",
+            "BMW M3 (E92)",
+            "BMW 335i (E92)",
+            "BMW 330i (E92)",
+            "Alpina B3 (E92)",
+            "Alpina D3 (E92)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "E93",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E93",
+          "commonsCandidates": [
+            "BMW E93",
+            "BMW M3 (E93)",
+            "BMW 335i (E93)",
+            "BMW 330i (E93)",
+            "Alpina B3 (E93)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x5-e70",
+      "series": "X5",
+      "label": "X5 (E70)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2006,
+        "end": 2013
+      },
+      "class": "Mid-size luxury SUV",
+      "chassis": [
+        {
+          "code": "E70",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E70",
+          "commonsCandidates": [
+            "BMW E70",
+            "BMW X5 M (E70)",
+            "BMW E70 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x6-e71",
+      "series": "X6",
+      "label": "X6 (E71)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2008,
+        "end": 2014
+      },
+      "class": "Mid-size luxury SUV",
+      "chassis": [
+        {
+          "code": "E71",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E71",
+          "commonsCandidates": [
+            "BMW E71",
+            "BMW X6 M (E71)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-f01-f02",
+      "series": "7 Series",
+      "label": "7 Series (F01/F02)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2008,
+        "end": 2015
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "F01",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F01",
+          "commonsCandidates": [
+            "BMW F01",
+            "Alpina B7 (F01)",
+            "BMW F01 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F02",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F02",
+          "commonsCandidates": [
+            "BMW F02",
+            "Alpina B7 (F02)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z4-e89",
+      "series": "Z4",
+      "label": "Z4 (E89)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2009,
+        "end": 2016
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": "E89",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E89",
+          "commonsCandidates": [
+            "BMW E89"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x1-e84",
+      "series": "X1",
+      "label": "X1 (E84)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2009,
+        "end": 2015
+      },
+      "class": "Sub-compact luxury SUV",
+      "chassis": [
+        {
+          "code": "E84",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW E84",
+          "commonsCandidates": [
+            "BMW E84",
+            "BMW E84 fire engines"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-f07-f10-f11",
+      "series": "5 Series",
+      "label": "5 Series (F07/F10/F11)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2010,
+        "end": 2017
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "F07",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F07",
+          "commonsCandidates": [
+            "BMW F07"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F10",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F10",
+          "commonsCandidates": [
+            "BMW F10",
+            "BMW M5 (F10)",
+            "BMW F10 550i",
+            "Alpina B5 (F10)",
+            "Alpina D5 (F10)",
+            "BMW F10 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F11",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F11",
+          "commonsCandidates": [
+            "BMW F11",
+            "Alpina B5 (F11)",
+            "Alpina D5 (F11)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-6-series-f06-f12-f13",
+      "series": "6 Series",
+      "label": "6 Series (F06/F12/F13)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2011,
+        "end": 2018
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "F06",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F06",
+          "commonsCandidates": [
+            "BMW F06",
+            "BMW M6 (F06)",
+            "Alpina B6 (F06)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F12",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F12",
+          "commonsCandidates": [
+            "BMW F12",
+            "BMW M6 (F12)",
+            "Alpina B6 (F12)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F13",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F13",
+          "commonsCandidates": [
+            "BMW F13",
+            "BMW M6 (F13)",
+            "Alpina B6 (F13)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x3-f25",
+      "series": "X3",
+      "label": "X3 (F25)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2011,
+        "end": 2017
+      },
+      "class": "Compact luxury SUV",
+      "chassis": [
+        {
+          "code": "F25",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F25",
+          "commonsCandidates": [
+            "BMW F25",
+            "Alpina XD3 (F25)",
+            "BMW F25 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f20-f21",
+      "series": "1 Series",
+      "label": "1 Series (F20/F21)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2011,
+        "end": 2019
+      },
+      "class": "Sub-compact executive car",
+      "chassis": [
+        {
+          "code": "F20",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F20",
+          "commonsCandidates": [
+            "BMW F20",
+            "BMW F20 M135i",
+            "BMW F20 M140i",
+            "BMW F20 125i M Performance"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F21",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F21",
+          "commonsCandidates": [
+            "BMW F21",
+            "BMW F21 M135i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-3-series-f30-f31-f34",
+      "series": "3 Series",
+      "label": "3 Series (F30/F31/F34)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2011,
+        "end": 2020
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "F30",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F30",
+          "commonsCandidates": [
+            "BMW F30",
+            "BMW 316i (F30)",
+            "BMW 320d (F30)",
+            "BMW 320i (F30)",
+            "BMW 328i (F30)",
+            "BMW 335i (F30)",
+            "BMW F30 (2011)",
+            "BMW F30 (2015)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F31",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F31",
+          "commonsCandidates": [
+            "BMW F31",
+            "Alpina B3 (F31)",
+            "Alpina D3 (F31)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F34",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F34",
+          "commonsCandidates": [
+            "BMW F34"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i3-i01",
+      "series": "i3",
+      "label": "i3 (I01)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2013,
+        "end": 2022
+      },
+      "class": "Sub-compact executive car (electric)",
+      "chassis": [
+        {
+          "code": "I01",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW I01",
+          "commonsCandidates": [
+            "BMW I01"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-4-series-f32-f33-f36",
+      "series": "4 Series",
+      "label": "4 Series (F32/F33/F36)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2013,
+        "end": 2020
+      },
+      "class": "Compact executive car",
+      "chassis": [
+        {
+          "code": "F32",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F32",
+          "commonsCandidates": [
+            "BMW F32",
+            "Alpina B4 (F32)",
+            "Alpina D4 (F32)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F33",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F33",
+          "commonsCandidates": [
+            "BMW F33",
+            "Alpina B4 (F33)",
+            "Alpina D4 (F33)"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F36",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F36",
+          "commonsCandidates": [
+            "BMW F36"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-f22-f23",
+      "series": "2 Series",
+      "label": "2 Series (F22/F23)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2013,
+        "end": 2021
+      },
+      "class": "Subcompact car",
+      "chassis": [
+        {
+          "code": "F22",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F22",
+          "commonsCandidates": [
+            "BMW F22",
+            "BMW F22 M235i",
+            "BMW F22 M240i"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F23",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F23",
+          "commonsCandidates": [
+            "BMW F23",
+            "BMW F23 M240i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x5-f15",
+      "series": "X5",
+      "label": "X5 (F15)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2013,
+        "end": 2018
+      },
+      "class": "Mid-size luxury SUV",
+      "chassis": [
+        {
+          "code": "F15",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F15",
+          "commonsCandidates": [
+            "BMW F15",
+            "BMW X5 M (F15)",
+            "BMW F15 X5 M50d",
+            "BMW F15 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-f45-f46",
+      "series": "2 Series",
+      "label": "2 Series (F45/F46)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2014,
+        "end": 2021
+      },
+      "class": "Sub-compact MPV Large MPV",
+      "chassis": [
+        {
+          "code": "F45",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F45",
+          "commonsCandidates": [
+            "BMW F45"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "F46",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F46",
+          "commonsCandidates": [
+            "BMW F46"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-i8",
+      "series": "i8",
+      "label": "i8",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2014,
+        "end": 2020
+      },
+      "class": "Sports car (hybrid)",
+      "chassis": [
+        {
+          "code": null,
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW i8",
+          "commonsCandidates": [
+            "BMW i8"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x4-f26",
+      "series": "X4",
+      "label": "X4 (F26)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2014,
+        "end": 2018
+      },
+      "class": "Compact luxury SUV",
+      "chassis": [
+        {
+          "code": "F26",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F26",
+          "commonsCandidates": [
+            "BMW F26",
+            "BMW F26 X4 M40i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x6-f16",
+      "series": "X6",
+      "label": "X6 (F16)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2014,
+        "end": 2019
+      },
+      "class": "Mid-size luxury SUV",
+      "chassis": [
+        {
+          "code": "F16",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F16",
+          "commonsCandidates": [
+            "BMW F16",
+            "BMW X6 M (F16)",
+            "BMW F16 X6 M50d"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x1-f48",
+      "series": "X1",
+      "label": "X1 (F48)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2015,
+        "end": 2022
+      },
+      "class": "Sub-compact luxury SUV",
+      "chassis": [
+        {
+          "code": "F48",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F48",
+          "commonsCandidates": [
+            "BMW F48",
+            "BMW F48 25e",
+            "BMW F48 development mules"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-7-series-g11-g12",
+      "series": "7 Series",
+      "label": "7 Series (G11/G12)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2015,
+        "end": 2022
+      },
+      "class": "Full-size luxury car",
+      "chassis": [
+        {
+          "code": "G11",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G11",
+          "commonsCandidates": [
+            "BMW G11",
+            "BMW 740d (G11)",
+            "BMW 740i (G11)",
+            "BMW G11 (2015)",
+            "BMW G11 (2019)",
+            "BMW G11 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G12",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G12",
+          "commonsCandidates": [
+            "BMW G12",
+            "BMW G12 (2015)",
+            "BMW G12 (2019)",
+            "Alpina B7 (G12)",
+            "BMW G12 M760Li xDrive"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-5-series-g30-g31",
+      "series": "5 Series",
+      "label": "5 Series (G30/G31)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2016,
+        "end": 2023
+      },
+      "class": "Mid-size luxury car",
+      "chassis": [
+        {
+          "code": "G30",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G30",
+          "commonsCandidates": [
+            "BMW G30",
+            "BMW G30 530e",
+            "BMW G30 M550i",
+            "Alpina B5 (G30)",
+            "Alpina D5 (G30)",
+            "BMW G30 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G31",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G31",
+          "commonsCandidates": [
+            "BMW G31",
+            "Alpina B5 (G31)",
+            "Alpina D5 (G31)"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f52",
+      "series": "1 Series",
+      "label": "1 Series (F52)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2017,
+        "end": 2023
+      },
+      "class": "Sub-compact executive car",
+      "chassis": [
+        {
+          "code": "F52",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F52",
+          "commonsCandidates": [
+            "BMW F52"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-6-series-g32",
+      "series": "6 Series",
+      "label": "6 Series (G32)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2017,
+        "end": 2023
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "G32",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G32",
+          "commonsCandidates": [
+            "BMW G32"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x3-g01",
+      "series": "X3",
+      "label": "X3 (G01)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2017,
+        "end": 2024
+      },
+      "class": "Compact luxury SUV",
+      "chassis": [
+        {
+          "code": "G01",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G01",
+          "commonsCandidates": [
+            "BMW G01",
+            "BMW G01 30e",
+            "BMW X3 M (G01)",
+            "BMW G01 X3 M40i",
+            "Alpina XD3 (G01)",
+            "BMW G01 fire engines"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x2-f39",
+      "series": "X2",
+      "label": "X2 (F39)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2018,
+        "end": 2023
+      },
+      "class": "Sub-compact luxury SUV",
+      "chassis": [
+        {
+          "code": "F39",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F39",
+          "commonsCandidates": [
+            "BMW F39",
+            "BMW F39 X2 M35i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-x4-g02",
+      "series": "X4",
+      "label": "X4 (G02)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2018,
+        "end": 2025
+      },
+      "class": "Compact luxury SUV",
+      "chassis": [
+        {
+          "code": "G02",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G02",
+          "commonsCandidates": [
+            "BMW G02",
+            "BMW X4 M (G02)",
+            "BMW G02 X4 M40d",
+            "BMW G02 X4 M40i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-z4-g29",
+      "series": "Z4",
+      "label": "Z4 (G29)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2018,
+        "end": 2026
+      },
+      "class": "Roadster",
+      "chassis": [
+        {
+          "code": "G29",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G29",
+          "commonsCandidates": [
+            "BMW G29",
+            "BMW G29 Z4 M40i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-8-series-g14-g15-g15",
+      "series": "8 Series",
+      "label": "8 Series (G14/G15/G15)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2018,
+        "end": 2026
+      },
+      "class": "Grand tourer",
+      "chassis": [
+        {
+          "code": "G14",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G14",
+          "commonsCandidates": [
+            "BMW G14",
+            "BMW G14 M850i",
+            "BMW G14 development mules"
+          ],
+          "commonsManual": false
+        },
+        {
+          "code": "G15",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G15",
+          "commonsCandidates": [
+            "BMW G15",
+            "BMW M8 (G15)",
+            "BMW G15 M850i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-1-series-f40",
+      "series": "1 Series",
+      "label": "1 Series (F40)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2019,
+        "end": 2024
+      },
+      "class": "Sub-compact executive car",
+      "chassis": [
+        {
+          "code": "F40",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F40",
+          "commonsCandidates": [
+            "BMW F40",
+            "BMW F40 128ti",
+            "BMW F40 M135i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-2-series-f44",
+      "series": "2 Series",
+      "label": "2 Series (F44)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2020,
+        "end": 2024
+      },
+      "class": "Sub-compact executive car",
+      "chassis": [
+        {
+          "code": "F44",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW F44",
+          "commonsCandidates": [
+            "BMW F44",
+            "BMW F44 M235i"
+          ],
+          "commonsManual": false
+        }
+      ]
+    },
+    {
+      "id": "bmw-ix3-g08",
+      "series": "iX3",
+      "label": "iX3 (G08)",
+      "section": "production",
+      "status": "discontinued",
+      "years": {
+        "start": 2020,
+        "end": 2025
+      },
+      "class": "Compact luxury SUV (electric)",
+      "chassis": [
+        {
+          "code": "G08",
+          "lwb": false,
+          "parent": null,
+          "market": null,
+          "verified": true,
+          "commonsCategory": "BMW G08",
+          "commonsCandidates": [
+            "BMW G08",
+            "BMW iX3 G08"
+          ],
+          "commonsManual": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "_doc": "Correcciones manuales aplicadas por pipeline/build-catalog.ts. Claves de chasis: 'serie|código'. No se pisan al regenerar.",
+  "commonsCategory": {
+    "iX|I20": "BMW iX",
+    "3/20 PS|3/20 PS": "BMW 3/20",
+    "340|340": "EMW 340"
+  },
+  "lwb": {
+    "U12": { "parent": "U11", "market": "CN", "verified": true },
+    "G48": { "parent": "G45", "market": "CN", "verified": false },
+    "NA6": { "parent": "NA5", "market": "CN", "verified": false },
+    "NA8": { "parent": "NA0", "market": "CN", "verified": false },
+    "G73": { "parent": "G70", "market": "CN", "verified": false }
+  },
+  "prototypes": ["505"]
+}

@@ -1303,11 +1303,11 @@
       "perKey": [
         {
           "key": "E9",
-          "commons": 39,
+          "commons": 3,
           "wikidata": true,
           "sample": [
-            "BMW M3 (E90)",
-            "BMW E92"
+            "BMW E9",
+            "BMW 3.0 CSL (E9)"
           ]
         }
       ],
@@ -1325,16 +1325,18 @@
       "perKey": [
         {
           "key": "E3",
-          "commons": 78,
-          "wikidata": true,
+          "commons": 5,
+          "wikidata": false,
           "sample": [
-            "BMW E30",
-            "BMW M3 (E30)"
+            "BMW E3",
+            "BMW 2500 (E3)"
           ]
         }
       ],
       "commonsMissingKeys": [],
-      "wikidataMissingKeys": []
+      "wikidataMissingKeys": [
+        "E3"
+      ]
     },
     {
       "series": "5 Series (E12)",
@@ -1347,11 +1349,11 @@
       "perKey": [
         {
           "key": "E12",
-          "commons": 10,
+          "commons": 5,
           "wikidata": false,
           "sample": [
-            "BMW 2000 (type 121)",
-            "BMW 2000 ti (type 121)"
+            "BMW E12",
+            "Alpina B7 (E12)"
           ]
         }
       ],
@@ -1434,11 +1436,11 @@
       "perKey": [
         {
           "key": "M1",
-          "commons": 11,
+          "commons": 2,
           "wikidata": true,
           "sample": [
             "BMW M1",
-            "BMW F20 M135i"
+            "BMW M1 Hommage"
           ]
         }
       ],
@@ -1478,7 +1480,7 @@
       "perKey": [
         {
           "key": "E30",
-          "commons": 18,
+          "commons": 17,
           "wikidata": true,
           "sample": [
             "BMW E30",
@@ -3825,6 +3827,30 @@
       ]
     },
     {
+      "series": "New Six sedans (E3)",
+      "codes": [
+        "E3"
+      ],
+      "years": "1968–1977",
+      "kind": "discontinued",
+      "cls": "Full-size luxury car",
+      "perKey": [
+        {
+          "key": "E3",
+          "commons": 5,
+          "wikidata": false,
+          "sample": [
+            "BMW E3",
+            "BMW 2500 (E3)"
+          ]
+        }
+      ],
+      "commonsMissingKeys": [],
+      "wikidataMissingKeys": [
+        "E3"
+      ]
+    },
+    {
       "series": "5 Series (E12)",
       "codes": [
         "E12"
@@ -3835,11 +3861,11 @@
       "perKey": [
         {
           "key": "E12",
-          "commons": 10,
+          "commons": 5,
           "wikidata": false,
           "sample": [
-            "BMW 2000 (type 121)",
-            "BMW 2000 ti (type 121)"
+            "BMW E12",
+            "Alpina B7 (E12)"
           ]
         }
       ],
