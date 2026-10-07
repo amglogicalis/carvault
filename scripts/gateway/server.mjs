@@ -226,7 +226,7 @@ http.createServer(async (req, res) => {
       const now = Date.now();
       for (let i = recentProposals.length - 1; i >= 0; i--) {
         const item = recentProposals[i];
-        if (now - item.createdAt > 15 * 60 * 1000) {
+        if (now - item.createdAt > 45 * 1000) {
           recentProposals.splice(i, 1);
           continue;
         }

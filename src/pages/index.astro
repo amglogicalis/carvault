@@ -726,6 +726,19 @@ const registryJson = JSON.stringify(requestsRegistry);
     async function getActiveGatewayUrl() {
       if (cachedGwUrl) return cachedGwUrl;
       try {
+        const res = await fetch('https://api.github.com/repos/amglogicalis/carvault/contents/gateway-url.json?ref=gw-url');
+        if (res.ok) {
+          const d = await res.json();
+          if (d && d.content) {
+            const parsed = JSON.parse(atob(d.content.replace(/\s+/g, '')));
+            if (parsed && parsed.url) {
+              cachedGwUrl = parsed.url;
+              return parsed.url;
+            }
+          }
+        }
+      } catch (e) {}
+      try {
         const res = await fetch('https://raw.githubusercontent.com/amglogicalis/carvault/gw-url/gateway-url.json?t=' + Date.now());
         if (res.ok) {
           const d = await res.json();
