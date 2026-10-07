@@ -1,3 +1,5 @@
+export const prerender = false;
+
 import type { APIRoute } from 'astro';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -199,8 +201,23 @@ function evaluateMiddlewareFilter(inputText: string, reg: RequestsRegistry) {
 
 export const POST: APIRoute = async ({ request }) => {
   try {
-    const body = await request.json();
-    const rawText = (body?.text || '').trim();
+    let rawText = '';
+    const contentType = request.headers.get('content-type') || '';
+
+    if (contentType.includes('application/json')) {
+      const text = await request.text();
+      if (text && text.trim().length > 0) {
+        try {
+          const parsed = JSON.parse(text);
+          rawText = (parsed?.text || '').trim();
+        } catch (jsonErr) {
+          console.warn('JSON parse warning:', jsonErr);
+        }
+      }
+    } else {
+      const text = await request.text();
+      rawText = text.trim();
+    }
 
     const registry = loadRegistry();
 

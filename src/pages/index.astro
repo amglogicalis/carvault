@@ -36,15 +36,17 @@ const brandsJson = JSON.stringify(BRANDS);
         Explora la historia automotriz con fotografías limpias de carrocería frontal en alta resolución. Búsqueda abierta por fabricante, décadas de producción y prototipos experimentales.
       </p>
 
-      <!-- Botón Solicitud de Modelos / Marcas Faltantes -->
-      <div class="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-mono">
-        <span class="text-slate-400">¿Echas en falta algún modelo? ¿Alguna marca?</span>
+      <!-- Botón Solicitud de Modelos / Marcas Faltantes (Prominente y Visible) -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-2xl max-w-2xl mx-auto backdrop-blur-md">
+        <span class="text-sm sm:text-base font-semibold text-slate-200 tracking-wide text-center sm:text-left">
+          ¿Echas en falta algún modelo? ¿Alguna marca?
+        </span>
         <button 
           id="openRequestModalBtn"
-          class="px-3.5 py-1.5 rounded-xl bg-cyan-500/15 hover:bg-cyan-500 text-cyan-300 hover:text-slate-950 border border-cyan-500/40 font-bold transition-all duration-200 cursor-pointer shadow-lg shadow-cyan-500/10 flex items-center gap-1.5 group"
+          class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black text-xs sm:text-sm tracking-wide transition-all duration-300 cursor-pointer shadow-lg shadow-cyan-500/25 hover:shadow-cyan-400/40 hover:scale-[1.03] flex items-center gap-2 group shrink-0"
         >
           <span>Haznoslo saber</span>
-          <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+          <span class="text-base group-hover:translate-x-1 transition-transform">→</span>
         </button>
       </div>
     </div>

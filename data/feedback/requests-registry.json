@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "Registro privado/local de solicitudes de modelos y marcas para filtrado middleware y prevención de duplicados",
-  "lastUpdated": "2026-10-07T20:16:05.211Z",
+  "lastUpdated": "2026-10-07T20:21:44.768Z",
   "existingCatalogCache": {
     "brands": [
       "bmw",
@@ -1675,5 +1675,22 @@
       }
     ]
   },
-  "records": []
+  "records": [
+    {
+      "id": "req_1791404504767",
+      "text": "Audi RS6 Avant C7 2014",
+      "normalizedText": "audi rs6 avant c7 2014",
+      "status": "pending",
+      "createdAt": "2026-10-07T20:21:44.767Z",
+      "issueNumber": 1,
+      "issueUrl": "https://github.com/amglogicalis/carvault/issues/1",
+      "matchedTokens": [
+        "audi",
+        "rs6",
+        "avant",
+        "c7",
+        "2014"
+      ]
+    }
+  ]
 }
