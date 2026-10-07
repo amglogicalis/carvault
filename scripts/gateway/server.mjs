@@ -10,8 +10,8 @@ const SECRET = crypto.randomBytes(32);
 const REPO = process.env.GITHUB_REPOSITORY;
 const GH_TOKEN = process.env.GITHUB_TOKEN;
 const ORIGINS = ['https://amglogicalis.github.io', 'http://localhost:4321', 'http://localhost:3000', 'http://127.0.0.1:4321'];
-const MAX_PER_TOKEN = 3;
-const MAX_PER_IP = 8;
+const MAX_PER_TOKEN = 10;
+const MAX_PER_IP = 30;
 const WINDOW_MS = 10 * 60 * 1000;
 const hits = new Map();
 const recentProposals = [];
@@ -211,14 +211,15 @@ http.createServer(async (req, res) => {
     if (req.method === 'POST' && pathname === '/request') {
       const tok = verify((req.headers.authorization || '').replace(/^Bearer /, ''));
       if (!tok) return send(res, 401, { error: 'token', reason: 'Token de sesión expirado o inválido.' });
-      if (limited('t:' + tok.id, MAX_PER_TOKEN) || limited('i:' + ip, MAX_PER_IP)) {
-        return send(res, 429, { error: 'rate', reason: 'Has alcanzado el límite de propuestas para esta sesión.' });
-      }
 
       const { text } = await readJson(req);
       const val = validateInput(text);
       if (!val.valid) {
         return send(res, 400, { error: 'validation', reason: val.reason });
+      }
+
+      if (limited('t:' + tok.id, MAX_PER_TOKEN) || limited('i:' + ip, MAX_PER_IP)) {
+        return send(res, 429, { error: 'rate', reason: 'Has alcanzado el límite de propuestas para esta sesión.' });
       }
 
       // 1. Comprobar propuestas recientes en memoria (elimina condiciones de carrera y lag de réplica de GitHub)
