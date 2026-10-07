@@ -14,6 +14,7 @@ const MAX_PER_TOKEN = 3;
 const MAX_PER_IP = 8;
 const WINDOW_MS = 10 * 60 * 1000;
 const hits = new Map();
+const recentProposals = [];
 
 const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
 const mac = (s) => crypto.createHmac('sha256', SECRET).update(s).digest('base64url');
@@ -220,7 +221,25 @@ http.createServer(async (req, res) => {
         return send(res, 400, { error: 'validation', reason: val.reason });
       }
 
-      // Consultar únicamente issues ABIERTAS en GitHub (state=open)
+      // 1. Comprobar propuestas recientes en memoria (elimina condiciones de carrera y lag de réplica de GitHub)
+      const now = Date.now();
+      for (let i = recentProposals.length - 1; i >= 0; i--) {
+        const item = recentProposals[i];
+        if (now - item.createdAt > 15 * 60 * 1000) {
+          recentProposals.splice(i, 1);
+          continue;
+        }
+        if (isDuplicate(val.clean, item.title)) {
+          return send(res, 409, {
+            error: 'duplicate',
+            issue: item.number,
+            title: item.title,
+            reason: `Ya existe una solicitud abierta para este modelo (Issue #${item.number}). Nuestro equipo ya está trabajando en ella.`
+          });
+        }
+      }
+
+      // 2. Consultar únicamente issues ABIERTAS en GitHub (state=open)
       // Las issues cerradas, resueltas o descartadas NO se leen ni bloquean.
       try {
         const issuesRes = await fetch(`https://api.github.com/repos/${REPO}/issues?state=open&per_page=100`, {
@@ -270,6 +289,9 @@ http.createServer(async (req, res) => {
       if (!r.ok) {
         return send(res, 502, { error: 'github', reason: 'Error al contactar con GitHub para registrar la solicitud.' });
       }
+
+      // Registrar en el buffer inmediato para bloquear cualquier duplicado instantáneo
+      recentProposals.push({ number: j.number, title: val.clean, createdAt: Date.now() });
 
       return send(res, 200, { success: true, issue: j.number, url: j.html_url });
     }
