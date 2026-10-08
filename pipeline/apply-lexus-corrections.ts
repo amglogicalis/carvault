@@ -15,6 +15,10 @@ const REPLACEMENTS: Record<string, string> = {
   'lexus-ls-xf20': 'File:1996 Lexus LS 400 4.0 Front.jpg',
   'lexus-ls-xf30-pre-facelift': 'File:2000–2003 Lexus LS 430 (front).jpg',
   'lexus-ls-xf40-pre-facelift': 'File:2007 Lexus LS 460 Starfire Pearl.jpg',
+  'lexus-ls-xf40-facelift': 'File:2013 Lexus LS 460 L in Ultra White, front right.jpg',
+  'lexus-gs-s190-pre-facelift': 'File:Lexus GS 430 II 20090720 front.JPG',
+  'lexus-gs-s190-facelift': 'File:Lexus GS 450h facelift front.jpg',
+  'lexus-tx-tx10': 'File:2024 Lexus TX350 in Wind Chill Pearl, front right.jpg',
   'lexus-concept-lfa': 'File:Lexus LF-A 2005 TMS 1.jpg'
 };
 

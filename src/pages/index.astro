@@ -286,7 +286,7 @@ const registryJson = JSON.stringify(requestsRegistry);
     </div>
 
     <!-- Grid de Marcas Disponibles -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
       <!-- Tarjeta BMW -->
       <a 
         href="/carvault/bmw" 
@@ -382,6 +382,38 @@ const registryJson = JSON.stringify(requestsRegistry);
           <span class="group-hover:translate-x-1 transition-transform">→</span>
         </div>
       </a>
+
+      <!-- Tarjeta Lexus -->
+      <a 
+        href="/carvault/lexus" 
+        class="group bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 hover:border-amber-500/60 rounded-3xl p-7 transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-amber-500/10 relative overflow-hidden"
+      >
+        <div class="absolute top-3 right-3">
+          <span class="px-2.5 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold tracking-wide shadow-sm">
+            Disponible
+          </span>
+        </div>
+
+        <!-- Icono / Logo oficial de la marca -->
+        <div class="w-24 h-24 rounded-full bg-slate-950 border border-slate-800 p-3 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform duration-300 mb-4">
+          <img src="/carvault/images/brands/lexus.svg" alt="Logo de Lexus" class="w-full h-full object-contain" />
+        </div>
+
+        <!-- Nombre de la marca -->
+        <h3 class="text-2xl font-black text-white group-hover:text-amber-400 transition-colors tracking-wide">
+          Lexus
+        </h3>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">Lexus (Toyota Motor Corp.)</p>
+        <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+          Lujo y refinamiento japonés: el superdeportivo LFA V10, división de alto rendimiento F, sagas LS, GS e IS, coupés LC y pioneros en tecnología híbrida autorrecargable.
+        </p>
+
+        <!-- Botón de Acción -->
+        <div class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-amber-400 group-hover:text-amber-300 group-hover:underline">
+          <span>Abrir catálogo completo de Lexus</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </a>
     </div>
 
     <!-- Grid de Marcas Próximamente -->
@@ -423,8 +455,8 @@ const registryJson = JSON.stringify(requestsRegistry);
         </p>
       </div>
 
-      <!-- Grid de Endpoints: Central Gateway, Monomarca BMW, CUPRA y Jaguar -->
-      <div class="mt-8 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Grid de Endpoints: Central Gateway, Monomarca BMW, CUPRA, Jaguar y Lexus -->
+      <div class="mt-8 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
         <!-- Endpoint Central Gateway -->
         <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-xl">
           <div>
@@ -508,6 +540,28 @@ const registryJson = JSON.stringify(requestsRegistry);
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/jaguar.json</code>
             <a href="/carvault/api/v1/jaguar.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Monomarca Lexus -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-slate-200 font-bold flex items-center gap-1.5">
+                <img src="/carvault/images/brands/lexus.svg" class="w-3.5 h-3.5" alt="Lexus" />
+                Endpoint Monomarca Lexus
+              </span>
+              <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-[10px]">Monomarca • F & Hybrid</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Base de datos de Lexus: códigos de chasis (LFA10, UCF10, URZ100, XE30...), restylings Spindle Grille, división F y fichas técnicas mecánicas.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/lexus.json</code>
+            <a href="/carvault/api/v1/lexus.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>
