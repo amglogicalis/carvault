@@ -67,32 +67,12 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
           </button>
         </div>
 
-        <!-- Chips de sugerencias directas de coches -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs font-mono">
-          <span class="text-slate-500">Ejemplos directos:</span>
-          <button class="quick-car-chip px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 text-cyan-300 transition-colors cursor-pointer" data-car="BMW Serie 3 E92">
-            BMW Serie 3 E92 (N52 vs N53)
-          </button>
-          <button class="quick-car-chip px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 text-slate-300 transition-colors cursor-pointer" data-car="BMW Serie 3 E46">
-            BMW Serie 3 E46
-          </button>
-          <button class="quick-car-chip px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 text-slate-300 transition-colors cursor-pointer" data-car="BMW Serie 5 E60">
-            BMW Serie 5 E60 (V10 M5)
-          </button>
-          <button class="quick-car-chip px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 text-slate-300 transition-colors cursor-pointer" data-car="BMW Serie 3 F30">
-            BMW Serie 3 F30 (B58 340i)
-          </button>
-          <button class="quick-car-chip px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800 text-slate-300 transition-colors cursor-pointer" data-car="BMW Serie 1 F20">
-            BMW Serie 1 F20 (M140i)
-          </button>
-        </div>
-
-        <!-- Panel de Filtros Técnicos Avanzados: CV, Cilindrada, 0-100s, Vel. Máx, Año -->
+        <!-- Panel de Filtros Técnicos Avanzados: CV, Cilindrada, 0-100s, Vel. Máx, Año (Intervalos Mín / Máx Opcionales) -->
         <div class="mt-6 p-4 sm:p-5 bg-slate-900/90 border border-slate-800/90 rounded-2xl shadow-2xl backdrop-blur-md text-left">
-          <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-800">
+          <div class="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-800">
             <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-300 uppercase tracking-wider">
               <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
-              <span>Filtros Mecánicos Directos</span>
+              <span>Intervalos Mecánicos (Mín / Máx Opcionales)</span>
             </div>
             <button 
               id="resetFiltersBtn"
@@ -104,85 +84,140 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
             </button>
           </div>
 
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 font-mono text-xs">
-            <!-- Filtro 1: Potencia Mínima (CV) -->
-            <div>
-              <label for="filterMinHp" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
-                Mín. Potencia (CV)
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 font-mono text-xs">
+            <!-- Filtro 1: Potencia (CV) -->
+            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
+              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
+                Potencia (CV)
               </label>
-              <input 
-                type="number" 
-                id="filterMinHp"
-                min="0"
-                max="1200"
-                step="10"
-                placeholder="ej: 300"
-                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
-              />
+              <div class="grid grid-cols-2 gap-1.5">
+                <input 
+                  type="number" 
+                  id="filterMinHp"
+                  min="0"
+                  max="1200"
+                  step="10"
+                  placeholder="Mín"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+                <input 
+                  type="number" 
+                  id="filterMaxHp"
+                  min="0"
+                  max="1200"
+                  step="10"
+                  placeholder="Máx"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+              </div>
             </div>
 
-            <!-- Filtro 2: Cilindrada Mínima (L) -->
-            <div>
-              <label for="filterDisplacement" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
-                Mín. Cilindrada (L)
+            <!-- Filtro 2: Cilindrada (L) -->
+            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
+              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
+                Cilindrada (L)
               </label>
-              <input 
-                type="number" 
-                id="filterDisplacement"
-                min="0"
-                max="8.0"
-                step="0.1"
-                placeholder="ej: 3.0"
-                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
-              />
+              <div class="grid grid-cols-2 gap-1.5">
+                <input 
+                  type="number" 
+                  id="filterMinDisp"
+                  min="0"
+                  max="8.0"
+                  step="0.1"
+                  placeholder="Mín"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+                <input 
+                  type="number" 
+                  id="filterMaxDisp"
+                  min="0"
+                  max="8.0"
+                  step="0.1"
+                  placeholder="Máx"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+              </div>
             </div>
 
-            <!-- Filtro 3: 0-100 km/h (Segundos escritos por el usuario) -->
-            <div>
-              <label for="filterMax0to100" class="block text-[10px] text-cyan-300 uppercase tracking-wider mb-1 font-bold">
-                0-100 Máx. (segundos)
+            <!-- Filtro 3: 0-100 km/h (s) -->
+            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-cyan-500/30">
+              <label class="block text-[10px] text-cyan-300 uppercase tracking-wider mb-1.5 font-bold">
+                0-100 km/h (s)
               </label>
-              <input 
-                type="number" 
-                id="filterMax0to100"
-                min="1.0"
-                max="30.0"
-                step="0.1"
-                placeholder="ej: 4.5"
-                class="w-full bg-slate-950 border border-cyan-500/50 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 text-xs shadow-inner"
-              />
+              <div class="grid grid-cols-2 gap-1.5">
+                <input 
+                  type="number" 
+                  id="filterMin0to100"
+                  min="1.0"
+                  max="30.0"
+                  step="0.1"
+                  placeholder="Mín s"
+                  class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+                <input 
+                  type="number" 
+                  id="filterMax0to100"
+                  min="1.0"
+                  max="30.0"
+                  step="0.1"
+                  placeholder="Máx s"
+                  class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+              </div>
             </div>
 
-            <!-- Filtro 4: Velocidad Máxima Mínima (km/h) -->
-            <div>
-              <label for="filterMinSpeed" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
-                Mín. Vel. Punta (km/h)
+            <!-- Filtro 4: Velocidad Máxima (km/h) -->
+            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
+              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
+                Vel. Punta (km/h)
               </label>
-              <input 
-                type="number" 
-                id="filterMinSpeed"
-                min="50"
-                max="350"
-                step="5"
-                placeholder="ej: 250"
-                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
-              />
+              <div class="grid grid-cols-2 gap-1.5">
+                <input 
+                  type="number" 
+                  id="filterMinSpeed"
+                  min="50"
+                  max="350"
+                  step="5"
+                  placeholder="Mín"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+                <input 
+                  type="number" 
+                  id="filterMaxSpeed"
+                  min="50"
+                  max="350"
+                  step="5"
+                  placeholder="Máx"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+              </div>
             </div>
 
-            <!-- Filtro 5: Año -->
-            <div class="col-span-2 sm:col-span-1">
-              <label for="filterYear" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
+            <!-- Filtro 5: Año del Modelo -->
+            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
+              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
                 Año del Modelo
               </label>
-              <input 
-                type="number" 
-                id="filterYear"
-                min="1927"
-                max="2027"
-                step="1"
-                placeholder="ej: 2011"
-                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
-              />
+              <div class="grid grid-cols-2 gap-1.5">
+                <input 
+                  type="number" 
+                  id="filterMinYear"
+                  min="1927"
+                  max="2027"
+                  step="1"
+                  placeholder="Desde"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+                <input 
+                  type="number" 
+                  id="filterMaxYear"
+                  min="1927"
+                  max="2027"
+                  step="1"
+                  placeholder="Hasta"
+                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -257,31 +292,54 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
     const initialStateNotice = document.getElementById('initialStateNotice');
     const resultsArea = document.getElementById('searchResultsArea');
     const noMatchState = document.getElementById('noMatchState');
-    const quickChips = document.querySelectorAll('.quick-car-chip');
 
-    // Elementos de filtros mecánicos avanzados
+    // Elementos de filtros mecánicos avanzados (Intervalos Mín / Máx Opcionales)
     const filterMinHp = document.getElementById('filterMinHp');
-    const filterDisplacement = document.getElementById('filterDisplacement');
+    const filterMaxHp = document.getElementById('filterMaxHp');
+    const filterMinDisp = document.getElementById('filterMinDisp');
+    const filterMaxDisp = document.getElementById('filterMaxDisp');
+    const filterMin0to100 = document.getElementById('filterMin0to100');
     const filterMax0to100 = document.getElementById('filterMax0to100');
     const filterMinSpeed = document.getElementById('filterMinSpeed');
-    const filterYear = document.getElementById('filterYear');
+    const filterMaxSpeed = document.getElementById('filterMaxSpeed');
+    const filterMinYear = document.getElementById('filterMinYear');
+    const filterMaxYear = document.getElementById('filterMaxYear');
     const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+
+    const allFilterInputs = [
+      searchInput,
+      filterMinHp, filterMaxHp,
+      filterMinDisp, filterMaxDisp,
+      filterMin0to100, filterMax0to100,
+      filterMinSpeed, filterMaxSpeed,
+      filterMinYear, filterMaxYear
+    ];
 
     function executeCarSearch() {
       const query = (searchInput.value || '').trim().toLowerCase();
       const minHpVal = parseFloat(filterMinHp?.value) || null;
-      const minDispVal = parseFloat(filterDisplacement?.value) || null;
+      const maxHpVal = parseFloat(filterMaxHp?.value) || null;
+      const minDispVal = parseFloat(filterMinDisp?.value) || null;
+      const maxDispVal = parseFloat(filterMaxDisp?.value) || null;
+      const min0to100Val = parseFloat(filterMin0to100?.value) || null;
       const max0to100Val = parseFloat(filterMax0to100?.value) || null;
       const minSpeedVal = parseFloat(filterMinSpeed?.value) || null;
-      const yearVal = parseInt(filterYear?.value, 10) || null;
+      const maxSpeedVal = parseFloat(filterMaxSpeed?.value) || null;
+      const minYearVal = parseInt(filterMinYear?.value, 10) || null;
+      const maxYearVal = parseInt(filterMaxYear?.value, 10) || null;
 
       const hasActiveFilters = Boolean(
         query.length > 0 ||
         minHpVal !== null ||
+        maxHpVal !== null ||
         minDispVal !== null ||
+        maxDispVal !== null ||
+        min0to100Val !== null ||
         max0to100Val !== null ||
         minSpeedVal !== null ||
-        yearVal !== null
+        maxSpeedVal !== null ||
+        minYearVal !== null ||
+        maxYearVal !== null
       );
 
       // Si no hay búsqueda ni filtros activos, mantener oculto el catálogo y mostrar aviso inicial
@@ -310,11 +368,14 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       const matchedCars = [];
 
       for (const car of allCars) {
-        // Filtro por año de producción
-        if (yearVal !== null) {
+        // Filtro por año de producción (intervalo o límite único)
+        if (minYearVal !== null || maxYearVal !== null) {
           const start = car.startYear !== null ? car.startYear : -Infinity;
           const end = car.endYear !== null ? car.endYear : 2027; // si es null sigue en producción actual
-          if (yearVal < start || yearVal > end) {
+          if (minYearVal !== null && end < minYearVal) {
+            continue;
+          }
+          if (maxYearVal !== null && start > maxYearVal) {
             continue;
           }
         }
@@ -331,19 +392,23 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
         const carMatchesQueryDirectly = tokens.length === 0 || tokens.every(t => carMetaText.includes(t));
 
-        // Filtrar motores individuales
+        // Filtrar motores individuales con flexibilidad de mínimos y máximos opcionales
         const matchingEngines = (car.engines || []).filter(eng => {
-          // Filtro por caballos mínimos (CV)
+          // Filtro por Potencia (CV)
           if (minHpVal !== null && eng.powerHp < minHpVal) return false;
+          if (maxHpVal !== null && eng.powerHp > maxHpVal) return false;
 
-          // Filtro por cilindrada mínima (L)
+          // Filtro por Cilindrada (L)
           if (minDispVal !== null && eng.displacementL < (minDispVal - 0.05)) return false;
+          if (maxDispVal !== null && eng.displacementL > (maxDispVal + 0.05)) return false;
 
-          // Filtro por 0-100 km/h máximo en segundos (escrito por el usuario)
+          // Filtro por 0-100 km/h (s)
+          if (min0to100Val !== null && eng.accel0to100 < min0to100Val) return false;
           if (max0to100Val !== null && eng.accel0to100 > max0to100Val) return false;
 
-          // Filtro por velocidad punta mínima (km/h)
+          // Filtro por Velocidad Punta (km/h)
           if (minSpeedVal !== null && eng.topSpeedKmh < minSpeedVal) return false;
+          if (maxSpeedVal !== null && eng.topSpeedKmh > maxSpeedVal) return false;
 
           // Si el texto de búsqueda no coincidió con el nombre del coche, verificar si coincide en la motorización
           if (!carMatchesQueryDirectly && tokens.length > 0) {
@@ -519,8 +584,8 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       }
     }
 
-    // Escuchar eventos en input de búsqueda y en todos los filtros técnicos
-    [searchInput, filterMinHp, filterDisplacement, filterMax0to100, filterMinSpeed, filterYear].forEach(el => {
+    // Escuchar eventos en input de búsqueda y en todos los filtros técnicos (mínimos y máximos)
+    allFilterInputs.forEach(el => {
       if (el) {
         el.addEventListener('input', executeCarSearch);
       }
@@ -536,24 +601,13 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
     if (resetFiltersBtn) {
       resetFiltersBtn.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        if (filterMinHp) filterMinHp.value = '';
-        if (filterDisplacement) filterDisplacement.value = '';
-        if (filterMax0to100) filterMax0to100.value = '';
-        if (filterMinSpeed) filterMinSpeed.value = '';
-        if (filterYear) filterYear.value = '';
+        allFilterInputs.forEach(el => {
+          if (el) el.value = '';
+        });
         executeCarSearch();
         if (searchInput) searchInput.focus();
       });
     }
-
-    quickChips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        const carName = chip.getAttribute('data-car') || '';
-        if (searchInput) searchInput.value = carName;
-        executeCarSearch();
-      });
-    });
 
     // Soporte para URL params si viene enlazado desde otro sitio: /carvault/motores?q=E92
     const urlParams = new URLSearchParams(window.location.search);
