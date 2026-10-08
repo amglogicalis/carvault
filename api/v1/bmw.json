@@ -1649,7 +1649,42 @@
         "width": 2494,
         "height": 1830
       },
-      "engines": []
+      "engines": [
+        {
+          "modelBadge": "M3 (E90/E92/E93)",
+          "engineCode": "S65B40",
+          "architecture": "V8 atmosférico a 90° (Giro a 8.400 rpm)",
+          "cylinders": 8,
+          "displacementCc": 3999,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 420,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.6,
+          "phase": "Producción Serie",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "8 mariposas independientes individuales MSS60",
+          "notes": "Bloque V8 derivado de F1. 4.4s 0-100 con caja de doble embrague DKG."
+        },
+        {
+          "modelBadge": "M3 GTS",
+          "engineCode": "S65B44",
+          "architecture": "V8 atmosférico de alto régimen",
+          "cylinders": 8,
+          "displacementCc": 4361,
+          "displacementL": 4.4,
+          "fuel": "Gasolina",
+          "powerHp": 450,
+          "torqueNm": 440,
+          "topSpeedKmh": 305,
+          "accel0to100": 4.4,
+          "phase": "Producción Serie",
+          "yearsActive": "2010 – 2011",
+          "feedSystem": "Escape de titanio ligero y lubricación reforzada",
+          "notes": "Serie limitada de circuito."
+        }
+      ]
     },
     {
       "id": "bmw-1m-coupe-e82",
