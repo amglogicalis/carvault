@@ -468,6 +468,34 @@ const ENGINES_DB = {
 const newGenerations = [];
 
 for (const g of cat.generations) {
+  // Arreglar imagen de BMW Serie 7 (G11) Facelift (2019–2022) - frontal directo verificado
+  if (g.id === 'bmw-7-series-g11-facelift') {
+    g.frontImage = {
+      file: 'File:2019 BMW 745e front.jpg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_745e_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original',
+      author: 'Guillaume Vachey',
+      license: 'CC0',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:2019_BMW_745e_front.jpg',
+      width: 4408,
+      height: 2684
+    };
+    if (g.chassis?.[0]) g.chassis[0].frontImage = g.frontImage;
+  }
+
+  // Arreglar imagen de BMW Serie 1 Coupé (E82) - frontal directo verificado sin caracteres raros
+  if (g.id === 'bmw-1-series-e82-coupe') {
+    g.frontImage = {
+      file: 'File:BMW E82 front 20080331.jpg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original',
+      author: 'Rudolf Stricker',
+      license: 'CC BY-SA 3.0',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:BMW_E82_front_20080331.jpg',
+      width: 1332,
+      height: 900
+    };
+    if (g.chassis?.[0]) g.chassis[0].frontImage = g.frontImage;
+  }
+
   // Arreglar imagen de M3 E46 (reemplazar volante por frontal exterior directo verificado)
   if (g.id === 'bmw-m3-e46' || g.label.includes('M3 (E46)')) {
     g.frontImage = m3FrontExterior;
@@ -515,8 +543,8 @@ for (const g of cat.generations) {
       status: 'production',
       years: { start: 2007, end: 2013, display: '2007 – 2013' },
       class: 'Coupé Compacto • 3 volúmenes con propulsión trasera',
-      chassis: [{ code: 'E82', frontImage: { file: 'File:09_BMW_135i_Coupe_(Montreal).jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/%2709_BMW_135i_Coupe_%28Montreal%29.jpg', author: 'Bull-Doser', license: 'Public domain' } }],
-      frontImage: { file: 'File:09_BMW_135i_Coupe_(Montreal).jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/%2709_BMW_135i_Coupe_%28Montreal%29.jpg', author: 'Bull-Doser', license: 'Public domain' },
+      chassis: [{ code: 'E82', frontImage: { file: 'File:BMW E82 front 20080331.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Rudolf Stricker', license: 'CC BY-SA 3.0' } }],
+      frontImage: { file: 'File:BMW E82 front 20080331.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Rudolf Stricker', license: 'CC BY-SA 3.0' },
       engines: ENGINES_DB['E82']
     });
     continue;
@@ -892,8 +920,8 @@ for (const g of cat.generations) {
       status: 'production',
       years: { start: 2019, end: 2022, display: '2019 – 2022' },
       class: 'Berlina de Lujo • Facelift LCI con parrilla de riñones masiva un 40% más grande y faros LED afilados',
-      chassis: [{ code: 'G11', frontImage: { file: 'File:BMW G11 LCI JM 2023 06 04.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/BMW_G11_LCI_JM_2023_06_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Johannes Maximilian', license: 'GFDL 1.2' } }],
-      frontImage: { file: 'File:BMW G11 LCI JM 2023 06 04.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/BMW_G11_LCI_JM_2023_06_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Johannes Maximilian', license: 'GFDL 1.2' },
+      chassis: [{ code: 'G11', frontImage: { file: 'File:2019 BMW 745e front.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_745e_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Guillaume Vachey', license: 'CC0' } }],
+      frontImage: { file: 'File:2019 BMW 745e front.jpg', url: 'https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_745e_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original', author: 'Guillaume Vachey', license: 'CC0' },
       engines: ENGINES_DB['G11']
     });
     continue;
