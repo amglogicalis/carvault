@@ -1,0 +1,1343 @@
+{
+  "brand": "BMW",
+  "totalModels": 12,
+  "data": [
+    {
+      "id": "bmw-serie-3-e92",
+      "brand": "BMW",
+      "series": "Serie 3",
+      "generationLabel": "Serie 3 Coupé (E92)",
+      "chassisCode": "E92",
+      "bodyStyle": "Coupé",
+      "yearsDisplay": "2006 – 2013",
+      "phases": [
+        {
+          "id": "e92-pre-lci",
+          "name": "BMW Serie 3 Coupé (E92) Pre-Facelift",
+          "phaseType": "Pre-Facelift (Pre-LCI)",
+          "years": "2006 – 2010",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/BMW_E92_front_20080118.jpg",
+            "file": "File:BMW_E92_front_20080118.jpg",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Faros bixenón con reflectores circulares clásicos amarillos (Angel Eyes)",
+            "Calandra de riñones con perfil superior cromado integrado en el capó",
+            "Tomas de aire frontales con lamas horizontales sobrias"
+          ]
+        },
+        {
+          "id": "e92-lci",
+          "name": "BMW Serie 3 Coupé (E92) Facelift (LCI)",
+          "phaseType": "Facelift (LCI)",
+          "years": "2010 – 2013",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2011_BMW_328xi_Coupe_%28E92%29_Facelift.jpg",
+            "file": "File:2011_BMW_328xi_Coupe_(E92)_Facelift.jpg",
+            "author": "Bull-Doser",
+            "license": "Public domain",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Ópticas delanteras más anchas y onduladas con coronas luminosas LED blancas",
+            "Riñones ensanchados y marco tridimensional completamente independiente del capó",
+            "Faldón delantero con canalizaciones aerodinámicas integradas"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "320i",
+          "engineCode": "N43B20",
+          "architecture": "4 en línea (L4 atmosférico)",
+          "cylinders": 4,
+          "displacementCc": 1995,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 170,
+          "torqueNm": 210,
+          "topSpeedKmh": 230,
+          "accel0to100": 8.1,
+          "phase": "Ambas fases",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "Inyección directa piezoeléctrica con combustión pobre",
+          "notes": "Motor multiválvula de alta compresión y consumo reducido."
+        },
+        {
+          "modelBadge": "325i",
+          "engineCode": "N52B25",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2497,
+          "displacementL": 2.5,
+          "fuel": "Gasolina",
+          "powerHp": 218,
+          "torqueNm": 250,
+          "topSpeedKmh": 247,
+          "accel0to100": 6.9,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2006 – 2007",
+          "feedSystem": "Inyección indirecta multipunto Valvetronic y doble VANOS",
+          "notes": "Bloque de aleación ultraligera magnesio-aluminio. Respuesta elástica sin inyección directa."
+        },
+        {
+          "modelBadge": "325i",
+          "engineCode": "N53B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2996,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 218,
+          "torqueNm": 270,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.7,
+          "phase": "Ambas fases",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "Inyección directa High Precision Injection (HPI) con mezcla pobre",
+          "notes": "Aumenta cilindrada a 3.0 litros ofreciendo 20 Nm extra de par y aceleración 0.2s más rápida."
+        },
+        {
+          "modelBadge": "330i",
+          "engineCode": "N52B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2996,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 272,
+          "torqueNm": 315,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.1,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2006 – 2007",
+          "feedSystem": "Inyección indirecta multipunto Valvetronic",
+          "notes": "Versión deslimitada de admisión de 3 etapas en la plataforma N52."
+        },
+        {
+          "modelBadge": "330i",
+          "engineCode": "N53B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2996,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 272,
+          "torqueNm": 320,
+          "topSpeedKmh": 250,
+          "accel0to100": 6,
+          "phase": "Ambas fases",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "Inyección directa HPI piezoeléctrica",
+          "notes": "320 Nm a 2.750 rpm con consumos homologados inferiores a 7.2 l/100 km."
+        },
+        {
+          "modelBadge": "335i",
+          "engineCode": "N54B30",
+          "architecture": "6 en línea Biturbo (Twin Turbo)",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 306,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.5,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2006 – 2010",
+          "feedSystem": "Inyección directa y dos turbocompresores paralelos Mitsubishi TD03",
+          "notes": "Cárter de aluminio con camisas de hierro fundido. Enorme capacidad de potenciación."
+        },
+        {
+          "modelBadge": "335i",
+          "engineCode": "N55B30",
+          "architecture": "6 en línea TwinPower Turbo (Mono-turbo Twin-Scroll)",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 306,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.3,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2010 – 2013",
+          "feedSystem": "Turbocompresor Twin-Scroll único con sistema Valvetronic III e inyección directa",
+          "notes": "Mayor respuesta inmediata en bajas revoluciones y menor retardo de soplado (lag)."
+        },
+        {
+          "modelBadge": "335is",
+          "engineCode": "N54B30",
+          "architecture": "6 en línea Biturbo High Output",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 326,
+          "torqueNm": 450,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.1,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2011 – 2013",
+          "feedSystem": "Twin-Turbo con radiador auxiliar adicional y función overboost temporal a 500 Nm",
+          "notes": "Disponible con cambio de doble embrague DKG de 7 velocidades."
+        },
+        {
+          "modelBadge": "320d",
+          "engineCode": "N47D20",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1995,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 177,
+          "torqueNm": 350,
+          "topSpeedKmh": 237,
+          "accel0to100": 7.9,
+          "phase": "Ambas fases",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "Common-rail 1800 bar con turbo de geometría variable",
+          "notes": "Actualizado a 184 CV y 380 Nm a partir del restyling LCI en 2010."
+        },
+        {
+          "modelBadge": "330d",
+          "engineCode": "N57D30",
+          "architecture": "6 en línea Turbodiésel",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 245,
+          "torqueNm": 520,
+          "topSpeedKmh": 250,
+          "accel0to100": 6,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2008 – 2013",
+          "feedSystem": "Common-rail piezoeléctrico de 1800 bar y turbo VGT",
+          "notes": "Sustituyó al motor M57 aumentando 14 CV y 20 Nm con bloque totalmente de aluminio."
+        },
+        {
+          "modelBadge": "335d",
+          "engineCode": "M57D30TU2",
+          "architecture": "6 en línea Biturbodiésel Secuencial",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 286,
+          "torqueNm": 580,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.9,
+          "phase": "Ambas fases",
+          "yearsActive": "2006 – 2013",
+          "feedSystem": "Bitarbo secuencial de dos etapas (pequeño y grande)",
+          "notes": "580 Nm disponibles desde 1.750 rpm con una elasticidad insuperable."
+        }
+      ]
+    },
+    {
+      "id": "bmw-m3-e92",
+      "brand": "BMW",
+      "series": "M Motorsport",
+      "generationLabel": "BMW M3 Coupé (E92)",
+      "chassisCode": "E92",
+      "bodyStyle": "Coupé High Performance",
+      "yearsDisplay": "2007 – 2013",
+      "phases": [
+        {
+          "id": "m3-e92-standard",
+          "name": "BMW M3 Coupé (E92)",
+          "phaseType": "Producción Serie",
+          "years": "2007 – 2013",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/BMW_M3_Coup%C3%A9_%28E92%29_front.JPG",
+            "file": "File:BMW_M3_Coupé_(E92)_front.JPG",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Capó abombado de aluminio con prominente joroba (Powerdome) y dos salidas de aire",
+            "Paragolpes frontal con 3 enormes entradas de refrigeración sin faros antiniebla",
+            "Aletas delanteras ensanchadas con branquias M y techo de fibra de carbono vista"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "M3 Coupé",
+          "engineCode": "S65B40",
+          "architecture": "V8 atmosférico a 90° (Giro hasta 8.400 rpm)",
+          "cylinders": 8,
+          "displacementCc": 3999,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 420,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.6,
+          "phase": "Ambas fases",
+          "yearsActive": "2007 – 2013",
+          "feedSystem": "8 mariposas de admisión individuales e inyección secuencial MSS60",
+          "notes": "Derivado del bloque S85 V10 de la F1. Pesa 15 kg menos que el motor 6 en línea S54 del E46. Con cambio DKG hace 0-100 en 4.4s."
+        },
+        {
+          "modelBadge": "M3 GTS",
+          "engineCode": "S65B44",
+          "architecture": "V8 atmosférico de alto rendimiento",
+          "cylinders": 8,
+          "displacementCc": 4361,
+          "displacementL": 4.4,
+          "fuel": "Gasolina",
+          "powerHp": 450,
+          "torqueNm": 440,
+          "topSpeedKmh": 305,
+          "accel0to100": 4.4,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2010 – 2011",
+          "feedSystem": "8 mariposas independientes y escape de titanio ultraligero",
+          "notes": "Serie limitada de circuito para calle con alerón regulable y 1.530 kg de peso."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-3-e90",
+      "brand": "BMW",
+      "series": "Serie 3",
+      "generationLabel": "Serie 3 Berlina (E90)",
+      "chassisCode": "E90",
+      "bodyStyle": "Berlina / Sedán",
+      "yearsDisplay": "2005 – 2011",
+      "phases": [
+        {
+          "id": "e90-pre-lci",
+          "name": "BMW Serie 3 Berlina (E90) Pre-Facelift",
+          "phaseType": "Pre-Facelift (Pre-LCI)",
+          "years": "2005 – 2008",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg",
+            "file": "File:2005-2008_BMW_320i_(E90)_sedan_(2011-07-17)_01.jpg",
+            "author": "OSX",
+            "license": "Public domain",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Calandra de doble riñón coronada con bigote cromado incorporado al borde del capó",
+            "Faros con intermitentes rectilíneos y pilotos traseros con sección blanca cuadrada"
+          ]
+        },
+        {
+          "id": "e90-lci",
+          "name": "BMW Serie 3 Berlina (E90) Facelift (LCI)",
+          "phaseType": "Facelift (LCI)",
+          "years": "2008 – 2011",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/BMW_E90_LCI_3_Series_Space_Grey_Metallic_%281%29.jpg",
+            "file": "File:BMW_E90_LCI_3_Series_Space_Grey_Metallic_(1).jpg",
+            "author": "Euro-spec",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Capó rediseñado con dos nervaduras en V hasta los riñones eliminando el bigote cromado",
+            "Riñones ensanchados integrados e intermitentes delanteros LED con forma de flecha",
+            "Vías traseras ensanchadas en 24 mm"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "320si",
+          "engineCode": "N45B20S",
+          "architecture": "4 en línea atmosférico especial WTCC",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 173,
+          "torqueNm": 200,
+          "topSpeedKmh": 225,
+          "accel0to100": 8.1,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2006 (Serie limitada 2.600 uds.)",
+          "feedSystem": "Inyección multipunto tradicional sin Valvetronic fabricado a mano en Landshut",
+          "notes": "Modelo de homologación FIA para el Mundial de Turismos WTCC con tapa de culata en carbono."
+        },
+        {
+          "modelBadge": "325i",
+          "engineCode": "N52B25",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2497,
+          "displacementL": 2.5,
+          "fuel": "Gasolina",
+          "powerHp": 218,
+          "torqueNm": 250,
+          "topSpeedKmh": 245,
+          "accel0to100": 7,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2005 – 2007",
+          "feedSystem": "Valvetronic con doble VANOS y bloque de magnesio",
+          "notes": "Primer motor con bloque compuesto magnesio-aluminio de la industria."
+        },
+        {
+          "modelBadge": "330i",
+          "engineCode": "N53B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2996,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 272,
+          "torqueNm": 320,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.1,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2007 – 2011",
+          "feedSystem": "Inyección directa HPI con inyectores piezoeléctricos centrales",
+          "notes": "Potencia cumbre para el 6 en línea atmosférico de 3 litros no-M."
+        },
+        {
+          "modelBadge": "335i",
+          "engineCode": "N54B30",
+          "architecture": "6 en línea Biturbo",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 306,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.6,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2006 – 2008",
+          "feedSystem": "Inyección directa y doble turbocompresor paralelo",
+          "notes": "El primer motor BMW de gasolina turboalimentado en serie tras el mítico 2002 Turbo."
+        },
+        {
+          "modelBadge": "320d",
+          "engineCode": "N47D20",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1995,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 177,
+          "torqueNm": 350,
+          "topSpeedKmh": 230,
+          "accel0to100": 7.9,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2007 – 2011",
+          "feedSystem": "Common Rail 1800 bar con turbo VGT",
+          "notes": "Consumo récord para la época: 4.8 l/100 km combinado."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-3-e46",
+      "brand": "BMW",
+      "series": "Serie 3",
+      "generationLabel": "Serie 3 (E46)",
+      "chassisCode": "E46",
+      "bodyStyle": "Berlina / Coupé",
+      "yearsDisplay": "1998 – 2006",
+      "phases": [
+        {
+          "id": "e46-sedan-pre-lci",
+          "name": "BMW Serie 3 Berlina (E46) Pre-Facelift",
+          "phaseType": "Pre-Facelift (Pre-LCI)",
+          "years": "1998 – 2001",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/BMW_E46_front_20080328.jpg",
+            "file": "File:BMW_E46_front_20080328.jpg",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Faros con doble arco semicircular inferior y tulipas de intermitente orientadas hacia abajo",
+            "Intermitentes laterales montados en línea recta sobre la moldura protectora"
+          ]
+        },
+        {
+          "id": "e46-sedan-lci",
+          "name": "BMW Serie 3 Berlina (E46) Facelift",
+          "phaseType": "Facelift (LCI)",
+          "years": "2001 – 2005",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/BMW_E46_front_20080822.jpg",
+            "file": "File:BMW_E46_front_20080822.jpg",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Faros rediseñados con intermitentes curvados hacia arriba integrados estéticamente",
+            "Riñones más anchos y envolventes y nueva toma de aire inferior trapezoidal invertida"
+          ]
+        },
+        {
+          "id": "e46-coupe",
+          "name": "BMW Serie 3 Coupé (E46)",
+          "phaseType": "Producción Serie",
+          "years": "1999 – 2006",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_E46_Coupe_farngr%C3%BCn_front.jpg",
+            "file": "File:BMW_E46_Coupe_farngrün_front.jpg",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Puertas sin marco para las ventanillas, pilar A inclinado y parabrisas más bajo",
+            "Vía delantera ensanchada y faldones deportivos rebajados de fábrica"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "320i / 320ci",
+          "engineCode": "M54B22",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2171,
+          "displacementL": 2.2,
+          "fuel": "Gasolina",
+          "powerHp": 170,
+          "torqueNm": 210,
+          "topSpeedKmh": 226,
+          "accel0to100": 8.2,
+          "phase": "Ambas fases",
+          "yearsActive": "2000 – 2006",
+          "feedSystem": "Inyección Siemens MS43 con Doble-VANOS continuo",
+          "notes": "Sustituyó al M52TUB20 de 150 CV ofreciendo el característico sonido sedoso del 6L de 24 válvulas."
+        },
+        {
+          "modelBadge": "325i / 325ci",
+          "engineCode": "M54B25",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2494,
+          "displacementL": 2.5,
+          "fuel": "Gasolina",
+          "powerHp": 192,
+          "torqueNm": 245,
+          "topSpeedKmh": 240,
+          "accel0to100": 7.2,
+          "phase": "Ambas fases",
+          "yearsActive": "2000 – 2006",
+          "feedSystem": "Inyección electrónica multipunto Siemens con doble VANOS",
+          "notes": "Uno de los motores más fiables y equilibrados de toda la historia de la marca."
+        },
+        {
+          "modelBadge": "328i / 328ci",
+          "engineCode": "M52TUB28",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2793,
+          "displacementL": 2.8,
+          "fuel": "Gasolina",
+          "powerHp": 193,
+          "torqueNm": 280,
+          "topSpeedKmh": 242,
+          "accel0to100": 7,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "1998 – 2000",
+          "feedSystem": "Doble VANOS y colector de admisión de longitud variable (DISA)",
+          "notes": "Destaca por su par motor inmediato a bajas revoluciones (280 Nm a 3.500 rpm)."
+        },
+        {
+          "modelBadge": "330i / 330ci",
+          "engineCode": "M54B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 231,
+          "torqueNm": 300,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.5,
+          "phase": "Ambas fases",
+          "yearsActive": "2000 – 2006",
+          "feedSystem": "Inyección multipunto Siemens con válvula DISA y doble VANOS",
+          "notes": "El pináculo atmosférico de la gama civil en la serie E46. Opcional paquete ZHP (238 CV)."
+        },
+        {
+          "modelBadge": "330d / 330cd",
+          "engineCode": "M57D30TU",
+          "architecture": "6 en línea Turbodiésel",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 204,
+          "torqueNm": 410,
+          "topSpeedKmh": 242,
+          "accel0to100": 7.2,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2003 – 2006",
+          "feedSystem": "Common-Rail 1600 bar con turbo Garrett GT2260V y caja manual de 6 velocidades",
+          "notes": "El primer Coupé diésel de la historia de BMW (330cd) con prestaciones de deportivo."
+        }
+      ]
+    },
+    {
+      "id": "bmw-m3-e46",
+      "brand": "BMW",
+      "series": "M Motorsport",
+      "generationLabel": "BMW M3 (E46)",
+      "chassisCode": "E46",
+      "bodyStyle": "Coupé High Performance",
+      "yearsDisplay": "2000 – 2006",
+      "phases": [
+        {
+          "id": "m3-e46-standard",
+          "name": "BMW M3 (E46)",
+          "phaseType": "Producción Serie",
+          "years": "2000 – 2006",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/BMW_M3_e46_PL.JPG",
+            "file": "File:BMW_M3_e46_PL.JPG",
+            "author": "Pleszew",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Capó delantero de aluminio con prominencia central sobreelevada para alojar el motor S54",
+            "Aletas frontales ensanchadas en 20 mm con las icónicas branquias cromadas y logotipo M3",
+            "Tomas de aire frontales con rejilla de nido de abeja y retrovisores aerodinámicos ovales"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "M3 Coupé",
+          "engineCode": "S54B32",
+          "architecture": "6 en línea atmosférico a 7.900 rpm",
+          "cylinders": 6,
+          "displacementCc": 3246,
+          "displacementL": 3.2,
+          "fuel": "Gasolina",
+          "powerHp": 343,
+          "torqueNm": 365,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.2,
+          "phase": "Ambas fases",
+          "yearsActive": "2000 – 2006",
+          "feedSystem": "6 mariposas individuales gestionadas electrónicamente por centralita MSS54",
+          "notes": "105.7 CV por litro atmosférico. Ganador de múltiples premios International Engine of the Year."
+        },
+        {
+          "modelBadge": "M3 CSL",
+          "engineCode": "S54B32HP",
+          "architecture": "6 en línea atmosférico aligerado con admisión de fibra de carbono",
+          "cylinders": 6,
+          "displacementCc": 3246,
+          "displacementL": 3.2,
+          "fuel": "Gasolina",
+          "powerHp": 360,
+          "torqueNm": 370,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.9,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2003 – 2004 (1.383 unidades)",
+          "feedSystem": "Caja de admisión de aire dinámica de carbono con sensor MAP (sin caudalímetro)",
+          "notes": "Pesa 1.385 kg (110 kg menos que el M3 normal). Techo de carbono y vuelta en Nürburgring en 7:50."
+        },
+        {
+          "modelBadge": "M3 GTR Strassenversion",
+          "engineCode": "P60B40",
+          "architecture": "V8 atmosférico a 90° de cárter seco",
+          "cylinders": 8,
+          "displacementCc": 3997,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 380,
+          "torqueNm": 390,
+          "topSpeedKmh": 295,
+          "accel0to100": 4.6,
+          "phase": "Producción Serie",
+          "yearsActive": "2001 (Homologación ALMS)",
+          "feedSystem": "Inyección de competición con cárter seco y lubricación presurizada",
+          "notes": "Construido para homologar el M3 de las American Le Mans Series con motor V8."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-3-f30",
+      "brand": "BMW",
+      "series": "Serie 3",
+      "generationLabel": "Serie 3 (F30)",
+      "chassisCode": "F30",
+      "bodyStyle": "Berlina / Sedán",
+      "yearsDisplay": "2012 – 2019",
+      "phases": [
+        {
+          "id": "f30-pre-lci",
+          "name": "BMW Serie 3 Berlina (F30) Pre-Facelift",
+          "phaseType": "Pre-Facelift (Pre-LCI)",
+          "years": "2012 – 2015",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2012_BMW_318d_Sport_Automatic_2.0.jpg",
+            "file": "File:2012_BMW_318d_Sport_Automatic_2.0.jpg",
+            "author": "Vauxford",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Faros delanteros conectados directamente a la calandra de doble riñón",
+            "Faros de xenón bixenón o halógenos de serie con antinieblas redondos inferiores"
+          ]
+        },
+        {
+          "id": "f30-lci",
+          "name": "BMW Serie 3 Berlina (F30) Facelift (LCI)",
+          "phaseType": "Facelift (LCI)",
+          "years": "2015 – 2019",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2016_BMW_320i_%28F30_LCI_Indonesia%29_looking_from_front.jpg",
+            "file": "File:2016_BMW_320i_(F30_LCI_Indonesia)_looking_from_front.jpg",
+            "author": "Alexandre Prevot",
+            "license": "CC BY-SA 2.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Ópticas completamente Full LED adaptativas de serie con firma diurna luminosa continua",
+            "Toma de aire frontal modificada con sensor de radar de crucero integrado discretamente"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "320i",
+          "engineCode": "B48B20",
+          "architecture": "4 en línea TwinPower Turbo Modular",
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 184,
+          "torqueNm": 290,
+          "topSpeedKmh": 235,
+          "accel0to100": 7.2,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2015 – 2019",
+          "feedSystem": "Turbo Twin-Scroll con inyección directa de alta presión e intercooler aire-agua",
+          "notes": "Familia modular B-series con mayor resistencia térmica y fiabilidad que el N20 anterior."
+        },
+        {
+          "modelBadge": "328i",
+          "engineCode": "N20B20",
+          "architecture": "4 en línea TwinPower Turbo",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 245,
+          "torqueNm": 350,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.9,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2012 – 2015",
+          "feedSystem": "Twin-Scroll turbo, inyección directa HPI y Valvetronic",
+          "notes": "Sustituyó a los anteriores 6L atmosféricos ofreciendo 350 Nm desde 1.250 rpm."
+        },
+        {
+          "modelBadge": "330i",
+          "engineCode": "B48B20",
+          "architecture": "4 en línea TwinPower Turbo Modular",
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 252,
+          "torqueNm": 350,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.8,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2015 – 2019",
+          "feedSystem": "Turbo Twin-Scroll e inyección directa en bloque B48",
+          "notes": "0 a 100 km/h en 5.8s con caja automática deportiva Steptronic de 8 velocidades ZF."
+        },
+        {
+          "modelBadge": "335i",
+          "engineCode": "N55B30",
+          "architecture": "6 en línea TwinPower Turbo",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 306,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.1,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2012 – 2015",
+          "feedSystem": "Turbo Twin-Scroll con Valvetronic e inyección directa",
+          "notes": "Respuesta progresiva y sonido clásico con doble salida de escape posterior."
+        },
+        {
+          "modelBadge": "340i",
+          "engineCode": "B58B30M0",
+          "architecture": "6 en línea TwinPower Turbo Bloque Cerrado (Closed-Deck)",
+          "cylinders": 6,
+          "displacementCc": 2998,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 326,
+          "torqueNm": 450,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.8,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2015 – 2019",
+          "feedSystem": "Turbo Twin-Scroll, bloque closed-deck e intercooler refrigerado por líquido",
+          "notes": "El motor B58 legendario por su robustez extrema, base mecánica del Toyota Supra y BMW M40i."
+        },
+        {
+          "modelBadge": "335d xDrive",
+          "engineCode": "N57D30T1",
+          "architecture": "6 en línea Biturbodiésel con tracción integral xDrive",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 313,
+          "torqueNm": 630,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.8,
+          "phase": "Ambas fases",
+          "yearsActive": "2013 – 2019",
+          "feedSystem": "Biturbo secuencial con Common Rail a 2000 bar",
+          "notes": "Acelera de 0 a 100 km/h tan rápido como un 340i de gasolina gracias a 630 Nm de par motor."
+        }
+      ]
+    },
+    {
+      "id": "bmw-m3-f80",
+      "brand": "BMW",
+      "series": "M Motorsport",
+      "generationLabel": "BMW M3 (F80)",
+      "chassisCode": "F80",
+      "bodyStyle": "Berlina High Performance",
+      "yearsDisplay": "2014 – 2018",
+      "phases": [
+        {
+          "id": "m3-f80-standard",
+          "name": "BMW M3 Berlina (F80)",
+          "phaseType": "Producción Serie",
+          "years": "2014 – 2018",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/BMW_M3_%28F80%29_front.jpg",
+            "file": "File:BMW_M3_(F80)_front.jpg",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Frontal M agresivo con retrovisores de doble brazo aerodinámico",
+            "Aletas delanteras y traseras ultra-ensanchadas y barra de torretas de fibra de carbono tipo bumerán",
+            "Calandra de doble riñón en negro brillante con listones dobles y emblema M3"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "M3 Berlina",
+          "engineCode": "S55B30",
+          "architecture": "6 en línea Biturbo con bloque Closed-Deck",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 431,
+          "torqueNm": 550,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.1,
+          "phase": "Ambas fases",
+          "yearsActive": "2014 – 2018",
+          "feedSystem": "Dos turbocompresores monotributarios mono-scroll con intercooler aire-agua superior",
+          "notes": "0-100 en 4.1s con cambio DKG de 7 marchas (4.3s con cambio manual de 6). Límite de giro a 7.600 rpm."
+        },
+        {
+          "modelBadge": "M3 Competition",
+          "engineCode": "S55B30",
+          "architecture": "6 en línea Biturbo Competition",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 450,
+          "torqueNm": 550,
+          "topSpeedKmh": 280,
+          "accel0to100": 4,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2016 – 2018",
+          "feedSystem": "M TwinPower Turbo con escape M Sport calibrado",
+          "notes": "Incluye suspensión M adaptativa revisada, diferencial activo M recalibrado y llantas forjadas 666M."
+        },
+        {
+          "modelBadge": "M3 CS",
+          "engineCode": "S55B30",
+          "architecture": "6 en línea Biturbo Club Sport",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 460,
+          "torqueNm": 600,
+          "topSpeedKmh": 280,
+          "accel0to100": 3.9,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2018 (Serie limitada 1.200 uds.)",
+          "feedSystem": "Gestión electrónica optimizada con dos bombas de combustible",
+          "notes": "600 Nm de par motor. Capó y splitter frontal de carbono. 0 a 100 km/h en 3.9 segundos."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-3-g20",
+      "brand": "BMW",
+      "series": "Serie 3",
+      "generationLabel": "Serie 3 (G20)",
+      "chassisCode": "G20",
+      "bodyStyle": "Berlina / Sedán",
+      "yearsDisplay": "2019 – Actualidad",
+      "phases": [
+        {
+          "id": "g20-standard",
+          "name": "BMW Serie 3 Berlina (G20) M Sport",
+          "phaseType": "Producción Serie",
+          "years": "2019 – Actualidad",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/BMW_M340i_xDrive_G20_front_view_in_Brunei.jpg",
+            "file": "File:BMW_M340i_xDrive_G20_front_view_in_Brunei.jpg",
+            "author": "BruneiSpotter",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Faros afilados con muesca inferior evocando el clásico E46 y tecnología Láser opcional",
+            "Calandra de riñones unida en el centro con persianas activas Active Air Stream"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "320i",
+          "engineCode": "B48B20",
+          "architecture": "4 en línea TwinPower Turbo con microhibridación 48V",
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 184,
+          "torqueNm": 300,
+          "topSpeedKmh": 240,
+          "accel0to100": 7.1,
+          "phase": "Ambas fases",
+          "yearsActive": "2019 – Actualidad",
+          "feedSystem": "Inyección directa a 350 bar y sistema Mild Hybrid de 48V",
+          "notes": "Etiqueta ECO en España mediante arrancador-generador de 11 CV."
+        },
+        {
+          "modelBadge": "330i",
+          "engineCode": "B48B20",
+          "architecture": "4 en línea TwinPower Turbo",
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 258,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.8,
+          "phase": "Ambas fases",
+          "yearsActive": "2019 – Actualidad",
+          "feedSystem": "Twin-Scroll turbo de geometría optimizada e inyección directa",
+          "notes": "400 Nm de par plano entre 1.550 y 4.400 rpm."
+        },
+        {
+          "modelBadge": "M340i xDrive",
+          "engineCode": "B58B30O1",
+          "architecture": "6 en línea TwinPower Turbo M Performance",
+          "cylinders": 6,
+          "displacementCc": 2998,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 374,
+          "torqueNm": 500,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.4,
+          "phase": "Ambas fases",
+          "yearsActive": "2019 – Actualidad",
+          "feedSystem": "Twin-Scroll turbo refrigerado por agua con microhibridación 48V",
+          "notes": "Tracción integral xDrive con diferencial trasero deportivo M Sport. Acelera en 4.4s."
+        },
+        {
+          "modelBadge": "330e Híbrido Enchufable",
+          "engineCode": "B48B20 + Motor Eléctrico",
+          "architecture": "4 en línea Turbo + Motor Eléctrico síncrono",
+          "cylinders": 4,
+          "displacementCc": 1998,
+          "displacementL": 2,
+          "fuel": "Híbrido Enchufable",
+          "powerHp": 292,
+          "torqueNm": 420,
+          "topSpeedKmh": 230,
+          "accel0to100": 5.9,
+          "phase": "Ambas fases",
+          "yearsActive": "2019 – Actualidad",
+          "feedSystem": "Híbrido PHEV con batería de 12 kWh y función XtraBoost",
+          "notes": "Hasta 60 km de autonomía puramente eléctrica con etiqueta CERO."
+        }
+      ]
+    },
+    {
+      "id": "bmw-m2-f87",
+      "brand": "BMW",
+      "series": "M Motorsport",
+      "generationLabel": "BMW M2 Competition (F87)",
+      "chassisCode": "F87",
+      "bodyStyle": "Coupé High Performance",
+      "yearsDisplay": "2015 – 2021",
+      "phases": [
+        {
+          "id": "m2-f87-competition",
+          "name": "BMW M2 Competition (F87)",
+          "phaseType": "Producción Serie",
+          "years": "2018 – 2021",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/BMW_M2_Competition_%28F87%29_front.jpg",
+            "file": "File:BMW_M2_Competition_(F87)_front.jpg",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Riñones ensanchados en negro brillante unidos en una pieza angular",
+            "Tres tomas de aire inferiores más abiertas para los radiadores del motor S55 del M3/M4",
+            "Retrovisores M con diseño de doble brazo"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "M2 Estándar",
+          "engineCode": "N55B30T0",
+          "architecture": "6 en línea TwinPower Turbo (Pistones de M3/M4)",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 370,
+          "torqueNm": 465,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.3,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2015 – 2018",
+          "feedSystem": "Mono-turbo Twin-Scroll con Overboost temporal a 500 Nm",
+          "notes": "4.3s con cambio DKG (4.5s manual). Chasis y frenos heredados del F82 M4."
+        },
+        {
+          "modelBadge": "M2 Competition",
+          "engineCode": "S55B30",
+          "architecture": "6 en línea Biturbo de pura cepa M Motorsport",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 410,
+          "torqueNm": 550,
+          "topSpeedKmh": 280,
+          "accel0to100": 4.2,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2018 – 2021",
+          "feedSystem": "Biturbo real del M3/M4 con barra de torretas en fibra de carbono CFRP",
+          "notes": "Curva de par masiva (550 Nm entre 2.350 y 5.200 rpm). Sonido de escape doble M."
+        },
+        {
+          "modelBadge": "M2 CS",
+          "engineCode": "S55B30",
+          "architecture": "6 en línea Biturbo Club Sport",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 450,
+          "torqueNm": 550,
+          "topSpeedKmh": 280,
+          "accel0to100": 4,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2020 – 2021 (2.200 unidades)",
+          "feedSystem": "S55 en máxima especificación con techo y capó de carbono",
+          "notes": "Considerado uno de los mejores deportivos modernos del mundo del motor."
+        }
+      ]
+    },
+    {
+      "id": "bmw-m2-g87",
+      "brand": "BMW",
+      "series": "M Motorsport",
+      "generationLabel": "BMW M2 (G87)",
+      "chassisCode": "G87",
+      "bodyStyle": "Coupé High Performance",
+      "yearsDisplay": "2023 – Actualidad",
+      "phases": [
+        {
+          "id": "m2-g87-standard",
+          "name": "BMW M2 (G87)",
+          "phaseType": "Producción Serie",
+          "years": "2023 – Actualidad",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BMW_G87_M2_Motorworld_Munich_1X7A0071.jpg",
+            "file": "File:BMW_G87_M2_Motorworld_Munich_1X7A0071.jpg",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Entradas de aire frontales cuadradas y geométricas inspiradas en coches de carreras",
+            "Calandra de riñones horizontales sin marco y faros de una sola parábola inspirados en el BMW 2002",
+            "Aletas sobredimensionadas esculpidas en la propia carrocería"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "M2 (G87)",
+          "engineCode": "S58B30T0",
+          "architecture": "6 en línea Biturbo M de alto régimen",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 460,
+          "torqueNm": 550,
+          "topSpeedKmh": 285,
+          "accel0to100": 4,
+          "phase": "Producción Serie",
+          "yearsActive": "2023 – Actualidad",
+          "feedSystem": "Dos turbocompresores mono-scroll con inyección a 350 bar y culata impresa en 3D",
+          "notes": "Comparte propulsor idéntico con el M3/M4 G80/G82. Opción de cambio manual de 6v o M Steptronic 8v."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-5-e39",
+      "brand": "BMW",
+      "series": "Serie 5",
+      "generationLabel": "Serie 5 (E39)",
+      "chassisCode": "E39",
+      "bodyStyle": "Berlina / Sedán",
+      "yearsDisplay": "1995 – 2003",
+      "phases": [
+        {
+          "id": "e39-standard",
+          "name": "BMW Serie 5 (E39)",
+          "phaseType": "Producción Serie",
+          "years": "1995 – 2003",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/BMW_E39_front_20081125.jpg",
+            "file": "File:BMW_E39_front_20081125.jpg",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "El modelo pionero que estrenó los legendarios aros de luz Angel Eyes en el restyling de 2000",
+            "Capó integrado con riñones estilizados y chasis de aluminio en suspensión"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "528i",
+          "engineCode": "M52B28",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2793,
+          "displacementL": 2.8,
+          "fuel": "Gasolina",
+          "powerHp": 193,
+          "torqueNm": 280,
+          "topSpeedKmh": 236,
+          "accel0to100": 7.5,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "1995 – 2000",
+          "feedSystem": "Inyección Siemens y distribución simple/doble VANOS",
+          "notes": "Piedra angular del confort y respuesta dinámica en el lanzamiento del E39."
+        },
+        {
+          "modelBadge": "530i",
+          "engineCode": "M54B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2979,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 231,
+          "torqueNm": 300,
+          "topSpeedKmh": 250,
+          "accel0to100": 7.1,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2000 – 2003",
+          "feedSystem": "Inyección multipunto y doble VANOS continuo con válvula DISA",
+          "notes": "Considerada la mejor berlina ejecutiva de su época."
+        },
+        {
+          "modelBadge": "540i",
+          "engineCode": "M62B44",
+          "architecture": "V8 atmosférico a 90°",
+          "cylinders": 8,
+          "displacementCc": 4398,
+          "displacementL": 4.4,
+          "fuel": "Gasolina",
+          "powerHp": 286,
+          "torqueNm": 440,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.2,
+          "phase": "Ambas fases",
+          "yearsActive": "1996 – 2003",
+          "feedSystem": "Bosch Motronic y VANOS simple en fase técnica TU",
+          "notes": "440 Nm de par motor descomunal con caja manual de 6 velocidades Getrag."
+        },
+        {
+          "modelBadge": "M5 (E39)",
+          "engineCode": "S62B50",
+          "architecture": "V8 atmosférico de altas prestaciones a 7.000 rpm",
+          "cylinders": 8,
+          "displacementCc": 4941,
+          "displacementL": 4.9,
+          "fuel": "Gasolina",
+          "powerHp": 400,
+          "torqueNm": 500,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.3,
+          "phase": "Ambas fases",
+          "yearsActive": "1998 – 2003",
+          "feedSystem": "8 mariposas independientes gestionadas por servomotor con doble VANOS de alta presión",
+          "notes": "La berlina deportiva definitiva. 400 CV atmosféricos gestionados exclusivamente con caja manual de 6 velocidades."
+        }
+      ]
+    },
+    {
+      "id": "bmw-serie-5-e60",
+      "brand": "BMW",
+      "series": "Serie 5",
+      "generationLabel": "Serie 5 (E60)",
+      "chassisCode": "E60",
+      "bodyStyle": "Berlina / Sedán",
+      "yearsDisplay": "2003 – 2010",
+      "phases": [
+        {
+          "id": "e60-sedan-standard",
+          "name": "BMW Serie 5 Berlina (E60)",
+          "phaseType": "Producción Serie",
+          "years": "2003 – 2010",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/BMW_E60_front_20071104.jpg",
+            "file": "File:BMW_E60_front_20071104.jpg",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Vanguardista diseño de Chris Bangle con faros en forma de ojos de halcón afilados hacia las aletas",
+            "Estructura delantera de aluminio remachada al habitáculo de acero para reparto de pesos 50:50"
+          ]
+        },
+        {
+          "id": "e60-m5",
+          "name": "BMW M5 V10 (E60)",
+          "phaseType": "Producción Serie",
+          "years": "2005 – 2010",
+          "frontImage": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/BMW_M5_%28E60%29_front.jpg",
+            "file": "File:BMW_M5_(E60)_front.jpg",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 3.0",
+            "verifiedFront": true
+          },
+          "visualChanges": [
+            "Frontal M con colosal apertura central y sin luces antiniebla para refrigeración del V10",
+            "Branquias en aletas delanteras, pasos de rueda ensanchados y cuatro salidas de escape traseras"
+          ]
+        }
+      ],
+      "engines": [
+        {
+          "modelBadge": "530i",
+          "engineCode": "N52B30",
+          "architecture": "6 en línea (L6 atmosférico)",
+          "cylinders": 6,
+          "displacementCc": 2996,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 258,
+          "torqueNm": 300,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.5,
+          "phase": "Pre-Facelift (Pre-LCI)",
+          "yearsActive": "2005 – 2007",
+          "feedSystem": "Inyección indirecta con bloque magnesio-aluminio",
+          "notes": "Bomba de agua eléctrica y doble VANOS continuo."
+        },
+        {
+          "modelBadge": "550i",
+          "engineCode": "N62B48",
+          "architecture": "V8 atmosférico a 90° con Valvetronic",
+          "cylinders": 8,
+          "displacementCc": 4799,
+          "displacementL": 4.8,
+          "fuel": "Gasolina",
+          "powerHp": 367,
+          "torqueNm": 490,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.2,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2005 – 2010",
+          "feedSystem": "Inyección multipunto y colector de admisión de longitud continuamente variable",
+          "notes": "0 a 100 km/h en 5.2 segundos con un bramido V8 inconfundible."
+        },
+        {
+          "modelBadge": "535d",
+          "engineCode": "M57D30TOP",
+          "architecture": "6 en línea Biturbodiésel Secuencial",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 286,
+          "torqueNm": 580,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.4,
+          "phase": "Facelift (LCI)",
+          "yearsActive": "2007 – 2010",
+          "feedSystem": "Registro variable de dos turbos BorgWarner y Common Rail a 1600 bar",
+          "notes": "El devorador de autopistas por excelencia con consumos inferiores a 7 l/100 km a alta velocidad."
+        },
+        {
+          "modelBadge": "M5 (E60)",
+          "engineCode": "S85B50",
+          "architecture": "V10 atmosférico a 90° derivado de la Fórmula 1 (Williams-BMW)",
+          "cylinders": 10,
+          "displacementCc": 4999,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 507,
+          "torqueNm": 520,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.7,
+          "phase": "Ambas fases",
+          "yearsActive": "2005 – 2010",
+          "feedSystem": "10 mariposas individuales con control iónico de picado en bujías y cárter cuasi-seco",
+          "notes": "El único motor V10 en la historia de las berlinas de BMW. Gira hasta 8.250 rpm y alcanza 305 km/h con paquete M Driver."
+        }
+      ]
+    }
+  ]
+}

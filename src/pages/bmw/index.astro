@@ -348,8 +348,19 @@ const modelsJson = JSON.stringify(catalog.generations);
           </div>
 
           <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Variantes de Modelo & Motorización en este Chasis</h4>
-          <div id="variantsContainer" class="flex flex-wrap gap-1.5">
+          <div id="variantsContainer" class="flex flex-wrap gap-1.5 mb-4">
             <!-- Variantes -->
+          </div>
+
+          <!-- Enlace al Explorador de Motores & Fases -->
+          <div class="border-t border-slate-800/80 pt-4">
+            <a 
+              id="modalGoToEnginesBtn" 
+              href="/carvault/motores" 
+              class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-lg shadow-cyan-600/20 transition-all cursor-pointer"
+            >
+              <span>⚡ Ver fichas de motores, 0-100 km/h y fases en el Explorador Mecánico →</span>
+            </a>
           </div>
         </div>
       </div>
@@ -1111,6 +1122,12 @@ const modelsJson = JSON.stringify(catalog.generations);
         `).join('');
       } else {
         variantsContainer.innerHTML = `<span class="text-xs text-slate-500 font-mono">Sin variantes secundarias registradas</span>`;
+      }
+
+      const goToEnginesBtn = document.getElementById('modalGoToEnginesBtn');
+      if (goToEnginesBtn) {
+        const queryTerm = firstChassis.code || currentModel.label;
+        goToEnginesBtn.href = `/carvault/motores?q=${encodeURIComponent(queryTerm)}`;
       }
 
       modal.classList.remove('hidden');

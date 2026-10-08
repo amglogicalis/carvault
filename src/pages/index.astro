@@ -264,6 +264,28 @@ const registryJson = JSON.stringify(requestsRegistry);
         </span>
       </div>
     </div>
+
+    <!-- Destacado: Explorador de Motores & Fases -->
+    <div class="mt-8 bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+      <div class="space-y-2 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full text-xs font-mono font-medium border border-cyan-500/30 bg-cyan-950/40 text-cyan-300">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          <span>Nueva Herramienta Especializada</span>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-black text-white">
+          Explorador de Motores, Prestaciones & Fases
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 max-w-2xl">
+          Compara códigos de motor en un mismo chasis (ej. <strong>N52B25 vs N53B30</strong> en el 325i E92), cronometrajes 0-100 km/h, velocidades punta y la evolución visual frontal de restylings (<strong>Pre-LCI vs LCI</strong>) con fotos frontales directas 100% verificadas.
+        </p>
+      </div>
+      <a 
+        href="/carvault/motores" 
+        class="shrink-0 px-6 py-3 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs sm:text-sm shadow-xl shadow-cyan-500/20 hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
+      >
+        <span>Abrir explorador de motores →</span>
+      </a>
+    </div>
   </section>
 
   <!-- Sección API Pública Central Gateway -->
@@ -276,8 +298,8 @@ const registryJson = JSON.stringify(requestsRegistry);
         </p>
       </div>
 
-      <!-- Grid de Endpoints: Central Gateway y Por Marca -->
-      <div class="mt-8 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Grid de Endpoints: Central Gateway, Monomarca y Motores -->
+      <div class="mt-8 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- Endpoint Central Gateway -->
         <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-xl">
           <div>
@@ -317,6 +339,50 @@ const registryJson = JSON.stringify(requestsRegistry);
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/bmw.json</code>
             <a href="/carvault/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Motores & Prestaciones -->
+        <div class="bg-slate-900 border border-indigo-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-indigo-300 font-bold flex items-center gap-1.5">
+                <span>⚡</span>
+                Endpoint Powertrains & Prestaciones
+              </span>
+              <span class="px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 text-[10px]">0-100 km/h • Códigos</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Fichas técnicas mecánicas: códigos de motor (N52, N53, S65, B58), cilindrada, velocidades punta y aceleración 0-100 km/h.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/bmw-powertrains.json</code>
+            <a href="/carvault/api/v1/bmw-powertrains.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Fases & Restylings Frontales -->
+        <div class="bg-slate-900 border border-emerald-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-emerald-300 font-bold flex items-center gap-1.5">
+                <span>📸</span>
+                Endpoint Fases & Restylings Frontales
+              </span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px]">Pre-LCI vs LCI</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Desglose visual por fase/facelift de cada chasis con enlace a fotografías frontales directas y cambios estéticos documentados.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/bmw-phases.json</code>
+            <a href="/carvault/api/v1/bmw-phases.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>

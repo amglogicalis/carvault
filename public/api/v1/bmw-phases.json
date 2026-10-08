@@ -1,0 +1,392 @@
+{
+  "brand": "BMW",
+  "totalPhases": 18,
+  "phases": [
+    {
+      "modelId": "bmw-serie-3-e92",
+      "series": "Serie 3",
+      "chassis": "E92",
+      "bodyStyle": "Coupé",
+      "id": "e92-pre-lci",
+      "name": "BMW Serie 3 Coupé (E92) Pre-Facelift",
+      "phaseType": "Pre-Facelift (Pre-LCI)",
+      "years": "2006 – 2010",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/BMW_E92_front_20080118.jpg",
+        "file": "File:BMW_E92_front_20080118.jpg",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Faros bixenón con reflectores circulares clásicos amarillos (Angel Eyes)",
+        "Calandra de riñones con perfil superior cromado integrado en el capó",
+        "Tomas de aire frontales con lamas horizontales sobrias"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e92",
+      "series": "Serie 3",
+      "chassis": "E92",
+      "bodyStyle": "Coupé",
+      "id": "e92-lci",
+      "name": "BMW Serie 3 Coupé (E92) Facelift (LCI)",
+      "phaseType": "Facelift (LCI)",
+      "years": "2010 – 2013",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2011_BMW_328xi_Coupe_%28E92%29_Facelift.jpg",
+        "file": "File:2011_BMW_328xi_Coupe_(E92)_Facelift.jpg",
+        "author": "Bull-Doser",
+        "license": "Public domain",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Ópticas delanteras más anchas y onduladas con coronas luminosas LED blancas",
+        "Riñones ensanchados y marco tridimensional completamente independiente del capó",
+        "Faldón delantero con canalizaciones aerodinámicas integradas"
+      ]
+    },
+    {
+      "modelId": "bmw-m3-e92",
+      "series": "M Motorsport",
+      "chassis": "E92",
+      "bodyStyle": "Coupé High Performance",
+      "id": "m3-e92-standard",
+      "name": "BMW M3 Coupé (E92)",
+      "phaseType": "Producción Serie",
+      "years": "2007 – 2013",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/BMW_M3_Coup%C3%A9_%28E92%29_front.JPG",
+        "file": "File:BMW_M3_Coupé_(E92)_front.JPG",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Capó abombado de aluminio con prominente joroba (Powerdome) y dos salidas de aire",
+        "Paragolpes frontal con 3 enormes entradas de refrigeración sin faros antiniebla",
+        "Aletas delanteras ensanchadas con branquias M y techo de fibra de carbono vista"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e90",
+      "series": "Serie 3",
+      "chassis": "E90",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "e90-pre-lci",
+      "name": "BMW Serie 3 Berlina (E90) Pre-Facelift",
+      "phaseType": "Pre-Facelift (Pre-LCI)",
+      "years": "2005 – 2008",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg",
+        "file": "File:2005-2008_BMW_320i_(E90)_sedan_(2011-07-17)_01.jpg",
+        "author": "OSX",
+        "license": "Public domain",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Calandra de doble riñón coronada con bigote cromado incorporado al borde del capó",
+        "Faros con intermitentes rectilíneos y pilotos traseros con sección blanca cuadrada"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e90",
+      "series": "Serie 3",
+      "chassis": "E90",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "e90-lci",
+      "name": "BMW Serie 3 Berlina (E90) Facelift (LCI)",
+      "phaseType": "Facelift (LCI)",
+      "years": "2008 – 2011",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/BMW_E90_LCI_3_Series_Space_Grey_Metallic_%281%29.jpg",
+        "file": "File:BMW_E90_LCI_3_Series_Space_Grey_Metallic_(1).jpg",
+        "author": "Euro-spec",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Capó rediseñado con dos nervaduras en V hasta los riñones eliminando el bigote cromado",
+        "Riñones ensanchados integrados e intermitentes delanteros LED con forma de flecha",
+        "Vías traseras ensanchadas en 24 mm"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e46",
+      "series": "Serie 3",
+      "chassis": "E46",
+      "bodyStyle": "Berlina / Coupé",
+      "id": "e46-sedan-pre-lci",
+      "name": "BMW Serie 3 Berlina (E46) Pre-Facelift",
+      "phaseType": "Pre-Facelift (Pre-LCI)",
+      "years": "1998 – 2001",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/BMW_E46_front_20080328.jpg",
+        "file": "File:BMW_E46_front_20080328.jpg",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Faros con doble arco semicircular inferior y tulipas de intermitente orientadas hacia abajo",
+        "Intermitentes laterales montados en línea recta sobre la moldura protectora"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e46",
+      "series": "Serie 3",
+      "chassis": "E46",
+      "bodyStyle": "Berlina / Coupé",
+      "id": "e46-sedan-lci",
+      "name": "BMW Serie 3 Berlina (E46) Facelift",
+      "phaseType": "Facelift (LCI)",
+      "years": "2001 – 2005",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/BMW_E46_front_20080822.jpg",
+        "file": "File:BMW_E46_front_20080822.jpg",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Faros rediseñados con intermitentes curvados hacia arriba integrados estéticamente",
+        "Riñones más anchos y envolventes y nueva toma de aire inferior trapezoidal invertida"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-e46",
+      "series": "Serie 3",
+      "chassis": "E46",
+      "bodyStyle": "Berlina / Coupé",
+      "id": "e46-coupe",
+      "name": "BMW Serie 3 Coupé (E46)",
+      "phaseType": "Producción Serie",
+      "years": "1999 – 2006",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/BMW_E46_Coupe_farngr%C3%BCn_front.jpg",
+        "file": "File:BMW_E46_Coupe_farngrün_front.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Puertas sin marco para las ventanillas, pilar A inclinado y parabrisas más bajo",
+        "Vía delantera ensanchada y faldones deportivos rebajados de fábrica"
+      ]
+    },
+    {
+      "modelId": "bmw-m3-e46",
+      "series": "M Motorsport",
+      "chassis": "E46",
+      "bodyStyle": "Coupé High Performance",
+      "id": "m3-e46-standard",
+      "name": "BMW M3 (E46)",
+      "phaseType": "Producción Serie",
+      "years": "2000 – 2006",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/BMW_M3_e46_PL.JPG",
+        "file": "File:BMW_M3_e46_PL.JPG",
+        "author": "Pleszew",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Capó delantero de aluminio con prominencia central sobreelevada para alojar el motor S54",
+        "Aletas frontales ensanchadas en 20 mm con las icónicas branquias cromadas y logotipo M3",
+        "Tomas de aire frontales con rejilla de nido de abeja y retrovisores aerodinámicos ovales"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-f30",
+      "series": "Serie 3",
+      "chassis": "F30",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "f30-pre-lci",
+      "name": "BMW Serie 3 Berlina (F30) Pre-Facelift",
+      "phaseType": "Pre-Facelift (Pre-LCI)",
+      "years": "2012 – 2015",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/2012_BMW_318d_Sport_Automatic_2.0.jpg",
+        "file": "File:2012_BMW_318d_Sport_Automatic_2.0.jpg",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Faros delanteros conectados directamente a la calandra de doble riñón",
+        "Faros de xenón bixenón o halógenos de serie con antinieblas redondos inferiores"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-f30",
+      "series": "Serie 3",
+      "chassis": "F30",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "f30-lci",
+      "name": "BMW Serie 3 Berlina (F30) Facelift (LCI)",
+      "phaseType": "Facelift (LCI)",
+      "years": "2015 – 2019",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2016_BMW_320i_%28F30_LCI_Indonesia%29_looking_from_front.jpg",
+        "file": "File:2016_BMW_320i_(F30_LCI_Indonesia)_looking_from_front.jpg",
+        "author": "Alexandre Prevot",
+        "license": "CC BY-SA 2.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Ópticas completamente Full LED adaptativas de serie con firma diurna luminosa continua",
+        "Toma de aire frontal modificada con sensor de radar de crucero integrado discretamente"
+      ]
+    },
+    {
+      "modelId": "bmw-m3-f80",
+      "series": "M Motorsport",
+      "chassis": "F80",
+      "bodyStyle": "Berlina High Performance",
+      "id": "m3-f80-standard",
+      "name": "BMW M3 Berlina (F80)",
+      "phaseType": "Producción Serie",
+      "years": "2014 – 2018",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/BMW_M3_%28F80%29_front.jpg",
+        "file": "File:BMW_M3_(F80)_front.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Frontal M agresivo con retrovisores de doble brazo aerodinámico",
+        "Aletas delanteras y traseras ultra-ensanchadas y barra de torretas de fibra de carbono tipo bumerán",
+        "Calandra de doble riñón en negro brillante con listones dobles y emblema M3"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-3-g20",
+      "series": "Serie 3",
+      "chassis": "G20",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "g20-standard",
+      "name": "BMW Serie 3 Berlina (G20) M Sport",
+      "phaseType": "Producción Serie",
+      "years": "2019 – Actualidad",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/BMW_M340i_xDrive_G20_front_view_in_Brunei.jpg",
+        "file": "File:BMW_M340i_xDrive_G20_front_view_in_Brunei.jpg",
+        "author": "BruneiSpotter",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Faros afilados con muesca inferior evocando el clásico E46 y tecnología Láser opcional",
+        "Calandra de riñones unida en el centro con persianas activas Active Air Stream"
+      ]
+    },
+    {
+      "modelId": "bmw-m2-f87",
+      "series": "M Motorsport",
+      "chassis": "F87",
+      "bodyStyle": "Coupé High Performance",
+      "id": "m2-f87-competition",
+      "name": "BMW M2 Competition (F87)",
+      "phaseType": "Producción Serie",
+      "years": "2018 – 2021",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/BMW_M2_Competition_%28F87%29_front.jpg",
+        "file": "File:BMW_M2_Competition_(F87)_front.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Riñones ensanchados en negro brillante unidos en una pieza angular",
+        "Tres tomas de aire inferiores más abiertas para los radiadores del motor S55 del M3/M4",
+        "Retrovisores M con diseño de doble brazo"
+      ]
+    },
+    {
+      "modelId": "bmw-m2-g87",
+      "series": "M Motorsport",
+      "chassis": "G87",
+      "bodyStyle": "Coupé High Performance",
+      "id": "m2-g87-standard",
+      "name": "BMW M2 (G87)",
+      "phaseType": "Producción Serie",
+      "years": "2023 – Actualidad",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/BMW_G87_M2_Motorworld_Munich_1X7A0071.jpg",
+        "file": "File:BMW_G87_M2_Motorworld_Munich_1X7A0071.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Entradas de aire frontales cuadradas y geométricas inspiradas en coches de carreras",
+        "Calandra de riñones horizontales sin marco y faros de una sola parábola inspirados en el BMW 2002",
+        "Aletas sobredimensionadas esculpidas en la propia carrocería"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-5-e39",
+      "series": "Serie 5",
+      "chassis": "E39",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "e39-standard",
+      "name": "BMW Serie 5 (E39)",
+      "phaseType": "Producción Serie",
+      "years": "1995 – 2003",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/BMW_E39_front_20081125.jpg",
+        "file": "File:BMW_E39_front_20081125.jpg",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "El modelo pionero que estrenó los legendarios aros de luz Angel Eyes en el restyling de 2000",
+        "Capó integrado con riñones estilizados y chasis de aluminio en suspensión"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-5-e60",
+      "series": "Serie 5",
+      "chassis": "E60",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "e60-sedan-standard",
+      "name": "BMW Serie 5 Berlina (E60)",
+      "phaseType": "Producción Serie",
+      "years": "2003 – 2010",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/BMW_E60_front_20071104.jpg",
+        "file": "File:BMW_E60_front_20071104.jpg",
+        "author": "Rudolf Stricker",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Vanguardista diseño de Chris Bangle con faros en forma de ojos de halcón afilados hacia las aletas",
+        "Estructura delantera de aluminio remachada al habitáculo de acero para reparto de pesos 50:50"
+      ]
+    },
+    {
+      "modelId": "bmw-serie-5-e60",
+      "series": "Serie 5",
+      "chassis": "E60",
+      "bodyStyle": "Berlina / Sedán",
+      "id": "e60-m5",
+      "name": "BMW M5 V10 (E60)",
+      "phaseType": "Producción Serie",
+      "years": "2005 – 2010",
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/BMW_M5_%28E60%29_front.jpg",
+        "file": "File:BMW_M5_(E60)_front.jpg",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 3.0",
+        "verifiedFront": true
+      },
+      "visualChanges": [
+        "Frontal M con colosal apertura central y sin luces antiniebla para refrigeración del V10",
+        "Branquias en aletas delanteras, pasos de rueda ensanchados y cuatro salidas de escape traseras"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { BMW_POWERTRAINS } from '../../data/powertrains';
+
+const powertrainsJson = JSON.stringify(BMW_POWERTRAINS);
+const totalEngines = BMW_POWERTRAINS.reduce((acc, m) => acc + m.engines.length, 0);
+const totalPhases = BMW_POWERTRAINS.reduce((acc, m) => acc + m.phases.length, 0);
+---
+
+<Layout 
+  title="Motores, Prestaciones & Fases — Carvault"
+  description="Explorador técnico de motorizaciones, códigos de motor (N52 vs N53, S65, S54, B58), cifras 0-100 km/h, velocidad punta y comparativa visual de fases Pre-LCI vs LCI con fotografías frontales limpias."
+>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-16 pb-16 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-950/40 via-slate-950 to-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 mb-6 shadow-sm">
+        <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        <span>Herramienta Técnica Automotriz</span>
+        <span class="text-slate-600">•</span>
+        <span class="text-slate-300">Producción Real (Sin Conceptos)</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+        Explorador de <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">Motores, Prestaciones</span> & Fases
+      </h1>
+      
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Descubre la arquitectura interna de cada generación: compara códigos de motor (ej. <strong class="text-white font-mono">N52B25 vs N53B30</strong> en el 325i E92), aceleración 0-100 km/h, velocidades punta y la evolución visual frontal de restylings (<span class="text-cyan-400 font-semibold">Pre-LCI vs LCI</span>).
+      </p>
+
+      <!-- Métricas del Motor -->
+      <div class="mt-8 flex flex-wrap justify-center gap-6 sm:gap-12 text-slate-300">
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-white font-mono">{BMW_POWERTRAINS.length}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-mono">Chasis & Modelos</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-cyan-400 font-mono">{totalEngines}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-mono">Motorizaciones Detalladas</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-indigo-400 font-mono">{totalPhases}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-mono">Fases Frontales Directas</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-emerald-400 font-mono">100%</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1 font-mono">Frontales Verificados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorador Interactivo -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <!-- Barra de Búsqueda y Filtros Rápidos -->
+    <div class="bg-slate-900/90 border border-slate-800 p-5 sm:p-6 rounded-3xl backdrop-blur-xl shadow-2xl mb-10 space-y-5">
+      <div class="flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
+        <!-- Input de Búsqueda Inteligente -->
+        <div class="relative flex-1">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <input 
+            type="text" 
+            id="engineSearchInput"
+            placeholder="Buscar por modelo, chasis o código de motor (ej: 325i e92, N53B30, S65, M3, B58)..."
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-2xl pl-11 pr-10 py-3.5 text-sm sm:text-base text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all font-mono shadow-inner"
+          />
+          <button 
+            id="clearSearchBtn" 
+            class="hidden absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-white"
+            title="Limpiar búsqueda"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Filtros Rápidos por Combustible y Serie -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="filter-pill active px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-cyan-500/50 bg-cyan-950/60 text-cyan-300 cursor-pointer transition-all" data-filter="all">
+            Todos
+          </button>
+          <button class="filter-pill px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-slate-800 bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white cursor-pointer transition-all" data-filter="gasolina">
+            Gasolina
+          </button>
+          <button class="filter-pill px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-slate-800 bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white cursor-pointer transition-all" data-filter="diesel">
+            Diésel
+          </button>
+          <button class="filter-pill px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-slate-800 bg-slate-950 hover:bg-slate-800 text-slate-300 hover:text-white cursor-pointer transition-all" data-filter="m-power">
+            Gama M
+          </button>
+        </div>
+      </div>
+
+      <!-- Sugerencias y atajos habituales -->
+      <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-800/80 text-xs">
+        <span class="text-slate-500 font-mono">Búsquedas populares:</span>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-cyan-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="325i E92">
+          325i E92 (N52 vs N53)
+        </button>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="M3 E92">
+          M3 E92 (S65 V8)
+        </button>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="M3 E46">
+          M3 E46 (S54 6L)
+        </button>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="M5 E60">
+          M5 E60 (S85 V10)
+        </button>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="B58">
+          B58 (340i / M340i)
+        </button>
+        <button class="quick-chip px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 font-mono transition-colors cursor-pointer" data-term="M2 Competition">
+          M2 Competition (S55)
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenedor Principal de Modelos -->
+    <div id="modelsContainer" class="space-y-16">
+      {BMW_POWERTRAINS.map((model) => (
+        <article 
+          class="model-card bg-slate-900/60 border border-slate-800 rounded-3xl p-6 sm:p-8 backdrop-blur-sm transition-all duration-300 hover:border-slate-700 shadow-xl"
+          data-model-id={model.id}
+          data-series={model.series}
+          data-chassis={model.chassisCode}
+          data-text={`${model.generationLabel} ${model.chassisCode} ${model.series} ${model.bodyStyle} ${model.engines.map(e => `${e.modelBadge} ${e.engineCode} ${e.architecture} ${e.fuel}`).join(' ')}`}
+        >
+          <!-- Cabecera del Modelo -->
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+            <div>
+              <div class="flex items-center gap-3 mb-1">
+                <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
+                  Chasis {model.chassisCode}
+                </span>
+                <span class="text-xs font-mono text-slate-400">
+                  {model.series} • {model.bodyStyle}
+                </span>
+                <span class="text-xs font-mono text-slate-500">
+                  {model.yearsDisplay}
+                </span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                {model.generationLabel}
+              </h2>
+            </div>
+
+            <!-- Accesos rápidos y API badge -->
+            <div class="flex items-center gap-3">
+              <a 
+                href={`/carvault/api/bmw/powertrains.json?chassis=${model.chassisCode}`} 
+                target="_blank"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono bg-slate-950 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-cyan-300 transition-colors"
+                title="Consumir datos de este modelo en formato JSON"
+              >
+                <span>JSON API</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-800/80 text-slate-400">
+                {model.engines.length} motores
+              </span>
+            </div>
+          </div>
+
+          <!-- 1. Desglose Visual Frontal de Fases / Facelifts -->
+          <div class="mt-8">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-sm font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span>Desglose Visual de Fases & Restylings (Frontales Directos Verificados)</span>
+              </h3>
+              <span class="text-xs font-mono text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                Ángulo frontal limpio
+              </span>
+            </div>
+
+            <!-- Grid de fases frontales -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {model.phases.map((phase) => (
+                <div class="group relative bg-slate-950/80 border border-slate-800 hover:border-cyan-500/40 rounded-2xl overflow-hidden transition-all duration-300 shadow-md">
+                  <!-- Imagen frontal -->
+                  <div class="relative h-56 sm:h-64 bg-slate-950 overflow-hidden flex items-center justify-center">
+                    <img 
+                      src={phase.frontImage.url} 
+                      alt={phase.name}
+                      loading="lazy"
+                      class="w-full h-full object-cover sm:object-contain group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <!-- Overlay de información de fase -->
+                    <div class="absolute top-3 left-3 flex flex-wrap gap-2">
+                      <span class={`px-2.5 py-1 rounded-lg text-xs font-mono font-bold backdrop-blur-md shadow-sm ${
+                        phase.phaseType.includes('Facelift') 
+                          ? 'bg-indigo-950/90 border border-indigo-500/40 text-indigo-300' 
+                          : 'bg-slate-900/90 border border-slate-700 text-white'
+                      }`}>
+                        {phase.phaseType}
+                      </span>
+                      <span class="px-2 py-1 rounded-lg text-xs font-mono bg-black/70 backdrop-blur-md border border-slate-800 text-slate-300">
+                        {phase.years}
+                      </span>
+                    </div>
+
+                    <a 
+                      href={phase.frontImage.url} 
+                      target="_blank" 
+                      class="absolute bottom-3 right-3 px-2 py-1 rounded-md bg-black/60 hover:bg-black/90 backdrop-blur-md border border-slate-700 text-[10px] font-mono text-slate-300 opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      Ver frontal completo ↗
+                    </a>
+                  </div>
+
+                  <!-- Detalles y Diferencias visuales clave -->
+                  <div class="p-4 sm:p-5 border-t border-slate-800/80 bg-slate-900/40">
+                    <h4 class="text-base font-bold text-white mb-2">{phase.name}</h4>
+                    {phase.visualChanges && phase.visualChanges.length > 0 && (
+                      <ul class="space-y-1.5 text-xs text-slate-300">
+                        {phase.visualChanges.map((change) => (
+                          <li class="flex items-start gap-2">
+                            <span class="text-cyan-400 mt-0.5">•</span>
+                            <span>{change}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    <div class="mt-3 pt-2.5 border-t border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
+                      <span>Licencia: {phase.frontImage.license}</span>
+                      <span>Autor: {phase.frontImage.author}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- 2. Comparador Técnico de Motorizaciones y Rendimiento -->
+          <div class="mt-10">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <h3 class="text-sm font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2">
+                <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <span>Fichas Técnicas & Prestaciones por Motor</span>
+              </h3>
+              <span class="text-xs font-mono text-slate-500">
+                0-100 km/h • Velocidad Punta • Cilindradas • Inyección
+              </span>
+            </div>
+
+            <!-- Tabla / Lista de Motorizaciones -->
+            <div class="space-y-3">
+              {model.engines.map((eng) => (
+                <div class="engine-row bg-slate-950/70 border border-slate-800/80 hover:border-slate-700 rounded-2xl p-4 sm:p-5 transition-all duration-200">
+                  <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                    <!-- Insignia y Código de Motor -->
+                    <div class="flex items-start sm:items-center gap-3 min-w-[280px]">
+                      <div class="w-16 h-12 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center shrink-0 shadow-inner">
+                        <span class="text-base font-black text-white font-mono tracking-tight">{eng.modelBadge}</span>
+                      </div>
+                      <div>
+                        <div class="flex items-center gap-2">
+                          <span class="text-sm sm:text-base font-bold text-cyan-300 font-mono bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">
+                            {eng.engineCode}
+                          </span>
+                          <span class={`text-[10px] font-mono px-2 py-0.5 rounded border ${
+                            eng.fuel === 'Diésel' ? 'bg-amber-950/40 text-amber-300 border-amber-800/40' :
+                            eng.fuel.includes('Híbrido') ? 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' :
+                            'bg-slate-800 text-slate-300 border-slate-700'
+                          }`}>
+                            {eng.fuel}
+                          </span>
+                        </div>
+                        <div class="text-xs text-slate-400 mt-1">
+                          {eng.architecture}
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Datos Mecánicos: Cilindrada, Potencia y Par -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 py-2 lg:py-0 border-y lg:border-y-0 border-slate-800/60 font-mono text-xs">
+                      <div>
+                        <div class="text-[10px] text-slate-500 uppercase">Cilindrada</div>
+                        <div class="text-white font-semibold">{eng.displacementL}L <span class="text-slate-500">({eng.displacementCc} cc)</span></div>
+                      </div>
+                      <div>
+                        <div class="text-[10px] text-slate-500 uppercase">Potencia & Par</div>
+                        <div class="text-white font-semibold">{eng.powerHp} CV <span class="text-slate-500">/ {eng.torqueNm} Nm</span></div>
+                      </div>
+                      <div class="col-span-2 sm:col-span-1">
+                        <div class="text-[10px] text-slate-500 uppercase">Velocidad Máxima</div>
+                        <div class="text-emerald-400 font-semibold">{eng.topSpeedKmh} km/h</div>
+                      </div>
+                    </div>
+
+                    <!-- Gráfica Visual de Aceleración 0-100 km/h -->
+                    <div class="min-w-[200px] sm:min-w-[240px]">
+                      <div class="flex items-center justify-between text-xs font-mono mb-1">
+                        <span class="text-slate-400">0 – 100 km/h</span>
+                        <span class="text-cyan-400 font-bold">{eng.accel0to100} s</span>
+                      </div>
+                      <!-- Barra comparativa de aceleración (más corta = más rápido) -->
+                      <div class="h-2.5 w-full bg-slate-900 rounded-full overflow-hidden border border-slate-800 relative">
+                        <div 
+                          class="h-full rounded-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500"
+                          style={`width: ${Math.max(15, Math.min(100, (11 - eng.accel0to100) * 12))}%`}
+                          title={`0 a 100 en ${eng.accel0to100} segundos`}
+                        ></div>
+                      </div>
+                      <div class="flex items-center justify-between text-[10px] font-mono text-slate-600 mt-1">
+                        <span>Fase: {eng.phase}</span>
+                        <span>{eng.yearsActive}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Detalle de Alimentación e Inyección (la clave de N52 vs N53) -->
+                  <div class="mt-3 pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                    <div class="text-slate-400 flex items-center gap-1.5">
+                      <span class="text-indigo-400 font-mono">Alimentación:</span>
+                      <span class="text-slate-300">{eng.feedSystem}</span>
+                    </div>
+                    {eng.notes && (
+                      <div class="text-slate-400 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800 text-[11px]">
+                        ℹ️ {eng.notes}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- Empty State si la búsqueda no arroja resultados -->
+    <div id="noResultsState" class="hidden text-center py-20 bg-slate-900/40 rounded-3xl border border-slate-800">
+      <div class="text-4xl mb-3">🔍</div>
+      <h3 class="text-lg font-bold text-white">No se encontraron motores o chasis</h3>
+      <p class="text-slate-400 text-sm max-w-md mx-auto mt-1 mb-4">
+        Prueba a buscar términos como "325i", "E92", "N52", "N53", "M3", "S65", "F30" o "B58".
+      </p>
+      <button id="resetSearchBtn" class="px-4 py-2 rounded-xl text-xs font-mono bg-cyan-950 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900 transition-colors cursor-pointer">
+        Restablecer búsqueda
+      </button>
+    </div>
+
+    <!-- Banner de Documentación de API para Desarrolladores -->
+    <section class="mt-20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 mb-3">
+            <span>REST API v2</span>
+            <span class="text-slate-600">•</span>
+            <span>JSON Abierto</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+            Consume el Desglose de Motores y Fases vía API
+          </h2>
+          <p class="text-sm sm:text-base text-slate-400 mt-2 max-w-2xl">
+            Todos los datos mecánicos, códigos de bloque, cifras de rendimiento (0-100 km/h, km/h máximos) y fotografías frontales están disponibles mediante endpoints abiertos sin necesidad de clave de API.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a 
+            href="/carvault/api/v1/bmw-powertrains.json" 
+            target="_blank"
+            class="px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold font-mono text-xs flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 transition-colors"
+          >
+            <span>GET /api/v1/bmw-powertrains.json</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <a 
+            href="/carvault/api/v1/bmw-phases.json" 
+            target="_blank"
+            class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-mono text-xs flex items-center justify-center gap-2 border border-slate-700 transition-colors"
+          >
+            <span>GET /api/v1/bmw-phases.json</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script interactivo de filtrado y búsqueda ultra-rápida -->
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('engineSearchInput');
+      const clearBtn = document.getElementById('clearSearchBtn');
+      const filterPills = document.querySelectorAll('.filter-pill');
+      const quickChips = document.querySelectorAll('.quick-chip');
+      const modelCards = document.querySelectorAll('.model-card');
+      const noResultsState = document.getElementById('noResultsState');
+      const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+      let currentFilter = 'all';
+
+      function performSearch() {
+        const query = (searchInput.value || '').trim().toLowerCase();
+        
+        if (query.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+
+        let visibleCount = 0;
+
+        modelCards.forEach((card) => {
+          const cardText = (card.getAttribute('data-text') || '').toLowerCase();
+          const series = (card.getAttribute('data-series') || '').toLowerCase();
+
+          let matchesQuery = true;
+          if (query.length > 0) {
+            // Dividir por espacios para permitir búsquedas como "325i e92" o "m3 v8"
+            const queryTokens = query.split(/\s+/).filter(Boolean);
+            matchesQuery = queryTokens.every(token => cardText.includes(token));
+          }
+
+          let matchesFilter = true;
+          if (currentFilter === 'gasolina') {
+            matchesFilter = cardText.includes('gasolina');
+          } else if (currentFilter === 'diesel') {
+            matchesFilter = cardText.includes('diésel') || cardText.includes('diesel');
+          } else if (currentFilter === 'm-power') {
+            matchesFilter = series.includes('m') || cardText.includes('motorsport') || cardText.includes('m3') || cardText.includes('m5') || cardText.includes('m2');
+          }
+
+          if (matchesQuery && matchesFilter) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          noResultsState.classList.remove('hidden');
+        } else {
+          noResultsState.classList.add('hidden');
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', performSearch);
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          searchInput.focus();
+          performSearch();
+        });
+      }
+
+      if (resetSearchBtn) {
+        resetSearchBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          currentFilter = 'all';
+          filterPills.forEach(p => p.classList.remove('active', 'border-cyan-500/50', 'bg-cyan-950/60', 'text-cyan-300'));
+          document.querySelector('[data-filter="all"]')?.classList.add('active', 'border-cyan-500/50', 'bg-cyan-950/60', 'text-cyan-300');
+          performSearch();
+        });
+      }
+
+      filterPills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('active', 'border-cyan-500/50', 'bg-cyan-950/60', 'text-cyan-300');
+            p.classList.add('border-slate-800', 'bg-slate-950', 'text-slate-300');
+          });
+          pill.classList.add('active', 'border-cyan-500/50', 'bg-cyan-950/60', 'text-cyan-300');
+          pill.classList.remove('border-slate-800', 'bg-slate-950', 'text-slate-300');
+
+          currentFilter = pill.getAttribute('data-filter') || 'all';
+          performSearch();
+        });
+      });
+
+      quickChips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const term = chip.getAttribute('data-term') || '';
+          searchInput.value = term;
+          performSearch();
+          searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      });
+
+      // Leer query param en URL si viene de un enlace directo (ej: /carvault/motores?q=325i+e92)
+      const urlParams = new URLSearchParams(window.location.search);
+      const q = urlParams.get('q') || urlParams.get('chassis') || urlParams.get('engine');
+      if (q && searchInput) {
+        searchInput.value = q;
+        performSearch();
+      }
+    });
+  </script>
+</Layout>
