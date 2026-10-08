@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="311.741px" height="203.602px" viewBox="0 0 311.741 203.602" enable-background="new 0 0 311.741 203.602"
 	 xml:space="preserve">
-<g>
+<defs>
+	<linearGradient id="cupraCopperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+		<stop offset="0%" stop-color="#f59e0b" />
+		<stop offset="50%" stop-color="#d97706" />
+		<stop offset="100%" stop-color="#b45309" />
+	</linearGradient>
+</defs>
+<g fill="url(#cupraCopperGrad)">
 	<path d="M208.415,28.817c-9.839,4.816-19.677,9.632-29.516,14.445h-0.007c5.999,2.295,11.995,4.599,17.988,6.911
 		c3.712,1.431,8.115,3.227,9.735,7.613c1.665,4.503-0.784,8.521-2.948,11.909c-3.275,5.129-6.55,10.258-9.825,15.384
 		c-11.651,18.246-23.31,36.492-35.006,54.711c-0.021-5.624-0.034-11.252-0.045-16.877v-0.01

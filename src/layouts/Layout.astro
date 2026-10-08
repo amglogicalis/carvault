@@ -19,6 +19,7 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
     <link rel="icon" type="image/svg+xml" href="/carvault/favicon.svg" />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -110,6 +111,24 @@ const {
                     <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Activo</span>
                   </a>
 
+                  <!-- CUPRA -->
+                  <a 
+                    href="/carvault/cupra" 
+                    class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/60 hover:bg-slate-800/80 border border-slate-850 hover:border-amber-500/40 transition-all group"
+                    data-brand="cupra"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-7 h-7 rounded-full bg-slate-900 border border-slate-800 p-1 flex items-center justify-center shrink-0">
+                        <img src="/carvault/images/brands/cupra.svg" alt="CUPRA" class="w-full h-full object-contain" />
+                      </div>
+                      <div>
+                        <div class="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">CUPRA</div>
+                        <div class="text-[10px] text-slate-500 font-mono">13 modelos • Gama VZ / VZ5</div>
+                      </div>
+                    </div>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Activo</span>
+                  </a>
+
                   <!-- Próximas marcas (visibles como referencia informativa en el dropdown) -->
                   <div class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/30 border border-transparent opacity-50 cursor-not-allowed" data-brand="porsche">
                     <div class="flex items-center gap-2.5">
@@ -136,7 +155,7 @@ const {
 
                 <!-- Pie del dropdown -->
                 <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500 px-1">
-                  <span>1 catálogo activo</span>
+                  <span>2 catálogos activos</span>
                   <a href="/carvault/#marcas" class="text-cyan-400 hover:underline">Ver todas →</a>
                 </div>
               </div>
