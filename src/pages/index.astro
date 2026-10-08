@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import bmwCatalog from '../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../data/cupra/catalog-clean-front.json';
+import jaguarCatalog from '../../data/jaguar/catalog-clean-front.json';
 import { BRANDS } from '../data/brands';
 import requestsRegistry from '../../data/feedback/requests-registry.json';
 
@@ -17,6 +18,7 @@ const bmwCars = bmwCatalog.generations.map(g => ({
   status: g.status,
   isM: g.isM || g.series === 'BMW M' || (g.label && g.label.startsWith('M')),
   isVZ: false,
+  isSVO: false,
   class: g.class,
   years: g.years,
   chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
@@ -35,6 +37,7 @@ const cupraCars = cupraCatalog.generations.map(g => ({
   status: g.status,
   isM: false,
   isVZ: (g.label && g.label.includes('VZ')) || (g.class && g.class.includes('VZ')),
+  isSVO: false,
   class: g.class,
   years: g.years,
   chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
@@ -42,7 +45,26 @@ const cupraCars = cupraCatalog.generations.map(g => ({
   brandCatalogUrl: '/carvault/cupra'
 }));
 
-const globalCars = [...bmwCars, ...cupraCars];
+const jaguarCars = jaguarCatalog.generations.map(g => ({
+  id: g.id,
+  brandId: 'jaguar',
+  brandName: 'Jaguar',
+  brandLogo: '/carvault/images/brands/jaguar.svg',
+  label: g.label,
+  series: g.series,
+  section: g.section,
+  status: g.status,
+  isM: false,
+  isVZ: false,
+  isSVO: g.series === 'Jaguar SVO' || (g.label && (g.label.includes('SVR') || g.label.includes('Project'))),
+  class: g.class,
+  years: g.years,
+  chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
+  frontImage: g.frontImage,
+  brandCatalogUrl: '/carvault/jaguar'
+}));
+
+const globalCars = [...bmwCars, ...cupraCars, ...jaguarCars];
 
 const globalCarsJson = JSON.stringify(globalCars);
 
@@ -243,7 +265,7 @@ const registryJson = JSON.stringify(requestsRegistry);
     </div>
 
     <!-- Grid de Marcas Disponibles -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
       <!-- Tarjeta BMW -->
       <a 
         href="/carvault/bmw" 
@@ -308,6 +330,41 @@ const registryJson = JSON.stringify(requestsRegistry);
         </div>
       </a>
 
+      <!-- Tarjeta Jaguar -->
+      <a 
+        href="/carvault/jaguar" 
+        class="group bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 hover:border-emerald-500/60 rounded-3xl p-7 transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-emerald-500/10 relative overflow-hidden"
+      >
+        <div class="absolute top-3 right-3">
+          <span class="px-2.5 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold tracking-wide shadow-sm">
+            Disponible
+          </span>
+        </div>
+
+        <!-- Icono / Logo oficial de la marca -->
+        <div class="w-24 h-24 rounded-full bg-slate-950 border border-slate-800 p-3 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform duration-300 mb-4">
+          <img src="/carvault/images/brands/jaguar.svg" alt="Logo de Jaguar" class="w-full h-full object-contain" />
+        </div>
+
+        <!-- Nombre de la marca -->
+        <h3 class="text-2xl font-black text-white group-hover:text-emerald-400 transition-colors tracking-wide">
+          Jaguar
+        </h3>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">Jaguar Cars Ltd. / JLR</p>
+        <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+          Deportividad británica y herencia: F-Type V8 Supercharged, sagas XK y XJ, berlinas XF/XE, Project 7/8 y leyendas como el XJ220 y el E-Type.
+        </p>
+
+        <!-- Botón de Acción -->
+        <div class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-emerald-400 group-hover:text-emerald-300 group-hover:underline">
+          <span>Abrir catálogo completo de Jaguar</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Grid de Marcas Próximamente -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-4">
       <!-- Tarjeta Próximamente: Porsche -->
       <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
         <div class="w-24 h-24 rounded-full bg-slate-950/60 border border-slate-800/60 p-4 flex items-center justify-center mb-4">
@@ -319,7 +376,6 @@ const registryJson = JSON.stringify(requestsRegistry);
           Próximamente en catálogo
         </span>
       </div>
-
 
       <!-- Tarjeta Próximamente: Mercedes-Benz -->
       <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
@@ -346,8 +402,8 @@ const registryJson = JSON.stringify(requestsRegistry);
         </p>
       </div>
 
-      <!-- Grid de Endpoints: Central Gateway, Monomarca BMW y CUPRA -->
-      <div class="mt-8 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Grid de Endpoints: Central Gateway, Monomarca BMW, CUPRA y Jaguar -->
+      <div class="mt-8 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- Endpoint Central Gateway -->
         <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-xl">
           <div>
@@ -378,7 +434,7 @@ const registryJson = JSON.stringify(requestsRegistry);
                 <img src="/carvault/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
                 Endpoint Monomarca BMW
               </span>
-              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • Unificado</span>
+              <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-400 text-[10px]">Monomarca • Unificado</span>
             </div>
             <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
               Base de datos unificada de BMW: códigos de chasis, restylings LCI y fichas técnicas mecánicas con cifras de aceleración.
@@ -409,6 +465,28 @@ const registryJson = JSON.stringify(requestsRegistry);
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/cupra.json</code>
             <a href="/carvault/api/v1/cupra.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Monomarca Jaguar -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-slate-200 font-bold flex items-center gap-1.5">
+                <img src="/carvault/images/brands/jaguar.svg" class="w-3.5 h-3.5" alt="Jaguar" />
+                Endpoint Monomarca Jaguar
+              </span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • SVO + Clásicos</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Base de datos de Jaguar: distinciones de chasis (X150, X351, X260...), restylings F-Type, proyectos SV Project 7/8 y superdeportivos XJ220.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/jaguar.json</code>
+            <a href="/carvault/api/v1/jaguar.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>
@@ -700,6 +778,11 @@ const registryJson = JSON.stringify(requestsRegistry);
                 ${c.isVZ ? `
                   <span class="px-2 py-0.5 rounded-md bg-amber-600 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
                     VZ
+                  </span>
+                ` : ''}
+                ${c.isSVO ? `
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                    SVO
                   </span>
                 ` : ''}
                 ${isCurrent ? `

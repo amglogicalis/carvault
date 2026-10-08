@@ -102,6 +102,132 @@ function analyzeCarProfile(model: { label: string; series: string; class?: strin
     return { nicheType, nicheScore, troughAge, troughResidualRatio, appreciationRate, baseMsrp };
   }
 
+  if (brand.toUpperCase() === 'JAGUAR') {
+    if (model.section === 'prototype' || /concept|type 00|c-x75/i.test(lbl)) {
+      nicheType = 'Concepto Halo / Showcar Futurista';
+      nicheScore = 10;
+      troughAge = 6;
+      troughResidualRatio = 0.70;
+      appreciationRate = 0.06;
+      baseMsrp = 280000;
+    } else if (/xj220/i.test(lbl)) {
+      nicheType = 'Superdeportivo Blue-Chip / Icono Mundial (XJ220)';
+      nicheScore = 10;
+      troughAge = 12;
+      troughResidualRatio = 0.65;
+      appreciationRate = 0.085;
+      baseMsrp = 460000;
+    } else if (/d-type|c-type|xk120/i.test(lbl)) {
+      nicheType = 'Leyenda Histórica / Colección Heritage Le Mans';
+      nicheScore = 10;
+      troughAge = 12;
+      troughResidualRatio = 0.70;
+      appreciationRate = 0.08;
+      baseMsrp = 190000;
+    } else if (/e-type/i.test(lbl)) {
+      nicheType = 'Icono Clásico de Culto Absoluto (E-Type)';
+      nicheScore = 9.8;
+      troughAge = 15;
+      troughResidualRatio = 0.50;
+      appreciationRate = 0.075;
+      baseMsrp = 95000;
+    } else if (/project 7|project 8/i.test(lbl)) {
+      nicheType = 'Edición Limitada SVO / Pieza de Coleccionista';
+      nicheScore = 9.6;
+      troughAge = 11;
+      troughResidualRatio = 0.55;
+      appreciationRate = 0.06;
+      baseMsrp = 185000;
+    } else if (/f-type/i.test(lbl)) {
+      if (/svr|575| r /i.test(lbl)) {
+        nicheType = 'Deportivo Gran Turismo V8 Supercharged (F-Type R/SVR)';
+        nicheScore = 8.8;
+        troughAge = 14;
+        troughResidualRatio = 0.35;
+        appreciationRate = 0.045;
+        baseMsrp = 125000;
+      } else if (/v6|380|400 sport/i.test(lbl)) {
+        nicheType = 'Deportivo Biplaza V6 Supercharged';
+        nicheScore = 7.5;
+        troughAge = 15;
+        troughResidualRatio = 0.28;
+        appreciationRate = 0.035;
+        baseMsrp = 82000;
+      } else {
+        nicheType = 'Deportivo Biplaza 2.0 Turbo Ingenium';
+        nicheScore = 6.5;
+        troughAge = 16;
+        troughResidualRatio = 0.22;
+        appreciationRate = 0.025;
+        baseMsrp = 67000;
+      }
+    } else if (/xkr/i.test(lbl) || ser === 'xk') {
+      nicheType = 'Gran Turismo Coupé / Cabriolet V8 (XK/XKR)';
+      nicheScore = 8.2;
+      troughAge = 15;
+      troughResidualRatio = 0.28;
+      appreciationRate = 0.04;
+      baseMsrp = 98000;
+    } else if (/xjs|xj-s/i.test(lbl)) {
+      nicheType = 'Gran Turismo Clásico V12 / 6L (XJS)';
+      nicheScore = 8.2;
+      troughAge = 18;
+      troughResidualRatio = 0.22;
+      appreciationRate = 0.045;
+      baseMsrp = 75000;
+    } else if (/i-pace/i.test(lbl)) {
+      nicheType = 'Crossover 100% Eléctrico de Altas Prestaciones (BEV)';
+      nicheScore = 6.0;
+      troughAge = 13;
+      troughResidualRatio = 0.20;
+      appreciationRate = 0.02;
+      baseMsrp = 85000;
+    } else if (/f-pace/i.test(lbl)) {
+      nicheType = 'SUV Crossover Premium (F-Pace)';
+      nicheScore = 6.5;
+      troughAge = 15;
+      troughResidualRatio = 0.22;
+      appreciationRate = 0.025;
+      baseMsrp = 75000;
+    } else if (/e-pace/i.test(lbl)) {
+      nicheType = 'SUV Compacto Deportivo (E-Pace)';
+      nicheScore = 5.0;
+      troughAge = 16;
+      troughResidualRatio = 0.16;
+      appreciationRate = 0.02;
+      baseMsrp = 48000;
+    } else if (/xj/i.test(lbl) || ser === 'xj') {
+      nicheType = 'Buque Insignia de Representación (XJ)';
+      nicheScore = 7.0;
+      troughAge = 17;
+      troughResidualRatio = 0.18;
+      appreciationRate = 0.03;
+      baseMsrp = 105000;
+    } else if (/xf/i.test(lbl) || ser === 'xf') {
+      nicheType = 'Berlina Ejecutiva E-Segment (XF)';
+      nicheScore = 5.5;
+      troughAge = 16;
+      troughResidualRatio = 0.16;
+      appreciationRate = 0.022;
+      baseMsrp = 58000;
+    } else if (/xe/i.test(lbl) || ser === 'xe') {
+      nicheType = 'Berlina Deportiva Compacta D-Segment (XE)';
+      nicheScore = 5.8;
+      troughAge = 16;
+      troughResidualRatio = 0.17;
+      appreciationRate = 0.022;
+      baseMsrp = 49000;
+    } else {
+      nicheType = 'Berlina Clásica Ejecutiva (Jaguar)';
+      nicheScore = 5.0;
+      troughAge = 18;
+      troughResidualRatio = 0.12;
+      appreciationRate = 0.02;
+      baseMsrp = 48000;
+    }
+    return { nicheType, nicheScore, troughAge, troughResidualRatio, appreciationRate, baseMsrp };
+  }
+
   const isPureM = model.section === 'm-performance' || /\bm[1-8]\b|\b1m\b/i.test(lbl);
   const isRoadster = /roadster|z3|z4|z8|z1|spyder|cabrio/i.test(lbl) || /z series/i.test(ser);
   const isCoupe = /coup[eé]|csl|gt|2 series|4 series|8 series/i.test(lbl);

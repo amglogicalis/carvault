@@ -1,0 +1,611 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import catalog from '../../../data/jaguar/catalog-clean-front.json';
+
+const totalGenerations = catalog.generations.length;
+const totalChassis = catalog.stats.chassis;
+const totalSVO = catalog.stats.mPerformance || 12;
+const modelsJson = JSON.stringify(catalog.generations);
+---
+
+<Layout title="Carvault — Catálogo y API Pública de Automóviles (Jaguar Edition)">
+  <!-- Hero Section con paleta British Racing Green / Emerald & Platinum de Jaguar -->
+  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-950/25 via-slate-950 to-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-emerald-500/30 bg-emerald-950/40 hover:bg-emerald-900/40 text-emerald-300 hover:text-emerald-200 hover:border-emerald-400/50 transition-colors mb-6 shadow-sm">
+        <span>← Marcas Disponibles</span>
+        <span class="text-slate-600">•</span>
+        <span class="text-emerald-400 font-bold">Jaguar</span>
+      </a>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+        Catálogo Completo <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Jaguar</span>
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Colección integral automotriz con diferenciación cronológica estricta entre versiones <strong class="text-white">Pre-Facelift</strong> y <strong class="text-emerald-400">Restylings (Facelift)</strong>, iconos históricos (E-Type, XK120, D-Type), el superdeportivo XJ220, la saga de berlinas de representación XJ, coupés GT XK y la división de élite <strong class="text-white">SVO (SVR / Project 7 / Project 8)</strong> con vistas frontales 100% verificadas.
+      </p>
+
+      <!-- Métricas rápidas de la marca -->
+      <div class="mt-8 flex flex-wrap justify-center gap-6 sm:gap-12 text-slate-300">
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-white font-mono">{totalGenerations}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Modelos & Versiones</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-emerald-400 font-mono">{totalSVO}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Gama SVO / R / SVR</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-teal-400 font-mono">{totalChassis}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Chasis & Variantes</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-cyan-400 font-mono">{catalog.stats.withExactFront || totalGenerations}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Frontales con Foto (100%)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo Interactivo -->
+  <section id="catalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Panel Principal de Búsqueda y Filtros Multifactoriales -->
+    <div class="bg-slate-900/80 p-5 sm:p-6 rounded-3xl border border-slate-800 backdrop-blur-md mb-8 shadow-2xl space-y-6">
+      <!-- 1. Buscador Principal con Atajo y Sugerencias -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <label for="searchInput" class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center gap-2">
+            <span>Búsqueda Inteligente</span>
+            <span class="text-[10px] text-slate-500 font-sans hidden sm:inline">(F-Type, E-Type, XJ220, XKR-S, Project 8, XJ, XF, SVR, I-Pace...)</span>
+          </label>
+          <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500">Pulsa <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px]">/</kbd> para buscar</span>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <input 
+            id="searchInput"
+            type="text" 
+            placeholder="Escribe para buscar... (ej: F-Type R, E-Type Series 1, XJ220, XKR-S, Project 8, F-Pace SVR, XJ40, I-Pace...)" 
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400/40 transition-all font-mono"
+            autocomplete="off"
+          />
+          <button 
+            id="clearSearchBtn" 
+            class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-500 hover:text-slate-300 transition-colors hidden cursor-pointer"
+            title="Limpiar búsqueda"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Filtros Específicos por Serie / Categoría Jaguar -->
+      <div>
+        <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+          <span>Gama / Saga:</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5" id="seriesFilters">
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold" data-series="all">Todas ({totalGenerations})</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="F-Type">F-Type</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="XK">XK / XKR</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="XJ">XJ (Buque Insignia)</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="XF">XF & XE</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="suv">SUVs (F-Pace / E-Pace / I-Pace)</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="heritage">Clásicos & Heritage</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="svo">División SVO / R / Halo</button>
+        </div>
+      </div>
+
+      <!-- 3. Filtros por Fase de Generación (Facelift vs Pre-Facelift) y Propulsión -->
+      <div class="pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mr-1">Fase / Restyling:</span>
+          <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold" data-phase="all">Todos</button>
+          <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white" data-phase="facelift">Solo Facelift / Restylings</button>
+          <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white" data-phase="pre-facelift">Solo Pre-Facelift</button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Propulsión:</span>
+          <select id="propulsionSelect" class="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 font-mono focus:outline-none focus:border-emerald-400">
+            <option value="all">Todas las tecnologías</option>
+            <option value="v8">V8 Supercharged / Atmosférico</option>
+            <option value="v12">V12 Legendario</option>
+            <option value="v6">V6 Supercharged / Bi-Turbo</option>
+            <option value="i6">6 en línea Histórico (XK6 / AJ16)</option>
+            <option value="ingenium">Ingenium 4-Cilindros</option>
+            <option value="bev">100% Eléctrico (BEV)</option>
+            <option value="phev">Híbrido Enchufable (PHEV)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Estado de Resultados -->
+    <div class="flex items-center justify-between mb-6 px-1 text-xs font-mono text-slate-400">
+      <div>
+        Mostrando <span id="visibleCount" class="text-white font-bold">{totalGenerations}</span> de <span class="text-white font-bold">{totalGenerations}</span> modelos Jaguar
+      </div>
+      <button id="resetAllFiltersBtn" class="text-emerald-400 hover:text-emerald-300 hover:underline hidden cursor-pointer">
+        Restablecer todos los filtros
+      </button>
+    </div>
+
+    <!-- Grid de Modelos Jaguar -->
+    <div id="modelsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {catalog.generations.map((gen) => {
+        const isFacelift = /facelift|restyling/i.test(gen.label) || /facelift/i.test(gen.chassis[0]?.code || '');
+        const isPreFacelift = /pre-facelift/i.test(gen.label);
+        const isSVO = gen.section === 'm-performance' || /svo|svr|project|xjr|xkr-s|xj220/i.test(gen.label);
+        const isElectric = /eléctrico|bev|ev400/i.test(gen.class) || /i-pace/i.test(gen.label);
+        const enginesCount = gen.engines?.length || 0;
+
+        return (
+          <div 
+            class="model-card group bg-slate-900/60 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-emerald-950/20"
+            data-id={gen.id}
+            data-label={gen.label}
+            data-series={gen.series}
+            data-section={gen.section}
+            data-chassis={gen.chassis[0]?.code}
+            data-variants={(gen.chassis[0]?.variants || []).join(' ')}
+            data-class={gen.class}
+            data-facelift={isFacelift ? 'true' : 'false'}
+            data-prefacelift={isPreFacelift ? 'true' : 'false'}
+            data-svo={isSVO ? 'true' : 'false'}
+          >
+            <!-- Imagen Frontal -->
+            <div class="relative aspect-16/10 bg-slate-950 overflow-hidden border-b border-slate-850">
+              <img 
+                src={gen.frontImage?.url} 
+                alt={gen.label}
+                loading="lazy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent pointer-events-none"></div>
+              
+              <!-- Badges Superpuestos -->
+              <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-900/90 border border-slate-700 text-white backdrop-blur-sm">
+                  {gen.chassis[0]?.code}
+                </span>
+                {isSVO && (
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 backdrop-blur-sm">
+                    SVO / High-Output
+                  </span>
+                )}
+                {isFacelift && (
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-teal-500/20 border border-teal-500/40 text-teal-300 backdrop-blur-sm">
+                    Restyling (Facelift)
+                  </span>
+                )}
+                {isPreFacelift && (
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800/90 border border-slate-600 text-slate-300 backdrop-blur-sm">
+                    Pre-Facelift
+                  </span>
+                )}
+              </div>
+
+              <!-- Botón Lupa Pantalla Completa -->
+              <button 
+                class="open-lightbox-btn absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 hover:bg-emerald-500 text-slate-300 hover:text-slate-950 transition-colors backdrop-blur-sm cursor-pointer"
+                data-image={gen.frontImage?.url}
+                data-label={gen.label}
+                title="Ampliar vista frontal a pantalla completa"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+              </button>
+
+              <!-- Años en la base de la imagen -->
+              <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs font-mono">
+                <span class="text-white font-bold">{gen.years?.display}</span>
+                <span class="text-slate-400 text-[10px]">{gen.series}</span>
+              </div>
+            </div>
+
+            <!-- Contenido Informativo de la Tarjeta -->
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors line-clamp-1">
+                  {gen.label}
+                </h3>
+                <p class="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
+                  {gen.class}
+                </p>
+
+                <!-- Variantes de Chasis Destacadas -->
+                <div class="mt-3 flex flex-wrap gap-1">
+                  {(gen.chassis[0]?.variants || []).slice(0, 3).map((v) => (
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-950 text-slate-300 border border-slate-800">
+                      {v}
+                    </span>
+                  ))}
+                  {(gen.chassis[0]?.variants || []).length > 3 && (
+                    <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-950 text-slate-500 border border-slate-800">
+                      +{(gen.chassis[0]?.variants || []).length - 3}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <!-- Footer de la tarjeta con Acción del Modal -->
+              <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+                <div class="flex items-center gap-1.5 text-xs font-mono text-emerald-400">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  <span>{enginesCount} motorizaciones</span>
+                </div>
+                <button 
+                  class="open-modal-btn text-xs font-mono font-bold text-slate-300 hover:text-white px-3 py-1.5 rounded-lg bg-slate-800/60 hover:bg-emerald-600/80 transition-all cursor-pointer"
+                  data-model-id={gen.id}
+                >
+                  Ficha Técnica →
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Estado Vacío cuando ningún modelo coincide -->
+    <div id="noResultsState" class="hidden text-center py-16 px-4 bg-slate-900/40 rounded-3xl border border-slate-800 mt-6">
+      <div class="w-12 h-12 mx-auto rounded-full bg-slate-800 flex items-center justify-center text-slate-400 mb-4">
+        🔍
+      </div>
+      <h3 class="text-base font-bold text-white">No se han encontrado modelos Jaguar</h3>
+      <p class="text-xs text-slate-400 mt-1 max-w-md mx-auto">
+        Prueba a buscar por código de chasis (ej. X152, X351, X760, XJ40), versión (SVR, Project 8, XJR) o limpia los filtros.
+      </p>
+    </div>
+  </section>
+
+  <!-- Modal Detallado de Ficha Mecánica & Especificaciones -->
+  <div id="modelModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4 sm:p-6 animate-fade-in">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl">
+      <!-- Header Modal -->
+      <div class="p-6 border-b border-slate-800 flex items-start justify-between bg-slate-950/60">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span id="modalChassisBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold">-</span>
+            <span id="modalYears" class="text-xs font-mono text-slate-400">-</span>
+          </div>
+          <h2 id="modalTitle" class="text-xl sm:text-2xl font-bold text-white">-</h2>
+          <p id="modalClass" class="text-xs text-slate-400 font-mono mt-0.5">-</p>
+        </div>
+        <button id="closeModalBtn" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Contenido Scrollable -->
+      <div class="p-6 overflow-y-auto space-y-6">
+        <!-- Imagen Frontal Ampliada -->
+        <div class="relative aspect-16/9 bg-slate-950 rounded-2xl overflow-hidden border border-slate-800">
+          <img id="modalImage" src="" alt="" class="w-full h-full object-cover" />
+          <div class="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm px-2.5 py-1 rounded text-[10px] font-mono text-slate-300 border border-slate-700">
+            Vista Frontal 100% Verificada
+          </div>
+        </div>
+
+        <!-- Ficha de Motores Disponibles -->
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-bold text-white font-mono uppercase tracking-wider">
+              Motorizaciones & Especificaciones Técnicas
+            </h3>
+            <span id="modalEnginesCount" class="text-xs font-mono text-emerald-400">0 motores</span>
+          </div>
+          <div id="modalEnginesList" class="space-y-3">
+            <!-- Rellenado dinámico -->
+          </div>
+        </div>
+
+        <!-- Variantes de Modelo -->
+        <div>
+          <h4 class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Variantes de Producción en este Chasis:</h4>
+          <div id="modalVariantsList" class="flex flex-wrap gap-1.5">
+            <!-- Rellenado dinámico -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Modal -->
+      <div class="p-4 border-t border-slate-800 bg-slate-950 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+        <a id="modalPreciosLink" href="/carvault/precios" class="text-emerald-400 hover:underline flex items-center gap-1.5">
+          <span>📊 Analizar precio y suelo de depreciación en este modelo →</span>
+        </a>
+        <a id="modalMotoresLink" href="/carvault/motores" class="text-cyan-400 hover:underline flex items-center gap-1.5">
+          <span>⚡ Comparar en el Explorador de Motores →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Pantalla Completa -->
+  <div id="imageLightbox" class="fixed inset-0 z-60 bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-4 sm:p-8 animate-fade-in">
+    <button id="closeLightbox" class="absolute top-5 right-5 z-20 p-3 rounded-full bg-slate-800/80 hover:bg-red-500/80 text-white transition-all shadow-xl hover:scale-110 flex items-center justify-center cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="max-w-6xl max-h-[90vh] flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl border border-slate-800" />
+      <div class="mt-4 text-center">
+        <h4 id="lightboxCaption" class="text-sm font-bold text-white font-mono">-</h4>
+        <span class="text-xs text-slate-400 font-mono">Perspectiva frontal verificada de alta resolución</span>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ modelsJson }}>
+    const allModels = JSON.parse(modelsJson);
+
+    // Elementos DOM
+    const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const seriesBtns = document.querySelectorAll('.filter-series-btn');
+    const phaseBtns = document.querySelectorAll('.filter-phase-btn');
+    const propulsionSelect = document.getElementById('propulsionSelect');
+    const resetBtn = document.getElementById('resetAllFiltersBtn');
+    const modelCards = document.querySelectorAll('.model-card');
+    const visibleCount = document.getElementById('visibleCount');
+    const noResultsState = document.getElementById('noResultsState');
+
+    // Modales
+    const modelModal = document.getElementById('modelModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalChassisBadge = document.getElementById('modalChassisBadge');
+    const modalYears = document.getElementById('modalYears');
+    const modalClass = document.getElementById('modalClass');
+    const modalImage = document.getElementById('modalImage');
+    const modalEnginesCount = document.getElementById('modalEnginesCount');
+    const modalEnginesList = document.getElementById('modalEnginesList');
+    const modalVariantsList = document.getElementById('modalVariantsList');
+
+    // Lightbox
+    const imageLightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    let currentSeries = 'all';
+    let currentPhase = 'all';
+    let currentPropulsion = 'all';
+
+    function normalize(text) {
+      return (text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    }
+
+    function applyFilters() {
+      const query = normalize(searchInput.value);
+      clearSearchBtn.classList.toggle('hidden', !searchInput.value);
+
+      let visible = 0;
+
+      modelCards.forEach(card => {
+        const label = normalize(card.dataset.label);
+        const series = card.dataset.series || '';
+        const chassis = normalize(card.dataset.chassis);
+        const variants = normalize(card.dataset.variants);
+        const carClass = normalize(card.dataset.class);
+        const isFacelift = card.dataset.facelift === 'true';
+        const isPreFacelift = card.dataset.prefacelift === 'true';
+        const isSVO = card.dataset.svo === 'true';
+
+        // 1. Filtro de Texto
+        let matchQuery = true;
+        if (query) {
+          const haystack = `${label} ${chassis} ${variants} ${carClass}`;
+          matchQuery = haystack.includes(query);
+        }
+
+        // 2. Filtro de Serie / Categoría
+        let matchSeries = true;
+        if (currentSeries === 'all') {
+          matchSeries = true;
+        } else if (currentSeries === 'F-Type') {
+          matchSeries = series.toLowerCase().includes('f-type');
+        } else if (currentSeries === 'XK') {
+          matchSeries = series.toLowerCase().includes('xk');
+        } else if (currentSeries === 'XJ') {
+          matchSeries = series.toLowerCase().includes('xj') && !series.toLowerCase().includes('xj220') && !series.toLowerCase().includes('xj-s');
+        } else if (currentSeries === 'XF') {
+          matchSeries = series.toLowerCase().includes('xf') || series.toLowerCase().includes('xe');
+        } else if (currentSeries === 'suv') {
+          matchSeries = /f-pace|e-pace|i-pace/i.test(label) || /f-pace|e-pace|i-pace/i.test(series);
+        } else if (currentSeries === 'heritage') {
+          matchSeries = /e-type|xk120|d-type|c-type|xjs|xj-s|xj220/i.test(label) || /heritage/i.test(series);
+        } else if (currentSeries === 'svo') {
+          matchSeries = isSVO;
+        }
+
+        // 3. Filtro de Fase
+        let matchPhase = true;
+        if (currentPhase === 'facelift') {
+          matchPhase = isFacelift;
+        } else if (currentPhase === 'pre-facelift') {
+          matchPhase = isPreFacelift || (!isFacelift && !label.includes('facelift'));
+        }
+
+        // 4. Filtro de Propulsión
+        let matchPropulsion = true;
+        if (currentPropulsion === 'all') {
+          matchPropulsion = true;
+        } else if (currentPropulsion === 'v8') {
+          matchPropulsion = /v8/i.test(carClass) || /v8/i.test(variants);
+        } else if (currentPropulsion === 'v12') {
+          matchPropulsion = /v12/i.test(carClass) || /v12/i.test(variants);
+        } else if (currentPropulsion === 'v6') {
+          matchPropulsion = /v6/i.test(carClass) || /v6/i.test(variants);
+        } else if (currentPropulsion === 'i6') {
+          matchPropulsion = /6 en línea|inline-6|xk6|aj16|aj6/i.test(carClass) || /xk/i.test(variants);
+        } else if (currentPropulsion === 'ingenium') {
+          matchPropulsion = /ingenium|2\.0|i4/i.test(carClass) || /ingenium/i.test(variants);
+        } else if (currentPropulsion === 'bev') {
+          matchPropulsion = /eléctrico|bev|i-pace|type 00/i.test(carClass);
+        } else if (currentPropulsion === 'phev') {
+          matchPropulsion = /phev|híbrido enchufable/i.test(carClass);
+        }
+
+        const isMatch = matchQuery && matchSeries && matchPhase && matchPropulsion;
+        card.style.display = isMatch ? 'flex' : 'none';
+        if (isMatch) visible++;
+      });
+
+      visibleCount.textContent = visible;
+      noResultsState.classList.toggle('hidden', visible > 0);
+
+      const hasActiveFilters = searchInput.value || currentSeries !== 'all' || currentPhase !== 'all' || currentPropulsion !== 'all';
+      resetBtn.classList.toggle('hidden', !hasActiveFilters);
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      applyFilters();
+      searchInput.focus();
+    });
+
+    seriesBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        seriesBtns.forEach(b => {
+          b.className = 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white';
+        });
+        btn.className = 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold';
+        currentSeries = btn.dataset.series;
+        applyFilters();
+      });
+    });
+
+    phaseBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        phaseBtns.forEach(b => {
+          b.className = 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white';
+        });
+        btn.className = 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold';
+        currentPhase = btn.dataset.phase;
+        applyFilters();
+      });
+    });
+
+    propulsionSelect.addEventListener('change', (e) => {
+      currentPropulsion = e.target.value;
+      applyFilters();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      currentSeries = 'all';
+      currentPhase = 'all';
+      currentPropulsion = 'all';
+      propulsionSelect.value = 'all';
+
+      seriesBtns.forEach((b, i) => {
+        b.className = i === 0 
+          ? 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold'
+          : 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white';
+      });
+
+      phaseBtns.forEach((b, i) => {
+        b.className = i === 0 
+          ? 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-emerald-500/20 text-emerald-300 border-emerald-500/40 font-bold'
+          : 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white';
+      });
+
+      applyFilters();
+    });
+
+    // Atajo de teclado "/" para buscar
+    window.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      } else if (e.key === 'Escape') {
+        if (!modelModal.classList.contains('hidden')) {
+          modelModal.classList.add('hidden');
+        }
+        if (!imageLightbox.classList.contains('hidden')) {
+          imageLightbox.classList.add('hidden');
+        }
+      }
+    });
+
+    // Abrir Modal
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modelId = btn.dataset.modelId;
+        const model = allModels.find(m => m.id === modelId);
+        if (!model) return;
+
+        modalTitle.textContent = model.label;
+        modalChassisBadge.textContent = model.chassis[0]?.code || 'Jaguar';
+        modalYears.textContent = model.years?.display || '';
+        modalClass.textContent = model.class;
+        modalImage.src = model.frontImage?.url || '';
+
+        // Motores
+        const engines = model.engines || [];
+        modalEnginesCount.textContent = `${engines.length} motorizaciones técnicas`;
+        modalEnginesList.innerHTML = engines.map(eng => `
+          <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-white">${eng.modelBadge || eng.engineCode}</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">${eng.engineCode}</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mt-0.5">${eng.architecture} • ${eng.fuel}</div>
+              ${eng.notes ? `<div class="text-[10px] text-slate-500 mt-1">↳ ${eng.notes}</div>` : ''}
+            </div>
+            <div class="flex items-center gap-4 text-right shrink-0">
+              <div>
+                <span class="text-emerald-400 font-bold block">${eng.powerHp} CV</span>
+                <span class="text-[10px] text-slate-500">${eng.torqueNm} Nm</span>
+              </div>
+              <div class="border-l border-slate-800 pl-4">
+                <span class="text-slate-300 block">${eng.accel0to100}s</span>
+                <span class="text-[10px] text-slate-500">${eng.topSpeedKmh} km/h</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        // Variantes
+        const variants = model.chassis[0]?.variants || [];
+        modalVariantsList.innerHTML = variants.map(v => `
+          <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-slate-950 text-slate-300 border border-slate-800">${v}</span>
+        `).join('');
+
+        modelModal.classList.remove('hidden');
+      });
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modelModal.classList.add('hidden');
+    });
+
+    modelModal.addEventListener('click', (e) => {
+      if (e.target === modelModal) modelModal.classList.add('hidden');
+    });
+
+    // Lightbox
+    document.querySelectorAll('.open-lightbox-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        lightboxImg.src = btn.dataset.image;
+        lightboxCaption.textContent = btn.dataset.label;
+        imageLightbox.classList.remove('hidden');
+      });
+    });
+
+    closeLightbox.addEventListener('click', () => {
+      imageLightbox.classList.add('hidden');
+    });
+
+    imageLightbox.addEventListener('click', (e) => {
+      if (e.target === imageLightbox) imageLightbox.classList.add('hidden');
+    });
+  </script>
+</Layout>

@@ -70,6 +70,29 @@ export const BRANDS: BrandInfo[] = [
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
+  },
+  {
+    id: 'jaguar',
+    name: 'Jaguar',
+    fullName: 'Jaguar Land Rover Automotive plc',
+    slug: '/carvault/jaguar',
+    logo: '/carvault/images/brands/jaguar.svg',
+    country: 'Reino Unido',
+    founded: 1922,
+    description: 'Deportivos legendarios (E-Type, F-Type, XK), superdeportivos XJ220, berlinas de representación XJ y crossover de altas prestaciones SVO con motores V8 Supercharged.',
+    available: true,
+    apiEndpoint: '/carvault/api/v1/jaguar.json',
+    stats: {
+      models: 39,
+      modelsLabel: 'Modelos & Versiones',
+      specialLabel: 'Gama SVR / R / SVO',
+      specialValue: 12,
+      chassis: 39,
+      chassisLabel: 'Chasis Distintos',
+      withPhoto: 39,
+      withPhotoLabel: 'Frontales con Foto',
+      photoRate: '100%'
+    }
   }
 ];
 

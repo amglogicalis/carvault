@@ -407,6 +407,38 @@ class BrandVerifier {
           troughResidualRatio = 0.20;
           appreciationRate = 0.02;
         }
+      } else if (this.brand === 'jaguar') {
+        if (lbl.includes('xj220')) {
+          baseMsrp = 470000;
+          nicheScore = 9.9;
+          troughAge = 14;
+          troughResidualRatio = 0.55;
+          appreciationRate = 0.085;
+        } else if (lbl.includes('e-type') || lbl.includes('d-type') || lbl.includes('xk120')) {
+          baseMsrp = 95000;
+          nicheScore = 9.8;
+          troughAge = 18;
+          troughResidualRatio = 0.50;
+          appreciationRate = 0.07;
+        } else if (lbl.includes('project 7') || lbl.includes('project 8')) {
+          baseMsrp = 180000;
+          nicheScore = 9.6;
+          troughAge = 10;
+          troughResidualRatio = 0.60;
+          appreciationRate = 0.06;
+        } else if (lbl.includes('f-type r') || lbl.includes('svr') || lbl.includes('xkr-s')) {
+          baseMsrp = 115000;
+          nicheScore = 8.5;
+          troughAge = 13;
+          troughResidualRatio = 0.32;
+          appreciationRate = 0.04;
+        } else if (lbl.includes('f-type')) {
+          baseMsrp = 75000;
+          nicheScore = 7.5;
+          troughAge = 15;
+          troughResidualRatio = 0.22;
+          appreciationRate = 0.025;
+        }
       } else if (this.brand === 'bmw') {
         if (/m[1-8]\b|csl|1m/i.test(lbl)) {
           baseMsrp = 88000;
@@ -497,6 +529,8 @@ class BrandVerifier {
     // 6.2 Test de consultas representativas
     const testQueries = this.brand === 'cupra' 
       ? ['formentor', 'vz5', 'born', 'shark nose']
+      : this.brand === 'jaguar'
+      ? ['f-type', 'svr', 'xj220', 'e-type']
       : ['m3', 'touring', 'coupe', 'cs'];
 
     let passedQueries = 0;

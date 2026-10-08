@@ -2,10 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import bmwCatalog from '../../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../../data/cupra/catalog-clean-front.json';
+import jaguarCatalog from '../../../data/jaguar/catalog-clean-front.json';
 import { POPULAR_ENGINES_MAP as BMW_ENGINES_MAP } from '../../utils/bmw-engines';
 import { CUPRA_ENGINES_MAP } from '../../utils/cupra-engines';
+import { JAGUAR_ENGINES_MAP } from '../../utils/jaguar-engines';
 
-// Pasamos todos los modelos al buscador combinando BMW y CUPRA
+// Pasamos todos los modelos al buscador combinando BMW, CUPRA y Jaguar
 const allGenerations = [
   ...bmwCatalog.generations.map(g => ({
     id: g.id,
@@ -30,11 +32,23 @@ const allGenerations = [
     chassis: g.chassis.map(c => c.code).filter(Boolean),
     variants: g.chassis.flatMap(c => c.variants || []),
     frontImage: g.frontImage?.url || null
+  })),
+  ...jaguarCatalog.generations.map(g => ({
+    id: g.id,
+    brand: 'Jaguar',
+    label: g.label,
+    series: g.series,
+    section: g.section,
+    years: g.years,
+    class: g.class,
+    chassis: g.chassis.map(c => c.code).filter(Boolean),
+    variants: g.chassis.flatMap(c => c.variants || []),
+    frontImage: g.frontImage?.url || null
   }))
 ];
 
 const modelsJson = JSON.stringify(allGenerations);
-const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP });
+const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP, ...JAGUAR_ENGINES_MAP });
 ---
 
 <Layout title="Analizador Financiero de Precios & Suelo de Depreciación — Carvault" description="Motor cuantitativo multifactorial: nicho, prestaciones, carrocería, horizonte temporal a 20 años y cálculo de suelo de depreciación.">
@@ -537,6 +551,163 @@ const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP
             appreciationRate = 0.022;
             baseMsrp = /terramar/i.test(lbl) ? 42000 : /formentor/i.test(lbl) ? 36000 : /ateca/i.test(lbl) ? 40000 : 33000;
           }
+        }
+      } else if (brand.toUpperCase() === 'JAGUAR') {
+        if (m.section === 'prototype' || /concept|type 00|c-x75/i.test(lbl)) {
+          nicheType = 'Concepto Halo / Showcar Futurista';
+          nicheScore = 10;
+          troughAge = 6;
+          troughResidualRatio = 0.70;
+          appreciationRate = 0.06;
+          baseMsrp = 280000;
+        } else if (/xj220/i.test(lbl) || eng.includes('xj220')) {
+          nicheType = 'Superdeportivo Blue-Chip / Icono Mundial (XJ220)';
+          nicheScore = 10;
+          troughAge = 12;
+          troughResidualRatio = 0.65;
+          appreciationRate = 0.085;
+          baseMsrp = 460000;
+        } else if (/d-type|c-type|xk120/i.test(lbl)) {
+          nicheType = 'Leyenda Histórica / Colección Heritage Le Mans';
+          nicheScore = 10;
+          troughAge = 12;
+          troughResidualRatio = 0.70;
+          appreciationRate = 0.08;
+          baseMsrp = 190000;
+        } else if (/e-type/i.test(lbl)) {
+          nicheType = 'Icono Clásico de Culto Absoluto (E-Type)';
+          nicheScore = 9.8;
+          troughAge = 15;
+          troughResidualRatio = 0.50;
+          appreciationRate = 0.075;
+          baseMsrp = 95000;
+        } else if (/project 7|project 8/i.test(lbl) || eng.includes('project')) {
+          nicheType = 'Edición Limitada SVO / Pieza de Coleccionista';
+          nicheScore = 9.6;
+          troughAge = 11;
+          troughResidualRatio = 0.55;
+          appreciationRate = 0.06;
+          baseMsrp = 185000;
+        } else if (/f-type/i.test(lbl)) {
+          if (eng.includes('svr') || eng.includes('575') || eng.includes('r ') || eng.includes('v8')) {
+            nicheType = 'Deportivo Gran Turismo V8 Supercharged (F-Type R/SVR)';
+            nicheScore = 8.8;
+            troughAge = 14;
+            troughResidualRatio = 0.35;
+            appreciationRate = 0.045;
+            baseMsrp = 125000;
+          } else if (eng.includes('v6') || eng.includes('380') || eng.includes('400 sport')) {
+            nicheType = 'Deportivo Biplaza V6 Supercharged';
+            nicheScore = 7.5;
+            troughAge = 15;
+            troughResidualRatio = 0.28;
+            appreciationRate = 0.035;
+            baseMsrp = 82000;
+          } else {
+            nicheType = 'Deportivo Biplaza 2.0 Turbo Ingenium';
+            nicheScore = 6.5;
+            troughAge = 16;
+            troughResidualRatio = 0.22;
+            appreciationRate = 0.025;
+            baseMsrp = 67000;
+          }
+        } else if (/xkr-s|xkr/i.test(lbl) || (ser === 'xk' && eng.includes('xkr'))) {
+          nicheType = 'Gran Turismo Coupé V8 Sobrealimentado (XKR/XKR-S)';
+          nicheScore = 8.6;
+          troughAge = 14;
+          troughResidualRatio = 0.32;
+          appreciationRate = 0.045;
+          baseMsrp = 115000;
+        } else if (ser === 'xk') {
+          nicheType = 'Gran Turismo Coupé / Cabriolet V8 (XK)';
+          nicheScore = 7.5;
+          troughAge = 16;
+          troughResidualRatio = 0.24;
+          appreciationRate = 0.035;
+          baseMsrp = 88000;
+        } else if (/xjs|xj-s/i.test(lbl)) {
+          nicheType = 'Gran Turismo Clásico V12 / 6L (XJS)';
+          nicheScore = 8.2;
+          troughAge = 18;
+          troughResidualRatio = 0.22;
+          appreciationRate = 0.045;
+          baseMsrp = 75000;
+        } else if (/i-pace/i.test(lbl) || eng.includes('ev400')) {
+          nicheType = 'Crossover 100% Eléctrico de Altas Prestaciones (BEV)';
+          nicheScore = 6.0;
+          troughAge = 13;
+          troughResidualRatio = 0.20;
+          appreciationRate = 0.02;
+          baseMsrp = 85000;
+        } else if (/f-pace/i.test(lbl)) {
+          if (eng.includes('svr') || eng.includes('550') || eng.includes('575')) {
+            nicheType = 'SUV Deportivo V8 Supercharged (F-Pace SVR)';
+            nicheScore = 8.2;
+            troughAge = 14;
+            troughResidualRatio = 0.30;
+            appreciationRate = 0.035;
+            baseMsrp = 120000;
+          } else {
+            nicheType = 'SUV Crossover Premium (F-Pace)';
+            nicheScore = 5.2;
+            troughAge = 16;
+            troughResidualRatio = 0.16;
+            appreciationRate = 0.02;
+            baseMsrp = 68000;
+          }
+        } else if (/e-pace/i.test(lbl)) {
+          nicheType = 'SUV Compacto Deportivo (E-Pace)';
+          nicheScore = 5.0;
+          troughAge = 16;
+          troughResidualRatio = 0.16;
+          appreciationRate = 0.02;
+          baseMsrp = 48000;
+        } else if (/xj/i.test(lbl) || ser === 'xj') {
+          if (eng.includes('xjr') || eng.includes('575') || eng.includes('supersport') || eng.includes('v12')) {
+            nicheType = 'Buque Insignia Deportivo de Gran Lujo (XJR / V12)';
+            nicheScore = 8.4;
+            troughAge = 16;
+            troughResidualRatio = 0.25;
+            appreciationRate = 0.04;
+            baseMsrp = 135000;
+          } else {
+            nicheType = 'Berlina Ejecutiva de Representación (XJ)';
+            nicheScore = 6.2;
+            troughAge = 17;
+            troughResidualRatio = 0.16;
+            appreciationRate = 0.025;
+            baseMsrp = 95000;
+          }
+        } else if (/xf/i.test(lbl) || ser === 'xf') {
+          if (eng.includes('xfr') || eng.includes('v8')) {
+            nicheType = 'Superberlina Deportiva V8 (XFR / XFR-S)';
+            nicheScore = 8.0;
+            troughAge = 15;
+            troughResidualRatio = 0.26;
+            appreciationRate = 0.035;
+            baseMsrp = 98000;
+          } else {
+            nicheType = 'Berlina Ejecutiva E-Segment (XF)';
+            nicheScore = 5.5;
+            troughAge = 16;
+            troughResidualRatio = 0.16;
+            appreciationRate = 0.022;
+            baseMsrp = 58000;
+          }
+        } else if (/xe/i.test(lbl) || ser === 'xe') {
+          nicheType = 'Berlina Deportiva Compacta D-Segment (XE)';
+          nicheScore = 5.8;
+          troughAge = 16;
+          troughResidualRatio = 0.17;
+          appreciationRate = 0.022;
+          baseMsrp = 49000;
+        } else {
+          nicheType = 'Berlina Clásica Ejecutiva (Jaguar)';
+          nicheScore = 5.0;
+          troughAge = 18;
+          troughResidualRatio = 0.12;
+          appreciationRate = 0.02;
+          baseMsrp = 48000;
         }
       } else {
         const isPureM = m.section === 'm-performance' || /\bm[1-8]\b|\b1m\b/i.test(lbl) || /\bm[1-8]\b|\b1m\b/i.test(eng);
