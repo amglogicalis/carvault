@@ -389,36 +389,6 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       </p>
     </div>
 
-    <!-- Banner Informativo de APIs Unificadas -->
-    <section class="mt-20 bg-slate-900/70 border border-slate-800 rounded-3xl p-6 sm:p-8">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[11px] font-mono bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 mb-2">
-            <span>JSON Unificado</span>
-          </div>
-          <h4 class="text-base font-bold text-white">Todos los motores y prestaciones están unificados en las APIs centrales</h4>
-          <p class="text-xs text-slate-400 mt-1 max-w-xl">
-            No necesitas consultar endpoints dispersos: cada entrada en <code class="text-cyan-300 font-mono">/api/v1/bmw.json</code> y en <code class="text-cyan-300 font-mono">/api/v1/carvault.json</code> incluye su array de motores, cifras de 0 a 100 km/h y velocidades punta.
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-2 shrink-0">
-          <a 
-            href="/carvault/api/v1/bmw.json" 
-            target="_blank" 
-            class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-300 font-mono text-xs border border-slate-700 transition-colors"
-          >
-            Ver bmw.json ↗
-          </a>
-          <a 
-            href="/carvault/api/v1/carvault.json" 
-            target="_blank" 
-            class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-mono text-xs border border-slate-700 transition-colors"
-          >
-            Ver carvault.json ↗
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Script Cliente del Buscador Técnico de Coches y Motores -->
