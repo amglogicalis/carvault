@@ -1,0 +1,3007 @@
+{
+  "brand": "Jaguar",
+  "wikidata": "Q35894",
+  "generatedAt": "2026-10-08T12:46:56.691Z",
+  "stats": {
+    "generations": 39,
+    "production": 30,
+    "mPerformance": 7,
+    "prototypes": 2,
+    "chassis": 39,
+    "totalVariants": 168,
+    "totalEngines": 65,
+    "withExactFront": 39,
+    "missingImages": 0,
+    "verifiedFrontRate": "100%",
+    "hasPowertrainSpecs": true,
+    "hasUnifiedEngines": true
+  },
+  "generations": [
+    {
+      "id": "jaguar-f-type-x152-facelift-2",
+      "brand": "Jaguar",
+      "series": "F-Type",
+      "label": "Jaguar F-Type Facelift 2 (Faros Horizontales)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 2020,
+        "end": 2024,
+        "display": "2020 – 2024"
+      },
+      "class": "Deportivo Biplaza Gran Turismo • Rediseño con Faros LED Horizontales Slim J-Blade",
+      "chassis": [
+        {
+          "code": "X152 Facelift 2",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Type (X152)",
+          "commonsCandidates": [
+            "Jaguar F-Type Facelift 2 (Faros Horizontales)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "F-Type P450 RWD V8 (450 CV)",
+            "F-Type P450 AWD V8 (450 CV)",
+            "F-Type R P575 AWD V8 (575 CV)",
+            "F-Type 75 Special Edition (575 CV)",
+            "F-Type ZP Edition (575 CV SV Bespoke)"
+          ],
+          "packages": [
+            "R-Dynamic",
+            "F-Type R",
+            "Black Pack",
+            "75 Edition",
+            "ZP Edition"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/2021_Jaguar_F-Type_R-Dynamic_in_Portofino_Blue_Metallic%2C_Front_Left%2C_08-13-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "Elise240SX",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2021_Jaguar_F-Type_R-Dynamic_in_Portofino_Blue_Metallic%2C_Front_Left%2C_08-13-2022.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "F-Type P450 V8 Supercharged",
+          "engineCode": "AJ133 Gen III",
+          "architecture": "V8 90º Supercharged Compresor Roots",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 450,
+          "torqueNm": 580,
+          "topSpeedKmh": 285,
+          "accel0to100": 4.6,
+          "feedSystem": "Inyección directa y compresor volumétrico Twin-Vortex Eaton",
+          "notes": "Escape activo conmutable. Tracción trasera o AWD Quickshift 8 vel."
+        },
+        {
+          "modelBadge": "F-Type R P575 AWD",
+          "engineCode": "AJ133 Supercharged High Output",
+          "architecture": "V8 90º Supercharged Compresor Roots",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 575,
+          "torqueNm": 700,
+          "topSpeedKmh": 300,
+          "accel0to100": 3.7,
+          "feedSystem": "Inyección directa alta presión y compresor volumétrico Eaton TVS",
+          "notes": "Chasis calibrado con amortiguadores adaptativos Continuously Variable Damping y tracción AWD."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-f-type-x152-facelift-1",
+      "brand": "Jaguar",
+      "series": "F-Type",
+      "label": "Jaguar F-Type Facelift 1 (Full LED & i4 Turbo)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2017,
+        "end": 2019,
+        "display": "2017 – 2019"
+      },
+      "class": "Deportivo Biplaza Coupé / Convertible • Faros Full LED y Entrada Central Unificada",
+      "chassis": [
+        {
+          "code": "X152 Facelift 1",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Type (X152)",
+          "commonsCandidates": [
+            "Jaguar F-Type Facelift 1 (Full LED & i4 Turbo)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "F-Type 2.0 i4 Turbo Ingenium (300 CV)",
+            "F-Type 3.0 V6 Supercharged (340 CV)",
+            "F-Type 3.0 V6 S (380 CV)",
+            "F-Type 400 Sport Edition (400 CV)",
+            "F-Type R 5.0 V8 (550 CV)",
+            "F-Type SVR 5.0 V8 (575 CV SVO)"
+          ],
+          "packages": [
+            "R-Dynamic",
+            "400 Sport",
+            "SVR Package",
+            "Design Pack"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar F-Type Coupé (51883664211).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Jaguar_F-Type_Coup%C3%A9_%2851883664211%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexandre Prevot",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_F-Type_Coup%C3%A9_(51883664211).jpg",
+        "width": 3000,
+        "height": 2000
+      },
+      "engines": [
+        {
+          "modelBadge": "F-Type 2.0 Turbo Ingenium",
+          "engineCode": "AJ200 P300",
+          "architecture": "4 en línea Turbo Twin-Scroll",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.7,
+          "feedSystem": "Inyección directa y turbo twin-scroll con rodamientos cerámicos",
+          "notes": "Escape central rectangular único. Ligero ahorro de 52 kg en el eje delantero."
+        },
+        {
+          "modelBadge": "F-Type S 3.0 V6 Supercharged",
+          "engineCode": "AJ126",
+          "architecture": "V6 90º Supercharged",
+          "cylinders": 6,
+          "displacementCc": 2995,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 380,
+          "torqueNm": 460,
+          "topSpeedKmh": 275,
+          "accel0to100": 4.9,
+          "feedSystem": "Inyección directa y compresor volumétrico Roots",
+          "notes": "Diferencial de deslizamiento limitado mecánico y suspensión adaptativa."
+        },
+        {
+          "modelBadge": "F-Type SVR 5.0 V8 Supercharged",
+          "engineCode": "AJ133 SVR",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 575,
+          "torqueNm": 700,
+          "topSpeedKmh": 322,
+          "accel0to100": 3.7,
+          "feedSystem": "Inyección directa y compresor Eaton TVS",
+          "notes": "Escape activo de titanio y alerón trasero activo de fibra de carbono."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-f-type-x152-pre-facelift",
+      "brand": "Jaguar",
+      "series": "F-Type",
+      "label": "Jaguar F-Type (Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2013,
+        "end": 2017,
+        "display": "2013 – 2017"
+      },
+      "class": "Deportivo Biplaza Coupé / Convertible • Faros Verticales Bi-Xenon con Branquias Tipo Tiburón",
+      "chassis": [
+        {
+          "code": "X152",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Type (X152)",
+          "commonsCandidates": [
+            "Jaguar F-Type (Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "F-Type 3.0 V6 (340 CV)",
+            "F-Type S 3.0 V6 (380 CV)",
+            "F-Type V8 S Convertible (495 CV)",
+            "F-Type R 5.0 V8 (550 CV)",
+            "F-Type Project 7 (575 CV Speedster)"
+          ],
+          "packages": [
+            "Black Pack",
+            "Design Pack",
+            "Performance Pack",
+            "Carbon Ceramic Brakes"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/2015_Jaguar_F-Type_S_V6_AWD_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2015_Jaguar_F-Type_S_V6_AWD_Automatic_3.0_Front.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "F-Type 3.0 V6 Supercharged",
+          "engineCode": "AJ126",
+          "architecture": "V6 90º Supercharged Compresor",
+          "cylinders": 6,
+          "displacementCc": 2995,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 340,
+          "torqueNm": 450,
+          "topSpeedKmh": 260,
+          "accel0to100": 5.3,
+          "feedSystem": "Inyección directa y compresor Roots",
+          "notes": "Doble salida de escape central deportiva cromada."
+        },
+        {
+          "modelBadge": "F-Type R 5.0 V8 Supercharged",
+          "engineCode": "AJ133 Supercharged",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 550,
+          "torqueNm": 680,
+          "topSpeedKmh": 300,
+          "accel0to100": 4.2,
+          "feedSystem": "Inyección directa y compresor Eaton",
+          "notes": "Cuádruple salida de escape lateral y diferencial activo electrónico."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-f-type-project-7",
+      "brand": "Jaguar",
+      "series": "F-Type",
+      "label": "Jaguar F-Type Project 7 (SVO Speedster)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 2014,
+        "end": 2015,
+        "display": "2014 – 2015"
+      },
+      "class": "Speedster de Colección SVO • Homenaje al D-Type con Joroba Aerodinámica",
+      "chassis": [
+        {
+          "code": "X152 Project 7",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Type Project 7",
+          "commonsCandidates": [
+            "Jaguar F-Type Project 7 (SVO Speedster)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Project 7 5.0 V8 S/C (575 CV Serie Limitada 250 Uds)"
+          ],
+          "packages": [
+            "SVO Bespoke",
+            "Carbon Ceramic Brakes",
+            "Aero D-Type Fin"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/2016_Jaguar_F_Type_Project_7_Auto_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2016_Jaguar_F_Type_Project_7_Auto_2.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "Project 7 5.0 V8 Supercharged SVO",
+          "engineCode": "AJ133 Project 7",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 575,
+          "torqueNm": 680,
+          "topSpeedKmh": 300,
+          "accel0to100": 3.9,
+          "feedSystem": "Inyección directa y compresor Eaton TVS",
+          "notes": "Carrocería de aluminio con alerón de fibra de carbono y joroba estilo D-Type 1954."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xk-x150-facelift",
+      "brand": "Jaguar",
+      "series": "XK",
+      "label": "Jaguar XK / XKR Facelift (X150)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 2011,
+        "end": 2014,
+        "display": "2011 – 2014"
+      },
+      "class": "Gran Turismo Coupé / Cabrio • Faros Finos con LED Diurnos y Parrilla Ovalada",
+      "chassis": [
+        {
+          "code": "X150 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XK (X150)",
+          "commonsCandidates": [
+            "Jaguar XK / XKR Facelift (X150)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XK 5.0 V8 (385 CV)",
+            "XKR 5.0 V8 Supercharged (510 CV)",
+            "XKR 75 Special Edition (530 CV)",
+            "XKR-S 5.0 V8 Supercharged (550 CV)",
+            "XKR-S GT (550 CV Track Edition)"
+          ],
+          "packages": [
+            "Black Pack",
+            "Speed Pack",
+            "Dynamic Pack",
+            "XKR-S Aero"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2014_Jaguar_XKR_%28X150_MY15%29_coupe_%282015-09-12%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OSX",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
+        "width": 4272,
+        "height": 2856
+      },
+      "engines": [
+        {
+          "modelBadge": "XK 5.0 V8 Atmosférico",
+          "engineCode": "AJ133 N/A",
+          "architecture": "V8 90º Atmosférico",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 385,
+          "torqueNm": 515,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.4,
+          "feedSystem": "Inyección directa de alta presión",
+          "notes": "Distribución variable continua en árboles de levas de admisión y escape."
+        },
+        {
+          "modelBadge": "XKR-S 5.0 V8 Supercharged",
+          "engineCode": "AJ133 Supercharged R-S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 550,
+          "torqueNm": 680,
+          "topSpeedKmh": 300,
+          "accel0to100": 4.4,
+          "feedSystem": "Inyección directa y compresor volumétrico Roots",
+          "notes": "Alerón trasero fijo de carbono, tomas de aire en capó y difusor trasero específico."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xk-x150-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XK",
+      "label": "Jaguar XK / XKR (X150 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2006,
+        "end": 2011,
+        "display": "2006 – 2011"
+      },
+      "class": "Gran Turismo Coupé / Cabrio • Monocasco 100% de Aluminio Remachado (Diseño Ian Callum)",
+      "chassis": [
+        {
+          "code": "X150",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XK (X150)",
+          "commonsCandidates": [
+            "Jaguar XK / XKR (X150 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XK 3.5 V8 (258 CV)",
+            "XK 4.2 V8 (298 CV)",
+            "XKR 4.2 V8 Supercharged (416 CV)",
+            "XKR-S 4.2 V8 (416 CV)"
+          ],
+          "packages": [
+            "Luxury",
+            "Premium Luxury",
+            "XKR Aero",
+            "Alcon Brakes"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2014_Jaguar_XKR_%28X150_MY15%29_coupe_%282015-09-12%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "OSX",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
+        "width": 4272,
+        "height": 2856
+      },
+      "engines": [
+        {
+          "modelBadge": "XK 4.2 V8",
+          "engineCode": "AJ34",
+          "architecture": "V8 90º Atmosférico",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 298,
+          "torqueNm": 411,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.2,
+          "feedSystem": "Inyección electrónica multipunto",
+          "notes": "Caja automática ZF de 6 velocidades con levas en volante Jaguar Sequential Shift."
+        },
+        {
+          "modelBadge": "XKR 4.2 V8 Supercharged",
+          "engineCode": "AJ34S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 416,
+          "torqueNm": 560,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.2,
+          "feedSystem": "Inyección electrónica multipunto y compresor Eaton M112",
+          "notes": "Parrilla frontal de malla cromada, capó con branquias y frenos de alto rendimiento."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xk8-x100-facelift",
+      "brand": "Jaguar",
+      "series": "XK",
+      "label": "Jaguar XK8 / XKR Facelift (X100)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2002,
+        "end": 2006,
+        "display": "2002 – 2006"
+      },
+      "class": "Gran Turismo Coupé / Cabrio • Motor 4.2 V8, Caja ZF 6 vel. y Luces Antiniebla Encastradas",
+      "chassis": [
+        {
+          "code": "X100 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XK8",
+          "commonsCandidates": [
+            "Jaguar XK8 / XKR Facelift (X100)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XK8 4.2 V8 (298 CV)",
+            "XKR 4.2 V8 Supercharged (400 CV)",
+            "XKR 4.2-S Final Edition (400 CV)"
+          ],
+          "packages": [
+            "Classic Pack",
+            "Sport Pack",
+            "Brembo Handling Pack"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2005 Jaguar XK8 Convertible Automatic 4.2 Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/2005_Jaguar_XK8_Convertible_Automatic_4.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2005_Jaguar_XK8_Convertible_Automatic_4.2_Front.jpg",
+        "width": 5357,
+        "height": 2387
+      },
+      "engines": [
+        {
+          "modelBadge": "XK8 4.2 V8",
+          "engineCode": "AJ34",
+          "architecture": "V8 90º Atmosférico",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 298,
+          "torqueNm": 411,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.4,
+          "feedSystem": "Inyección electrónica multipunto",
+          "notes": "Actualización a 4.2 litros con tensor de cadena metálico reforzado y caja ZF 6HP26."
+        },
+        {
+          "modelBadge": "XKR 4.2 V8 Supercharged",
+          "engineCode": "AJ34S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 400,
+          "torqueNm": 553,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.4,
+          "feedSystem": "Inyección electrónica y compresor volumétrico Eaton M112",
+          "notes": "Parrilla frontal de rejilla metálica, salidas de aire en capó y suspensión CATS."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xk8-x100-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XK",
+      "label": "Jaguar XK8 / XKR (X100 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1996,
+        "end": 2002,
+        "display": "1996 – 2002"
+      },
+      "class": "Gran Turismo Coupé / Cabrio • Debut del Motor AJ-V8 y Línea Clásica Inspirada en el E-Type",
+      "chassis": [
+        {
+          "code": "X100",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XK8",
+          "commonsCandidates": [
+            "Jaguar XK8 / XKR (X100 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XK8 4.0 V8 (284 CV)",
+            "XKR 4.0 V8 Supercharged (370 CV)",
+            "XKR Silverstone Edition (370 CV)"
+          ],
+          "packages": [
+            "Classic",
+            "Sport",
+            "Silverstone Edition"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1997 Jaguar XK8 Coupe Automatic 4.0 Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/1997_Jaguar_XK8_Coupe_Automatic_4.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1997_Jaguar_XK8_Coupe_Automatic_4.0_Front.jpg",
+        "width": 4307,
+        "height": 2295
+      },
+      "engines": [
+        {
+          "modelBadge": "XK8 4.0 V8",
+          "engineCode": "AJ26 / AJ27",
+          "architecture": "V8 90º 32V DOHC Atmosférico",
+          "cylinders": 8,
+          "displacementCc": 3996,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 284,
+          "torqueNm": 393,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.7,
+          "feedSystem": "Inyección electrónica multipunto secuencial",
+          "notes": "Primer motor de 8 cilindros en V diseñado y producido por Jaguar Cars."
+        },
+        {
+          "modelBadge": "XKR 4.0 V8 Supercharged",
+          "engineCode": "AJ26S / AJ27S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 3996,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 370,
+          "torqueNm": 525,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.4,
+          "feedSystem": "Inyección electrónica y compresor volumétrico Eaton M112",
+          "notes": "Transmisión automática Mercedes-Benz 5G-Tronic 722.6 de alto par."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x351-facelift",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ Facelift (X351)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2015,
+        "end": 2019,
+        "display": "2015 – 2019"
+      },
+      "class": "Berlina de Representación F-Segment • Faros Full LED Double J-Blade y Versión XJR575",
+      "chassis": [
+        {
+          "code": "X351 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X351)",
+          "commonsCandidates": [
+            "Jaguar XJ Facelift (X351)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ 3.0 V6 Diesel (300 CV)",
+            "XJ 3.0 V6 Supercharged (340 CV)",
+            "XJ 5.0 V8 Supercharged (510 CV)",
+            "XJR575 5.0 V8 (575 CV SVO)"
+          ],
+          "packages": [
+            "Luxury",
+            "Premium Luxury",
+            "Portfolio",
+            "R-Sport",
+            "Autobiography LWB",
+            "XJR575"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_(X351)_–_Frontansicht,_17._Mai_2013,_Münster.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_%28X351%29_%E2%80%93_Frontansicht%2C_17._Mai_2013%2C_M%C3%BCnster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "M 93",
+        "license": "CC BY-SA 3.0 de",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_(X351)_%E2%80%93_Frontansicht%2C_17._Mai_2013%2C_M%C3%BCnster.jpg",
+        "width": 3276,
+        "height": 1647
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ 3.0 V6 Diesel Bi-Turbo",
+          "engineCode": "AJD-V6 Gen III",
+          "architecture": "V6 60º Bi-Turbodiésel Secuencial",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 300,
+          "torqueNm": 700,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.2,
+          "feedSystem": "Common Rail 2000 bar y doble turbocompresor secuencial",
+          "notes": "Etiqueta C. Caja automática ZF 8HP70 de 8 velocidades."
+        },
+        {
+          "modelBadge": "XJR575 5.0 V8 Supercharged",
+          "engineCode": "AJ133 High Output",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 575,
+          "torqueNm": 700,
+          "topSpeedKmh": 300,
+          "accel0to100": 4.4,
+          "feedSystem": "Inyección directa y compresor Eaton TVS",
+          "notes": "Capó con tomas de refrigeración de fibra de carbono y pintura Satin Velocity Blue."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x351-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ (X351 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2009,
+        "end": 2015,
+        "display": "2009 – 2015"
+      },
+      "class": "Berlina de Representación F-Segment • Vanguardista Silueta Fastback por Ian Callum",
+      "chassis": [
+        {
+          "code": "X351",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X351)",
+          "commonsCandidates": [
+            "Jaguar XJ (X351 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ 3.0 V6 Diesel (275 CV)",
+            "XJ 3.0 V6 Supercharged (340 CV)",
+            "XJ 5.0 V8 Atmosférico (385 CV)",
+            "XJ Supersport 5.0 V8 S/C (510 CV)",
+            "XJR 5.0 V8 S/C (550 CV)"
+          ],
+          "packages": [
+            "Premium Luxury",
+            "Portfolio",
+            "Supersport",
+            "XJR"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar XJ Supersport.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Jaguar_XJ_Supersport.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Supermac1961",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ_Supersport.jpg",
+        "width": 3420,
+        "height": 1292
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ 3.0 V6 Diesel",
+          "engineCode": "AJD-V6",
+          "architecture": "V6 60º Twin-Turbo Diésel",
+          "cylinders": 6,
+          "displacementCc": 2993,
+          "displacementL": 3,
+          "fuel": "Diésel",
+          "powerHp": 275,
+          "torqueNm": 600,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.4,
+          "feedSystem": "Common Rail piezoeléctrico y doble turbo secuencial paralelo",
+          "notes": "Monocasco de aluminio aeroespacial 150 kg más ligero que sus rivales de acero."
+        },
+        {
+          "modelBadge": "XJ Supersport 5.0 V8 Supercharged",
+          "engineCode": "AJ133 Supercharged",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 510,
+          "torqueNm": 625,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.9,
+          "feedSystem": "Inyección directa y compresor volumétrico Roots",
+          "notes": "Diferencial trasero activo controlado electrónicamente (Active Differential Control)."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x358-facelift",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ Facelift (X358)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2007,
+        "end": 2009,
+        "display": "2007 – 2009"
+      },
+      "class": "Berlina Clásica Cuádruple Óptica • Paragolpes Agresivo y Branquias Laterales de Aleta",
+      "chassis": [
+        {
+          "code": "X358",
+          "lwb": true,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X358)",
+          "commonsCandidates": [
+            "Jaguar XJ Facelift (X358)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ6 2.7d Twin-Turbo (207 CV)",
+            "XJ8 3.5 V8 (258 CV)",
+            "XJ8 4.2 V8 (298 CV)",
+            "XJR 4.2 V8 Supercharged (400 CV)",
+            "Daimler Super Eight (400 CV LWB)"
+          ],
+          "packages": [
+            "Executive",
+            "Sovereign",
+            "XJR",
+            "Daimler Super Eight"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar_XJR_Sonderedition_front_20080811.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jaguar_XJR_Sonderedition_front_20080811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Rudolf Stricker",
+        "license": "Attribution",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJR_Sonderedition_front_20080811.jpg",
+        "width": 1962,
+        "height": 1116
+      },
+      "engines": [
+        {
+          "modelBadge": "XJR 4.2 V8 Supercharged",
+          "engineCode": "AJ34S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 400,
+          "torqueNm": 553,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.3,
+          "feedSystem": "Inyección electrónica y compresor Eaton M112",
+          "notes": "Carrocería íntegra de aluminio monocasco con suspensión neumática adaptativa CATS."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x350",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ (X350)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2003,
+        "end": 2007,
+        "display": "2003 – 2007"
+      },
+      "class": "Berlina de Representación F-Segment • Primer Monocasco de Aluminio Estructural en Jaguar",
+      "chassis": [
+        {
+          "code": "X350",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X350)",
+          "commonsCandidates": [
+            "Jaguar XJ (X350)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ6 3.0 V6 (238 CV)",
+            "XJ6 2.7d Twin-Turbo (207 CV)",
+            "XJ8 3.5 V8 (258 CV)",
+            "XJ8 4.2 V8 (298 CV)",
+            "XJR 4.2 V8 Supercharged (400 CV)"
+          ],
+          "packages": [
+            "Classic",
+            "Sport",
+            "Executive",
+            "Sovereign",
+            "XJR"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar_XJR_Sonderedition_front_20080811.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jaguar_XJR_Sonderedition_front_20080811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Rudolf Stricker",
+        "license": "Attribution",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJR_Sonderedition_front_20080811.jpg",
+        "width": 1962,
+        "height": 1116
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ6 3.0 V6 24V",
+          "engineCode": "AJ30",
+          "architecture": "V6 60º DOHC 24V",
+          "cylinders": 6,
+          "displacementCc": 2967,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 238,
+          "torqueNm": 293,
+          "topSpeedKmh": 238,
+          "accel0to100": 8.1,
+          "feedSystem": "Inyección electrónica multipunto con admisión variable VIM",
+          "notes": "Suspensión autonivelante neumática en ambos ejes de serie."
+        },
+        {
+          "modelBadge": "XJR 4.2 V8 Supercharged",
+          "engineCode": "AJ34S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 400,
+          "torqueNm": 553,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.3,
+          "feedSystem": "Inyección electrónica y compresor volumétrico Eaton M112",
+          "notes": "Parrilla frontal tipo malla de alambre y llantas de aleación de 19 pulgadas."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x308",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ / XJ8 (X308)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1997,
+        "end": 2003,
+        "display": "1997 – 2003"
+      },
+      "class": "Berlina Clásica Cuádruple Óptica • Transición al Motor V8 AJ26 y Ópticas de Cristal Redondas",
+      "chassis": [
+        {
+          "code": "X308",
+          "lwb": true,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X308)",
+          "commonsCandidates": [
+            "Jaguar XJ / XJ8 (X308)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ8 3.2 V8 (240 CV)",
+            "XJ8 4.0 V8 (284 CV)",
+            "XJR 4.0 V8 Supercharged (370 CV)",
+            "Daimler Super V8 (370 CV LWB)"
+          ],
+          "packages": [
+            "Executive",
+            "Sport",
+            "Sovereign",
+            "XJR",
+            "Daimler Eight"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar_XJ_.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Jaguar_XJ_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "IFCAR",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ_.jpg",
+        "width": 1884,
+        "height": 894
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ8 3.2 V8",
+          "engineCode": "AJ26 / AJ27 3.2",
+          "architecture": "V8 90º DOHC 32V",
+          "cylinders": 8,
+          "displacementCc": 3248,
+          "displacementL": 3.2,
+          "fuel": "Gasolina",
+          "powerHp": 240,
+          "torqueNm": 312,
+          "topSpeedKmh": 225,
+          "accel0to100": 8.5,
+          "feedSystem": "Inyección electrónica multipunto Denso",
+          "notes": "Caja automática ZF 5HP24 de 5 velocidades."
+        },
+        {
+          "modelBadge": "XJR 4.0 V8 Supercharged",
+          "engineCode": "AJ26S / AJ27S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 3996,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 370,
+          "torqueNm": 525,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.6,
+          "feedSystem": "Inyección electrónica multipunto y compresor Eaton M112",
+          "notes": "Parrilla del color de la carrocería con malla metálica y suspensión endurecida CATS."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj-x300",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ / XJR (X300)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1994,
+        "end": 1997,
+        "display": "1994 – 1997"
+      },
+      "class": "Berlina Clásica Cuádruple Óptica • Retorno de las Líneas Curvas y Primer XJR Sobrealimentado",
+      "chassis": [
+        {
+          "code": "X300",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ (X300)",
+          "commonsCandidates": [
+            "Jaguar XJ / XJR (X300)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ6 3.2 AJ16 (216 CV)",
+            "XJ6 4.0 AJ16 (249 CV)",
+            "XJR 4.0 Supercharged 6L (326 CV)",
+            "XJ12 6.0 V12 (318 CV)"
+          ],
+          "packages": [
+            "Sport",
+            "Sovereign",
+            "XJR Supercharged",
+            "Daimler Six",
+            "Daimler Double Six"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1996_Jaguar_XJ6_3.2_Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/1996_Jaguar_XJ6_3.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1996_Jaguar_XJ6_3.2_Front.jpg",
+        "width": 4963,
+        "height": 2048
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ6 4.0 AJ16",
+          "engineCode": "AJ16 4.0",
+          "architecture": "6 en línea DOHC 24V Atmosférico",
+          "cylinders": 6,
+          "displacementCc": 3980,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 249,
+          "torqueNm": 399,
+          "topSpeedKmh": 240,
+          "accel0to100": 7.7,
+          "feedSystem": "Inyección electrónica secuencial Lucas-Sagem",
+          "notes": "El motor de 6 cilindros en línea legendario con bobina individual por bujía."
+        },
+        {
+          "modelBadge": "XJR 4.0 Supercharged",
+          "engineCode": "AJ16S",
+          "architecture": "6 en línea Supercharged Compresor",
+          "cylinders": 6,
+          "displacementCc": 3980,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 326,
+          "torqueNm": 512,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.9,
+          "feedSystem": "Inyección electrónica y compresor volumétrico Eaton M90",
+          "notes": "Primer modelo de producción en la historia de Jaguar equipado de fábrica con compresor."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj40",
+      "brand": "Jaguar",
+      "series": "XJ",
+      "label": "Jaguar XJ40",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1986,
+        "end": 1994,
+        "display": "1986 – 1994"
+      },
+      "class": "Berlina Ejecutiva Clásica • Faros Rectangulares u Ópticas Dobles y Motor AJ6",
+      "chassis": [
+        {
+          "code": "XJ40",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ40",
+          "commonsCandidates": [
+            "Jaguar XJ40"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ6 2.9 AJ6 (165 CV)",
+            "XJ6 3.2 AJ6 (200 CV)",
+            "XJ6 3.6 AJ6 (221 CV)",
+            "XJ6 4.0 AJ6 (223 CV)",
+            "XJR 3.6 / 4.0 TWR (251 CV)",
+            "XJ12 6.0 V12 (318 CV)"
+          ],
+          "packages": [
+            "Base",
+            "Sovereign",
+            "Daimler",
+            "XJR TWR Sport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Jaguar_XJ6_XJ40_Vanden_Plas_Black_Cherry_-_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "Ethan Llamas",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ6_XJ40_Vanden_Plas_Black_Cherry_-_front.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ6 4.0 AJ6",
+          "engineCode": "AJ6 4.0",
+          "architecture": "6 en línea DOHC 24V",
+          "cylinders": 6,
+          "displacementCc": 3980,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 223,
+          "torqueNm": 384,
+          "topSpeedKmh": 222,
+          "accel0to100": 8.5,
+          "feedSystem": "Inyección electrónica multipunto Bosch digital",
+          "notes": "Bloque y culata de aluminio con caja de cambios automática de 4 velocidades con selector J-Gate."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xf-x260-facelift",
+      "brand": "Jaguar",
+      "series": "XF",
+      "label": "Jaguar XF Facelift (X260)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2020,
+        "end": 2024,
+        "display": "2020 – 2024"
+      },
+      "class": "Berlina / Familiar Ejecutivo E-Segment • Faros LED Doble J Slim y Pantalla Curva Pivi Pro",
+      "chassis": [
+        {
+          "code": "X260 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XF (X260)",
+          "commonsCandidates": [
+            "Jaguar XF Facelift (X260)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XF P250 RWD Ingenium (250 CV)",
+            "XF P300 AWD Ingenium (300 CV)",
+            "XF D200 MHEV Ingenium (204 CV)",
+            "XF Sportbrake D200 / P250 / P300"
+          ],
+          "packages": [
+            "S",
+            "SE",
+            "R-Dynamic SE",
+            "R-Dynamic Black",
+            "Sportbrake"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2018_Jaguar_XF_V6_S_Diesel_Automatic_3.0_Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/2018_Jaguar_XF_V6_S_Diesel_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018_Jaguar_XF_V6_S_Diesel_Automatic_3.0_Front.jpg",
+        "width": 5111,
+        "height": 2240
+      },
+      "engines": [
+        {
+          "modelBadge": "XF P250 RWD",
+          "engineCode": "AJ200 P250",
+          "architecture": "4 en línea Turbo Gasolina",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 250,
+          "torqueNm": 365,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.9,
+          "feedSystem": "Inyección directa y turbo twin-scroll",
+          "notes": "Cambio automático ZF 8HP de 8 marchas."
+        },
+        {
+          "modelBadge": "XF P300 AWD",
+          "engineCode": "AJ200 P300",
+          "architecture": "4 en línea Turbo Gasolina AWD",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.1,
+          "feedSystem": "Inyección directa y turbo twin-scroll",
+          "notes": "Tracción integral permanente con Intelligent Driveline Dynamics (IDD)."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xf-x260-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XF",
+      "label": "Jaguar XF (X260 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2015,
+        "end": 2020,
+        "display": "2015 – 2020"
+      },
+      "class": "Berlina / Familiar Ejecutivo E-Segment • Estructura Ligera de Aluminio Modular (iQ[Al])",
+      "chassis": [
+        {
+          "code": "X260",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XF (X260)",
+          "commonsCandidates": [
+            "Jaguar XF (X260 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XF 2.0d Ingenium (163 / 180 CV)",
+            "XF 2.0d Twin-Turbo (240 CV)",
+            "XF 2.0t Ingenium (200 / 250 CV)",
+            "XF 3.0d V6 Twin-Turbo (300 CV)",
+            "XF S 3.0 V6 Supercharged (380 CV)",
+            "XF Sportbrake"
+          ],
+          "packages": [
+            "Pure",
+            "Prestige",
+            "Portfolio",
+            "R-Sport",
+            "S",
+            "Chequered Flag"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar XF 30D X260 white (1).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jaguar_XF_30D_X260_white_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Damian B Oh",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XF_30D_X260_white_(1).jpg",
+        "width": 3709,
+        "height": 2782
+      },
+      "engines": [
+        {
+          "modelBadge": "XF 2.0d Ingenium",
+          "engineCode": "AJ200D 180",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 180,
+          "torqueNm": 430,
+          "topSpeedKmh": 229,
+          "accel0to100": 8.1,
+          "feedSystem": "Common Rail 1800 bar con turbo de geometría variable",
+          "notes": "Consumo homologado extraordinario de 4.3 l/100 km."
+        },
+        {
+          "modelBadge": "XF S 3.0 V6 Supercharged",
+          "engineCode": "AJ126",
+          "architecture": "V6 90º Supercharged",
+          "cylinders": 6,
+          "displacementCc": 2995,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 380,
+          "torqueNm": 450,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.3,
+          "feedSystem": "Inyección directa y compresor Roots",
+          "notes": "Pinzas de freno rojas y amortiguación adaptativa Adaptive Dynamics."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xf-x250-facelift",
+      "brand": "Jaguar",
+      "series": "XF",
+      "label": "Jaguar XF Facelift (X250)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 2011,
+        "end": 2015,
+        "display": "2011 – 2015"
+      },
+      "class": "Berlina Deportiva E-Segment • Faros Afilados con Luz Diurna LED J-Blade y Versión XFR-S",
+      "chassis": [
+        {
+          "code": "X250 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XF (X250)",
+          "commonsCandidates": [
+            "Jaguar XF Facelift (X250)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XF 2.2d (163 / 200 CV)",
+            "XF 3.0 V6 Diesel (240 / 275 CV)",
+            "XF 5.0 V8 Atmosférico (385 CV)",
+            "XFR 5.0 V8 Supercharged (510 CV)",
+            "XFR-S 5.0 V8 Supercharged (550 CV SVO)",
+            "XF Sportbrake"
+          ],
+          "packages": [
+            "Luxury",
+            "Premium Luxury",
+            "Portfolio",
+            "R-Sport",
+            "XFR",
+            "XFR-S"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Jaguar_XF_Facelift.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "GaiusS",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XF_Facelift.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "XF 2.2d",
+          "engineCode": "DW12C",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 2179,
+          "displacementL": 2.2,
+          "fuel": "Diésel",
+          "powerHp": 200,
+          "torqueNm": 450,
+          "topSpeedKmh": 225,
+          "accel0to100": 8.5,
+          "feedSystem": "Common Rail piezoeléctrico y turbo refrigerado por agua",
+          "notes": "Caja automática ZF de 8 velocidades con Start-Stop."
+        },
+        {
+          "modelBadge": "XFR-S 5.0 V8 Supercharged",
+          "engineCode": "AJ133 R-S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 550,
+          "torqueNm": 680,
+          "topSpeedKmh": 300,
+          "accel0to100": 4.6,
+          "feedSystem": "Inyección directa y compresor Eaton TVS",
+          "notes": "Gran alerón trasero de fibra de carbono y suspensión 30% más rígida."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xf-x250-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XF",
+      "label": "Jaguar XF (X250 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2007,
+        "end": 2011,
+        "display": "2007 – 2011"
+      },
+      "class": "Berlina Deportiva E-Segment • El Coche que Reinventó Jaguar Moderno por Ian Callum",
+      "chassis": [
+        {
+          "code": "X250",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XF (X250)",
+          "commonsCandidates": [
+            "Jaguar XF (X250 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XF 2.7d V6 Twin-Turbo (207 CV)",
+            "XF 3.0 V6 Gasolina (238 CV)",
+            "XF 3.0d V6 Twin-Turbo (240 / 275 CV)",
+            "XF 4.2 V8 (298 CV)",
+            "XF 4.2 V8 Supercharged SV8 (416 CV)",
+            "XF 5.0 V8 (385 CV)",
+            "XFR 5.0 V8 Supercharged (510 CV)"
+          ],
+          "packages": [
+            "Luxury",
+            "Premium Luxury",
+            "SV8",
+            "Portfolio",
+            "XFR"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2010_Jaguar_XF_Premium_Luxury_V6_Automatic_3.0_Front.jpg",
+        "width": 5157,
+        "height": 2552
+      },
+      "engines": [
+        {
+          "modelBadge": "XF 2.7d V6 Twin-Turbo",
+          "engineCode": "AJD-V6 2.7",
+          "architecture": "V6 60º Twin-Turbodiésel",
+          "cylinders": 6,
+          "displacementCc": 2720,
+          "displacementL": 2.7,
+          "fuel": "Diésel",
+          "powerHp": 207,
+          "torqueNm": 435,
+          "topSpeedKmh": 229,
+          "accel0to100": 8.2,
+          "feedSystem": "Common Rail doble turbo con bloque de hierro grafitado compactado (CGI)",
+          "notes": "Pomo de cambio giratorio JaguarDrive Selector que emerge de la consola central."
+        },
+        {
+          "modelBadge": "XFR 5.0 V8 Supercharged",
+          "engineCode": "AJ133 Supercharged",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 510,
+          "torqueNm": 625,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.9,
+          "feedSystem": "Inyección directa y compresor Roots",
+          "notes": "Capó ventilado con inscripciones SUPERCHARGED y frenos sobredimensionados."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xe-x760-facelift",
+      "brand": "Jaguar",
+      "series": "XE",
+      "label": "Jaguar XE Facelift (X760)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2019,
+        "end": 2024,
+        "display": "2019 – 2024"
+      },
+      "class": "Berlina Deportiva D-Segment • Faros LED Ultradelgados, Nuevas Entradas de Aire y Touch Pro Duo",
+      "chassis": [
+        {
+          "code": "X760 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XE (X760)",
+          "commonsCandidates": [
+            "Jaguar XE Facelift (X760)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XE P250 RWD Ingenium (250 CV)",
+            "XE P300 AWD Ingenium (300 CV)",
+            "XE D200 MHEV Ingenium (204 CV)",
+            "XE 300 Sport Edition (300 CV)"
+          ],
+          "packages": [
+            "S",
+            "SE",
+            "R-Dynamic S",
+            "R-Dynamic SE",
+            "R-Dynamic HSE",
+            "300 Sport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2020 Jaguar XE R-Dynamic S AWD Auto.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2020_Jaguar_XE_R-Dynamic_S_AWD_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2020_Jaguar_XE_R-Dynamic_S_AWD_Auto.jpg",
+        "width": 3477,
+        "height": 2022
+      },
+      "engines": [
+        {
+          "modelBadge": "XE P250 RWD",
+          "engineCode": "AJ200 P250",
+          "architecture": "4 en línea Turbo Gasolina",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 250,
+          "torqueNm": 365,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.5,
+          "feedSystem": "Inyección directa con control continuo de alzado de válvulas (CVVL)",
+          "notes": "Chasis monocasco con un 75% de aleación de aluminio reciclado RC5754."
+        },
+        {
+          "modelBadge": "XE P300 AWD",
+          "engineCode": "AJ200 P300",
+          "architecture": "4 en línea Turbo Gasolina AWD",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.7,
+          "feedSystem": "Inyección directa y turbo twin-scroll",
+          "notes": "Aceleración rápida de 0 a 100 km/h con tracción total vectorial."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xe-x760-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XE",
+      "label": "Jaguar XE (X760 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2015,
+        "end": 2019,
+        "display": "2015 – 2019"
+      },
+      "class": "Berlina Deportiva D-Segment • Distribución de Pesos 50:50 y Suspensión Delantera de Doble Trapecio",
+      "chassis": [
+        {
+          "code": "X760",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XE (X760)",
+          "commonsCandidates": [
+            "Jaguar XE (X760 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XE 2.0d Ingenium (163 / 180 CV)",
+            "XE 2.0d Twin-Turbo (240 CV)",
+            "XE 2.0t Ingenium (200 / 250 CV)",
+            "XE S 3.0 V6 Supercharged (340 / 380 CV)"
+          ],
+          "packages": [
+            "Pure",
+            "Prestige",
+            "Portfolio",
+            "R-Sport",
+            "S",
+            "Landmark Edition"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar XE 20t Prestige X760 Fuji White (3).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jaguar_XE_20t_Prestige_X760_Fuji_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Damian B Oh",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XE_20t_Prestige_X760_Fuji_White_(3).jpg",
+        "width": 3823,
+        "height": 2867
+      },
+      "engines": [
+        {
+          "modelBadge": "XE 2.0d Ingenium",
+          "engineCode": "AJ200D",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 180,
+          "torqueNm": 430,
+          "topSpeedKmh": 228,
+          "accel0to100": 7.8,
+          "feedSystem": "Common Rail 1800 bar con turbo VGT",
+          "notes": "Suspensión trasera Integral Link patentada que separa rigidez lateral y longitudinal."
+        },
+        {
+          "modelBadge": "XE S 3.0 V6 Supercharged",
+          "engineCode": "AJ126",
+          "architecture": "V6 90º Supercharged",
+          "cylinders": 6,
+          "displacementCc": 2995,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 380,
+          "torqueNm": 450,
+          "topSpeedKmh": 250,
+          "accel0to100": 5,
+          "feedSystem": "Inyección directa y compresor Roots",
+          "notes": "El motor del F-Type montado en la berlina compacta más ágil de la gama."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xe-sv-project-8",
+      "brand": "Jaguar",
+      "series": "XE",
+      "label": "Jaguar XE SV Project 8 (SVO Track King)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 2017,
+        "end": 2020,
+        "display": "2017 – 2020"
+      },
+      "class": "Superberlina de Competición • Récord en Nürburgring Nordschleife (7:18.361) y 600 CV V8",
+      "chassis": [
+        {
+          "code": "X760 SV Project 8",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XE SV Project 8",
+          "commonsCandidates": [
+            "Jaguar XE SV Project 8 (SVO Track King)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XE SV Project 8 4-Seat Package (600 CV)",
+            "XE SV Project 8 Track Pack 2-Seat con Jaula (600 CV)",
+            "XE SV Project 8 Touring Spec (600 CV)"
+          ],
+          "packages": [
+            "Track Pack",
+            "Touring Package",
+            "Carbon Ceramic Brakes",
+            "Aero Wing"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2018 Jaguar XE SV Project 8 Auto.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/2018_Jaguar_XE_SV_Project_8_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Calreyn88",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018_Jaguar_XE_SV_Project_8_Auto.jpg",
+        "width": 14260,
+        "height": 8998
+      },
+      "engines": [
+        {
+          "modelBadge": "SV Project 8 5.0 V8 Supercharged SVO",
+          "engineCode": "AJ133 Project 8",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 600,
+          "torqueNm": 700,
+          "topSpeedKmh": 322,
+          "accel0to100": 3.7,
+          "feedSystem": "Inyección directa alta presión y compresor Eaton TVS",
+          "notes": "Carrocería ensanchada de fibra de carbono artesanal y suspensión regulable roscada."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-f-pace-x761-facelift",
+      "brand": "Jaguar",
+      "series": "F-Pace",
+      "label": "Jaguar F-Pace Facelift (X761)",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2020,
+        "end": null,
+        "display": "2020 – Actualidad"
+      },
+      "class": "Crossover Deportivo Premium • Capó Esculpido, Luces Doble J LED y Gama Híbrida / SVR",
+      "chassis": [
+        {
+          "code": "X761 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Pace",
+          "commonsCandidates": [
+            "Jaguar F-Pace Facelift (X761)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "F-Pace D200 MHEV (204 CV)",
+            "F-Pace D300 MHEV 6L (300 CV)",
+            "F-Pace P250 AWD (250 CV)",
+            "F-Pace P400 MHEV 6L (400 CV)",
+            "F-Pace P400e PHEV CERO (404 CV)",
+            "F-Pace SVR 575 Edition (575 CV V8 S/C)"
+          ],
+          "packages": [
+            "S",
+            "SE",
+            "HSE",
+            "R-Dynamic Black",
+            "SVR 575 Edition"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2023 Jaguar F-Pace SVR AWD Auto.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/2023_Jaguar_F-Pace_SVR_AWD_Auto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Calreyn88",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023_Jaguar_F-Pace_SVR_AWD_Auto.jpg",
+        "width": 3492,
+        "height": 2507
+      },
+      "engines": [
+        {
+          "modelBadge": "F-Pace P400e PHEV",
+          "engineCode": "AJ200 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Híbrido Enchufable",
+          "powerHp": 404,
+          "torqueNm": 640,
+          "topSpeedKmh": 240,
+          "accel0to100": 5.3,
+          "feedSystem": "Inyección directa turbo y motor eléctrico de 105 kW con batería de 17.1 kWh",
+          "notes": "Etiqueta CERO. Hasta 53 km de autonomía 100% eléctrica."
+        },
+        {
+          "modelBadge": "F-Pace SVR 575 Edition",
+          "engineCode": "AJ133 SVR 575",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 575,
+          "torqueNm": 700,
+          "topSpeedKmh": 286,
+          "accel0to100": 4,
+          "feedSystem": "Inyección directa y compresor Eaton TVS",
+          "notes": "Calibración SVO con diferencial activo electrónico trasero y frenos de dos piezas de 395 mm."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-f-pace-x761-pre-facelift",
+      "brand": "Jaguar",
+      "series": "F-Pace",
+      "label": "Jaguar F-Pace (X761 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2016,
+        "end": 2020,
+        "display": "2016 – 2020"
+      },
+      "class": "Crossover Deportivo Premium • Ganador World Car of the Year & World Car Design 2017",
+      "chassis": [
+        {
+          "code": "X761",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar F-Pace",
+          "commonsCandidates": [
+            "Jaguar F-Pace (X761 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "F-Pace 2.0d Ingenium (163 / 180 CV)",
+            "F-Pace 2.0d Twin-Turbo (240 CV)",
+            "F-Pace 2.0t Ingenium (250 / 300 CV)",
+            "F-Pace 3.0d V6 Twin-Turbo (300 CV)",
+            "F-Pace S 3.0 V6 Supercharged (380 CV)",
+            "F-Pace SVR 5.0 V8 Supercharged (550 CV)"
+          ],
+          "packages": [
+            "Pure",
+            "Prestige",
+            "Portfolio",
+            "R-Sport",
+            "S",
+            "SVR",
+            "Chequered Flag"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2018 Jaguar F-PACE Portfolio, front left, 06-14-2026.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/2018_Jaguar_F-PACE_Portfolio%2C_front_left%2C_06-14-2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "MercurySable99",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018_Jaguar_F-PACE_Portfolio%2C_front_left%2C_06-14-2026.jpg",
+        "width": 4375,
+        "height": 2979
+      },
+      "engines": [
+        {
+          "modelBadge": "F-Pace 2.0d AWD",
+          "engineCode": "AJ200D 180",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 180,
+          "torqueNm": 430,
+          "topSpeedKmh": 208,
+          "accel0to100": 8.7,
+          "feedSystem": "Common Rail e inyectores de solenoide de alta precisión",
+          "notes": "Sistema All Surface Progress Control (ASPC) para tracción en nieve y hielo."
+        },
+        {
+          "modelBadge": "F-Pace SVR 5.0 V8 Supercharged",
+          "engineCode": "AJ133 SVR",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 5000,
+          "displacementL": 5,
+          "fuel": "Gasolina",
+          "powerHp": 550,
+          "torqueNm": 680,
+          "topSpeedKmh": 283,
+          "accel0to100": 4.3,
+          "feedSystem": "Inyección directa y compresor Roots volumétrico",
+          "notes": "Capó ventilado con tomas funcionales y cuatro tubos de escape deportivos."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-e-pace-x540-facelift",
+      "brand": "Jaguar",
+      "series": "E-Pace",
+      "label": "Jaguar E-Pace Facelift (X540)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2020,
+        "end": 2024,
+        "display": "2020 – 2024"
+      },
+      "class": "Crossover Compacto Deportivo • Plataforma PTA Reforzada, Doble J LED y P300e Híbrido",
+      "chassis": [
+        {
+          "code": "X540 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar E-Pace",
+          "commonsCandidates": [
+            "Jaguar E-Pace Facelift (X540)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "E-Pace D165 MHEV (163 CV)",
+            "E-Pace D200 MHEV (204 CV)",
+            "E-Pace P160 MHEV 3-Cilindros (160 CV)",
+            "E-Pace P200 / P250 MHEV (200 / 249 CV)",
+            "E-Pace P300e PHEV CERO (309 CV)",
+            "E-Pace 300 Sport (300 CV)"
+          ],
+          "packages": [
+            "S",
+            "SE",
+            "R-Dynamic S",
+            "R-Dynamic Black",
+            "300 Sport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2022 Jaguar E-Pace P250 SE front left.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/2022_Jaguar_E-Pace_P250_SE_front_left.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "MercurySable99",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2022_Jaguar_E-Pace_P250_SE_front_left.jpg",
+        "width": 4753,
+        "height": 2977
+      },
+      "engines": [
+        {
+          "modelBadge": "E-Pace P300e PHEV AWD",
+          "engineCode": "AJ150 PHEV",
+          "architecture": "3 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 3,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable",
+          "powerHp": 309,
+          "torqueNm": 540,
+          "topSpeedKmh": 216,
+          "accel0to100": 6.5,
+          "feedSystem": "Inyección directa turbo 1.5L (200 CV) + motor eléctrico trasero (109 CV)",
+          "notes": "Etiqueta CERO. Hasta 55 km de autonomía en modo 100% eléctrico."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-e-pace-x540-pre-facelift",
+      "brand": "Jaguar",
+      "series": "E-Pace",
+      "label": "Jaguar E-Pace (X540 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2017,
+        "end": 2020,
+        "display": "2017 – 2020"
+      },
+      "class": "Crossover Compacto Deportivo • Diseño Inspirado en el F-Type con Ópticas Angulosas",
+      "chassis": [
+        {
+          "code": "X540",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar E-Pace",
+          "commonsCandidates": [
+            "Jaguar E-Pace (X540 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "E-Pace D150 (150 CV)",
+            "E-Pace D180 AWD (180 CV)",
+            "E-Pace D240 AWD Twin-Turbo (240 CV)",
+            "E-Pace P200 AWD (200 CV)",
+            "E-Pace P250 AWD (249 CV)",
+            "E-Pace P300 AWD (300 CV)",
+            "E-Pace First Edition (249 CV)"
+          ],
+          "packages": [
+            "Base",
+            "S",
+            "SE",
+            "HSE",
+            "R-Dynamic",
+            "First Edition",
+            "Chequered Flag"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar E-Pace D180 AWD S – Frontansicht, 24. Juni 2018 Düsseldorf.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Jaguar_E-Pace_D180_AWD_S_%E2%80%93_Frontansicht%2C_24._Juni_2018_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "© M 93",
+        "license": "CC BY-SA 3.0 de",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_E-Pace_D180_AWD_S_%E2%80%93_Frontansicht%2C_24._Juni_2018_D%C3%BCsseldorf.jpg",
+        "width": 3440,
+        "height": 1880
+      },
+      "engines": [
+        {
+          "modelBadge": "E-Pace D180 AWD",
+          "engineCode": "AJ200D 180",
+          "architecture": "4 en línea Turbodiésel",
+          "cylinders": 4,
+          "displacementCc": 1999,
+          "displacementL": 2,
+          "fuel": "Diésel",
+          "powerHp": 180,
+          "torqueNm": 430,
+          "topSpeedKmh": 205,
+          "accel0to100": 9.3,
+          "feedSystem": "Common Rail con turbo VGT",
+          "notes": "Tracción total Standard Driveline o Active Driveline con vectorización de par."
+        },
+        {
+          "modelBadge": "E-Pace P300 AWD",
+          "engineCode": "AJ200 P300",
+          "architecture": "4 en línea Turbo Gasolina",
+          "cylinders": 4,
+          "displacementCc": 1997,
+          "displacementL": 2,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 243,
+          "accel0to100": 6.4,
+          "feedSystem": "Inyección directa y turbo twin-scroll",
+          "notes": "Chasis configurado con transmisión automática ZF de 9 velocidades."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-i-pace-x590",
+      "brand": "Jaguar",
+      "series": "I-Pace",
+      "label": "Jaguar I-Pace (X590 100% Eléctrico)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2018,
+        "end": 2024,
+        "display": "2018 – 2024"
+      },
+      "class": "Crossover Deportivo 100% Eléctrico (BEV) • Ganador Triplete Histórico World Car of the Year 2019",
+      "chassis": [
+        {
+          "code": "X590",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar I-Pace",
+          "commonsCandidates": [
+            "Jaguar I-Pace (X590 100% Eléctrico)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "I-Pace EV400 AWD (400 CV 90 kWh)",
+            "I-Pace EV320 AWD (320 CV)",
+            "I-Pace First Edition (400 CV)",
+            "I-Pace Black Edition (400 CV)"
+          ],
+          "packages": [
+            "S",
+            "SE",
+            "HSE",
+            "Black Edition",
+            "First Edition"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:2018 Jaguar I-Pace EV400 AWD Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/2018_Jaguar_I-Pace_EV400_AWD_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018_Jaguar_I-Pace_EV400_AWD_Front.jpg",
+        "width": 5020,
+        "height": 2523
+      },
+      "engines": [
+        {
+          "modelBadge": "I-Pace EV400 Dual-Motor AWD",
+          "engineCode": "Dual Permanent Magnet Synchronous",
+          "architecture": "Doble Motor Eléctrico Síncrono de Imán Permanente (AWD)",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0,
+          "fuel": "Eléctrico 100%",
+          "powerHp": 400,
+          "torqueNm": 696,
+          "topSpeedKmh": 200,
+          "accel0to100": 4.8,
+          "feedSystem": "Batería de iones de litio de 90 kWh refrigerada por líquido a 400V",
+          "notes": "Etiqueta CERO. Autonomía homologada WLTP de hasta 470 km. Carga rápida CC a 100 kW."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-s-type-x200-facelift",
+      "brand": "Jaguar",
+      "series": "S-Type",
+      "label": "Jaguar S-Type Facelift (X200/X202)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2004,
+        "end": 2008,
+        "display": "2004 – 2008"
+      },
+      "class": "Berlina Clásica E-Segment • Capó de Aluminio, Doble Salida Deportiva y S-Type R (400 CV)",
+      "chassis": [
+        {
+          "code": "X202 / X206",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar S-Type (X200)",
+          "commonsCandidates": [
+            "Jaguar S-Type Facelift (X200/X202)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "S-Type 2.7d Twin-Turbo Diésel (207 CV)",
+            "S-Type 3.0 V6 (238 CV)",
+            "S-Type 4.2 V8 (298 CV)",
+            "S-Type R 4.2 V8 Supercharged (400 CV)"
+          ],
+          "packages": [
+            "Classic",
+            "Executive",
+            "Sport",
+            "S-Type R"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:'06-'08 Jaguar S-Type.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%2706-%2708_Jaguar_S-Type.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Bull-Doser",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A'06-'08_Jaguar_S-Type.jpg",
+        "width": 2181,
+        "height": 1401
+      },
+      "engines": [
+        {
+          "modelBadge": "S-Type 2.7d Bi-Turbo",
+          "engineCode": "AJD-V6 2.7",
+          "architecture": "V6 60º Twin-Turbodiésel",
+          "cylinders": 6,
+          "displacementCc": 2720,
+          "displacementL": 2.7,
+          "fuel": "Diésel",
+          "powerHp": 207,
+          "torqueNm": 435,
+          "topSpeedKmh": 230,
+          "accel0to100": 8.5,
+          "feedSystem": "Common Rail piezoeléctrico Siemens",
+          "notes": "Caja automática ZF de 6 velocidades o manual de 6 velocidades."
+        },
+        {
+          "modelBadge": "S-Type R 4.2 V8 Supercharged",
+          "engineCode": "AJ34S",
+          "architecture": "V8 90º Supercharged",
+          "cylinders": 8,
+          "displacementCc": 4196,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 400,
+          "torqueNm": 553,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.5,
+          "feedSystem": "Inyección electrónica y compresor volumétrico Eaton M112",
+          "notes": "Parrilla ovalada con malla deportiva de alambre, frenos Brembo y suspensión CATS."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-s-type-x200-pre-facelift",
+      "brand": "Jaguar",
+      "series": "S-Type",
+      "label": "Jaguar S-Type (X200 Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1999,
+        "end": 2004,
+        "display": "1999 – 2004"
+      },
+      "class": "Berlina Clásica E-Segment • Reinterpretación Retro de la Mítica Berlina S-Type de 1963",
+      "chassis": [
+        {
+          "code": "X200",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar S-Type (X200)",
+          "commonsCandidates": [
+            "Jaguar S-Type (X200 Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "S-Type 3.0 V6 24V (238 CV)",
+            "S-Type 4.0 V8 (284 CV)",
+            "S-Type R 4.2 V8 Supercharged (400 CV)"
+          ],
+          "packages": [
+            "Base",
+            "SE",
+            "Sport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:'00-'02 Jaguar S-Type.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%2700-%2702_Jaguar_S-Type.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Bull-Doser",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A'00-'02_Jaguar_S-Type.JPG",
+        "width": 2361,
+        "height": 1705
+      },
+      "engines": [
+        {
+          "modelBadge": "S-Type 3.0 V6 24V",
+          "engineCode": "AJ30",
+          "architecture": "V6 60º DOHC 24V",
+          "cylinders": 6,
+          "displacementCc": 2967,
+          "displacementL": 3,
+          "fuel": "Gasolina",
+          "powerHp": 238,
+          "torqueNm": 293,
+          "topSpeedKmh": 235,
+          "accel0to100": 8.5,
+          "feedSystem": "Inyección electrónica multipunto",
+          "notes": "Propulsión trasera con la mítica selectora en forma de J (J-Gate)."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-x-type-x400",
+      "brand": "Jaguar",
+      "series": "X-Type",
+      "label": "Jaguar X-Type (X400)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 2001,
+        "end": 2009,
+        "display": "2001 – 2009"
+      },
+      "class": "Berlina & Familiar Compacto D-Segment • Tracción Total Permanente Jaguar Traction4",
+      "chassis": [
+        {
+          "code": "X400",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar X-Type",
+          "commonsCandidates": [
+            "Jaguar X-Type (X400)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "X-Type 2.0 V6 (157 CV)",
+            "X-Type 2.5 V6 AWD (196 CV)",
+            "X-Type 3.0 V6 AWD (231 CV)",
+            "X-Type 2.0d Turbodiésel (130 CV)",
+            "X-Type 2.2d Turbodiésel (155 CV)",
+            "X-Type Estate (Familiar)"
+          ],
+          "packages": [
+            "Classic",
+            "Sport",
+            "Executive",
+            "Sovereign",
+            "Estate"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar_X-TYPE.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Jaguar_X-TYPE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "TTTNIS",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_X-TYPE.jpg",
+        "width": 3152,
+        "height": 1366
+      },
+      "engines": [
+        {
+          "modelBadge": "X-Type 2.5 V6 AWD",
+          "engineCode": "AJ25",
+          "architecture": "V6 60º DOHC 24V AWD",
+          "cylinders": 6,
+          "displacementCc": 2495,
+          "displacementL": 2.5,
+          "fuel": "Gasolina",
+          "powerHp": 196,
+          "torqueNm": 244,
+          "topSpeedKmh": 225,
+          "accel0to100": 8.3,
+          "feedSystem": "Inyección electrónica multipunto",
+          "notes": "Tracción a las cuatro ruedas permanente (40% delante / 60% detrás)."
+        },
+        {
+          "modelBadge": "X-Type 2.2d",
+          "engineCode": "ZSD-422",
+          "architecture": "4 en línea Turbodiésel Common Rail",
+          "cylinders": 4,
+          "displacementCc": 2198,
+          "displacementL": 2.2,
+          "fuel": "Diésel",
+          "powerHp": 155,
+          "torqueNm": 360,
+          "topSpeedKmh": 220,
+          "accel0to100": 8.9,
+          "feedSystem": "Inyección directa common rail a 1600 bar con turbo Garrett de geometría variable",
+          "notes": "Caja manual de 6 velocidades o automática de 6 velocidades."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xj220",
+      "brand": "Jaguar",
+      "series": "XJ220",
+      "label": "Jaguar XJ220 (Supercar)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 1992,
+        "end": 1994,
+        "display": "1992 – 1994"
+      },
+      "class": "Superdeportivo Halo • El Coche de Producción Más Rápido del Mundo en 1992 (349 km/h)",
+      "chassis": [
+        {
+          "code": "XJ220",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ220",
+          "commonsCandidates": [
+            "Jaguar XJ220 (Supercar)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ220 3.5 V6 Twin-Turbo (549 CV)",
+            "XJ220 S TWR Le Mans Homologation (680 CV)"
+          ],
+          "packages": [
+            "Standard Road",
+            "TWR S Specification"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar XJ220 1997 - front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Jaguar_XJ220_1997_-_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "DeFacto",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ220_1997_-_front.jpg",
+        "width": 4075,
+        "height": 2886
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ220 3.5 V6 Twin-Turbo",
+          "engineCode": "JV6 (derivado Metro 6R4 Grupo B)",
+          "architecture": "V6 90º Twin-Turbo 24V DOHC",
+          "cylinders": 6,
+          "displacementCc": 3498,
+          "displacementL": 3.5,
+          "fuel": "Gasolina",
+          "powerHp": 549,
+          "torqueNm": 644,
+          "topSpeedKmh": 349,
+          "accel0to100": 3.8,
+          "feedSystem": "Inyección electrónica secuencial Zytek y dos turbocompresores Garrett T3",
+          "notes": "Chasis de nido de abeja de aluminio y carrocería de paneles de aluminio hechos a mano."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xjs-facelift",
+      "brand": "Jaguar",
+      "series": "XJ-S",
+      "label": "Jaguar XJS Facelift",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1991,
+        "end": 1996,
+        "display": "1991 – 1996"
+      },
+      "class": "Gran Turismo Coupé / Convertible • Rediseño Aerodinámico con Faros Rasantes y Motor 6.0 V12",
+      "chassis": [
+        {
+          "code": "XJS Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ-S",
+          "commonsCandidates": [
+            "Jaguar XJS Facelift"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJS 4.0 AJ6 / AJ16 (223 / 241 CV)",
+            "XJS 5.3 V12 HE (280 CV)",
+            "XJS 6.0 V12 (304 CV)",
+            "XJR-S 6.0 V12 TWR (333 CV)"
+          ],
+          "packages": [
+            "Classic",
+            "Celebration Edition",
+            "TWR Sport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/1993_Jaguar_XJS_4.0_Litre_Convertible_in_New_Glacier_White%2C_Front_Right%2C_05-27-2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "view": "frontal_tres_cuartos",
+        "timeOfDay": "dia",
+        "curatedBy": "agent-vision-curation-exact-front",
+        "author": "Elise240SX",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1993_Jaguar_XJS_4.0_Litre_Convertible_in_New_Glacier_White%2C_Front_Right%2C_05-27-2023.jpg"
+      },
+      "engines": [
+        {
+          "modelBadge": "XJS 4.0 AJ16",
+          "engineCode": "AJ16 4.0",
+          "architecture": "6 en línea DOHC 24V",
+          "cylinders": 6,
+          "displacementCc": 3980,
+          "displacementL": 4,
+          "fuel": "Gasolina",
+          "powerHp": 241,
+          "torqueNm": 382,
+          "topSpeedKmh": 237,
+          "accel0to100": 7.8,
+          "feedSystem": "Inyección electrónica secuencial multipunto",
+          "notes": "Caja manual Getrag de 5 velocidades o automática ZF."
+        },
+        {
+          "modelBadge": "XJS 6.0 V12",
+          "engineCode": "Jaguar V12 6.0",
+          "architecture": "V12 60º SOHC 24V",
+          "cylinders": 12,
+          "displacementCc": 5993,
+          "displacementL": 6,
+          "fuel": "Gasolina",
+          "powerHp": 304,
+          "torqueNm": 475,
+          "topSpeedKmh": 260,
+          "accel0to100": 6.6,
+          "feedSystem": "Inyección electrónica Lucas Magneti Marelli",
+          "notes": "Caja automática GM 4L80E de 4 velocidades con control electrónico."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xjs-pre-facelift",
+      "brand": "Jaguar",
+      "series": "XJ-S",
+      "label": "Jaguar XJ-S (Pre-Facelift)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1975,
+        "end": 1991,
+        "display": "1975 – 1991"
+      },
+      "class": "Gran Turismo Clásico • Contrafuertes Traseros Volantes y Motor V12 de Alta Eficiencia (HE)",
+      "chassis": [
+        {
+          "code": "XJ-S",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XJ-S",
+          "commonsCandidates": [
+            "Jaguar XJ-S (Pre-Facelift)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XJ-S 5.3 V12 (285 CV)",
+            "XJ-S 3.6 AJ6 (221 CV)",
+            "XJ-S HE 5.3 V12 (295 CV)",
+            "XJ-SC Targa Cabriolet",
+            "XJR-S 5.3 / 6.0 TWR"
+          ],
+          "packages": [
+            "Standard",
+            "HE (High Efficiency)",
+            "TWR JaguarSport"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1984 Jaguar XJS BTCC (52877487050).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/1984_Jaguar_XJS_BTCC_%2852877487050%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Kieran White from Manchester, England",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1984_Jaguar_XJS_BTCC_(52877487050).jpg",
+        "width": 4000,
+        "height": 2250
+      },
+      "engines": [
+        {
+          "modelBadge": "XJ-S 5.3 V12 HE",
+          "engineCode": "Jaguar V12 HE (May Fireball)",
+          "architecture": "V12 60º SOHC 24V",
+          "cylinders": 12,
+          "displacementCc": 5343,
+          "displacementL": 5.3,
+          "fuel": "Gasolina",
+          "powerHp": 295,
+          "torqueNm": 432,
+          "topSpeedKmh": 250,
+          "accel0to100": 6.9,
+          "feedSystem": "Inyección digital Lucas P-Digital con cámaras de combustión de alta compresión May",
+          "notes": "Uno de los Gran Turismo más refinados y silenciosos de la década de 1980."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-e-type-series-1",
+      "brand": "Jaguar",
+      "series": "E-Type",
+      "label": "Jaguar E-Type Series 1 (XKE)",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1961,
+        "end": 1968,
+        "display": "1961 – 1968"
+      },
+      "class": "Icono Deportivo Histórico • Calificado por Enzo Ferrari como \"El coche más bello del mundo\"",
+      "chassis": [
+        {
+          "code": "E-Type Series 1",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar E-Type",
+          "commonsCandidates": [
+            "Jaguar E-Type Series 1 (XKE)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "E-Type 3.8 FHC Coupé (265 CV)",
+            "E-Type 3.8 OTS Roadster (265 CV)",
+            "E-Type 4.2 FHC / OTS (265 CV)",
+            "E-Type 4.2 2+2 Coupé"
+          ],
+          "packages": [
+            "Fixed Head Coupé (FHC)",
+            "Open Two Seater Roadster (OTS)",
+            "2+2 Coupé"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1963 Jaguar XK-E Roadster.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/1963_Jaguar_XK-E_Roadster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Wikimedia contributor",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1963_Jaguar_XK-E_Roadster.jpg",
+        "width": 2823,
+        "height": 1518
+      },
+      "engines": [
+        {
+          "modelBadge": "E-Type 3.8 XK Inline-6",
+          "engineCode": "XK 3.8 DOHC",
+          "architecture": "6 en línea DOHC con triple carburador SU HD8",
+          "cylinders": 6,
+          "displacementCc": 3781,
+          "displacementL": 3.8,
+          "fuel": "Gasolina",
+          "powerHp": 265,
+          "torqueNm": 353,
+          "topSpeedKmh": 241,
+          "accel0to100": 7.1,
+          "feedSystem": "Tres carburadores SU HD8 de tiro horizontal",
+          "notes": "Chasis multitubular delantero con monocasco central y frenos de disco Dunlop en las cuatro ruedas."
+        },
+        {
+          "modelBadge": "E-Type 4.2 XK Inline-6",
+          "engineCode": "XK 4.2 DOHC",
+          "architecture": "6 en línea DOHC con triple carburador SU HD8",
+          "cylinders": 6,
+          "displacementCc": 4235,
+          "displacementL": 4.2,
+          "fuel": "Gasolina",
+          "powerHp": 265,
+          "torqueNm": 384,
+          "topSpeedKmh": 246,
+          "accel0to100": 7,
+          "feedSystem": "Tres carburadores SU HD8",
+          "notes": "Caja de cambios Jaguar con sincronización total en las cuatro relaciones."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-e-type-series-3",
+      "brand": "Jaguar",
+      "series": "E-Type",
+      "label": "Jaguar E-Type Series 3 V12",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1971,
+        "end": 1975,
+        "display": "1971 – 1975"
+      },
+      "class": "Gran Turismo Clásico • Motor V12 de 5.3 Litros, Parrilla Cromada Cruzada y Aletas Ensanchadas",
+      "chassis": [
+        {
+          "code": "E-Type Series 3",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar E-Type Series 3",
+          "commonsCandidates": [
+            "Jaguar E-Type Series 3 V12"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "E-Type V12 Roadster OTS (272 CV)",
+            "E-Type V12 2+2 Coupé (272 CV)"
+          ],
+          "packages": [
+            "Roadster",
+            "2+2 Coupé"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1972 Jaguar E-Type Series 3 Coupe at Capel Manor, Enfield, London, England.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/1972_Jaguar_E-Type_Series_3_Coupe_at_Capel_Manor%2C_Enfield%2C_London%2C_England.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Acabashi",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1972_Jaguar_E-Type_Series_3_Coupe_at_Capel_Manor%2C_Enfield%2C_London%2C_England.jpg",
+        "width": 3648,
+        "height": 3648
+      },
+      "engines": [
+        {
+          "modelBadge": "E-Type 5.3 V12",
+          "engineCode": "Jaguar V12 5.3 SOHC",
+          "architecture": "V12 60º bloque de aluminio con cuatro carburadores Zenith-Stromberg",
+          "cylinders": 12,
+          "displacementCc": 5343,
+          "displacementL": 5.3,
+          "fuel": "Gasolina",
+          "powerHp": 272,
+          "torqueNm": 412,
+          "topSpeedKmh": 235,
+          "accel0to100": 6.8,
+          "feedSystem": "Cuatro carburadores Zenith-Stromberg 175CD",
+          "notes": "Dirección asistida de serie y frenos de disco ventilados delanteros."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-xk120",
+      "brand": "Jaguar",
+      "series": "XK Heritage",
+      "label": "Jaguar XK120",
+      "section": "production",
+      "status": "historic",
+      "years": {
+        "start": 1948,
+        "end": 1954,
+        "display": "1948 – 1954"
+      },
+      "class": "Roadster Deportivo Clásico • El Coche de Producción Más Rápido del Mundo en 1948 (120 mph / 193 km/h)",
+      "chassis": [
+        {
+          "code": "XK120",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar XK120",
+          "commonsCandidates": [
+            "Jaguar XK120"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "XK120 Open Two Seater (OTS)",
+            "XK120 Fixed Head Coupé (FHC)",
+            "XK120 Drophead Coupé (DHC)",
+            "XK120 SE Special Equipment (180 CV)"
+          ],
+          "packages": [
+            "Roadster",
+            "Fixed Head",
+            "Drophead Coupé",
+            "Special Equipment (M/SE)"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1951 Jaguar XK120 HCC22.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/1951_Jaguar_XK120_HCC22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "MrWalkr",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1951_Jaguar_XK120_HCC22.jpg",
+        "width": 9139,
+        "height": 6062
+      },
+      "engines": [
+        {
+          "modelBadge": "XK120 3.4 XK",
+          "engineCode": "XK 3.4",
+          "architecture": "6 en línea DOHC 12V con doble árbol de levas",
+          "cylinders": 6,
+          "displacementCc": 3442,
+          "displacementL": 3.4,
+          "fuel": "Gasolina",
+          "powerHp": 160,
+          "torqueNm": 264,
+          "topSpeedKmh": 193,
+          "accel0to100": 10,
+          "feedSystem": "Dos carburadores SU H6",
+          "notes": "El motor XK diseñado por William Heynes y Walter Hassan que ganó 5 veces las 24 Horas de Le Mans."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-d-type",
+      "brand": "Jaguar",
+      "series": "Le Mans Heritage",
+      "label": "Jaguar D-Type (Triple Campeón de Le Mans)",
+      "section": "m-performance",
+      "status": "historic",
+      "years": {
+        "start": 1954,
+        "end": 1957,
+        "display": "1954 – 1957"
+      },
+      "class": "Barqueta de Carreras • Ganador de las 24 Horas de Le Mans en 1955, 1956 y 1957 con Aleta Dorsal",
+      "chassis": [
+        {
+          "code": "D-Type",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar D-Type",
+          "commonsCandidates": [
+            "Jaguar D-Type (Triple Campeón de Le Mans)"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "D-Type Short Nose (1954)",
+            "D-Type Long Nose (1955–1956)",
+            "XKSS (Versión de calle legal homologada)"
+          ],
+          "packages": [
+            "Short Nose",
+            "Long Nose Le Mans Spec",
+            "XKSS Road Conversion"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:1956JaguarD-TypeLongNose.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/1956JaguarD-TypeLongNose.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Brian Snelson",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1956JaguarD-TypeLongNose.jpg",
+        "width": 3888,
+        "height": 2592
+      },
+      "engines": [
+        {
+          "modelBadge": "D-Type 3.4 XK Le Mans Spec",
+          "engineCode": "XK 3.4 Dry Sump",
+          "architecture": "6 en línea DOHC con lubricación por cárter seco",
+          "cylinders": 6,
+          "displacementCc": 3442,
+          "displacementL": 3.4,
+          "fuel": "Gasolina",
+          "powerHp": 250,
+          "torqueNm": 325,
+          "topSpeedKmh": 278,
+          "accel0to100": 4.9,
+          "feedSystem": "Tres carburadores dobles Weber 45 DCO3",
+          "notes": "Construcción pionera en monocasco de aleación de magnesio y aluminio inspirada en la aviación."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-c-x75-concept",
+      "brand": "Jaguar",
+      "series": "Conceptos",
+      "label": "Jaguar C-X75 Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2010,
+        "end": 2015,
+        "display": "2010 / 2015"
+      },
+      "class": "Hiperdeportivo Conceptual • Microturbinas de Gas / Híbrido Bi-Turbo de 850 CV (James Bond Spectre)",
+      "chassis": [
+        {
+          "code": "C-X75",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar C-X75",
+          "commonsCandidates": [
+            "Jaguar C-X75 Concept"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "C-X75 Micro-Gas Turbine Concept (780 CV)",
+            "C-X75 Williams Advanced Engineering Twincharged (850 CV)"
+          ],
+          "packages": [
+            "Williams F1 Hybrid",
+            "Spectre Stunt Vehicle"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Silver jaguar c-x75.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Silver_jaguar_c-x75.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "SbastienRondet  (Flickr User)",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASilver_jaguar_c-x75.jpg",
+        "width": 4288,
+        "height": 2106
+      },
+      "engines": [
+        {
+          "modelBadge": "C-X75 1.6 Twincharged Hybrid Williams",
+          "engineCode": "Williams F1 Inspired Dual Boost",
+          "architecture": "4 en línea 1.6 Turbo + Compresor + 2 Motores Eléctricos",
+          "cylinders": 4,
+          "displacementCc": 1600,
+          "displacementL": 1.6,
+          "fuel": "Híbrido Gasolina",
+          "powerHp": 850,
+          "torqueNm": 1000,
+          "topSpeedKmh": 354,
+          "accel0to100": 2.9,
+          "feedSystem": "Inyección directa 200 bar, turbo, compresor volumétrico y sistema eléctrico de 400V",
+          "notes": "Desarrollado conjuntamente con Williams Advanced Engineering para alcanzar 10.000 rpm."
+        }
+      ]
+    },
+    {
+      "id": "jaguar-type-00-concept",
+      "brand": "Jaguar",
+      "series": "Conceptos",
+      "label": "Jaguar Type 00 Design Vision Concept",
+      "section": "prototypes",
+      "status": "concept",
+      "years": {
+        "start": 2024,
+        "end": null,
+        "display": "2024 – 2026"
+      },
+      "class": "Manifiesto de Diseño Futurista • Plataforma Eléctrica JEA y Filosofía \"Copy Nothing\"",
+      "chassis": [
+        {
+          "code": "Type 00",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Jaguar Type 00",
+          "commonsCandidates": [
+            "Jaguar Type 00 Design Vision Concept"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Type 00 Design Vision 100% BEV Concept (Miami Art Week 2024)"
+          ],
+          "packages": [
+            "Miami Art Week Reveal",
+            "JEA Dedicated EV Architecture"
+          ]
+        }
+      ],
+      "frontImage": {
+        "file": "File:Jaguar Type 00 Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Jaguar_Type_00_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "SamuraiArmada",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_Type_00_Front.jpg",
+        "width": 3024,
+        "height": 1634
+      },
+      "engines": [
+        {
+          "modelBadge": "Type 00 Electric Architecture JEA",
+          "engineCode": "Jaguar Electric Architecture JEA",
+          "architecture": "Doble / Triple Motor Eléctrico Ultra-High Output",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0,
+          "fuel": "Eléctrico 100%",
+          "powerHp": 1000,
+          "torqueNm": 1200,
+          "topSpeedKmh": 280,
+          "accel0to100": 2.8,
+          "feedSystem": "Batería de estado sólido / química avanzada de 800V con más de 700 km de autonomía",
+          "notes": "Lanza la nueva era de lujo exuberante moderno y reinvención total de Jaguar."
+        }
+      ]
+    }
+  ]
+}
