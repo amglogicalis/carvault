@@ -11,7 +11,8 @@
     "totalVariants": 435,
     "withExactFront": 200,
     "missingImages": 0,
-    "verifiedFrontRate": "100%"
+    "verifiedFrontRate": "100%",
+    "hasPowertrainSpecs": true
   },
   "generations": [
     {
@@ -1162,24 +1163,24 @@
             "CS / CSL Track"
           ],
           "frontImage": {
-            "file": "File:BMW_E46_front_20080328.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/BMW_E46_front_20080328.jpg/1280px-BMW_E46_front_20080328.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Rudolf Stricker",
+            "file": "File:BMW_M3_e46_PL.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/BMW_M3_e46_PL.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Pleszew",
             "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E46_front_20080328.jpg",
-            "width": 1200,
-            "height": 747
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_e46_PL.JPG",
+            "width": 2560,
+            "height": 1920
           }
         }
       ],
       "frontImage": {
-        "file": "File:BMW_E46_front_20080328.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/BMW_E46_front_20080328.jpg/1280px-BMW_E46_front_20080328.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-        "author": "Rudolf Stricker",
+        "file": "File:BMW_M3_e46_PL.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/BMW_M3_e46_PL.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Pleszew",
         "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E46_front_20080328.jpg",
-        "width": 1200,
-        "height": 747
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M3_e46_PL.JPG",
+        "width": 2560,
+        "height": 1920
       }
     },
     {
@@ -7245,13 +7246,13 @@
             "M Performance"
           ],
           "frontImage": {
-            "file": "File:2005-2008_BMW_320i_(E90)_sedan_(2011-07-17)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg/1280px-2005-2008_BMW_320i_%28E90%29_sedan_%282011-07-17%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2005-2008_BMW_320i_(E90)_sedan_(2011-07-17)_01.jpg",
-            "width": 1200,
-            "height": 576
+            "file": "File:BMW_E92_front_20080118.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/BMW_E92_front_20080118.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_E92_front_20080118.jpg",
+            "width": 2160,
+            "height": 1254
           }
         },
         {
