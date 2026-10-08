@@ -60,13 +60,13 @@ export const BRANDS: BrandInfo[] = [
     available: true,
     apiEndpoint: '/carvault/api/v1/cupra.json',
     stats: {
-      models: 13,
+      models: 14,
       modelsLabel: 'Modelos & Versiones',
       specialLabel: 'Gama VZ / VZ5',
-      specialValue: 7,
-      chassis: 13,
+      specialValue: 8,
+      chassis: 14,
       chassisLabel: 'Chasis Distintos',
-      withPhoto: 13,
+      withPhoto: 14,
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
