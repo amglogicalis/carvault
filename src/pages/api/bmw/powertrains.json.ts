@@ -30,9 +30,8 @@ export const GET: APIRoute = async ({ url }) => {
   if (phase) {
     results = results.map(m => ({
       ...m,
-      phases: m.phases.filter(p => p.phaseType.toLowerCase().includes(phase) || p.name.toLowerCase().includes(phase)),
       engines: m.engines.filter(e => e.phase.toLowerCase().includes(phase) || e.phase.includes('Ambas'))
-    })).filter(m => m.phases.length > 0 || m.engines.length > 0);
+    })).filter(m => m.engines.length > 0);
   }
 
   return new Response(JSON.stringify({
