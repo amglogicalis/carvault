@@ -154,6 +154,72 @@ class BrandVerifier {
       `${generations.length} en data vs ${apiGenerations.length} en api pública`
     );
 
+    // 1.8 Unicidad estricta de imágenes frontales (detección de fotos duplicadas/reutilizadas)
+    const urlToModels = new Map<string, string[]>();
+    for (const g of generations) {
+      const url = g.frontImage?.url;
+      if (!url) continue;
+      const cleanUrl = url.split('?')[0].toLowerCase();
+      if (!urlToModels.has(cleanUrl)) {
+        urlToModels.set(cleanUrl, []);
+      }
+      urlToModels.get(cleanUrl)!.push(g.label);
+    }
+
+    const duplicates: Array<{ url: string; models: string[] }> = [];
+    for (const [url, models] of urlToModels.entries()) {
+      if (models.length > 1) {
+        duplicates.push({ url, models });
+      }
+    }
+
+    const hasNoDuplicateImages = duplicates.length === 0;
+    this.addResult(
+      suiteName,
+      `Unicidad de imágenes frontales (sin imágenes duplicadas entre modelos)`,
+      hasNoDuplicateImages,
+      hasNoDuplicateImages
+        ? `100% de imágenes únicas (${urlToModels.size}/${generations.length})`
+        : `Duplicados detectados en ${duplicates.length} grupos: ${duplicates.map(d => `"${d.models.join('" y "')}"`).join('; ')}`
+    );
+
+    // 1.9 Salvaguarda estricta de Restylings (Facelift vs Pre-Facelift deben tener fotos distintas)
+    const seriesGroups = new Map<string, any[]>();
+    for (const g of generations) {
+      const key = `${g.series || ''}_${(g.chassis || []).map((c: any) => c.code?.split(' ')[0]).join('_')}`;
+      if (!seriesGroups.has(key)) seriesGroups.set(key, []);
+      seriesGroups.get(key)!.push(g);
+    }
+
+    let faceliftCollisions: string[] = [];
+    for (const [_, group] of seriesGroups.entries()) {
+      const facelifts = group.filter(
+        g => /facelift|lci|restyling/i.test(g.label || '') && !/pre-facelift|pre-lci/i.test(g.label || '')
+      );
+      const preFacelifts = group.filter(g => /pre-facelift|pre-lci/i.test(g.label || ''));
+      for (const f of facelifts) {
+        for (const p of preFacelifts) {
+          if (f.id !== p.id && f.frontImage?.url && p.frontImage?.url) {
+            const fUrl = f.frontImage.url.split('?')[0].toLowerCase();
+            const pUrl = p.frontImage.url.split('?')[0].toLowerCase();
+            if (fUrl === pUrl) {
+              faceliftCollisions.push(`${f.label} <=> ${p.label}`);
+            }
+          }
+        }
+      }
+    }
+
+    const noFaceliftCollisions = faceliftCollisions.length === 0;
+    this.addResult(
+      suiteName,
+      `Salvaguarda Restyling (Facelift vs Pre-Facelift tienen fotos distintas)`,
+      noFaceliftCollisions,
+      noFaceliftCollisions
+        ? `Todos los pares restyling tienen fotos independientes`
+        : `Colisión en restylings detectada: ${faceliftCollisions.join('; ')}`
+    );
+
     return cleanCatalog;
   }
 

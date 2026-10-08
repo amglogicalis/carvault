@@ -81,13 +81,14 @@ function saveCache(cache: CacheFile) {
 }
 
 // Descargar imagen como Buffer
-async function downloadImageBuffer(url: string, timeoutMs = 12000): Promise<{ buffer: Buffer; contentType: string } | null> {
+async function downloadImageBuffer(url: string, timeoutMs = 15000): Promise<{ buffer: Buffer; contentType: string } | null> {
+  await new Promise(r => setTimeout(r, 400));
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
     const res = await fetch(url, {
       headers: {
-        'User-Agent': 'CarvaultAuditor/2.0 (contact: info@carvault.local; automotive open catalog)'
+        'User-Agent': 'CarvaultBot/2.0 (https://github.com/amglogicalis/carvault; automotive research)'
       },
       signal: controller.signal
     });
@@ -132,8 +133,17 @@ async function evaluateWithGemini(
   const modelsToTry = ['gemini-flash-latest', 'gemini-3.1-flash-lite', 'gemini-3.8-flash'];
   const b64 = imageBuffer.toString('base64');
 
+  const isPreFacelift = /pre-facelift|pre-lci/i.test(modelLabel);
+  const isFacelift = !isPreFacelift && /facelift|lci|restyling/i.test(modelLabel);
+  let restylingClause = '';
+  if (isFacelift) {
+    restylingClause = '\n⚠️ REGLA CRÍTICA DE RESTYLING: El modelo es una versión FACELIFT / RESTYLING (fase actualizada). Comprueba faros, firma LED y paragolpes. Si la foto corresponde a la versión pre-facelift previa, debes responder estrictamente "matches_target_model": false.';
+  } else if (isPreFacelift) {
+    restylingClause = '\n⚠️ REGLA CRÍTICA DE RESTYLING: El modelo es una versión PRE-FACELIFT (diseño original inicial). Si la foto muestra los faros o parachoques del restyling posterior, debes responder estrictamente "matches_target_model": false.';
+  }
+
   const prompt = `Actúa como auditor automotriz experto y analiza esta foto de vehículo.
-Modelo esperado a verificar: "${modelLabel}" (Chasis/Generación: ${chassis || 'No especificado'}).
+Modelo esperado a verificar: "${modelLabel}" (Chasis/Generación: ${chassis || 'No especificado'}).${restylingClause}
 
 Responde OBLIGATORIAMENTE en formato JSON con estas claves exactas:
 {
