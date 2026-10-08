@@ -147,6 +147,24 @@ const {
                     <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Activo</span>
                   </a>
 
+                  <!-- LEXUS -->
+                  <a 
+                    href="/carvault/lexus" 
+                    class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/60 hover:bg-slate-800/80 border border-slate-850 hover:border-amber-500/40 transition-all group"
+                    data-brand="lexus"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <div class="w-7 h-7 rounded-full bg-slate-900 border border-slate-800 p-1 flex items-center justify-center shrink-0">
+                        <img src="/carvault/images/brands/lexus.svg" alt="Lexus" class="w-full h-full object-contain" />
+                      </div>
+                      <div>
+                        <div class="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">Lexus</div>
+                        <div class="text-[10px] text-slate-500 font-mono">67 modelos • Gama F & LFA</div>
+                      </div>
+                    </div>
+                    <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">Activo</span>
+                  </a>
+
                   <!-- Próximas marcas (visibles como referencia informativa en el dropdown) -->
                   <div class="nav-brand-item flex items-center justify-between p-2 rounded-xl bg-slate-950/30 border border-transparent opacity-50 cursor-not-allowed" data-brand="porsche">
                     <div class="flex items-center gap-2.5">
@@ -173,7 +191,7 @@ const {
 
                 <!-- Pie del dropdown -->
                 <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500 px-1">
-                  <span>2 catálogos activos</span>
+                  <span>4 catálogos activos</span>
                   <a href="/carvault/#marcas" class="text-cyan-400 hover:underline">Ver todas →</a>
                 </div>
               </div>
@@ -252,10 +270,21 @@ const {
       if (navApiLink) {
         const path = window.location.pathname;
         if (path.includes('/bmw')) {
-          // En la sección monomarca de BMW, abre la API específica de BMW
           navApiLink.href = '/carvault/api/v1/bmw.json';
           navApiLink.target = '_blank';
           navApiLink.title = 'Abrir JSON específico de BMW';
+        } else if (path.includes('/cupra')) {
+          navApiLink.href = '/carvault/api/v1/cupra.json';
+          navApiLink.target = '_blank';
+          navApiLink.title = 'Abrir JSON específico de CUPRA';
+        } else if (path.includes('/jaguar')) {
+          navApiLink.href = '/carvault/api/v1/jaguar.json';
+          navApiLink.target = '_blank';
+          navApiLink.title = 'Abrir JSON específico de Jaguar';
+        } else if (path.includes('/lexus')) {
+          navApiLink.href = '/carvault/api/v1/lexus.json';
+          navApiLink.target = '_blank';
+          navApiLink.title = 'Abrir JSON específico de Lexus';
         } else {
           // En Home u otras páginas, abre el gateway general de Carvault
           navApiLink.href = '/carvault/api/v1/carvault.json';

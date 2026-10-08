@@ -93,6 +93,29 @@ export const BRANDS: BrandInfo[] = [
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
+  },
+  {
+    id: 'lexus',
+    name: 'Lexus',
+    fullName: 'Lexus (Toyota Motor Corporation)',
+    slug: '/carvault/lexus',
+    logo: '/carvault/images/brands/lexus.svg',
+    country: 'Japón',
+    founded: 1989,
+    description: 'Pioneros del lujo refinado y la tecnología híbrida autorrecargable, el legendario superdeportivo LFA con V10 atmosférico, berlinas insignia LS y división de alto rendimiento F.',
+    available: true,
+    apiEndpoint: '/carvault/api/v1/lexus.json',
+    stats: {
+      models: 67,
+      modelsLabel: 'Modelos & Versiones',
+      specialLabel: 'Gama F & LFA',
+      specialValue: 14,
+      chassis: 67,
+      chassisLabel: 'Chasis Distintos',
+      withPhoto: 67,
+      withPhotoLabel: 'Frontales con Foto',
+      photoRate: '100%'
+    }
   }
 ];
 

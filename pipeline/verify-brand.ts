@@ -597,6 +597,8 @@ class BrandVerifier {
       ? ['formentor', 'vz5', 'born', 'shark nose']
       : this.brand === 'jaguar'
       ? ['f-type', 'svr', 'xj220', 'e-type']
+      : this.brand === 'lexus'
+      ? ['lfa', 'f sport', 'híbrido', 'is f']
       : ['m3', 'touring', 'coupe', 'cs'];
 
     let passedQueries = 0;

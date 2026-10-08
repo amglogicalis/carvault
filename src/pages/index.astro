@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import bmwCatalog from '../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../data/cupra/catalog-clean-front.json';
 import jaguarCatalog from '../../data/jaguar/catalog-clean-front.json';
+import lexusCatalog from '../../data/lexus/catalog-clean-front.json';
 import { BRANDS } from '../data/brands';
 import requestsRegistry from '../../data/feedback/requests-registry.json';
 
@@ -64,7 +65,27 @@ const jaguarCars = jaguarCatalog.generations.map(g => ({
   brandCatalogUrl: '/carvault/jaguar'
 }));
 
-const globalCars = [...bmwCars, ...cupraCars, ...jaguarCars];
+const lexusCars = lexusCatalog.generations.map(g => ({
+  id: g.id,
+  brandId: 'lexus',
+  brandName: 'Lexus',
+  brandLogo: '/carvault/images/brands/lexus.svg',
+  label: g.label,
+  series: g.series,
+  section: g.section,
+  status: g.status,
+  isM: false,
+  isVZ: false,
+  isSVO: false,
+  isF: g.section === 'm-performance' || (g.label && (g.label.includes('IS F') || g.label.includes('RC F') || g.label.includes('GS F') || g.label.includes('LFA') || g.label.includes('F Sport'))),
+  class: g.class,
+  years: g.years,
+  chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
+  frontImage: g.frontImage,
+  brandCatalogUrl: '/carvault/lexus'
+}));
+
+const globalCars = [...bmwCars, ...cupraCars, ...jaguarCars, ...lexusCars];
 
 const globalCarsJson = JSON.stringify(globalCars);
 
