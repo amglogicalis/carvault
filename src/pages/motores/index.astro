@@ -45,16 +45,16 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
         Busca un modelo de coche para ver todos los motores que montó: códigos de bloque (ej. <strong class="text-white font-mono">N52B25 vs N53B30</strong> en el 325i E92), arquitectura de cilindros, cubicaje en cc y litros, velocidad punta y aceleración de 0 a 100 km/h.
       </p>
 
-      <!-- Buscador Principal -->
-      <div class="mt-8 max-w-2xl mx-auto">
-        <div class="relative">
+      <!-- Buscador Principal y Filtros -->
+      <div class="mt-8 max-w-4xl mx-auto">
+        <div class="relative max-w-2xl mx-auto">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-cyan-400">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
           <input 
             type="text" 
             id="carSearchInput"
-            placeholder="Escribe un coche (ej: BMW Serie 3 E92, 325i E92, Serie 5 E60, M3 E46, M5 E60)..."
+            placeholder="Escribe un coche (ej: BMW Serie 3 E92, 325i, Serie 5 E60, M3, M5)..."
             class="w-full bg-slate-900/90 border border-slate-700 rounded-2xl pl-12 pr-10 py-4 text-sm sm:text-base text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 font-mono shadow-2xl transition-all"
             autocomplete="off"
           />
@@ -67,16 +67,21 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
           </button>
         </div>
 
-        <!-- Panel de Filtros Técnicos Avanzados: CV, Cilindrada, 0-100s, Vel. Máx, Año (Intervalos Mín / Máx Opcionales) -->
-        <div class="mt-6 p-4 sm:p-5 bg-slate-900/90 border border-slate-800/90 rounded-2xl shadow-2xl backdrop-blur-md text-left">
-          <div class="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-800">
-            <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-300 uppercase tracking-wider">
-              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
-              <span>Intervalos Mecánicos (Mín / Máx Opcionales)</span>
+        <!-- Panel de Filtros Técnicos Avanzados: Intervalos Mín / Máx Opcionales -->
+        <div class="mt-6 p-5 sm:p-6 bg-slate-900/90 border border-slate-800 rounded-3xl shadow-2xl backdrop-blur-md text-left">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5 pb-3 border-b border-slate-800">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-300 uppercase tracking-wider">
+                <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                <span>Filtros Técnicos (Mínimo y Máximo opcionales)</span>
+              </div>
+              <p class="text-[11px] text-slate-400 font-mono mt-0.5">
+                Rellena solo el mínimo, solo el máximo o ambos para definir un intervalo exacto.
+              </p>
             </div>
             <button 
               id="resetFiltersBtn"
-              class="text-[11px] font-mono text-slate-400 hover:text-cyan-300 transition-colors flex items-center gap-1 cursor-pointer bg-slate-800/80 hover:bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700/80"
+              class="self-start sm:self-auto text-xs font-mono text-slate-400 hover:text-cyan-300 transition-colors flex items-center gap-1.5 cursor-pointer bg-slate-800/80 hover:bg-slate-800 px-3 py-1.5 rounded-xl border border-slate-700/80 shrink-0"
               title="Restablecer todos los filtros y búsqueda"
             >
               <span>↺</span>
@@ -84,139 +89,174 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
             </button>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 font-mono text-xs">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-mono text-xs">
             <!-- Filtro 1: Potencia (CV) -->
-            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
-              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
-                Potencia (CV)
-              </label>
-              <div class="grid grid-cols-2 gap-1.5">
-                <input 
-                  type="number" 
-                  id="filterMinHp"
-                  min="0"
-                  max="1200"
-                  step="10"
-                  placeholder="Mín"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
-                <input 
-                  type="number" 
-                  id="filterMaxHp"
-                  min="0"
-                  max="1200"
-                  step="10"
-                  placeholder="Máx"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-white uppercase tracking-wider">Potencia</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">CV</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label for="filterMinHp" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Mínimo</label>
+                  <input 
+                    type="number" 
+                    id="filterMinHp"
+                    min="0"
+                    max="1200"
+                    step="10"
+                    placeholder="ej: 200"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
+                <div>
+                  <label for="filterMaxHp" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Máximo</label>
+                  <input 
+                    type="number" 
+                    id="filterMaxHp"
+                    min="0"
+                    max="1200"
+                    step="10"
+                    placeholder="ej: 450"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
               </div>
             </div>
 
             <!-- Filtro 2: Cilindrada (L) -->
-            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
-              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
-                Cilindrada (L)
-              </label>
-              <div class="grid grid-cols-2 gap-1.5">
-                <input 
-                  type="number" 
-                  id="filterMinDisp"
-                  min="0"
-                  max="8.0"
-                  step="0.1"
-                  placeholder="Mín"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
-                <input 
-                  type="number" 
-                  id="filterMaxDisp"
-                  min="0"
-                  max="8.0"
-                  step="0.1"
-                  placeholder="Máx"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-white uppercase tracking-wider">Cilindrada</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">Litros</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label for="filterMinDisp" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Mínimo</label>
+                  <input 
+                    type="number" 
+                    id="filterMinDisp"
+                    min="0"
+                    max="8.0"
+                    step="0.1"
+                    placeholder="ej: 2.0"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
+                <div>
+                  <label for="filterMaxDisp" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Máximo</label>
+                  <input 
+                    type="number" 
+                    id="filterMaxDisp"
+                    min="0"
+                    max="8.0"
+                    step="0.1"
+                    placeholder="ej: 3.5"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
               </div>
             </div>
 
             <!-- Filtro 3: 0-100 km/h (s) -->
-            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-cyan-500/30">
-              <label class="block text-[10px] text-cyan-300 uppercase tracking-wider mb-1.5 font-bold">
-                0-100 km/h (s)
-              </label>
-              <div class="grid grid-cols-2 gap-1.5">
-                <input 
-                  type="number" 
-                  id="filterMin0to100"
-                  min="1.0"
-                  max="30.0"
-                  step="0.1"
-                  placeholder="Mín s"
-                  class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
-                <input 
-                  type="number" 
-                  id="filterMax0to100"
-                  min="1.0"
-                  max="30.0"
-                  step="0.1"
-                  placeholder="Máx s"
-                  class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-cyan-500/30 shadow-sm hover:border-cyan-500/50 transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">0 a 100 km/h</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/40">Segundos</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label for="filterMin0to100" class="block text-[10px] text-cyan-300/80 uppercase font-semibold mb-1">Mínimo</label>
+                  <input 
+                    type="number" 
+                    id="filterMin0to100"
+                    min="1.0"
+                    max="30.0"
+                    step="0.1"
+                    placeholder="ej: 3.5"
+                    class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
+                <div>
+                  <label for="filterMax0to100" class="block text-[10px] text-cyan-300/80 uppercase font-semibold mb-1">Máximo</label>
+                  <input 
+                    type="number" 
+                    id="filterMax0to100"
+                    min="1.0"
+                    max="30.0"
+                    step="0.1"
+                    placeholder="ej: 5.5"
+                    class="w-full bg-slate-900 border border-cyan-500/40 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
               </div>
             </div>
 
             <!-- Filtro 4: Velocidad Máxima (km/h) -->
-            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
-              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
-                Vel. Punta (km/h)
-              </label>
-              <div class="grid grid-cols-2 gap-1.5">
-                <input 
-                  type="number" 
-                  id="filterMinSpeed"
-                  min="50"
-                  max="350"
-                  step="5"
-                  placeholder="Mín"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
-                <input 
-                  type="number" 
-                  id="filterMaxSpeed"
-                  min="50"
-                  max="350"
-                  step="5"
-                  placeholder="Máx"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-white uppercase tracking-wider">Velocidad Punta</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">km/h</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label for="filterMinSpeed" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Mínimo</label>
+                  <input 
+                    type="number" 
+                    id="filterMinSpeed"
+                    min="50"
+                    max="350"
+                    step="5"
+                    placeholder="ej: 240"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
+                <div>
+                  <label for="filterMaxSpeed" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Máximo</label>
+                  <input 
+                    type="number" 
+                    id="filterMaxSpeed"
+                    min="50"
+                    max="350"
+                    step="5"
+                    placeholder="ej: 280"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
               </div>
             </div>
 
             <!-- Filtro 5: Año del Modelo -->
-            <div class="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80">
-              <label class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1.5 font-semibold">
-                Año del Modelo
-              </label>
-              <div class="grid grid-cols-2 gap-1.5">
-                <input 
-                  type="number" 
-                  id="filterMinYear"
-                  min="1927"
-                  max="2027"
-                  step="1"
-                  placeholder="Desde"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
-                <input 
-                  type="number" 
-                  id="filterMaxYear"
-                  min="1927"
-                  max="2027"
-                  step="1"
-                  placeholder="Hasta"
-                  class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-lg px-2.5 py-1.5 text-white placeholder:text-slate-600 focus:outline-none text-xs"
-                />
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors md:col-span-2 lg:col-span-2">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-white uppercase tracking-wider">Año del Modelo</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">Periodo</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label for="filterMinYear" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Desde (Año)</label>
+                  <input 
+                    type="number" 
+                    id="filterMinYear"
+                    min="1927"
+                    max="2027"
+                    step="1"
+                    placeholder="ej: 2004"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
+                <div>
+                  <label for="filterMaxYear" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Hasta (Año)</label>
+                  <input 
+                    type="number" 
+                    id="filterMaxYear"
+                    min="1927"
+                    max="2027"
+                    step="1"
+                    placeholder="ej: 2013"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none text-xs"
+                  />
+                </div>
               </div>
             </div>
           </div>
