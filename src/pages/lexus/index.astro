@@ -13,19 +13,19 @@ const modelsJson = JSON.stringify(catalog.generations);
 ---
 
 <Layout title="Carvault — Catálogo y API Pública de Automóviles (Lexus Edition)">
-  <!-- Hero Section con paleta Champagne Gold / Amber & Slate de Lexus -->
-  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-950/25 via-slate-950 to-slate-950">
+  <!-- Hero Section con paleta Liquid Platinum / Plata Líquido & Cromo Titanio de Lexus -->
+  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800/35 via-slate-950 to-slate-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-amber-500/30 bg-amber-950/40 hover:bg-amber-900/40 text-amber-300 hover:text-amber-200 hover:border-amber-400/50 transition-colors mb-6 shadow-sm">
+      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-slate-400/30 bg-slate-900/60 hover:bg-slate-800/60 text-slate-200 hover:text-white hover:border-slate-300/50 transition-colors mb-6 shadow-sm">
         <span>← Marcas Disponibles</span>
         <span class="text-slate-600">•</span>
-        <span class="text-amber-400 font-bold">Lexus</span>
+        <span class="text-slate-100 font-bold">Lexus</span>
       </a>
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
-        Catálogo Completo <span class="bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-200 bg-clip-text text-transparent">Lexus</span>
+        Catálogo Completo <span class="bg-gradient-to-r from-slate-100 via-slate-300 to-zinc-400 bg-clip-text text-transparent">Lexus</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-        Colección integral automotriz con diferenciación cronológica estricta entre versiones <strong class="text-white">Pre-Facelift</strong> y <strong class="text-amber-400">Restylings (Facelift)</strong>, el legendario superdeportivo <strong class="text-white">LFA con V10 1LR-GUE</strong>, el linaje de coupés <strong class="text-white">LC y RC</strong>, berlinas insignia <strong class="text-white">LS, GS e IS</strong>, la división de alto rendimiento <strong class="text-amber-400">F (Fuji Speedway)</strong>, y la pionera gama <strong class="text-white">Lexus Hybrid Drive</strong> con vistas frontales 100% verificadas.
+        Colección integral automotriz con diferenciación cronológica estricta entre versiones <strong class="text-white">Pre-Facelift</strong> y <strong class="text-slate-200">Restylings (Facelift)</strong>, el legendario superdeportivo <strong class="text-white">LFA con V10 1LR-GUE</strong>, el linaje de coupés <strong class="text-white">LC y RC</strong>, berlinas insignia <strong class="text-white">LS, GS e IS</strong>, la división de alto rendimiento <strong class="text-slate-200">F (Fuji Speedway)</strong>, y la pionera gama <strong class="text-white">Lexus Hybrid Drive</strong> con vistas frontales 100% verificadas.
       </p>
 
       <!-- Métricas rápidas de la marca -->
@@ -36,12 +36,12 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-amber-400 font-mono">{totalFSeries}</span>
+          <span class="text-3xl font-black text-slate-200 font-mono">{totalFSeries}</span>
           <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Gama F & LFA</span>
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-yellow-300 font-mono">{totalChassis}</span>
+          <span class="text-3xl font-black text-slate-300 font-mono">{totalChassis}</span>
           <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Chasis & Códigos</span>
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
@@ -67,14 +67,14 @@ const modelsJson = JSON.stringify(catalog.generations);
           <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500">Pulsa <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px]">/</kbd> para buscar</span>
         </div>
         <div class="relative">
-          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
-            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
           <input 
             id="searchInput"
             type="text" 
             placeholder="Escribe para buscar... (ej: LFA, LC 500, IS 300h, RC F, LS 400, RX 500h, LBX, GX 550, UCF10, URZ100...)" 
-            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-all font-mono"
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300/40 transition-all font-mono"
             autocomplete="off"
           />
           <button 
@@ -93,7 +93,7 @@ const modelsJson = JSON.stringify(catalog.generations);
           <span>Gama / Saga:</span>
         </div>
         <div class="flex flex-wrap gap-1.5" id="seriesFilters">
-          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold" data-series="all">Todas ({totalGenerations})</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold" data-series="all">Todas ({totalGenerations})</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="f-series">Gama F & LFA ({totalFSeries})</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="coupes">Coupés (LC / RC / SC)</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="sedans">Berlinas (IS / ES / GS / LS)</button>
@@ -108,14 +108,14 @@ const modelsJson = JSON.stringify(catalog.generations);
       <div class="pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
         <div class="flex flex-wrap items-center gap-2">
           <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mr-1">Fase / Restyling:</span>
-          <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold" data-phase="all">Todos</button>
+          <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold" data-phase="all">Todos</button>
           <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white" data-phase="facelift">Solo Facelift / Restylings</button>
           <button class="filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white" data-phase="pre-facelift">Solo Pre-Facelift</button>
         </div>
 
         <div class="flex items-center gap-2">
           <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider">Propulsión:</span>
-          <select id="propulsionSelect" class="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 font-mono focus:outline-none focus:border-amber-400">
+          <select id="propulsionSelect" class="bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1 text-xs text-slate-300 font-mono focus:outline-none focus:border-slate-300">
             <option value="all">Todas las tecnologías</option>
             <option value="v10">V10 1LR-GUE Atmosférico (LFA)</option>
             <option value="v8">V8 Atmosférico (2UR / 1UZ / 3UZ / 1UR)</option>
@@ -134,7 +134,7 @@ const modelsJson = JSON.stringify(catalog.generations);
       <div>
         Mostrando <span id="visibleCount" class="text-white font-bold">{totalGenerations}</span> de <span class="text-white font-bold">{totalGenerations}</span> modelos Lexus
       </div>
-      <button id="resetAllFiltersBtn" class="text-amber-400 hover:text-amber-300 hover:underline hidden cursor-pointer">
+      <button id="resetAllFiltersBtn" class="text-slate-300 hover:text-white hover:underline hidden cursor-pointer">
         Restablecer todos los filtros
       </button>
     </div>
@@ -151,7 +151,7 @@ const modelsJson = JSON.stringify(catalog.generations);
 
         return (
           <div 
-            class="model-card group bg-slate-900/60 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all duration-300 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-amber-950/20"
+            class="model-card group bg-slate-900/60 rounded-2xl border border-slate-800 hover:border-slate-400/50 transition-all duration-300 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:shadow-slate-900/40"
             data-id={gen.id}
             data-label={gen.label}
             data-series={gen.series}
@@ -179,12 +179,12 @@ const modelsJson = JSON.stringify(catalog.generations);
                   {gen.chassis[0]?.code}
                 </span>
                 {isF && (
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 border border-amber-500/40 text-amber-300 backdrop-blur-sm">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-800/90 border border-slate-500/60 text-slate-200 backdrop-blur-sm">
                     División F / High-Output
                   </span>
                 )}
                 {isFacelift && (
-                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 backdrop-blur-sm">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-700/80 border border-slate-400/60 text-slate-100 backdrop-blur-sm">
                     Restyling (Facelift)
                   </span>
                 )}
@@ -197,7 +197,7 @@ const modelsJson = JSON.stringify(catalog.generations);
 
               <!-- Botón Lupa Pantalla Completa -->
               <button 
-                class="open-lightbox-btn absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 hover:bg-amber-500 text-slate-300 hover:text-slate-950 transition-colors backdrop-blur-sm cursor-pointer"
+                class="open-lightbox-btn absolute top-3 right-3 p-1.5 rounded-lg bg-slate-900/80 hover:bg-slate-200 text-slate-300 hover:text-slate-950 transition-colors backdrop-blur-sm cursor-pointer"
                 data-image={gen.frontImage?.url}
                 data-label={gen.label}
                 title="Ampliar vista frontal a pantalla completa"
@@ -215,7 +215,7 @@ const modelsJson = JSON.stringify(catalog.generations);
             <!-- Contenido Informativo de la Tarjeta -->
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors line-clamp-1">
+                <h3 class="text-base font-bold text-white group-hover:text-slate-100 transition-colors line-clamp-1">
                   {gen.label}
                 </h3>
                 <p class="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
@@ -239,12 +239,12 @@ const modelsJson = JSON.stringify(catalog.generations);
 
               <!-- Footer de la tarjeta con Acción del Modal -->
               <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-                <div class="flex items-center gap-1.5 text-xs font-mono text-amber-400">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <div class="flex items-center gap-1.5 text-xs font-mono text-slate-300">
+                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                   <span>{enginesCount} motorizaciones</span>
                 </div>
                 <button 
-                  class="open-modal-btn text-xs font-mono font-bold text-slate-300 hover:text-white px-3 py-1.5 rounded-lg bg-slate-800/60 hover:bg-amber-600/80 transition-all cursor-pointer"
+                  class="open-modal-btn text-xs font-mono font-bold text-slate-300 hover:text-white px-3 py-1.5 rounded-lg bg-slate-800/60 hover:bg-slate-700 transition-all cursor-pointer"
                   data-model-id={gen.id}
                 >
                   Ficha Técnica →
@@ -275,7 +275,7 @@ const modelsJson = JSON.stringify(catalog.generations);
       <div class="p-6 border-b border-slate-800 flex items-start justify-between bg-slate-950/60">
         <div>
           <div class="flex items-center gap-2 mb-1">
-            <span id="modalChassisBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">-</span>
+            <span id="modalChassisBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-600 font-bold">-</span>
             <span id="modalYears" class="text-xs font-mono text-slate-400">-</span>
           </div>
           <h2 id="modalTitle" class="text-xl sm:text-2xl font-bold text-white">-</h2>
@@ -302,7 +302,7 @@ const modelsJson = JSON.stringify(catalog.generations);
             <h3 class="text-sm font-bold text-white font-mono uppercase tracking-wider">
               Motorizaciones & Especificaciones Técnicas
             </h3>
-            <span id="modalEnginesCount" class="text-xs font-mono text-amber-400">0 motores</span>
+            <span id="modalEnginesCount" class="text-xs font-mono text-slate-300">0 motores</span>
           </div>
           <div id="modalEnginesList" class="space-y-3">
             <!-- Rellenado dinámico -->
@@ -320,7 +320,7 @@ const modelsJson = JSON.stringify(catalog.generations);
 
       <!-- Footer Modal -->
       <div class="p-4 border-t border-slate-800 bg-slate-950 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
-        <a id="modalPreciosLink" href="/carvault/precios" class="text-amber-400 hover:underline flex items-center gap-1.5">
+        <a id="modalPreciosLink" href="/carvault/precios" class="text-slate-300 hover:text-white hover:underline flex items-center gap-1.5">
           <span>📊 Analizar precio y suelo de depreciación en este modelo →</span>
         </a>
         <a id="modalMotoresLink" href="/carvault/motores" class="text-cyan-400 hover:underline flex items-center gap-1.5">
@@ -479,7 +479,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         seriesBtns.forEach(b => {
           b.className = 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white';
         });
-        btn.className = 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold';
+        btn.className = 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold';
         currentSeries = btn.dataset.series;
         applyFilters();
       });
@@ -490,7 +490,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         phaseBtns.forEach(b => {
           b.className = 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white';
         });
-        btn.className = 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold';
+        btn.className = 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold';
         currentPhase = btn.dataset.phase;
         applyFilters();
       });
@@ -510,13 +510,13 @@ const modelsJson = JSON.stringify(catalog.generations);
 
       seriesBtns.forEach((b, i) => {
         b.className = i === 0 
-          ? 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold'
+          ? 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold'
           : 'filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white';
       });
 
       phaseBtns.forEach((b, i) => {
         b.className = i === 0 
-          ? 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-amber-500/20 text-amber-300 border-amber-500/40 font-bold'
+          ? 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold'
           : 'filter-phase-btn px-2.5 py-1 rounded-md text-[11px] font-mono border transition-all cursor-pointer bg-slate-950 text-slate-400 border-slate-800 hover:text-white';
       });
 
@@ -559,14 +559,14 @@ const modelsJson = JSON.stringify(catalog.generations);
             <div>
               <div class="flex items-center gap-2">
                 <span class="font-bold text-white">${eng.modelBadge || eng.engineCode}</span>
-                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">${eng.engineCode}</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-700">${eng.engineCode}</span>
               </div>
               <div class="text-[11px] text-slate-400 mt-0.5">${eng.architecture} • ${eng.fuel}</div>
               ${eng.notes ? `<div class="text-[10px] text-slate-500 mt-1">↳ ${eng.notes}</div>` : ''}
             </div>
             <div class="flex items-center gap-4 text-right shrink-0">
               <div>
-                <span class="text-amber-400 font-bold block">${eng.powerHp} CV</span>
+                <span class="text-slate-100 font-bold block">${eng.powerHp} CV</span>
                 <span class="text-[10px] text-slate-500">${eng.torqueNm} Nm</span>
               </div>
               <div class="border-l border-slate-800 pl-4">
