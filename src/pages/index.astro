@@ -87,15 +87,28 @@ const registryJson = JSON.stringify(requestsRegistry);
         </div>
       </div>
 
-      <!-- 2. Filtros Genéricos (Únicamente Época / Intervalo Años, Ordenar Por y Conceptos) -->
+      <!-- 2. Filtros Genéricos (Marca, Época / Intervalo Años, Conceptos y Ordenar Por) -->
       <div class="pt-4 border-t border-slate-800/80">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Filtro: Marca / Fabricante (Escalable para futuras marcas) -->
+          <div>
+            <label for="globalBrandSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Marca / Fabricante
+            </label>
+            <select id="globalBrandSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors cursor-pointer">
+              <option value="all">Todas las marcas (Cualquiera)</option>
+              {BRANDS.map(b => (
+                <option value={b.id}>{b.name}</option>
+              ))}
+            </select>
+          </div>
+
           <!-- Filtro: Época / Intervalo Años -->
           <div>
             <label for="globalEraSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
               Época / Intervalo Años
             </label>
-            <select id="globalEraSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+            <select id="globalEraSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors cursor-pointer">
               <option value="all">Todos los Años (1927 - 2026)</option>
               <option value="2020-present">2020 - 2026 (Era Moderna & Eléctricos)</option>
               <option value="2010-2019">2010 - 2019 (Era 2010s)</option>
@@ -113,7 +126,7 @@ const registryJson = JSON.stringify(requestsRegistry);
             <label for="globalConceptSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
               Tipo de Modelo
             </label>
-            <select id="globalConceptSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+            <select id="globalConceptSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors cursor-pointer">
               <option value="all">Todos los Vehículos</option>
               <option value="production">Solo Modelos de Producción en Serie</option>
               <option value="prototypes">Solo Conceptos & Prototipos</option>
@@ -125,7 +138,7 @@ const registryJson = JSON.stringify(requestsRegistry);
             <label for="globalSortSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
               Ordenar Por
             </label>
-            <select id="globalSortSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors">
+            <select id="globalSortSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/40 transition-colors cursor-pointer">
               <option value="year-desc">Más recientes primero (Año ↓)</option>
               <option value="year-asc">Más antiguos primero (Año ↑)</option>
               <option value="name-asc">Nombre del modelo (A - Z)</option>
@@ -436,6 +449,7 @@ const registryJson = JSON.stringify(requestsRegistry);
     const registry = JSON.parse(registryJson);
 
     let globalSearchQuery = '';
+    let globalBrand = 'all';
     let globalEra = 'all';
     let globalConcept = 'all';
     let globalSort = 'year-desc';
@@ -446,6 +460,7 @@ const registryJson = JSON.stringify(requestsRegistry);
     const grid = document.getElementById('globalModelsGrid');
     const searchInput = document.getElementById('globalSearchInput');
     const clearSearchBtn = document.getElementById('globalClearSearchBtn');
+    const brandSelect = document.getElementById('globalBrandSelect');
     const eraSelect = document.getElementById('globalEraSelect');
     const conceptSelect = document.getElementById('globalConceptSelect');
     const sortSelect = document.getElementById('globalSortSelect');
@@ -526,6 +541,7 @@ const registryJson = JSON.stringify(requestsRegistry);
       // Indicador de filtros activos
       let activeCount = 0;
       if (globalSearchQuery) activeCount++;
+      if (globalBrand !== 'all') activeCount++;
       if (globalEra !== 'all') activeCount++;
       if (globalConcept !== 'all') activeCount++;
       if (globalSort !== 'year-desc') activeCount++;
@@ -539,7 +555,7 @@ const registryJson = JSON.stringify(requestsRegistry);
       }
 
       // Requerimiento: No cargar todos los coches a no ser que el usuario busque algo o filtre
-      const isSearchActive = !!globalSearchQuery || globalEra !== 'all' || globalConcept !== 'all';
+      const isSearchActive = !!globalSearchQuery || globalBrand !== 'all' || globalEra !== 'all' || globalConcept !== 'all';
 
       if (!isSearchActive) {
         grid.innerHTML = '';
@@ -552,6 +568,12 @@ const registryJson = JSON.stringify(requestsRegistry);
       if (initialState) initialState.classList.add('hidden');
 
       const filtered = allCars.filter(c => {
+        // Filtro Marca / Fabricante
+        if (globalBrand !== 'all') {
+          const bMatch = c.brandId === globalBrand || (c.brandName || '').toLowerCase() === globalBrand.toLowerCase();
+          if (!bMatch) return false;
+        }
+
         // Filtro Conceptos
         if (globalConcept === 'production' && c.section === 'prototypes') return false;
         if (globalConcept === 'prototypes' && c.section !== 'prototypes') return false;
@@ -679,6 +701,13 @@ const registryJson = JSON.stringify(requestsRegistry);
       searchInput.focus();
     });
 
+    if (brandSelect) {
+      brandSelect.addEventListener('change', (e) => {
+        globalBrand = e.target.value;
+        renderGlobalCars();
+      });
+    }
+
     eraSelect.addEventListener('change', (e) => {
       globalEra = e.target.value;
       if (globalEra === 'custom') {
@@ -709,6 +738,8 @@ const registryJson = JSON.stringify(requestsRegistry);
       searchInput.value = '';
       globalSearchQuery = '';
       clearSearchBtn.classList.add('hidden');
+      if (brandSelect) brandSelect.value = 'all';
+      globalBrand = 'all';
       eraSelect.value = 'all';
       globalEra = 'all';
       conceptSelect.value = 'all';
@@ -725,6 +756,23 @@ const registryJson = JSON.stringify(requestsRegistry);
 
     resetFiltersBtn.addEventListener('click', resetAllGlobal);
     emptyResetBtn.addEventListener('click', resetAllGlobal);
+
+    // Soporte para URL params si viene enlazado con marca o búsqueda: /carvault/?brand=bmw&q=m3
+    const homeUrlParams = new URLSearchParams(window.location.search);
+    const homeBrandParam = homeUrlParams.get('brand') || homeUrlParams.get('marca');
+    if (homeBrandParam && brandSelect) {
+      brandSelect.value = homeBrandParam.toLowerCase();
+      globalBrand = homeBrandParam.toLowerCase();
+    }
+    const homeQParam = homeUrlParams.get('q') || homeUrlParams.get('car') || homeUrlParams.get('model');
+    if (homeQParam && searchInput) {
+      searchInput.value = homeQParam;
+      globalSearchQuery = homeQParam;
+      clearSearchBtn.classList.remove('hidden');
+    }
+    if (homeBrandParam || homeQParam) {
+      renderGlobalCars();
+    }
 
     // ==========================================
     // Lógica del Pop-up y API de Solicitud de Modelos
