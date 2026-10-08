@@ -213,6 +213,7 @@ async function main() {
   const args = process.argv.slice(2);
   const brandArg = args.find(a => a.startsWith('--brand='))?.split('=')[1] || 'cupra';
   const limitArg = parseInt(args.find(a => a.startsWith('--limit='))?.split('=')[1] || '0', 10);
+  const idsArg = args.find(a => a.startsWith('--ids='))?.split('=')[1]?.split(',').map(s => s.trim()) || [];
   const force = args.includes('--force');
 
   console.log(`\n======================================================`);
@@ -235,6 +236,9 @@ async function main() {
 
   const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
   let generations = catalog.generations || [];
+  if (idsArg.length > 0) {
+    generations = generations.filter((g: any) => idsArg.includes(g.id));
+  }
   if (limitArg > 0) generations = generations.slice(0, limitArg);
 
   console.log(`📋 Total modelos a auditar: ${generations.length}\n`);
