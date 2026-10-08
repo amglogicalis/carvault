@@ -7,7 +7,8 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "audit:images": "tsx pipeline/audit-images.ts"
+    "audit:images": "tsx pipeline/audit-images.ts",
+    "verify:brand": "tsx pipeline/verify-brand.ts"
   },
   "repository": {
     "type": "git",
