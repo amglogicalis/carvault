@@ -1,0 +1,680 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import catalog from '../../../data/cupra/catalog-clean-front.json';
+
+const totalGenerations = catalog.generations.length;
+const totalChassis = catalog.stats.chassis;
+const totalVZ = catalog.stats.mPerformance || 7;
+const modelsJson = JSON.stringify(catalog.generations);
+---
+
+<Layout title="Carvault — Catálogo y API Pública de Automóviles (CUPRA Edition)">
+  <!-- Hero Section con paleta Copper / Cobre característica de CUPRA -->
+  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-950/25 via-slate-950 to-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-amber-500/30 bg-amber-950/40 hover:bg-amber-900/40 text-amber-300 hover:text-amber-200 hover:border-amber-400/50 transition-colors mb-6 shadow-sm">
+        <span>← Marcas Disponibles</span>
+        <span class="text-slate-600">•</span>
+        <span class="text-amber-400 font-bold">CUPRA</span>
+      </a>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+        Catálogo Completo <span class="bg-gradient-to-r from-amber-400 via-orange-400 to-amber-600 bg-clip-text text-transparent">CUPRA</span>
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Gama deportiva contemporánea con diferenciación clara entre versiones <strong class="text-white">Pre-Facelift</strong> y el nuevo lenguaje de diseño frontal <strong class="text-amber-400">Shark Nose</strong>, modelos de altas prestaciones <strong class="text-white">VZ / VZ5</strong> (5 cilindros), electrificación e-HYBRID y BEV con fotografías frontales en ángulo directo 100% verificadas.
+      </p>
+
+      <!-- Métricas rápidas de la marca -->
+      <div class="mt-8 flex flex-wrap justify-center gap-6 sm:gap-12 text-slate-300">
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-white font-mono">{totalGenerations}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Modelos & Versiones</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-amber-400 font-mono">{totalVZ}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Gama VZ / VZ5</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-orange-400 font-mono">{totalChassis}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Chasis & Variantes</span>
+        </div>
+        <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-black text-emerald-400 font-mono">{catalog.stats.withExactFront || totalGenerations}</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Frontales con Foto (100%)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo Interactivo -->
+  <section id="catalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Panel Principal de Búsqueda y Filtros Multifactoriales -->
+    <div class="bg-slate-900/80 p-5 sm:p-6 rounded-3xl border border-slate-800 backdrop-blur-md mb-8 shadow-2xl space-y-6">
+      <!-- 1. Buscador Principal con Atajo y Sugerencias -->
+      <div>
+        <div class="flex items-center justify-between mb-2">
+          <label for="searchInput" class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center gap-2">
+            <span>Búsqueda Inteligente</span>
+            <span class="text-[10px] text-slate-500 font-sans hidden sm:inline">(Formentor, León, VZ5, Shark Nose, Terramar, Born, Tavascan...)</span>
+          </label>
+          <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500">Pulsa <kbd class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700 text-[10px]">/</kbd> para buscar</span>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <input 
+            id="searchInput"
+            type="text" 
+            placeholder="Escribe para buscar... (ej: Formentor VZ5, León Facelift, Born VZ, Terramar, Tavascan, Ateca, DarkRebel...)" 
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-all font-mono"
+            autocomplete="off"
+          />
+          <!-- Botón Limpiar Búsqueda -->
+          <button 
+            id="clearSearchBtn" 
+            class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-500 hover:text-slate-300 transition-colors hidden cursor-pointer"
+            title="Limpiar búsqueda"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Sugerencias Rápidas Populares (Pills) -->
+        <div class="mt-2.5 flex flex-wrap items-center gap-1.5 text-xs">
+          <span class="text-[11px] font-mono text-slate-500 mr-1">Populares:</span>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="Formentor VZ5">Formentor VZ5</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="Shark Nose">Shark Nose (2024)</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="Born VZ">Born VZ (Eléctrico)</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="Tavascan">Tavascan</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="Terramar">Terramar</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="León VZ">León VZ</button>
+          <button class="quick-tag px-2.5 py-0.5 rounded-md bg-slate-950 hover:bg-slate-800 text-slate-400 hover:text-amber-300 border border-slate-800/80 font-mono transition-colors" data-tag="DarkRebel">DarkRebel Concept</button>
+        </div>
+      </div>
+
+      <!-- 2. Filtros Desplegables Interactivos -->
+      <div class="pt-4 border-t border-slate-800/80">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <!-- Filtro: Serie / Gama del Modelo -->
+          <div>
+            <label for="seriesSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Gama / Modelo
+            </label>
+            <select id="seriesSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-colors">
+              <option value="all">Todas las Gamas</option>
+              <option value="Formentor">CUPRA Formentor</option>
+              <option value="León">CUPRA León (Hatchback / ST)</option>
+              <option value="Ateca">CUPRA Ateca</option>
+              <option value="Born">CUPRA Born (100% Eléctrico)</option>
+              <option value="Tavascan">CUPRA Tavascan (SUV Coupé BEV)</option>
+              <option value="Terramar">CUPRA Terramar (D-SUV)</option>
+              <option value="Conceptos">Prototipos & Concept Cars</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Fase / Diseño Facial (Pre-Facelift vs Facelift Shark Nose) -->
+          <div>
+            <label for="faceliftSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Fase & Restyling
+            </label>
+            <select id="faceliftSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-colors">
+              <option value="all">Todas las Fases Visuales</option>
+              <option value="shark-nose">Shark Nose (2024–Actualidad)</option>
+              <option value="pre-facelift">Pre-Facelift / Diseño Original (2018–2024)</option>
+              <option value="current">Modelos en Producción Actual</option>
+              <option value="concept">Conceptos & Showcars</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Tipo de Propulsión / Rendimiento -->
+          <div>
+            <label for="powertrainSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Propulsión & Rendimiento
+            </label>
+            <select id="powertrainSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-colors">
+              <option value="all">Cualquier Motorización</option>
+              <option value="vz">Gama VZ / VZ5 (Altas Prestaciones)</option>
+              <option value="bev">100% Eléctrico (BEV)</option>
+              <option value="phev">Híbrido Enchufable (e-HYBRID)</option>
+              <option value="gasoline">Gasolina TSI / eTSI Microhíbrido</option>
+              <option value="5-cyl">5 Cilindros Audi Sport (VZ5)</option>
+            </select>
+          </div>
+
+          <!-- Filtro: Ordenar Por -->
+          <div>
+            <label for="sortSelect" class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-1.5">
+              Ordenar Por
+            </label>
+            <select id="sortSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-200 font-mono focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400/40 transition-colors">
+              <option value="year-desc">Más recientes primero (Año ↓)</option>
+              <option value="year-asc">Más antiguos primero (Año ↑)</option>
+              <option value="name-asc">Nombre del modelo (A - Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Estado y Botón Reset -->
+      <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+        <span class="text-xs font-mono text-slate-400" id="resultsCount">Cargando catálogo...</span>
+        <button 
+          id="resetFiltersBtn" 
+          class="hidden items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-amber-500/20 hover:text-amber-300 hover:border-amber-500/40 border border-slate-700 text-slate-300 transition-all cursor-pointer"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <span>Limpiar filtros</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Grid Principal de Modelos CUPRA -->
+    <div id="modelsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Rellenado dinámicamente con JavaScript -->
+    </div>
+
+    <!-- Estado Vacío cuando ningún modelo coincide -->
+    <div id="emptyState" class="hidden text-center py-20 bg-slate-900/30 rounded-3xl border border-dashed border-slate-800 mt-6">
+      <div class="w-16 h-16 rounded-full bg-slate-800/50 flex items-center justify-center mx-auto mb-4 text-slate-500">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h3 class="text-base font-bold text-white">No se han encontrado modelos coincidentes</h3>
+      <p class="text-xs text-slate-400 mt-1 max-w-sm mx-auto">
+        Prueba a buscar otro modelo o restablece los filtros para ver la gama completa.
+      </p>
+      <button id="emptyResetBtn" class="mt-4 px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors cursor-pointer">
+        Restablecer filtros
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección API Monomarca CUPRA -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-900">
+    <div class="bg-gradient-to-r from-slate-900 via-amber-950/20 to-slate-900 border border-amber-500/30 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl">
+      <div class="space-y-2 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full text-xs font-mono font-medium border border-amber-500/30 bg-amber-950/40 text-amber-300">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>Endpoint Monomarca Disponible</span>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-black text-white">
+          API Pública Monomarca CUPRA
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-300 max-w-2xl">
+          Consume directamente en JSON todos los modelos, desgloses mecánicos con cifras 0-100 km/h y URLs en alta resolución de fotografías frontales verificadas.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-3">
+        <a 
+          href="/carvault/api/v1/cupra.json" 
+          target="_blank" 
+          class="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm shadow-xl shadow-amber-500/20 hover:scale-105 transition-all flex items-center gap-2 cursor-pointer"
+        >
+          <span>GET /api/v1/cupra.json ↗</span>
+        </a>
+        <a 
+          href="/carvault/motores" 
+          class="px-5 py-3 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs sm:text-sm border border-slate-700 transition-all flex items-center gap-2 cursor-pointer"
+        >
+          <span>Fichas de Motores →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Pantalla Completa para Fotos Frontales -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl hidden flex items-center justify-center p-4 sm:p-8 animate-fade-in">
+    <button id="closeLightbox" class="absolute top-5 right-5 z-20 p-3 rounded-full bg-slate-800/80 hover:bg-red-500/80 text-white transition-all shadow-xl hover:scale-110 flex items-center justify-center cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="relative max-w-6xl max-h-[90vh] w-full flex flex-col items-center justify-center">
+      <img id="lightboxImg" src="" alt="Vista frontal ampliada" class="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl border border-slate-800/80" />
+      <div class="mt-4 text-center">
+        <h4 id="lightboxTitle" class="text-white font-bold text-base sm:text-lg"></h4>
+        <p id="lightboxSubtitle" class="text-xs font-mono text-slate-400 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Ficha Técnica de Motores -->
+  <div id="enginesModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4 sm:p-6 animate-fade-in">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col shadow-2xl relative overflow-hidden">
+      <!-- Cabecera del Modal -->
+      <div class="p-5 sm:p-6 border-b border-slate-800 flex items-center justify-between bg-slate-950/80">
+        <div>
+          <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase tracking-wider mb-1">
+            Gama de Motorizaciones
+          </div>
+          <h3 id="enginesModalTitle" class="text-lg sm:text-xl font-black text-white"></h3>
+          <p id="enginesModalSubtitle" class="text-xs text-slate-400 font-mono mt-0.5"></p>
+        </div>
+        <button id="closeEnginesModal" class="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Contenedor con scroll para los motores -->
+      <div id="enginesModalBody" class="p-5 sm:p-6 overflow-y-auto space-y-4">
+        <!-- Renderizado dinámicamente con JS -->
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script define:vars={{ modelsJson }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const models = JSON.parse(modelsJson);
+
+    // Referencias al DOM
+    const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const seriesSelect = document.getElementById('seriesSelect');
+    const faceliftSelect = document.getElementById('faceliftSelect');
+    const powertrainSelect = document.getElementById('powertrainSelect');
+    const sortSelect = document.getElementById('sortSelect');
+    const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+    const emptyResetBtn = document.getElementById('emptyResetBtn');
+    const resultsCount = document.getElementById('resultsCount');
+    const modelsGrid = document.getElementById('modelsGrid');
+    const emptyState = document.getElementById('emptyState');
+    const quickTags = document.querySelectorAll('.quick-tag');
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxSubtitle = document.getElementById('lightboxSubtitle');
+    const closeLightbox = document.getElementById('closeLightbox');
+
+    // Engines Modal
+    const enginesModal = document.getElementById('enginesModal');
+    const enginesModalTitle = document.getElementById('enginesModalTitle');
+    const enginesModalSubtitle = document.getElementById('enginesModalSubtitle');
+    const enginesModalBody = document.getElementById('enginesModalBody');
+    const closeEnginesModal = document.getElementById('closeEnginesModal');
+
+    // Estado reactivo
+    let currentSearch = '';
+    let currentSeries = 'all';
+    let currentFacelift = 'all';
+    let currentPowertrain = 'all';
+    let currentSort = 'year-desc';
+
+    function openFrontLightbox(url, title, subtitle) {
+      lightboxImg.src = url;
+      lightboxTitle.textContent = title;
+      lightboxSubtitle.textContent = subtitle;
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideLightbox() {
+      lightbox.classList.add('hidden');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    closeLightbox.addEventListener('click', hideLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) hideLightbox();
+    });
+
+    function openEnginesDialog(model) {
+      enginesModalTitle.textContent = model.label;
+      enginesModalSubtitle.textContent = `${model.class || ''} • (${model.years?.display || ''})`;
+
+      if (!model.engines || model.engines.length === 0) {
+        enginesModalBody.innerHTML = `
+          <div class="text-center py-8 text-slate-500 font-mono text-xs">
+            Este modelo es un prototipo / showcar conceptual sin motores de producción en serie asignados.
+          </div>
+        `;
+      } else {
+        enginesModalBody.innerHTML = model.engines.map(eng => `
+          <div class="bg-slate-950/80 border border-slate-800/90 rounded-2xl p-4 sm:p-5 hover:border-amber-500/40 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800/70">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-sm sm:text-base font-black text-white">${eng.modelBadge}</span>
+                <span class="text-[11px] font-mono font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  ${eng.engineCode}
+                </span>
+                ${eng.powerHp >= 300 ? `<span class="text-[10px] font-black px-1.5 py-0.5 rounded bg-red-600 text-white uppercase tracking-wider">VZ High Performance</span>` : ''}
+              </div>
+              <span class="text-xs font-mono text-slate-400 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800 self-start sm:self-auto">
+                ${eng.fuel}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-3 text-xs font-mono">
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                <span class="text-[10px] text-slate-500 block uppercase">Potencia</span>
+                <span class="text-sm font-black text-amber-400">${eng.powerHp} CV</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                <span class="text-[10px] text-slate-500 block uppercase">Par Motor</span>
+                <span class="text-sm font-bold text-slate-200">${eng.torqueNm} Nm</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                <span class="text-[10px] text-slate-500 block uppercase">0-100 km/h</span>
+                <span class="text-sm font-black text-cyan-400">${eng.accel0to100} s</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
+                <span class="text-[10px] text-slate-500 block uppercase">Vel. Punta</span>
+                <span class="text-sm font-bold text-slate-200">${eng.topSpeedKmh} km/h</span>
+              </div>
+            </div>
+
+            <div class="text-[11px] text-slate-400 space-y-1 pt-1 font-mono">
+              <div><strong class="text-slate-300">Arquitectura:</strong> ${eng.architecture} ${eng.displacementCc > 0 ? `(${eng.displacementCc} cc)` : ''}</div>
+              <div><strong class="text-slate-300">Alimentación:</strong> ${eng.feedSystem}</div>
+              ${eng.notes ? `<div class="text-amber-200/80"><strong class="text-amber-400">Detalles:</strong> ${eng.notes}</div>` : ''}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      enginesModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function hideEnginesDialog() {
+      enginesModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    closeEnginesModal.addEventListener('click', hideEnginesDialog);
+    enginesModal.addEventListener('click', (e) => {
+      if (e.target === enginesModal) hideEnginesDialog();
+    });
+
+    // Tecla Escape para modales
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        hideLightbox();
+        hideEnginesDialog();
+      }
+      if (e.key === '/' && document.activeElement !== searchInput) {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    // Exponer globalmente para botones inline
+    window.__openCupraFront = openFrontLightbox;
+    window.__openCupraEngines = (id) => {
+      const found = models.find(m => m.id === id);
+      if (found) openEnginesDialog(found);
+    };
+
+    function renderModels() {
+      // Estado de botón reset
+      const hasActiveFilters = currentSearch || currentSeries !== 'all' || currentFacelift !== 'all' || currentPowertrain !== 'all' || currentSort !== 'year-desc';
+      if (hasActiveFilters) {
+        resetFiltersBtn.classList.remove('hidden');
+        resetFiltersBtn.classList.add('inline-flex');
+      } else {
+        resetFiltersBtn.classList.add('hidden');
+        resetFiltersBtn.classList.remove('inline-flex');
+      }
+
+      const filtered = models.filter(m => {
+        // Filtro por serie / gama
+        if (currentSeries !== 'all') {
+          if (currentSeries === 'Conceptos') {
+            if (m.status !== 'concept') return false;
+          } else {
+            if (m.series !== currentSeries) return false;
+          }
+        }
+
+        // Filtro por fase / facelift
+        if (currentFacelift !== 'all') {
+          if (currentFacelift === 'shark-nose') {
+            const isSharkNose = m.label.toLowerCase().includes('shark nose') || m.label.toLowerCase().includes('facelift') || m.id.includes('tavascan') || m.id.includes('terramar');
+            if (!isSharkNose) return false;
+          } else if (currentFacelift === 'pre-facelift') {
+            const isPre = m.label.toLowerCase().includes('pre-facelift') || m.status === 'historical';
+            if (!isPre) return false;
+          } else if (currentFacelift === 'current') {
+            if (m.status !== 'current') return false;
+          } else if (currentFacelift === 'concept') {
+            if (m.status !== 'concept') return false;
+          }
+        }
+
+        // Filtro por propulsión
+        if (currentPowertrain !== 'all') {
+          if (currentPowertrain === 'vz') {
+            const isVz = m.label.includes('VZ') || (m.engines && m.engines.some(e => e.modelBadge.includes('VZ') || e.powerHp >= 240));
+            if (!isVz) return false;
+          } else if (currentPowertrain === 'bev') {
+            const isBev = m.class.toLowerCase().includes('eléctrico') || (m.engines && m.engines.some(e => e.fuel.includes('Eléctrico')));
+            if (!isBev) return false;
+          } else if (currentPowertrain === 'phev') {
+            const isPhev = m.engines && m.engines.some(e => e.fuel.includes('PHEV') || e.modelBadge.includes('e-HYBRID'));
+            if (!isPhev) return false;
+          } else if (currentPowertrain === 'gasoline') {
+            const isGas = m.engines && m.engines.some(e => e.fuel.includes('Gasolina'));
+            if (!isGas) return false;
+          } else if (currentPowertrain === '5-cyl') {
+            const is5Cyl = m.engines && m.engines.some(e => e.cylinders === 5);
+            if (!is5Cyl) return false;
+          }
+        }
+
+        // Filtro por búsqueda textual
+        if (currentSearch) {
+          const query = currentSearch.toLowerCase();
+          const tokens = query.split(/\s+/).filter(Boolean);
+          const fullText = [
+            m.label,
+            m.series,
+            m.class,
+            m.chassis?.map(c => `${c.code} ${c.variants?.join(' ')}`).join(' '),
+            m.engines?.map(e => `${e.modelBadge} ${e.engineCode} ${e.notes || ''}`).join(' ')
+          ].join(' ').toLowerCase();
+
+          const matchesAll = tokens.every(tok => fullText.includes(tok));
+          if (!matchesAll) return false;
+        }
+
+        return true;
+      });
+
+      // Ordenar resultados
+      filtered.sort((a, b) => {
+        if (currentSort === 'year-desc') return (b.years?.start || 0) - (a.years?.start || 0);
+        if (currentSort === 'year-asc') return (a.years?.start || 0) - (b.years?.start || 0);
+        if (currentSort === 'name-asc') return a.label.localeCompare(b.label);
+        return 0;
+      });
+
+      resultsCount.textContent = `Mostrando ${filtered.length} modelo${filtered.length === 1 ? '' : 's'} CUPRA`;
+
+      if (filtered.length === 0) {
+        modelsGrid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      } else {
+        emptyState.classList.add('hidden');
+      }
+
+      modelsGrid.innerHTML = filtered.map(m => {
+        const isCurrent = m.status === 'current';
+        const isConcept = m.status === 'concept';
+        const isSharkNose = m.label.includes('Shark Nose') || (m.years?.start >= 2024 && !isConcept);
+        const isVz = m.label.includes('VZ') || (m.engines && m.engines.some(e => e.modelBadge.includes('VZ')));
+        const chassisCode = m.chassis?.[0]?.code || '';
+        const enginesCount = m.engines?.length || 0;
+        const frontImgUrl = m.frontImage?.url || '';
+
+        return `
+          <div class="bg-slate-900/60 border ${isVz ? 'border-amber-500/40 hover:border-amber-400' : 'border-slate-800 hover:border-slate-700'} rounded-3xl overflow-hidden transition-all duration-300 flex flex-col group hover:-translate-y-1 shadow-xl hover:shadow-2xl hover:shadow-amber-950/20">
+            <!-- Contenedor Imagen Frontal Directa -->
+            <div class="aspect-[16/10] bg-slate-950 relative overflow-hidden flex items-center justify-center group/img">
+              ${frontImgUrl ? `
+                <img 
+                  src="${frontImgUrl}" 
+                  alt="${m.label}" 
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  loading="lazy" 
+                />
+                <button 
+                  onclick="window.__openCupraFront('${frontImgUrl}', '${m.label.replace(/'/g, "\\'")}', '${(m.class || '').replace(/'/g, "\\'")} • ${(m.years?.display || '').replace(/'/g, "\\'")}')" 
+                  class="absolute bottom-3 right-3 p-2.5 rounded-xl bg-slate-950/85 hover:bg-amber-500 text-slate-300 hover:text-slate-950 backdrop-blur-md border border-slate-700/80 hover:border-amber-400 transition-all opacity-0 group-hover:opacity-100 flex items-center gap-1.5 text-xs font-mono shadow-lg cursor-pointer"
+                  title="Ver frontal en alta resolución"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                  <span class="text-[11px] font-bold">Frontal HD</span>
+                </button>
+              ` : `
+                <div class="text-slate-600 text-xs font-mono">Sin foto frontal disponible</div>
+              `}
+
+              <!-- Badges Superpuestos -->
+              <div class="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
+                <span class="px-2 py-0.5 rounded-md bg-slate-950/90 text-amber-400 border border-amber-500/30 text-[10px] font-bold font-mono">
+                  ${m.series}
+                </span>
+                ${isSharkNose ? `
+                  <span class="px-2 py-0.5 rounded-md bg-gradient-to-r from-amber-500 to-orange-600 text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-sm">
+                    Shark Nose
+                  </span>
+                ` : ''}
+                ${isVz ? `
+                  <span class="px-2 py-0.5 rounded-md bg-amber-600 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                    VZ
+                  </span>
+                ` : ''}
+                ${isCurrent ? `
+                  <span class="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold shadow-sm">
+                    Actual
+                  </span>
+                ` : ''}
+                ${isConcept ? `
+                  <span class="px-2 py-0.5 rounded-md bg-purple-600 text-white text-[10px] font-bold shadow-sm">
+                    Concept Car
+                  </span>
+                ` : ''}
+              </div>
+            </div>
+
+            <!-- Contenido de la Tarjeta -->
+            <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs text-slate-500 font-mono mb-2">
+                  <span class="bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700/60 text-slate-300">
+                    ${m.years?.display || ''}
+                  </span>
+                  <span class="text-amber-400 font-bold font-mono">
+                    ${chassisCode ? 'Chasis: ' + chassisCode : ''}
+                  </span>
+                </div>
+
+                <h3 class="text-lg sm:text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                  ${m.label}
+                </h3>
+
+                <p class="text-xs text-slate-400 mt-1.5 leading-relaxed line-clamp-2">
+                  ${m.class || 'Modelo CUPRA'}
+                </p>
+              </div>
+
+              <!-- Footer de la Tarjeta: Motores & Ficha -->
+              <div class="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                ${enginesCount > 0 ? `
+                  <button 
+                    onclick="window.__openCupraEngines('${m.id}')"
+                    class="text-xs font-mono font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1.5 cursor-pointer hover:underline"
+                  >
+                    <span>Ver ${enginesCount} motorización${enginesCount === 1 ? '' : 'es'}</span>
+                    <span>→</span>
+                  </button>
+                  <span class="text-[11px] font-mono text-slate-500">
+                    Hasta ${Math.max(...m.engines.map(e => e.powerHp))} CV
+                  </span>
+                ` : `
+                  <span class="text-xs font-mono text-slate-500">Prototipo Showcar</span>
+                  <span class="text-[11px] font-mono text-purple-400">Diseño Futurista</span>
+                `}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Event Listeners para Búsqueda y Filtros
+    searchInput.addEventListener('input', (e) => {
+      currentSearch = e.target.value.trim();
+      if (currentSearch) {
+        clearSearchBtn.classList.remove('hidden');
+      } else {
+        clearSearchBtn.classList.add('hidden');
+      }
+      renderModels();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      currentSearch = '';
+      clearSearchBtn.classList.add('hidden');
+      renderModels();
+      searchInput.focus();
+    });
+
+    seriesSelect.addEventListener('change', (e) => {
+      currentSeries = e.target.value;
+      renderModels();
+    });
+
+    faceliftSelect.addEventListener('change', (e) => {
+      currentFacelift = e.target.value;
+      renderModels();
+    });
+
+    powertrainSelect.addEventListener('change', (e) => {
+      currentPowertrain = e.target.value;
+      renderModels();
+    });
+
+    sortSelect.addEventListener('change', (e) => {
+      currentSort = e.target.value;
+      renderModels();
+    });
+
+    function resetAllFilters() {
+      searchInput.value = '';
+      currentSearch = '';
+      clearSearchBtn.classList.add('hidden');
+      seriesSelect.value = 'all';
+      currentSeries = 'all';
+      faceliftSelect.value = 'all';
+      currentFacelift = 'all';
+      powertrainSelect.value = 'all';
+      currentPowertrain = 'all';
+      sortSelect.value = 'year-desc';
+      currentSort = 'year-desc';
+      renderModels();
+    }
+
+    resetFiltersBtn.addEventListener('click', resetAllFilters);
+    emptyResetBtn.addEventListener('click', resetAllFilters);
+
+    quickTags.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.getAttribute('data-tag');
+        searchInput.value = tag;
+        currentSearch = tag;
+        clearSearchBtn.classList.remove('hidden');
+        renderModels();
+      });
+    });
+
+    // Render inicial
+    renderModels();
+  });
+</script>

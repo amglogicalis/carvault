@@ -1,11 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import catalog from '../../data/bmw/catalog-clean-front.json';
+import bmwCatalog from '../../data/bmw/catalog-clean-front.json';
+import cupraCatalog from '../../data/cupra/catalog-clean-front.json';
 import { BRANDS } from '../data/brands';
 import requestsRegistry from '../../data/feedback/requests-registry.json';
 
 // Preparación de datos multi-marca para el buscador global
-const globalCars = catalog.generations.map(g => ({
+const bmwCars = bmwCatalog.generations.map(g => ({
   id: g.id,
   brandId: 'bmw',
   brandName: 'BMW',
@@ -15,14 +16,36 @@ const globalCars = catalog.generations.map(g => ({
   section: g.section,
   status: g.status,
   isM: g.isM || g.series === 'BMW M' || (g.label && g.label.startsWith('M')),
+  isVZ: false,
   class: g.class,
   years: g.years,
-  chassisCodes: g.chassis ? g.chassis.map(c => c.code).filter(Boolean).join(', ') : '',
+  chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
   frontImage: g.frontImage,
   brandCatalogUrl: '/carvault/bmw'
 }));
 
+const cupraCars = cupraCatalog.generations.map(g => ({
+  id: g.id,
+  brandId: 'cupra',
+  brandName: 'CUPRA',
+  brandLogo: '/carvault/images/brands/cupra.svg',
+  label: g.label,
+  series: g.series,
+  section: g.section,
+  status: g.status,
+  isM: false,
+  isVZ: (g.label && g.label.includes('VZ')) || (g.class && g.class.includes('VZ')),
+  class: g.class,
+  years: g.years,
+  chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
+  frontImage: g.frontImage,
+  brandCatalogUrl: '/carvault/cupra'
+}));
+
+const globalCars = [...bmwCars, ...cupraCars];
+
 const globalCarsJson = JSON.stringify(globalCars);
+
 const brandsJson = JSON.stringify(BRANDS);
 const registryJson = JSON.stringify(requestsRegistry);
 ---
@@ -253,6 +276,38 @@ const registryJson = JSON.stringify(requestsRegistry);
         </div>
       </a>
 
+      <!-- Tarjeta CUPRA -->
+      <a 
+        href="/carvault/cupra" 
+        class="group bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 hover:border-amber-500/60 rounded-3xl p-7 transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-amber-500/10 relative overflow-hidden"
+      >
+        <div class="absolute top-3 right-3">
+          <span class="px-2.5 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold tracking-wide shadow-sm">
+            Disponible
+          </span>
+        </div>
+
+        <!-- Icono / Logo oficial de la marca -->
+        <div class="w-24 h-24 rounded-full bg-slate-950 border border-slate-800 p-3 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform duration-300 mb-4">
+          <img src="/carvault/images/brands/cupra.svg" alt="Logo de CUPRA" class="w-full h-full object-contain" />
+        </div>
+
+        <!-- Nombre de la marca -->
+        <h3 class="text-2xl font-black text-white group-hover:text-amber-400 transition-colors tracking-wide">
+          CUPRA
+        </h3>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">SEAT Cupra, S.A.U.</p>
+        <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+          Deportivos de altas prestaciones: Formentor VZ5 (5 cilindros), León Mk4, Ateca, Born BEV y la nueva era Shark Nose con Tavascan y Terramar.
+        </p>
+
+        <!-- Botón de Acción -->
+        <div class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-amber-400 group-hover:text-amber-300 group-hover:underline">
+          <span>Abrir catálogo completo de CUPRA</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </a>
+
       <!-- Tarjeta Próximamente: Porsche -->
       <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
         <div class="w-24 h-24 rounded-full bg-slate-950/60 border border-slate-800/60 p-4 flex items-center justify-center mb-4">
@@ -264,6 +319,7 @@ const registryJson = JSON.stringify(requestsRegistry);
           Próximamente en catálogo
         </span>
       </div>
+
 
       <!-- Tarjeta Próximamente: Mercedes-Benz -->
       <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
@@ -311,15 +367,15 @@ const registryJson = JSON.stringify(requestsRegistry);
         </p>
       </div>
 
-      <!-- Grid de Endpoints: Central Gateway, Monomarca y Motores -->
-      <div class="mt-8 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Grid de Endpoints: Central Gateway, Monomarca BMW y CUPRA -->
+      <div class="mt-8 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Endpoint Central Gateway -->
         <div class="bg-slate-900 border border-cyan-500/30 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-xl">
           <div>
             <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
               <span class="text-white font-bold flex items-center gap-1.5">
                 <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-                API Central Gateway (Todas las Marcas)
+                API Central Gateway
               </span>
               <span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px]">CORS • Global</span>
             </div>
@@ -341,17 +397,39 @@ const registryJson = JSON.stringify(requestsRegistry);
             <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
               <span class="text-slate-200 font-bold flex items-center gap-1.5">
                 <img src="/carvault/images/brands/bmw.svg" class="w-3.5 h-3.5" alt="BMW" />
-                Endpoint Específico BMW (Unificado)
+                Endpoint Monomarca BMW
               </span>
-              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • Motores + Facelifts</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px]">Monomarca • Unificado</span>
             </div>
             <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
-              Base de datos unificada especializada en BMW: desglosa códigos de carrocería, facelifts con fotos frontales directas y fichas técnicas mecánicas completas con cifras de 0-100 km/h.
+              Base de datos unificada de BMW: códigos de chasis, restylings LCI y fichas técnicas mecánicas con cifras de aceleración.
             </p>
           </div>
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/bmw.json</code>
             <a href="/carvault/api/v1/bmw.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Monomarca CUPRA -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-slate-200 font-bold flex items-center gap-1.5">
+                <img src="/carvault/images/brands/cupra.svg" class="w-3.5 h-3.5" alt="CUPRA" />
+                Endpoint Monomarca CUPRA
+              </span>
+              <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-400 text-[10px]">Monomarca • VZ + Facelifts</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Base de datos de CUPRA: restylings Shark Nose, gama VZ / VZ5 de 5 cilindros, versiones PHEV y modelos 100% eléctricos Born y Tavascan.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/cupra.json</code>
+            <a href="/carvault/api/v1/cupra.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>
@@ -638,6 +716,11 @@ const registryJson = JSON.stringify(requestsRegistry);
                 ${isM ? `
                   <span class="px-2 py-0.5 rounded-md bg-red-600 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
                     M
+                  </span>
+                ` : ''}
+                ${c.isVZ ? `
+                  <span class="px-2 py-0.5 rounded-md bg-amber-600 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                    VZ
                   </span>
                 ` : ''}
                 ${isCurrent ? `

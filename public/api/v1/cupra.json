@@ -1,0 +1,1261 @@
+{
+  "brand": "CUPRA",
+  "wikidata": "Q50315354",
+  "generatedAt": "2026-10-08T12:00:00.000Z",
+  "stats": {
+    "generations": 13,
+    "production": 9,
+    "mPerformance": 7,
+    "prototypes": 4,
+    "chassis": 13,
+    "totalVariants": 25,
+    "withExactFront": 13,
+    "missingImages": 0,
+    "verifiedFrontRate": "100%",
+    "hasPowertrainSpecs": true,
+    "hasUnifiedEngines": true
+  },
+  "generations": [
+    {
+      "id": "cupra-formentor-facelift",
+      "series": "Formentor",
+      "label": "CUPRA Formentor Facelift (Shark Nose)",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null,
+        "display": "2024 – Actualidad"
+      },
+      "class": "Crossover Deportivo C-SUV • Rediseño Shark Nose con Faros Matrix LED Triangulares",
+      "chassis": [
+        {
+          "code": "KM7 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Formentor",
+          "commonsCandidates": [
+            "Cupra Formentor Facelift"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Formentor 1.5 eTSI MHEV (150 CV)",
+            "Formentor 2.0 TDI (150 CV)",
+            "Formentor e-HYBRID (204 CV)",
+            "Formentor VZ e-HYBRID (272 CV)",
+            "Formentor VZ 2.0 TSI 4Drive Torque Splitter (333 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "VZ Extreme",
+            "Copper Edition",
+            "Design Pack"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Formentor Facelift IMG 0435.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cupra_Formentor_Facelift_IMG_0435.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Theklan",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Formentor_Facelift_IMG_0435.jpg",
+            "width": 4275,
+            "height": 2846
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Formentor Facelift IMG 0435.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cupra_Formentor_Facelift_IMG_0435.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Theklan",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Formentor_Facelift_IMG_0435.jpg",
+        "width": 4275,
+        "height": 2846
+      },
+      "engines": [
+        {
+          "modelBadge": "Formentor 1.5 eTSI DSG",
+          "engineCode": "EA211 evo2",
+          "architecture": "4 en línea Turbo Mild-Hybrid 48V",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina Microhíbrido",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 205,
+          "accel0to100": 9.0,
+          "feedSystem": "Inyección directa TSI y turbo de geometría variable (VTG)",
+          "notes": "Etiqueta ECO. Cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "Formentor 2.0 TDI DSG",
+          "engineCode": "EA288 evo",
+          "architecture": "4 en línea Turbodiésel Common Rail",
+          "cylinders": 4,
+          "displacementCc": 1968,
+          "displacementL": 2.0,
+          "fuel": "Diésel",
+          "powerHp": 150,
+          "torqueNm": 360,
+          "topSpeedKmh": 205,
+          "accel0to100": 9.0,
+          "feedSystem": "Inyección directa common rail a 2200 bar con doble dosificación AdBlue",
+          "notes": "Cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "Formentor 1.5 e-HYBRID DSG",
+          "engineCode": "EA211 evo2 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 204,
+          "torqueNm": 350,
+          "topSpeedKmh": 205,
+          "accel0to100": 7.9,
+          "feedSystem": "Motor térmico 1.5 TSI (150 CV) + Motor eléctrico (115 CV), batería 19.7 kWh",
+          "notes": "Etiqueta CERO emisiones. Más de 100 km de autonomía 100% eléctrica."
+        },
+        {
+          "modelBadge": "Formentor VZ 1.5 e-HYBRID DSG",
+          "engineCode": "EA211 evo2 PHEV High",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 272,
+          "torqueNm": 400,
+          "topSpeedKmh": 220,
+          "accel0to100": 7.2,
+          "feedSystem": "Motor térmico 1.5 TSI (177 CV) + Motor eléctrico (115 CV), batería 19.7 kWh",
+          "notes": "Versión deportiva VZ. Frenos Brembo opcionales y carga rápida DC a 50 kW."
+        },
+        {
+          "modelBadge": "Formentor VZ 2.0 TSI 4Drive DSG (333 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbocompresor con Torque Splitter",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 333,
+          "torqueNm": 420,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.8,
+          "feedSystem": "Inyección directa e indirecta doble, turbo con tecnología Torque Splitter de embragues multidisco",
+          "notes": "Tope de gama con modo de conducción CUPRA Drift, frenos Akebono de 375 mm y tracción 4Drive con control vectorial de par."
+        }
+      ]
+    },
+    {
+      "id": "cupra-formentor-pre-facelift",
+      "series": "Formentor",
+      "label": "CUPRA Formentor (Pre-Facelift)",
+      "section": "production",
+      "status": "historical",
+      "years": {
+        "start": 2020,
+        "end": 2024,
+        "display": "2020 – 2024"
+      },
+      "class": "Crossover Deportivo C-SUV • Primer Modelo 100% Exclusivo Desarrollado por CUPRA",
+      "chassis": [
+        {
+          "code": "KM7",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Formentor",
+          "commonsCandidates": [
+            "Cupra Formentor VZ5"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Formentor 1.5 TSI (150 CV)",
+            "Formentor 2.0 TDI (150 CV)",
+            "Formentor 1.4 e-HYBRID (204 CV)",
+            "Formentor VZ 1.4 e-HYBRID (245 CV)",
+            "Formentor VZ 2.0 TSI 4Drive (310 CV)",
+            "Formentor VZ5 2.5 TSI 4Drive 5-Cilindros (390 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "VZ5 Edición Limitada 7000 uds.",
+            "Taiga Grey",
+            "Copper Edition"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Formentor VZ5 1X7A7000.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cupra_Formentor_VZ5_1X7A7000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Formentor_VZ5_1X7A7000.jpg",
+            "width": 5033,
+            "height": 2727
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Formentor VZ5 1X7A7000.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cupra_Formentor_VZ5_1X7A7000.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Formentor_VZ5_1X7A7000.jpg",
+        "width": 5033,
+        "height": 2727
+      },
+      "engines": [
+        {
+          "modelBadge": "Formentor 1.5 TSI",
+          "engineCode": "EA211 evo",
+          "architecture": "4 en línea Turbo",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 204,
+          "accel0to100": 8.9,
+          "feedSystem": "Inyección directa TSI con desconexión activa de cilindros (ACT)",
+          "notes": "Cambio manual de 6 velocidades o DSG de 7 vel."
+        },
+        {
+          "modelBadge": "Formentor 2.0 TDI",
+          "engineCode": "EA288 evo",
+          "architecture": "4 en línea Turbodiésel Common Rail",
+          "cylinders": 4,
+          "displacementCc": 1968,
+          "displacementL": 2.0,
+          "fuel": "Diésel",
+          "powerHp": 150,
+          "torqueNm": 340,
+          "topSpeedKmh": 203,
+          "accel0to100": 9.3,
+          "feedSystem": "Inyección Common Rail y doble inyección SCR",
+          "notes": "Disponible en tracción delantera o 4Drive."
+        },
+        {
+          "modelBadge": "Formentor 1.4 e-HYBRID",
+          "engineCode": "EA211 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1395,
+          "displacementL": 1.4,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 204,
+          "torqueNm": 350,
+          "topSpeedKmh": 205,
+          "accel0to100": 7.8,
+          "feedSystem": "Motor térmico 1.4 TSI (150 CV) + Motor eléctrico (115 CV), batería 12.8 kWh",
+          "notes": "Etiqueta CERO emisiones. Cambio DSG 6 vel."
+        },
+        {
+          "modelBadge": "Formentor VZ 1.4 e-HYBRID",
+          "engineCode": "EA211 PHEV High",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1395,
+          "displacementL": 1.4,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 245,
+          "torqueNm": 400,
+          "topSpeedKmh": 210,
+          "accel0to100": 7.0,
+          "feedSystem": "Motor térmico 1.4 TSI (150 CV) + Motor eléctrico calibrado VZ (115 CV), batería 12.8 kWh",
+          "notes": "Chasis adaptativo DCC de serie."
+        },
+        {
+          "modelBadge": "Formentor VZ 2.0 TSI 4Drive (310 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 310,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.9,
+          "feedSystem": "Inyección directa TSI a 350 bar y turbocompresor Continental",
+          "notes": "Tracción total 4Drive, cambio DSG de 7 velocidades y 4 salidas de escape."
+        },
+        {
+          "modelBadge": "Formentor VZ5 2.5 TSI 4Drive (390 CV)",
+          "engineCode": "EA855 evo",
+          "architecture": "5 en línea Turbocompresor Audi Sport",
+          "cylinders": 5,
+          "displacementCc": 2480,
+          "displacementL": 2.5,
+          "fuel": "Gasolina",
+          "powerHp": 390,
+          "torqueNm": 480,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.2,
+          "feedSystem": "Bloque de aluminio Audi Sport con orden de encendido 1-2-4-5-3 y tracción Torque Splitter con modo Drift",
+          "notes": "Edición limitada exclusiva a 7.000 unidades en todo el mundo. Cuádruple escape diagonal de cobre y frenos Akebono de 6 pistones."
+        }
+      ]
+    },
+    {
+      "id": "cupra-leon-facelift",
+      "series": "León",
+      "label": "CUPRA León Mk4 Facelift (Shark Nose)",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null,
+        "display": "2024 – Actualidad"
+      },
+      "class": "Compacto Deportivo C-Segment / Familiar Sportstourer • Nueva Filosofía Shark Nose",
+      "chassis": [
+        {
+          "code": "KL1/KL8 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Leon",
+          "commonsCandidates": [
+            "Cupra Leon Mk4 Facelift"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "León 1.5 eTSI (150 CV)",
+            "León 1.5 e-HYBRID (204 CV)",
+            "León VZ 1.5 e-HYBRID (272 CV)",
+            "León VZ 2.0 TSI (300 CV)",
+            "León VZ Sportstourer 2.0 TSI 4Drive Torque Splitter (333 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "VZ Extreme",
+            "Sportstourer Wagon",
+            "Design Copper"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Leon Mk4 Facelift DSC 8487.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Cupra_Leon_Mk4_Facelift_DSC_8487.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Theklan",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Leon_Mk4_Facelift_DSC_8487.jpg",
+            "width": 4689,
+            "height": 2518
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Leon Mk4 Facelift DSC 8487.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Cupra_Leon_Mk4_Facelift_DSC_8487.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Theklan",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Leon_Mk4_Facelift_DSC_8487.jpg",
+        "width": 4689,
+        "height": 2518
+      },
+      "engines": [
+        {
+          "modelBadge": "León 1.5 eTSI DSG",
+          "engineCode": "EA211 evo2",
+          "architecture": "4 en línea Turbo Mild-Hybrid 48V",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina Microhíbrido",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 215,
+          "accel0to100": 8.7,
+          "feedSystem": "Inyección directa TSI y ciclo Miller con turbo de geometría variable (VTG)",
+          "notes": "Etiqueta ECO. Cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "León 1.5 e-HYBRID DSG",
+          "engineCode": "EA211 evo2 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 204,
+          "torqueNm": 350,
+          "topSpeedKmh": 210,
+          "accel0to100": 7.8,
+          "feedSystem": "Motor térmico 1.5 TSI (150 CV) + Motor eléctrico (115 CV), batería 19.7 kWh",
+          "notes": "Etiqueta CERO emisiones. Más de 100 km de autonomía eléctrica."
+        },
+        {
+          "modelBadge": "León VZ 1.5 e-HYBRID DSG",
+          "engineCode": "EA211 evo2 PHEV High",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 272,
+          "torqueNm": 400,
+          "topSpeedKmh": 229,
+          "accel0to100": 7.1,
+          "feedSystem": "Motor térmico 1.5 TSI (177 CV) + Motor eléctrico (115 CV), batería 19.7 kWh",
+          "notes": "Frenos Brembo opcionales y selector de modos CUPRA."
+        },
+        {
+          "modelBadge": "León VZ 2.0 TSI DSG (300 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo FWD con Autoblocante VAQ",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.7,
+          "feedSystem": "Inyección directa TSI a 350 bar, diferencial autoblocante electrohidráulico VAQ delantero",
+          "notes": "Carrocería 5 puertas hatchback de tracción delantera."
+        },
+        {
+          "modelBadge": "León VZ Sportstourer 2.0 TSI 4Drive (333 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo con Torque Splitter",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 333,
+          "torqueNm": 420,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.8,
+          "feedSystem": "Tecnología Torque Splitter con embragues multidisco traseros independientes y modo Drift",
+          "notes": "Exclusivo de la carrocería familiar Sportstourer con tracción total 4Drive."
+        }
+      ]
+    },
+    {
+      "id": "cupra-leon-pre-facelift",
+      "series": "León",
+      "label": "CUPRA León Mk4 (Pre-Facelift)",
+      "section": "production",
+      "status": "historical",
+      "years": {
+        "start": 2020,
+        "end": 2024,
+        "display": "2020 – 2024"
+      },
+      "class": "Compacto Deportivo C-Segment / Sportstourer • Lanzamiento de la Gama León CUPRA Independiente",
+      "chassis": [
+        {
+          "code": "KL1/KL8",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Leon",
+          "commonsCandidates": [
+            "Cupra Leon Mk4"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "León 1.5 eTSI (150 CV)",
+            "León 2.0 TSI (190 CV)",
+            "León 1.4 e-HYBRID (204 CV)",
+            "León VZ 1.4 e-HYBRID (245 CV)",
+            "León VZ 2.0 TSI (300 CV)",
+            "León VZ Sportstourer 2.0 TSI 4Drive (310 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "VZ Cup",
+            "Sportstourer",
+            "Carbon Pack"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Leon Mk4 IMG 0036.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cupra_Leon_Mk4_IMG_0036.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Theklan",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Leon_Mk4_IMG_0036.jpg",
+            "width": 3880,
+            "height": 1988
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Leon Mk4 IMG 0036.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cupra_Leon_Mk4_IMG_0036.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Theklan",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Leon_Mk4_IMG_0036.jpg",
+        "width": 3880,
+        "height": 1988
+      },
+      "engines": [
+        {
+          "modelBadge": "León 1.5 eTSI DSG",
+          "engineCode": "EA211 evo",
+          "architecture": "4 en línea Turbo Mild-Hybrid 48V",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina Microhíbrido",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 214,
+          "accel0to100": 8.7,
+          "feedSystem": "Inyección directa TSI y microhibridación de 48V",
+          "notes": "Etiqueta ECO de la DGT."
+        },
+        {
+          "modelBadge": "León 2.0 TSI DSG",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 190,
+          "torqueNm": 320,
+          "topSpeedKmh": 230,
+          "accel0to100": 7.4,
+          "feedSystem": "Inyección directa TSI ciclo Budack",
+          "notes": "Tracción delantera, cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "León VZ 1.4 e-HYBRID DSG",
+          "engineCode": "EA211 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1395,
+          "displacementL": 1.4,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 245,
+          "torqueNm": 400,
+          "topSpeedKmh": 225,
+          "accel0to100": 6.7,
+          "feedSystem": "Motor térmico 1.4 TSI (150 CV) + Motor eléctrico (115 CV), batería 12.8 kWh",
+          "notes": "Etiqueta CERO emisiones."
+        },
+        {
+          "modelBadge": "León VZ 2.0 TSI DSG (300 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo FWD con Autoblocante VAQ",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 5.7,
+          "feedSystem": "Inyección directa TSI a alta presión, diferencial electrohidráulico VAQ delantero",
+          "notes": "Chasis adaptativo DCC con 15 niveles de firmeza."
+        },
+        {
+          "modelBadge": "León VZ Sportstourer 2.0 TSI 4Drive (310 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo con Tracción 4Drive",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 310,
+          "torqueNm": 400,
+          "topSpeedKmh": 250,
+          "accel0to100": 4.9,
+          "feedSystem": "Tracción integral 4Drive con embrague Haldex de 5ª generación",
+          "notes": "Exclusivo versión familiar Sportstourer."
+        }
+      ]
+    },
+    {
+      "id": "cupra-ateca-facelift",
+      "series": "Ateca",
+      "label": "CUPRA Ateca Facelift",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2020,
+        "end": null,
+        "display": "2020 – Actualidad"
+      },
+      "class": "SUV Deportivo Compacto • Restyling con Nueva Parrilla Poligonal y Climatizador Digital",
+      "chassis": [
+        {
+          "code": "KH7 Facelift",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Ateca",
+          "commonsCandidates": [
+            "Cupra Ateca Facelift"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Ateca 1.5 TSI DSG (150 CV)",
+            "Ateca 2.0 TSI DSG (190 CV)",
+            "Ateca 2.0 TSI 4Drive DSG (300 CV)",
+            "Ateca VZ Limited Edition (300 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "Limited Edition Akrapovič",
+            "Tribe Edition"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Ateca 2.0 TSI (2022) (53365499902).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cupra_Ateca_2.0_TSI_%282022%29_%2853365499902%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "RL GNZLZ",
+            "license": "CC BY-SA 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Ateca_2.0_TSI_%282022%29_%2853365499902%29.jpg",
+            "width": 5609,
+            "height": 3640
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Ateca 2.0 TSI (2022) (53365499902).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cupra_Ateca_2.0_TSI_%282022%29_%2853365499902%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "RL GNZLZ",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Ateca_2.0_TSI_%282022%29_%2853365499902%29.jpg",
+        "width": 5609,
+        "height": 3640
+      },
+      "engines": [
+        {
+          "modelBadge": "Ateca 1.5 TSI DSG",
+          "engineCode": "EA211 evo",
+          "architecture": "4 en línea Turbo",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 200,
+          "accel0to100": 9.3,
+          "feedSystem": "Inyección directa TSI con gestión ACT de cilindros",
+          "notes": "Tracción delantera, cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "Ateca 2.0 TSI 4Drive DSG (300 CV)",
+          "engineCode": "EA888 Gen 4",
+          "architecture": "4 en línea Turbo con Tracción 4Drive",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 249,
+          "accel0to100": 4.9,
+          "feedSystem": "Inyección directa TSI a 350 bar, tracción integral 4Drive",
+          "notes": "Escape deportivo Akrapovič de titanio opcional y frenos Brembo de 370 mm."
+        }
+      ]
+    },
+    {
+      "id": "cupra-ateca-pre-facelift",
+      "series": "Ateca",
+      "label": "CUPRA Ateca (Pre-Facelift)",
+      "section": "production",
+      "status": "historical",
+      "years": {
+        "start": 2018,
+        "end": 2020,
+        "display": "2018 – 2020"
+      },
+      "class": "SUV Deportivo Compacto • El Primer Modelo Oficial de la Marca Independiente CUPRA",
+      "chassis": [
+        {
+          "code": "KH7",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Ateca",
+          "commonsCandidates": [
+            "Seat Ateca Cupra",
+            "Cupra Ateca 300"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Ateca 2.0 TSI 4Drive DSG (300 CV)",
+            "Ateca Special Edition (300 CV)"
+          ],
+          "packages": [
+            "Comfort & Sound",
+            "Special Edition Akrapovič"
+          ],
+          "frontImage": {
+            "file": "File:2019 SEAT Ateca Cupra 300 C&S 4Drive 2.0 Front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/2019_SEAT_Ateca_Cupra_300_C%26S_4Drive_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Vauxford",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2019_SEAT_Ateca_Cupra_300_C%26S_4Drive_2.0_Front.jpg",
+            "width": 4460,
+            "height": 2487
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:2019 SEAT Ateca Cupra 300 C&S 4Drive 2.0 Front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/2019_SEAT_Ateca_Cupra_300_C%26S_4Drive_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Vauxford",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2019_SEAT_Ateca_Cupra_300_C%26S_4Drive_2.0_Front.jpg",
+        "width": 4460,
+        "height": 2487
+      },
+      "engines": [
+        {
+          "modelBadge": "Ateca 2.0 TSI 4Drive DSG (300 CV)",
+          "engineCode": "EA888 Gen 3 (DNUE)",
+          "architecture": "4 en línea Turbo",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 300,
+          "torqueNm": 400,
+          "topSpeedKmh": 247,
+          "accel0to100": 5.2,
+          "feedSystem": "Inyección directa TSI y filtro de partículas de gasolina (OPF)",
+          "notes": "Primer vehículo lanzado con el emblema tribal de bronce CUPRA. Chasis DCC de serie."
+        }
+      ]
+    },
+    {
+      "id": "cupra-born",
+      "series": "Born",
+      "label": "CUPRA Born",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2021,
+        "end": null,
+        "display": "2021 – Actualidad"
+      },
+      "class": "Hatchback Deportivo 100% Eléctrico (BEV) • Plataforma MEB con Propulsión Trasera",
+      "chassis": [
+        {
+          "code": "K11",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Born",
+          "commonsCandidates": [
+            "Cupra Born",
+            "Cupra Born VZ"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Born 58 kWh (204 CV)",
+            "Born e-Boost 58 kWh (231 CV)",
+            "Born e-Boost 77 kWh (231 CV)",
+            "Born VZ 79 kWh (326 CV)"
+          ],
+          "packages": [
+            "e-Boost",
+            "VZ",
+            "BeatsAudio",
+            "DCC Sport"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Born IAA 2021 1X7A0212.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cupra_Born_IAA_2021_1X7A0212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Born_IAA_2021_1X7A0212.jpg",
+            "width": 5632,
+            "height": 2737
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Born IAA 2021 1X7A0212.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cupra_Born_IAA_2021_1X7A0212.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Born_IAA_2021_1X7A0212.jpg",
+        "width": 5632,
+        "height": 2737
+      },
+      "engines": [
+        {
+          "modelBadge": "Born 58 kWh (204 CV)",
+          "engineCode": "APP310",
+          "architecture": "Motor Eléctrico Síncrono de Imanes Permanentes (Trasero)",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0.0,
+          "fuel": "Eléctrico (BEV)",
+          "powerHp": 204,
+          "torqueNm": 310,
+          "topSpeedKmh": 160,
+          "accel0to100": 7.3,
+          "feedSystem": "Propulsión trasera con batería de iones de litio de 58 kWh netos (62 kWh brutos)",
+          "notes": "Autonomía WLTP de hasta 425 km. Recarga rápida DC hasta 120 kW."
+        },
+        {
+          "modelBadge": "Born e-Boost 58/77 kWh (231 CV)",
+          "engineCode": "APP310 e-Boost",
+          "architecture": "Motor Eléctrico Síncrono Trasero con Función e-Boost",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0.0,
+          "fuel": "Eléctrico (BEV)",
+          "powerHp": 231,
+          "torqueNm": 310,
+          "topSpeedKmh": 160,
+          "accel0to100": 6.6,
+          "feedSystem": "Modo e-Boost activable desde el botón satélite del volante CUPRA",
+          "notes": "Disponible con batería de 58 kWh (0-100 en 6.6s) o 77 kWh (0-100 en 7.0s, hasta 550 km WLTP)."
+        },
+        {
+          "modelBadge": "Born VZ 79 kWh (326 CV)",
+          "engineCode": "APP550",
+          "architecture": "Motor Eléctrico de Nueva Generación APP550 de Alto Par",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0.0,
+          "fuel": "Eléctrico (BEV)",
+          "powerHp": 326,
+          "torqueNm": 545,
+          "topSpeedKmh": 200,
+          "accel0to100": 5.7,
+          "feedSystem": "Inversor optimizado refrigerado por agua con batería de 79 kWh netos",
+          "notes": "Chasis DCC Sport rebajado, barras estabilizadoras reforzadas y levas en el volante para ajuste regenerativo."
+        }
+      ]
+    },
+    {
+      "id": "cupra-tavascan",
+      "series": "Tavascan",
+      "label": "CUPRA Tavascan",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null,
+        "display": "2024 – Actualidad"
+      },
+      "class": "SUV Coupé Deportivo 100% Eléctrico (BEV) • Plataforma MEB con Iluminación Matrix de Tres Triángulos",
+      "chassis": [
+        {
+          "code": "Tavascan",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Tavascan",
+          "commonsCandidates": [
+            "Cupra Tavascan VZ"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Tavascan Endurance RWD (286 CV)",
+            "Tavascan VZ AWD Doble Motor (340 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "Adrenaline",
+            "Extreme Pack",
+            "Sennheiser Audio"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Tavascan front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Cupra_Tavascan_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Theklan",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Tavascan_front.jpg",
+            "width": 6000,
+            "height": 4000
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Tavascan front.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Cupra_Tavascan_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Theklan",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Tavascan_front.jpg",
+        "width": 6000,
+        "height": 4000
+      },
+      "engines": [
+        {
+          "modelBadge": "Tavascan Endurance RWD (286 CV)",
+          "engineCode": "APP550",
+          "architecture": "Motor Eléctrico Trasero APP550",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0.0,
+          "fuel": "Eléctrico (BEV)",
+          "powerHp": 286,
+          "torqueNm": 545,
+          "topSpeedKmh": 180,
+          "accel0to100": 6.8,
+          "feedSystem": "Propulsión trasera con batería de 77 kWh netos (82 kWh brutos)",
+          "notes": "Autonomía homologada WLTP de hasta 568 km. Carga rápida a 135 kW."
+        },
+        {
+          "modelBadge": "Tavascan VZ AWD Doble Motor (340 CV)",
+          "engineCode": "APP550 + AKA150",
+          "architecture": "Doble Motor Eléctrico (Tracción Total Inteligente)",
+          "cylinders": 0,
+          "displacementCc": 0,
+          "displacementL": 0.0,
+          "fuel": "Eléctrico (BEV)",
+          "powerHp": 340,
+          "torqueNm": 679,
+          "topSpeedKmh": 180,
+          "accel0to100": 5.5,
+          "feedSystem": "Motor trasero de 286 CV + motor delantero asíncrono de 109 CV con batería de 77 kWh",
+          "notes": "Tope de gama con suspensión adaptativa DCC Sport y distribución de par en milisegundos."
+        }
+      ]
+    },
+    {
+      "id": "cupra-terramar",
+      "series": "Terramar",
+      "label": "CUPRA Terramar",
+      "section": "production",
+      "status": "current",
+      "years": {
+        "start": 2024,
+        "end": null,
+        "display": "2024 – Actualidad"
+      },
+      "class": "SUV Deportivo D-SUV • Homenaje al Histórico Circuito de Terramar (Sitges)",
+      "chassis": [
+        {
+          "code": "Terramar",
+          "lwb": false,
+          "parent": null,
+          "market": "Global",
+          "verified": true,
+          "commonsCategory": "Cupra Terramar",
+          "commonsCandidates": [
+            "Cupra Terramar VZ"
+          ],
+          "commonsManual": false,
+          "variants": [
+            "Terramar 1.5 eTSI (150 CV)",
+            "Terramar 2.0 TSI 4Drive (204 CV)",
+            "Terramar VZ 1.5 e-HYBRID (272 CV)",
+            "Terramar VZ 2.0 TSI 4Drive (265 CV)"
+          ],
+          "packages": [
+            "VZ",
+            "America's Cup Limited Edition",
+            "High Performance Brembo"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Terramar, Auto 2024, Zurich (PANA0481).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cupra_Terramar%2C_Auto_2024%2C_Zurich_%28PANA0481%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Terramar%2C_Auto_2024%2C_Zurich_%28PANA0481%29.jpg",
+            "width": 5184,
+            "height": 3888
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Terramar, Auto 2024, Zurich (PANA0481).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cupra_Terramar%2C_Auto_2024%2C_Zurich_%28PANA0481%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "M 93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Terramar%2C_Auto_2024%2C_Zurich_%28PANA0481%29.jpg",
+        "width": 5184,
+        "height": 3888
+      },
+      "engines": [
+        {
+          "modelBadge": "Terramar 1.5 eTSI DSG",
+          "engineCode": "EA211 evo2",
+          "architecture": "4 en línea Turbo Mild-Hybrid 48V",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Gasolina Microhíbrido",
+          "powerHp": 150,
+          "torqueNm": 250,
+          "topSpeedKmh": 205,
+          "accel0to100": 9.3,
+          "feedSystem": "Inyección directa TSI y motor eléctrico de apoyo de 48V con etiqueta ECO",
+          "notes": "Cambio DSG de 7 velocidades."
+        },
+        {
+          "modelBadge": "Terramar 2.0 TSI 4Drive DSG (204 CV)",
+          "engineCode": "EA888 evo4",
+          "architecture": "4 en línea Turbo con Tracción Total 4Drive",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 204,
+          "torqueNm": 320,
+          "topSpeedKmh": 220,
+          "accel0to100": 7.3,
+          "feedSystem": "Inyección directa TSI y tracción inteligente a las cuatro ruedas 4Drive",
+          "notes": "Cambio DSG 7 vel."
+        },
+        {
+          "modelBadge": "Terramar VZ 1.5 e-HYBRID DSG (272 CV)",
+          "engineCode": "EA211 evo2 PHEV",
+          "architecture": "4 en línea Turbo PHEV Híbrido Enchufable",
+          "cylinders": 4,
+          "displacementCc": 1498,
+          "displacementL": 1.5,
+          "fuel": "Híbrido Enchufable (PHEV)",
+          "powerHp": 272,
+          "torqueNm": 400,
+          "topSpeedKmh": 215,
+          "accel0to100": 7.3,
+          "feedSystem": "Motor térmico 1.5 TSI (177 CV) + Motor eléctrico (115 CV), batería de 19.7 kWh netos",
+          "notes": "Etiqueta CERO, más de 100 km de autonomía eléctrica y carga rápida CC hasta 50 kW."
+        },
+        {
+          "modelBadge": "Terramar VZ 2.0 TSI 4Drive DSG (265 CV)",
+          "engineCode": "EA888 evo4 High",
+          "architecture": "4 en línea Turbo VZ con Tracción Total 4Drive",
+          "cylinders": 4,
+          "displacementCc": 1984,
+          "displacementL": 2.0,
+          "fuel": "Gasolina",
+          "powerHp": 265,
+          "torqueNm": 400,
+          "topSpeedKmh": 243,
+          "accel0to100": 5.9,
+          "feedSystem": "Calibración deportiva exclusiva VZ, tracción integral 4Drive y chasis adaptativo DCC",
+          "notes": "Edición especial America's Cup disponible."
+        }
+      ]
+    },
+    {
+      "id": "cupra-concept-darkrebel",
+      "series": "Conceptos",
+      "label": "CUPRA DarkRebel Concept",
+      "section": "prototype",
+      "status": "concept",
+      "years": {
+        "start": 2023,
+        "end": 2023,
+        "display": "2023"
+      },
+      "class": "Concept Car • Shooting Brake 100% Eléctrico • Creado con el CUPRA Metahype Virtual",
+      "chassis": [
+        {
+          "code": "DarkRebel",
+          "lwb": false,
+          "parent": null,
+          "market": "Prototipo",
+          "verified": true,
+          "commonsCategory": "Cupra DarkRebel",
+          "commonsCandidates": [
+            "Cupra DarkRebel Concept"
+          ],
+          "commonsManual": true,
+          "variants": [
+            "IAA Mobility 2023 Munich Showcar"
+          ],
+          "packages": [
+            "Metahype Design",
+            "Brake-by-wire",
+            "Central Spine Architecture"
+          ],
+          "frontImage": {
+            "file": "File:Cupra DarkRebel Concept IAA 2023 1X7A0438.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cupra_DarkRebel_Concept_IAA_2023_1X7A0438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_DarkRebel_Concept_IAA_2023_1X7A0438.jpg",
+            "width": 5587,
+            "height": 3334
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra DarkRebel Concept IAA 2023 1X7A0438.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Cupra_DarkRebel_Concept_IAA_2023_1X7A0438.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_DarkRebel_Concept_IAA_2023_1X7A0438.jpg",
+        "width": 5587,
+        "height": 3334
+      },
+      "engines": []
+    },
+    {
+      "id": "cupra-concept-urbanrebel",
+      "series": "Conceptos",
+      "label": "CUPRA UrbanRebel Concept",
+      "section": "prototype",
+      "status": "concept",
+      "years": {
+        "start": 2021,
+        "end": 2022,
+        "display": "2021 – 2022"
+      },
+      "class": "Concept Car • Deportivo de Competición Eléctrico Urbano • Anticipo de la Plataforma MEB Small",
+      "chassis": [
+        {
+          "code": "UrbanRebel",
+          "lwb": false,
+          "parent": null,
+          "market": "Prototipo",
+          "verified": true,
+          "commonsCategory": "Cupra UrbanRebel",
+          "commonsCandidates": [
+            "Cupra UrbanRebel Concept IAA 2021"
+          ],
+          "commonsManual": true,
+          "variants": [
+            "IAA Mobility 2021 Racing Concept",
+            "UrbanRebel Concept 2022"
+          ],
+          "packages": [
+            "Motorsport Aero",
+            "Gigantic Rear Wing",
+            "Polímeros Reciclados"
+          ],
+          "frontImage": {
+            "file": "File:Cupra UrbanRebel Concept IAA 2021 1X7A0103.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cupra_UrbanRebel_Concept_IAA_2021_1X7A0103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_UrbanRebel_Concept_IAA_2021_1X7A0103.jpg",
+            "width": 5692,
+            "height": 3798
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra UrbanRebel Concept IAA 2021 1X7A0103.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cupra_UrbanRebel_Concept_IAA_2021_1X7A0103.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_UrbanRebel_Concept_IAA_2021_1X7A0103.jpg",
+        "width": 5692,
+        "height": 3798
+      },
+      "engines": []
+    },
+    {
+      "id": "cupra-concept-raval",
+      "series": "Conceptos",
+      "label": "CUPRA Raval Concept",
+      "section": "prototype",
+      "status": "concept",
+      "years": {
+        "start": 2023,
+        "end": 2024,
+        "display": "2023 – 2024"
+      },
+      "class": "Concept Car • Prototipo Pre-Serie Urbano Eléctrico del Barrio del Raval de Barcelona",
+      "chassis": [
+        {
+          "code": "Raval Concept",
+          "lwb": false,
+          "parent": null,
+          "market": "Prototipo",
+          "verified": true,
+          "commonsCategory": "Cupra Raval",
+          "commonsCandidates": [
+            "Cupra Raval IAA 2023"
+          ],
+          "commonsManual": true,
+          "variants": [
+            "Pre-Production Concept"
+          ],
+          "packages": [
+            "MEB Entry Architecture",
+            "Urban Sport Line"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Raval (concept) IAA 2023 1X7A0431.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Cupra_Raval_%28concept%29_IAA_2023_1X7A0431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexander-93",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Raval_%28concept%29_IAA_2023_1X7A0431.jpg",
+            "width": 5204,
+            "height": 3069
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Raval (concept) IAA 2023 1X7A0431.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Cupra_Raval_%28concept%29_IAA_2023_1X7A0431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexander-93",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Raval_%28concept%29_IAA_2023_1X7A0431.jpg",
+        "width": 5204,
+        "height": 3069
+      },
+      "engines": []
+    },
+    {
+      "id": "cupra-concept-tavascan-2019",
+      "series": "Conceptos",
+      "label": "CUPRA Tavascan Concept (IAA 2019)",
+      "section": "prototype",
+      "status": "concept",
+      "years": {
+        "start": 2019,
+        "end": 2019,
+        "display": "2019"
+      },
+      "class": "Concept Car • SUV Coupé 100% Eléctrico • Prototipo Revelador del Diseño Futuro de CUPRA",
+      "chassis": [
+        {
+          "code": "Tavascan Concept",
+          "lwb": false,
+          "parent": null,
+          "market": "Prototipo",
+          "verified": true,
+          "commonsCategory": "Cupra Tavascan Concept",
+          "commonsCandidates": [
+            "Cupra Tavascan Concept IAA 2019"
+          ],
+          "commonsManual": true,
+          "variants": [
+            "IAA Frankfurt 2019 Premiere"
+          ],
+          "packages": [
+            "Aero Wheels 22 Pulgadas",
+            "Fibra de Carbono"
+          ],
+          "frontImage": {
+            "file": "File:Cupra Tavascan Concept (48770944691).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cupra_Tavascan_Concept_%2848770944691%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Alexandre Prevot",
+            "license": "CC BY-SA 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Tavascan_Concept_%2848770944691%29.jpg",
+            "width": 2048,
+            "height": 1401
+          }
+        }
+      ],
+      "frontImage": {
+        "file": "File:Cupra Tavascan Concept (48770944691).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cupra_Tavascan_Concept_%2848770944691%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "author": "Alexandre Prevot",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACupra_Tavascan_Concept_%2848770944691%29.jpg",
+        "width": 2048,
+        "height": 1401
+      },
+      "engines": []
+    }
+  ]
+}

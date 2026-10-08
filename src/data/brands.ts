@@ -47,5 +47,29 @@ export const BRANDS: BrandInfo[] = [
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
+  },
+  {
+    id: 'cupra',
+    name: 'CUPRA',
+    fullName: 'SEAT Cupra, S.A.U.',
+    slug: '/cupra',
+    logo: '/images/brands/cupra.svg',
+    country: 'España',
+    founded: 2018,
+    description: 'Gama de deportivos crossover, compactos de altas prestaciones (VZ / VZ5) y modelos 100% eléctricos con diseño frontal Shark Nose.',
+    available: true,
+    apiEndpoint: '/api/v1/cupra.json',
+    stats: {
+      models: 13,
+      modelsLabel: 'Modelos & Versiones',
+      specialLabel: 'Gama VZ / VZ5',
+      specialValue: 7,
+      chassis: 13,
+      chassisLabel: 'Chasis Distintos',
+      withPhoto: 13,
+      withPhotoLabel: 'Frontales con Foto',
+      photoRate: '100%'
+    }
   }
 ];
+

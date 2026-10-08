@@ -1,9 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import catalog from '../../../data/bmw/catalog-clean-front.json';
+import bmwCatalog from '../../../data/bmw/catalog-clean-front.json';
+import cupraCatalog from '../../../data/cupra/catalog-clean-front.json';
 
-// Extraer todos los coches reales de producción y M-Performance que tienen motores asignados
-const cars = catalog.generations
+// Extraer todos los coches reales de producción que tienen motores asignados
+const bmwCars = bmwCatalog.generations
   .filter((g: any) => g.status !== 'concept' && g.section !== 'prototypes' && !g.id.startsWith('bmw-concept-') && g.engines && g.engines.length > 0)
   .map((g: any) => ({
     id: g.id,
@@ -19,9 +20,28 @@ const cars = catalog.generations
     engines: g.engines
   }));
 
+const cupraCars = cupraCatalog.generations
+  .filter((g: any) => g.status !== 'concept' && g.section !== 'prototypes' && !g.id.startsWith('cupra-concept-') && g.engines && g.engines.length > 0)
+  .map((g: any) => ({
+    id: g.id,
+    brand: 'CUPRA',
+    carName: g.label,
+    series: g.series || 'CUPRA',
+    chassisCode: g.chassis?.[0]?.code || '',
+    bodyStyle: g.class || 'Crossover / Deportivo',
+    yearsDisplay: g.years?.display || '',
+    startYear: typeof g.years?.start === 'number' ? g.years.start : (parseInt(g.years?.start, 10) || null),
+    endYear: typeof g.years?.end === 'number' ? g.years.end : (parseInt(g.years?.end, 10) || null),
+    generationEra: `${g.years?.start || ''} – ${g.years?.end || ''}`,
+    engines: g.engines
+  }));
+
+const cars = [...bmwCars, ...cupraCars];
+
 const availableBrands = Array.from(new Set(cars.map((c: any) => c.brand || 'BMW'))).sort();
 const carsJson = JSON.stringify(cars);
 const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.length, 0);
+
 ---
 
 <Layout 
