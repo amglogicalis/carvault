@@ -13,6 +13,8 @@ const cars = catalog.generations
     chassisCode: g.chassis?.[0]?.code || '',
     bodyStyle: g.class || 'Turismo / Deportivo',
     yearsDisplay: g.years?.display || '',
+    startYear: typeof g.years?.start === 'number' ? g.years.start : (parseInt(g.years?.start, 10) || null),
+    endYear: typeof g.years?.end === 'number' ? g.years.end : (parseInt(g.years?.end, 10) || null),
     generationEra: `${g.years?.start || ''} – ${g.years?.end || ''}`,
     engines: g.engines
   }));
@@ -84,20 +86,120 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
             BMW Serie 1 F20 (M140i)
           </button>
         </div>
+
+        <!-- Panel de Filtros Técnicos Avanzados: CV, Cilindrada, 0-100s, Vel. Máx, Año -->
+        <div class="mt-6 p-4 sm:p-5 bg-slate-900/90 border border-slate-800/90 rounded-2xl shadow-2xl backdrop-blur-md text-left">
+          <div class="flex items-center justify-between mb-3 pb-2.5 border-b border-slate-800">
+            <div class="flex items-center gap-2 text-xs font-mono font-bold text-cyan-300 uppercase tracking-wider">
+              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+              <span>Filtros Mecánicos Directos</span>
+            </div>
+            <button 
+              id="resetFiltersBtn"
+              class="text-[11px] font-mono text-slate-400 hover:text-cyan-300 transition-colors flex items-center gap-1 cursor-pointer bg-slate-800/80 hover:bg-slate-800 px-2.5 py-1 rounded-lg border border-slate-700/80"
+              title="Restablecer todos los filtros y búsqueda"
+            >
+              <span>↺</span>
+              <span>Limpiar filtros</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 font-mono text-xs">
+            <!-- Filtro 1: Potencia Mínima (CV) -->
+            <div>
+              <label for="filterMinHp" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
+                Mín. Potencia (CV)
+              </label>
+              <input 
+                type="number" 
+                id="filterMinHp"
+                min="0"
+                max="1200"
+                step="10"
+                placeholder="ej: 300"
+                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
+              />
+            </div>
+
+            <!-- Filtro 2: Cilindrada Mínima (L) -->
+            <div>
+              <label for="filterDisplacement" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
+                Mín. Cilindrada (L)
+              </label>
+              <input 
+                type="number" 
+                id="filterDisplacement"
+                min="0"
+                max="8.0"
+                step="0.1"
+                placeholder="ej: 3.0"
+                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
+              />
+            </div>
+
+            <!-- Filtro 3: 0-100 km/h (Segundos escritos por el usuario) -->
+            <div>
+              <label for="filterMax0to100" class="block text-[10px] text-cyan-300 uppercase tracking-wider mb-1 font-bold">
+                0-100 Máx. (segundos)
+              </label>
+              <input 
+                type="number" 
+                id="filterMax0to100"
+                min="1.0"
+                max="30.0"
+                step="0.1"
+                placeholder="ej: 4.5"
+                class="w-full bg-slate-950 border border-cyan-500/50 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/30 text-xs shadow-inner"
+              />
+            </div>
+
+            <!-- Filtro 4: Velocidad Máxima Mínima (km/h) -->
+            <div>
+              <label for="filterMinSpeed" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
+                Mín. Vel. Punta (km/h)
+              </label>
+              <input 
+                type="number" 
+                id="filterMinSpeed"
+                min="50"
+                max="350"
+                step="5"
+                placeholder="ej: 250"
+                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
+              />
+            </div>
+
+            <!-- Filtro 5: Año -->
+            <div class="col-span-2 sm:col-span-1">
+              <label for="filterYear" class="block text-[10px] text-slate-400 uppercase tracking-wider mb-1 font-semibold">
+                Año del Modelo
+              </label>
+              <input 
+                type="number" 
+                id="filterYear"
+                min="1927"
+                max="2027"
+                step="1"
+                placeholder="ej: 2011"
+                class="w-full bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-2 text-white placeholder:text-slate-600 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 text-xs shadow-inner"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Área de Resultados (Vacía inicialmente hasta que el usuario busque) -->
+  <!-- Área de Resultados (Vacía inicialmente hasta que el usuario busque o aplique filtros) -->
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 min-h-[500px]">
-    <!-- Estado Inicial: No muestra nada hasta que busques -->
+    <!-- Estado Inicial: No muestra nada hasta que busques o filtres -->
     <div id="initialStateNotice" class="text-center py-20 px-6 bg-slate-900/30 border border-slate-800/80 rounded-3xl max-w-xl mx-auto shadow-xl">
       <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mx-auto mb-3 text-2xl font-mono">
         ⚙️
       </div>
-      <h3 class="text-lg font-bold text-white">Introduce un modelo de coche</h3>
+      <h3 class="text-lg font-bold text-white">Introduce un coche o aplica filtros técnicos</h3>
       <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-md mx-auto leading-relaxed">
-        Escribe arriba el coche que deseas consultar (por ejemplo <strong class="text-cyan-300">"BMW Serie 3 E92"</strong>, <strong class="text-cyan-300">"325i E92"</strong> o <strong class="text-cyan-300">"Serie 5 E60"</strong>) para desplegar sus especificaciones y prestaciones mecánicas completas.
+        Escribe arriba el coche que deseas consultar (ej. <strong class="text-cyan-300">"BMW Serie 3 E92"</strong>, <strong class="text-cyan-300">"325i"</strong>, <strong class="text-cyan-300">"M2"</strong>) o filtra por <strong class="text-white">CV, cilindrada, 0-100 km/h, vel. máxima o año</strong> para ver las motorizaciones exactas.
       </p>
     </div>
 
@@ -111,7 +213,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       <div class="text-3xl mb-2">🔍</div>
       <h3 class="text-base font-bold text-white">No se encontró ningún coche coincidente</h3>
       <p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">
-        Prueba a buscar por nombre de coche, serie o código de chasis (ej: E92, E46, E60, F30, F20).
+        Prueba a flexibilizar los filtros técnicos o a buscar por nombre de coche o chasis (ej: E92, E46, E60, F30, F20).
       </p>
     </div>
 
@@ -157,189 +259,272 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
     const noMatchState = document.getElementById('noMatchState');
     const quickChips = document.querySelectorAll('.quick-car-chip');
 
+    // Elementos de filtros mecánicos avanzados
+    const filterMinHp = document.getElementById('filterMinHp');
+    const filterDisplacement = document.getElementById('filterDisplacement');
+    const filterMax0to100 = document.getElementById('filterMax0to100');
+    const filterMinSpeed = document.getElementById('filterMinSpeed');
+    const filterYear = document.getElementById('filterYear');
+    const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+
     function executeCarSearch() {
       const query = (searchInput.value || '').trim().toLowerCase();
+      const minHpVal = parseFloat(filterMinHp?.value) || null;
+      const minDispVal = parseFloat(filterDisplacement?.value) || null;
+      const max0to100Val = parseFloat(filterMax0to100?.value) || null;
+      const minSpeedVal = parseFloat(filterMinSpeed?.value) || null;
+      const yearVal = parseInt(filterYear?.value, 10) || null;
 
-      if (query.length === 0) {
-        clearBtn.classList.add('hidden');
-        initialStateNotice.classList.remove('hidden');
-        resultsArea.classList.add('hidden');
-        resultsArea.innerHTML = '';
-        noMatchState.classList.add('hidden');
+      const hasActiveFilters = Boolean(
+        query.length > 0 ||
+        minHpVal !== null ||
+        minDispVal !== null ||
+        max0to100Val !== null ||
+        minSpeedVal !== null ||
+        yearVal !== null
+      );
+
+      // Si no hay búsqueda ni filtros activos, mantener oculto el catálogo y mostrar aviso inicial
+      if (!hasActiveFilters) {
+        if (clearBtn) clearBtn.classList.add('hidden');
+        if (initialStateNotice) initialStateNotice.classList.remove('hidden');
+        if (resultsArea) {
+          resultsArea.classList.add('hidden');
+          resultsArea.innerHTML = '';
+        }
+        if (noMatchState) noMatchState.classList.add('hidden');
         return;
       }
 
-      clearBtn.classList.remove('hidden');
-      initialStateNotice.classList.add('hidden');
+      if (query.length > 0) {
+        if (clearBtn) clearBtn.classList.remove('hidden');
+      } else {
+        if (clearBtn) clearBtn.classList.add('hidden');
+      }
 
-      const tokens = query.split(/\s+/).filter(Boolean);
+      if (initialStateNotice) initialStateNotice.classList.add('hidden');
 
-      // Buscar coches cuyos datos o motores contengan los términos
-      const matchedCars = allCars.filter(car => {
-        const fullSearchableText = [
+      const tokens = query ? query.split(/\s+/).filter(Boolean) : [];
+
+      // Filtrar coches y sus motorizaciones según los criterios
+      const matchedCars = [];
+
+      for (const car of allCars) {
+        // Filtro por año de producción
+        if (yearVal !== null) {
+          const start = car.startYear !== null ? car.startYear : -Infinity;
+          const end = car.endYear !== null ? car.endYear : 2027; // si es null sigue en producción actual
+          if (yearVal < start || yearVal > end) {
+            continue;
+          }
+        }
+
+        // Texto descriptivo del chasis y modelo
+        const carMetaText = [
           car.carName,
           car.series,
           car.chassisCode,
           car.bodyStyle,
           car.generationEra,
-          ...car.engines.map(e => `${e.modelBadge} ${e.engineCode} ${e.architecture} ${e.fuel} ${e.displacementL} ${e.displacementCc}`)
+          car.yearsDisplay
         ].join(' ').toLowerCase();
 
-        return tokens.every(t => fullSearchableText.includes(t));
-      });
+        const carMatchesQueryDirectly = tokens.length === 0 || tokens.every(t => carMetaText.includes(t));
+
+        // Filtrar motores individuales
+        const matchingEngines = (car.engines || []).filter(eng => {
+          // Filtro por caballos mínimos (CV)
+          if (minHpVal !== null && eng.powerHp < minHpVal) return false;
+
+          // Filtro por cilindrada mínima (L)
+          if (minDispVal !== null && eng.displacementL < (minDispVal - 0.05)) return false;
+
+          // Filtro por 0-100 km/h máximo en segundos (escrito por el usuario)
+          if (max0to100Val !== null && eng.accel0to100 > max0to100Val) return false;
+
+          // Filtro por velocidad punta mínima (km/h)
+          if (minSpeedVal !== null && eng.topSpeedKmh < minSpeedVal) return false;
+
+          // Si el texto de búsqueda no coincidió con el nombre del coche, verificar si coincide en la motorización
+          if (!carMatchesQueryDirectly && tokens.length > 0) {
+            const engText = `${eng.modelBadge} ${eng.engineCode} ${eng.architecture} ${eng.fuel} ${eng.displacementL} ${eng.displacementCc} ${eng.notes || ''}`.toLowerCase();
+            const combined = `${carMetaText} ${engText}`;
+            if (!tokens.every(t => combined.includes(t))) {
+              return false;
+            }
+          }
+
+          return true;
+        });
+
+        if (matchingEngines.length > 0) {
+          matchedCars.push({
+            ...car,
+            filteredEngines: matchingEngines
+          });
+        }
+      }
 
       if (matchedCars.length === 0) {
-        resultsArea.classList.add('hidden');
-        resultsArea.innerHTML = '';
-        noMatchState.classList.remove('hidden');
+        if (resultsArea) {
+          resultsArea.classList.add('hidden');
+          resultsArea.innerHTML = '';
+        }
+        if (noMatchState) noMatchState.classList.remove('hidden');
         return;
       }
 
-      noMatchState.classList.add('hidden');
-      resultsArea.classList.remove('hidden');
+      if (noMatchState) noMatchState.classList.add('hidden');
+      if (resultsArea) {
+        resultsArea.classList.remove('hidden');
+        resultsArea.innerHTML = matchedCars.map(car => {
+          const engines = car.filteredEngines;
+          const minHp = Math.min(...engines.map(e => e.powerHp));
+          const maxHp = Math.max(...engines.map(e => e.powerHp));
+          const min0to100 = Math.min(...engines.map(e => e.accel0to100));
+          const max0to100 = Math.max(...engines.map(e => e.accel0to100));
 
-      // Renderizar el desglose mecánico puro de cada coche coincidente (sin fotos de coche)
-      resultsArea.innerHTML = matchedCars.map(car => {
-        const minHp = Math.min(...car.engines.map(e => e.powerHp));
-        const maxHp = Math.max(...car.engines.map(e => e.powerHp));
-        const min0to100 = Math.min(...car.engines.map(e => e.accel0to100));
-        const max0to100 = Math.max(...car.engines.map(e => e.accel0to100));
-
-        return `
-          <article class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm">
-            <!-- Cabecera del Coche -->
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
-              <div>
-                <div class="flex items-center gap-2.5 mb-1.5">
-                  <span class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
-                    Chasis ${car.chassisCode}
-                  </span>
-                  <span class="text-xs font-mono text-slate-400">
-                    ${car.series} • ${car.bodyStyle}
-                  </span>
-                  <span class="text-xs font-mono text-slate-500">
-                    ${car.yearsDisplay}
-                  </span>
-                </div>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                  ${car.carName}
-                </h2>
-                <p class="text-xs text-slate-400 font-mono mt-1">
-                  ${car.generationEra}
-                </p>
-              </div>
-
-              <!-- Rango de prestaciones de la gama de este coche -->
-              <div class="bg-slate-950 p-3.5 rounded-2xl border border-slate-800/80 font-mono text-xs shrink-0 flex items-center gap-5">
+          return `
+            <article class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl backdrop-blur-sm">
+              <!-- Cabecera del Coche -->
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
                 <div>
-                  <div class="text-[10px] text-slate-500 uppercase">Potencias</div>
-                  <div class="text-cyan-300 font-bold">${minHp} – ${maxHp} CV</div>
-                </div>
-                <div class="h-8 w-[1px] bg-slate-800"></div>
-                <div>
-                  <div class="text-[10px] text-slate-500 uppercase">Aceleración 0-100</div>
-                  <div class="text-emerald-400 font-bold">${min0to100}s – ${max0to100}s</div>
-                </div>
-                <div class="h-8 w-[1px] bg-slate-800"></div>
-                <div>
-                  <div class="text-[10px] text-slate-500 uppercase">Gama</div>
-                  <div class="text-white font-bold">${car.engines.length} motores</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Fichas Técnicas de cada Motor disponible en este Coche -->
-            <div class="mt-6 space-y-4">
-              <div class="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-                <span>Motorizaciones disponibles en este modelo:</span>
-              </div>
-
-              ${car.engines.map(eng => `
-                <div class="bg-slate-950/80 border border-slate-800/90 hover:border-slate-700/90 rounded-2xl p-4 sm:p-5 transition-colors">
-                  <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-                    <!-- Modelo y Código de Motor -->
-                    <div class="flex items-start sm:items-center gap-3.5 min-w-[280px]">
-                      <div class="w-16 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0">
-                        <span class="text-base font-black text-white font-mono">${eng.modelBadge}</span>
-                      </div>
-                      <div>
-                        <div class="flex items-center gap-2">
-                          <span class="text-sm font-bold text-cyan-300 font-mono bg-cyan-950/60 px-2.5 py-0.5 rounded border border-cyan-800/60">
-                            ${eng.engineCode}
-                          </span>
-                          <span class="text-[10px] font-mono px-2 py-0.5 rounded border ${
-                            eng.fuel === 'Diésel' ? 'bg-amber-950/40 text-amber-300 border-amber-800/40' :
-                            eng.fuel.includes('Híbrido') ? 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' :
-                            'bg-slate-800 text-slate-300 border-slate-700'
-                          }">
-                            ${eng.fuel}
-                          </span>
-                        </div>
-                        <div class="text-xs text-slate-400 mt-1">
-                          ${eng.architecture} (${eng.cylinders} cilindros)
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Datos Numéricos: Cilindrada, Potencia y Velocidad Punta -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 py-2 lg:py-0 border-y lg:border-y-0 border-slate-800/60 font-mono text-xs">
-                      <div>
-                        <div class="text-[10px] text-slate-500 uppercase">Cilindrada</div>
-                        <div class="text-white font-semibold">${eng.displacementL}L <span class="text-slate-500">(${eng.displacementCc} cc)</span></div>
-                      </div>
-                      <div>
-                        <div class="text-[10px] text-slate-500 uppercase">Potencia & Par</div>
-                        <div class="text-white font-semibold">${eng.powerHp} CV <span class="text-slate-500">/ ${eng.torqueNm} Nm</span></div>
-                      </div>
-                      <div class="col-span-2 sm:col-span-1">
-                        <div class="text-[10px] text-slate-500 uppercase">Velocidad Máxima</div>
-                        <div class="text-emerald-400 font-semibold">${eng.topSpeedKmh} km/h</div>
-                      </div>
-                    </div>
-
-                    <!-- Barra Visual de 0 a 100 km/h -->
-                    <div class="min-w-[180px] sm:min-w-[220px]">
-                      <div class="flex items-center justify-between text-xs font-mono mb-1">
-                        <span class="text-slate-400">0 – 100 km/h:</span>
-                        <span class="text-cyan-400 font-bold">${eng.accel0to100} s</span>
-                      </div>
-                      <div class="h-2 w-full bg-slate-900 rounded-full overflow-hidden border border-slate-800 relative">
-                        <div 
-                          class="h-full rounded-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500"
-                          style="width: ${Math.max(15, Math.min(100, (11 - eng.accel0to100) * 12))}%"
-                        ></div>
-                      </div>
-                      <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 mt-1">
-                        <span>${eng.phase || ''}</span>
-                        <span>${eng.yearsActive || ''}</span>
-                      </div>
-                    </div>
+                  <div class="flex items-center gap-2.5 mb-1.5 flex-wrap">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
+                      Chasis ${car.chassisCode}
+                    </span>
+                    <span class="text-xs font-mono text-slate-400">
+                      ${car.series} • ${car.bodyStyle}
+                    </span>
+                    <span class="text-xs font-mono text-slate-500">
+                      ${car.yearsDisplay}
+                    </span>
                   </div>
+                  <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    ${car.carName}
+                  </h2>
+                  <p class="text-xs text-slate-400 font-mono mt-1">
+                    ${car.generationEra}
+                  </p>
+                </div>
 
-                  <!-- Detalle de Alimentación y Notas Técnicas -->
-                  <div class="mt-3 pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
-                    <div class="text-slate-400 flex items-center gap-1.5">
-                      <span class="text-indigo-400 font-mono">Alimentación:</span>
-                      <span class="text-slate-300">${eng.feedSystem || 'Inyección BMW High Precision Injection'}</span>
-                    </div>
-                    ${eng.notes ? `
-                      <div class="text-slate-300 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800 text-[11px]">
-                        ℹ️ ${eng.notes}
-                      </div>
-                    ` : ''}
+                <!-- Rango de prestaciones de la gama de este coche -->
+                <div class="bg-slate-950 p-3.5 rounded-2xl border border-slate-800/80 font-mono text-xs shrink-0 flex items-center gap-5">
+                  <div>
+                    <div class="text-[10px] text-slate-500 uppercase">Potencias</div>
+                    <div class="text-cyan-300 font-bold">${minHp === maxHp ? `${minHp} CV` : `${minHp} – ${maxHp} CV`}</div>
+                  </div>
+                  <div class="h-8 w-[1px] bg-slate-800"></div>
+                  <div>
+                    <div class="text-[10px] text-slate-500 uppercase">Aceleración 0-100</div>
+                    <div class="text-emerald-400 font-bold">${min0to100 === max0to100 ? `${min0to100}s` : `${min0to100}s – ${max0to100}s`}</div>
+                  </div>
+                  <div class="h-8 w-[1px] bg-slate-800"></div>
+                  <div>
+                    <div class="text-[10px] text-slate-500 uppercase">Motores</div>
+                    <div class="text-white font-bold">${engines.length}${engines.length !== car.engines.length ? ` / ${car.engines.length}` : ''}</div>
                   </div>
                 </div>
-              `).join('')}
-            </div>
-          </article>
-        `;
-      }).join('');
+              </div>
+
+              <!-- Fichas Técnicas de cada Motor disponible en este Coche -->
+              <div class="mt-6 space-y-4">
+                <div class="text-xs font-mono uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+                    <span>Motorizaciones disponibles (${engines.length}):</span>
+                  </div>
+                </div>
+
+                ${engines.map(eng => `
+                  <div class="bg-slate-950/80 border border-slate-800/90 hover:border-slate-700/90 rounded-2xl p-4 sm:p-5 transition-colors">
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                      <!-- Modelo y Código de Motor (Badge Auto-ajustable con bordes redondeados y sin desbordamiento) -->
+                      <div class="flex items-start sm:items-center gap-3.5 min-w-0 sm:min-w-[280px]">
+                        <div class="px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700/90 flex items-center justify-center shrink-0 shadow-inner max-w-full">
+                          <span class="text-xs sm:text-sm font-black text-cyan-200 font-mono whitespace-nowrap">${eng.modelBadge}</span>
+                        </div>
+                        <div class="min-w-0">
+                          <div class="flex items-center gap-2 flex-wrap">
+                            <span class="text-sm font-bold text-cyan-300 font-mono bg-cyan-950/60 px-2.5 py-0.5 rounded border border-cyan-800/60">
+                              ${eng.engineCode}
+                            </span>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded border ${
+                              eng.fuel === 'Diésel' ? 'bg-amber-950/40 text-amber-300 border-amber-800/40' :
+                              eng.fuel.includes('Híbrido') ? 'bg-emerald-950/40 text-emerald-300 border-emerald-800/40' :
+                              'bg-slate-800 text-slate-300 border-slate-700'
+                            }">
+                              ${eng.fuel}
+                            </span>
+                          </div>
+                          <div class="text-xs text-slate-400 mt-1 truncate">
+                            ${eng.architecture} (${eng.cylinders} cilindros)
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Datos Numéricos: Cilindrada, Potencia y Velocidad Punta -->
+                      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 py-2 lg:py-0 border-y lg:border-y-0 border-slate-800/60 font-mono text-xs">
+                        <div>
+                          <div class="text-[10px] text-slate-500 uppercase">Cilindrada</div>
+                          <div class="text-white font-semibold">${eng.displacementL}L <span class="text-slate-500">(${eng.displacementCc} cc)</span></div>
+                        </div>
+                        <div>
+                          <div class="text-[10px] text-slate-500 uppercase">Potencia & Par</div>
+                          <div class="text-white font-semibold">${eng.powerHp} CV <span class="text-slate-500">/ ${eng.torqueNm} Nm</span></div>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                          <div class="text-[10px] text-slate-500 uppercase">Velocidad Máxima</div>
+                          <div class="text-emerald-400 font-semibold">${eng.topSpeedKmh} km/h</div>
+                        </div>
+                      </div>
+
+                      <!-- Barra Visual de 0 a 100 km/h -->
+                      <div class="min-w-[180px] sm:min-w-[220px]">
+                        <div class="flex items-center justify-between text-xs font-mono mb-1">
+                          <span class="text-slate-400">0 – 100 km/h:</span>
+                          <span class="text-cyan-400 font-bold">${eng.accel0to100} s</span>
+                        </div>
+                        <div class="h-2 w-full bg-slate-900 rounded-full overflow-hidden border border-slate-800 relative">
+                          <div 
+                            class="h-full rounded-full bg-gradient-to-r from-emerald-500 via-cyan-500 to-indigo-500"
+                            style="width: ${Math.max(15, Math.min(100, (11 - eng.accel0to100) * 12))}%"
+                          ></div>
+                        </div>
+                        <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 mt-1">
+                          <span>${eng.phase || ''}</span>
+                          <span>${eng.yearsActive || ''}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Detalle de Alimentación y Notas Técnicas -->
+                    <div class="mt-3 pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                      <div class="text-slate-400 flex items-center gap-1.5">
+                        <span class="text-indigo-400 font-mono">Alimentación:</span>
+                        <span class="text-slate-300">${eng.feedSystem || 'Inyección BMW High Precision Injection'}</span>
+                      </div>
+                      ${eng.notes ? `
+                        <div class="text-slate-300 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800 text-[11px]">
+                          ℹ️ ${eng.notes}
+                        </div>
+                      ` : ''}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </article>
+          `;
+        }).join('');
+      }
     }
 
-    if (searchInput) {
-      searchInput.addEventListener('input', executeCarSearch);
-    }
+    // Escuchar eventos en input de búsqueda y en todos los filtros técnicos
+    [searchInput, filterMinHp, filterDisplacement, filterMax0to100, filterMinSpeed, filterYear].forEach(el => {
+      if (el) {
+        el.addEventListener('input', executeCarSearch);
+      }
+    });
 
     if (clearBtn) {
       clearBtn.addEventListener('click', () => {
@@ -349,10 +534,23 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       });
     }
 
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', () => {
+        if (searchInput) searchInput.value = '';
+        if (filterMinHp) filterMinHp.value = '';
+        if (filterDisplacement) filterDisplacement.value = '';
+        if (filterMax0to100) filterMax0to100.value = '';
+        if (filterMinSpeed) filterMinSpeed.value = '';
+        if (filterYear) filterYear.value = '';
+        executeCarSearch();
+        if (searchInput) searchInput.focus();
+      });
+    }
+
     quickChips.forEach(chip => {
       chip.addEventListener('click', () => {
         const carName = chip.getAttribute('data-car') || '';
-        searchInput.value = carName;
+        if (searchInput) searchInput.value = carName;
         executeCarSearch();
       });
     });
