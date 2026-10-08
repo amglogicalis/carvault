@@ -49,7 +49,8 @@ export interface AdvancedValuationResult {
 }
 
 // Analizador de Nicho y Prestaciones
-function analyzeCarProfile(model: { label: string; series: string; class?: string; section?: string }) {
+function analyzeCarProfile(model: { label: string; series: string; class?: string; section?: string; brand?: string }) {
+  const brand = model.brand || (model.label.toLowerCase().includes('cupra') ? 'CUPRA' : 'BMW');
   const lbl = model.label.toLowerCase();
   const ser = model.series.toLowerCase();
   const cls = (model.class || '').toLowerCase();
@@ -60,6 +61,46 @@ function analyzeCarProfile(model: { label: string; series: string; class?: strin
   let troughResidualRatio = 0.14; // Suelo en % sobre MSRP
   let appreciationRate = 0.025; // % anual de subida post-suelo
   let baseMsrp = 45000;
+
+  if (brand === 'CUPRA') {
+    if (model.section === 'prototype' || /concept|darkrebel|urbanrebel/i.test(lbl)) {
+      nicheType = 'Prototipo de Exhibición / Showcar IAA';
+      nicheScore = 10;
+      troughAge = 6;
+      troughResidualRatio = 0.75;
+      appreciationRate = 0.05;
+      baseMsrp = 250000;
+    } else if (lbl.includes('vz5')) {
+      nicheType = 'Icono Halo / Edición Limitada 5-Cilindros (VZ5)';
+      nicheScore = 9;
+      troughAge = 11;
+      troughResidualRatio = 0.44;
+      appreciationRate = 0.055;
+      baseMsrp = 72000;
+    } else if (/vz/i.test(lbl) || (/ateca/i.test(lbl) && !/1\.5/i.test(lbl))) {
+      nicheType = 'Deportivo Hot Hatch / Crossover VZ';
+      nicheScore = 7.5;
+      troughAge = 14;
+      troughResidualRatio = 0.25;
+      appreciationRate = 0.035;
+      baseMsrp = /formentor|terramar/i.test(lbl) ? 54000 : /ateca/i.test(lbl) ? 52000 : 48000;
+    } else if (/born|tavascan|raval/i.test(lbl)) {
+      nicheType = 'Compacto / Crossover 100% Eléctrico (BEV)';
+      nicheScore = 6;
+      troughAge = 13;
+      troughResidualRatio = 0.19;
+      appreciationRate = 0.02;
+      baseMsrp = /tavascan/i.test(lbl) ? 54000 : /born/i.test(lbl) ? 41000 : 29000;
+    } else {
+      nicheType = 'Crossover / Compacto Deportivo Moderno';
+      nicheScore = 5;
+      troughAge = 16;
+      troughResidualRatio = 0.16;
+      appreciationRate = 0.022;
+      baseMsrp = /terramar/i.test(lbl) ? 43000 : /formentor/i.test(lbl) ? 38000 : /ateca/i.test(lbl) ? 41000 : 34000;
+    }
+    return { nicheType, nicheScore, troughAge, troughResidualRatio, appreciationRate, baseMsrp };
+  }
 
   const isPureM = model.section === 'm-performance' || /\bm[1-8]\b|\b1m\b/i.test(lbl);
   const isRoadster = /roadster|z3|z4|z8|z1|spyder|cabrio/i.test(lbl) || /z series/i.test(ser);

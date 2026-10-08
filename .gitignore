@@ -22,6 +22,7 @@ mis_claves*.json
 data/_raw/
 data/_images/
 tmp/
+scratch/
 
 # Logs
 *.log

@@ -1,22 +1,40 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import catalog from '../../../data/bmw/catalog-clean-front.json';
-import { POPULAR_ENGINES_MAP } from '../../utils/bmw-engines';
+import bmwCatalog from '../../../data/bmw/catalog-clean-front.json';
+import cupraCatalog from '../../../data/cupra/catalog-clean-front.json';
+import { POPULAR_ENGINES_MAP as BMW_ENGINES_MAP } from '../../utils/bmw-engines';
+import { CUPRA_ENGINES_MAP } from '../../utils/cupra-engines';
 
-// Pasamos todos los modelos al buscador
-const modelsJson = JSON.stringify(catalog.generations.map(g => ({
-  id: g.id,
-  label: g.label,
-  series: g.series,
-  section: g.section,
-  years: g.years,
-  class: g.class,
-  chassis: g.chassis.map(c => c.code).filter(Boolean),
-  variants: g.chassis.flatMap(c => c.variants || []),
-  frontImage: g.frontImage?.url || null
-})));
+// Pasamos todos los modelos al buscador combinando BMW y CUPRA
+const allGenerations = [
+  ...bmwCatalog.generations.map(g => ({
+    id: g.id,
+    brand: 'BMW',
+    label: g.label,
+    series: g.series,
+    section: g.section,
+    years: g.years,
+    class: g.class,
+    chassis: g.chassis.map(c => c.code).filter(Boolean),
+    variants: g.chassis.flatMap(c => c.variants || []),
+    frontImage: g.frontImage?.url || null
+  })),
+  ...cupraCatalog.generations.map(g => ({
+    id: g.id,
+    brand: 'CUPRA',
+    label: g.label,
+    series: g.series,
+    section: g.section,
+    years: g.years,
+    class: g.class,
+    chassis: g.chassis.map(c => c.code).filter(Boolean),
+    variants: g.chassis.flatMap(c => c.variants || []),
+    frontImage: g.frontImage?.url || null
+  }))
+];
 
-const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
+const modelsJson = JSON.stringify(allGenerations);
+const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP });
 ---
 
 <Layout title="Analizador Financiero de Precios & Suelo de Depreciación — Carvault" description="Motor cuantitativo multifactorial: nicho, prestaciones, carrocería, horizonte temporal a 20 años y cálculo de suelo de depreciación.">
@@ -39,12 +57,12 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
     <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 backdrop-blur-md mb-8 max-w-4xl mx-auto shadow-2xl">
       <!-- Buscador -->
       <div class="mb-6">
-        <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">1. Selecciona o escribe cualquier modelo (Gama M o estándar):</label>
+        <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">1. Selecciona o escribe cualquier modelo (BMW o CUPRA):</label>
         <div class="relative">
           <input 
             id="carSearchInput"
             type="text" 
-            placeholder="Escribe el modelo (ej. M3, E46, 320i, M2 G87, Z4, E30, X5, 135i...)" 
+            placeholder="Escribe el modelo o versión (ej. Formentor VZ5, M3 E46, Born, 330ci, León VZ, M2 G87, Terramar...)" 
             class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 transition-colors font-mono"
           />
           <div id="searchResultsDropdown" class="absolute left-0 right-0 top-full mt-2 bg-slate-950 border border-slate-800 rounded-xl max-h-60 overflow-y-auto hidden z-30 shadow-2xl">
@@ -93,10 +111,16 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
     <div id="analysisPanel" class="hidden space-y-8 animate-fade-in">
       <!-- Ficha de Nicho & Perfil -->
       <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <span class="text-xs font-mono text-slate-500 uppercase">Perfil Cuantitativo</span>
-          <h2 class="text-xl font-bold text-white mt-0.5" id="profileModelName">-</h2>
-          <span class="text-xs text-slate-400 font-mono" id="profileCategory">-</span>
+        <div class="flex items-center gap-4">
+          <img id="profileCarImage" class="w-24 h-16 object-cover rounded-xl border border-slate-800 shadow-md hidden" alt="" />
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span id="profileBrandBadge" class="text-[10px] font-mono px-2 py-0.5 rounded border uppercase font-bold tracking-wider">-</span>
+              <span class="text-xs font-mono text-slate-500 uppercase">Perfil Cuantitativo</span>
+            </div>
+            <h2 class="text-xl font-bold text-white" id="profileModelName">-</h2>
+            <span class="text-xs text-slate-400 font-mono" id="profileCategory">-</span>
+          </div>
         </div>
         <div class="flex items-center gap-6 text-xs font-mono">
           <div class="text-right">
@@ -235,9 +259,25 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
     const horizonSelect = document.getElementById('horizonSelect');
     const conditionSelect = document.getElementById('conditionSelect');
 
+    function getCarTitle(m, engineVariant) {
+      if (!engineVariant) return m.label;
+      const brand = m.brand || 'BMW';
+      if (brand === 'CUPRA') {
+        return engineVariant.toLowerCase().startsWith('cupra')
+          ? engineVariant
+          : `CUPRA ${engineVariant}`;
+      } else {
+        return engineVariant.toLowerCase().startsWith('bmw')
+          ? engineVariant
+          : `BMW ${engineVariant} (${m.chassis[0] || m.label})`;
+      }
+    }
+
     function analyzeProfile(m, engineVariant) {
+      const brand = m.brand || 'BMW';
       const lbl = m.label.toLowerCase();
-      const ser = m.series.toLowerCase();
+      const ser = (m.series || '').toLowerCase();
+      const eng = (engineVariant || '').toLowerCase();
 
       let nicheType = 'Berlina / Compacto Convencional';
       let nicheScore = 5;
@@ -246,99 +286,177 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       let appreciationRate = 0.02;
       let baseMsrp = 42000;
 
-      const isPureM = m.section === 'm-performance' || /\bm[1-8]\b|\b1m\b/i.test(lbl);
-      const isRoadster = /roadster|z3|z4|z8|z1|spyder|cabrio/i.test(lbl) || /z series/i.test(ser);
-      const isCoupe = /coup[eé]|csl|gt|2 series|4 series|8 series/i.test(lbl);
-      const isSuv = /\bx[1-7]\b|sav|sac|suv/i.test(lbl) || /x series/i.test(ser);
-
-      if (/z8/i.test(lbl) || /m1\b/i.test(lbl) || /csl/i.test(lbl)) {
-        nicheType = 'Icono de Colección / Blue-Chip';
-        nicheScore = 10;
-        troughAge = 10;
-        troughResidualRatio = 0.65;
-        appreciationRate = 0.08;
-        baseMsrp = 135000;
-      } else if (isPureM) {
-        if (/m2|1m/i.test(lbl)) {
-          nicheType = 'Deportivo de Culto (M Compacto)';
+      if (brand === 'CUPRA') {
+        // Modelos y Conceptos de CUPRA
+        if (m.section === 'prototype' || /concept|darkrebel|urbanrebel/i.test(lbl)) {
+          nicheType = 'Prototipo de Exhibición / Showcar IAA';
+          nicheScore = 10;
+          troughAge = 6;
+          troughResidualRatio = 0.75;
+          appreciationRate = 0.05;
+          baseMsrp = 250000;
+        } else if (eng.includes('vz5') || lbl.includes('vz5')) {
+          // CUPRA Formentor VZ5 (2.5 TSI 5 cilindros Audi Sport, 7.000 unidades)
+          nicheType = 'Icono Halo / Edición Limitada 5-Cilindros (VZ5)';
           nicheScore = 9;
-          troughAge = 13;
-          troughResidualRatio = 0.38;
-          appreciationRate = 0.06;
-          baseMsrp = 66000;
-        } else if (/m3|m4/i.test(lbl)) {
-          nicheType = 'Referente Deportivo de Nicho (M3/M4)';
-          nicheScore = 9;
-          troughAge = 14;
-          troughResidualRatio = 0.35;
+          troughAge = 11;
+          troughResidualRatio = 0.44;
           appreciationRate = 0.055;
-          baseMsrp = 88000;
-        } else if (/m5|m6/i.test(lbl)) {
-          nicheType = 'Superberlina / Gran Turismo M';
+          baseMsrp = 72000;
+        } else if (
+          (eng.includes('vz') && (eng.includes('300') || eng.includes('310') || eng.includes('333') || eng.includes('265') || eng.includes('tsi'))) ||
+          (/ateca/i.test(lbl) && (eng.includes('300') || eng.includes('special') || eng.includes('limited') || !eng))
+        ) {
+          nicheType = 'Deportivo Hot Hatch / Crossover VZ';
+          nicheScore = 7.5;
+          troughAge = 14;
+          troughResidualRatio = 0.25;
+          appreciationRate = 0.035;
+          baseMsrp = /formentor|terramar/i.test(lbl) ? 54000 : /ateca/i.test(lbl) ? 52000 : 48000;
+        } else if (eng.includes('vz') && (eng.includes('hybrid') || eng.includes('245') || eng.includes('272'))) {
+          nicheType = 'Deportivo Híbrido Enchufable PHEV (VZ e-HYBRID)';
+          nicheScore = 6.5;
+          troughAge = 15;
+          troughResidualRatio = 0.21;
+          appreciationRate = 0.025;
+          baseMsrp = /formentor|terramar/i.test(lbl) ? 53000 : 46000;
+        } else if (/born|tavascan|raval/i.test(lbl) || eng.includes('kwh') || eng.includes('endurance')) {
+          const isTopVZ = eng.includes('vz') || eng.includes('340') || eng.includes('326');
+          if (isTopVZ) {
+            nicheType = 'Deportivo 100% Eléctrico VZ (High-Performance BEV)';
+            nicheScore = 7;
+            troughAge = 12;
+            troughResidualRatio = 0.23;
+            appreciationRate = 0.025;
+            baseMsrp = /tavascan/i.test(lbl) ? 66000 : /born/i.test(lbl) ? 46000 : 36000;
+          } else {
+            nicheType = 'Compacto / Crossover 100% Eléctrico (BEV)';
+            nicheScore = 6;
+            troughAge = 13;
+            troughResidualRatio = 0.19;
+            appreciationRate = 0.02;
+            baseMsrp = /tavascan/i.test(lbl) ? 54000 : /born/i.test(lbl) ? 41000 : 29000;
+          }
+        } else {
+          // Modelos CUPRA estándar (TSI, eTSI, TDI, e-HYBRID)
+          if (eng.includes('tdi') || eng.includes('diésel') || eng.includes('diesel')) {
+            nicheType = 'Crossover Turbodiésel (TDI)';
+            nicheScore = 5;
+            troughAge = 17;
+            troughResidualRatio = 0.15;
+            appreciationRate = 0.018;
+            baseMsrp = 39000;
+          } else if (eng.includes('hybrid') || eng.includes('híbrido')) {
+            nicheType = 'Crossover Híbrido Enchufable (e-HYBRID CERO)';
+            nicheScore = 6;
+            troughAge = 16;
+            troughResidualRatio = 0.18;
+            appreciationRate = 0.02;
+            baseMsrp = 44000;
+          } else {
+            nicheType = 'Crossover / Compacto Deportivo Moderno';
+            nicheScore = 5;
+            troughAge = 16;
+            troughResidualRatio = 0.16;
+            appreciationRate = 0.022;
+            baseMsrp = /terramar/i.test(lbl) ? 43000 : /formentor/i.test(lbl) ? 38000 : /ateca/i.test(lbl) ? 41000 : 34000;
+          }
+        }
+      } else {
+        // Modelos de BMW
+        const isPureM = m.section === 'm-performance' || /\bm[1-8]\b|\b1m\b/i.test(lbl);
+        const isRoadster = /roadster|z3|z4|z8|z1|spyder|cabrio/i.test(lbl) || /z series/i.test(ser);
+        const isCoupe = /coup[eé]|csl|gt|2 series|4 series|8 series/i.test(lbl);
+        const isSuv = /\bx[1-7]\b|sav|sac|suv/i.test(lbl) || /x series/i.test(ser);
+
+        if (/z8/i.test(lbl) || /m1\b/i.test(lbl) || /csl/i.test(lbl)) {
+          nicheType = 'Icono de Colección / Blue-Chip';
+          nicheScore = 10;
+          troughAge = 10;
+          troughResidualRatio = 0.65;
+          appreciationRate = 0.08;
+          baseMsrp = 135000;
+        } else if (isPureM) {
+          if (/m2|1m/i.test(lbl)) {
+            nicheType = 'Deportivo de Culto (M Compacto)';
+            nicheScore = 9;
+            troughAge = 13;
+            troughResidualRatio = 0.38;
+            appreciationRate = 0.06;
+            baseMsrp = 66000;
+          } else if (/m3|m4/i.test(lbl)) {
+            nicheType = 'Referente Deportivo de Nicho (M3/M4)';
+            nicheScore = 9;
+            troughAge = 14;
+            troughResidualRatio = 0.35;
+            appreciationRate = 0.055;
+            baseMsrp = 88000;
+          } else if (/m5|m6/i.test(lbl)) {
+            nicheType = 'Superberlina / Gran Turismo M';
+            nicheScore = 8;
+            troughAge = 15;
+            troughResidualRatio = 0.28;
+            appreciationRate = 0.045;
+            baseMsrp = 118000;
+          } else {
+            nicheType = 'SUV de Altas Prestaciones M';
+            nicheScore = 7;
+            troughAge = 14;
+            troughResidualRatio = 0.24;
+            appreciationRate = 0.035;
+            baseMsrp = 130000;
+          }
+        } else if (isRoadster) {
+          nicheType = 'Roadster / Descapotable Entusiasta';
           nicheScore = 8;
           troughAge = 15;
-          troughResidualRatio = 0.28;
-          appreciationRate = 0.045;
-          baseMsrp = 118000;
-        } else {
-          nicheType = 'SUV de Altas Prestaciones M';
+          troughResidualRatio = 0.22;
+          appreciationRate = 0.04;
+          baseMsrp = 48000;
+        } else if (isCoupe) {
+          nicheType = 'Coupé Gran Turismo / Deportivo';
           nicheScore = 7;
-          troughAge = 14;
-          troughResidualRatio = 0.24;
+          troughAge = 16;
+          troughResidualRatio = 0.18;
           appreciationRate = 0.035;
-          baseMsrp = 130000;
-        }
-      } else if (isRoadster) {
-        nicheType = 'Roadster / Descapotable Entusiasta';
-        nicheScore = 8;
-        troughAge = 15;
-        troughResidualRatio = 0.22;
-        appreciationRate = 0.04;
-        baseMsrp = 48000;
-      } else if (isCoupe) {
-        nicheType = 'Coupé Gran Turismo / Deportivo';
-        nicheScore = 7;
-        troughAge = 16;
-        troughResidualRatio = 0.18;
-        appreciationRate = 0.035;
-        baseMsrp = 52000;
-      } else if (isSuv) {
-        nicheType = 'SUV / Crossover de Gran Consumo';
-        nicheScore = 4;
-        troughAge = 16;
-        troughResidualRatio = 0.11;
-        appreciationRate = 0.015;
-        baseMsrp = 58000;
-      } else {
-        if (/1 Series/i.test(ser)) baseMsrp = 32000;
-        else if (/3 Series/i.test(ser)) baseMsrp = 44000;
-        else if (/5 Series/i.test(ser)) baseMsrp = 62000;
-        else if (/7 Series/i.test(ser)) baseMsrp = 105000;
-      }
-
-      // Calibración por motorización específica
-      if (engineVariant) {
-        const eng = engineVariant.toLowerCase();
-        if (eng.includes('335i') || eng.includes('340i') || eng.includes('135i') || eng.includes('140i') || eng.includes('540i') || eng.includes('550i')) {
-          baseMsrp = Math.round(baseMsrp * 1.35);
-          nicheScore = Math.min(10, nicheScore + 2);
-          appreciationRate += 0.015;
-          troughResidualRatio += 0.06;
-          nicheType += ` (${engineVariant} 6L/V8 Top)`;
-        } else if (eng.includes('330ci') || eng.includes('330i') || eng.includes('328i') || eng.includes('130i') || eng.includes('530i')) {
-          baseMsrp = Math.round(baseMsrp * 1.22);
-          nicheScore = Math.min(10, nicheScore + 1);
-          appreciationRate += 0.01;
-          troughResidualRatio += 0.04;
-          nicheType += ` (${engineVariant} 6L Gasolina)`;
-        } else if (eng.includes('320i') || eng.includes('325i') || eng.includes('525i')) {
-          baseMsrp = Math.round(baseMsrp * 1.05);
-          nicheType += ` (${engineVariant})`;
-        } else if (eng.includes('320d') || eng.includes('330d') || eng.includes('530d')) {
-          baseMsrp = Math.round(baseMsrp * 1.08);
-          nicheType += ` (${engineVariant} Turbodiésel)`;
+          baseMsrp = 52000;
+        } else if (isSuv) {
+          nicheType = 'SUV / Crossover de Gran Consumo';
+          nicheScore = 4;
+          troughAge = 16;
+          troughResidualRatio = 0.11;
+          appreciationRate = 0.015;
+          baseMsrp = 58000;
         } else {
-          nicheType += ` (${engineVariant})`;
+          if (/1 Series/i.test(ser)) baseMsrp = 32000;
+          else if (/3 Series/i.test(ser)) baseMsrp = 44000;
+          else if (/5 Series/i.test(ser)) baseMsrp = 62000;
+          else if (/7 Series/i.test(ser)) baseMsrp = 105000;
+        }
+
+        // Calibración por motorización específica BMW
+        if (engineVariant) {
+          if (eng.includes('335i') || eng.includes('340i') || eng.includes('135i') || eng.includes('140i') || eng.includes('540i') || eng.includes('550i')) {
+            baseMsrp = Math.round(baseMsrp * 1.35);
+            nicheScore = Math.min(10, nicheScore + 2);
+            appreciationRate += 0.015;
+            troughResidualRatio += 0.06;
+            nicheType += ` (${engineVariant} 6L/V8 Top)`;
+          } else if (eng.includes('330ci') || eng.includes('330i') || eng.includes('328i') || eng.includes('130i') || eng.includes('530i')) {
+            baseMsrp = Math.round(baseMsrp * 1.22);
+            nicheScore = Math.min(10, nicheScore + 1);
+            appreciationRate += 0.01;
+            troughResidualRatio += 0.04;
+            nicheType += ` (${engineVariant} 6L Gasolina)`;
+          } else if (eng.includes('320i') || eng.includes('325i') || eng.includes('525i')) {
+            baseMsrp = Math.round(baseMsrp * 1.05);
+            nicheType += ` (${engineVariant})`;
+          } else if (eng.includes('320d') || eng.includes('330d') || eng.includes('530d')) {
+            baseMsrp = Math.round(baseMsrp * 1.08);
+            nicheType += ` (${engineVariant} Turbodiésel)`;
+          } else {
+            nicheType += ` (${engineVariant})`;
+          }
         }
       }
 
@@ -433,14 +551,28 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       if (!selectedModel) return;
       const data = calculateFullValuation(selectedModel, selectedEngineVariant);
 
-      const displayTitle = selectedEngineVariant 
-        ? `BMW ${selectedEngineVariant} (${selectedModel.chassis[0] || selectedModel.label})`
-        : selectedModel.label;
+      const displayTitle = getCarTitle(selectedModel, selectedEngineVariant);
 
       document.getElementById('profileModelName').textContent = displayTitle;
       document.getElementById('profileCategory').textContent = `${data.profile.nicheType} • ${selectedModel.class || ''}`;
       document.getElementById('nicheScoreText').textContent = `${data.profile.nicheScore}/10`;
       document.getElementById('profileMsrp').textContent = `${data.adjustedMsrp.toLocaleString()} €`;
+
+      const imgEl = document.getElementById('profileCarImage');
+      if (selectedModel.frontImage) {
+        imgEl.src = selectedModel.frontImage;
+        imgEl.alt = selectedModel.label;
+        imgEl.classList.remove('hidden');
+      } else {
+        imgEl.classList.add('hidden');
+      }
+
+      const badgeEl = document.getElementById('profileBrandBadge');
+      const isCupra = selectedModel.brand === 'CUPRA';
+      badgeEl.textContent = selectedModel.brand || 'BMW';
+      badgeEl.className = isCupra 
+        ? 'text-[10px] font-mono px-2 py-0.5 rounded border uppercase bg-amber-500/10 text-amber-400 border-amber-500/20 font-bold tracking-wider'
+        : 'text-[10px] font-mono px-2 py-0.5 rounded border uppercase bg-sky-500/10 text-sky-400 border-sky-500/20 font-bold tracking-wider';
 
       document.getElementById('metricPriceSpain').textContent = `${data.cur.priceSpain.toLocaleString()} €`;
       document.getElementById('metricPriceEurope').textContent = `${data.cur.priceEurope.toLocaleString()} €`;
@@ -529,7 +661,7 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
     function selectCar(m, engineVariant = null) {
       selectedModel = m;
       selectedEngineVariant = engineVariant;
-      searchInput.value = engineVariant ? `BMW ${engineVariant} (${m.chassis[0] || m.label})` : m.label;
+      searchInput.value = getCarTitle(m, engineVariant);
       dropdown.classList.add('hidden');
       updateView();
     }
@@ -560,19 +692,22 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
       for (const m of allModels) {
         const chassisList = m.chassis || [];
         const engines = [];
-        if (m.section !== 'm-performance') {
-          for (const c of chassisList) {
-            if (enginesMap[c]) engines.push(...enginesMap[c]);
-          }
+        for (const c of chassisList) {
+          if (enginesMap[c]) engines.push(...enginesMap[c]);
         }
+        if (m.variants && m.variants.length) {
+          engines.push(...m.variants);
+        }
+        const uniqueEngines = Array.from(new Set(engines));
 
+        const brand = m.brand || 'BMW';
         const allSearchable = [
+          brand,
           m.label,
-          'BMW ' + m.label,
+          brand + ' ' + m.label,
           m.series,
           ...chassisList,
-          ...(m.variants || []),
-          ...engines
+          ...uniqueEngines
         ].map(s => normalizeSearch(s));
 
         const matchesAll = qTokens.every(tok =>
@@ -581,12 +716,12 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
 
         if (matchesAll) {
           // Detectar si coincidió con una motorización concreta
-          const matchedEngine = engines.find(eng => {
+          const matchedEngine = uniqueEngines.find(eng => {
             const engNorm = normalizeSearch(eng);
             return qTokens.some(tok => tok === engNorm);
-          }) || engines.find(eng => {
+          }) || uniqueEngines.find(eng => {
             const engNorm = normalizeSearch(eng);
-            return qTokens.some(tok => engNorm.includes(tok));
+            return qTokens.some(tok => tok.length >= 2 && engNorm.includes(tok) && !normalizeSearch(m.label).includes(tok));
           });
 
           matches.push({
@@ -602,15 +737,28 @@ const enginesMapJson = JSON.stringify(POPULAR_ENGINES_MAP);
         dropdown.innerHTML = `<div class="p-3 text-xs text-slate-500 font-mono">No se encontraron modelos o motorizaciones coincidentes</div>`;
       } else {
         dropdown.innerHTML = topMatches.map(({ model: m, engine }) => {
-          const title = engine ? `BMW ${engine} (${m.chassis[0] || m.label})` : m.label;
-          const subtitle = engine ? `${m.label} • ${m.years.display || ''}` : `${m.years.display || ''} • ${m.chassis.join(', ') || ''}`;
+          const brand = m.brand || 'BMW';
+          const isCupra = brand === 'CUPRA';
+          const title = getCarTitle(m, engine);
+          const subtitle = engine 
+            ? `${m.label} • ${m.years?.display || ''}` 
+            : `${m.years?.display || ''} • ${(m.chassis || []).join(', ')}`;
+          const badgeClass = isCupra 
+            ? 'bg-amber-500/10 text-amber-400 border-amber-500/20' 
+            : 'bg-sky-500/10 text-sky-400 border-sky-500/20';
+
           return `
-            <div class="search-item p-3 hover:bg-slate-900 cursor-pointer flex items-center justify-between border-b border-slate-900 last:border-0" data-id="${m.id}" data-engine="${engine || ''}">
-              <div>
-                <span class="text-sm font-bold text-white">${title}</span>
-                <span class="text-xs text-slate-500 font-mono block">${subtitle}</span>
+            <div class="search-item p-3 hover:bg-slate-900 cursor-pointer flex items-center justify-between border-b border-slate-900 last:border-0 transition-colors" data-id="${m.id}" data-engine="${engine || ''}">
+              <div class="flex items-center gap-3">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded border ${badgeClass} font-mono uppercase tracking-wider shrink-0">
+                  ${brand}
+                </span>
+                <div>
+                  <span class="text-sm font-bold text-white">${title}</span>
+                  <span class="text-xs text-slate-500 font-mono block">${subtitle}</span>
+                </div>
               </div>
-              <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-emerald-400">Analizar ➔</span>
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-emerald-400 shrink-0">Analizar ➔</span>
             </div>
           `;
         }).join('');
