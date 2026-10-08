@@ -19,6 +19,7 @@ const cars = catalog.generations
     engines: g.engines
   }));
 
+const availableBrands = Array.from(new Set(cars.map((c: any) => c.brand || 'BMW'))).sort();
 const carsJson = JSON.stringify(cars);
 const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.length, 0);
 ---
@@ -90,7 +91,32 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-mono text-xs">
-            <!-- Filtro 1: Potencia (CV) -->
+            <!-- Filtro 1: Marca / Fabricante (Escalable para futuras marcas) -->
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors flex flex-col justify-between">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-white uppercase tracking-wider">Marca</span>
+                <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">Fabricante</span>
+              </div>
+              <div>
+                <label for="filterBrand" class="block text-[10px] text-slate-400 uppercase font-semibold mb-1">Filtrar por Marca</label>
+                <div class="relative">
+                  <select 
+                    id="filterBrand"
+                    class="w-full bg-slate-900 border border-slate-800 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400/20 rounded-xl px-3 py-2 text-white text-xs font-mono focus:outline-none cursor-pointer appearance-none pr-8 shadow-inner"
+                  >
+                    <option value="">Todas las marcas (Cualquiera)</option>
+                    {availableBrands.map((b: string) => (
+                      <option value={b}>{b}</option>
+                    ))}
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 text-xs">
+                    ▼
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filtro 2: Potencia (CV) -->
             <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-white uppercase tracking-wider">Potencia</span>
@@ -124,7 +150,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
               </div>
             </div>
 
-            <!-- Filtro 2: Cilindrada (L) -->
+            <!-- Filtro 3: Cilindrada (L) -->
             <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-white uppercase tracking-wider">Cilindrada</span>
@@ -158,7 +184,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
               </div>
             </div>
 
-            <!-- Filtro 3: 0-100 km/h (s) -->
+            <!-- Filtro 4: 0-100 km/h (s) -->
             <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-cyan-500/30 shadow-sm hover:border-cyan-500/50 transition-colors">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-cyan-300 uppercase tracking-wider">0 a 100 km/h</span>
@@ -192,7 +218,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
               </div>
             </div>
 
-            <!-- Filtro 4: Velocidad Máxima (km/h) -->
+            <!-- Filtro 5: Velocidad Máxima (km/h) -->
             <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-white uppercase tracking-wider">Velocidad Punta</span>
@@ -226,8 +252,8 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
               </div>
             </div>
 
-            <!-- Filtro 5: Año del Modelo -->
-            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors md:col-span-2 lg:col-span-2">
+            <!-- Filtro 6: Año del Modelo -->
+            <div class="bg-slate-950/80 p-3.5 rounded-2xl border border-slate-800/90 shadow-sm hover:border-slate-700 transition-colors">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-white uppercase tracking-wider">Año del Modelo</span>
                 <span class="text-[11px] font-bold text-cyan-400 bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/50">Periodo</span>
@@ -333,7 +359,8 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
     const resultsArea = document.getElementById('searchResultsArea');
     const noMatchState = document.getElementById('noMatchState');
 
-    // Elementos de filtros mecánicos avanzados (Intervalos Mín / Máx Opcionales)
+    // Elementos de filtros mecánicos avanzados (Intervalos Mín / Máx Opcionales y Marca)
+    const filterBrand = document.getElementById('filterBrand');
     const filterMinHp = document.getElementById('filterMinHp');
     const filterMaxHp = document.getElementById('filterMaxHp');
     const filterMinDisp = document.getElementById('filterMinDisp');
@@ -348,6 +375,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
     const allFilterInputs = [
       searchInput,
+      filterBrand,
       filterMinHp, filterMaxHp,
       filterMinDisp, filterMaxDisp,
       filterMin0to100, filterMax0to100,
@@ -357,6 +385,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
     function executeCarSearch() {
       const query = (searchInput.value || '').trim().toLowerCase();
+      const selectedBrand = (filterBrand?.value || '').trim().toLowerCase();
       const minHpVal = parseFloat(filterMinHp?.value) || null;
       const maxHpVal = parseFloat(filterMaxHp?.value) || null;
       const minDispVal = parseFloat(filterMinDisp?.value) || null;
@@ -370,6 +399,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
       const hasActiveFilters = Boolean(
         query.length > 0 ||
+        selectedBrand.length > 0 ||
         minHpVal !== null ||
         maxHpVal !== null ||
         minDispVal !== null ||
@@ -408,6 +438,11 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       const matchedCars = [];
 
       for (const car of allCars) {
+        // Filtro por marca (escalable para futuras marcas)
+        if (selectedBrand && (car.brand || '').toLowerCase() !== selectedBrand) {
+          continue;
+        }
+
         // Filtro por año de producción (intervalo o límite único)
         if (minYearVal !== null || maxYearVal !== null) {
           const start = car.startYear !== null ? car.startYear : -Infinity;
@@ -422,6 +457,7 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
 
         // Texto descriptivo del chasis y modelo
         const carMetaText = [
+          car.brand,
           car.carName,
           car.series,
           car.chassisCode,
@@ -624,10 +660,11 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       }
     }
 
-    // Escuchar eventos en input de búsqueda y en todos los filtros técnicos (mínimos y máximos)
+    // Escuchar eventos en input de búsqueda y en todos los filtros técnicos (mínimos, máximos y marca)
     allFilterInputs.forEach(el => {
       if (el) {
         el.addEventListener('input', executeCarSearch);
+        el.addEventListener('change', executeCarSearch);
       }
     });
 
@@ -649,11 +686,17 @@ const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.l
       });
     }
 
-    // Soporte para URL params si viene enlazado desde otro sitio: /carvault/motores?q=E92
+    // Soporte para URL params si viene enlazado desde otro sitio: /carvault/motores?q=E92&brand=BMW
     const urlParams = new URLSearchParams(window.location.search);
     const qParam = urlParams.get('q') || urlParams.get('car') || urlParams.get('chassis');
+    const brandParam = urlParams.get('brand') || urlParams.get('marca');
+    if (brandParam && filterBrand) {
+      filterBrand.value = brandParam;
+    }
     if (qParam && searchInput) {
       searchInput.value = qParam;
+    }
+    if (qParam || brandParam) {
       executeCarSearch();
     }
   </script>
