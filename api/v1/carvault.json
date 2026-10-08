@@ -12793,18 +12793,24 @@
             {
               "code": "E82",
               "frontImage": {
-                "file": "File:09_BMW_135i_Coupe_(Montreal).jpg",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/%2709_BMW_135i_Coupe_%28Montreal%29.jpg",
-                "author": "Bull-Doser",
-                "license": "Public domain"
+                "file": "File:BMW E82 front 20080331.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "author": "Rudolf Stricker",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_E82_front_20080331.jpg",
+                "width": 1332,
+                "height": 900
               }
             }
           ],
           "frontImage": {
-            "file": "File:09_BMW_135i_Coupe_(Montreal).jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/%2709_BMW_135i_Coupe_%28Montreal%29.jpg",
-            "author": "Bull-Doser",
-            "license": "Public domain"
+            "file": "File:BMW E82 front 20080331.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_E82_front_20080331.jpg",
+            "width": 1332,
+            "height": 900
           },
           "engines": [
             {
@@ -16426,18 +16432,24 @@
             {
               "code": "G11",
               "frontImage": {
-                "file": "File:BMW G11 LCI JM 2023 06 04.jpg",
-                "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/BMW_G11_LCI_JM_2023_06_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-                "author": "Johannes Maximilian",
-                "license": "GFDL 1.2"
+                "file": "File:2019 BMW 745e front.jpg",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_745e_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                "author": "Guillaume Vachey",
+                "license": "CC0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_BMW_745e_front.jpg",
+                "width": 4408,
+                "height": 2684
               }
             }
           ],
           "frontImage": {
-            "file": "File:BMW G11 LCI JM 2023 06 04.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/BMW_G11_LCI_JM_2023_06_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Johannes Maximilian",
-            "license": "GFDL 1.2"
+            "file": "File:2019 BMW 745e front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_745e_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Guillaume Vachey",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_BMW_745e_front.jpg",
+            "width": 4408,
+            "height": 2684
           },
           "engines": [
             {
