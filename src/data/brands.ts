@@ -37,13 +37,13 @@ export const BRANDS: BrandInfo[] = [
     available: true,
     apiEndpoint: '/carvault/api/v1/bmw.json',
     stats: {
-      models: 200,
+      models: 157,
       modelsLabel: 'Modelos & Versiones',
       specialLabel: 'Gama BMW M',
-      specialValue: 37,
-      chassis: 279,
+      specialValue: 38,
+      chassis: 185,
       chassisLabel: 'Chasis Distintos',
-      withPhoto: 200,
+      withPhoto: 157,
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
