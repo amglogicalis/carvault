@@ -1,9 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { BMW_CARS_POWERTRAINS } from '../../data/powertrains';
+import catalog from '../../../data/bmw/catalog-clean-front.json';
 
-const carsJson = JSON.stringify(BMW_CARS_POWERTRAINS);
-const totalEnginesCount = BMW_CARS_POWERTRAINS.reduce((acc, c) => acc + c.engines.length, 0);
+// Extraer todos los coches reales de producción y M-Performance que tienen motores asignados
+const cars = catalog.generations
+  .filter((g: any) => g.status !== 'concept' && g.section !== 'prototypes' && !g.id.startsWith('bmw-concept-') && g.engines && g.engines.length > 0)
+  .map((g: any) => ({
+    id: g.id,
+    brand: 'BMW',
+    carName: g.label,
+    series: g.series || 'BMW',
+    chassisCode: g.chassis?.[0]?.code || '',
+    bodyStyle: g.class || 'Turismo / Deportivo',
+    yearsDisplay: g.years?.display || '',
+    generationEra: `${g.years?.start || ''} – ${g.years?.end || ''}`,
+    engines: g.engines
+  }));
+
+const carsJson = JSON.stringify(cars);
+const totalEnginesCount = cars.reduce((acc: number, c: any) => acc + c.engines.length, 0);
 ---
 
 <Layout 
@@ -296,8 +311,8 @@ const totalEnginesCount = BMW_CARS_POWERTRAINS.reduce((acc, c) => acc + c.engine
                         ></div>
                       </div>
                       <div class="flex items-center justify-between text-[10px] font-mono text-slate-500 mt-1">
-                        <span>${eng.phase}</span>
-                        <span>${eng.yearsActive}</span>
+                        <span>${eng.phase || ''}</span>
+                        <span>${eng.yearsActive || ''}</span>
                       </div>
                     </div>
                   </div>
@@ -306,7 +321,7 @@ const totalEnginesCount = BMW_CARS_POWERTRAINS.reduce((acc, c) => acc + c.engine
                   <div class="mt-3 pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
                     <div class="text-slate-400 flex items-center gap-1.5">
                       <span class="text-indigo-400 font-mono">Alimentación:</span>
-                      <span class="text-slate-300">${eng.feedSystem}</span>
+                      <span class="text-slate-300">${eng.feedSystem || 'Inyección BMW High Precision Injection'}</span>
                     </div>
                     ${eng.notes ? `
                       <div class="text-slate-300 bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800 text-[11px]">
