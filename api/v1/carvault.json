@@ -32,7 +32,7 @@
         "hasPowertrainSpecs": true,
         "hasUnifiedEngines": true
       },
-      "modelsCount": 200,
+      "modelsCount": 228,
       "generations": [
         {
           "id": "bmw-m2-g87",
@@ -798,13 +798,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_525_(3538948081).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/BMW_525_%283538948081%29.jpg/1280px-BMW_525_%283538948081%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "nakhon100",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_525_(3538948081).jpg",
-            "width": 1200,
-            "height": 736
+            "file": "File:BMW M535i (E12) at Techno Classica 2018, Essen (IMG 9155).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/BMW_M535i_%28E12%29_at_Techno_Classica_2018%2C_Essen_%28IMG_9155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Matti Blume",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M535i_(E12)_at_Techno_Classica_2018%2C_Essen_(IMG_9155).jpg",
+            "width": 5472,
+            "height": 3648
           },
           "engines": [
             {
@@ -923,13 +923,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW E24 front 20080301.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/BMW_E24_front_20080301.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Rudolf Stricker",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E24_front_20080301.jpg",
-            "width": 1695,
-            "height": 1236
+            "file": "File:1985 BMW M635CSi - 9.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/1985_BMW_M635CSi_-_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Justin Lippolis",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1985_BMW_M635CSi_-_9.jpg",
+            "width": 4227,
+            "height": 2818
           },
           "engines": [
             {
@@ -1021,13 +1021,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1983_BMW_528i_(E28)_sedan_(21539857803).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/1983_BMW_528i_%28E28%29_sedan_%2821539857803%29.jpg/1280px-1983_BMW_528i_%28E28%29_sedan_%2821539857803%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Jeremy from Sydney, Australia",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1983_BMW_528i_(E28)_sedan_(21539857803).jpg",
-            "width": 1200,
-            "height": 786
+            "file": "File:BMW M535i PL 86.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/BMW_M535i_PL_86.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Beemwej",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M535i_PL_86.JPG",
+            "width": 2048,
+            "height": 1536
           },
           "engines": [
             {
@@ -1147,13 +1147,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1983_BMW_528i_(E28)_sedan_(21539857803).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/1983_BMW_528i_%28E28%29_sedan_%2821539857803%29.jpg/1280px-1983_BMW_528i_%28E28%29_sedan_%2821539857803%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Jeremy from Sydney, Australia",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1983_BMW_528i_(E28)_sedan_(21539857803).jpg",
-            "width": 1200,
-            "height": 786
+            "file": "File:BMW M5 E28.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/BMW_M5_E28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Jaredtown",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M5_E28.jpg",
+            "width": 1024,
+            "height": 683
           },
           "engines": [
             {
@@ -1441,13 +1441,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1989_BMW_525i_(E34)_sedan_(2015-11-13)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/1989_BMW_525i_%28E34%29_sedan_%282015-11-13%29_01.jpg/1280px-1989_BMW_525i_%28E34%29_sedan_%282015-11-13%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1989_BMW_525i_(E34)_sedan_(2015-11-13)_01.jpg",
-            "width": 1200,
-            "height": 802
+            "file": "File:BMW M5 E34 front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/BMW_M5_E34_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Ernesto Andrade from Fremont, United States;Cropped and adjusted by uploader Mr.choppers",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M5_E34_front.jpg",
+            "width": 1215,
+            "height": 507
           },
           "engines": [
             {
@@ -1526,7 +1526,7 @@
         {
           "id": "bmw-m8-e31",
           "series": "8 Series",
-          "label": "BMW M8 (E31)",
+          "label": "BMW 850CSi (E31)",
           "section": "m-performance",
           "status": "current",
           "years": {
@@ -1575,13 +1575,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_840_Ci_(7724204324)_(cropped).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/BMW_840_Ci_%287724204324%29_%28cropped%29.jpg/1280px-BMW_840_Ci_%287724204324%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "nakhon100",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_840_Ci_(7724204324)_(cropped).jpg",
-            "width": 1200,
-            "height": 741
+            "file": "File:850CSI Front.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/850CSI_Front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M536",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A850CSI_Front.JPG",
+            "width": 1476,
+            "height": 764
           },
           "engines": [
             {
@@ -1689,13 +1689,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1991-1996_BMW_318i_(E36)_sedan_(2011-04-02)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/1991-1996_BMW_318i_%28E36%29_sedan_%282011-04-02%29_01.jpg/1280px-1991-1996_BMW_318i_%28E36%29_sedan_%282011-04-02%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991-1996_BMW_318i_(E36)_sedan_(2011-04-02)_01.jpg",
-            "width": 1200,
-            "height": 555
+            "file": "File:BMW M3 E36 berline.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/BMW_M3_E36_berline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Neef - 2",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M3_E36_berline.jpg",
+            "width": 2560,
+            "height": 1920
           },
           "engines": [
             {
@@ -2565,13 +2565,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW E82 front 20080331.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/BMW_E82_front_20080331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Rudolf Stricker",
+            "file": "File:BMW 1M Coupé (front).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/BMW_1M_Coup%C3%A9_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Toffguy",
             "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E82_front_20080331.jpg",
-            "width": 1332,
-            "height": 900
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_1M_Coup%C3%A9_(front).jpg",
+            "width": 2592,
+            "height": 1944
           },
           "engines": [
             {
@@ -2666,13 +2666,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:Wiki_edit_x5.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Wiki_edit_x5.jpg/1280px-Wiki_edit_x5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Bikingshaun Shaun Cupp",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWiki_edit_x5.jpg",
-            "width": 1200,
-            "height": 594
+            "file": "File:2010 BMW E70 X5 M.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/2010_BMW_E70_X5_M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Dabombazzz",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2010_BMW_E70_X5_M.jpg",
+            "width": 2816,
+            "height": 2112
           },
           "engines": [
             {
@@ -2780,13 +2780,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW X6-xDrivei50 Front-view.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/BMW_X6-xDrivei50_Front-view.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Luc106",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6-xDrivei50_Front-view.JPG",
-            "width": 1408,
-            "height": 1056
+            "file": "File:BMW X6 M (E71) – Frontansicht, 2. Juli 2011, Düsseldorf.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/BMW_X6_M_%28E71%29_%E2%80%93_Frontansicht%2C_2._Juli_2011%2C_D%C3%BCsseldorf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 de",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X6_M_(E71)_%E2%80%93_Frontansicht%2C_2._Juli_2011%2C_D%C3%BCsseldorf.jpg",
+            "width": 2445,
+            "height": 1275
           },
           "engines": [
             {
@@ -4143,7 +4143,7 @@
         {
           "id": "bmw-3-series-g50",
           "series": "3 Series",
-          "label": "3 Series",
+          "label": "BMW Serie 3 (G50 / Neue Klasse)",
           "section": "production",
           "status": "current",
           "years": {
@@ -4185,13 +4185,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_G20_(2022)_IMG_7316_(2).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/BMW_G20_%282022%29_IMG_7316_%282%29.jpg/1280px-BMW_G20_%282022%29_IMG_7316_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Alexander-93",
+            "file": "File:BMW Vision Neue Klasse, IAA Summit 2023, Munich (P1110888).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/BMW_Vision_Neue_Klasse%2C_IAA_Summit_2023%2C_Munich_%28P1110888%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Matti Blume",
             "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_G20_(2022)_IMG_7316_(2).jpg",
-            "width": 1200,
-            "height": 614
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Vision_Neue_Klasse%2C_IAA_Summit_2023%2C_Munich_(P1110888).jpg",
+            "width": 4580,
+            "height": 3053
           },
           "engines": [
             {
@@ -4607,7 +4607,7 @@
         {
           "id": "bmw-5-series-g60-g68",
           "series": "5 Series",
-          "label": "5 Series",
+          "label": "BMW Serie 5 (G60/G68)",
           "section": "production",
           "status": "current",
           "years": {
@@ -4682,12 +4682,12 @@
           ],
           "frontImage": {
             "file": "File:BMW_G60_520i_1X7A2443.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/BMW_G60_520i_1X7A2443.jpg/1280px-BMW_G60_520i_1X7A2443.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/BMW_G60_520i_1X7A2443.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "Alexander-93",
             "license": "CC BY-SA 4.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_G60_520i_1X7A2443.jpg",
-            "width": 1200,
-            "height": 614
+            "width": 5689,
+            "height": 2913
           },
           "engines": [
             {
@@ -5178,7 +5178,7 @@
         {
           "id": "bmw-3-series-g21",
           "series": "3 Series",
-          "label": "3 Series",
+          "label": "BMW Serie 3 Touring (G21)",
           "section": "production",
           "status": "current",
           "years": {
@@ -5224,13 +5224,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_G20_(2022)_IMG_7316_(2).jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/BMW_G20_%282022%29_IMG_7316_%282%29.jpg/1280px-BMW_G20_%282022%29_IMG_7316_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Alexander-93",
+            "file": "File:2023-02-04 BMW G21-Hybrid front logo 50years-M.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/2023-02-04_BMW_G21-Hybrid_front_logo_50years-M.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Wikisympathisant",
             "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_G20_(2022)_IMG_7316_(2).jpg",
-            "width": 1200,
-            "height": 614
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2023-02-04_BMW_G21-Hybrid_front_logo_50years-M.jpg",
+            "width": 5184,
+            "height": 3456
           },
           "engines": [
             {
@@ -5280,7 +5280,7 @@
         {
           "id": "bmw-5-series-g61",
           "series": "5 Series",
-          "label": "5 Series",
+          "label": "BMW Serie 5 Touring (G61)",
           "section": "production",
           "status": "current",
           "years": {
@@ -5319,13 +5319,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_G60_520i_1X7A2443.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/BMW_G60_520i_1X7A2443.jpg/1280px-BMW_G60_520i_1X7A2443.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+            "file": "File:BMW G61 520d Ditzingen Mobil IMG 9762.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/BMW_G61_520d_Ditzingen_Mobil_IMG_9762.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "Alexander-93",
             "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_G60_520i_1X7A2443.jpg",
-            "width": 1200,
-            "height": 614
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_G61_520d_Ditzingen_Mobil_IMG_9762.jpg",
+            "width": 4883,
+            "height": 3250
           },
           "engines": [
             {
@@ -10059,13 +10059,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1989_BMW_525i_(E34)_sedan_(2015-11-13)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/1989_BMW_525i_%28E34%29_sedan_%282015-11-13%29_01.jpg/1280px-1989_BMW_525i_%28E34%29_sedan_%282015-11-13%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+            "file": "File:1995 BMW 525i (E34) Touring station wagon (2015-07-24).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/1995_BMW_525i_%28E34%29_Touring_station_wagon_%282015-07-24%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "OSX",
             "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1989_BMW_525i_(E34)_sedan_(2015-11-13)_01.jpg",
-            "width": 1200,
-            "height": 802
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1995_BMW_525i_(E34)_Touring_station_wagon_(2015-07-24).jpg",
+            "width": 4272,
+            "height": 2856
           },
           "engines": [
             {
@@ -10465,13 +10465,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:1991-1996_BMW_318i_(E36)_sedan_(2011-04-02)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/1991-1996_BMW_318i_%28E36%29_sedan_%282011-04-02%29_01.jpg/1280px-1991-1996_BMW_318i_%28E36%29_sedan_%282011-04-02%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1991-1996_BMW_318i_(E36)_sedan_(2011-04-02)_01.jpg",
-            "width": 1200,
-            "height": 555
+            "file": "File:BMW 320i Cabriolet (E36 2C, Facelift) – Frontansicht, 8. Juni 2011, Wülfrath.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/BMW_320i_Cabriolet_%28E36_2C%2C_Facelift%29_%E2%80%93_Frontansicht%2C_8._Juni_2011%2C_W%C3%BClfrath.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "CC BY-SA 3.0 de",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_320i_Cabriolet_(E36_2C%2C_Facelift)_%E2%80%93_Frontansicht%2C_8._Juni_2011%2C_W%C3%BClfrath.jpg",
+            "width": 2152,
+            "height": 1172
           },
           "engines": [
             {
@@ -10933,10 +10933,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:2000-2003_BMW_525i_(E39)_Executive_sedan_(2010-10-02)_01.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/BMW_E39_front_20081125.jpg",
-            "author": "OSX",
-            "license": "Public domain"
+            "file": "File:2001 bmw 530i.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/2001_bmw_530i.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "User Andytothemax on en.wikipedia",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2001_bmw_530i.jpg",
+            "width": 2424,
+            "height": 1608
           },
           "phase": "Facelift (LCI)",
           "engines": [
@@ -11907,13 +11910,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW Z4 Roadster 2.2i (E85) front.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/BMW_Z4_Roadster_2.2i_%28E85%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Tokumeigakarinoaoshima",
-            "license": "CC0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z4_Roadster_2.2i_(E85)_front.JPG",
-            "width": 2558,
-            "height": 1916
+            "file": "File:BMW Z4 Facelift 20090321 front-1.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/BMW_Z4_Facelift_20090321_front-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "Public domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z4_Facelift_20090321_front-1.jpg",
+            "width": 2307,
+            "height": 1469
           },
           "engines": [
             {
@@ -12082,10 +12085,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW_E60_front_20071104.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/BMW_E60_front_20071104.jpg",
-            "author": "Rudolf Stricker",
-            "license": "CC BY-SA 3.0"
+            "file": "File:BMW 520d (E60) Facelift front 20100723.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/BMW_520d_%28E60%29_Facelift_front_20100723.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "Attribution",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_520d_(E60)_Facelift_front_20100723.jpg",
+            "width": 2228,
+            "height": 1376
           },
           "phase": "Facelift (LCI)",
           "engines": [
@@ -12220,13 +12226,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:2008_BMW_650i_(E63_MY08)_coupe_(2015-07-16)_01.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2008_BMW_650i_%28E63_MY08%29_coupe_%282015-07-16%29_01.jpg/1280px-2008_BMW_650i_%28E63_MY08%29_coupe_%282015-07-16%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2008_BMW_650i_(E63_MY08)_coupe_(2015-07-16)_01.jpg",
-            "width": 1200,
-            "height": 802
+            "file": "File:BMW 645Ci front 20100411.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/BMW_645Ci_front_20100411.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "Attribution",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_645Ci_front_20100411.jpg",
+            "width": 2469,
+            "height": 1509
           },
           "engines": [
             {
@@ -12462,13 +12468,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW X3 front 20071104.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/BMW_X3_front_20071104.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Rudolf Stricker",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X3_front_20071104.jpg",
-            "width": 1791,
-            "height": 1131
+            "file": "File:BMW X3 (E83) Facelift front 20100926.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/BMW_X3_%28E83%29_Facelift_front_20100926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "M 93",
+            "license": "Attribution",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_X3_(E83)_Facelift_front_20100926.jpg",
+            "width": 2352,
+            "height": 1401
           },
           "engines": [
             {
@@ -13718,13 +13724,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:Wiki_edit_x5.jpg",
-            "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Wiki_edit_x5.jpg/1280px-Wiki_edit_x5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-            "author": "Bikingshaun Shaun Cupp",
-            "license": "CC BY 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWiki_edit_x5.jpg",
-            "width": 1200,
-            "height": 594
+            "file": "File:BMW E70 LCI X5 xDrive 30d Space Gray (1).jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/BMW_E70_LCI_X5_xDrive_30d_Space_Gray_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Damian B Oh",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_E70_LCI_X5_xDrive_30d_Space_Gray_(1).jpg",
+            "width": 3790,
+            "height": 2842
           },
           "engines": [
             {
@@ -14642,13 +14648,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW M6 Gran Coupé (F06) front.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/BMW_M6_Gran_Coup%C3%A9_%28F06%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "file": "File:BMW 640i Gran Coupé (F06) front.JPG",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/BMW_640i_Gran_Coup%C3%A9_%28F06%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "Tokumeigakarinoaoshima",
             "license": "CC0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M6_Gran_Coup%C3%A9_(F06)_front.JPG",
-            "width": 1980,
-            "height": 1440
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_640i_Gran_Coup%C3%A9_(F06)_front.JPG",
+            "width": 2548,
+            "height": 1904
           },
           "engines": [
             {
@@ -15702,10 +15708,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW M235i Coupé (F22) front.JPG",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/BMW_M235i_Coup%C3%A9_%28F22%29_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "file": "File:BMW M240i Coupé (F22) front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/BMW_M240i_Coup%C3%A9_%28F22%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
             "author": "Tokumeigakarinoaoshima",
-            "license": "CC0"
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_M240i_Coup%C3%A9_(F22)_front.jpg",
+            "width": 2560,
+            "height": 1920
           },
           "engines": [
             {
@@ -17850,13 +17859,13 @@
             }
           ],
           "frontImage": {
-            "file": "File:BMW Z1 front.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/BMW_Z1_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Wikimedia contributor",
-            "license": "CC BY 2.0 de",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z1_front.jpg",
-            "width": 1494,
-            "height": 1341
+            "file": "File:BMW Z1 Magic Violet 01 Front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/BMW_Z1_Magic_Violet_01_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "author": "Interesting.cars.insta",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABMW_Z1_Magic_Violet_01_Front.jpg",
+            "width": 1074,
+            "height": 673
           },
           "engines": []
         },
