@@ -13,19 +13,19 @@ const modelsJson = JSON.stringify(catalog.generations);
 ---
 
 <Layout title="Carvault — Catálogo y API Pública de Automóviles (Mercedes-Benz Edition)">
-  <!-- Hero Section con paleta Silver Arrow / Flechas Plateadas & Cromo de Mercedes-Benz -->
-  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800/40 via-slate-950 to-slate-950">
+  <!-- Hero Section con paleta Mercedes-AMG Petronas Teal / Flechas Plateadas & Cromo de Mercedes-Benz -->
+  <section class="relative overflow-hidden pt-16 pb-20 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-950/20 via-slate-950 to-slate-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-slate-400/30 bg-slate-900/60 hover:bg-slate-800/60 text-slate-200 hover:text-white hover:border-slate-300/50 transition-colors mb-6 shadow-sm">
+      <a href="/carvault/#marcas" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono font-medium border border-teal-500/30 bg-slate-900/60 hover:bg-slate-800/60 text-teal-300 hover:text-white hover:border-teal-400/50 transition-colors mb-6 shadow-sm">
         <span>← Marcas Disponibles</span>
         <span class="text-slate-600">•</span>
-        <span class="text-slate-100 font-bold">Mercedes-Benz</span>
+        <span class="text-teal-400 font-bold">Mercedes-Benz</span>
       </a>
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
-        Catálogo Completo <span class="bg-gradient-to-r from-slate-100 via-slate-300 to-zinc-400 bg-clip-text text-transparent">Mercedes-Benz</span>
+        Catálogo Completo <span class="bg-gradient-to-r from-teal-300 via-emerald-200 to-teal-400 bg-clip-text text-transparent">Mercedes-Benz</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
-        Colección integral automotriz con diferenciación cronológica estricta entre versiones <strong class="text-white">Pre-Facelift</strong> y <strong class="text-slate-200">MoPf (Modellpflege / Restyling)</strong>, leyendas eternas como el <strong class="text-white">300 SL Gullwing</strong> y el <strong class="text-white">190 E Evo II</strong>, la supremacía deportiva de <strong class="text-slate-200">Mercedes-AMG</strong> (SLS, AMG GT, Black Series, Hypercar ONE), el lujo supremo de las <strong class="text-white">Clase S y Maybach</strong>, el icónico <strong class="text-white">Clase G</strong> y la innovación 100% eléctrica <strong class="text-cyan-400">Mercedes-EQ</strong> con vistas frontales 100% verificadas.
+        Colección integral automotriz con diferenciación cronológica estricta entre versiones <strong class="text-white">Pre-Facelift</strong> y <strong class="text-teal-300">MoPf (Modellpflege / Restyling)</strong>, leyendas eternas como el <strong class="text-white">300 SL Gullwing</strong> y el <strong class="text-white">190 E Evo II</strong>, la supremacía deportiva de <strong class="text-teal-300">Mercedes-AMG</strong> (SLS, AMG GT, Black Series, Hypercar ONE), el lujo supremo de las <strong class="text-white">Clase S y Maybach</strong>, el icónico <strong class="text-white">Clase G</strong> y la innovación 100% eléctrica <strong class="text-teal-400">Mercedes-EQ</strong> con vistas frontales 100% verificadas.
       </p>
 
       <!-- Métricas rápidas de la marca -->
@@ -36,7 +36,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-slate-200 font-mono">{totalAMG}</span>
+          <span class="text-3xl font-black text-teal-300 font-mono">{totalAMG}</span>
           <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Mercedes-AMG & Iconos</span>
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
@@ -46,7 +46,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="h-10 w-[1px] bg-slate-800 hidden sm:block"></div>
         <div class="flex flex-col items-center">
-          <span class="text-3xl font-black text-cyan-400 font-mono">{catalog.stats.withExactFront || totalGenerations}</span>
+          <span class="text-3xl font-black text-teal-400 font-mono">{catalog.stats.withExactFront || totalGenerations}</span>
           <span class="text-xs text-slate-400 uppercase tracking-wider mt-1">Frontales con Foto (100%)</span>
         </div>
       </div>
@@ -68,13 +68,13 @@ const modelsJson = JSON.stringify(catalog.generations);
         </div>
         <div class="relative">
           <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-            <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
           <input 
             id="searchInput"
             type="text" 
             placeholder="Escribe para buscar... (ej: 300 SL, C 63 AMG, AMG GT R, SLS, W124 500 E, S 600 V12, G 63, EQS, W205, W223...)" 
-            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-slate-300 focus:ring-1 focus:ring-slate-300/40 transition-all font-mono"
+            class="w-full bg-slate-950 border border-slate-700/80 rounded-xl pl-10 pr-10 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-1 focus:ring-teal-400/40 transition-all font-mono"
             autocomplete="off"
           />
           <button 
@@ -93,7 +93,7 @@ const modelsJson = JSON.stringify(catalog.generations);
           <span>División / Carrocería:</span>
         </div>
         <div class="flex flex-wrap gap-1.5" id="seriesFilters">
-          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-200/20 text-slate-100 border-slate-300/40 font-bold" data-series="all">Todas ({totalGenerations})</button>
+          <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-teal-500/20 text-teal-300 border-teal-500/40 font-bold" data-series="all">Todas ({totalGenerations})</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="amg">Mercedes-AMG & Black Series ({totalAMG})</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="sedans">Berlinas (Clase A, C, E, S, CLA, CLS)</button>
           <button class="filter-series-btn px-3 py-1.5 rounded-lg text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-series="sport">Deportivos & SL (SL, AMG GT, SLS, SLR, CLK)</button>
@@ -108,7 +108,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         <div>
           <label class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-2">Restyling (MoPf / Facelift):</label>
           <div class="flex flex-wrap gap-1.5" id="faceliftFilters">
-            <button class="filter-facelift-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-300 text-slate-950 border-slate-300 font-bold" data-facelift="all">Todos</button>
+            <button class="filter-facelift-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-teal-400 text-slate-950 border-teal-400 font-bold" data-facelift="all">Todos</button>
             <button class="filter-facelift-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-facelift="mopf">Solo MoPf / Restyling</button>
             <button class="filter-facelift-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-facelift="pre-facelift">Solo Pre-Facelift</button>
           </div>
@@ -118,7 +118,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         <div>
           <label class="block text-[11px] font-mono text-slate-400 uppercase tracking-wider mb-2">Motorización / Propulsión:</label>
           <div class="flex flex-wrap gap-1.5" id="fuelFilters">
-            <button class="filter-fuel-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-300 text-slate-950 border-slate-300 font-bold" data-fuel="all">Todas</button>
+            <button class="filter-fuel-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-teal-400 text-slate-950 border-teal-400 font-bold" data-fuel="all">Todas</button>
             <button class="filter-fuel-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-fuel="gasolina">Gasolina</button>
             <button class="filter-fuel-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-fuel="diesel">Diésel</button>
             <button class="filter-fuel-btn px-2.5 py-1 rounded-md text-xs font-mono border transition-all cursor-pointer bg-slate-950/60 text-slate-400 border-slate-800 hover:text-white" data-fuel="hibrido">Híbrido / PHEV</button>
@@ -236,7 +236,7 @@ const modelsJson = JSON.stringify(catalog.generations);
         const accelBadge = mainEngine?.accel0to100 ? `${mainEngine.accel0to100}s (0-100)` : '';
 
         return `
-          <article class="car-card bg-slate-900/90 border border-slate-800 hover:border-slate-400/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-slate-500/10 group" data-id="${model.id}">
+          <article class="car-card bg-slate-900/90 border border-slate-800 hover:border-teal-400/50 rounded-3xl overflow-hidden transition-all duration-300 flex flex-col hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-teal-500/10 group" data-id="${model.id}">
             <!-- Contenedor Fotografía Frontal -->
             <div class="relative aspect-[16/10] bg-slate-950 overflow-hidden cursor-zoom-in" onclick="openLightbox('${imgUrl}', '${escapeHtml(model.label)}', '${escapeHtml(model.class || '')}')">
               <img 
@@ -250,7 +250,7 @@ const modelsJson = JSON.stringify(catalog.generations);
               <!-- Badges Superpuestos -->
               <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
                 ${isAMG ? '<span class="px-2 py-0.5 rounded-md bg-slate-100 text-slate-950 text-[10px] font-mono font-black shadow-md">AMG</span>' : ''}
-                ${isMoPf ? '<span class="px-2 py-0.5 rounded-md bg-cyan-500/90 text-slate-950 text-[10px] font-mono font-bold shadow-md">MoPf (Restyling)</span>' : ''}
+                ${isMoPf ? '<span class="px-2 py-0.5 rounded-md bg-teal-400 text-slate-950 text-[10px] font-mono font-bold shadow-md">MoPf (Restyling)</span>' : ''}
                 ${isPre ? '<span class="px-2 py-0.5 rounded-md bg-slate-800 text-slate-300 text-[10px] font-mono border border-slate-700 shadow-md">Pre-Facelift</span>' : ''}
               </div>
 
@@ -266,7 +266,7 @@ const modelsJson = JSON.stringify(catalog.generations);
                   <span>${model.series || 'Mercedes-Benz'}</span>
                   <span class="text-slate-300 font-bold">${model.chassis?.[0]?.code || ''}</span>
                 </div>
-                <h3 class="text-lg font-bold text-white group-hover:text-slate-200 transition-colors">
+                <h3 class="text-lg font-bold text-white group-hover:text-teal-300 transition-colors">
                   ${escapeHtml(model.label)}
                 </h3>
                 <p class="text-xs text-slate-400 mt-1 line-clamp-2 leading-relaxed">
@@ -281,7 +281,7 @@ const modelsJson = JSON.stringify(catalog.generations);
                     <span>⚡</span>
                     <span>${engineBadge}</span>
                   </div>
-                  ${accelBadge ? `<span class="text-cyan-400">${accelBadge}</span>` : ''}
+                  ${accelBadge ? `<span class="text-teal-400">${accelBadge}</span>` : ''}
                 </div>
               ` : ''}
 
@@ -406,10 +406,10 @@ const modelsJson = JSON.stringify(catalog.generations);
       document.querySelectorAll('.filter-series-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.filter-series-btn').forEach(b => {
-            b.classList.remove('bg-slate-200/20', 'text-slate-100', 'border-slate-300/40', 'font-bold');
+            b.classList.remove('bg-teal-500/20', 'text-teal-300', 'border-teal-500/40', 'font-bold');
             b.classList.add('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           });
-          btn.classList.add('bg-slate-200/20', 'text-slate-100', 'border-slate-300/40', 'font-bold');
+          btn.classList.add('bg-teal-500/20', 'text-teal-300', 'border-teal-500/40', 'font-bold');
           btn.classList.remove('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           activeSeries = btn.dataset.series || 'all';
           filterAndRender();
@@ -420,10 +420,10 @@ const modelsJson = JSON.stringify(catalog.generations);
       document.querySelectorAll('.filter-facelift-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.filter-facelift-btn').forEach(b => {
-            b.classList.remove('bg-slate-300', 'text-slate-950', 'border-slate-300', 'font-bold');
+            b.classList.remove('bg-teal-400', 'text-slate-950', 'border-teal-400', 'font-bold');
             b.classList.add('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           });
-          btn.classList.add('bg-slate-300', 'text-slate-950', 'border-slate-300', 'font-bold');
+          btn.classList.add('bg-teal-400', 'text-slate-950', 'border-teal-400', 'font-bold');
           btn.classList.remove('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           activeFacelift = btn.dataset.facelift || 'all';
           filterAndRender();
@@ -434,10 +434,10 @@ const modelsJson = JSON.stringify(catalog.generations);
       document.querySelectorAll('.filter-fuel-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.filter-fuel-btn').forEach(b => {
-            b.classList.remove('bg-slate-300', 'text-slate-950', 'border-slate-300', 'font-bold');
+            b.classList.remove('bg-teal-400', 'text-slate-950', 'border-teal-400', 'font-bold');
             b.classList.add('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           });
-          btn.classList.add('bg-slate-300', 'text-slate-950', 'border-slate-300', 'font-bold');
+          btn.classList.add('bg-teal-400', 'text-slate-950', 'border-teal-400', 'font-bold');
           btn.classList.remove('bg-slate-950/60', 'text-slate-400', 'border-slate-800');
           activeFuel = btn.dataset.fuel || 'all';
           filterAndRender();
