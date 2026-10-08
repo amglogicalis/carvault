@@ -22169,13 +22169,16 @@
             }
           ],
           "frontImage": {
-            "file": "File:2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/2014_Jaguar_XKR_%28X150_MY15%29_coupe_%282015-09-12%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "OSX",
-            "license": "Public domain",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2014_Jaguar_XKR_(X150_MY15)_coupe_(2015-09-12)_01.jpg",
-            "width": 4272,
-            "height": 2856
+            "file": "File:Jaguar X150 front 20080223.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Jaguar_X150_front_20080223.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "view": "frontal_tres_cuartos",
+            "timeOfDay": "dia",
+            "curatedBy": "agent-exact-restyling-distinction",
+            "author": "Rudolf Stricker",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_X150_front_20080223.jpg",
+            "width": 1866,
+            "height": 1128
           },
           "engines": [
             {
@@ -22410,13 +22413,16 @@
             }
           ],
           "frontImage": {
-            "file": "File:Jaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_(X351)_–_Frontansicht,_17._Mai_2013,_Münster.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Jaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_%28X351%29_%E2%80%93_Frontansicht%2C_17._Mai_2013%2C_M%C3%BCnster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "M 93",
-            "license": "CC BY-SA 3.0 de",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJ_3.0_Kompressor_AWD_Premium_Luxury_(X351)_%E2%80%93_Frontansicht%2C_17._Mai_2013%2C_M%C3%BCnster.jpg",
-            "width": 3276,
-            "height": 1647
+            "file": "File:2018 Jaguar XJL Autobiography Diesel V6 Automatic 3.0 Front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/2018_Jaguar_XJL_Autobiography_Diesel_V6_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "view": "frontal_tres_cuartos",
+            "timeOfDay": "dia",
+            "curatedBy": "agent-exact-restyling-distinction",
+            "author": "Vauxford",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018_Jaguar_XJL_Autobiography_Diesel_V6_Automatic_3.0_Front.jpg",
+            "width": 4942,
+            "height": 2244
           },
           "engines": [
             {
@@ -22642,13 +22648,16 @@
             }
           ],
           "frontImage": {
-            "file": "File:Jaguar_XJR_Sonderedition_front_20080811.jpg",
-            "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Jaguar_XJR_Sonderedition_front_20080811.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-            "author": "Rudolf Stricker",
-            "license": "Attribution",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJaguar_XJR_Sonderedition_front_20080811.jpg",
-            "width": 1962,
-            "height": 1116
+            "file": "File:2006 Jaguar XJ Sovereign TDVi Automatic 2.8 Front.jpg",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/2006_Jaguar_XJ_Sovereign_TDVi_Automatic_2.8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "view": "frontal_tres_cuartos",
+            "timeOfDay": "dia",
+            "curatedBy": "agent-exact-restyling-distinction",
+            "author": "Vauxford",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2006_Jaguar_XJ_Sovereign_TDVi_Automatic_2.8_Front.jpg",
+            "width": 4553,
+            "height": 2003
           },
           "engines": [
             {
