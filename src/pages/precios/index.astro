@@ -4,12 +4,14 @@ import bmwCatalog from '../../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../../data/cupra/catalog-clean-front.json';
 import jaguarCatalog from '../../../data/jaguar/catalog-clean-front.json';
 import lexusCatalog from '../../../data/lexus/catalog-clean-front.json';
+import mercedesCatalog from '../../../data/mercedes/catalog-clean-front.json';
 import { POPULAR_ENGINES_MAP as BMW_ENGINES_MAP } from '../../utils/bmw-engines';
 import { CUPRA_ENGINES_MAP } from '../../utils/cupra-engines';
 import { JAGUAR_ENGINES_MAP } from '../../utils/jaguar-engines';
 import { LEXUS_ENGINES_MAP } from '../../utils/lexus-engines';
+import { MERCEDES_ENGINES_MAP } from '../../utils/mercedes-engines';
 
-// Pasamos todos los modelos al buscador combinando BMW, CUPRA, Jaguar y Lexus
+// Pasamos todos los modelos al buscador combinando BMW, CUPRA, Jaguar, Lexus y Mercedes-Benz
 const allGenerations = [
   ...bmwCatalog.generations.map(g => ({
     id: g.id,
@@ -58,11 +60,23 @@ const allGenerations = [
     chassis: g.chassis.map(c => c.code).filter(Boolean),
     variants: g.chassis.flatMap(c => c.variants || []),
     frontImage: g.frontImage?.url || null
+  })),
+  ...(mercedesCatalog.generations || []).map(g => ({
+    id: g.id,
+    brand: 'Mercedes-Benz',
+    label: g.label,
+    series: g.series,
+    section: g.section,
+    years: g.years,
+    class: g.class,
+    chassis: (g.chassis || []).map((c: any) => c.code).filter(Boolean),
+    variants: (g.chassis || []).flatMap((c: any) => c.variants || []),
+    frontImage: g.frontImage?.url || null
   }))
 ];
 
 const modelsJson = JSON.stringify(allGenerations);
-const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP, ...JAGUAR_ENGINES_MAP, ...LEXUS_ENGINES_MAP });
+const enginesMapJson = JSON.stringify({ ...BMW_ENGINES_MAP, ...CUPRA_ENGINES_MAP, ...JAGUAR_ENGINES_MAP, ...LEXUS_ENGINES_MAP, ...MERCEDES_ENGINES_MAP });
 ---
 
 <Layout title="Analizador Financiero de Precios & Suelo de Depreciación — Carvault" description="Motor cuantitativo multifactorial: nicho, prestaciones, carrocería, horizonte temporal a 20 años y cálculo de suelo de depreciación.">

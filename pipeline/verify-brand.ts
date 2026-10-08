@@ -194,9 +194,9 @@ class BrandVerifier {
     let faceliftCollisions: string[] = [];
     for (const [_, group] of seriesGroups.entries()) {
       const facelifts = group.filter(
-        g => /facelift|lci|restyling/i.test(g.label || '') && !/pre-facelift|pre-lci/i.test(g.label || '')
+        g => /facelift|lci|restyling|mopf/i.test(g.label || '') && !/pre-facelift|pre-lci|pre-mopf/i.test(g.label || '')
       );
-      const preFacelifts = group.filter(g => /pre-facelift|pre-lci/i.test(g.label || ''));
+      const preFacelifts = group.filter(g => /pre-facelift|pre-lci|pre-mopf/i.test(g.label || ''));
       for (const f of facelifts) {
         for (const p of preFacelifts) {
           if (f.id !== p.id && f.frontImage?.url && p.frontImage?.url) {
@@ -513,6 +513,20 @@ class BrandVerifier {
           troughResidualRatio = 0.36;
           appreciationRate = 0.055;
         }
+      } else if (this.brand === 'mercedes') {
+        if (/300 sl|slr|clk gtr|one|sls/i.test(lbl)) {
+          baseMsrp = 350000;
+          nicheScore = 9.9;
+          troughAge = 12;
+          troughResidualRatio = 0.65;
+          appreciationRate = 0.08;
+        } else if (/amg|black series/i.test(lbl)) {
+          baseMsrp = 110000;
+          nicheScore = 9.0;
+          troughAge = 14;
+          troughResidualRatio = 0.35;
+          appreciationRate = 0.05;
+        }
       }
 
       // Validar propiedades del perfil
@@ -599,6 +613,8 @@ class BrandVerifier {
       ? ['f-type', 'svr', 'xj220', 'e-type']
       : this.brand === 'lexus'
       ? ['lfa', 'f sport', 'híbrido', 'is f']
+      : this.brand === 'mercedes'
+      ? ['amg', 'mopf', 'clase s', '300 sl']
       : ['m3', 'touring', 'coupe', 'cs'];
 
     let passedQueries = 0;

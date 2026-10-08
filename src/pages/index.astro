@@ -4,6 +4,7 @@ import bmwCatalog from '../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../data/cupra/catalog-clean-front.json';
 import jaguarCatalog from '../../data/jaguar/catalog-clean-front.json';
 import lexusCatalog from '../../data/lexus/catalog-clean-front.json';
+import mercedesCatalog from '../../data/mercedes/catalog-clean-front.json';
 import { BRANDS } from '../data/brands';
 import requestsRegistry from '../../data/feedback/requests-registry.json';
 
@@ -85,7 +86,28 @@ const lexusCars = lexusCatalog.generations.map(g => ({
   brandCatalogUrl: '/carvault/lexus'
 }));
 
-const globalCars = [...bmwCars, ...cupraCars, ...jaguarCars, ...lexusCars];
+const mercedesCars = (mercedesCatalog.generations || []).map(g => ({
+  id: g.id,
+  brandId: 'mercedes',
+  brandName: 'Mercedes-Benz',
+  brandLogo: '/carvault/images/brands/mercedes.svg',
+  label: g.label,
+  series: g.series,
+  section: g.section,
+  status: g.status,
+  isM: false,
+  isVZ: false,
+  isSVO: false,
+  isF: false,
+  isAMG: g.section === 'm-performance' || (g.label && g.label.includes('AMG')) || (g.class && g.class.includes('AMG')),
+  class: g.class,
+  years: g.years,
+  chassisCodes: g.chassis ? g.chassis.map((c: any) => c.code).filter(Boolean).join(', ') : '',
+  frontImage: g.frontImage,
+  brandCatalogUrl: '/carvault/mercedes'
+}));
+
+const globalCars = [...bmwCars, ...cupraCars, ...jaguarCars, ...lexusCars, ...mercedesCars];
 
 const globalCarsJson = JSON.stringify(globalCars);
 
@@ -286,7 +308,7 @@ const registryJson = JSON.stringify(requestsRegistry);
     </div>
 
     <!-- Grid de Marcas Disponibles -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8">
       <!-- Tarjeta BMW -->
       <a 
         href="/carvault/bmw" 
@@ -414,28 +436,48 @@ const registryJson = JSON.stringify(requestsRegistry);
           <span class="group-hover:translate-x-1 transition-transform">→</span>
         </div>
       </a>
+
+      <!-- Tarjeta Mercedes-Benz -->
+      <a 
+        href="/carvault/mercedes" 
+        class="group bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 hover:border-slate-300/60 rounded-3xl p-7 transition-all duration-300 flex flex-col items-center text-center hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-slate-300/10 relative overflow-hidden"
+      >
+        <div class="absolute top-3 right-3">
+          <span class="px-2.5 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold tracking-wide shadow-sm">
+            Disponible
+          </span>
+        </div>
+
+        <!-- Icono / Logo oficial de la marca -->
+        <div class="w-24 h-24 rounded-full bg-slate-950 border border-slate-800 p-3 flex items-center justify-center shadow-xl group-hover:scale-105 transition-transform duration-300 mb-4">
+          <img src="/carvault/images/brands/mercedes.svg" alt="Logo de Mercedes-Benz" class="w-full h-full object-contain" />
+        </div>
+
+        <!-- Nombre de la marca -->
+        <h3 class="text-2xl font-black text-white group-hover:text-slate-200 transition-colors tracking-wide">
+          Mercedes-Benz
+        </h3>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">Mercedes-Benz Group AG</p>
+        <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+          La estrella de Affalterbach y Stuttgart: superdeportivos AMG, lujo supremo Maybach, el mito 300 SL, Clase S y vanguardia eléctrica EQ.
+        </p>
+
+        <!-- Botón de Acción -->
+        <div class="mt-5 inline-flex items-center gap-2 text-xs font-bold text-slate-300 group-hover:text-white group-hover:underline">
+          <span>Abrir catálogo de Mercedes</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </div>
+      </a>
     </div>
 
     <!-- Grid de Marcas Próximamente -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-4">
+    <div class="grid grid-cols-1 max-w-sm mx-auto mb-4">
       <!-- Tarjeta Próximamente: Porsche -->
       <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
         <div class="w-24 h-24 rounded-full bg-slate-950/60 border border-slate-800/60 p-4 flex items-center justify-center mb-4">
           <span class="text-2xl font-black text-slate-600 font-mono">P</span>
         </div>
         <h3 class="text-2xl font-bold text-slate-400 tracking-wide">Porsche</h3>
-        <p class="text-xs text-slate-500 font-mono mt-0.5">Stuttgart, Alemania</p>
-        <span class="mt-3 px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-400 text-[10px] font-mono">
-          Próximamente en catálogo
-        </span>
-      </div>
-
-      <!-- Tarjeta Próximamente: Mercedes-Benz -->
-      <div class="bg-slate-900/30 border border-slate-850 rounded-3xl p-7 flex flex-col items-center text-center opacity-60">
-        <div class="w-24 h-24 rounded-full bg-slate-950/60 border border-slate-800/60 p-4 flex items-center justify-center mb-4">
-          <span class="text-2xl font-black text-slate-600 font-mono">MB</span>
-        </div>
-        <h3 class="text-2xl font-bold text-slate-400 tracking-wide">Mercedes-Benz</h3>
         <p class="text-xs text-slate-500 font-mono mt-0.5">Stuttgart, Alemania</p>
         <span class="mt-3 px-2.5 py-0.5 rounded-md bg-slate-800 text-slate-400 text-[10px] font-mono">
           Próximamente en catálogo
@@ -562,6 +604,28 @@ const registryJson = JSON.stringify(requestsRegistry);
           <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
             <code>GET /api/v1/lexus.json</code>
             <a href="/carvault/api/v1/lexus.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
+              Probar JSON ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Endpoint Monomarca Mercedes-Benz -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 font-mono text-xs flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between text-slate-400 pb-3 border-b border-slate-800">
+              <span class="text-slate-200 font-bold flex items-center gap-1.5">
+                <img src="/carvault/images/brands/mercedes.svg" class="w-3.5 h-3.5" alt="Mercedes-Benz" />
+                Endpoint Monomarca Mercedes-Benz
+              </span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-200 border border-slate-700 text-[10px]">Monomarca • AMG & Maybach</span>
+            </div>
+            <p class="text-[11px] font-sans text-slate-400 mt-2.5 leading-relaxed">
+              Base de datos de Mercedes-Benz: códigos de chasis (W201, W124, W223, R129, C190...), restylings MoPf, división Mercedes-AMG y fichas técnicas mecánicas.
+            </p>
+          </div>
+          <div class="mt-4 text-cyan-300 flex items-center justify-between bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+            <code>GET /api/v1/mercedes.json</code>
+            <a href="/carvault/api/v1/mercedes.json" target="_blank" class="text-xs text-slate-400 hover:text-white px-2.5 py-1 rounded bg-slate-800 transition-colors font-sans">
               Probar JSON ↗
             </a>
           </div>

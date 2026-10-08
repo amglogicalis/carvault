@@ -4,6 +4,7 @@ import bmwCatalog from '../../../data/bmw/catalog-clean-front.json';
 import cupraCatalog from '../../../data/cupra/catalog-clean-front.json';
 import jaguarCatalog from '../../../data/jaguar/catalog-clean-front.json';
 import lexusCatalog from '../../../data/lexus/catalog-clean-front.json';
+import mercedesCatalog from '../../../data/mercedes/catalog-clean-front.json';
 
 // Extraer todos los coches reales de producción que tienen motores asignados
 const bmwCars = bmwCatalog.generations
@@ -70,7 +71,23 @@ const lexusCars = lexusCatalog.generations
     engines: g.engines
   }));
 
-const cars = [...bmwCars, ...cupraCars, ...jaguarCars, ...lexusCars];
+const mercedesCars = (mercedesCatalog.generations || [])
+  .filter((g: any) => g.status !== 'concept' && g.section !== 'prototypes' && !g.id.includes('concept') && g.engines && g.engines.length > 0)
+  .map((g: any) => ({
+    id: g.id,
+    brand: 'Mercedes-Benz',
+    carName: g.label,
+    series: g.series || 'Mercedes-Benz',
+    chassisCode: g.chassis?.[0]?.code || '',
+    bodyStyle: g.class || 'Berlina / Coupé / SUV / AMG',
+    yearsDisplay: g.years?.display || '',
+    startYear: typeof g.years?.start === 'number' ? g.years.start : (parseInt(g.years?.start, 10) || null),
+    endYear: typeof g.years?.end === 'number' ? g.years.end : (parseInt(g.years?.end, 10) || null),
+    generationEra: `${g.years?.start || ''} – ${g.years?.end || ''}`,
+    engines: g.engines
+  }));
+
+const cars = [...bmwCars, ...cupraCars, ...jaguarCars, ...lexusCars, ...mercedesCars];
 
 const availableBrands = Array.from(new Set(cars.map((c: any) => c.brand || 'BMW'))).sort();
 const carsJson = JSON.stringify(cars);

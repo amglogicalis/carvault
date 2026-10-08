@@ -116,6 +116,29 @@ export const BRANDS: BrandInfo[] = [
       withPhotoLabel: 'Frontales con Foto',
       photoRate: '100%'
     }
+  },
+  {
+    id: 'mercedes',
+    name: 'Mercedes-Benz',
+    fullName: 'Mercedes-Benz Group AG',
+    slug: '/carvault/mercedes',
+    logo: '/carvault/images/brands/mercedes.svg',
+    country: 'Alemania',
+    founded: 1926,
+    description: 'Pioneros mundiales del automóvil desde el 300 SL Gullwing, berlinas insignia de lujo Clase S y Maybach, superdeportivos AMG de Affalterbach e innovación eléctrica Mercedes-EQ.',
+    available: true,
+    apiEndpoint: '/carvault/api/v1/mercedes.json',
+    stats: {
+      models: 91,
+      modelsLabel: 'Modelos & Versiones',
+      specialLabel: 'Mercedes-AMG & Maybach',
+      specialValue: 32,
+      chassis: 91,
+      chassisLabel: 'Chasis Distintos',
+      withPhoto: 91,
+      withPhotoLabel: 'Frontales con Foto',
+      photoRate: '100%'
+    }
   }
 ];
 

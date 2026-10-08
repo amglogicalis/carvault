@@ -8,15 +8,17 @@ function main() {
   gateway.endpoints = gateway.endpoints || {};
   gateway.endpoints.brands = gateway.endpoints.brands || {};
   gateway.endpoints.brands.lexus = '/api/v1/lexus.json';
+  gateway.endpoints.brands.mercedes = '/api/v1/mercedes.json';
 
   const brandMetas: Record<string, any> = {
     bmw: { name: 'BMW', fullName: 'Bayerische Motoren Werke', country: 'Alemania' },
     cupra: { name: 'CUPRA', fullName: 'SEAT Cupra, S.A.U.', country: 'España' },
     jaguar: { name: 'Jaguar', fullName: 'Jaguar Land Rover Automotive plc', country: 'Reino Unido' },
     lexus: { name: 'Lexus', fullName: 'Lexus (Toyota Motor Corporation)', country: 'Japón' },
+    mercedes: { name: 'Mercedes-Benz', fullName: 'Mercedes-Benz Group AG', country: 'Alemania' },
   };
 
-  for (const brandId of ['bmw', 'cupra', 'jaguar', 'lexus']) {
+  for (const brandId of ['bmw', 'cupra', 'jaguar', 'lexus', 'mercedes']) {
     const catalogPath = path.join(process.cwd(), 'data', brandId, 'catalog-clean-front.json');
     if (fs.existsSync(catalogPath)) {
       const cat = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
